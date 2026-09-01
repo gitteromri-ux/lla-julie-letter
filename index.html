@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Longevity Masterclass · a letter for Julie Gibson Clark</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0F19; --ink2:#0E1F48; --body:#2A2F39; --muted:#6B7280;
+    --acc:#0B57D0; --rule:#DDD8CE; --cream:#FBF9F3;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--cream);color:var(--body)}
+  body{
+    font-family:"Playfair Display","Iowan Old Style","Palatino Linotype",Georgia,serif;
+    font-style:italic; font-weight:400;
+    font-size:19px; line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--acc); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px}
+  a:hover{color:var(--ink)}
+
+  /* Nav */
+  nav.top{
+    position:sticky; top:0; z-index:5;
+    background:rgba(251,249,243,.94); backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid var(--rule);
+    padding:16px 28px; display:flex; align-items:center; justify-content:space-between;
+    font-size:14px;
+  }
+  nav.top .brand{color:var(--ink)}
+  nav.top .links a{margin-left:22px; color:var(--muted); text-decoration:none}
+  nav.top .links a:hover{color:var(--ink)}
+
+  main{max-width:760px; margin:0 auto; padding:0 28px 120px}
+
+  /* Cover */
+  header.cover{
+    text-align:center; padding:96px 0 72px; border-bottom:1px solid var(--rule);
+  }
+  .letterhead{
+    display:inline-block; background:#0E1F48; color:#fff;
+    padding:20px 40px; border-radius:6px;
+    font-size:18px; letter-spacing:.02em;
+  }
+  .letterhead .lla{display:block; font-size:22px; margin-bottom:2px}
+  .letterhead .by{font-size:12px; letter-spacing:.14em; color:#c9d3ec; text-transform:uppercase}
+  .kicker{
+    display:block; margin-top:36px; margin-bottom:14px;
+    color:var(--muted); font-size:13px; letter-spacing:.28em; text-transform:uppercase;
+    font-style:normal; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; font-weight:500;
+  }
+  header.cover h1{
+    margin:0 0 12px; color:var(--ink);
+    font-size:64px; line-height:1.05; font-weight:500;
+    letter-spacing:-.5px;
+  }
+  header.cover .sub{
+    color:var(--ink2); font-size:26px; margin:0 0 32px;
+  }
+  header.cover .meta{
+    color:var(--muted); font-size:14px; letter-spacing:.16em; text-transform:uppercase;
+    font-style:normal; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; font-weight:500;
+  }
+
+  /* Section rhythm */
+  section.chapter{padding:72px 0 8px; border-bottom:1px solid var(--rule)}
+  section.chapter:last-of-type{border-bottom:0}
+  section.chapter .eyebrow{
+    display:block; color:var(--muted); font-size:13px; letter-spacing:.28em; text-transform:uppercase;
+    font-style:normal; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; font-weight:500;
+    text-align:center; margin:0 0 22px;
+  }
+  section.chapter h2{
+    margin:0 0 40px; color:var(--ink);
+    font-size:40px; line-height:1.15; font-weight:500; letter-spacing:-.2px;
+    text-align:center;
+  }
+  section.chapter h2::after{
+    content:""; display:block; width:100%; height:1px; background:var(--rule); margin-top:28px;
+  }
+
+  p{margin:0 0 22px}
+  .lede{font-size:24px; line-height:1.55; color:var(--ink); margin:0 0 34px}
+
+  h3.micro{
+    color:var(--ink2); font-size:20px; margin:44px 0 12px; font-weight:500;
+    letter-spacing:.02em;
+  }
+
+  ul.links{list-style:none; padding:0; margin:0 0 30px}
+  ul.links li{margin:0 0 8px; font-size:19px}
+
+  .ask{
+    border-left:3px solid var(--acc);
+    padding:20px 26px; margin:36px 0 8px;
+    background:rgba(11,87,208,.04); border-radius:0 6px 6px 0;
+  }
+  .ask .ask-title{
+    display:block; margin-bottom:8px; color:var(--acc);
+    font-size:13px; letter-spacing:.22em; text-transform:uppercase;
+    font-style:normal; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; font-weight:600;
+  }
+  .ask p{margin:0}
+
+  /* Close */
+  .close{
+    text-align:center; padding:80px 0 20px; border-top:1px solid var(--rule); margin-top:80px;
+  }
+  .close p{font-size:22px; color:var(--ink); max-width:560px; margin:0 auto 22px}
+  .sig{color:var(--ink); font-size:22px; margin-top:36px}
+
+  /* Appendix */
+  section.appendix{padding:72px 0 40px}
+  section.appendix ul{list-style:none; padding:0; margin:0}
+  section.appendix li{padding:18px 0; border-bottom:1px solid var(--rule)}
+  section.appendix li .label{display:block; color:var(--ink); font-size:20px; margin-bottom:4px}
+  section.appendix li a{font-size:15px; word-break:break-all}
+
+  @media (max-width:720px){
+    body{font-size:17px}
+    header.cover{padding:56px 0 44px}
+    header.cover h1{font-size:40px}
+    header.cover .sub{font-size:20px}
+    section.chapter h2{font-size:28px}
+    .lede{font-size:20px}
+    main{padding:0 20px 80px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">Longevity Life Academy</span>
+  <span class="links">
+    <a href="#u1">Campaign</a>
+    <a href="#u2">Masterclass</a>
+    <a href="#u3">Website</a>
+    <a href="#u4">Visuals</a>
+    <a href="#u5">Press</a>
+    <a href="#timeline">Timeline</a>
+  </span>
+</nav>
+
+<main>
+
+  <header class="cover">
+    <div class="letterhead">
+      <span class="lla">Longevity Life Academy</span>
+      <span class="by">by eTeacher Group</span>
+    </div>
+    <span class="kicker">A note, with the whole masterclass inside</span>
+    <h1>The Longevity Masterclass</h1>
+    <p class="sub">a letter for Julie Gibson Clark</p>
+    <p class="meta">Longevity Life Academy &nbsp;·&nbsp; 1 September 2026</p>
+  </header>
+
+  <section class="chapter" id="intro">
+    <span class="eyebrow">Intro</span>
+    <h2>An honest note before the details</h2>
+    <p class="lede">Julie, we are so excited about this. Every piece around your masterclass is now ready, and this letter is where we bring it into one place.</p>
+    <p>In one hour, you will teach a live class that translates the routine that placed you second on the Rejuvenation Olympics leaderboard into a schedule anyone in the room can start on Monday morning. Around that hour we have built the campaign, the site, the visual world, and the press. This letter walks you through all of it in the order it will go live, with a single link under each section that opens the finished piece in your browser.</p>
+    <p>Read this once, in ten quiet minutes. Anywhere you want a change, tell us and we will shape it around you. Anywhere you are happy, we go live. That is the entire ask.</p>
+  </section>
+
+  <section class="chapter" id="u1">
+    <span class="eyebrow">Update one · The campaign</span>
+    <h2>Videos and banners, already in market</h2>
+    <p>We have been running the Julie campaign in a controlled early test since mid-August: the V2 video cuts and both banner series, at real spend, into real audiences. The response has been strong. Click-through is healthy, cost-per-lead is well inside where it needs to sit, and the creative is being received exactly as we hoped. Nothing has moved to full spend yet. The moment you confirm the two live dates, this becomes the launch campaign.</p>
+
+    <h3 class="micro">the julie video cuts, v2 masters</h3>
+    <p>The 90-second hero cut and the 65-second feed cut, both at 1:1 and 16:9, plus the 4K ProRes long-form master. Everything is in one Drive folder, ready to open and preview.</p>
+    <ul class="links"><li><a href="https://drive.google.com/drive/folders/1_GKArdCSGy7m-HUF6KsuMSDods0BXxpq?usp=sharing">open all julie video cuts</a></li></ul>
+
+    <h3 class="micro">the julie banner sets, series one and two</h3>
+    <p>Series One carries the Master Longevity Blueprint promise, and Series Two carries the Julie, make longevity automatic line. Every Meta and Instagram placement size is prepared, in both series, ready to run.</p>
+    <ul class="links">
+      <li><a href="https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/adset-new.html?v=12">open the hero banner set</a></li>
+      <li><a href="https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/">open the full banner library</a></li>
+    </ul>
+
+    <div class="ask">
+      <span class="ask-title">What we would love from you</span>
+      <p>A look at the cuts and the banner sets. Flag any single frame or line you want adjusted before we push to full spend. Everything else is drop-in ready.</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="u2">
+    <span class="eyebrow">Update two · The masterclass</span>
+    <h2>One hour, and the full syllabus on its own page</h2>
+    <p>The class is one hour, live on Zoom, taught in six teaching blocks. There is no live Q&amp;A: the hour is scripted end to end so every minute earns its place. There is no participant cap: we can host two hundred or more, live and comfortably. The class is priced at seventy-nine dollars, symbolic, as the on-ramp into the full Longevity Blueprint.</p>
+
+    <h3 class="micro">the syllabus, in the same format as the blueprint course</h3>
+    <p>The full syllabus lives on its own page, written in the same academic style as the Blueprint eighteen-session curriculum. It names each teaching block, the flow of teaching beats inside it, and the takeaway students carry into their week. You can read it, print it, and mark it up in one sitting.</p>
+    <ul class="links"><li><a href="https://gitteromri-ux.github.io/lla-masterclass-syllabus/">open the full masterclass syllabus</a></li></ul>
+
+    <h3 class="micro">two dates, currently held on the live site</h3>
+    <p>Session A on Wednesday the sixteenth of September at four o'clock Eastern, and Session B on Sunday the twenty-seventh of September at six o'clock Eastern. If either date does not suit you, two alternatives in the same late-September or early-October window work equally well.</p>
+
+    <h3 class="micro">why seventy-nine dollars</h3>
+    <p>The masterclass is priced at seventy-nine dollars because our goal is not to earn from the hour. It is to open the top of the funnel: place your method in front of a much wider audience, cover our lead cost, and welcome anyone who wants to go further into the Longevity Blueprint as an informed, warm student. That is the whole model.</p>
+
+    <h3 class="micro">how you will be supported</h3>
+    <p>Julie teaches the hour from a bespoke deck of fifteen to twenty slides that we build together, and iterate together, until every slide is exactly as you would present it. Before the first live class we run a full rehearsal on Zoom, on the same platform and the same flow. Omri from our team is on the call during prep, the rehearsal, and both live sessions. You are never on your own.</p>
+
+    <div class="ask">
+      <span class="ask-title">What we would love from you</span>
+      <p>A read of the syllabus site, and confirmation of the two dates, or two alternatives you prefer in the same window.</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="u3">
+    <span class="eyebrow">Update three · The website</span>
+    <h2>The dedicated masterclass site, live and staged</h2>
+    <p>The masterclass has its own site, mobile-tuned, and already staged for approval. Everything a first-time visitor needs is there: the promise, your credentials, the three pillars, the two live dates, and one-click checkout at seventy-nine dollars. The site sits alongside the full Longevity Blueprint course page so anyone who wants the deeper program moves straight in.</p>
+
+    <h3 class="micro">the longevity masterclass, live site</h3>
+    <ul class="links"><li><a href="https://julie-masterclass-gitter1.vercel.app">open the live masterclass site</a></li></ul>
+
+    <h3 class="micro">longevity blueprint, the full course page</h3>
+    <ul class="links"><li><a href="https://www.longevitylifeacademy.com/store/longevity-blueprint/?utm_source=perplexity">open the blueprint course page</a></li></ul>
+
+    <div class="ask">
+      <span class="ask-title">What we would love from you</span>
+      <p>A quick read of the page, and a few one-liners in your voice we can weave through the site and the opening of the class.</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="u4">
+    <span class="eyebrow">Update four · The visual world</span>
+    <h2>Mockups, Zoom-rooms, and the opener animations</h2>
+    <p>The visual world around the masterclass is finished. There is a hub with every Zoom-room mockup, the tilted-phones hero, the masterclass fold used on the site, the LLA banner and chat-panel applications, and every still we use for the campaign. Alongside it, the five neon opener animations, Pace, Distribution, Rank, Money, and Protocol, are delivered in every format, native 4K.</p>
+
+    <h3 class="micro">all visual elements, mockups hub</h3>
+    <ul class="links"><li><a href="https://gitteromri-ux.github.io/lla-masterclass-assets/?v=1787642013">open the visual elements and mockups hub</a></li></ul>
+
+    <h3 class="micro">the opener animations</h3>
+    <ul class="links">
+      <li><a href="https://gitteromri-ux.github.io/lla-julie-animations/">open the animations gallery</a></li>
+      <li><a href="https://github.com/gitteromri-ux/lla-julie-animations/blob/main/DELIVERY.md?utm_source=perplexity">open the animations delivery manifest</a></li>
+    </ul>
+
+    <div class="ask">
+      <span class="ask-title">What we would love from you</span>
+      <p>A scroll through the animations and the mockups hub. Flag anything that is not quite you. Everything else stays as it is.</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="u5">
+    <span class="eyebrow">Update five · The press</span>
+    <h2>Two full articles, written in our live-press format</h2>
+    <p>Round three of the press is fully written. These are complete articles, not concepts, drafted in the exact structure of the live release we ran in July on Yahoo Finance, AP News, and Newsfile Corp when you joined the Longevity Life Academy founding faculty. Same shape, same wire tone, same real Julie photograph, adjusted to announce the masterclass.</p>
+
+    <h3 class="micro">what is inside</h3>
+    <p>Article one is the masterclass announcement itself, dateline Phoenix, headlined around the second-slowest-aging-woman-on-Earth teaching an exclusive one-hour class for seventy-nine dollars. Article two is the paired teaching feature, dateline Ramat Gan, headlined around Longevity Life Academy opening its live faculty to the public for the first time. Each article carries two fresh quotes, one attributed to you, one to Harel, along with the full About Longevity Life Academy and About eTeacher Group boilerplate we used in July.</p>
+
+    <h3 class="micro">the finished ready-to-publish articles</h3>
+    <ul class="links"><li><a href="https://gitteromri-ux.github.io/lla-masterclass-press/">open the round-three press pack for approval</a></li></ul>
+
+    <p>Nothing publishes without your sign-off on the lines attributed to you. Once you approve, distribution runs across the same outlet mix that carried the July round: Newsfile Corp into Yahoo Finance, AP News, MarketWatch, Business Insider, USA Today, with secondary editorial follow-ups in Well+Good, mindbodygreen, and Longevity.Technology.</p>
+
+    <div class="ask">
+      <span class="ask-title">What we would love from you</span>
+      <p>A read of the two articles, and any edits to your quotes. Everything else runs the moment we hear back.</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="timeline">
+    <span class="eyebrow">Timeline</span>
+    <h2>Everything in one order</h2>
+    <p>Target go-live is Session A, Wednesday the sixteenth of September. Everything below is anchored to that date, and every step is happy to move if you prefer another window.</p>
+
+    <h3 class="micro">right now</h3>
+    <p>Website is live and staged. Campaign is in early test in market. Syllabus site is ready for your read. Two press articles are drafted and ready to publish.</p>
+
+    <h3 class="micro">wednesday, sixteen september, four o'clock eastern</h3>
+    <p>Session A goes live. Campaign moves to full spend across formats. Press round three publishes around the class.</p>
+
+    <h3 class="micro">sunday, twenty-seven september, six o'clock eastern</h3>
+    <p>Session B goes live. The same class, taught to the other half of the American audience and the international students.</p>
+
+    <h3 class="micro">the thirty days after</h3>
+    <p>Live e-commerce test, with a weekly readout on conversion. Adjustments to creative and to the funnel are made in flight, with your sign-off on anything you appear in.</p>
+  </section>
+
+  <div class="close">
+    <p>That is everything, Julie. We could not be more proud of what has come together around you. Whenever you have a quiet moment, share your thoughts, and we will take the rest from there.</p>
+    <p class="sig">With warmth, from the whole Longevity Life Academy team.</p>
+  </div>
+
+  <section class="appendix" id="appendix">
+    <span class="eyebrow" style="text-align:left">Appendix</span>
+    <h2 style="text-align:left">Every link in one place</h2>
+    <ul>
+      <li><span class="label">The masterclass syllabus, new</span><a href="https://gitteromri-ux.github.io/lla-masterclass-syllabus/">https://gitteromri-ux.github.io/lla-masterclass-syllabus/</a></li>
+      <li><span class="label">The masterclass website, live</span><a href="https://julie-masterclass-gitter1.vercel.app">https://julie-masterclass-gitter1.vercel.app</a></li>
+      <li><span class="label">The Longevity Blueprint, course page</span><a href="https://www.longevitylifeacademy.com/store/longevity-blueprint/?utm_source=perplexity">https://www.longevitylifeacademy.com/store/longevity-blueprint/</a></li>
+      <li><span class="label">Julie video cuts, Drive folder</span><a href="https://drive.google.com/drive/folders/1_GKArdCSGy7m-HUF6KsuMSDods0BXxpq?usp=sharing">https://drive.google.com/drive/folders/1_GKArdCSGy7m-HUF6KsuMSDods0BXxpq</a></li>
+      <li><span class="label">Banners, hero set</span><a href="https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/adset-new.html?v=12">https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/adset-new.html?v=12</a></li>
+      <li><span class="label">Banners, full library</span><a href="https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/">https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/</a></li>
+      <li><span class="label">Visual elements and mockups hub</span><a href="https://gitteromri-ux.github.io/lla-masterclass-assets/?v=1787642013">https://gitteromri-ux.github.io/lla-masterclass-assets/</a></li>
+      <li><span class="label">Animations, gallery</span><a href="https://gitteromri-ux.github.io/lla-julie-animations/">https://gitteromri-ux.github.io/lla-julie-animations/</a></li>
+      <li><span class="label">Animations, delivery manifest</span><a href="https://github.com/gitteromri-ux/lla-julie-animations/blob/main/DELIVERY.md?utm_source=perplexity">https://github.com/gitteromri-ux/lla-julie-animations/blob/main/DELIVERY.md</a></li>
+      <li><span class="label">Press round three, ready articles</span><a href="https://gitteromri-ux.github.io/lla-masterclass-press/">https://gitteromri-ux.github.io/lla-masterclass-press/</a></li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
