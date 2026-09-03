@@ -8162,7 +8162,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="lla-films-grid">
       <figure class="lla-film">
         <video src="assets/julie-wide.mp4" poster="assets/julie-poster.jpg" controls playsinline preload="none"></video>
-        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, ranked #2 on the Rejuvenation Olympics</span></figcaption>
+        <figcaption><b>Julie Gibson Clark</b><span>2nd Slowest Aging Woman on Earth, Founding Faculty</span></figcaption>
       </figure>
       <figure class="lla-film">
         <video src="assets/courtney-90s.mp4" poster="assets/courtney-poster.jpg" controls playsinline preload="none"></video>
@@ -8852,7 +8852,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="teacher-card-live-photo teacher-card-live-photo--square"><img src="assets/instructors/julie-gibson-clark.jpg" alt="Julie Gibson Clark" loading="lazy"></div>
         <div class="teacher-card-live-body">
           <h4 class="teacher-card-live-name" style="color:#fff !important;-webkit-text-fill-color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.75)">Julie Gibson Clark</h4>
-          <span class="teacher-card-live-role">Founding Faculty, Ranked #2 Rejuvenation Olympics</span>
+          <span class="teacher-card-live-role">2nd Slowest Aging Woman on Earth, Founding Faculty</span>
           <p class="teacher-card-live-bio">#2 slowest-aging person in the world on the Rejuvenation Olympics + A leading voice in accessible, evidence-based longevity, and Founding Faculty at Longevity Life Academy.</p>
         </div>
       </a>
@@ -11370,6 +11370,7 @@ html #lpRoot .teacher-card-live-bio { font-size:13.5px !important; line-height:1
 </script>
 
 <style id="lla-aurora-4d">
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap');
 /* ================================================================
    LLA · AURORA 4D — premium design layer
    ----------------------------------------------------------------
@@ -12826,6 +12827,686 @@ html #lpRoot#lpRoot[id][id] .lla-float-cta-sub{
     right:24px !important;
     max-width:420px !important;
   }
+}
+
+/* ================================================================
+   ROUND 2 — feedback pass
+   One typeface, Playfair Display italic, thin and large. Colour that
+   changes fold to fold and card to card. Bigger everything.
+   ================================================================ */
+
+/* ---------- R2.1 · ONE TYPEFACE, EVERYWHERE ---------------------------
+   Form controls are deliberately excluded: the admissions form is not
+   mine to restyle. SVG is excluded so icon geometry is untouched.     */
+html body#lpRoot#lpRoot[id][id] *:not(input):not(select):not(textarea):not(option):not(optgroup):not(svg):not(path):not(rect):not(use){
+  font-family:'Playfair Display', Georgia, 'Times New Roman', serif !important;
+  font-style:italic !important;
+}
+html body#lpRoot#lpRoot[id][id]{
+  font-size:19.5px !important;
+  font-weight:400 !important;
+  letter-spacing:-.004em !important;
+}
+/* body copy: large, thin, generous */
+html body#lpRoot#lpRoot[id][id] p,
+html body#lpRoot#lpRoot[id][id] li,
+html body#lpRoot#lpRoot[id][id] .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .fn-lead,
+html body#lpRoot#lpRoot[id][id] .lp-learn-lead,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-sub,
+html body#lpRoot#lpRoot[id][id] .curriculum-flow,
+html body#lpRoot#lpRoot[id][id] .curriculum-work,
+html body#lpRoot#lpRoot[id][id] .faq-a-inner{
+  font-weight:400 !important;
+  font-size:clamp(18px,1.34vw,22px) !important;
+  line-height:1.62 !important;
+  letter-spacing:-.006em !important;
+}
+/* headlines: thin, very large */
+html body#lpRoot#lpRoot[id][id] .section-title,
+html body#lpRoot#lpRoot[id][id] .fn-h2,
+html body#lpRoot#lpRoot[id][id] .pdp-value-h2,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-title,
+html body#lpRoot#lpRoot[id][id] .fn-close h2,
+html body#lpRoot#lpRoot[id][id] .lead-gen h2,
+html body#lpRoot#lpRoot[id][id] .fn-apply-head h2{
+  font-weight:400 !important;
+  font-size:clamp(54px,6.4vw,104px) !important;
+  line-height:1.0 !important;
+  letter-spacing:-.028em !important;
+}
+html body#lpRoot#lpRoot[id][id] h3,
+html body#lpRoot#lpRoot[id][id] h4{ font-weight:400 !important; }
+html body#lpRoot#lpRoot[id][id] b,
+html body#lpRoot#lpRoot[id][id] strong{ font-weight:600 !important; }
+
+/* ---------- R2.2 · TRUSTPILOT, THE REAL MARK -------------------------- */
+html body#lpRoot#lpRoot[id][id] .pdp-tp-pill{
+  padding:14px 22px !important;
+  gap:14px !important;
+  background:rgba(6,18,40,.62) !important;
+  border:1px solid rgba(255,255,255,.28) !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-tp-stars{ display:inline-flex !important; gap:3px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-tp-stars svg{ width:28px !important; height:28px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-tp-stars svg rect{ fill:#00B67A !important; }
+html body#lpRoot#lpRoot[id][id] .lla-tp-stars svg path{ fill:#FFFFFF !important; }
+html body#lpRoot#lpRoot[id][id] .lla-tp-brand{ display:inline-flex !important; align-items:center !important; gap:7px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-tp-brand svg{ width:26px !important; height:26px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-tp-brand svg path:first-child{ fill:#00B67A !important; }
+html body#lpRoot#lpRoot[id][id] .lla-tp-brand svg path:last-child{ fill:#005128 !important; }
+/* the wordmark and rating were dark ink on a dark hero — unreadable */
+html body#lpRoot#lpRoot[id][id] .lla-tp-brand b,
+html body#lpRoot#lpRoot[id][id] .lla-tp-text,
+html body#lpRoot#lpRoot[id][id] .lla-tp-text b{
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  font-size:19px !important;
+  font-weight:600 !important;
+  text-shadow:0 1px 12px rgba(0,0,0,.6) !important;
+}
+
+/* ---------- R2.3 · HERO ----------------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .pdp-cine-h1{
+  font-weight:400 !important;
+  font-size:clamp(58px,7.4vw,118px) !important;
+  line-height:.96 !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-sub{
+  font-weight:400 !important;
+  font-size:clamp(22px,1.86vw,30px) !important;
+  line-height:1.52 !important;
+  max-width:24ch !important;
+  color:rgba(238,246,255,.94) !important;
+  -webkit-text-fill-color:rgba(238,246,255,.94) !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-sub strong{ font-weight:600 !important; }
+html body#lpRoot#lpRoot[id][id] .pdp-cine-meta span{
+  font-size:16px !important;
+  letter-spacing:.02em !important;
+  text-transform:none !important;
+  color:rgba(206,228,255,.94) !important;
+  -webkit-text-fill-color:rgba(206,228,255,.94) !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-guarantee{ font-size:18px !important; }
+html body#lpRoot#lpRoot[id][id] .pdp-cine-wordmark{ width:clamp(230px,20vw,330px) !important; height:auto !important; }
+
+/* ---------- R2.4 · NAV LOGO + CTA SHINE -------------------------------- */
+html body#lpRoot#lpRoot[id][id] .nav-logo-img,
+html body#lpRoot#lpRoot[id][id] .fn-nav-logo img{
+  height:clamp(52px,4.4vw,72px) !important;
+  width:auto !important;
+  max-width:none !important;
+  image-rendering:auto !important;
+  filter:drop-shadow(0 2px 16px rgba(0,110,255,.42)) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-nav-in{ min-height:96px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-nav-links a{ font-size:18px !important; font-weight:500 !important; }
+
+/* every CTA: deeper gradient, real specular sweep, brighter halo */
+html body#lpRoot#lpRoot[id][id] .fn-btn--primary,
+html body#lpRoot#lpRoot[id][id] .fn-btn--onblue,
+html body#lpRoot#lpRoot[id][id] .pdp-cine-cta,
+html body#lpRoot#lpRoot[id][id] .fn-nav-pill,
+html body#lpRoot#lpRoot[id][id] .section-cta-btn,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-cta{
+  position:relative !important;
+  overflow:hidden !important;
+  isolation:isolate !important;
+  font-size:clamp(19px,1.5vw,24px) !important;
+  font-weight:600 !important;
+  padding:clamp(17px,1.5vw,23px) clamp(30px,2.8vw,44px) !important;
+  border-radius:16px !important;
+  background:linear-gradient(180deg,#5AA0FF 0%,#1170F7 42%,#0246C4 100%) !important;
+  border:1px solid rgba(255,255,255,.34) !important;
+  box-shadow:
+    inset 0 1.5px 0 rgba(255,255,255,.62),
+    inset 0 -2px 0 rgba(2,18,52,.42),
+    0 3px 8px rgba(4,32,80,.30),
+    0 20px 44px -14px rgba(17,112,247,.78),
+    0 0 62px -18px rgba(90,160,255,.72) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-btn--primary::after,
+html body#lpRoot#lpRoot[id][id] .fn-btn--onblue::after,
+html body#lpRoot#lpRoot[id][id] .pdp-cine-cta::after,
+html body#lpRoot#lpRoot[id][id] .fn-nav-pill::after,
+html body#lpRoot#lpRoot[id][id] .section-cta-btn::after,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-cta::after{
+  content:"" !important;
+  position:absolute !important;
+  top:-60% !important; bottom:-60% !important; left:-30% !important;
+  width:36% !important;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.58),transparent) !important;
+  transform:skewX(-18deg) !important;
+  pointer-events:none !important;
+  animation:auShine 4.6s ease-in-out infinite !important;
+}
+@keyframes auShine{
+  0%,72%   { left:-34%; opacity:0; }
+  78%      { opacity:1; }
+  96%,100% { left:118%; opacity:0; }
+}
+@media (prefers-reduced-motion:reduce){
+  html body#lpRoot#lpRoot[id][id] .fn-btn--primary::after,
+  html body#lpRoot#lpRoot[id][id] .pdp-cine-cta::after,
+  html body#lpRoot#lpRoot[id][id] .section-cta-btn::after{ animation:none !important; opacity:0 !important; }
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-ghost{
+  font-size:clamp(18px,1.4vw,22px) !important;
+  padding:clamp(16px,1.4vw,22px) clamp(26px,2.4vw,38px) !important;
+  border-radius:16px !important;
+}
+
+/* ---------- R2.5 · FACULTY FILMS: bigger frames, bigger type ---------- */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .lla-films .container{ max-width:1560px !important; }
+  html body#lpRoot#lpRoot[id][id] .lla-films-grid{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:clamp(28px,2.6vw,48px) !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .lla-film{ padding:16px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-film video{
+  width:100% !important;
+  aspect-ratio:16 / 9 !important;
+  height:auto !important;
+  object-fit:cover !important;
+  border-radius:18px !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-film figcaption{ padding:20px 8px 8px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-film figcaption b{ font-size:clamp(25px,2.1vw,34px) !important; }
+html body#lpRoot#lpRoot[id][id] .lla-film figcaption span{ font-size:clamp(17px,1.3vw,20px) !important; display:block !important; margin-top:6px !important; }
+
+/* ---------- R2.6 · SIX PILLARS: real footage, bigger, six colours ----- */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .lp-learn--tight .lp-learn-rows{
+    display:grid !important;
+    grid-template-columns:repeat(3,1fr) !important;
+    gap:clamp(22px,2vw,34px) !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .lp-lrow-media{ height:clamp(240px,19vw,330px) !important; }
+}
+html body#lpRoot#lpRoot[id][id] .lp-lrow-media video,
+html body#lpRoot#lpRoot[id][id] .lp-lrow-media .lp-lrow-fallback{
+  width:100% !important; height:100% !important; object-fit:cover !important;
+}
+/* the video sits above the still, so the footage is what you see */
+html body#lpRoot#lpRoot[id][id] .lp-lrow-media video{ position:relative !important; z-index:2 !important; display:block !important; }
+html body#lpRoot#lpRoot[id][id] .lp-lrow-media .lp-lrow-fallback{ position:absolute !important; inset:0 !important; z-index:1 !important; }
+html body#lpRoot#lpRoot[id][id] .lp-lrow-body{ padding:clamp(22px,2vw,32px) !important; }
+html body#lpRoot#lpRoot[id][id] .lp-lrow-title{ font-size:clamp(28px,2.3vw,38px) !important; font-weight:400 !important; }
+html body#lpRoot#lpRoot[id][id] .lp-lrow-pay{ font-size:clamp(17px,1.24vw,20px) !important; line-height:1.58 !important; }
+html body#lpRoot#lpRoot[id][id] .lp-lrow-num{ font-size:clamp(30px,2.4vw,42px) !important; }
+
+/* one hue per pillar */
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *:nth-child(1){ --a1:#1FC08C; --a2:#7BEBD6; --g1:#7BEBD6; --g3:#C8FFEF; }
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *:nth-child(2){ --a1:#5B7BFF; --a2:#A9C6FF; --g1:#A9C6FF; --g3:#DCE7FF; }
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *:nth-child(3){ --a1:#F0A94A; --a2:#FFD79A; --g1:#FFD79A; --g3:#FFEBC9; }
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *:nth-child(4){ --a1:#8C6BFF; --a2:#C7B6FF; --g1:#C7B6FF; --g3:#E7DEFF; }
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *:nth-child(5){ --a1:#37C9E8; --a2:#9BE9F8; --g1:#9BE9F8; --g3:#D3F6FC; }
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *:nth-child(6){ --a1:#FF7E9D; --a2:#FFB9CB; --g1:#FFB9CB; --g3:#FFDDE6; }
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *{
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--a1) 15%, transparent) 0%, transparent 46%),
+    linear-gradient(168deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.035) 100%) !important;
+  border:1px solid color-mix(in srgb, var(--a1) 32%, transparent) !important;
+}
+html body#lpRoot#lpRoot[id][id] .lp-learn-rows > *::before{ opacity:.85 !important; }
+
+/* ---------- R2.7 · SYLLABUS: a colour per phase ----------------------- */
+html body#lpRoot#lpRoot[id][id] .curriculum-tab[data-phase-tab="1"],
+html body#lpRoot#lpRoot[id][id] .phase-block[data-phase="1"]{ --ph:#0B2A63; --ph-lt:#3E76D8; }
+html body#lpRoot#lpRoot[id][id] .curriculum-tab[data-phase-tab="2"],
+html body#lpRoot#lpRoot[id][id] .phase-block[data-phase="2"]{ --ph:#1E4FD8; --ph-lt:#6C9BFF; }
+html body#lpRoot#lpRoot[id][id] .curriculum-tab[data-phase-tab="3"],
+html body#lpRoot#lpRoot[id][id] .phase-block[data-phase="3"]{ --ph:#0C8A70; --ph-lt:#39C9A6; }
+html body#lpRoot#lpRoot[id][id] .curriculum-tab[data-phase-tab="4"],
+html body#lpRoot#lpRoot[id][id] .phase-block[data-phase="4"]{ --ph:#5B45C7; --ph-lt:#A48CFF; }
+
+html body#lpRoot#lpRoot[id][id] .curriculum-tab{
+  padding:20px 24px !important;
+  border-color:color-mix(in srgb, var(--ph) 26%, transparent) !important;
+  background:linear-gradient(180deg,#FFFFFF, color-mix(in srgb, var(--ph) 7%, #FFFFFF)) !important;
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-tab.is-active{
+  background:linear-gradient(180deg, var(--ph) 0%, color-mix(in srgb, var(--ph) 78%, #000000) 100%) !important;
+  border-color:var(--ph) !important;
+  box-shadow:0 22px 48px -22px color-mix(in srgb, var(--ph) 80%, transparent), inset 0 1px 0 rgba(255,255,255,.28) !important;
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-tab.is-active .curriculum-tab-name,
+html body#lpRoot#lpRoot[id][id] .curriculum-tab.is-active .curriculum-tab-meta,
+html body#lpRoot#lpRoot[id][id] .curriculum-tab.is-active .curriculum-tab-num{
+  color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important; background:none !important;
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-tab-name{ font-size:clamp(20px,1.5vw,26px) !important; }
+html body#lpRoot#lpRoot[id][id] .curriculum-tab-meta{ font-size:16px !important; }
+html body#lpRoot#lpRoot[id][id] .curriculum-tab-num{
+  font-size:26px !important;
+  color:var(--ph) !important; -webkit-text-fill-color:var(--ph) !important; background:none !important;
+}
+/* the phase header and its session cards carry the phase colour */
+html body#lpRoot#lpRoot[id][id] .phase-block-header{
+  background:linear-gradient(120deg, var(--ph) 0%, color-mix(in srgb, var(--ph) 70%, #04102A) 100%) !important;
+  border-radius:20px 20px 0 0 !important;
+  padding:26px clamp(24px,2.4vw,38px) !important;
+}
+html body#lpRoot#lpRoot[id][id] .phase-block-name{ font-size:clamp(30px,2.8vw,46px) !important; color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important; }
+html body#lpRoot#lpRoot[id][id] .phase-block-label{ font-size:17px !important; color:rgba(255,255,255,.82) !important; -webkit-text-fill-color:rgba(255,255,255,.82) !important; }
+html body#lpRoot#lpRoot[id][id] .phase-block .curriculum-item{
+  background:linear-gradient(180deg,#FFFFFF 0%, color-mix(in srgb, var(--ph) 8%, #FFFFFF) 100%) !important;
+  border:1px solid color-mix(in srgb, var(--ph) 26%, transparent) !important;
+  border-left:5px solid var(--ph) !important;
+}
+html body#lpRoot#lpRoot[id][id] .phase-block .curriculum-num{
+  color:var(--ph) !important; -webkit-text-fill-color:var(--ph) !important; background:none !important;
+  font-size:24px !important;
+}
+html body#lpRoot#lpRoot[id][id] .phase-block .curriculum-trigger h3{ font-size:clamp(19px,1.42vw,24px) !important; font-weight:500 !important; }
+html body#lpRoot#lpRoot[id][id] .phase-block .curriculum-section-label{ color:var(--ph) !important; -webkit-text-fill-color:var(--ph) !important; font-size:17px !important; }
+html body#lpRoot#lpRoot[id][id] .phase-block .curriculum-chevron{ color:var(--ph) !important; }
+
+/* ---------- R2.8 · PARTNER LOGO STRIP: black ground, faster ----------- */
+html body#lpRoot#lpRoot[id][id] .trust-strip{
+  background:#000000 !important;
+  padding:clamp(26px,2.4vw,40px) 0 !important;
+  border-top:1px solid rgba(255,255,255,.10) !important;
+  border-bottom:1px solid rgba(255,255,255,.10) !important;
+}
+html body#lpRoot#lpRoot[id][id] .trust-strip-track{
+  animation-duration:13s !important;
+  gap:clamp(56px,5vw,96px) !important;
+}
+html body#lpRoot#lpRoot[id][id] .trust-logo{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  min-width:0 !important;
+  height:auto !important;
+  padding:0 !important;
+}
+html body#lpRoot#lpRoot[id][id] .trust-logo-img{
+  max-height:none !important;
+  height:clamp(52px,4.6vw,76px) !important;
+  width:auto !important;
+  object-fit:contain !important;
+  filter:brightness(0) invert(1) !important;
+  opacity:.96 !important;
+}
+html body#lpRoot#lpRoot[id][id] .pressx-track{ animation-duration:15s !important; }
+
+/* ---------- R2.9 · POWERED BY ETEACHER: real scale -------------------- */
+html body#lpRoot#lpRoot[id][id] .about-powered-label{ font-size:clamp(20px,1.6vw,26px) !important; }
+html body#lpRoot#lpRoot[id][id] .about-powered-logo-img{
+  height:clamp(72px,7vw,124px) !important;
+  width:auto !important;
+  max-width:none !important;
+}
+html body#lpRoot#lpRoot[id][id] .about-powered-desc{ font-size:clamp(19px,1.4vw,23px) !important; max-width:70ch !important; }
+html body#lpRoot#lpRoot[id][id] .hero-powered-stats li strong{ font-size:clamp(40px,3.6vw,62px) !important; }
+html body#lpRoot#lpRoot[id][id] .hero-powered-stats li span{ font-size:17px !important; }
+
+/* ---------- R2.10 · FACULTY: photo smaller, words bigger -------------- */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .teachers-grid-live{
+    grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+    gap:clamp(18px,1.7vw,26px) !important;
+  }
+  /* out of the overlay, into an honest stacked card */
+  html body#lpRoot#lpRoot[id][id] a.teacher-card-live,
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live{
+    aspect-ratio:auto !important;
+    display:flex !important;
+    flex-direction:column !important;
+    height:100% !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo,
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo--square{
+    position:relative !important;
+    inset:auto !important;
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio:4 / 3 !important;
+    flex:0 0 auto !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo::after,
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo::before{
+    background:linear-gradient(180deg,transparent 58%,rgba(6,18,40,.55) 100%) !important;
+    mix-blend-mode:normal !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-body{
+    position:relative !important;
+    inset:auto !important;
+    flex:1 1 auto !important;
+    padding:22px 22px 26px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-name{ font-size:clamp(24px,1.9vw,32px) !important; font-weight:400 !important; }
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-role{ font-size:clamp(16px,1.15vw,19px) !important; }
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-bio{ font-size:clamp(16px,1.15vw,19px) !important; line-height:1.55 !important; }
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo img{ filter:saturate(1.06) contrast(1.03) !important; }
+
+/* ---------- R2.11 · WHY DIFFERENT: four colours, stacked planes ------- */
+html body#lpRoot#lpRoot[id][id] .pdp-value-card[data-vc="1"]{ --vc:#2F7BFF; --vc2:#8FC4FF; }
+html body#lpRoot#lpRoot[id][id] .pdp-value-card[data-vc="2"]{ --vc:#12B58F; --vc2:#7BEBD6; }
+html body#lpRoot#lpRoot[id][id] .pdp-value-card[data-vc="3"]{ --vc:#E0A03C; --vc2:#FFD79A; }
+html body#lpRoot#lpRoot[id][id] .pdp-value-card[data-vc="4"]{ --vc:#7A5CFF; --vc2:#C7B6FF; }
+html body#lpRoot#lpRoot[id][id] .pdp-value-card{
+  position:relative !important;
+  padding:clamp(28px,2.4vw,40px) !important;
+  border-radius:24px !important;
+  background:
+    linear-gradient(165deg, color-mix(in srgb, var(--vc) 30%, transparent) 0%, transparent 52%),
+    linear-gradient(170deg,rgba(255,255,255,.11) 0%,rgba(255,255,255,.04) 100%) !important;
+  border:1px solid color-mix(in srgb, var(--vc) 44%, transparent) !important;
+  box-shadow:
+    0 2px 4px rgba(0,0,0,.34),
+    0 18px 40px -18px rgba(0,0,0,.6),
+    0 48px 96px -46px color-mix(in srgb, var(--vc) 88%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.22) !important;
+  transform:translateZ(0) !important;
+}
+/* the stacked planes behind each card that give it real thickness */
+html body#lpRoot#lpRoot[id][id] .pdp-value-card::after{
+  content:"" !important;
+  position:absolute !important;
+  left:14px !important; right:14px !important; bottom:-11px !important; top:auto !important;
+  height:22px !important;
+  border-radius:0 0 22px 22px !important;
+  background:linear-gradient(180deg, color-mix(in srgb, var(--vc) 46%, transparent), transparent) !important;
+  filter:blur(.5px) !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-value-card h3{
+  font-size:clamp(27px,2.1vw,37px) !important;
+  font-weight:400 !important;
+  color:color-mix(in srgb, var(--vc2) 82%, #FFFFFF) !important;
+  -webkit-text-fill-color:color-mix(in srgb, var(--vc2) 82%, #FFFFFF) !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-value-card p{ font-size:clamp(17px,1.28vw,21px) !important; }
+
+/* ---------- R2.12 · FIVE STEPS: five colours -------------------------- */
+html body#lpRoot#lpRoot[id][id] .fn-loop-step:nth-child(1){ --st:#1E4FD8; --st2:#8FC4FF; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step:nth-child(2){ --st:#0C8A70; --st2:#7BEBD6; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step:nth-child(3){ --st:#5B45C7; --st2:#C7B6FF; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step:nth-child(4){ --st:#C2701C; --st2:#FFD79A; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step:nth-child(5){ --st:#B3325E; --st2:#FFB9CB; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step{
+  padding:clamp(26px,2.3vw,38px) !important;
+  border-radius:22px !important;
+  background:linear-gradient(178deg,#FFFFFF 0%, color-mix(in srgb, var(--st) 11%, #FFFFFF) 100%) !important;
+  border:1px solid color-mix(in srgb, var(--st) 34%, transparent) !important;
+  border-top:5px solid var(--st) !important;
+  box-shadow:0 2px 5px rgba(6,18,40,.07), 0 26px 54px -26px color-mix(in srgb, var(--st) 70%, transparent) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-loop-step b{
+  background:linear-gradient(160deg, var(--st), color-mix(in srgb, var(--st) 62%, #000)) !important;
+  -webkit-background-clip:border-box !important;
+  background-clip:border-box !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  color:#FFFFFF !important;
+  font-size:26px !important;
+  width:64px !important; height:64px !important;
+  display:inline-flex !important; align-items:center !important; justify-content:center !important;
+  border-radius:18px !important;
+  box-shadow:0 12px 26px -12px color-mix(in srgb, var(--st) 88%, transparent) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-loop-step h4{
+  font-size:clamp(23px,1.8vw,31px) !important;
+  font-weight:400 !important;
+  color:var(--st) !important; -webkit-text-fill-color:var(--st) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-loop-step p{ font-size:clamp(17px,1.26vw,20px) !important; }
+
+/* ---------- R2.13 · TESTIMONIALS -------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .quote-card:nth-child(1){ --a1:#6E63FF; --a2:#C7B6FF; }
+html body#lpRoot#lpRoot[id][id] .quote-card:nth-child(2){ --a1:#12B58F; --a2:#7BEBD6; }
+html body#lpRoot#lpRoot[id][id] .quote-card:nth-child(3){ --a1:#37A6E8; --a2:#9BE9F8; }
+html body#lpRoot#lpRoot[id][id] .quote-card{
+  padding:clamp(28px,2.4vw,40px) !important;
+  border:1px solid color-mix(in srgb, var(--a1) 40%, transparent) !important;
+  background:
+    linear-gradient(168deg, color-mix(in srgb, var(--a1) 20%, transparent) 0%, transparent 55%),
+    linear-gradient(168deg,rgba(255,255,255,.09),rgba(255,255,255,.03)) !important;
+}
+html body#lpRoot#lpRoot[id][id] .quote-text{ font-size:clamp(19px,1.5vw,25px) !important; font-weight:400 !important; }
+html body#lpRoot#lpRoot[id][id] .quote-meta{ font-size:16px !important; }
+html body#lpRoot#lpRoot[id][id] .quote-mark{ font-size:96px !important; }
+
+/* ---------- R2.14 · THE PRICE FOLD, rebuilt --------------------------- */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .fn-offer-grid{
+    display:grid !important;
+    grid-template-columns:1.15fr .85fr !important;
+    gap:clamp(28px,2.6vw,48px) !important;
+    align-items:start !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .fn-stack{ border-radius:26px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-head{ padding:24px clamp(24px,2.2vw,36px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-head b{ font-size:22px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-head span{ font-size:18px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-row{ padding:clamp(22px,2vw,30px) clamp(24px,2.2vw,36px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-txt h4{ font-size:clamp(21px,1.6vw,27px) !important; font-weight:500 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-txt p{ font-size:clamp(16.5px,1.2vw,19px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-val{ font-size:clamp(16px,1.14vw,18px) !important; white-space:nowrap !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-total{ padding:clamp(28px,2.4vw,40px) clamp(24px,2.2vw,36px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-total span{ font-size:19px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-total b{ font-size:clamp(56px,5vw,82px) !important; font-weight:400 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-total small{ font-size:17px !important; }
+
+/* the card itself: deep navy and gold, not another white box */
+html body#lpRoot#lpRoot[id][id] .fn-pricecard{
+  background:
+    radial-gradient(600px 340px at 84% -8%, rgba(233,203,146,.22), transparent 62%),
+    linear-gradient(172deg,#0C2148 0%,#071630 58%,#050F22 100%) !important;
+  border:1px solid rgba(233,203,146,.38) !important;
+  border-radius:28px !important;
+  padding:clamp(30px,2.6vw,46px) !important;
+  box-shadow:
+    0 3px 8px rgba(0,0,0,.4),
+    0 40px 90px -34px rgba(0,0,0,.8),
+    0 0 120px -50px rgba(233,203,146,.55),
+    inset 0 1px 0 rgba(255,255,255,.16) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard::before{ opacity:.75 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-tag{ font-size:19px !important; color:#E9CB92 !important; -webkit-text-fill-color:#E9CB92 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard h3{
+  font-size:clamp(34px,2.9vw,50px) !important; font-weight:400 !important;
+  color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-sub{ font-size:19px !important; color:rgba(214,232,255,.82) !important; -webkit-text-fill-color:rgba(214,232,255,.82) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b{
+  font-size:clamp(88px,8.4vw,152px) !important;
+  font-weight:400 !important;
+  background-image:linear-gradient(150deg in oklab,#FFF3DA 0%,#E9CB92 46%,#C9A45E 100%) !important;
+  -webkit-background-clip:text !important; background-clip:text !important;
+  -webkit-text-fill-color:transparent !important; color:transparent !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b sup{
+  -webkit-text-fill-color:#E9CB92 !important; color:#E9CB92 !important;
+  font-size:.36em !important; top:-.78em !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price span{ font-size:26px !important; color:rgba(226,238,255,.78) !important; -webkit-text-fill-color:rgba(226,238,255,.78) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-anchor,
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-anchor b{ font-size:19px !important; color:rgba(228,240,255,.9) !important; -webkit-text-fill-color:rgba(228,240,255,.9) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard .lp-classfact{
+  background:linear-gradient(180deg,rgba(233,203,146,.16),rgba(233,203,146,.05)) !important;
+  border:1px solid rgba(233,203,146,.4) !important;
+  padding:20px !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard .lp-classfact b{ font-size:20px !important; color:#F3DCB2 !important; -webkit-text-fill-color:#F3DCB2 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard .lp-classfact span{ font-size:17px !important; color:rgba(226,238,255,.82) !important; -webkit-text-fill-color:rgba(226,238,255,.82) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard .lp-classfact .lp-ico{ color:#E9CB92 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-list li{ font-size:18px !important; padding:9px 0 !important; color:rgba(230,242,255,.92) !important; -webkit-text-fill-color:rgba(230,242,255,.92) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-list li svg{ color:#E9CB92 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-sec{ font-size:18px !important; color:#CFE4FF !important; -webkit-text-fill-color:#CFE4FF !important; }
+html body#lpRoot#lpRoot[id][id] .fn-pricecard .fn-microtrust span{ color:rgba(214,232,255,.8) !important; -webkit-text-fill-color:rgba(214,232,255,.8) !important; font-size:16px !important; }
+
+/* ---------- R2.15 · CGM: three shots, not one ------------------------- */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-images{
+    display:grid !important;
+    grid-template-columns:1.4fr 1fr 1fr !important;
+    gap:18px !important;
+    align-items:stretch !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-images::before,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-images::after{
+  content:"" !important;
+  display:block !important;
+  border-radius:var(--au-r-lg) !important;
+  min-height:260px !important;
+  background-size:cover !important;
+  background-position:center !important;
+  border:1px solid rgba(255,255,255,.14) !important;
+  box-shadow:var(--au-lift-dark-2) !important;
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-images::before{ background-image:url("assets/cgm/lingo-2.jpg") !important; }
+html body#lpRoot#lpRoot[id][id] .cgm-fold-images::after{ background-image:url("assets/cgm/lingo-6.jpg") !important; }
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet span{ font-size:clamp(17px,1.28vw,21px) !important; }
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet{ padding:20px 22px !important; }
+
+/* ---------- R2.16 · PRESS: real articles with pictures ---------------- */
+html body#lpRoot#lpRoot[id][id] .lla-press-card{
+  display:flex !important;
+  flex-direction:column !important;
+  padding:0 !important;
+  overflow:hidden !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-press-card::after{
+  content:"" !important;
+  display:block !important;
+  order:-1 !important;
+  width:100% !important;
+  aspect-ratio:16 / 10 !important;
+  background-size:cover !important;
+  background-position:center 22% !important;
+  border-bottom:1px solid rgba(14,42,88,.10) !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-press-card:nth-child(1)::after{ background-image:url("assets/instructors/julie-gibson-clark.jpg") !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-card:nth-child(2)::after{ background-image:url("assets/mc-zoom-40-logos.jpg") !important; background-position:center !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-card:nth-child(3)::after{ background-image:url("assets/eteacher-wordmark-only.png") !important; background-size:64% auto !important; background-repeat:no-repeat !important; background-color:#0A1C3F !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-card:nth-child(4)::after{ background-image:url("assets/mc-zoom-chat.jpg") !important; background-position:center !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-outlet,
+html body#lpRoot#lpRoot[id][id] .lla-press-title,
+html body#lpRoot#lpRoot[id][id] .lla-press-link{ padding-left:clamp(20px,1.8vw,28px) !important; padding-right:clamp(20px,1.8vw,28px) !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-outlet{ padding-top:22px !important; font-size:20px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-title{ font-size:clamp(20px,1.5vw,25px) !important; font-weight:400 !important; margin:10px 0 14px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-link{ padding-bottom:24px !important; font-size:18px !important; }
+
+/* ---------- R2.17 · CLOSING FOLD: drop the icon tiles + duplicate shot */
+html body#lpRoot#lpRoot[id][id] .fn-close .fn-closefacts,
+html body#lpRoot#lpRoot[id][id] .fn-close .lla-zoom-shot{ display:none !important; }
+
+/* the live-class mockup belongs near the top, not in a fold of its own */
+html body#lpRoot#lpRoot[id][id] > *{ order:50; }
+html body#lpRoot#lpRoot[id][id]{ display:flex !important; flex-direction:column !important; }
+html body#lpRoot#lpRoot[id][id] > header.fn-nav{ order:1; }
+html body#lpRoot#lpRoot[id][id] > #hero{ order:3; }
+html body#lpRoot#lpRoot[id][id] > #faculty-films{ order:4; }
+html body#lpRoot#lpRoot[id][id] > #whatitis{ order:5; }
+html body#lpRoot#lpRoot[id][id] > #learn{ order:6; }
+html body#lpRoot#lpRoot[id][id] > #syllabus{ order:7; }
+html body#lpRoot#lpRoot[id][id] > .pdp-press{ order:8; }
+html body#lpRoot#lpRoot[id][id] > #institution{ order:9; }
+html body#lpRoot#lpRoot[id][id] > #teachers{ order:10; }
+html body#lpRoot#lpRoot[id][id] > .testimonials{ order:11; }
+html body#lpRoot#lpRoot[id][id] > #offer{ order:12; }
+html body#lpRoot#lpRoot[id][id] > #mechanism{ order:13; }
+html body#lpRoot#lpRoot[id][id] > #cgm{ order:14; }
+html body#lpRoot#lpRoot[id][id] > #journal{ order:15; }
+html body#lpRoot#lpRoot[id][id] > #faq{ order:16; }
+html body#lpRoot#lpRoot[id][id] > #enroll{ order:17; }
+html body#lpRoot#lpRoot[id][id] > .fn-secondary{ order:18; }
+html body#lpRoot#lpRoot[id][id] > #lead-gen{ order:19; }
+html body#lpRoot#lpRoot[id][id] > #offer-final{ order:20; }
+html body#lpRoot#lpRoot[id][id] > footer.footer{ order:21; }
+
+/* ---------- R2.18 · MOBILE: every card row swipes --------------------- */
+@media (max-width:820px){
+  html body#lpRoot#lpRoot[id][id] .lla-films-grid,
+  html body#lpRoot#lpRoot[id][id] .fn-offer-grid,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-bullets,
+  html body#lpRoot#lpRoot[id][id] .hero-powered-stats,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-images{
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    scroll-snap-type:x mandatory !important;
+    -webkit-overflow-scrolling:touch;
+    gap:14px !important;
+    padding:6px 18px 18px !important;
+    margin:0 -18px !important;
+    width:calc(100% + 36px) !important;
+    max-width:none !important;
+    grid-template-columns:none !important;
+    scrollbar-width:none;
+  }
+  html body#lpRoot#lpRoot[id][id] .lla-films-grid::-webkit-scrollbar,
+  html body#lpRoot#lpRoot[id][id] .fn-offer-grid::-webkit-scrollbar,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-bullets::-webkit-scrollbar,
+  html body#lpRoot#lpRoot[id][id] .hero-powered-stats::-webkit-scrollbar,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-images::-webkit-scrollbar{ display:none; }
+  html body#lpRoot#lpRoot[id][id] .lla-films-grid > *,
+  html body#lpRoot#lpRoot[id][id] .fn-offer-grid > *,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-bullets > *,
+  html body#lpRoot#lpRoot[id][id] .hero-powered-stats > *{
+    flex:0 0 86% !important;
+    width:86% !important;
+    max-width:86% !important;
+    min-width:0 !important;
+    scroll-snap-align:center !important;
+    margin:0 !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-images::before,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-images::after,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-images > *{
+    flex:0 0 86% !important; width:86% !important; scroll-snap-align:center !important; min-height:230px !important;
+  }
+  /* mobile type: still large, still one face */
+  html body#lpRoot#lpRoot[id][id] .section-title,
+  html body#lpRoot#lpRoot[id][id] .fn-h2,
+  html body#lpRoot#lpRoot[id][id] .pdp-value-h2,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-title,
+  html body#lpRoot#lpRoot[id][id] .fn-close h2{ font-size:clamp(38px,10.4vw,54px) !important; }
+  html body#lpRoot#lpRoot[id][id] .pdp-cine-h1{ font-size:clamp(42px,11.6vw,64px) !important; }
+  html body#lpRoot#lpRoot[id][id] .pdp-cine-sub{ font-size:20px !important; max-width:none !important; }
+  html body#lpRoot#lpRoot[id][id] p,
+  html body#lpRoot#lpRoot[id][id] li{ font-size:18px !important; }
+  html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b{ font-size:96px !important; }
+  html body#lpRoot#lpRoot[id][id] .fn-stack-total b{ font-size:56px !important; }
+  html body#lpRoot#lpRoot[id][id] .nav-logo-img,
+  html body#lpRoot#lpRoot[id][id] .fn-nav-logo img{ height:54px !important; }
+}
+
+/* the currency mark sits with the numerals, not above them */
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price{
+  display:flex !important;
+  align-items:baseline !important;
+  gap:6px !important;
+  flex-wrap:nowrap !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b{
+  display:inline-flex !important;
+  align-items:baseline !important;
+  line-height:.9 !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b sup{
+  position:static !important;
+  top:auto !important;
+  font-size:.3em !important;
+  align-self:flex-start !important;
+  margin-top:.34em !important;
+  margin-right:.04em !important;
+  vertical-align:baseline !important;
 }
 
 </style>

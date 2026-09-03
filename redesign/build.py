@@ -18,6 +18,21 @@ html = src.read_text(encoding="utf-8")
 # drop a previous build of this layer so the script is idempotent
 html = re.sub(r'\n?<style id="lla-aurora-4d">.*?</style>', "", html, flags=re.S)
 
+# Copy changes, made only where explicitly asked for. Everything else in
+# the document is left byte for byte as it is.
+TEXT_PATCHES = [
+    # Julie Gibson Clark's billing, per the client's wording.
+    ("Founding Faculty, ranked #2 on the Rejuvenation Olympics",
+     "2nd Slowest Aging Woman on Earth, Founding Faculty"),
+    ("Founding Faculty, Ranked #2 Rejuvenation Olympics",
+     "2nd Slowest Aging Woman on Earth, Founding Faculty"),
+]
+for old, new in TEXT_PATCHES:
+    if old in html:
+        html = html.replace(old, new)
+    else:
+        print(f"  note: copy patch not applied, string absent: {old[:44]}...")
+
 block = '\n<style id="lla-aurora-4d">\n' + css + '\n</style>\n'
 marker = "</body>"
 i = html.rfind(marker)
