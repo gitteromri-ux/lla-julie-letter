@@ -39,7 +39,19 @@ def datauri(rel):
 
 
 def main():
-    h = (SITE / "index.html").read_text(encoding="utf-8")
+    # Guard: site/index.html is a copy of the built index.html. If a rebuild
+    # has not been copied across yet, this script would silently package the
+    # previous version — which is exactly how a stale artifact once shipped
+    # with a fix that was already in index.html. Fail loudly instead.
+    built = HERE / "index.html"
+    site_page = SITE / "index.html"
+    if built.is_file() and site_page.read_bytes() != built.read_bytes():
+        raise SystemExit(
+            f"ABORT: {site_page} is out of date with {built}.\n"
+            f"Run:  python3 build.py && cp index.html site/index.html && python3 build_artifact.py"
+        )
+
+    h = site_page.read_text(encoding="utf-8")
 
     def inline_css(m):
         href = m.group(1).split("?")[0]
