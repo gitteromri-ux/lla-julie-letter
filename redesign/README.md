@@ -27,6 +27,8 @@ No fold was removed, reordered or renamed.
 | `index.src.html` | the live page, unmodified, kept as the build input |
 | `index.html` | the built page: `index.src.html` + the layer |
 | `build.py` | rebuilds `index.html`; idempotent |
+| `site/` | deployable static copy (see `site/README.md`) |
+| `build_artifact.py` | folds `site/` into one self-contained HTML file |
 
 Rebuild after editing the CSS:
 
@@ -75,3 +77,17 @@ Both were already live, and both are repaired in CSS only:
 
 The admissions form's labels were also near-invisible pale blue on white;
 they are darkened. Colour only — no field, name, order or behaviour changed.
+
+## One-file build
+
+`build_artifact.py` folds `site/` into a single HTML file for hosts that can
+only serve one file. It inlines the stylesheets, the scripts and every image
+as a data URI, drops GTM, and lifts the document into a `<div id="lpRoot">`
+because such hosts supply their own `<html>`/`<head>`/`<body>`. Videos stay
+as relative refs and fall back to their inlined posters.
+
+The output is gitignored: it is derived, and 7.5 MB.
+
+```
+python3 build_artifact.py             # site/ -> preview-artifact.html
+```
