@@ -21,6 +21,13 @@ html = re.sub(r'\n?<style id="lla-aurora-4d">.*?</style>', "", html, flags=re.S)
 # Copy changes, made only where explicitly asked for. Everything else in
 # the document is left byte for byte as it is.
 TEXT_PATCHES = [
+    # eTeacher mark: the exact file longevitylifeacademy.com uses in its fold.
+    ('src="assets/eteacher-wordmark-only.png"', 'src="assets/e-teacher-logo.png"'),
+    # Hero standfirst: break after "biology," so the block squares off under the headline.
+    ("built around your biology, your numbers,", "built around your biology,<br>your numbers,"),
+    # CGM fold headline, per the client's wording.
+    ("Your Abbott Lingo ships<br><em>free, before lesson five.</em>",
+     "Free CGM from Abbott Lingo.<br><em>Your own biodata, monitored.</em>"),
     # Julie Gibson Clark's billing, per the client's wording.
     ("Founding Faculty, ranked #2 on the Rejuvenation Olympics",
      "2nd Slowest Aging Woman on Earth, Founding Faculty"),
@@ -35,6 +42,7 @@ for old, new in TEXT_PATCHES:
 
 band = ('<section class="lla-enroll-band" aria-label="Enroll">'
         '<a href="checkout.html" class="lla-enroll-band-cta" data-fn-cta="band">Enroll now</a>'
+        '<p class="lla-enroll-band-note">$279 a month. 18 live sessions, the Abbott Lingo CGM shipped free, your written protocol. 14-day guarantee.</p>'
         '</section>\n')
 html = html.replace('<section class="pdp-press pressx"', band + '<section class="pdp-press pressx"', 1)
 
