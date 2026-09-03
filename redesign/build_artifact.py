@@ -1,3 +1,5 @@
+import re
+import pathlib
 #!/usr/bin/env python3
 """
 Build a single self-contained HTML file from site/, for hosts that can only
@@ -103,6 +105,18 @@ def main():
     out = out.replace("html body#lpRoot#lpRoot[id][id]", "html #lpRoot#lpRoot[id][id]")
     out = re.sub(r"<title>.*?</title>", "<title>LLA Aurora Redesign</title>", out, count=1, flags=re.S)
 
+    # background images referenced from CSS url(assets/...) — the CGM plates
+    # and press cards were empty white boxes in the preview without this
+    import base64 as _b64
+    def _css_url(m):
+        rel = m.group(1)
+        for base in (SITE, pathlib.Path("/home/user/lla-course-checkout")):
+            f = base / rel
+            if f.is_file():
+                mime = {"jpg":"image/jpeg","jpeg":"image/jpeg","png":"image/png","svg":"image/svg+xml"}.get(f.suffix[1:].lower(),"application/octet-stream")
+                return 'url("data:%s;base64,%s")' % (mime, _b64.b64encode(f.read_bytes()).decode())
+        return m.group(0)
+    out = re.sub(r'url\(["\']?(assets/[^"\')]+?)["\']?\)', _css_url, out)
     OUT.write_text(out, encoding="utf-8")
     print(f"wrote {OUT.name}  {len(out.encode())/1048576:.1f} MB")
 

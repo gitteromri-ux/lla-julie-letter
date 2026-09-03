@@ -2371,3 +2371,47 @@ html body#lpRoot#lpRoot[id][id] .lla-press-outlet{ font-size:22px !important; }
   html body#lpRoot#lpRoot[id][id] .quote-meta,
   html body#lpRoot#lpRoot[id][id] .fn-microtrust span{ font-size:16px !important; }
 }
+
+/* ================= ROUND 4 — go-live fixes ================= */
+/* press marks strip: black */
+html body#lpRoot#lpRoot[id][id] section.pdp-press{ background:#000 !important; border:0 !important; padding:clamp(28px,2.6vw,44px) 0 !important; }
+html body#lpRoot#lpRoot[id][id] section.pdp-press::before,
+html body#lpRoot#lpRoot[id][id] section.pdp-press::after{ display:none !important; }
+html body#lpRoot#lpRoot[id][id] .pressx-label{ color:rgba(255,255,255,.7) !important; -webkit-text-fill-color:rgba(255,255,255,.7) !important; font-size:20px !important; }
+html body#lpRoot#lpRoot[id][id] .px-mark{ color:#fff !important; -webkit-text-fill-color:#fff !important; font-size:clamp(26px,2.4vw,38px) !important; opacity:1 !important; }
+html body#lpRoot#lpRoot[id][id] .px-mark i{ color:#fff !important; -webkit-text-fill-color:#fff !important; }
+html body#lpRoot#lpRoot[id][id] .px-dot{ background:rgba(255,255,255,.4) !important; }
+/* black enroll band */
+html body#lpRoot#lpRoot[id][id] .lla-enroll-band{ order:7 !important; background:#000 !important; padding:clamp(34px,3.4vw,56px) 24px !important; text-align:center !important; border-top:1px solid rgba(255,255,255,.12) !important; }
+html body#lpRoot#lpRoot[id][id] .lla-enroll-band-cta{
+  display:inline-block !important; font-size:clamp(24px,2vw,32px) !important; font-weight:600 !important; color:#fff !important; -webkit-text-fill-color:#fff !important;
+  padding:clamp(18px,1.6vw,26px) clamp(48px,4.4vw,72px) !important; border-radius:18px !important;
+  background:linear-gradient(180deg,#5AA0FF 0%,#1170F7 42%,#0246C4 100%) !important; border:1px solid rgba(255,255,255,.34) !important;
+  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.6), 0 24px 56px -16px rgba(17,112,247,.9), 0 0 80px -20px rgba(90,160,255,.8) !important; text-decoration:none !important;
+}
+html body#lpRoot#lpRoot[id][id] > .pdp-press{ order:8 !important; }
+/* eTeacher fold: back to the uploaded presentation */
+html body#lpRoot#lpRoot[id][id] .about-powered-brand{ background:none !important; padding:0 !important; box-shadow:none !important; border-radius:0 !important; }
+html body#lpRoot#lpRoot[id][id] .about-powered-logo-img{ height:clamp(72px,7vw,120px) !important; }
+/* Trustpilot: no pill, official mark only */
+html body#lpRoot#lpRoot[id][id] .pdp-tp-pill{ background:none !important; border:0 !important; box-shadow:none !important; padding:0 !important; backdrop-filter:none !important; -webkit-backdrop-filter:none !important; }
+/* nav: pill centred, logo bigger */
+html body#lpRoot#lpRoot[id][id] .fn-nav-in{ display:flex !important; align-items:center !important; min-height:120px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-nav-right{ display:flex !important; align-items:center !important; align-self:center !important; }
+html body#lpRoot#lpRoot[id][id] .fn-nav-pill{ align-self:center !important; margin:0 !important; font-size:20px !important; padding:16px 30px !important; line-height:1 !important; }
+html body#lpRoot#lpRoot[id][id] .nav-logo-img,
+html body#lpRoot#lpRoot[id][id] .fn-nav-logo img{ height:clamp(72px,6vw,100px) !important; }
+/* teachers smaller photo */
+@media (min-width:821px){ html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo, html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo--square{ aspect-ratio:3 / 2 !important; } }
+/* caption under the class mockup */
+html body#lpRoot#lpRoot[id][id] .lla-zoom-shot figcaption{ font-size:clamp(18px,1.4vw,22px) !important; padding:18px 22px !important; }
+/* what you get: bigger, bolder rows */
+html body#lpRoot#lpRoot[id][id] .fn-stack-row{ padding:clamp(28px,2.4vw,36px) clamp(26px,2.4vw,40px) !important; border-left-width:10px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-txt h4{ font-size:clamp(25px,1.9vw,32px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-txt p{ font-size:clamp(18px,1.3vw,21px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-val{ font-size:18px !important; padding:12px 22px !important; }
+/* five steps: more room, bigger type */
+html body#lpRoot#lpRoot[id][id] .fn-loop-step{ padding:clamp(34px,3vw,48px) clamp(26px,2.4vw,36px) !important; border-radius:28px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step h4{ font-size:clamp(27px,2.1vw,36px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step p{ font-size:clamp(18px,1.32vw,21px) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-loop-step b{ width:76px !important; height:76px !important; font-size:30px !important; }

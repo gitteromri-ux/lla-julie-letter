@@ -33,6 +33,11 @@ for old, new in TEXT_PATCHES:
     else:
         print(f"  note: copy patch not applied, string absent: {old[:44]}...")
 
+band = ('<section class="lla-enroll-band" aria-label="Enroll">'
+        '<a href="checkout.html" class="lla-enroll-band-cta" data-fn-cta="band">Enroll now</a>'
+        '</section>\n')
+html = html.replace('<section class="pdp-press pressx"', band + '<section class="pdp-press pressx"', 1)
+
 block = '\n<style id="lla-aurora-4d">\n' + css + '\n</style>\n'
 marker = "</body>"
 i = html.rfind(marker)
