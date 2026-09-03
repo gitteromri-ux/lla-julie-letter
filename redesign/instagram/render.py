@@ -89,7 +89,8 @@ blockquote{margin:0 18px 12px;padding:20px;border-radius:18px;background:rgba(25
 details{margin:0 18px 10px;border-bottom:1px solid rgba(255,255,255,.12);padding:12px 0}summary{font-size:19px;cursor:pointer;list-style:none}summary::after{content:"+";float:right;color:#9FD0FF}details p{margin:10px 0 0;font-size:16.5px;line-height:1.5}
 .foot{margin:28px 18px 0;font:12px Inter,sans-serif;color:rgba(255,255,255,.45);text-align:center}
 '''
-page=f'''<title>LLA Instagram Instant Experience</title>
+page=f'''<meta charset="utf-8">
+<title>LLA Instagram Instant Experience</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Inter:wght@400;500;600&display=swap">
 <style>{css}</style>
 <div class="stage"><div class="topbar"><img src="{data('00-logo.png')}" alt="Longevity Life Academy"><span>Instant Experience · {len(C)} components</span></div>
