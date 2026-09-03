@@ -1,0 +1,357 @@
+[
+ [
+  "Video",
+  {
+   "file": "00-header-julie-v2.mp4",
+   "poster": "00-header-julie-poster.jpg",
+   "alt": "Julie Gibson Clark, 2nd Slowest Aging Woman on Earth, Founding Faculty"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "18 Weeks to Your Own\nLongevity Protocol.\n\nThe longevity course, a guided protocol built around your biology, your numbers, and the daily practice that turns the next decades into your strongest. 18 weekly live classes, an Abbott Lingo CGM shipped free, and your written protocol by week 18.\n\n18 live sessions · Small live classes · CGM included\nTrustpilot 4.6 / 5, 600+ reviews",
+   "style": "hero"
+  }
+ ],
+ [
+  "Button",
+  {
+   "label": "Enroll now",
+   "url": "https://longevitylifeacademy.pages.dev/checkout.html"
+  }
+ ],
+ [
+  "Photo",
+  {
+   "file": "01-hero-cgm.jpg",
+   "alt": "14-day guarantee and you keep the CGM"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Why This Course\nIs Different\n\nA live Longevity Life Academy class on Zoom. Julie Gibson Clark hosting, students on camera, questions answered in real time.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Photo",
+  {
+   "file": "20-class-zoom.jpg",
+   "alt": "A live Longevity Life Academy class on Zoom. Julie Gibson Clark hosting, students on camera, questions answered in real time."
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Live, not recorded.\nEvery session is live with a certified instructor and your classmates. You ask questions in real time. You get real answers. Recordings are available if you miss one, but the live room is where the learning happens.\n\nYour data, your curriculum.\nYou don't memorize facts about glucose or sleep, you watch them move in your own body. CGM readings, lifestyle logs, and food experiments shape every session you attend.\n\nSmall classes, real accountability.\nEight to fifteen people. You'll know your classmates' names and they'll know yours. Peer coaching in the final weeks builds the accountability that keeps the protocol alive.\n\nA written protocol you'll keep.\nThe course ends with a document, your personal longevity blueprint, tested against your body over 18 weeks. It's the one deliverable designed to outlast the course itself.",
+   "style": "cards"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Learn to master six pillars\nof a longer, better life.\n\nThe interconnected systems, nutrition, sleep, movement, supplements and wearables, stress, and your personal protocol, that compound a longer, better life across every decade.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Carousel",
+  {
+   "items": [
+    {
+     "file": "10-pillar-1.jpg",
+     "title": "01  Nutrition",
+     "text": "Turn your kitchen into a medicine cabinet with plant-forward, nutrient-dense food patterns that fight inflammation and drive cellular rejuvenation."
+    },
+    {
+     "file": "10-pillar-2.jpg",
+     "title": "02  Sleep",
+     "text": "Science-backed protocols that rebuild your sleep architecture, the most underutilised longevity lever, regulating cortisol rhythm, HGH secretion and glymphatic clearance."
+    },
+    {
+     "file": "10-pillar-3.jpg",
+     "title": "03  Exercise and Movement",
+     "text": "Build a resilient body through functional strength, Zone 2 endurance and stability, so you extend lifespan and healthspan together."
+    },
+    {
+     "file": "10-pillar-4.jpg",
+     "title": "04  Supplements and Wearables",
+     "text": "NAD+ precursors, omega-3s, D3 with K2, magnesium and the rest deployed against your specific biomarker gaps, never stacked by trend. CGM, HRV and sleep data close the loop."
+    },
+    {
+     "file": "10-pillar-5.jpg",
+     "title": "05  Stress Management",
+     "text": "Autonomic regulation, structured breathwork, deliberate cold exposure and vagal tone training against cortisol dysregulation and rising allostatic load."
+    },
+    {
+     "file": "10-pillar-6.jpg",
+     "title": "06  Your Longevity Protocol",
+     "text": "Your own bloodwork, ApoB, fasting insulin, inflammatory markers, body composition and wearable data become one individualised plan you own and keep iterating."
+    }
+   ],
+   "alt": "Six pillars"
+  }
+ ],
+ [
+  "Button",
+  {
+   "label": "Enroll in 3 clicks",
+   "url": "https://longevitylifeacademy.pages.dev/checkout.html"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Your full syllabus,\nall 18 sessions.\n\nA structured 18-week course from longevity foundations to your personal blueprint, taught live in classes of 8 to 15.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Phase 1, Sessions 1-3  ·  Foundation\n01  Reframing Aging: From Disease Avoidance to Healthspan Design\n02  The Longevity Lens and Baseline Self-Assessment\n03  Metabolic Health: Blood Sugar as Central Signal\n\nPhase 2, Sessions 4-7  ·  Data & Discovery\n01  Glucose Variability & Metabolic Flexibility\n02  continuous glucose monitor: Seeing the Invisible\n03  Nutrition Framework: Inputs vs Responses\n04  Plate Architecture: Protein, Fiber, Processing",
+   "style": "cards"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Phase 3, Sessions 8-13  ·  Lifestyle Systems\n01  Fasting & Meal Timing for Longevity\n02  Gut Health & the Gut-Brain-Glucose Axis\n03  Movement as a Glucose Tool\n04  Sleep, Circadian Rhythm & Overnight Glucose\n05  Stress, Emotions & Non-Food Glucose Spikes\n06  Cardiovascular Longevity: Cardio Fitness, Cholesterol & the #1 Killer\n\nPhase 4, Sessions 14-18  ·  Integration & Blueprint\n01  Blood Testing & Reading Your Numbers\n02  Supplements, Tests & Health Tech Literacy\n03  Social Health, Purpose & Longevity\n04  Personal Longevity Blueprint\n05  Reflection, Integration & the Next 90 Days",
+   "style": "cards"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Taught live by people who\nactually do this.\n\nA faculty of certified specialists, researchers, and protocol designers backed by the most recognized credentialing bodies in the field.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Carousel",
+  {
+   "items": [
+    {
+     "file": "30-faculty-1-natalie.jpg",
+     "title": "Natalie Blackbourne",
+     "text": "Longevity Researcher & Educator\nM.S. Emotional Intelligence with ~20 years in health and wellness. Focuses on neuroscience and cognitive optimization for long-term vitality."
+    },
+    {
+     "file": "30-faculty-2-julie-gibson-clark.jpg",
+     "title": "Julie Gibson Clark",
+     "text": "2nd Slowest Aging Woman on Earth, Founding Faculty\n#2 slowest-aging person in the world on the Rejuvenation Olympics + A leading voice in accessible, evidence-based longevity, and Founding Faculty at Longevity Life Academy."
+    },
+    {
+     "file": "30-faculty-3-courtney.jpg",
+     "title": "Courtney Donofrio",
+     "text": "Integrative Nutrition Health Coach\nIIN-certified founder of EatBiohackLove, based in Amsterdam. Specializes in gut health, hormone balance, and practical biohacking."
+    },
+    {
+     "file": "30-faculty-4-amy.jpg",
+     "title": "Amy Jamieson",
+     "text": "Senior Lecturer, UC Santa Barbara\nM.S. Health Science & Kinesiology, NASM CPT/CES, ACE Health Coach. 25+ years in higher education and a master competitive runner."
+    },
+    {
+     "file": "30-faculty-5-jordan.jpg",
+     "title": "Jordan Lattimore",
+     "text": "Behavioral & Education Specialist\nB.Sc. Psychology, University of Alberta. 12 years in Costa Rica near the Nicoya Blue Zone, 5+ years in behavioral therapy."
+    }
+   ],
+   "alt": "Faculty"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "See who teaches you,\nbefore you enroll.\n\nTwo short films. Julie Gibson Clark on the protocol behind her Rejuvenation Olympics ranking, and Courtney Donofrio on what the course looks like from the inside.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Video",
+  {
+   "file": "05-film-courtney.mp4",
+   "poster": "05-film-courtney-poster.jpg",
+   "alt": "Courtney Donofrio, Integrative Nutrition Coach, LLA Faculty"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "What students say\nafter week 18.\n\n“So happy finding eTeacher Group. They are genuinely concerned that you learn what you want to learn. They listen to what you want to learn and why, and then give thoughtful recommendations. Excellent classes and teachers.”\nTrustpilot, 5 stars, Sept 2025\n\n“Our teacher is patient and kind. She does great. Even when I can't attend a session, the recording helps me catch up, and the materials mean I can learn at a time that's convenient.”\nTrustpilot, 5 stars, May 2025\n\n“At first I was finding logistics difficult, but I got a phone call from a staff member checking in on me and she opened up a clear path forward. I really appreciate that personal touch, staff who stay with students to keep their learning moving.”\nTrustpilot, 4 stars, June 2025",
+   "style": "quotes"
+  }
+ ],
+ [
+  "Button",
+  {
+   "label": "Enroll now",
+   "url": "https://longevitylifeacademy.pages.dev/checkout.html"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "One monthly price.\nEverything included.\n\nYou pay $279 a month. Here is the full list of what that buys, and what each part is worth on its own.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "18 live, instructor-led sessions  ·  Core tuition\n18 weeks, 50 minutes each, 4 phases: Foundation, Data and Discovery, Lifestyle Systems, Integration and Blueprint.\n\nAbbott Lingo CGM + shipping  ·  $99 retail\nYour own continuous glucose monitor with full Lingo app access, shipped to arrive before Lesson 5.\n\nYour Personal Longevity Blueprint  ·  Your deliverable\nThe written protocol: nutrition, movement, sleep, stress, supplements and the signals you keep watching, plus your CGM synthesis and re-runnable experiments.\n\neTeacher Group learning platform  ·  Included\nFull access to the platform behind 400,000+ students in 197 countries over 25 years, materials, schedule, class room.\n\nLifetime access to every recording  ·  Lifetime\nMiss a live session and catch up on demand. Revisit any of the 18 sessions and all materials, for good.\n\n1:1 admissions review and a class of 8 to 15  ·  Included\nA personal onboarding review before day one, then a small classes where the instructor knows your name and your data.",
+   "style": "cards"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "The Longevity Blueprint\n18 weeks, live faculty, CGM included\n\n$279 / month\nYou pay $279 a month  Five monthly payments. Everything in the list is included.\n\n14-day enrollment guarantee\nRefund inside 14 days, and you keep the Abbott Lingo CGM\n\n✓ All 18 live sessions + recordings\n✓ Abbott Lingo CGM + shipping\n✓ Personal Longevity Blueprint\n✓ 14-day enrollment guarantee\n\nSecure checkout · Cancel anytime",
+   "style": "price"
+  }
+ ],
+ [
+  "Button",
+  {
+   "label": "Enroll in 3 clicks",
+   "url": "https://longevitylifeacademy.pages.dev/checkout.html"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "From checkout\nto your protocol.\n\nFive steps. The first one takes three clicks.\n\n01  Enroll in 3 clicks\nRegister, pick your class, pay. You get your platform login straight away.\n\n02  Your Lingo ships\nYour Abbott Lingo CGM is sent to your address, ready before lesson five.\n\n03  Join your class\nMonday evenings, 7:00pm to 7:50pm ET, live with your instructor and 8 to 15 classmates.\n\n04  Learn live weekly\nEighteen live sessions across four phases, then practise it that week on your own body.\n\n05  Build your protocol\nYou finish with your written Personal Longevity Blueprint, and it stays yours.",
+   "style": "cards"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Free CGM from Abbott Lingo.\nYour own biodata, monitored.\n\nEvery student receives an Abbott Lingo continuous glucose monitor plus full Lingo app access, included with the course. Track your body's real-time response to food, sleep, and movement.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Carousel",
+  {
+   "items": [
+    {
+     "file": "40-cgm-1.jpg",
+     "title": "Abbott Lingo",
+     "text": "14-day Abbott Lingo biosensor, water-resistant, painless application"
+    },
+    {
+     "file": "40-cgm-2.jpg",
+     "title": "Abbott Lingo",
+     "text": "Full Lingo app access included, iOS and Android, Apple Health and Health Connect"
+    },
+    {
+     "file": "40-cgm-3.jpg",
+     "title": "Abbott Lingo",
+     "text": "No prescription needed, FSA and HSA eligible"
+    }
+   ],
+   "alt": "Abbott Lingo"
+  }
+ ],
+ [
+  "Button",
+  {
+   "label": "Enroll now",
+   "url": "https://longevitylifeacademy.pages.dev/checkout.html"
+  }
+ ],
+ [
+  "Photo",
+  {
+   "file": "60-eteacher.png",
+   "alt": "Powered by eTeacher Group"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "eTeacher Group is reshaping online education with a dynamic, personalized learning platform built for the modern world. Our proven, teacher-led methodology brings the classroom to the internet, small live classes, a purpose-built LMS, and a culture of learning excellence.\n\nLive Format   ·   400k+ Students globally   ·   197 Countries   ·   25yrs Online education   ·   5 Online schools",
+   "style": "body"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Read it from the press,\nnot just from us.\n\nCoverage of the Academy and Julie Gibson Clark, plus guides from our own journal.",
+   "style": "h2"
+  }
+ ],
+ [
+  "Carousel",
+  {
+   "items": [
+    {
+     "file": "50-press-usa-today.jpg",
+     "title": "USA TODAY",
+     "text": "Julie Gibson Clark, 2nd slowest-aging woman on Earth, joins Longevity Life Academy"
+    },
+    {
+     "file": "50-press-yahoo-finance.jpg",
+     "title": "yahoofinance",
+     "text": "Julie Gibson Clark joins LLA to make elite longevity accessible to Americans"
+    },
+    {
+     "file": "50-press-newsbreak.jpg",
+     "title": "NewsBreak",
+     "text": "eTeacher Group launches LLA to teach the longevity protocol the wealthy pay millions for"
+    },
+    {
+     "file": "50-press-ein-presswire.jpg",
+     "title": "EIN Presswire",
+     "text": "Now teaching Americans how to slow down aging, live"
+    }
+   ],
+   "alt": "Press"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "Straight\nanswers.\n\nWho is this course for?\nFor ambitious people who want to optimize their health, energy, and longevity through science-backed nutrition, exercise, recovery, and biomarker tracking. Perfect for high performers, wellness enthusiasts, and anyone ready to take a proactive approach to living longer and feeling better.\n\nDo I need any medical background?\nNo. This course is designed for anyone interested in improving their health, energy, and longevity. You don't need a medical, scientific, or fitness background to participate. We break down complex topics into practical, easy to understand concepts and help you apply them to your own life through simple tracking, actionable exercises, and personalized insights.\n\nWhat happens in a typical session?\nEach week, you'll join a 50-minute live session with expert instructors and a community of like-minded people focused on optimizing health, performance, and longevity. Sessions combine science-backed learning, real biomarker and CGM data analysis, and interactive discussions around nutrition, movement, sleep, and recovery. You'll leave with a personalized experiment to apply during the week, turning your own data into actionable insights for long-term health and vitality.\n\nIs this medical advice?\nNo. This program is educational and focused on helping you better understand the science of longevity, nutrition, movement, recovery, and biomarker tracking. We do not diagnose, treat, or provide clinical care. Our instructors help you interpret research, understand your own health data, and build sustainable lifestyle practices. For medical concerns or clinical decisions, please continue working with your physician.",
+   "style": "faq"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "What do I get when I complete the course?\nYour Personal Longevity Blueprint, a written protocol covering nutrition, movement, sleep, stress, supplements, and the signals you'll keep watching. You also finish with a CGM synthesis, a set of food and sleep experiments you can re-run, and a personal continuation plan you'll carry beyond the 18-week program.\n\nHow much does it cost?\nTuition is $279 per month for five months. It includes all 18 live sessions, full access to our learning platform, the continuous glucose monitor (CGM) device, and shipping. Speak with our admissions team to confirm availability.\n\nWhat technology or equipment do I need?\nAll you need is a laptop or tablet for live sessions and a smartphone to track your progress throughout the program. our Continuous Glucose Monitor (CGM) is included with enrollment and will be shipped directly to you, arriving before Lesson 5, when the CGM portion of the program begins. Any additional tools, such as a smartwatch, sleep tracker, or fitness wearable, are completely optional and will be discussed throughout the course.\n\nCan I catch up if I miss a session?\nAbsolutely. All sessions are recorded and available to watch on demand. While we recommend attending live to benefit from expert guidance and class discussions, you'll be able to review the session and access all course materials whenever your schedule allows.",
+   "style": "faq"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "It's your life.\nLive it well.\n\nEighteen live sessions, your own glucose data, and a written longevity protocol you keep for the decades ahead.",
+   "style": "hero"
+  }
+ ],
+ [
+  "Photo",
+  {
+   "file": "21-class-zoom-chat.jpg",
+   "alt": "Your seat in the room"
+  }
+ ],
+ [
+  "Text",
+  {
+   "text": "$279 a month. All 18 live sessions, the platform, the CGM, and shipping included.\n\nSecure checkout · Cancel anytime · 14-day enrollment guarantee",
+   "style": "price"
+  }
+ ],
+ [
+  "Button",
+  {
+   "label": "Enroll in 3 clicks",
+   "url": "https://longevitylifeacademy.pages.dev/checkout.html"
+  }
+ ]
+]

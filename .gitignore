@@ -2,3 +2,6 @@ redesign/preview-artifact.html
 # one-file preview builds: derived from redesign/site by build_artifact.py, 10 MB each, never committed
 redesign/preview-artifact.html
 redesign/lla-aurora-r5.html
+# Instagram asset pack videos: copies of files already in the site repo (18 MB)
+redesign/instagram/assets/*.mp4
+redesign/instagram/mock.html
