@@ -45,6 +45,16 @@ def para(text,style):
                 head,_,body=x.partition('\n'); out+=f'<div class="card"><b>{E(head)}</b><p>{E(body)}</p></div>'
             else: out+=f'<h2>{E(x)}</h2>' if len(x)<60 else f'<p class="lead">{E(x)}</p>'
         return out
+    if style=='phases':
+        out=''
+        for k,x in enumerate(parts):
+            head,*rows=x.split('\n'); out+=f'<div class="card phase"><b>{E(head)}</b><ol>'+''.join(f'<li>{E(r[4:])}</li>' for r in rows)+'</ol></div>'
+        return out
+    if style=='steps':
+        out=f'<h2>{E(parts[0])}</h2><p class="lead">{E(parts[1])}</p><div class="steps">'
+        for x in parts[2:]:
+            head,_,body=x.partition('\n'); n,_,ttl=head.partition('  '); out+=f'<div class="step"><b>{E(n)}</b><span>{E(ttl)}</span><p>{E(body)}</p></div>'
+        return out+'</div>'
     if style=='quotes':
         return f'<h2>{E(parts[0])}</h2>'+''.join((lambda a,b:f'<blockquote>{E(a)}<cite>{E(b)}</cite></blockquote>')(*x.rpartition('\n')[::2]) for x in parts[1:])
     if style=='price': return '<div class="price">'+'<br><br>'.join(E(x) for x in parts)+'</div>'
@@ -55,13 +65,18 @@ def para(text,style):
             else: out+=f'<h2>{E(x)}</h2>'
         return out
     return ''.join(f'<p class="lead">{E(x)}</p>' for x in parts)
-blocks=[]
+blocks=[]; cur=None
 for t,p in C:
+    fold=p.get('fold','dark')
+    if fold!=cur:
+        if cur is not None: blocks.append('</section>')
+        blocks.append(f'<section class="fold {fold}">'); cur=fold
     if t=='Text': blocks.append(para(p['text'],p['style']))
     elif t=='Photo': blocks.append(f'<figure class="ph"><img src="{data(p["file"])}" alt="{H.escape(p["alt"])}"><figcaption>{H.escape(p["alt"])}</figcaption></figure>')
     elif t=='Video': blocks.append(f'<div class="video"><img src="{data(p["poster"])}" alt="{H.escape(p["alt"])}"><span class="play">▶</span><span class="vtag">{H.escape(p["alt"])}</span></div>')
     elif t=='Button': blocks.append(f'<a class="btn" href="{p["url"]}">{H.escape(p["label"])} →</a>')
     else: blocks.append('<div class="carousel">'+''.join(f'<figure><img src="{data(x["file"])}" alt=""><figcaption><b>{E(x["title"])}</b>{E(x["text"])}</figcaption></figure>' for x in p['items'])+'</div>')
+blocks.append('</section>')
 css='''
 :root{--navy:#050F24;--blue:#1170F7;--gold:#E9CB92}
 body{margin:0;background:#0B0F19;font-family:'Playfair Display',Georgia,serif;font-style:italic;color:#fff}
@@ -87,6 +102,24 @@ blockquote{margin:0 18px 12px;padding:20px;border-radius:18px;background:rgba(25
 .carousel figure{flex:0 0 78%;scroll-snap-align:center;margin:0;border-radius:18px;overflow:hidden;background:#fff;border:1px solid rgba(255,255,255,.14)}
 .carousel img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}.carousel figcaption{padding:14px 16px 18px;color:#0A1C3F;font-size:15px;line-height:1.4}.carousel figcaption b{display:block;font-size:19px;font-weight:500;margin-bottom:4px}
 details{margin:0 18px 10px;border-bottom:1px solid rgba(255,255,255,.12);padding:12px 0}summary{font-size:19px;cursor:pointer;list-style:none}summary::after{content:"+";float:right;color:#9FD0FF}details p{margin:10px 0 0;font-size:16.5px;line-height:1.5}
+
+.fold{padding:6px 0 26px}
+.fold.light{background:linear-gradient(180deg,#FFFFFF 0%,#EEF4FF 100%);color:#08152C}
+.fold.light h2{background:linear-gradient(100deg,#0A3C82,#0B6BF5 55%,#12A98C);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.fold.light p.lead{color:#41526E}.fold.light p.meta{color:#1E4FD8}.fold.light .ph figcaption{color:#5C6C86}
+.fold.light .card{background:#fff;border:1px solid rgba(14,42,88,.12);box-shadow:0 2px 6px rgba(6,18,40,.06),0 18px 40px -22px rgba(6,18,40,.25)}
+.fold.light .card b{color:#0A1B36}.fold.light .card p,.fold.light .card ol{color:#41526E}
+.fold.light details{border-bottom-color:rgba(14,42,88,.14)}.fold.light summary{color:#0A1B36}.fold.light details p{color:#41526E}.fold.light summary::after{color:#1E4FD8}
+.fold.light .price{color:#fff}
+.fold.light .carousel figure{border-color:rgba(14,42,88,.12);box-shadow:0 14px 30px -18px rgba(6,18,40,.35)}
+.fold.dark .card.phase{background:rgba(255,255,255,.06)}
+.card.phase:nth-of-type(1){border-top:6px solid #0B2A63}.card.phase:nth-of-type(2){border-top:6px solid #1E4FD8}.card.phase:nth-of-type(3){border-top:6px solid #0C8A70}.card.phase:nth-of-type(4){border-top:6px solid #5B45C7}
+.card.phase b{font-size:20px}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 18px 0}
+.step{border-radius:18px;padding:16px 14px 18px;color:#fff;background:var(--sc);box-shadow:0 18px 36px -18px var(--sc)}
+.step:nth-child(1){--sc:#1E4FD8}.step:nth-child(2){--sc:#0C8A70}.step:nth-child(3){--sc:#5B45C7}.step:nth-child(4){--sc:#C2701C}.step:nth-child(5){--sc:#B3325E;grid-column:1/-1}
+.step b{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:11px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);font-weight:500;margin-bottom:8px}
+.step span{display:block;font-size:20px;line-height:1.1;margin-bottom:6px}.step p{margin:0;font-size:15px;line-height:1.45;color:rgba(255,255,255,.88)}
 .foot{margin:28px 18px 0;font:12px Inter,sans-serif;color:rgba(255,255,255,.45);text-align:center}
 '''
 page=f'''<meta charset="utf-8">
