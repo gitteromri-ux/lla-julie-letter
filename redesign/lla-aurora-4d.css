@@ -1,0 +1,1419 @@
+/* ================================================================
+   LLA · AURORA 4D — premium design layer
+   ----------------------------------------------------------------
+   Visual layer ONLY. Appended last so it wins the cascade.
+   Changes nothing structural: no markup, no copy, no scripts,
+   no forms, no checkout links, no analytics.
+   Layout is only re-tuned at >=821px so every mobile slider,
+   scroll-snap track and tap target built in earlier rounds
+   keeps working exactly as it does today.
+   ================================================================ */
+
+/* ---------- 1 · TOKENS ------------------------------------------------ */
+html body#lpRoot#lpRoot[id][id]{
+  /* brand core */
+  --au-navy-900:#02080F;
+  --au-navy-800:#061229;
+  --au-navy-700:#0A1C3F;
+  --au-navy-600:#102A5C;
+
+  --au-blue:#006EFF;
+  --au-blue-600:#0B57D0;
+  --au-blue-400:#4D9BFF;
+  --au-blue-200:#A8CCFF;
+  --au-ice:#EAF2FF;
+
+  --au-mint:#25C9AC;
+  --au-mint-300:#7BEBD6;
+  --au-aqua:#4FD8E8;
+  --au-gold:#F2B354;
+  --au-gold-300:#FFD79A;
+  --au-violet:#6E63FF;
+  --au-violet-300:#B0A9FF;
+  --au-rose:#FF7FA6;
+
+  --au-ink:#08152C;
+  --au-ink-2:#31415C;
+  --au-ink-3:#5C6C86;
+
+  /* default fold accents, overridden per section below */
+  --a1:#2F7BFF;
+  --a2:#25C9AC;
+  --a3:#6E63FF;
+
+  /* 4D elevation — ambient + key + contact, always three planes */
+  --au-lift-1:
+    0 1px 1px rgba(4,16,38,.05),
+    0 3px 8px rgba(4,16,38,.05),
+    0 14px 30px -14px rgba(4,16,38,.18);
+  --au-lift-2:
+    0 1px 2px rgba(4,16,38,.06),
+    0 8px 20px rgba(4,16,38,.07),
+    0 34px 62px -28px rgba(4,16,38,.26);
+  --au-lift-3:
+    0 2px 4px rgba(4,16,38,.07),
+    0 16px 38px rgba(4,16,38,.09),
+    0 60px 110px -44px rgba(4,16,38,.34);
+
+  --au-lift-dark-1:
+    0 1px 1px rgba(0,0,0,.30),
+    0 6px 18px rgba(0,0,0,.30),
+    0 26px 54px -24px rgba(0,0,0,.55);
+  --au-lift-dark-2:
+    0 2px 4px rgba(0,0,0,.34),
+    0 14px 36px rgba(0,0,0,.34),
+    0 54px 100px -40px rgba(0,0,0,.62);
+
+  --au-r-sm:14px;
+  --au-r-md:20px;
+  --au-r-lg:26px;
+  --au-r-xl:34px;
+
+  --au-ease:cubic-bezier(.22,1,.36,1);
+  --au-ease-out:cubic-bezier(.16,.84,.44,1);
+
+  /* fine film grain, keeps large gradients from banding */
+  --au-grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='180' height='180' filter='url(%23n)' opacity='.42'/></svg>");
+}
+
+html body#lpRoot#lpRoot[id][id]{
+  background:#02080F;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* crisper media everywhere */
+html body#lpRoot#lpRoot[id][id] img,
+html body#lpRoot#lpRoot[id][id] video{
+  image-rendering:auto;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+/* ---------- 2 · PER-FOLD ACCENTS -------------------------------------- */
+/* Colour walks the page so no two neighbouring folds share a hue. */
+html body#lpRoot#lpRoot[id][id] #hero            { --a1:#2F7BFF; --a2:#4FD8E8; --a3:#6E63FF; }
+/* headline + numeral ramps — analogous pairs so a gradient never crosses grey */
+html body#lpRoot#lpRoot[id][id]{ --g1:#0A3C82; --g2:#0B6BF5; --g3:#22A7E8; }
+html body#lpRoot#lpRoot[id][id] #faculty-films { --g1:#A9CCFF; --g2:#8FE3FF; --g3:#7BEBD6; }
+html body#lpRoot#lpRoot[id][id] #learn         { --g1:#7BEBD6; --g2:#8FE3FF; --g3:#BFD8FF; }
+html body#lpRoot#lpRoot[id][id] #syllabus      { --g1:#0A3C82; --g2:#0B6BF5; --g3:#22A7E8; }
+html body#lpRoot#lpRoot[id][id] #institution   { --g1:#A9CCFF; --g2:#B0A9FF; --g3:#8FE3FF; }
+html body#lpRoot#lpRoot[id][id] #teachers      { --g1:#08564C; --g2:#12A98C; --g3:#2FC3A2; }
+html body#lpRoot#lpRoot[id][id] .testimonials  { --g1:#B0A9FF; --g2:#9FD4FF; --g3:#8FE3FF; }
+html body#lpRoot#lpRoot[id][id] #offer         { --g1:#8A5A0C; --g2:#C88A1E; --g3:#E3AE43; }
+html body#lpRoot#lpRoot[id][id] #whatitis      { --g1:#8FE3FF; --g2:#A9CCFF; --g3:#7BEBD6; }
+html body#lpRoot#lpRoot[id][id] #mechanism     { --g1:#0A3C82; --g2:#0B6BF5; --g3:#12A98C; }
+html body#lpRoot#lpRoot[id][id] #cgm           { --g1:#7BEBD6; --g2:#8FE3FF; --g3:#A9CCFF; }
+html body#lpRoot#lpRoot[id][id] .lla-journal   { --g1:#3F2A96; --g2:#6E63FF; --g3:#9B8BFF; }
+html body#lpRoot#lpRoot[id][id] #faq           { --g1:#132C7A; --g2:#3A57E8; --g3:#6E63FF; }
+html body#lpRoot#lpRoot[id][id] #enroll        { --g1:#8FE3FF; --g2:#A9CCFF; --g3:#7BEBD6; }
+html body#lpRoot#lpRoot[id][id] .fn-secondary  { --g1:#08564C; --g2:#12A98C; --g3:#0B6BF5; }
+html body#lpRoot#lpRoot[id][id] #lead-gen      { --g1:#08564C; --g2:#12A98C; --g3:#0B6BF5; }
+html body#lpRoot#lpRoot[id][id] #offer-final   { --g1:#8A5A0C; --g2:#C88A1E; --g3:#E3AE43; }
+html body#lpRoot#lpRoot[id][id] #faculty-films   { --a1:#6E63FF; --a2:#2F7BFF; --a3:#4FD8E8; }
+html body#lpRoot#lpRoot[id][id] #learn           { --a1:#25C9AC; --a2:#2F7BFF; --a3:#4FD8E8; }
+html body#lpRoot#lpRoot[id][id] #syllabus        { --a1:#2F7BFF; --a2:#F2B354; --a3:#25C9AC; }
+html body#lpRoot#lpRoot[id][id] .pdp-press       { --a1:#4D9BFF; --a2:#6E63FF; --a3:#25C9AC; }
+html body#lpRoot#lpRoot[id][id] #institution     { --a1:#2F7BFF; --a2:#6E63FF; --a3:#4FD8E8; }
+html body#lpRoot#lpRoot[id][id] #teachers        { --a1:#25C9AC; --a2:#2F7BFF; --a3:#F2B354; }
+html body#lpRoot#lpRoot[id][id] .testimonials    { --a1:#6E63FF; --a2:#4FD8E8; --a3:#2F7BFF; }
+html body#lpRoot#lpRoot[id][id] #offer           { --a1:#F2B354; --a2:#2F7BFF; --a3:#25C9AC; }
+html body#lpRoot#lpRoot[id][id] #whatitis        { --a1:#4FD8E8; --a2:#2F7BFF; --a3:#25C9AC; }
+html body#lpRoot#lpRoot[id][id] #mechanism       { --a1:#2F7BFF; --a2:#25C9AC; --a3:#6E63FF; }
+html body#lpRoot#lpRoot[id][id] #cgm             { --a1:#25C9AC; --a2:#4FD8E8; --a3:#2F7BFF; }
+html body#lpRoot#lpRoot[id][id] .lla-journal     { --a1:#6E63FF; --a2:#2F7BFF; --a3:#F2B354; }
+html body#lpRoot#lpRoot[id][id] #faq             { --a1:#2F7BFF; --a2:#6E63FF; --a3:#25C9AC; }
+html body#lpRoot#lpRoot[id][id] #enroll          { --a1:#4FD8E8; --a2:#2F7BFF; --a3:#25C9AC; }
+html body#lpRoot#lpRoot[id][id] .fn-secondary    { --a1:#25C9AC; --a2:#2F7BFF; --a3:#6E63FF; }
+html body#lpRoot#lpRoot[id][id] #lead-gen        { --a1:#25C9AC; --a2:#2F7BFF; --a3:#4FD8E8; }
+html body#lpRoot#lpRoot[id][id] #offer-final     { --a1:#F2B354; --a2:#2F7BFF; --a3:#6E63FF; }
+html body#lpRoot#lpRoot[id][id] .footer          { --a1:#2F7BFF; --a2:#6E63FF; --a3:#25C9AC; }
+
+/* ---------- 3 · FOLD GROUNDS ------------------------------------------ */
+/* Light folds: white core, three coloured blooms, ice floor.            */
+html body#lpRoot#lpRoot[id][id] section.lp-white,
+html body#lpRoot#lpRoot[id][id] section.pr-light,
+html body#lpRoot#lpRoot[id][id] section.lla-journal,
+html body#lpRoot#lpRoot[id][id] section.pdp-press{
+  position:relative;
+  overflow:clip;
+  isolation:isolate;
+  background:
+    radial-gradient(1180px 720px at 6% -14%, color-mix(in srgb, var(--a1) 16%, transparent) 0%, transparent 62%),
+    radial-gradient(940px 660px at 98% 4%,  color-mix(in srgb, var(--a2) 15%, transparent) 0%, transparent 60%),
+    radial-gradient(1160px 900px at 46% 118%, color-mix(in srgb, var(--a3) 12%, transparent) 0%, transparent 64%),
+    linear-gradient(180deg,#FFFFFF 0%,#F7FAFF 42%,#EEF4FF 100%) !important;
+}
+html body#lpRoot#lpRoot[id][id] section.lp-ice{
+  position:relative;
+  overflow:clip;
+  isolation:isolate;
+  background:
+    radial-gradient(1080px 700px at 88% -10%, color-mix(in srgb, var(--a1) 22%, transparent) 0%, transparent 62%),
+    radial-gradient(980px 700px at 4% 10%,  color-mix(in srgb, var(--a2) 18%, transparent) 0%, transparent 60%),
+    radial-gradient(1200px 900px at 50% 116%, color-mix(in srgb, var(--a3) 14%, transparent) 0%, transparent 66%),
+    linear-gradient(180deg,#F3F8FF 0%,#E7F0FF 52%,#F8FBFF 100%) !important;
+}
+/* Dark folds: navy core, blue key light, mint + violet rim light.       */
+html body#lpRoot#lpRoot[id][id] section.lp-deep,
+html body#lpRoot#lpRoot[id][id] section.lla-films,
+html body#lpRoot#lpRoot[id][id] section.pdp-institution,
+html body#lpRoot#lpRoot[id][id] section.testimonials{
+  position:relative;
+  overflow:clip;
+  isolation:isolate;
+  background:
+    radial-gradient(1120px 720px at 10% -12%, color-mix(in srgb, var(--a1) 46%, transparent) 0%, transparent 60%),
+    radial-gradient(900px 700px at 92% 8%,  color-mix(in srgb, var(--a2) 26%, transparent) 0%, transparent 58%),
+    radial-gradient(1240px 940px at 52% 120%, color-mix(in srgb, var(--a3) 30%, transparent) 0%, transparent 64%),
+    linear-gradient(166deg,#0A1C3F 0%,#050F24 54%,#08172F 100%) !important;
+}
+
+/* grain + a horizon sweep on every decorated fold */
+html body#lpRoot#lpRoot[id][id] section.lp-white::before,
+html body#lpRoot#lpRoot[id][id] section.pr-light::before,
+html body#lpRoot#lpRoot[id][id] section.lp-ice::before,
+html body#lpRoot#lpRoot[id][id] section.lp-deep::before,
+html body#lpRoot#lpRoot[id][id] section.lla-films::before,
+html body#lpRoot#lpRoot[id][id] section.lla-journal::before,
+html body#lpRoot#lpRoot[id][id] section.pdp-press::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-image:var(--au-grain);
+  background-size:180px 180px;
+  opacity:.16;
+  mix-blend-mode:overlay;
+}
+html body#lpRoot#lpRoot[id][id] section.lp-deep::before,
+html body#lpRoot#lpRoot[id][id] section.lla-films::before{ opacity:.22; mix-blend-mode:soft-light; }
+
+/* hairline light seam between folds — the 4D "edge" */
+html body#lpRoot#lpRoot[id][id] section.lp-white::after,
+html body#lpRoot#lpRoot[id][id] section.pr-light::after,
+html body#lpRoot#lpRoot[id][id] section.lp-ice::after,
+html body#lpRoot#lpRoot[id][id] section.lp-deep::after,
+html body#lpRoot#lpRoot[id][id] section.lla-films::after,
+html body#lpRoot#lpRoot[id][id] section.lla-journal::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:0;
+  height:1px;
+  z-index:2;
+  pointer-events:none;
+  background:linear-gradient(90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--a1) 55%, transparent) 22%,
+    color-mix(in srgb, var(--a2) 70%, transparent) 50%,
+    color-mix(in srgb, var(--a3) 55%, transparent) 78%,
+    transparent 100%);
+  opacity:.55;
+  background-image:none;
+  mix-blend-mode:normal;
+}
+html body#lpRoot#lpRoot[id][id] section.lp-deep::after,
+html body#lpRoot#lpRoot[id][id] section.lla-films::after{ opacity:.7; }
+
+/* keep all real content above the decoration */
+html body#lpRoot#lpRoot[id][id] section.lp-white > *,
+html body#lpRoot#lpRoot[id][id] section.pr-light > *,
+html body#lpRoot#lpRoot[id][id] section.lp-ice > *,
+html body#lpRoot#lpRoot[id][id] section.lp-deep > *,
+html body#lpRoot#lpRoot[id][id] section.lla-films > *,
+html body#lpRoot#lpRoot[id][id] section.lla-journal > *,
+html body#lpRoot#lpRoot[id][id] section.pdp-press > *{ position:relative; z-index:1; }
+
+/* generous editorial rhythm (desktop only — mobile spacing stays) */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] section.lp-white,
+  html body#lpRoot#lpRoot[id][id] section.pr-light,
+  html body#lpRoot#lpRoot[id][id] section.lp-ice,
+  html body#lpRoot#lpRoot[id][id] section.lp-deep,
+  html body#lpRoot#lpRoot[id][id] section.lla-films,
+  html body#lpRoot#lpRoot[id][id] section.lla-journal{
+    padding-top:clamp(96px,8.4vw,164px) !important;
+    padding-bottom:clamp(96px,8.4vw,164px) !important;
+  }
+}
+
+/* ---------- 4 · DISPLAY TYPOGRAPHY ------------------------------------ */
+html body#lpRoot#lpRoot[id][id] .section-title,
+html body#lpRoot#lpRoot[id][id] .fn-h2,
+html body#lpRoot#lpRoot[id][id] .lp-learn-title,
+html body#lpRoot#lpRoot[id][id] .pdp-value-h2,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-title,
+html body#lpRoot#lpRoot[id][id] .fn-close h2,
+html body#lpRoot#lpRoot[id][id] .lead-gen h2,
+html body#lpRoot#lpRoot[id][id] .fn-apply-head h2,
+html body#lpRoot#lpRoot[id][id] .curriculum-header .section-title,
+html body#lpRoot#lpRoot[id][id] .instructors-header .section-title,
+html body#lpRoot#lpRoot[id][id] .testimonials-header .section-title,
+html body#lpRoot#lpRoot[id][id] .faq-header .section-title{
+  font-family:'Playfair Display','Cormorant Garamond',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(46px,5.6vw,86px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-.021em !important;
+  text-wrap:balance;
+  margin-bottom:.42em !important;
+}
+html body#lpRoot#lpRoot[id][id] .lp-deep .section-title,
+html body#lpRoot#lpRoot[id][id] .lp-deep .fn-h2,
+html body#lpRoot#lpRoot[id][id] .lla-films .section-title,
+html body#lpRoot#lpRoot[id][id] .testimonials .section-title,
+html body#lpRoot#lpRoot[id][id] .pdp-value-h2,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-title,
+html body#lpRoot#lpRoot[id][id] .fn-close h2{
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  text-shadow:0 2px 40px rgba(2,10,26,.5);
+}
+html body#lpRoot#lpRoot[id][id] .lp-white .section-title,
+html body#lpRoot#lpRoot[id][id] .pr-light .section-title,
+html body#lpRoot#lpRoot[id][id] .lp-ice .section-title,
+html body#lpRoot#lpRoot[id][id] .lla-journal .section-title,
+html body#lpRoot#lpRoot[id][id] .lp-white .fn-h2,
+html body#lpRoot#lpRoot[id][id] .lp-ice .fn-h2,
+html body#lpRoot#lpRoot[id][id] .pr-light .fn-h2{
+  color:#08152C !important;
+  -webkit-text-fill-color:#08152C !important;
+  text-shadow:none !important;
+}
+
+/* the italic clause gets the colour — gradient where supported */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  html body#lpRoot#lpRoot[id][id] .section-title em,
+  html body#lpRoot#lpRoot[id][id] .fn-h2 em,
+  html body#lpRoot#lpRoot[id][id] .pdp-value-h2 em,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-title em,
+  html body#lpRoot#lpRoot[id][id] .fn-close h2 em,
+  html body#lpRoot#lpRoot[id][id] .lla-journal .section-title em,
+  html body#lpRoot#lpRoot[id][id] .section-title i,
+  html body#lpRoot#lpRoot[id][id] .fn-h2 i{
+    background-image:linear-gradient(104deg,var(--g1) 0%,var(--g2) 52%,var(--g3) 100%) !important;
+    background-image:linear-gradient(104deg in oklab,var(--g1) 0%,var(--g2) 52%,var(--g3) 100%) !important;
+    -webkit-background-clip:text !important;
+    background-clip:text !important;
+    -webkit-text-fill-color:transparent !important;
+    color:transparent !important;
+    text-shadow:none !important;
+    padding-right:.06em;
+  }
+  html body#lpRoot#lpRoot[id][id] .lp-deep .section-title em,
+  html body#lpRoot#lpRoot[id][id] .lla-films .section-title em,
+  html body#lpRoot#lpRoot[id][id] .testimonials .section-title em,
+  html body#lpRoot#lpRoot[id][id] .pdp-value-h2 em,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-title em,
+  html body#lpRoot#lpRoot[id][id] .fn-close h2 em{
+    background-image:linear-gradient(104deg in oklab,var(--g1) 0%,var(--g2) 52%,var(--g3) 100%) !important;
+  }
+}
+
+/* leads / subtitles — quieter, wider measure, better colour */
+html body#lpRoot#lpRoot[id][id] .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .fn-lead,
+html body#lpRoot#lpRoot[id][id] .lp-learn-lead,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-sub{
+  font-family:'Inter','Inter Tight',system-ui,sans-serif !important;
+  font-style:normal !important;
+  font-weight:400 !important;
+  font-size:clamp(16.5px,1.24vw,20px) !important;
+  line-height:1.66 !important;
+  letter-spacing:-.006em !important;
+  max-width:74ch;
+  text-wrap:pretty;
+}
+html body#lpRoot#lpRoot[id][id] .lp-white .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .pr-light .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .lp-ice .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .lla-journal .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .lp-white .fn-lead,
+html body#lpRoot#lpRoot[id][id] .lp-ice .fn-lead{ color:#41526E !important; -webkit-text-fill-color:#41526E !important; }
+html body#lpRoot#lpRoot[id][id] .lp-deep .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .lla-films .section-subtitle,
+html body#lpRoot#lpRoot[id][id] .lp-deep .fn-lead,
+html body#lpRoot#lpRoot[id][id] .lp-deep .lp-learn-lead,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-sub{ color:rgba(226,238,255,.84) !important; -webkit-text-fill-color:rgba(226,238,255,.84) !important; }
+
+/* ---------- 5 · SHARED 4D CARD CHROME --------------------------------- */
+/* light-ground cards */
+html body#lpRoot#lpRoot[id][id] .curriculum-item,
+html body#lpRoot#lpRoot[id][id] .faq-item,
+html body#lpRoot#lpRoot[id][id] .fn-stack,
+html body#lpRoot#lpRoot[id][id] .fn-pricecard,
+html body#lpRoot#lpRoot[id][id] .fn-loop-step,
+html body#lpRoot#lpRoot[id][id] .lla-press-card,
+html body#lpRoot#lpRoot[id][id] .teacher-card-live,
+html body#lpRoot#lpRoot[id][id] .phase-block,
+html body#lpRoot#lpRoot[id][id] .fn-gcard{
+  position:relative;
+  border-radius:var(--au-r-md) !important;
+  background:linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(248,251,255,.92) 100%) !important;
+  border:1px solid rgba(14,42,88,.09) !important;
+  box-shadow:var(--au-lift-1), inset 0 1px 0 rgba(255,255,255,.9) !important;
+  transition:transform .5s var(--au-ease), box-shadow .5s var(--au-ease), border-color .5s var(--au-ease);
+}
+/* dark-ground cards */
+html body#lpRoot#lpRoot[id][id] .quote-card,
+html body#lpRoot#lpRoot[id][id] .pdp-value-card,
+html body#lpRoot#lpRoot[id][id] .lla-film,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet,
+html body#lpRoot#lpRoot[id][id] .fn-closefact,
+html body#lpRoot#lpRoot[id][id] .lp-deep .lp-lrow{
+  position:relative;
+  border-radius:var(--au-r-md) !important;
+  background:linear-gradient(168deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.045) 46%,rgba(255,255,255,.028) 100%) !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+  box-shadow:var(--au-lift-dark-1), inset 0 1px 0 rgba(255,255,255,.16) !important;
+  -webkit-backdrop-filter:blur(14px) saturate(150%);
+  backdrop-filter:blur(14px) saturate(150%);
+  transition:transform .5s var(--au-ease), box-shadow .5s var(--au-ease), border-color .5s var(--au-ease);
+}
+
+/* gradient rim — the lit edge that reads as thickness */
+html body#lpRoot#lpRoot[id][id] .curriculum-item::before,
+html body#lpRoot#lpRoot[id][id] .faq-item::before,
+html body#lpRoot#lpRoot[id][id] .fn-pricecard::before,
+html body#lpRoot#lpRoot[id][id] .fn-loop-step::before,
+html body#lpRoot#lpRoot[id][id] .lla-press-card::before,
+html body#lpRoot#lpRoot[id][id] .teacher-card-live::before,
+html body#lpRoot#lpRoot[id][id] .quote-card::before,
+html body#lpRoot#lpRoot[id][id] .pdp-value-card::before,
+html body#lpRoot#lpRoot[id][id] .lla-film::before{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  top:0 !important; right:0 !important; bottom:0 !important; left:0 !important;
+  width:auto !important; height:auto !important;
+  min-width:0 !important; min-height:0 !important;
+  max-width:none !important; max-height:none !important;
+  margin:0 !important;
+  transform:none !important;
+  border:0 !important;
+  border-radius:inherit !important;
+  padding:1px !important;
+  background:linear-gradient(140deg,
+    color-mix(in srgb, var(--a1) 62%, transparent) 0%,
+    transparent 34%,
+    transparent 62%,
+    color-mix(in srgb, var(--a2) 52%, transparent) 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite:exclude;
+  opacity:.5;
+  pointer-events:none;
+  z-index:3;
+  transition:opacity .5s var(--au-ease);
+}
+
+/* the lift */
+@media (hover:hover) and (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .curriculum-item:hover,
+  html body#lpRoot#lpRoot[id][id] .faq-item:hover,
+  html body#lpRoot#lpRoot[id][id] .fn-loop-step:hover,
+  html body#lpRoot#lpRoot[id][id] .lla-press-card:hover,
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live:hover{
+    transform:translateY(-7px);
+    box-shadow:var(--au-lift-3),
+      0 44px 90px -46px color-mix(in srgb, var(--a1) 60%, transparent),
+      inset 0 1px 0 rgba(255,255,255,.95) !important;
+    border-color:color-mix(in srgb, var(--a1) 34%, transparent) !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .quote-card:hover,
+  html body#lpRoot#lpRoot[id][id] .pdp-value-card:hover,
+  html body#lpRoot#lpRoot[id][id] .lla-film:hover{
+    transform:translateY(-7px);
+    box-shadow:var(--au-lift-dark-2),
+      0 46px 96px -44px color-mix(in srgb, var(--a2) 55%, transparent),
+      inset 0 1px 0 rgba(255,255,255,.24) !important;
+    border-color:rgba(255,255,255,.22) !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .curriculum-item:hover::before,
+  html body#lpRoot#lpRoot[id][id] .faq-item:hover::before,
+  html body#lpRoot#lpRoot[id][id] .fn-loop-step:hover::before,
+  html body#lpRoot#lpRoot[id][id] .lla-press-card:hover::before,
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live:hover::before,
+  html body#lpRoot#lpRoot[id][id] .quote-card:hover::before,
+  html body#lpRoot#lpRoot[id][id] .pdp-value-card:hover::before,
+  html body#lpRoot#lpRoot[id][id] .lla-film:hover::before{ opacity:1; }
+}
+@media (prefers-reduced-motion:reduce){
+  html body#lpRoot#lpRoot[id][id] *{ transition-duration:.01ms !important; animation-duration:.01ms !important; }
+}
+
+/* ---------- 6 · NAV — architectural glass ----------------------------- */
+html body#lpRoot#lpRoot[id][id] .fn-nav{
+  background:linear-gradient(180deg,rgba(6,18,41,.80) 0%,rgba(6,18,41,.62) 100%) !important;
+  -webkit-backdrop-filter:blur(22px) saturate(190%);
+  backdrop-filter:blur(22px) saturate(190%);
+  border-bottom:1px solid rgba(168,204,255,.16) !important;
+  box-shadow:0 1px 0 rgba(255,255,255,.06) inset, 0 18px 44px -30px rgba(0,0,0,.9) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-nav-links a{
+  font-weight:500 !important;
+  letter-spacing:-.005em !important;
+  color:rgba(228,240,255,.86) !important;
+  position:relative;
+  transition:color .35s var(--au-ease);
+}
+html body#lpRoot#lpRoot[id][id] .fn-nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:-7px;
+  height:2px;
+  border-radius:2px;
+  background:linear-gradient(90deg,var(--au-blue-400),var(--au-mint-300));
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .45s var(--au-ease);
+}
+@media (hover:hover){
+  html body#lpRoot#lpRoot[id][id] .fn-nav-links a:hover{ color:#FFFFFF !important; }
+  html body#lpRoot#lpRoot[id][id] .fn-nav-links a:hover::after{ transform:scaleX(1); }
+}
+html body#lpRoot#lpRoot[id][id] .nav-logo-img{ filter:drop-shadow(0 2px 14px rgba(0,110,255,.35)); }
+html body#lpRoot#lpRoot[id][id] .fn-drawer{
+  background:linear-gradient(170deg,#0A1C3F 0%,#050F24 62%,#08172F 100%) !important;
+  -webkit-backdrop-filter:blur(20px);
+  backdrop-filter:blur(20px);
+}
+html body#lpRoot#lpRoot[id][id] .fn-drawer-link{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  letter-spacing:-.015em !important;
+}
+
+/* ---------- 7 · CTA SYSTEM — one button, three planes of light -------- */
+html body#lpRoot#lpRoot[id][id] .fn-btn--primary,
+html body#lpRoot#lpRoot[id][id] .fn-btn--onblue,
+html body#lpRoot#lpRoot[id][id] .pdp-cine-cta,
+html body#lpRoot#lpRoot[id][id] .fn-nav-pill,
+html body#lpRoot#lpRoot[id][id] .section-cta-btn,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-cta,
+html body#lpRoot#lpRoot[id][id] .lla-float-cta{
+  background:linear-gradient(180deg,#3F8CFF 0%,#0B6BF5 46%,#0450CE 100%) !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  border:1px solid rgba(255,255,255,.20) !important;
+  border-radius:15px !important;
+  font-weight:650 !important;
+  letter-spacing:-.006em !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    inset 0 -1px 0 rgba(2,20,52,.32),
+    0 2px 5px rgba(4,32,80,.22),
+    0 16px 34px -14px rgba(6,78,190,.58) !important;
+  transition:transform .35s var(--au-ease), box-shadow .35s var(--au-ease), filter .35s var(--au-ease);
+}
+html body#lpRoot#lpRoot[id][id] .fn-nav-pill{ border-radius:999px !important; }
+@media (hover:hover){
+  html body#lpRoot#lpRoot[id][id] .fn-btn--primary:hover,
+  html body#lpRoot#lpRoot[id][id] .fn-btn--onblue:hover,
+  html body#lpRoot#lpRoot[id][id] .pdp-cine-cta:hover,
+  html body#lpRoot#lpRoot[id][id] .fn-nav-pill:hover,
+  html body#lpRoot#lpRoot[id][id] .section-cta-btn:hover,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-cta:hover{
+    transform:translateY(-2px);
+    filter:saturate(1.06);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.5),
+      inset 0 -1px 0 rgba(2,20,52,.32),
+      0 3px 8px rgba(4,32,80,.24),
+      0 26px 52px -16px rgba(6,78,190,.66) !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-ghost,
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-sec{
+  border-radius:15px !important;
+  border:1px solid rgba(255,255,255,.30) !important;
+  background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.06)) !important;
+  -webkit-backdrop-filter:blur(12px) saturate(160%);
+  backdrop-filter:blur(12px) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 12px 30px -18px rgba(0,0,0,.7) !important;
+}
+
+/* ---------- 8 · HERO — cinematic, Playfair, deep field ---------------- */
+html body#lpRoot#lpRoot[id][id] .pdp-hero--cine{ position:relative; isolation:isolate; }
+html body#lpRoot#lpRoot[id][id] .pdp-cine-img{
+  filter:saturate(1.10) contrast(1.05) brightness(1.02);
+  transform:scale(1.02);
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-overlay{
+  background:
+    radial-gradient(1200px 900px at 12% 44%, rgba(3,10,24,.90) 0%, rgba(3,10,24,.62) 42%, transparent 74%),
+    linear-gradient(94deg, rgba(3,10,24,.94) 0%, rgba(4,14,34,.72) 38%, rgba(4,16,40,.24) 62%, rgba(4,16,40,.10) 100%),
+    linear-gradient(180deg, rgba(3,10,24,.66) 0%, transparent 26%, transparent 62%, rgba(2,8,18,.72) 100%) !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-h1{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(52px,6.6vw,104px) !important;
+  line-height:.98 !important;
+  letter-spacing:-.026em !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  text-shadow:0 4px 60px rgba(0,0,0,.6), 0 1px 2px rgba(0,0,0,.35);
+  margin-bottom:.30em !important;
+}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  html body#lpRoot#lpRoot[id][id] .pdp-cine-h1 .pdp-cine-blue{
+    background-image:linear-gradient(102deg,#8FC4FF 0%,#5FE3DA 48%,#A9B6FF 100%) !important;
+    -webkit-background-clip:text !important;
+    background-clip:text !important;
+    -webkit-text-fill-color:transparent !important;
+    color:transparent !important;
+    text-shadow:none !important;
+    padding-right:.05em;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-sub{
+  font-size:clamp(17px,1.32vw,21px) !important;
+  line-height:1.62 !important;
+  color:rgba(232,242,255,.90) !important;
+  -webkit-text-fill-color:rgba(232,242,255,.90) !important;
+  max-width:63ch !important;
+  text-wrap:pretty;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-sub strong{ color:#FFFFFF !important; -webkit-text-fill-color:#FFFFFF !important; font-weight:650 !important; }
+html body#lpRoot#lpRoot[id][id] .pdp-cine-meta span{
+  color:rgba(198,222,255,.92) !important;
+  -webkit-text-fill-color:rgba(198,222,255,.92) !important;
+  letter-spacing:.04em !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-tp-pill{
+  background:linear-gradient(180deg,rgba(255,255,255,.15),rgba(255,255,255,.07)) !important;
+  border:1px solid rgba(255,255,255,.26) !important;
+  border-radius:999px !important;
+  -webkit-backdrop-filter:blur(16px) saturate(170%);
+  backdrop-filter:blur(16px) saturate(170%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.32), 0 14px 34px -20px rgba(0,0,0,.8) !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-cine-wordmark{ filter:drop-shadow(0 6px 26px rgba(0,0,0,.55)); }
+html body#lpRoot#lpRoot[id][id] .pdp-cine-guarantee{ color:rgba(190,214,246,.86) !important; -webkit-text-fill-color:rgba(190,214,246,.86) !important; }
+
+/* ---------- 9 · MEDIA — glass frames, coloured under-glow ------------- */
+html body#lpRoot#lpRoot[id][id] .lla-film video,
+html body#lpRoot#lpRoot[id][id] .lla-zoom-shot img,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-img img,
+html body#lpRoot#lpRoot[id][id] .lp-lrow-media video,
+html body#lpRoot#lpRoot[id][id] .lp-lrow-media .lp-lrow-fallback{
+  filter:saturate(1.07) contrast(1.035);
+}
+html body#lpRoot#lpRoot[id][id] .lla-film video{
+  border-radius:calc(var(--au-r-md) - 6px) !important;
+  box-shadow:0 22px 52px -26px rgba(0,0,0,.85) !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-zoom-shot{
+  position:relative;
+  border-radius:var(--au-r-lg) !important;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.14) !important;
+  box-shadow:
+    var(--au-lift-dark-2),
+    0 60px 120px -54px color-mix(in srgb, var(--a2) 62%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.18) !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-zoom-shot img{ border-radius:0 !important; display:block; width:100%; }
+html body#lpRoot#lpRoot[id][id] .lla-zoom-shot figcaption{
+  background:linear-gradient(180deg,transparent,rgba(3,10,24,.86)) !important;
+  color:rgba(226,238,255,.92) !important;
+  -webkit-text-fill-color:rgba(226,238,255,.92) !important;
+  font-size:14px !important;
+  letter-spacing:-.004em !important;
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-img{
+  border-radius:var(--au-r-lg) !important;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.14) !important;
+  box-shadow:var(--au-lift-dark-2), 0 54px 108px -50px color-mix(in srgb, var(--a1) 60%, transparent) !important;
+}
+
+/* ---------- 10 · NUMERALS — gradient, oversized, editorial ------------ */
+html body#lpRoot#lpRoot[id][id] .lp-lrow-num,
+html body#lpRoot#lpRoot[id][id] .curriculum-num,
+html body#lpRoot#lpRoot[id][id] .fn-loop-step b,
+html body#lpRoot#lpRoot[id][id] .faq-num,
+html body#lpRoot#lpRoot[id][id] .curriculum-tab-num{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  letter-spacing:-.03em !important;
+  opacity:1 !important;
+}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  html body#lpRoot#lpRoot[id][id] .lp-lrow-num,
+  html body#lpRoot#lpRoot[id][id] .curriculum-num,
+  html body#lpRoot#lpRoot[id][id] .fn-loop-step b,
+  html body#lpRoot#lpRoot[id][id] .faq-num,
+  html body#lpRoot#lpRoot[id][id] .curriculum-tab-num{
+    background-image:linear-gradient(150deg,var(--g1) 0%,var(--g3) 100%) !important;
+    background-image:linear-gradient(150deg in oklab,var(--g1) 0%,var(--g3) 100%) !important;
+    -webkit-background-clip:text !important;
+    background-clip:text !important;
+    -webkit-text-fill-color:transparent !important;
+    color:transparent !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .lp-deep .lp-lrow-num{
+    background-image:linear-gradient(150deg in oklab,var(--g1) 0%,var(--g3) 100%) !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .fn-loop-step b{ font-size:clamp(40px,3.6vw,58px) !important; line-height:1 !important; }
+
+/* ---------- 11 · PILLARS (01 Learn) ----------------------------------- */
+html body#lpRoot#lpRoot[id][id] .lp-lrow{ border-radius:var(--au-r-md) !important; overflow:hidden !important; }
+html body#lpRoot#lpRoot[id][id] .lp-lrow-media{ position:relative; }
+html body#lpRoot#lpRoot[id][id] .lp-lrow-scrim{
+  background:linear-gradient(180deg,rgba(3,12,28,0) 34%,rgba(3,12,28,.34) 72%,rgba(3,12,28,.62) 100%) !important;
+}
+html body#lpRoot#lpRoot[id][id] .lp-lrow-title{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(24px,1.9vw,31px) !important;
+  letter-spacing:-.018em !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  margin:.12em 0 .28em !important;
+}
+html body#lpRoot#lpRoot[id][id] .lp-lrow-pay{
+  color:rgba(220,234,255,.80) !important;
+  -webkit-text-fill-color:rgba(220,234,255,.80) !important;
+  font-size:15.5px !important;
+  line-height:1.62 !important;
+}
+html body#lpRoot#lpRoot[id][id] .lp-learn-note{ color:rgba(206,224,250,.78) !important; -webkit-text-fill-color:rgba(206,224,250,.78) !important; }
+
+/* ---------- 12 · SYLLABUS -------------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .curriculum-tab{
+  border-radius:var(--au-r-sm) !important;
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(244,249,255,.88)) !important;
+  border:1px solid rgba(14,42,88,.10) !important;
+  box-shadow:var(--au-lift-1), inset 0 1px 0 rgba(255,255,255,.9) !important;
+  transition:transform .4s var(--au-ease), box-shadow .4s var(--au-ease), border-color .4s var(--au-ease);
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-tab.is-active{
+  background:linear-gradient(180deg,#FFFFFF,#F2F7FF) !important;
+  border-color:color-mix(in srgb, var(--a1) 42%, transparent) !important;
+  box-shadow:
+    var(--au-lift-2),
+    0 22px 46px -24px color-mix(in srgb, var(--a1) 66%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.96) !important;
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-tab-name{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  letter-spacing:-.015em !important;
+  color:#0A1B36 !important;
+  -webkit-text-fill-color:#0A1B36 !important;
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-tab-meta{ color:#5C6C86 !important; -webkit-text-fill-color:#5C6C86 !important; letter-spacing:-.002em !important; }
+html body#lpRoot#lpRoot[id][id] .phase-block-name{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(26px,2.4vw,40px) !important;
+  letter-spacing:-.02em !important;
+}
+html body#lpRoot#lpRoot[id][id] .phase-block-label{ color:color-mix(in srgb, var(--a1) 74%, #21324D) !important; -webkit-text-fill-color:color-mix(in srgb, var(--a1) 74%, #21324D) !important; }
+html body#lpRoot#lpRoot[id][id] .curriculum-trigger h3{
+  font-family:'Inter',system-ui,sans-serif !important;
+  font-weight:600 !important;
+  font-size:clamp(16px,1.16vw,18.5px) !important;
+  letter-spacing:-.012em !important;
+  color:#0A1B36 !important;
+  -webkit-text-fill-color:#0A1B36 !important;
+  line-height:1.4 !important;
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-section-label{
+  color:color-mix(in srgb, var(--a1) 80%, #16304F) !important;
+  -webkit-text-fill-color:color-mix(in srgb, var(--a1) 80%, #16304F) !important;
+  font-weight:650 !important;
+}
+html body#lpRoot#lpRoot[id][id] .curriculum-goals li,
+html body#lpRoot#lpRoot[id][id] .curriculum-flow,
+html body#lpRoot#lpRoot[id][id] .curriculum-work{ color:#41526E !important; -webkit-text-fill-color:#41526E !important; line-height:1.66 !important; }
+html body#lpRoot#lpRoot[id][id] .curriculum-chevron{ color:color-mix(in srgb, var(--a1) 70%, #33465F) !important; }
+
+/* ---------- 13 · PRESS TICKER ---------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .pdp-press{
+  border-top:1px solid rgba(14,42,88,.07) !important;
+  border-bottom:1px solid rgba(14,42,88,.07) !important;
+}
+html body#lpRoot#lpRoot[id][id] .pressx-label{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  color:#5C6C86 !important;
+  -webkit-text-fill-color:#5C6C86 !important;
+  font-size:16px !important;
+}
+html body#lpRoot#lpRoot[id][id] .px-mark{ filter:saturate(1.06); opacity:.92; }
+html body#lpRoot#lpRoot[id][id] .px-dot{ background:color-mix(in srgb, var(--a1) 55%, transparent) !important; }
+
+/* ---------- 14 · INSTITUTION ----------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .about-powered-label{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:18px !important;
+  color:rgba(186,214,255,.86) !important;
+  -webkit-text-fill-color:rgba(186,214,255,.86) !important;
+}
+html body#lpRoot#lpRoot[id][id] .about-powered-logo-img{ filter:drop-shadow(0 8px 30px rgba(0,110,255,.34)); }
+html body#lpRoot#lpRoot[id][id] .about-powered-desc{ color:rgba(224,236,255,.84) !important; -webkit-text-fill-color:rgba(224,236,255,.84) !important; }
+html body#lpRoot#lpRoot[id][id] .hero-powered-bar{
+  background:linear-gradient(168deg,rgba(255,255,255,.10),rgba(255,255,255,.04)) !important;
+  border:1px solid rgba(255,255,255,.14) !important;
+  border-radius:var(--au-r-lg) !important;
+  -webkit-backdrop-filter:blur(16px) saturate(160%);
+  backdrop-filter:blur(16px) saturate(160%);
+  box-shadow:var(--au-lift-dark-1), inset 0 1px 0 rgba(255,255,255,.18) !important;
+}
+html body#lpRoot#lpRoot[id][id] .hero-powered-stats li strong{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(30px,2.6vw,44px) !important;
+  letter-spacing:-.022em !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+}
+html body#lpRoot#lpRoot[id][id] .hero-powered-stats li span{ color:rgba(180,206,244,.82) !important; -webkit-text-fill-color:rgba(180,206,244,.82) !important; }
+html body#lpRoot#lpRoot[id][id] .hero-powered-live-dot{ box-shadow:0 0 0 4px rgba(37,201,172,.20), 0 0 18px rgba(37,201,172,.85) !important; }
+html body#lpRoot#lpRoot[id][id] .trust-logo{
+  background:rgba(255,255,255,.94) !important;
+  border:1px solid rgba(255,255,255,.16) !important;
+  border-radius:var(--au-r-sm) !important;
+  box-shadow:0 14px 30px -18px rgba(0,0,0,.8) !important;
+}
+
+/* ---------- 15 · FACULTY --------------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .teacher-card-live{
+  background:linear-gradient(170deg,#0C2148 0%,#071630 62%,#050F22 100%) !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+  border-radius:var(--au-r-md) !important;
+  overflow:hidden !important;
+  box-shadow:var(--au-lift-2), inset 0 1px 0 rgba(255,255,255,.14) !important;
+}
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo img{
+  filter:saturate(1.08) contrast(1.04);
+  transition:transform .8s var(--au-ease);
+}
+@media (hover:hover){
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live:hover .teacher-card-live-photo img{ transform:scale(1.045); }
+}
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-name{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(20px,1.5vw,25px) !important;
+  letter-spacing:-.018em !important;
+  text-shadow:0 2px 20px rgba(0,0,0,.6) !important;
+}
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-role{
+  color:#9FD0FF !important;
+  -webkit-text-fill-color:#9FD0FF !important;
+  font-size:14px !important;
+  text-transform:none !important;
+  font-weight:550 !important;
+  letter-spacing:-.002em !important;
+}
+html body#lpRoot#lpRoot[id][id] .teacher-card-live-bio{ color:rgba(222,235,255,.80) !important; -webkit-text-fill-color:rgba(222,235,255,.80) !important; line-height:1.62 !important; }
+
+/* ---------- 16 · TESTIMONIALS ---------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .quote-mark{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-size:74px !important;
+  line-height:.7 !important;
+  opacity:.5 !important;
+}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  html body#lpRoot#lpRoot[id][id] .quote-mark{
+    background-image:linear-gradient(150deg in oklab,var(--g1),var(--g3)) !important;
+    -webkit-background-clip:text !important; background-clip:text !important;
+    -webkit-text-fill-color:transparent !important; color:transparent !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .quote-stars svg{ color:#FFC85C !important; filter:drop-shadow(0 2px 8px rgba(255,200,92,.42)); }
+html body#lpRoot#lpRoot[id][id] .quote-text{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:400 !important;
+  font-size:clamp(17.5px,1.34vw,22px) !important;
+  line-height:1.56 !important;
+  letter-spacing:-.008em !important;
+  color:rgba(240,247,255,.94) !important;
+  -webkit-text-fill-color:rgba(240,247,255,.94) !important;
+}
+html body#lpRoot#lpRoot[id][id] .quote-meta{ color:rgba(176,204,244,.76) !important; -webkit-text-fill-color:rgba(176,204,244,.76) !important; letter-spacing:-.002em !important; }
+
+/* ---------- 17 · OFFER / PRICE CARD ---------------------------------- */
+html body#lpRoot#lpRoot[id][id] .fn-stack{ border-radius:var(--au-r-lg) !important; overflow:hidden !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-head{
+  background:linear-gradient(180deg,#F3F8FF,#E9F1FF) !important;
+  border-bottom:1px solid rgba(14,42,88,.08) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-stack-head b{ color:#08152C !important; -webkit-text-fill-color:#08152C !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-row + .fn-stack-row{ border-top:1px solid rgba(14,42,88,.07) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-txt h4{
+  font-weight:650 !important;
+  letter-spacing:-.014em !important;
+  color:#0A1B36 !important;
+  -webkit-text-fill-color:#0A1B36 !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-stack-txt p{ color:#4A5B77 !important; -webkit-text-fill-color:#4A5B77 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-stack-val{
+  color:color-mix(in srgb, var(--a2) 72%, #123058) !important;
+  -webkit-text-fill-color:color-mix(in srgb, var(--a2) 72%, #123058) !important;
+  font-weight:600 !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-stack-total{
+  background:
+    radial-gradient(600px 200px at 8% 0%, color-mix(in srgb, var(--a1) 22%, transparent), transparent 68%),
+    linear-gradient(180deg,#F6FAFF,#EAF2FF) !important;
+  border-top:1px solid color-mix(in srgb, var(--a1) 30%, transparent) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-stack-total b{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:700 !important;
+  font-size:clamp(42px,3.8vw,62px) !important;
+  letter-spacing:-.028em !important;
+  color:#07142B !important;
+  -webkit-text-fill-color:#07142B !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard{
+  border-radius:var(--au-r-lg) !important;
+  background:linear-gradient(178deg,#FFFFFF 0%,#F5F9FF 100%) !important;
+  box-shadow:
+    var(--au-lift-3),
+    0 70px 130px -60px color-mix(in srgb, var(--a1) 55%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.96) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-tag{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:16px !important;
+  color:color-mix(in srgb, var(--a1) 66%, #1A3355) !important;
+  -webkit-text-fill-color:color-mix(in srgb, var(--a1) 66%, #1A3355) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard h3{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(28px,2.3vw,38px) !important;
+  letter-spacing:-.02em !important;
+  color:#07142B !important;
+  -webkit-text-fill-color:#07142B !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:700 !important;
+  font-size:clamp(58px,5.2vw,88px) !important;
+  line-height:1 !important;
+  letter-spacing:-.032em !important;
+}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b{
+    background-image:linear-gradient(146deg,#0B3E86 0%,#0B6BF5 52%,#1FB89E 100%) !important;
+    -webkit-background-clip:text !important; background-clip:text !important;
+    -webkit-text-fill-color:transparent !important; color:transparent !important;
+  }
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price span{ color:#5C6C86 !important; -webkit-text-fill-color:#5C6C86 !important; }
+html body#lpRoot#lpRoot[id][id] .lp-classfact{
+  background:linear-gradient(180deg,rgba(37,201,172,.10),rgba(37,201,172,.04)) !important;
+  border:1px solid rgba(37,201,172,.26) !important;
+  border-radius:var(--au-r-sm) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-list li svg{ color:#12A98C !important; }
+html body#lpRoot#lpRoot[id][id] .fn-microtrust span{ color:#5C6C86 !important; -webkit-text-fill-color:#5C6C86 !important; }
+html body#lpRoot#lpRoot[id][id] .fn-microtrust--onblue span{ color:rgba(214,232,255,.86) !important; -webkit-text-fill-color:rgba(214,232,255,.86) !important; }
+
+/* ---------- 18 · WHY DIFFERENT --------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .pdp-value-card h3{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(22px,1.72vw,29px) !important;
+  letter-spacing:-.018em !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  margin-bottom:.4em !important;
+}
+html body#lpRoot#lpRoot[id][id] .pdp-value-card p{ color:rgba(220,234,255,.82) !important; -webkit-text-fill-color:rgba(220,234,255,.82) !important; line-height:1.66 !important; }
+
+/* ---------- 19 · MECHANISM ------------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .fn-loop-step{
+  padding:clamp(22px,2vw,30px) !important;
+  border-radius:var(--au-r-md) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-loop-step h4{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(19px,1.4vw,24px) !important;
+  letter-spacing:-.016em !important;
+  color:#0A1B36 !important;
+  -webkit-text-fill-color:#0A1B36 !important;
+  margin:.18em 0 .32em !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-loop-step p{ color:#4A5B77 !important; -webkit-text-fill-color:#4A5B77 !important; line-height:1.62 !important; }
+
+/* ---------- 20 · CGM -------------------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet{
+  border-radius:var(--au-r-sm) !important;
+  padding:16px 18px !important;
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet svg{ color:#4FE0C6 !important; }
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet span{ color:rgba(226,238,255,.88) !important; -webkit-text-fill-color:rgba(226,238,255,.88) !important; }
+
+/* ---------- 21 · JOURNAL + PRESS CARDS ------------------------------- */
+html body#lpRoot#lpRoot[id][id] .lla-press-card{ padding:clamp(20px,1.8vw,28px) !important; }
+html body#lpRoot#lpRoot[id][id] .lla-press-title{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  font-size:clamp(17px,1.24vw,21px) !important;
+  line-height:1.34 !important;
+  letter-spacing:-.014em !important;
+  color:#0A1B36 !important;
+  -webkit-text-fill-color:#0A1B36 !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-press-link{
+  color:color-mix(in srgb, var(--a1) 78%, #0B2C55) !important;
+  -webkit-text-fill-color:color-mix(in srgb, var(--a1) 78%, #0B2C55) !important;
+  font-weight:600 !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-journal-label{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:17px !important;
+  color:#4A5B77 !important;
+  -webkit-text-fill-color:#4A5B77 !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-journal-links a{
+  background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(244,249,255,.9)) !important;
+  border:1px solid rgba(14,42,88,.10) !important;
+  border-radius:999px !important;
+  box-shadow:var(--au-lift-1), inset 0 1px 0 rgba(255,255,255,.9) !important;
+  color:#122E52 !important;
+  -webkit-text-fill-color:#122E52 !important;
+  font-weight:550 !important;
+  transition:transform .35s var(--au-ease), box-shadow .35s var(--au-ease);
+}
+@media (hover:hover){
+  html body#lpRoot#lpRoot[id][id] .lla-journal-links a:hover{
+    transform:translateY(-2px);
+    box-shadow:var(--au-lift-2), inset 0 1px 0 rgba(255,255,255,.95) !important;
+  }
+}
+
+/* ---------- 22 · FAQ -------------------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .faq-item{ border-radius:var(--au-r-md) !important; overflow:hidden !important; }
+html body#lpRoot#lpRoot[id][id] .faq-q{
+  background:transparent !important;
+  font-weight:600 !important;
+  font-size:clamp(16px,1.2vw,19px) !important;
+  letter-spacing:-.014em !important;
+  color:#0A1B36 !important;
+  -webkit-text-fill-color:#0A1B36 !important;
+}
+html body#lpRoot#lpRoot[id][id] .faq-icon{
+  background:linear-gradient(180deg,color-mix(in srgb, var(--a1) 14%, #FFFFFF),color-mix(in srgb, var(--a1) 8%, #F2F7FF)) !important;
+  border:1px solid color-mix(in srgb, var(--a1) 26%, transparent) !important;
+  color:color-mix(in srgb, var(--a1) 82%, #0B2C55) !important;
+  border-radius:12px !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+html body#lpRoot#lpRoot[id][id] .faq-a-inner{ color:#41526E !important; -webkit-text-fill-color:#41526E !important; line-height:1.72 !important; }
+
+/* ---------- 23 · CLOSING FOLD ---------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .fn-close{ position:relative; isolation:isolate; }
+html body#lpRoot#lpRoot[id][id] .fn-close-video{ filter:saturate(1.12) contrast(1.06) brightness(.72); }
+html body#lpRoot#lpRoot[id][id] .fn-close h2{
+  font-size:clamp(52px,6.2vw,98px) !important;
+  line-height:.99 !important;
+  letter-spacing:-.028em !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-close p{ color:rgba(226,238,255,.88) !important; -webkit-text-fill-color:rgba(226,238,255,.88) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-closefact{ border-radius:var(--au-r-md) !important; padding:22px 18px !important; }
+html body#lpRoot#lpRoot[id][id] .fn-closefact b{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(34px,3vw,50px) !important;
+  line-height:1 !important;
+  letter-spacing:-.026em !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-closefact span{ color:rgba(186,212,250,.84) !important; -webkit-text-fill-color:rgba(186,212,250,.84) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-closefact .lp-ico{ color:color-mix(in srgb, var(--a1) 48%, #BFE6FF) !important; }
+html body#lpRoot#lpRoot[id][id] .fn-close-tuition{ color:rgba(214,232,255,.9) !important; -webkit-text-fill-color:rgba(214,232,255,.9) !important; }
+
+/* ---------- 24 · SECONDARY PATH + LEAD GEN (chrome only, no fields) --- */
+html body#lpRoot#lpRoot[id][id] .fn-eyebrow{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:17px !important;
+  color:color-mix(in srgb, var(--a1) 62%, #24405F) !important;
+  -webkit-text-fill-color:color-mix(in srgb, var(--a1) 62%, #24405F) !important;
+}
+html body#lpRoot#lpRoot[id][id] .lead-gen-v2-eyebrow{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:17px !important;
+}
+/* the admissions fold keeps its photographic ground; only the light is tuned */
+html body#lpRoot#lpRoot[id][id] .lead-gen-v2-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(900px 620px at 84% 6%, color-mix(in srgb, var(--a1) 18%, transparent), transparent 62%),
+    radial-gradient(780px 540px at 4% 92%, color-mix(in srgb, var(--a2) 16%, transparent), transparent 60%);
+}
+
+/* ---------- 25 · FOOTER ---------------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .footer{
+  position:relative;
+  overflow:clip;
+  background:
+    radial-gradient(1100px 600px at 12% -20%, rgba(47,123,255,.28), transparent 62%),
+    radial-gradient(900px 560px at 90% 0%, rgba(110,99,255,.20), transparent 60%),
+    linear-gradient(180deg,#061229 0%,#02080F 100%) !important;
+  border-top:1px solid rgba(168,204,255,.14) !important;
+}
+html body#lpRoot#lpRoot[id][id] .footer-brand p{ color:rgba(198,218,246,.74) !important; -webkit-text-fill-color:rgba(198,218,246,.74) !important; }
+html body#lpRoot#lpRoot[id][id] .pr-footer-lockup img{ filter:drop-shadow(0 6px 24px rgba(0,110,255,.34)); }
+
+/* ---------- 26 · FLOATING CTA + EXIT MODAL --------------------------- */
+html body#lpRoot#lpRoot[id][id] .lla-float-cta{
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    0 -2px 24px rgba(6,78,190,.32),
+    0 18px 44px -14px rgba(4,26,66,.72) !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-exit .fn-exit-card,
+html body#lpRoot#lpRoot[id][id] #fnExit .fn-exit-card{
+  border-radius:var(--au-r-lg) !important;
+  box-shadow:var(--au-lift-3), inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+html body#lpRoot#lpRoot[id][id] #fnExitTitle{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  letter-spacing:-.02em !important;
+}
+
+/* ---------- 27 · MOBILE FINE-TUNE (type only, layout untouched) ------- */
+@media (max-width:820px){
+  html body#lpRoot#lpRoot[id][id] .section-title,
+  html body#lpRoot#lpRoot[id][id] .fn-h2,
+  html body#lpRoot#lpRoot[id][id] .pdp-value-h2,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-title,
+  html body#lpRoot#lpRoot[id][id] .fn-close h2,
+  html body#lpRoot#lpRoot[id][id] .lead-gen h2,
+  html body#lpRoot#lpRoot[id][id] .fn-apply-head h2{
+    font-size:clamp(33px,9vw,46px) !important;
+    line-height:1.04 !important;
+    letter-spacing:-.02em !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .pdp-cine-h1{
+    font-size:clamp(38px,10.4vw,58px) !important;
+    line-height:1.02 !important;
+    letter-spacing:-.022em !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b{ font-size:clamp(50px,15vw,72px) !important; }
+  html body#lpRoot#lpRoot[id][id] .fn-stack-total b{ font-size:clamp(36px,11vw,52px) !important; }
+  html body#lpRoot#lpRoot[id][id] .quote-text{ font-size:17px !important; }
+  html body#lpRoot#lpRoot[id][id] .lp-lrow-title{ font-size:23px !important; }
+}
+
+/* ---------- 28 · REPAIRS ---------------------------------------------- */
+/* The faculty grid renders as five zero-height cards on desktop today: a
+   late `aspect-ratio:auto !important` cancels the ratio the cinematic card
+   depends on while its photo and body are both absolutely positioned, so
+   the fold collapses to a hairline. Restore the ratio above the mobile
+   breakpoint — mobile keeps the round-3 stacked treatment untouched. */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] a.teacher-card-live,
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live{
+    aspect-ratio:3 / 4.3 !important;
+    height:auto !important;
+    min-height:0 !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo,
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo--square{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    max-height:none !important;
+    aspect-ratio:auto !important;
+    margin:0 !important;
+    border-radius:0 !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-body{
+    position:absolute !important;
+    left:0; right:0; bottom:0;
+    z-index:2;
+  }
+  /* deepen the duotone so the overlaid name always clears the photo */
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live-photo::after{
+    background:
+      linear-gradient(180deg, rgba(6,20,44,.02) 0%, rgba(6,18,40,.18) 40%, rgba(4,12,30,.86) 78%, rgba(3,9,22,.97) 100%),
+      linear-gradient(200deg, color-mix(in srgb, var(--a1) 34%, transparent) 0%, rgba(4,10,26,0) 58%) !important;
+  }
+}
+
+/* the $ sits above the gradient's paint box, so give it its own colour */
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b sup{
+  -webkit-text-fill-color:#0B3E86 !important;
+  color:#0B3E86 !important;
+  background:none !important;
+  font-family:'Inter',system-ui,sans-serif !important;
+  font-style:normal !important;
+  font-weight:600 !important;
+}
+html body#lpRoot#lpRoot[id][id] .fn-stack-total b,
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price{ letter-spacing:-.03em !important; }
+
+/* pillar titles: the tight-variant selector outranked the base rule */
+html body#lpRoot#lpRoot[id][id] .lp-learn--tight .lp-lrow-title,
+html body#lpRoot#lpRoot[id][id] .lp-lrow .lp-lrow-title{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  letter-spacing:-.018em !important;
+}
+
+/* founding faculty keeps its gold signature */
+html body#lpRoot#lpRoot[id][id] .teacher-card-live.is-founding .teacher-card-live-role{
+  color:#E9CB92 !important;
+  -webkit-text-fill-color:#E9CB92 !important;
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  font-size:15.5px !important;
+}
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .teacher-card-live.is-founding{
+    box-shadow:
+      inset 0 0 0 1px rgba(233,203,146,.55),
+      var(--au-lift-3),
+      0 60px 110px -50px rgba(233,203,146,.42) !important;
+  }
+}
+
+/* ---------- 29 · FOLD REPAIRS, ROUND 2 -------------------------------- */
+/* CGM: the product plate is taller than the photo, so a black band sits
+   under it today. Let the image set the height and frame it as a plate. */
+html body#lpRoot#lpRoot[id][id] .cgm-fold-images,
+html body#lpRoot#lpRoot[id][id] .cgm-fold-img{
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  background:#FFFFFF !important;
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-img{
+  display:block !important;
+  padding:0 !important;
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-img img{
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:cover !important;
+  display:block !important;
+  border-radius:0 !important;
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet{
+  display:flex !important;
+  align-items:flex-start !important;
+  gap:12px !important;
+}
+html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet svg{ flex:0 0 auto; margin-top:3px; }
+
+/* Admissions form labels read as near-invisible pale blue on white today.
+   Colour only — the fields, names, order and behaviour are untouched. */
+html body#lpRoot#lpRoot[id][id] .lead-gen-v2-right label,
+html body#lpRoot#lpRoot[id][id] .lead-gen-v2-form label,
+html body#lpRoot#lpRoot[id][id] #lead-gen form label{
+  color:#33455F !important;
+  -webkit-text-fill-color:#33455F !important;
+  opacity:1 !important;
+  font-weight:600 !important;
+  letter-spacing:-.004em !important;
+}
+html body#lpRoot#lpRoot[id][id] #lead-gen form label span,
+html body#lpRoot#lpRoot[id][id] #lead-gen form label small{
+  color:#6B7C95 !important;
+  -webkit-text-fill-color:#6B7C95 !important;
+  font-weight:500 !important;
+}
+
+/* films: the two faculty films get the same glass frame as the rest */
+html body#lpRoot#lpRoot[id][id] .lla-film{ padding:14px !important; }
+html body#lpRoot#lpRoot[id][id] .lla-film figcaption b{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  font-size:clamp(20px,1.5vw,25px) !important;
+  letter-spacing:-.018em !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+}
+html body#lpRoot#lpRoot[id][id] .lla-film figcaption span{
+  color:#E9CB92 !important;
+  -webkit-text-fill-color:#E9CB92 !important;
+  font-weight:500 !important;
+  letter-spacing:-.002em !important;
+  text-transform:none !important;
+}
+
+/* ---------- 30 · TYPE LOCK-INS ---------------------------------------- */
+/* the hero's second line is the loudest type on the page: same face, same
+   italic, so the headline reads as one sentence rather than two fonts */
+html body#lpRoot#lpRoot[id][id] #hero .pdp-cine-h1,
+html body#lpRoot#lpRoot[id][id] #hero .pdp-cine-h1 .pdp-cine-blue,
+html body#lpRoot#lpRoot[id][id] #hero h1 .pdp-cine-blue,
+html body#lpRoot#lpRoot[id][id] #hero h1 span,
+html body#lpRoot#lpRoot[id][id] #hero h1 em{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:600 !important;
+  letter-spacing:-.026em !important;
+}
+
+/* faculty role, at every width */
+html body#lpRoot#lpRoot[id][id] section .teacher-card-live .teacher-card-live-role,
+html body#lpRoot#lpRoot[id][id] section a.teacher-card-live .teacher-card-live-role,
+html body#lpRoot#lpRoot[id][id] .instructors .teacher-card-live .teacher-card-live-role{
+  color:#9FD0FF !important;
+  -webkit-text-fill-color:#9FD0FF !important;
+  font-family:'Inter',system-ui,sans-serif !important;
+  font-style:normal !important;
+  font-weight:600 !important;
+  font-size:14px !important;
+  letter-spacing:-.002em !important;
+  text-transform:none !important;
+}
+html body#lpRoot#lpRoot[id][id] section .teacher-card-live.is-founding .teacher-card-live-role,
+html body#lpRoot#lpRoot[id][id] .instructors .teacher-card-live.is-founding .teacher-card-live-role{
+  color:#E9CB92 !important;
+  -webkit-text-fill-color:#E9CB92 !important;
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-style:italic !important;
+  font-weight:500 !important;
+  font-size:15.5px !important;
+}
+
+/* ---------- 31 · FINAL POLISH ----------------------------------------- */
+/* partner marks: one even row of plates instead of three odd pills */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .trust-logo{
+    min-width:180px !important;
+    height:74px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    padding:0 26px !important;
+    border-radius:16px !important;
+    background:linear-gradient(180deg,#FFFFFF,#F4F8FF) !important;
+    box-shadow:0 2px 6px rgba(2,10,26,.34), 0 22px 44px -26px rgba(0,0,0,.85), inset 0 1px 0 rgba(255,255,255,.9) !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .trust-logo-img{
+    max-height:34px !important;
+    width:auto !important;
+    object-fit:contain !important;
+  }
+}
+
+/* FAQ rows: tighten the dead space under a collapsed question */
+@media (min-width:821px){
+  html body#lpRoot#lpRoot[id][id] .faq-item{ margin-bottom:14px !important; }
+  html body#lpRoot#lpRoot[id][id] .faq-q{
+    padding:24px 26px !important;
+    gap:18px !important;
+    align-items:center !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .faq-num{
+    font-size:19px !important;
+    min-width:44px !important;
+  }
+  html body#lpRoot#lpRoot[id][id] .faq-a-inner{ padding:0 26px 26px 88px !important; }
+}
+
+/* the closing fold's four facts sit evenly under the class shot */
+html body#lpRoot#lpRoot[id][id] .fn-closefact .lp-ico{ opacity:.92; }
+
+/* press ticker marks keep their brand colours but sit on a calmer rule */
+html body#lpRoot#lpRoot[id][id] .pressx-viewport{
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 94%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 94%,transparent 100%);
+}
+
+/* selection + focus in brand colour */
+html body#lpRoot#lpRoot[id][id] ::selection{ background:rgba(0,110,255,.24); color:inherit; }
+html body#lpRoot#lpRoot[id][id] a:focus-visible,
+html body#lpRoot#lpRoot[id][id] button:focus-visible{
+  outline:2px solid #4D9BFF !important;
+  outline-offset:3px !important;
+  border-radius:12px;
+}
+
+/* ---------- 32 · LAST DETAILS ----------------------------------------- */
+html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b sup{
+  -webkit-text-fill-color:#1478E8 !important;
+  color:#1478E8 !important;
+  font-size:.42em !important;
+  top:-.62em !important;
+  margin-right:.02em !important;
+}
+
+/* glass is a desktop luxury: drop the blur on phones so scrolling stays
+   at 60fps on mid-range hardware. The surfaces keep their colour. */
+@media (max-width:820px){
+  html body#lpRoot#lpRoot[id][id] .quote-card,
+  html body#lpRoot#lpRoot[id][id] .pdp-value-card,
+  html body#lpRoot#lpRoot[id][id] .lla-film,
+  html body#lpRoot#lpRoot[id][id] .cgm-fold-bullet,
+  html body#lpRoot#lpRoot[id][id] .fn-closefact,
+  html body#lpRoot#lpRoot[id][id] .hero-powered-bar,
+  html body#lpRoot#lpRoot[id][id] .lp-deep .lp-lrow{
+    -webkit-backdrop-filter:none !important;
+    backdrop-filter:none !important;
+    background:linear-gradient(168deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,.05) 100%) !important;
+  }
+}
