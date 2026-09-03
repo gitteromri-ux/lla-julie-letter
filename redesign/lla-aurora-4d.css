@@ -1417,3 +1417,41 @@ html body#lpRoot#lpRoot[id][id] .fn-pricecard-price b sup{
     background:linear-gradient(168deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,.05) 100%) !important;
   }
 }
+
+/* ---------- 33 · FLOATING BAR: the full-screen blue slab ---------------
+   Two rule sets own .lla-float-cta. light-premium.css pins it as a
+   top-right pill (position:fixed; top:104px; right:32px). The later
+   round-3 rule re-anchors it to the bottom with left/right/bottom in its
+   BASE rule — at every width — but never clears `top`. So the element is
+   anchored on all four edges at once and paints as a full-viewport blue
+   block over the page. Seen at 940px: 912x782. Clearing `top` is the
+   whole fix, and it belongs at every width because the bottom anchor is
+   unconditional. Visibility is left to the existing rules.          */
+html #lpRoot#lpRoot[id][id] .lla-float-cta,
+html #lpRoot#lpRoot[id][id] #fnBuyBar{
+  top:auto !important;
+  left:14px !important;
+  right:14px !important;
+  bottom:14px !important;
+  width:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  align-items:center !important;
+  gap:12px !important;
+  padding:13px 18px !important;
+  border-radius:15px !important;
+  overflow:hidden !important;
+}
+html #lpRoot#lpRoot[id][id] .lla-float-cta-sub{
+  margin-left:auto !important;
+  white-space:nowrap !important;
+}
+@media (min-width:901px){
+  html #lpRoot#lpRoot[id][id] .lla-float-cta,
+  html #lpRoot#lpRoot[id][id] #fnBuyBar{
+    left:auto !important;
+    right:24px !important;
+    max-width:420px !important;
+  }
+}
