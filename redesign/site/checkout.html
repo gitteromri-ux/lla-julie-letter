@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Place your order — The Longevity Blueprint | Longevity Life Academy</title>
+<meta name="description" content="Place your order for the Longevity Life Academy founder's cohort." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet" />
+<style>
+:root{
+  --blue:#006EFF; --blue-strong:#0051CC; --blue-hover:#0059D6; --blue-light:#E8F1FF;
+  --ink:#111111; --ink-2:#2A2F36; --ink-3:#5A6472; --ink-4:#8892A0;
+  --bg:#FFFFFF; --surface:#F5F7FA; --line:#E3E7EE;
+  --navy:#12355B; --accent:#E2571E;
+  --font-display:'Codec Pro','Inter',sans-serif; --font-body:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font-body);background:#fff;color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}
+
+/* ---------- HEADER ---------- */
+.co-head{background:#fff;border-bottom:1px solid var(--line);padding:13px 26px;display:flex;align-items:center;gap:24px;position:sticky;top:0;z-index:20;min-height:68px}
+.co-head .logo img{height:44px;display:block}
+.stepper{flex:1;display:flex;justify-content:center;align-items:center;align-self:center}
+.stepper-in{display:flex;align-items:center;height:28px}
+.stepper .st{display:flex;align-items:center;gap:9px}
+.stepper .dot{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:#fff;border:1.5px solid #C9D2DE;color:#98A3B3;flex:none}
+.stepper .lbl{font-size:14.5px;color:#98A3B3;font-weight:500;white-space:nowrap}
+.stepper .st.done .dot{background:var(--blue);border-color:var(--blue);color:#fff}
+.stepper .st.done .lbl{color:var(--ink);font-weight:600}
+.stepper .bar{width:62px;height:1.5px;background:#D7DEE8;margin:0 11px;flex:none}
+.stepper .bar.done{background:var(--blue)}
+.callus{font-size:14.5px;color:var(--ink-2);white-space:nowrap}
+.callus a{font-weight:700}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:900px;margin:0 auto;padding:26px 18px 70px}
+.demo{display:flex;justify-content:center;margin-bottom:18px}
+.demo span{background:var(--blue-light);color:var(--blue-strong);font-size:12.5px;font-weight:600;padding:7px 15px;border-radius:99px}
+.cols{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:22px;align-items:start}
+.cols>div{min-width:0}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.card-pad{padding:17px 19px}
+.ln{font-size:14px;color:var(--ink-2);margin-bottom:5px}
+.ln b{font-weight:700;color:var(--ink)}
+.ln:last-child{margin-bottom:0}
+.course-name{color:var(--accent);font-weight:700}
+
+.tband{background:var(--navy);color:#fff;padding:15px 19px;display:flex;align-items:center;gap:12px}
+.tband svg{flex:none}
+.tband .t-lbl{font-size:13.5px;font-weight:600;opacity:.92;margin-bottom:2px}
+.tband .t-val{font-family:var(--font-display);font-weight:800;font-size:17px;letter-spacing:.1px}
+
+.foot-note{font-size:12.5px;color:var(--ink-3);font-style:italic;margin:11px 0 18px;line-height:1.45}
+
+/* ---------- PAYMENT ---------- */
+.pay-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}
+.pay-tab{display:flex;align-items:center;justify-content:center;gap:7px;padding:15px 10px;cursor:pointer;background:#F4F6F9;border-bottom:1px solid var(--line);transition:.15s}
+.pay-tab.active{background:#fff;border-bottom:1px solid #fff}
+.pay-tab img{height:25px;display:block}
+.pay-tab .pp{height:30px}
+.pay-body{padding:19px}
+.gpay{width:100%;background:#000;color:#fff;border:none;border-radius:6px;padding:14px;font-family:var(--font-body);font-weight:600;font-size:15.5px;display:flex;align-items:center;justify-content:center;gap:7px;cursor:pointer}
+.gpay img{height:19px;display:block}
+.orpay{text-align:center;font-size:13.5px;color:var(--ink-3);margin:17px 0 14px}
+.f-lbl{font-size:13px;color:var(--ink-2);font-weight:600;margin-bottom:7px}
+.cardbox{border:1px solid #D5DCE6;border-radius:7px;overflow:hidden;margin-bottom:14px}
+.cardbox .row{display:flex;align-items:center;border-bottom:1px solid #D5DCE6}
+.cardbox .row:last-child{border-bottom:none}
+.cardbox input{flex:1;border:none;outline:none;padding:12px 13px;font-size:14.5px;font-family:var(--font-body);color:var(--ink);background:#fff;min-width:0}
+.cardbox input::placeholder{color:#A9B3C1}
+.brandrow{display:flex;gap:3px;padding-right:11px;flex:none}
+.brandrow img{height:15px;display:block}
+.split{display:flex}
+.split .half{flex:1;display:flex;align-items:center}
+.split .half:first-child{border-right:1px solid #D5DCE6}
+.input{width:100%;border:1px solid #D5DCE6;border-radius:7px;padding:12px 13px;font-size:14.5px;font-family:var(--font-body);outline:none}
+.input::placeholder{color:#A9B3C1}
+.input:focus,.cardbox input:focus{border-color:var(--blue)}
+.proceed{width:100%;margin-top:16px;background:var(--blue);color:#fff;border:none;border-radius:7px;padding:14px;font-family:var(--font-body);font-weight:700;font-size:15.5px;cursor:pointer;transition:.15s}
+.proceed:hover{background:var(--blue-hover)}
+
+/* ---------- SUMMARY ---------- */
+.sum{background:#fff;border:1px solid var(--line);border-radius:9px;padding:19px;position:sticky;top:88px}
+.sum-row{display:flex;justify-content:space-between;gap:14px;margin-bottom:5px}
+.sum-row .k{font-size:14.5px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:6px;min-width:0}
+.sum-row .v{font-size:14.5px;font-weight:600;color:var(--ink);white-space:nowrap}
+.tip{width:15px;height:15px;border-radius:50%;border:1.2px solid #A9B3C1;color:#8C97A6;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:help;flex:none}
+.sum-note{font-size:12.5px;color:var(--ink-3);font-style:italic;line-height:1.45;max-width:82%;margin-bottom:16px}
+.sum hr{border:none;border-top:1px solid var(--line);margin:4px 0 15px}
+.sum p{font-size:13px;color:var(--ink-2);line-height:1.6;margin-bottom:12px}
+.sum p:last-child{margin-bottom:0}
+
+.voices{margin-top:26px;text-align:center}
+.voices h3{font-family:var(--font-display);font-size:25px;font-weight:800;line-height:1.2;letter-spacing:-.4px;margin-bottom:16px}
+.tcard{background:#F4F6F9;border:1px solid var(--line);border-radius:9px;padding:17px;text-align:left}
+.tcard .stars{color:#00B67A;font-size:13px;letter-spacing:1px;margin-bottom:8px}
+.tcard blockquote{font-size:13.5px;color:var(--ink-2);line-height:1.6;font-style:italic}
+.tcard cite{display:block;margin-top:9px;font-size:12px;color:var(--ink-3);font-style:normal}
+
+/* ---------- DONE ---------- */
+.done{max-width:520px;margin:70px auto;text-align:center;padding:0 20px}
+.done h1{font-family:var(--font-display);font-size:34px;font-weight:800;letter-spacing:-.8px;margin-bottom:12px}
+.done p{color:var(--ink-3);font-size:15.5px;margin-bottom:22px}
+.done a{font-weight:700}
+#screen-done{display:none}
+
+@media(max-width:820px){
+  .cols{grid-template-columns:1fr}
+  .sum{position:static}
+  .stepper .bar{width:34px;margin:0 7px}
+  .stepper .lbl{display:none}
+  .co-head{padding:12px 16px;gap:12px}
+  .callus{font-size:13px}
+}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1440305917310328');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1440305917310328&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script>
+window.LLA_META=(function(){
+  function ck(n){var m=document.cookie.match(new RegExp('(?:^|; )'+n+'=([^;]+)'));return m?decodeURIComponent(m[1]):'';}
+  function track(name,data,email){
+    try{
+      if(window.LLA_ECOMM_CONFIG&&window.LLA_ECOMM_CONFIG.env==='staging')return;
+      var id='lla_'+name.toLowerCase()+'_'+Date.now()+'_'+Math.random().toString(36).slice(2,8);
+      try{if(window.fbq)fbq('track',name,data||{},{eventID:id});}catch(e){}
+      var payload=JSON.stringify({event_name:name,event_id:id,email:email||'',
+        value:(data&&data.value)||0,currency:(data&&data.currency)||'USD',
+        content_name:(data&&data.content_name)||'',order_id:(data&&data.order_id)||'',
+        url:location.href,fbp:ck('_fbp'),fbc:ck('_fbc')});
+      fetch('https://lla-ac-events.vercel.app/api/meta/capi',{method:'POST',headers:{'Content-Type':'text/plain'},body:payload,keepalive:true}).catch(function(){});
+    }catch(e){}
+  }
+  return {track:track};
+})();
+</script>
+</head>
+<body>
+
+<header class="co-head">
+  <a class="logo" href="index.html"><img src="assets/lla-logo-exact-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" /></a>
+  <div class="stepper"><div class="stepper-in">
+    <div class="st done"><span class="dot">1</span><span class="lbl">Register</span></div>
+    <span class="bar done"></span>
+    <div class="st done"><span class="dot">2</span><span class="lbl">Select course</span></div>
+    <span class="bar"></span>
+    <div class="st"><span class="dot">3</span><span class="lbl">Place order</span></div>
+  </div></div>
+  <div class="callus">Call Us <a href="tel:+18882305110">+1-888-230-5110</a></div>
+</header>
+
+<main id="screen-order" class="wrap">
+  <div class="demo" id="demoBanner" style="display:none"><span>Demo checkout — no card is charged</span></div>
+
+  <div class="cols">
+    <!-- LEFT -->
+    <div>
+      <div class="card">
+        <div class="card-pad">
+          <div class="ln"><b>Course:</b> <span class="course-name">The Longevity Blueprint - Founder's Cohort</span></div>
+          <div class="ln"><b>Course Duration:</b> 18 weeks</div>
+          <div class="ln"><b>Schedule:</b> 18 live sessions across 18 weeks, one session every week</div>
+          <div class="ln"><b>Session time:</b> Monday evenings, 7:00pm - 7:50pm ET</div>
+          <div class="ln"><b>Lesson duration:</b> 50 min</div>
+          <div class="ln"><b>Location:</b> Online</div>
+        </div>
+        <div class="tband">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#3DDC97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <div>
+            <div class="t-lbl">Course tuition fee</div>
+            <div class="t-val">$279.00 monthly for 5 months</div>
+          </div>
+        </div>
+      </div>
+      <p class="foot-note">* Today's registration fee is fully refundable with 14 days from registration</p>
+
+      <div class="card">
+        <div class="pay-tabs">
+          <div class="pay-tab active" data-tab="card">
+            <img src="assets/pay/visa.svg" alt="Visa" />
+            <img src="assets/pay/mastercard.svg" alt="Mastercard" />
+            <img src="assets/pay/amex.svg" alt="American Express" />
+          </div>
+          <div class="pay-tab" data-tab="paypal">
+            <img class="pp" src="assets/pay/paypal.svg" alt="PayPal" />
+          </div>
+        </div>
+        <div class="pay-body">
+          <button class="gpay" type="button">Subscribe with <img src="assets/pay/google-g.svg" alt="Google" /> <b>Pay</b></button>
+          <div class="orpay">Or pay with</div>
+
+          <div class="f-lbl">Card information</div>
+          <!-- Airwallex Drop-In mount (real card entry, wired to eTeacher's Airwallex account) -->
+          <div id="awx-dropin" style="min-height:220px;border:1px solid #D5DCE6;border-radius:7px;padding:12px;margin-bottom:14px;background:#fff"></div>
+          <div id="awx-status" style="font-size:13px;color:var(--ink-3);margin:6px 0 8px"></div>
+
+          <button class="proceed" type="button" id="proceed">Pay now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+      <div class="sum">
+        <div class="sum-row">
+          <span class="k">Course registration fee <span class="tip" title="Charged today to reserve your seat.">?</span></span>
+          <span class="v">$279.00</span>
+        </div>
+        <p class="sum-note">Fully refundable within 14 days from registration.</p>
+
+        <div class="sum-row">
+          <span class="k">Monthly tuition fee <span class="tip" title="Billed monthly after your first class.">?</span></span>
+          <span class="v">4 x $279.00</span>
+        </div>
+        <p class="sum-note">Monthly payments begin the month after your first class.</p>
+
+        <hr />
+        <p>Your start date is confirmed by admissions after registration. The course registration fee is fully refundable within 14 days from registration.</p>
+        <p>In case you have decided to cancel your participation please note that live cohorts, like any other classrooms, have limited capacity. Demand for our classes is high and late cancellation prevent other students from obtaining a spot in the upcoming cohort.</p>
+        <p>Students who wish to cancel their participation up to 14 days after the registration date are entitled to a full refund, as explained on our <a href="https://www.longevitylifeacademy.com/terms.html">cancellation policy page</a>.</p>
+      </div>
+
+      <div class="voices">
+        <h3>See what our students are saying</h3>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <blockquote>"So happy finding eTeacher Group. They are genuinely concerned that you learn what you want to learn. They listen to what you want to learn and why, and then give thoughtful recommendations. Excellent classes and teachers."</blockquote>
+          <cite>Trustpilot · 5 stars · Sept 2025 · verified review of eTeacher Group</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section id="screen-done" class="done">
+  <h1>You're enrolled</h1>
+  <p>Welcome to The Longevity Blueprint founder's cohort. Your place is reserved. A confirmation and your onboarding steps are on the way, including your start date.</p>
+  <p style="font-size:13px">Demo checkout — no card was charged.</p>
+  <a href="index.html">← Back to home</a>
+</section>
+
+<script>
+  // Force ecomm mode on checkout page so Airwallex Drop-In initializes
+  window.LLA_ECOMM_CONFIG = window.LLA_ECOMM_CONFIG || {};
+  window.LLA_ECOMM_CONFIG.mode = 'ecomm';
+  // ?env=staging routes to eTeacher staging CRM + their Airwallex DEMO account (test cards valid).
+  var _q = new URLSearchParams(location.search);
+  window.LLA_ECOMM_CONFIG.env  = (_q.get('env') === 'staging') ? 'staging' : 'production';
+  window.LLA_ECOMM_CONFIG.workerBase = 'https://eteacher-leads-proxy.gitter-omri.workers.dev';
+</script>
+<script src="https://checkout.airwallex.com/assets/elements.bundle.min.js?version=1.160.0"></script>
+<script src="assets/eteacher-ecomm.js"></script>
+<script>
+document.querySelectorAll('.pay-tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    document.querySelectorAll('.pay-tab').forEach(function(x){x.classList.remove('active')});
+    t.classList.add('active');
+  });
+});
+
+var statusEl = document.getElementById('awx-status');
+function setStatus(msg, color){ statusEl.textContent = msg; statusEl.style.color = color || 'var(--ink-3)'; }
+
+function showDone(){
+  document.getElementById('screen-order').style.display='none';
+  document.getElementById('screen-done').style.display='block';
+  var s=document.querySelectorAll('.stepper .st')[2];
+  s.classList.add('done');
+  document.querySelectorAll('.stepper .bar')[1].classList.add('done');
+  window.scrollTo(0,0);
+}
+
+// SOLUTION A , the CRM lead + order are created HERE, on the payment screen, and
+// nowhere else. The details screen only validates and stages the payload, so a
+// visitor who never reaches this page leaves no lead and no order behind.
+// Order of precedence:
+//   1. ids already in the URL or session  -> reuse them, never create twice
+//      (covers refresh, back-button and double click)
+//   2. a staged payload from the details screen -> create the lead + order once
+//   3. neither -> demo state, nothing is written to the CRM
+function ensureLiveOrder(){
+  var ids = window.LLA_ECOMM ? window.LLA_ECOMM.getCheckoutIds() : null;
+  if (ids && ids.stid && ids.orderid) return Promise.resolve(ids);
+  if (window.LLA_ECOMM && window.LLA_ECOMM.hasPendingLead && window.LLA_ECOMM.hasPendingLead()) {
+    setStatus('Reserving your seat...');
+    return window.LLA_ECOMM.createStagedOrder();
+  }
+  return Promise.reject(new Error('NO_ORDER_IN_SESSION'));
+}
+
+async function initAirwallex(){
+  try {
+    var ids = await ensureLiveOrder();
+    setStatus('Fetching Airwallex intent for order ' + ids.orderid + '...');
+
+    // Must hit the SAME environment the order was created in, else "Order and student did not match".
+    var envPrefix = (window.LLA_ECOMM_CONFIG.env === 'staging') ? '/staging' : '';
+    var r = await fetch('https://eteacher-leads-proxy.gitter-omri.workers.dev' + envPrefix + '/api/checkout/details', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ studentId: String(ids.stid), orderId: String(ids.orderid) })
+    });
+    var raw = await r.text();
+    var d;
+    try { d = JSON.parse(raw); }
+    catch (parseErr) { throw new Error('CRM returned non-JSON (HTTP ' + r.status + '): ' + raw.slice(0, 200)); }
+    if (!d.Airwallex || !d.Airwallex.paymentIntentId) throw new Error('No Airwallex intent returned: ' + JSON.stringify(d).slice(0,300));
+
+    var intentId = d.Airwallex.paymentIntentId;
+    var clientSecret = d.Airwallex.clientSecret;
+    var amount = d.Airwallex.amount;
+    var currency = d.Airwallex.currency;
+    var paymentId = d.PaymentID;
+
+    document.getElementById('awx-status').innerHTML = 'Live Airwallex intent: <code style="font-size:12px">' + intentId + '</code> · $' + amount + ' ' + currency;
+    /* THE ONLY pre-purchase Meta event in the whole funnel.
+     * Fires here, on the payment screen, once the real Airwallex intent for
+     * this order exists. Named AddToCart because that is the event the live
+     * Meta sales campaign optimises on. Nothing fires on checkout step 1 or 2.
+     * Once per order: the sessionStorage guard makes refresh / back-forward /
+     * re-entry of the same order a no-op, and LLA_META.track already sends a
+     * shared eventID so the browser and CAPI copies dedupe into one event.
+     * Do not add InitiateCheckout or any second pre-purchase event here. */
+    try{
+      var _atcKey = 'lla_atc_' + String(ids.orderid);
+      var _atcSent = false;
+      try{ _atcSent = !!(window.sessionStorage && sessionStorage.getItem(_atcKey)); }catch(e){}
+      if(!_atcSent){
+        LLA_META.track('AddToCart',{value:Number(amount)||279,currency:currency||'USD',content_name:'Longevity Blueprint',order_id:String(ids.orderid)});
+        try{ if(window.sessionStorage) sessionStorage.setItem(_atcKey,'1'); }catch(e){}
+      }
+    }catch(e){}
+
+    // Show live amounts in the sum panel
+    var vs = document.querySelectorAll('.sum-row .v');
+    if (vs[0]) vs[0].textContent = '$' + amount.toFixed(2);
+    if (vs[1] && d.NumOfPayments) vs[1].textContent = (d.NumOfPayments) + ' x $' + amount.toFixed(2);
+
+    // The elements.bundle.min.js from checkout.airwallex.com attaches window.Airwallex directly.
+    var awx = window.Airwallex;
+    if (!awx || !awx.init) throw new Error('Airwallex SDK not loaded. window.Airwallex=' + typeof window.Airwallex);
+
+    // Airwallex env must match the account the intent belongs to:
+    // staging CRM -> "eTeacher Demo PA" (demo), production CRM -> "ETEACHER EU LIMITED" (prod).
+    var awxEnv = (window.LLA_ECOMM_CONFIG.env === 'staging') ? 'demo' : 'prod';
+    setStatus('Initializing Airwallex (' + awxEnv + ')...');
+    await awx.init({ env: awxEnv, origin: window.location.origin });
+
+    var mountEl = document.getElementById('awx-dropin');
+    mountEl.innerHTML = '';
+
+    // Payment mode with intent_id (recurring schedule is enforced server-side by eTeacher's CRM).
+    var dropIn = awx.createElement('dropIn', {
+      intent_id: intentId,
+      client_secret: clientSecret,
+      currency: currency,
+      mode: 'payment'
+    });
+    if (!dropIn) throw new Error('createElement returned null - SDK could not build dropIn');
+    dropIn.mount(mountEl);
+
+    dropIn.on('success', function(evt){
+      setStatus('✓ Payment SUCCEEDED — intent ' + intentId, '#0a7');
+      try{LLA_META.track('Purchase',{value:Number(amount)||279,currency:currency||'USD',content_name:'Longevity Blueprint',order_id:String(ids.orderid)});}catch(e){}
+      // Report to CRM via our Worker (queued to /Students/SetECommercePayment)
+      window.LLA_ECOMM.reportPayment({
+        StudentId: String(ids.stid),
+        OrderId: String(ids.orderid),
+        PaymentId: String(paymentId),
+        PaymentMethod: 'CreditCard',
+        AmountCharged: String(amount),
+        ChargeType: 'RegistrationFee',
+        IsApproved: true,
+        TransactionId: (evt && evt.detail && evt.detail.intent && evt.detail.intent.id) || intentId
+      }).then(function(){ setTimeout(showDone, 800); });
+    });
+    dropIn.on('error', function(evt){
+      setStatus('✗ Payment failed: ' + ((evt && evt.detail && evt.detail.message) || 'error'), '#c33');
+    });
+    dropIn.on('ready', function(){ setStatus(awxEnv === 'demo' ? 'Sandbox ready — test card 4035 5010 0000 0008, any future date, any CVC.' : 'Secure card entry ready. This is a live payment of $' + amount.toFixed(2) + ' ' + currency + '.'); });
+
+    // Manual pay button also submits the drop-in
+    document.getElementById('proceed').addEventListener('click', function(){
+      try { dropIn.confirm(); } catch(e){ setStatus('Submit error: ' + e.message, '#c33'); }
+    });
+  } catch (e) {
+    if (e && e.message === 'NO_ORDER_IN_SESSION') {
+      // Nothing written to the CRM. Show the demo state and send the visitor back to enroll.
+      document.getElementById('demoBanner').style.display = 'flex';
+      document.getElementById('awx-dropin').innerHTML =
+        '<div style="padding:18px 4px;font-size:14px;color:#5A6472;line-height:1.55">'
+        + 'No enrollment in progress. Start on the course page to reserve your seat, '
+        + 'then this step will load your real payment form.<br><br>'
+        + '<a href="index.html" style="font-weight:700">&#8592; Go to The Longevity Blueprint</a></div>';
+      setStatus('');
+      document.getElementById('proceed').style.display = 'none';
+      return;
+    }
+    if (e && e.message === 'LEAD_CREATE_FAILED') {
+      // The enrollment could not be opened in the CRM (already retried 3x inside
+      // the client). Send the visitor back to the details step with their data
+      // still in the form's session, and keep the card form hidden.
+      document.getElementById('awx-dropin').innerHTML =
+        '<div style="padding:18px 4px;font-size:14px;color:#5A6472;line-height:1.55">'
+        + 'We could not open your enrollment just now. Nothing has been charged.<br><br>'
+        + '<a href="index.html?enroll=1" style="font-weight:700">&#8592; Check your details and try again</a></div>';
+      setStatus('Could not reserve your seat , please try again.', '#c33');
+      document.getElementById('proceed').style.display = 'none';
+      console.error(e);
+      return;
+    }
+    setStatus('Init failed: ' + e.message, '#c33');
+    console.error(e);
+  }
+}
+
+if (window.LLA_ECOMM && window.LLA_ECOMM.config && window.LLA_ECOMM.config.mode === 'ecomm') {
+  initAirwallex();
+} else {
+  document.getElementById('demoBanner').style.display = 'flex';
+  document.getElementById('proceed').addEventListener('click', showDone);
+}
+</script>
+</body>
+</html>
