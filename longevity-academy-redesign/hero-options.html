@@ -809,30 +809,29 @@ body.fn-noscroll{overflow:hidden}
 
 
 .pdp-hero--cine{min-height:92vh;border-bottom:1px solid rgba(255,255,255,.08)}
-.hero-option-tag{position:absolute;z-index:5;top:calc(var(--nav-h) + 18px);left:var(--gutter);display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);color:#fff;font-size:15px}
-.hero-option-tag b{font-weight:400;font-size:15px;width:28px;height:28px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff}
+.hero-option-tag{position:absolute;z-index:5;top:calc(var(--nav-h) + 18px);left:var(--gutter);display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);color:#fff;font-size:15px;max-width:calc(100% - var(--gutter)*2)}
+.hero-option-tag span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-option-tag b{flex:none;font-weight:400;font-size:15px;width:28px;height:28px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff}
 .pdp-hero--cine:not(:first-of-type) .hero-option-tag{top:18px}
 .pdp-hero--cine:not(:first-of-type){padding-top:80px}
-video.pdp-cine-img{animation:none;transform:none}
-.hero-split{display:flex;align-items:center;background:#040D24;padding:calc(var(--nav-h) + 40px) 0 72px}
-.hero-split-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(60% 70% at 78% 50%, rgba(0,110,255,.35), transparent 60%), radial-gradient(40% 50% at 8% 20%, rgba(0,110,255,.18), transparent 60%), linear-gradient(90deg,#040D24 0%,#071A3D 55%,#0A2450 100%)}
-.hero-split-in{position:relative;z-index:2;width:100%;max-width:calc(var(--wrap) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.15fr);gap:clamp(28px,4vw,56px);align-items:center}
-.hero-split-text{padding:0 !important;max-width:none}
-.hero-split-text .pdp-cine-h1{font-size:clamp(42px,4.9vw,74px)}
-.hero-split-text .pdp-cine-sub{max-width:520px}
-.hero-split-media{position:relative}
-.hero-split-media::after{content:"";position:absolute;left:8%;right:8%;bottom:-34px;height:50px;border-radius:50%;background:rgba(0,110,255,.6);filter:blur(30px);z-index:-1}
-.hero-split-frame{position:relative;aspect-ratio:16/10;border-radius:var(--r-lg);overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.16);box-shadow:0 50px 110px -40px rgba(0,0,0,.9), 0 0 0 1px rgba(0,110,255,.15), 0 0 80px -20px rgba(0,110,255,.6)}
-.hero-split-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.08),transparent 25%);pointer-events:none}
-.hero-split-video{position:absolute;inset:0;width:100%;height:100%;display:block;background:#000}
+/* footage lives only on the right side; the left side is solid for the text */
+.pdp-hero--cine.has-right{background:linear-gradient(90deg,#040D24 0%,#061633 45%,#071A3D 100%)}
+.pdp-hero--cine.has-right .pdp-cine-overlay{background:none}
+.hero-right{position:absolute;top:0;bottom:0;right:0;width:58%;z-index:1;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%)}
+.hero-right::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,13,36,.35) 0%,transparent 22%,transparent 78%,rgba(4,13,36,.45) 100%);pointer-events:none}
+.hero-right-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform-origin:50% 50%}
+.pdp-hero--cine.has-right .pdp-cine-inner{max-width:calc(var(--wrap) + var(--gutter)*2)}
+.pdp-hero--cine.has-right .pdp-cine-h1,.pdp-hero--cine.has-right .pdp-cine-sub,.pdp-hero--cine.has-right .pdp-tp-pill,.pdp-hero--cine.has-right .pdp-cine-ctas{max-width:42%;position:relative;z-index:2}
+.pdp-hero--cine.has-right .pdp-cine-h1{font-size:clamp(42px,4.8vw,72px)}
 @media (max-width:900px){
   .hero-option-tag{top:calc(var(--nav-h) + 12px);left:12px;font-size:13px;padding:6px 10px 6px 6px}.hero-option-tag b{width:24px;height:24px;font-size:13px}
   .pdp-hero--cine:not(:first-of-type){padding-top:60px}.pdp-hero--cine:not(:first-of-type) .hero-option-tag{top:12px}
-  .hero-split{align-items:flex-start;padding:calc(var(--nav-h) + 56px) 0 40px;min-height:0}
-  .hero-split-in{grid-template-columns:1fr;gap:22px}
-  .hero-split-media{order:-1}
-  .hero-split-frame{aspect-ratio:4/3}
-  .hero-split-text .pdp-cine-h1{font-size:clamp(36px,10vw,44px)}
+  .pdp-hero--cine.has-right{align-items:flex-end;padding-top:calc(var(--nav-h) + 46vh)}
+  .hero-right{top:var(--nav-h);bottom:auto;height:46vh;width:100%;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 70%,transparent 100%)}
+  .pdp-hero--cine:not(:first-of-type) .hero-right{top:0}
+  .pdp-hero--cine.has-right .pdp-cine-h1,.pdp-hero--cine.has-right .pdp-cine-sub,.pdp-hero--cine.has-right .pdp-tp-pill,.pdp-hero--cine.has-right .pdp-cine-ctas{max-width:none}
+  .pdp-hero--cine.has-right .pdp-cine-h1{font-size:clamp(36px,10vw,44px)}
 }
 
 </style>
@@ -860,8 +859,8 @@ video.pdp-cine-img{animation:none;transform:none}
     </div>
   </div>
 </header>
-<section class="pdp-hero pdp-hero--cine" id="hero-1">
-  <video class="pdp-cine-img" src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" style="object-position:72% 28%"></video>
+<section class="pdp-hero pdp-hero--cine has-right" id="hero-1">
+  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" style="object-position:50% 30%;transform:scale(1)"></video></div>
   <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-option-tag"><b>1</b><span>Julie.mov</span></div>
   <div class="pdp-cine-inner">
@@ -883,8 +882,8 @@ video.pdp-cine-img{animation:none;transform:none}
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine" id="hero-2">
-  <video class="pdp-cine-img" src="assets/longevity-higgs-36.mp4" autoplay muted loop playsinline preload="auto" style="object-position:62% 50%"></video>
+<section class="pdp-hero pdp-hero--cine has-right" id="hero-2">
+  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/longevity-higgs-36.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
   <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-option-tag"><b>2</b><span>LONGEVITY HIGGS 36.mp4</span></div>
   <div class="pdp-cine-inner">
@@ -906,8 +905,8 @@ video.pdp-cine-img{animation:none;transform:none}
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine" id="hero-3">
-  <video class="pdp-cine-img" src="assets/yoga-sunlight-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:66% 50%"></video>
+<section class="pdp-hero pdp-hero--cine has-right" id="hero-3">
+  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/yoga-sunlight-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:58% 50%;transform:scale(1)"></video></div>
   <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-option-tag"><b>3</b><span>6153775_Flexible_Pose_Yoga_Sunlight_By_Evgenii_Petrunin_Artlist_4K.mp4</span></div>
   <div class="pdp-cine-inner">
@@ -929,10 +928,10 @@ video.pdp-cine-img{animation:none;transform:none}
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine" id="hero-4">
-  <video class="pdp-cine-img" src="assets/sitting-exercise-mat-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:66% 50%"></video>
+<section class="pdp-hero pdp-hero--cine has-right" id="hero-4">
+  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/sitting-exercise-mat-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 55%;transform:scale(1)"></video></div>
   <div class="pdp-cine-overlay" aria-hidden="true"></div>
-  <div class="hero-option-tag"><b>4</b><span>402502_Sitting_Exercise_Mat_Stretching_By_Polina_Borisova_Artlist_4K.mp4</span></div>
+  <div class="hero-option-tag"><b>4</b><span>402502_Sitting_Exercise_Mat_Stretching_By_Polina_Borisova_Artlist_4K (1).mp4</span></div>
   <div class="pdp-cine-inner">
     <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
@@ -952,10 +951,10 @@ video.pdp-cine-img{animation:none;transform:none}
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine" id="hero-5">
-  <img src="assets/hero-cgm.jpg" alt="" class="pdp-cine-img" loading="eager">
+<section class="pdp-hero pdp-hero--cine has-right" id="hero-5">
+  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/dna-blue-code-particles.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
   <div class="pdp-cine-overlay" aria-hidden="true"></div>
-  <div class="hero-option-tag"><b>5</b><span>hero-cgm.jpg, current photo, for reference</span></div>
+  <div class="hero-option-tag"><b>5</b><span>6256674_Dna_Blue_Code_Particles_Vj_By_Daniel_Megias_del_Pozo_Artlist_HD.mp4</span></div>
   <div class="pdp-cine-inner">
     <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
