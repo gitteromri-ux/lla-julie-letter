@@ -834,6 +834,74 @@ body.fn-noscroll{overflow:hidden}
 .fn-exit-sec:hover{color:#fff}
 @media (max-width:900px){.fn-exit-card{padding:32px 22px 24px}.fn-exit-card h3{font-size:36px}}
 
+
+/* ==========================================================================
+   Fold hierarchy and mobile pass
+   ========================================================================== */
+/* every fold headline gets the same anchor: a short light bar above it */
+.section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{
+  content:"";display:block;width:44px;height:3px;border-radius:3px;margin:0 0 18px;background:linear-gradient(90deg,#006EFF,#7DE5FF);box-shadow:0 0 14px rgba(125,229,255,.7)}
+.fn-head--center .fn-h2::before,.lla-films-head .section-title::before,.hp-instructors-header + * .section-title::before{margin-left:auto;margin-right:auto}
+.hp-about-header .hp-about-mainhead::before,.hp-instructors-header .section-title::before,.pdp-value-head .pdp-value-h2::before{display:none}
+.lla-shine-h2::before{display:none}
+/* distinct fold colors so the page reads as folds */
+.curriculum{background:linear-gradient(180deg,#EAF2FF,#F6F9FF)}
+.lla-news{background:linear-gradient(180deg,#F1F5FB,#FFFFFF)}
+.testimonials{background:linear-gradient(180deg,#1B2A6B,#0B1B4A)}
+.fn-offer{background:radial-gradient(60% 40% at 50% 0%, rgba(0,110,255,.22), transparent 60%), linear-gradient(180deg,#D9E8FF,#EEF4FF)}
+.fn-offer .fn-lead{color:var(--ink-2)}
+#mechanism{background:#FFFFFF}
+.faq{background:linear-gradient(180deg,#F3F7FF,#FFFFFF)}
+.lla-mini{padding:clamp(56px,8vw,96px) 0;background:linear-gradient(100deg,#0A3F9C 0%,#006EFF 55%,#22C4F5 100%)}
+.lla-mini-card{background:#fff;color:var(--ink);box-shadow:0 50px 100px -40px rgba(0,20,80,.7), 0 0 0 1px rgba(255,255,255,.6)}
+.lla-mini-card::before{display:none}
+.lla-mini-card .fn-pricecard-tag{color:var(--blue)}
+.lla-mini-card h3{color:var(--ink);font-size:40px}
+.lla-mini-card p{color:var(--ink-3)}
+.lla-mini-price b{color:var(--ink);text-shadow:none}
+.lla-mini-price b sup,.lla-mini-price span{color:var(--blue)}
+/* mobile: tighter cards, clearer type scale */
+@media (max-width:900px){
+  .section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{margin-bottom:14px}
+  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(30px, 8.6vw, 38px);line-height:1.08}
+  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:16px;line-height:1.5}
+  .lp-learn-head,.curriculum-header,.hp-instructors-header,.testimonials-header,.pdp-value-head,.cgm-fold-header,.faq-header,.lla-films-head{margin-bottom:22px !important}
+  .rail > *{flex:0 0 min(76%, 320px) !important}
+  .lp-lrow-media{aspect-ratio:16/9 !important}
+  .lp-lrow-body{padding:14px 16px 20px}
+  .lp-lrow-num{font-size:13px;margin-bottom:4px}
+  .lp-lrow-title{font-size:22px;margin:0 0 8px}
+  .lp-lrow-pay{font-size:14.5px;line-height:1.5}
+  .hp-teacher-card-live{padding:10px 10px 18px}
+  .hp-teacher-card-live-bio{font-size:14px}
+  .lla-news-body{padding:16px 16px 14px}
+  .lla-news-card h3{font-size:18px}
+  .lla-news-sub{font-size:14px}
+  .quote-card{padding:22px 18px 20px}
+  .quote-text{font-size:16px}
+  .fn-stack-row{padding:18px 16px 20px}
+  .fn-stack-txt h4{font-size:19px}
+  .fn-stack-txt p{font-size:14.5px}
+  .pdp-value-card{padding:18px 16px 20px}
+  .pdp-value-card h3{font-size:20px}
+  .pdp-value-card p{font-size:14.5px}
+  .fn-journey-step{padding:20px 18px 22px}
+  .fn-journey-txt h3{font-size:20px}
+  .fn-journey-txt p{font-size:14.5px}
+  .fn-pricecard h3{font-size:30px}
+  .fn-pricecard-price b{font-size:64px}
+  .lla-mini-card h3{font-size:32px}
+  .lla-mini-price b{font-size:60px}
+  .lla-films-head .section-title::before{margin-left:auto;margin-right:auto}
+  .cgm-fold-images{margin-bottom:22px}
+  .cgm-fold-bullet{font-size:15px;padding:13px 14px 13px 36px}
+  .cgm-fold-bullet::before{left:14px}
+  .lla-shine-h2{font-size:32px}
+  .lla-shine-p{font-size:16px}
+  .cgm-fold-cta,.section-cta-btn,.fn-btn,.pdp-cine-cta,.pdp-cine-ghost,.lla-shine-cta{white-space:normal;text-align:center;max-width:100%}
+  .cgm-fold-cta{width:100%}
+  .footer-brand p,.footer-col a{font-size:15px}
+}
 /* ==========================================================================
    ENROLL MODAL, visual layer only (markup and logic untouched)
    ========================================================================== */
