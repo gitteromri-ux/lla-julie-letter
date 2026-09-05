@@ -770,31 +770,6 @@ body.fn-noscroll{overflow:hidden}
 @media (max-width:900px){.footer-top{grid-template-columns:1fr 1fr;gap:28px}.footer-brand{grid-column:1 / -1}.footer-bottom{flex-direction:column;align-items:flex-start !important;gap:14px !important}}
 
 /* ==========================================================================
-   FLOATING CTA
-   ========================================================================== */
-.lla-float-cta{
-  position:fixed; z-index:850; right:24px; bottom:24px; display:flex; align-items:center; gap:6px;
-  padding:6px 6px 6px 20px; border-radius:999px; color:#fff;
-  background:rgba(6,22,51,.8); border:1px solid rgba(125,229,255,.3);
-  backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
-  box-shadow:0 30px 60px -20px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.1), 0 0 40px -12px rgba(125,229,255,.6);
-  opacity:0; transform:translateY(14px); pointer-events:none; transition:opacity .45s var(--ease), transform .45s var(--ease);
-}
-.lla-float-cta.is-visible{opacity:1;transform:none;pointer-events:auto}
-.lla-float-cta.is-hidden{opacity:0;transform:translateY(14px);pointer-events:none}
-.lla-cta-text{display:flex;flex-direction:column;gap:1px;padding-right:14px}
-.lla-cta-eyebrow{font-size:13px;color:var(--cyan)}
-.lla-cta-title{font-size:16px;color:#fff;white-space:nowrap}
-.lla-cta-pill{display:flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,#006EFF,#22C4F5);font-family:var(--font-ui);font-style:normal;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.25), 0 0 20px rgba(34,196,245,.5)}
-.lla-cta-pill .price{font-size:16px}
-.lla-cta-pill .mo{font-size:12px;opacity:.9;text-transform:lowercase}
-.lla-cta-arrow{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-@media (max-width:900px){
-  .lla-float-cta{left:12px;right:12px;bottom:12px;border-radius:20px;padding:6px 6px 6px 16px;justify-content:space-between}
-  .lla-cta-title{font-size:15px}
-}
-
-/* ==========================================================================
    EXIT INTENT
    ========================================================================== */
 .fn-exit{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(3,11,30,.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
@@ -1029,11 +1004,124 @@ body.fn-noscroll{overflow:hidden}
   .hp-hero-powered-stats span{font-size:15px;color:rgba(232,240,255,.78)}
   .hp-hero-powered-stats strong{font-size:26px}
   .hp-hero-powered-stats strong .unit{font-size:14px}
-  .lla-float-cta{max-width:calc(100% - 24px);gap:8px}
-  .lla-cta-text{min-width:0;flex:1 1 auto;padding-right:6px}
-  .lla-cta-title{white-space:normal;line-height:1.2}
-  .lla-cta-pill{flex:none;padding:11px 14px}
 }
+
+/* ==========================================================================
+   Pass 6: bigger type, official Trustpilot lockup, more light, clearer flow
+   ========================================================================== */
+/* type scale */
+body{font-size:18px}
+.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(42px, 5.4vw, 78px);line-height:1.02;margin-bottom:22px}
+.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:clamp(19px, 1.7vw, 24px);line-height:1.5;color:var(--ink-2)}
+.eyebrow,.fn-pricecard-tag,.lla-shine-eyebrow{font-size:16px}
+.fn-nav-links a,.fn-nav a{font-size:17px}
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.lla-shine-cta,.cgm-fold-cta,.pdp-cine-ghost,.fn-nav-pill{font-size:17px}
+.lp-lrow-title{font-size:28px}
+.lp-lrow-pay{font-size:17px;line-height:1.55}
+.lp-lrow-num{font-size:14px}
+.curriculum-tab-name,.curriculum-tab h3{font-size:24px}
+.curriculum-tab-sessions,.curriculum-tab span{font-size:15px}
+.hp-teacher-card-live-name{font-size:24px}
+.hp-teacher-card-live-role{font-size:16px}
+.hp-teacher-card-live-bio{font-size:16.5px;line-height:1.55}
+.lla-news-card h3{font-size:23px;line-height:1.28}
+.lla-news-sub{font-size:16.5px;line-height:1.55}
+.lla-news-src,.lla-news-meta,.lla-news-foot,.lla-news-foot *{font-size:15px}
+.quote-text{font-size:19px;line-height:1.55}
+.quote-meta,.quote-src{font-size:15px}
+.fn-stack-txt h4{font-size:24px}
+.fn-stack-txt p{font-size:16.5px;line-height:1.55}
+.pdp-value-card h3{font-size:25px}
+.pdp-value-card p{font-size:17px;line-height:1.55}
+.fn-journey-txt h3{font-size:24px}
+.fn-journey-txt p{font-size:16.5px;line-height:1.55}
+.fn-journey-when{font-size:15px}
+.cgm-fold-bullet{font-size:17px}
+.faq-q,.faq-item button{font-size:20px}
+.faq-a-inner{font-size:17.5px;line-height:1.6}
+.fn-pricecard li{font-size:17.5px}
+.fn-pricecard-sub,.fn-pricecard p{font-size:16.5px}
+.hp-about-powered p{font-size:17.5px;line-height:1.6}
+.hp-hero-powered-stats span{font-size:14px}
+.footer-brand p,.footer-col a,.footer-col li{font-size:16.5px}
+.footer-col h4,.footer-col strong{font-size:19px}
+.footer-bottom,.footer-bottom *{font-size:15px}
+.lla-film figcaption b,.lla-film-name{font-size:28px}
+.lla-film figcaption span,.lla-film-role{font-size:19px}
+.curriculum-trigger-text h3{font-size:clamp(23px,1.85vw,29px)}
+.lla-shine-h2{font-size:clamp(38px,4.4vw,64px)}
+.lla-shine-p{font-size:clamp(18px,1.5vw,22px)}
+.lla-mini-card h3{font-size:44px}
+.lla-mini-card p{font-size:18px}
+@media (max-width:900px){
+  body{font-size:17.5px}
+  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(36px, 10vw, 44px);line-height:1.04}
+  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:18px}
+  .lp-lrow-title{font-size:25px}
+  .lp-lrow-pay,.hp-teacher-card-live-bio,.lla-news-sub,.fn-stack-txt p,.pdp-value-card p,.fn-journey-txt p{font-size:16px;line-height:1.5}
+  .hp-teacher-card-live-name,.fn-stack-txt h4,.pdp-value-card h3,.fn-journey-txt h3{font-size:23px}
+  .lla-news-card h3{font-size:21px}
+  .quote-text{font-size:17.5px}
+  .faq-q,.faq-item button{font-size:18.5px}
+  .faq-a-inner{font-size:16.5px}
+  .curriculum-trigger-text h3{font-size:21px}
+  .lla-film figcaption b,.lla-film-name{font-size:26px}
+  .lla-film figcaption span,.lla-film-role{font-size:17.5px}
+}
+
+/* official Trustpilot lockup, nothing else */
+.pdp-tp-pill{background:none;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;padding:0;gap:14px;margin-bottom:26px}
+.lla-tp-text{display:none !important}
+.lla-tp-stars{gap:3px}
+.lla-tp-stars svg{width:24px;height:24px;filter:drop-shadow(0 0 8px rgba(0,182,122,.55))}
+.lla-tp-brand{gap:6px;font-family:var(--font-ui);font-style:normal;font-weight:700;font-size:22px;letter-spacing:-.01em;color:#fff}
+.lla-tp-brand svg{width:24px;height:24px}
+.lla-tp-brand b{font-weight:700;color:#fff}
+@media (max-width:900px){
+  .pdp-tp-pill{gap:10px;margin-bottom:18px;padding:0;background:none;border:0}
+  .lla-tp-stars svg,.lla-tp-brand svg{width:20px;height:20px}
+  .lla-tp-brand{font-size:18px}
+}
+
+/* light: every fold gets a lit top edge, dark folds get beams, cards get glow */
+.is-light{box-shadow:inset 0 1px 0 rgba(125,229,255,.7), inset 0 60px 120px -80px rgba(0,110,255,.4)}
+.is-light::before{background:
+  radial-gradient(48% 42% at 12% 0%, rgba(125,229,255,.5), transparent 62%),
+  radial-gradient(40% 40% at 90% 8%, rgba(0,110,255,.28), transparent 62%),
+  linear-gradient(rgba(0,110,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(0,110,255,.055) 1px, transparent 1px);
+  background-size:auto,auto,64px 64px,64px 64px;opacity:1}
+.is-light::after{background:radial-gradient(40% 60% at 80% 85%, rgba(125,229,255,.42), transparent 60%), radial-gradient(30% 50% at 10% 90%, rgba(0,110,255,.22), transparent 60%)}
+.is-dark{box-shadow:inset 0 1px 0 rgba(125,229,255,.45)}
+.is-dark::before{background:
+  radial-gradient(38% 55% at 18% 20%, rgba(0,110,255,.75), transparent 60%),
+  radial-gradient(28% 45% at 85% 10%, rgba(125,229,255,.5), transparent 60%),
+  radial-gradient(30% 40% at 60% 90%, rgba(0,110,255,.4), transparent 60%);filter:blur(10px)}
+.is-dark::after{background:linear-gradient(90deg, transparent 0%, rgba(125,229,255,.18) 30%, rgba(51,139,255,.28) 50%, rgba(125,229,255,.18) 70%, transparent 100%);filter:blur(34px);opacity:.9}
+/* cards */
+.lp-lrow,.quote-card,.pdp-value-card,.fn-stack-row,.hp-teacher-card-live,.lla-news-card,.fn-journey-step,.faq-item,.curriculum-tab,.cgm-fold-img,.fn-pricecard,.hp-about-powered,.mock-browser{
+  box-shadow:0 30px 70px -40px rgba(0,30,90,.55), 0 0 0 1px rgba(125,229,255,.28), 0 0 50px -16px rgba(0,110,255,.55)}
+.is-light .hp-teacher-card-live,.is-light .lla-news-card,.is-light .fn-journey-step,.is-light .faq-item,.is-light .curriculum-tab,.curriculum-item{
+  box-shadow:0 30px 60px -40px rgba(10,34,64,.45), 0 0 0 1px rgba(0,110,255,.14), 0 0 40px -14px rgba(0,110,255,.45)}
+.lp-lrow::after,.pdp-value-card::after,.fn-stack-row::after,.quote-card::after{content:"";position:absolute;left:10%;right:10%;bottom:-1px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#7DE5FF,transparent);box-shadow:0 0 18px #7DE5FF;pointer-events:none;z-index:2}
+.quote-card,.pdp-value-card,.fn-stack-row,.lp-lrow{position:relative}
+/* buttons and headline accents glow harder */
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.fn-nav-pill{box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 18px 40px -14px rgba(0,110,255,.9), 0 0 44px rgba(0,110,255,.55)}
+.section-title em,.fn-h2 em,.pdp-value-h2 em,.hp-about-mainhead .life-blue{filter:drop-shadow(0 0 22px rgba(0,110,255,.45))}
+.section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{width:56px;height:4px;box-shadow:0 0 22px rgba(125,229,255,.95), 0 0 50px rgba(0,110,255,.7)}
+.fn-nav{box-shadow:0 1px 0 rgba(125,229,255,.35), 0 10px 40px -20px rgba(0,110,255,.7)}
+.mock-browser{border:1px solid rgba(125,229,255,.45);box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.3), 0 0 90px -20px rgba(0,110,255,.9)}
+.lla-film{box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.35), 0 0 100px -20px rgba(0,110,255,.9)}
+.lla-film figcaption b,.lla-film-name{text-shadow:0 0 30px rgba(125,229,255,.6)}
+.lla-mini-card,.fn-pricecard{box-shadow:0 60px 120px -50px rgba(0,20,80,.8), 0 0 0 1px rgba(255,255,255,.6), 0 0 100px rgba(125,229,255,.55)}
+.pdp-cine-h1{text-shadow:0 0 40px rgba(0,110,255,.45), 0 2px 30px rgba(0,0,0,.35)}
+/* flow: alternate the light folds so each one reads as its own chapter */
+.lp-learn{background:#FFFFFF}
+.curriculum{background:linear-gradient(180deg,#E4EFFF 0%,#F3F8FF 100%)}
+.hp-instructors{background:#FFFFFF}
+.lla-news{background:linear-gradient(180deg,#EDF3FB 0%,#F8FAFD 100%)}
+.fn-offer{background:radial-gradient(60% 40% at 50% 0%, rgba(0,110,255,.3), transparent 60%), linear-gradient(180deg,#D3E4FF,#EAF2FF)}
+#mechanism{background:#FFFFFF}
+.faq{background:linear-gradient(180deg,#EAF2FF,#FFFFFF)}
 
 
 .pdp-hero--cine{min-height:92vh;border-bottom:1px solid rgba(255,255,255,.08)}

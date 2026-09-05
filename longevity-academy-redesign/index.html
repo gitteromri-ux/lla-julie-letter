@@ -788,31 +788,6 @@ body.fn-noscroll{overflow:hidden}
 @media (max-width:900px){.footer-top{grid-template-columns:1fr 1fr;gap:28px}.footer-brand{grid-column:1 / -1}.footer-bottom{flex-direction:column;align-items:flex-start !important;gap:14px !important}}
 
 /* ==========================================================================
-   FLOATING CTA
-   ========================================================================== */
-.lla-float-cta{
-  position:fixed; z-index:850; right:24px; bottom:24px; display:flex; align-items:center; gap:6px;
-  padding:6px 6px 6px 20px; border-radius:999px; color:#fff;
-  background:rgba(6,22,51,.8); border:1px solid rgba(125,229,255,.3);
-  backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
-  box-shadow:0 30px 60px -20px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.1), 0 0 40px -12px rgba(125,229,255,.6);
-  opacity:0; transform:translateY(14px); pointer-events:none; transition:opacity .45s var(--ease), transform .45s var(--ease);
-}
-.lla-float-cta.is-visible{opacity:1;transform:none;pointer-events:auto}
-.lla-float-cta.is-hidden{opacity:0;transform:translateY(14px);pointer-events:none}
-.lla-cta-text{display:flex;flex-direction:column;gap:1px;padding-right:14px}
-.lla-cta-eyebrow{font-size:13px;color:var(--cyan)}
-.lla-cta-title{font-size:16px;color:#fff;white-space:nowrap}
-.lla-cta-pill{display:flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,#006EFF,#22C4F5);font-family:var(--font-ui);font-style:normal;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,.25), 0 0 20px rgba(34,196,245,.5)}
-.lla-cta-pill .price{font-size:16px}
-.lla-cta-pill .mo{font-size:12px;opacity:.9;text-transform:lowercase}
-.lla-cta-arrow{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-@media (max-width:900px){
-  .lla-float-cta{left:12px;right:12px;bottom:12px;border-radius:20px;padding:6px 6px 6px 16px;justify-content:space-between}
-  .lla-cta-title{font-size:15px}
-}
-
-/* ==========================================================================
    EXIT INTENT
    ========================================================================== */
 .fn-exit{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(3,11,30,.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
@@ -1047,11 +1022,124 @@ body.fn-noscroll{overflow:hidden}
   .hp-hero-powered-stats span{font-size:15px;color:rgba(232,240,255,.78)}
   .hp-hero-powered-stats strong{font-size:26px}
   .hp-hero-powered-stats strong .unit{font-size:14px}
-  .lla-float-cta{max-width:calc(100% - 24px);gap:8px}
-  .lla-cta-text{min-width:0;flex:1 1 auto;padding-right:6px}
-  .lla-cta-title{white-space:normal;line-height:1.2}
-  .lla-cta-pill{flex:none;padding:11px 14px}
 }
+
+/* ==========================================================================
+   Pass 6: bigger type, official Trustpilot lockup, more light, clearer flow
+   ========================================================================== */
+/* type scale */
+body{font-size:18px}
+.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(42px, 5.4vw, 78px);line-height:1.02;margin-bottom:22px}
+.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:clamp(19px, 1.7vw, 24px);line-height:1.5;color:var(--ink-2)}
+.eyebrow,.fn-pricecard-tag,.lla-shine-eyebrow{font-size:16px}
+.fn-nav-links a,.fn-nav a{font-size:17px}
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.lla-shine-cta,.cgm-fold-cta,.pdp-cine-ghost,.fn-nav-pill{font-size:17px}
+.lp-lrow-title{font-size:28px}
+.lp-lrow-pay{font-size:17px;line-height:1.55}
+.lp-lrow-num{font-size:14px}
+.curriculum-tab-name,.curriculum-tab h3{font-size:24px}
+.curriculum-tab-sessions,.curriculum-tab span{font-size:15px}
+.hp-teacher-card-live-name{font-size:24px}
+.hp-teacher-card-live-role{font-size:16px}
+.hp-teacher-card-live-bio{font-size:16.5px;line-height:1.55}
+.lla-news-card h3{font-size:23px;line-height:1.28}
+.lla-news-sub{font-size:16.5px;line-height:1.55}
+.lla-news-src,.lla-news-meta,.lla-news-foot,.lla-news-foot *{font-size:15px}
+.quote-text{font-size:19px;line-height:1.55}
+.quote-meta,.quote-src{font-size:15px}
+.fn-stack-txt h4{font-size:24px}
+.fn-stack-txt p{font-size:16.5px;line-height:1.55}
+.pdp-value-card h3{font-size:25px}
+.pdp-value-card p{font-size:17px;line-height:1.55}
+.fn-journey-txt h3{font-size:24px}
+.fn-journey-txt p{font-size:16.5px;line-height:1.55}
+.fn-journey-when{font-size:15px}
+.cgm-fold-bullet{font-size:17px}
+.faq-q,.faq-item button{font-size:20px}
+.faq-a-inner{font-size:17.5px;line-height:1.6}
+.fn-pricecard li{font-size:17.5px}
+.fn-pricecard-sub,.fn-pricecard p{font-size:16.5px}
+.hp-about-powered p{font-size:17.5px;line-height:1.6}
+.hp-hero-powered-stats span{font-size:14px}
+.footer-brand p,.footer-col a,.footer-col li{font-size:16.5px}
+.footer-col h4,.footer-col strong{font-size:19px}
+.footer-bottom,.footer-bottom *{font-size:15px}
+.lla-film figcaption b,.lla-film-name{font-size:28px}
+.lla-film figcaption span,.lla-film-role{font-size:19px}
+.curriculum-trigger-text h3{font-size:clamp(23px,1.85vw,29px)}
+.lla-shine-h2{font-size:clamp(38px,4.4vw,64px)}
+.lla-shine-p{font-size:clamp(18px,1.5vw,22px)}
+.lla-mini-card h3{font-size:44px}
+.lla-mini-card p{font-size:18px}
+@media (max-width:900px){
+  body{font-size:17.5px}
+  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(36px, 10vw, 44px);line-height:1.04}
+  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:18px}
+  .lp-lrow-title{font-size:25px}
+  .lp-lrow-pay,.hp-teacher-card-live-bio,.lla-news-sub,.fn-stack-txt p,.pdp-value-card p,.fn-journey-txt p{font-size:16px;line-height:1.5}
+  .hp-teacher-card-live-name,.fn-stack-txt h4,.pdp-value-card h3,.fn-journey-txt h3{font-size:23px}
+  .lla-news-card h3{font-size:21px}
+  .quote-text{font-size:17.5px}
+  .faq-q,.faq-item button{font-size:18.5px}
+  .faq-a-inner{font-size:16.5px}
+  .curriculum-trigger-text h3{font-size:21px}
+  .lla-film figcaption b,.lla-film-name{font-size:26px}
+  .lla-film figcaption span,.lla-film-role{font-size:17.5px}
+}
+
+/* official Trustpilot lockup, nothing else */
+.pdp-tp-pill{background:none;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;padding:0;gap:14px;margin-bottom:26px}
+.lla-tp-text{display:none !important}
+.lla-tp-stars{gap:3px}
+.lla-tp-stars svg{width:24px;height:24px;filter:drop-shadow(0 0 8px rgba(0,182,122,.55))}
+.lla-tp-brand{gap:6px;font-family:var(--font-ui);font-style:normal;font-weight:700;font-size:22px;letter-spacing:-.01em;color:#fff}
+.lla-tp-brand svg{width:24px;height:24px}
+.lla-tp-brand b{font-weight:700;color:#fff}
+@media (max-width:900px){
+  .pdp-tp-pill{gap:10px;margin-bottom:18px;padding:0;background:none;border:0}
+  .lla-tp-stars svg,.lla-tp-brand svg{width:20px;height:20px}
+  .lla-tp-brand{font-size:18px}
+}
+
+/* light: every fold gets a lit top edge, dark folds get beams, cards get glow */
+.is-light{box-shadow:inset 0 1px 0 rgba(125,229,255,.7), inset 0 60px 120px -80px rgba(0,110,255,.4)}
+.is-light::before{background:
+  radial-gradient(48% 42% at 12% 0%, rgba(125,229,255,.5), transparent 62%),
+  radial-gradient(40% 40% at 90% 8%, rgba(0,110,255,.28), transparent 62%),
+  linear-gradient(rgba(0,110,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(0,110,255,.055) 1px, transparent 1px);
+  background-size:auto,auto,64px 64px,64px 64px;opacity:1}
+.is-light::after{background:radial-gradient(40% 60% at 80% 85%, rgba(125,229,255,.42), transparent 60%), radial-gradient(30% 50% at 10% 90%, rgba(0,110,255,.22), transparent 60%)}
+.is-dark{box-shadow:inset 0 1px 0 rgba(125,229,255,.45)}
+.is-dark::before{background:
+  radial-gradient(38% 55% at 18% 20%, rgba(0,110,255,.75), transparent 60%),
+  radial-gradient(28% 45% at 85% 10%, rgba(125,229,255,.5), transparent 60%),
+  radial-gradient(30% 40% at 60% 90%, rgba(0,110,255,.4), transparent 60%);filter:blur(10px)}
+.is-dark::after{background:linear-gradient(90deg, transparent 0%, rgba(125,229,255,.18) 30%, rgba(51,139,255,.28) 50%, rgba(125,229,255,.18) 70%, transparent 100%);filter:blur(34px);opacity:.9}
+/* cards */
+.lp-lrow,.quote-card,.pdp-value-card,.fn-stack-row,.hp-teacher-card-live,.lla-news-card,.fn-journey-step,.faq-item,.curriculum-tab,.cgm-fold-img,.fn-pricecard,.hp-about-powered,.mock-browser{
+  box-shadow:0 30px 70px -40px rgba(0,30,90,.55), 0 0 0 1px rgba(125,229,255,.28), 0 0 50px -16px rgba(0,110,255,.55)}
+.is-light .hp-teacher-card-live,.is-light .lla-news-card,.is-light .fn-journey-step,.is-light .faq-item,.is-light .curriculum-tab,.curriculum-item{
+  box-shadow:0 30px 60px -40px rgba(10,34,64,.45), 0 0 0 1px rgba(0,110,255,.14), 0 0 40px -14px rgba(0,110,255,.45)}
+.lp-lrow::after,.pdp-value-card::after,.fn-stack-row::after,.quote-card::after{content:"";position:absolute;left:10%;right:10%;bottom:-1px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#7DE5FF,transparent);box-shadow:0 0 18px #7DE5FF;pointer-events:none;z-index:2}
+.quote-card,.pdp-value-card,.fn-stack-row,.lp-lrow{position:relative}
+/* buttons and headline accents glow harder */
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.fn-nav-pill{box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 18px 40px -14px rgba(0,110,255,.9), 0 0 44px rgba(0,110,255,.55)}
+.section-title em,.fn-h2 em,.pdp-value-h2 em,.hp-about-mainhead .life-blue{filter:drop-shadow(0 0 22px rgba(0,110,255,.45))}
+.section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{width:56px;height:4px;box-shadow:0 0 22px rgba(125,229,255,.95), 0 0 50px rgba(0,110,255,.7)}
+.fn-nav{box-shadow:0 1px 0 rgba(125,229,255,.35), 0 10px 40px -20px rgba(0,110,255,.7)}
+.mock-browser{border:1px solid rgba(125,229,255,.45);box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.3), 0 0 90px -20px rgba(0,110,255,.9)}
+.lla-film{box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.35), 0 0 100px -20px rgba(0,110,255,.9)}
+.lla-film figcaption b,.lla-film-name{text-shadow:0 0 30px rgba(125,229,255,.6)}
+.lla-mini-card,.fn-pricecard{box-shadow:0 60px 120px -50px rgba(0,20,80,.8), 0 0 0 1px rgba(255,255,255,.6), 0 0 100px rgba(125,229,255,.55)}
+.pdp-cine-h1{text-shadow:0 0 40px rgba(0,110,255,.45), 0 2px 30px rgba(0,0,0,.35)}
+/* flow: alternate the light folds so each one reads as its own chapter */
+.lp-learn{background:#FFFFFF}
+.curriculum{background:linear-gradient(180deg,#E4EFFF 0%,#F3F8FF 100%)}
+.hp-instructors{background:#FFFFFF}
+.lla-news{background:linear-gradient(180deg,#EDF3FB 0%,#F8FAFD 100%)}
+.fn-offer{background:radial-gradient(60% 40% at 50% 0%, rgba(0,110,255,.3), transparent 60%), linear-gradient(180deg,#D3E4FF,#EAF2FF)}
+#mechanism{background:#FFFFFF}
+.faq{background:linear-gradient(180deg,#EAF2FF,#FFFFFF)}
 
 </style>
 </head>
@@ -1927,7 +2015,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 <!-- PRESS + JOURNAL -->
-<section class="lla-journal lla-news" id="journal"><div class="container"><div class="lla-films-head"><h2 class="section-title">Longevity Life Academy <em>News.</em></h2><p class="section-subtitle" style="margin:0 auto;max-width:640px;">Press coverage in AP News, News Channel 8 and Yahoo Finance, and three deep dives from The Longevity Blog.</p></div><div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/press/harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://www.wfla.com/business/press-releases/ein-presswire/927643721/eteacher-group-launches-longevity-life-academy-to-teach-the-longevity-protocol-the-wealthy-pay-millions-for" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/mc-zoom-gallery.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">News Channel 8, WFLA <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
+<section class="lla-journal lla-news" id="journal"><div class="container"><div class="lla-films-head"><h2 class="section-title">Longevity Life Academy <em>News.</em></h2><p class="section-subtitle" style="margin:0 auto;max-width:640px;">Press coverage in AP News, News Channel 8 and Yahoo Finance, and three deep dives from The Longevity Blog.</p></div><div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/press/harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
 <section class="testimonials lp-deep is-dark">
   <div class="container">
     <div class="testimonials-header reveal">
@@ -2069,7 +2157,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="pdp-value-head fn-reveal">
       <h2 class="pdp-value-h2">Why This Course <em>Is Different</em></h2>
     </div>
-    <div class="lla-value-layout"><figure class="lla-zoom-shot fn-reveal"><div class="mock-browser"><div class="mock-browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/mc-zoom-40-logos.jpg" alt="A live Longevity Life Academy class on Zoom with Julie Gibson Clark and forty students" loading="lazy" width="1935" height="1080"></div><figcaption>A live Longevity Life Academy class on Zoom. Julie Gibson Clark hosting, students on camera, questions answered in real time.</figcaption></figure>
+    <div class="lla-value-layout"><figure class="lla-zoom-shot fn-reveal"><div class="mock-browser"><div class="mock-browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/mc-zoom-chat.jpg" alt="A live Longevity Life Academy class on Zoom with Julie Gibson Clark and forty students" loading="lazy" width="1935" height="1080"></div><figcaption>A live Longevity Life Academy class on Zoom. Julie Gibson Clark hosting, students on camera, questions answered in real time.</figcaption></figure>
 <div class="lla-value-cards"><div class="pdp-value-grid rail">
       <article class="pdp-value-card fn-reveal" data-vc="1">
         <h3>Live, not recorded.</h3>
@@ -3207,12 +3295,152 @@ window.LLA_GOOGLE_CAMPAIGN_IDS = window.LLA_GOOGLE_CAMPAIGN_IDS || {
   .hp-hero-powered-stats span{font-size:15px;color:rgba(232,240,255,.78)}
   .hp-hero-powered-stats strong{font-size:26px}
   .hp-hero-powered-stats strong .unit{font-size:14px}
-  .lla-float-cta{max-width:calc(100% - 24px);gap:8px}
-  .lla-cta-text{min-width:0;flex:1 1 auto;padding-right:6px}
-  .lla-cta-title{white-space:normal;line-height:1.2}
-  .lla-cta-pill{flex:none;padding:11px 14px}
 }
 
+/* ==========================================================================
+   Pass 6: bigger type, official Trustpilot lockup, more light, clearer flow
+   ========================================================================== */
+/* type scale */
+body{font-size:18px}
+.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(42px, 5.4vw, 78px);line-height:1.02;margin-bottom:22px}
+.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:clamp(19px, 1.7vw, 24px);line-height:1.5;color:var(--ink-2)}
+.eyebrow,.fn-pricecard-tag,.lla-shine-eyebrow{font-size:16px}
+.fn-nav-links a,.fn-nav a{font-size:17px}
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.lla-shine-cta,.cgm-fold-cta,.pdp-cine-ghost,.fn-nav-pill{font-size:17px}
+.lp-lrow-title{font-size:28px}
+.lp-lrow-pay{font-size:17px;line-height:1.55}
+.lp-lrow-num{font-size:14px}
+.curriculum-tab-name,.curriculum-tab h3{font-size:24px}
+.curriculum-tab-sessions,.curriculum-tab span{font-size:15px}
+.hp-teacher-card-live-name{font-size:24px}
+.hp-teacher-card-live-role{font-size:16px}
+.hp-teacher-card-live-bio{font-size:16.5px;line-height:1.55}
+.lla-news-card h3{font-size:23px;line-height:1.28}
+.lla-news-sub{font-size:16.5px;line-height:1.55}
+.lla-news-src,.lla-news-meta,.lla-news-foot,.lla-news-foot *{font-size:15px}
+.quote-text{font-size:19px;line-height:1.55}
+.quote-meta,.quote-src{font-size:15px}
+.fn-stack-txt h4{font-size:24px}
+.fn-stack-txt p{font-size:16.5px;line-height:1.55}
+.pdp-value-card h3{font-size:25px}
+.pdp-value-card p{font-size:17px;line-height:1.55}
+.fn-journey-txt h3{font-size:24px}
+.fn-journey-txt p{font-size:16.5px;line-height:1.55}
+.fn-journey-when{font-size:15px}
+.cgm-fold-bullet{font-size:17px}
+.faq-q,.faq-item button{font-size:20px}
+.faq-a-inner{font-size:17.5px;line-height:1.6}
+.fn-pricecard li{font-size:17.5px}
+.fn-pricecard-sub,.fn-pricecard p{font-size:16.5px}
+.hp-about-powered p{font-size:17.5px;line-height:1.6}
+.hp-hero-powered-stats span{font-size:14px}
+.footer-brand p,.footer-col a,.footer-col li{font-size:16.5px}
+.footer-col h4,.footer-col strong{font-size:19px}
+.footer-bottom,.footer-bottom *{font-size:15px}
+.lla-film figcaption b,.lla-film-name{font-size:28px}
+.lla-film figcaption span,.lla-film-role{font-size:19px}
+.curriculum-trigger-text h3{font-size:clamp(23px,1.85vw,29px)}
+.lla-shine-h2{font-size:clamp(38px,4.4vw,64px)}
+.lla-shine-p{font-size:clamp(18px,1.5vw,22px)}
+.lla-mini-card h3{font-size:44px}
+.lla-mini-card p{font-size:18px}
+@media (max-width:900px){
+  body{font-size:17.5px}
+  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(36px, 10vw, 44px);line-height:1.04}
+  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:18px}
+  .lp-lrow-title{font-size:25px}
+  .lp-lrow-pay,.hp-teacher-card-live-bio,.lla-news-sub,.fn-stack-txt p,.pdp-value-card p,.fn-journey-txt p{font-size:16px;line-height:1.5}
+  .hp-teacher-card-live-name,.fn-stack-txt h4,.pdp-value-card h3,.fn-journey-txt h3{font-size:23px}
+  .lla-news-card h3{font-size:21px}
+  .quote-text{font-size:17.5px}
+  .faq-q,.faq-item button{font-size:18.5px}
+  .faq-a-inner{font-size:16.5px}
+  .curriculum-trigger-text h3{font-size:21px}
+  .lla-film figcaption b,.lla-film-name{font-size:26px}
+  .lla-film figcaption span,.lla-film-role{font-size:17.5px}
+}
+
+/* official Trustpilot lockup, nothing else */
+.pdp-tp-pill{background:none;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;padding:0;gap:14px;margin-bottom:26px}
+.lla-tp-text{display:none !important}
+.lla-tp-stars{gap:3px}
+.lla-tp-stars svg{width:24px;height:24px;filter:drop-shadow(0 0 8px rgba(0,182,122,.55))}
+.lla-tp-brand{gap:6px;font-family:var(--font-ui);font-style:normal;font-weight:700;font-size:22px;letter-spacing:-.01em;color:#fff}
+.lla-tp-brand svg{width:24px;height:24px}
+.lla-tp-brand b{font-weight:700;color:#fff}
+@media (max-width:900px){
+  .pdp-tp-pill{gap:10px;margin-bottom:18px;padding:0;background:none;border:0}
+  .lla-tp-stars svg,.lla-tp-brand svg{width:20px;height:20px}
+  .lla-tp-brand{font-size:18px}
+}
+
+/* light: every fold gets a lit top edge, dark folds get beams, cards get glow */
+.is-light{box-shadow:inset 0 1px 0 rgba(125,229,255,.7), inset 0 60px 120px -80px rgba(0,110,255,.4)}
+.is-light::before{background:
+  radial-gradient(48% 42% at 12% 0%, rgba(125,229,255,.5), transparent 62%),
+  radial-gradient(40% 40% at 90% 8%, rgba(0,110,255,.28), transparent 62%),
+  linear-gradient(rgba(0,110,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(0,110,255,.055) 1px, transparent 1px);
+  background-size:auto,auto,64px 64px,64px 64px;opacity:1}
+.is-light::after{background:radial-gradient(40% 60% at 80% 85%, rgba(125,229,255,.42), transparent 60%), radial-gradient(30% 50% at 10% 90%, rgba(0,110,255,.22), transparent 60%)}
+.is-dark{box-shadow:inset 0 1px 0 rgba(125,229,255,.45)}
+.is-dark::before{background:
+  radial-gradient(38% 55% at 18% 20%, rgba(0,110,255,.75), transparent 60%),
+  radial-gradient(28% 45% at 85% 10%, rgba(125,229,255,.5), transparent 60%),
+  radial-gradient(30% 40% at 60% 90%, rgba(0,110,255,.4), transparent 60%);filter:blur(10px)}
+.is-dark::after{background:linear-gradient(90deg, transparent 0%, rgba(125,229,255,.18) 30%, rgba(51,139,255,.28) 50%, rgba(125,229,255,.18) 70%, transparent 100%);filter:blur(34px);opacity:.9}
+/* cards */
+.lp-lrow,.quote-card,.pdp-value-card,.fn-stack-row,.hp-teacher-card-live,.lla-news-card,.fn-journey-step,.faq-item,.curriculum-tab,.cgm-fold-img,.fn-pricecard,.hp-about-powered,.mock-browser{
+  box-shadow:0 30px 70px -40px rgba(0,30,90,.55), 0 0 0 1px rgba(125,229,255,.28), 0 0 50px -16px rgba(0,110,255,.55)}
+.is-light .hp-teacher-card-live,.is-light .lla-news-card,.is-light .fn-journey-step,.is-light .faq-item,.is-light .curriculum-tab,.curriculum-item{
+  box-shadow:0 30px 60px -40px rgba(10,34,64,.45), 0 0 0 1px rgba(0,110,255,.14), 0 0 40px -14px rgba(0,110,255,.45)}
+.lp-lrow::after,.pdp-value-card::after,.fn-stack-row::after,.quote-card::after{content:"";position:absolute;left:10%;right:10%;bottom:-1px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#7DE5FF,transparent);box-shadow:0 0 18px #7DE5FF;pointer-events:none;z-index:2}
+.quote-card,.pdp-value-card,.fn-stack-row,.lp-lrow{position:relative}
+/* buttons and headline accents glow harder */
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.fn-nav-pill{box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 18px 40px -14px rgba(0,110,255,.9), 0 0 44px rgba(0,110,255,.55)}
+.section-title em,.fn-h2 em,.pdp-value-h2 em,.hp-about-mainhead .life-blue{filter:drop-shadow(0 0 22px rgba(0,110,255,.45))}
+.section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{width:56px;height:4px;box-shadow:0 0 22px rgba(125,229,255,.95), 0 0 50px rgba(0,110,255,.7)}
+.fn-nav{box-shadow:0 1px 0 rgba(125,229,255,.35), 0 10px 40px -20px rgba(0,110,255,.7)}
+.mock-browser{border:1px solid rgba(125,229,255,.45);box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.3), 0 0 90px -20px rgba(0,110,255,.9)}
+.lla-film{box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.35), 0 0 100px -20px rgba(0,110,255,.9)}
+.lla-film figcaption b,.lla-film-name{text-shadow:0 0 30px rgba(125,229,255,.6)}
+.lla-mini-card,.fn-pricecard{box-shadow:0 60px 120px -50px rgba(0,20,80,.8), 0 0 0 1px rgba(255,255,255,.6), 0 0 100px rgba(125,229,255,.55)}
+.pdp-cine-h1{text-shadow:0 0 40px rgba(0,110,255,.45), 0 2px 30px rgba(0,0,0,.35)}
+/* flow: alternate the light folds so each one reads as its own chapter */
+.lp-learn{background:#FFFFFF}
+.curriculum{background:linear-gradient(180deg,#E4EFFF 0%,#F3F8FF 100%)}
+.hp-instructors{background:#FFFFFF}
+.lla-news{background:linear-gradient(180deg,#EDF3FB 0%,#F8FAFD 100%)}
+.fn-offer{background:radial-gradient(60% 40% at 50% 0%, rgba(0,110,255,.3), transparent 60%), linear-gradient(180deg,#D3E4FF,#EAF2FF)}
+#mechanism{background:#FFFFFF}
+.faq{background:linear-gradient(180deg,#EAF2FF,#FFFFFF)}
+
+</style>
+<style>
+/* Floating enroll button, styles carried verbatim from the live page */
+html body#lpRoot a.lla-float-cta#fnBuyBar, html #lpRoot .lla-float-cta{ position:fixed !important; top:auto !important; left:14px !important; right:14px !important; bottom:14px !important; width:auto !important; max-width:none !important; height:auto !important; min-height:0 !important; margin:0 !important; z-index:900 !important; display:none !important; align-items:center !important; justify-content:flex-start !important; gap:12px !important; padding:12px 18px !important; border-radius:16px !important; border:0 !important; text-decoration:none !important; color:#fff !important; background:linear-gradient(135deg,#2F7BFF,#0B4FD6) !important; box-shadow:0 18px 40px -14px rgba(11,79,214,.75), inset 0 1px 0 rgba(255,255,255,.22) !important; opacity:1 !important; pointer-events:auto !important; transform:translateY(130%) !important; transition:transform .35s cubic-bezier(.2,.8,.2,1) !important; font-family:'Inter', system-ui, sans-serif !important; }
+html body#lpRoot a.lla-float-cta#fnBuyBar.is-show, html #lpRoot .lla-float-cta.is-show{ transform:translateY(0) !important; }
+html #lpRoot .lla-float-cta-main{ font-weight:700; font-size:16px; letter-spacing:-0.01em; }
+html #lpRoot .lla-float-cta-sub{ font-size:12.5px; opacity:.85; margin-left:auto; }
+@media (max-width:900px){html body#lpRoot a.lla-float-cta#fnBuyBar, html #lpRoot .lla-float-cta{ display:flex !important; }}
+@keyframes llaDot{
+      0%,100%{box-shadow:0 0 8px #5EB6FF,0 0 14px rgba(94,182,255,.7)}
+      50%{box-shadow:0 0 14px #5EB6FF,0 0 24px rgba(94,182,255,1)}
+    }
+html body#lpRoot#lpRoot#lpRoot .lla-float-cta{ display:none !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home{ position:fixed !important; top:96px !important; right:32px !important; left:auto !important; bottom:auto !important; z-index:9999 !important; display:inline-flex !important; align-items:stretch !important; width:auto !important; max-width:none !important; height:auto !important; padding:0 !important; cursor:pointer !important; text-decoration:none !important; font-family:'Inter','Codec Pro',sans-serif !important; border-radius:18px !important; overflow:hidden !important; background:linear-gradient(180deg,#0F2D52 0%,#0A2240 100%) !important; border:1px solid rgba(255,255,255,.10) !important; box-shadow:0 0 0 1px rgba(120,180,255,.18), 0 14px 36px rgba(8,30,60,.28), 0 0 28px rgba(120,190,255,.18) !important; opacity:0 !important; transform:translateY(-12px) !important; pointer-events:none !important; transition:opacity .45s ease, transform .45s cubic-bezier(.2,.7,.2,1), box-shadow .25s ease !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home.is-visible{ opacity:1 !important; transform:translateY(0) !important; pointer-events:auto !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home:hover{ transform:translateY(-2px) !important; box-shadow:0 0 0 1px rgba(140,200,255,.35), 0 18px 44px rgba(8,30,60,.34), 0 0 44px rgba(120,190,255,.42) !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-text{ display:flex !important; flex-direction:column !important; justify-content:center !important; padding:14px 18px 14px 20px !important; gap:4px !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-eyebrow{ display:flex !important; align-items:center !important; gap:8px !important; font-size:10.5px !important; font-weight:600 !important; letter-spacing:.18em !important; text-transform:uppercase !important; color:#8FB9F0 !important; font-family:'Inter',sans-serif !important; font-style:normal !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-eyebrow::before{ content:"" !important; width:6px !important; height:6px !important; border-radius:50% !important; background:#5EB6FF !important; box-shadow:0 0 8px #5EB6FF,0 0 14px rgba(94,182,255,.7) !important; animation:llaDot 2.2s ease-in-out infinite !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-title{ font-family:'Codec Pro','Inter',sans-serif !important; font-style:normal !important; font-size:15.5px !important; font-weight:700 !important; color:#fff !important; letter-spacing:.1px !important; line-height:1.1 !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-pill{ display:flex !important; align-items:center !important; gap:8px !important; padding:0 22px !important; margin:8px 8px 8px 6px !important; border-radius:12px !important; background:linear-gradient(180deg,#5EB6FF 0%,#2E8BE6 100%) !important; color:#06243F !important; font-weight:800 !important; font-size:14.5px !important; letter-spacing:.1px !important; box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 8px 20px rgba(46,139,230,.32) !important; font-family:'Inter',sans-serif !important; font-style:normal !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-pill .price{ font-size:15.5px !important; font-weight:900 !important; color:#06243F !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-pill .mo{ font-size:11px !important; font-weight:700 !important; color:#0A2240 !important; opacity:.78 !important; letter-spacing:.06em !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-arrow{ width:16px !important; height:16px !important; color:#06243F !important; transition:transform .25s ease !important; }
+html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home:hover .lla-cta-arrow{ transform:translateX(3px) !important; }
+@keyframes llaDot{ 0%,100% { box-shadow:0 0 8px #5EB6FF,0 0 14px rgba(94,182,255,.7); } 50% { box-shadow:0 0 14px #5EB6FF,0 0 24px rgba(94,182,255,1); } }
+@media (max-width:720px){html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home{ top:auto !important; bottom:12px !important; right:12px !important; left:12px !important; border-radius:14px !important; transform:translateY(12px) !important; }html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-text{ padding:10px 12px 10px 14px !important; flex:1 !important; min-width:0 !important; }html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-title{ font-size:14px !important; }html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-eyebrow{ font-size:9.5px !important; }html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-pill{ padding:0 14px !important; margin:6px 6px 6px 4px !important; border-radius:10px !important; }html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-pill .price{ font-size:14px !important; }html body#lpRoot#lpRoot#lpRoot#lpRoot .lla-float-cta--home .lla-cta-pill .mo{ font-size:10px !important; }}
 </style>
 
 <div id="enrollModal" role="dialog" aria-modal="true" aria-label="Enroll">
@@ -3364,7 +3592,7 @@ window.LLA_GOOGLE_CAMPAIGN_IDS = window.LLA_GOOGLE_CAMPAIGN_IDS || {
 </script>
 
 <script>
-/* Redesign UI layer: mobile rail dots, floating CTA visibility. Presentation only. */
+/* Redesign UI layer: mobile rail dots. Presentation only. */
 (function(){
   var mq = window.matchMedia('(max-width: 900px)');
   function buildDots(){
@@ -3388,21 +3616,6 @@ window.LLA_GOOGLE_CAMPAIGN_IDS = window.LLA_GOOGLE_CAMPAIGN_IDS || {
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', buildDots); else buildDots();
 
-  var cta = document.getElementById('llaFloatCta');
-  var hero = document.getElementById('hero');
-  var hide = [document.querySelector('#offer .fn-pricecard'), document.getElementById('enroll-mini'), document.querySelector('footer.footer')].filter(Boolean);
-  function pos(){
-    if (!cta) return;
-    var y = window.scrollY || document.documentElement.scrollTop;
-    var past = hero ? y > (hero.offsetTop + hero.offsetHeight - 160) : y > 600;
-    var over = hide.some(function(el){ var r = el.getBoundingClientRect(); return r.top < window.innerHeight * 0.9 && r.bottom > 0; });
-    var modal = document.getElementById('enrollModal'); var modalOpen = modal && modal.classList.contains('open');
-    cta.classList.toggle('is-hidden', !past || over || modalOpen);
-  }
-  window.addEventListener('scroll', pos, { passive: true });
-  window.addEventListener('resize', pos);
-  setInterval(pos, 600);
-  pos();
 })();
 </script>
 
