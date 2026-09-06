@@ -1319,6 +1319,53 @@ body{font-size:18px}
   #mechanism .fn-journey::before{display:none}
 }
 
+/* ==========================================================================
+   Round 10: cells burnt into the top right, Julie's clean film under it
+   ========================================================================== */
+.pdp-hero--cine{overflow:hidden;padding:calc(var(--nav-h) + 48px) 0 64px}
+.pdp-cine-inner{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:clamp(40px,5vw,84px);align-items:stretch}
+.hero-copy{display:flex;flex-direction:column;justify-content:center}
+.hero-right-col{justify-content:flex-end;gap:0}
+.hero-sales{position:static;border-radius:0;overflow:visible;background:none;box-shadow:none;aspect-ratio:16/8.6;width:100%;flex:none}
+.hero-sales-video{position:absolute;top:0;right:0;left:auto;width:52%;height:64%;object-fit:cover;object-position:50% 50%;border-radius:0;transform:none;z-index:1;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 100%),linear-gradient(180deg,#000 0%,#000 70%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 100%),linear-gradient(180deg,#000 0%,#000 70%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.pdp-cine-overlay{z-index:1;background:linear-gradient(90deg, rgba(4,13,36,.55) 0%, rgba(4,13,36,.15) 45%, transparent 62%), linear-gradient(180deg, rgba(4,13,36,.45) 0%, transparent 26%, transparent 60%, rgba(4,13,36,.6) 100%)}
+.hero-right-col .lla-film{position:relative;margin-top:-8%}
+.hero-right-col .lla-film video{border-radius:18px;box-shadow:0 40px 90px -40px rgba(0,0,0,.85), 0 0 70px -24px rgba(0,110,255,.8)}
+.hero-right-col .lla-film figcaption{padding:12px 2px 0}
+.film-sound{position:absolute;right:14px;top:14px;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;background:rgba(4,13,36,.55);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);cursor:pointer;z-index:3;transition:background .3s}
+.film-sound:hover{background:rgba(0,110,255,.7)}
+.film-sound .fs-on{display:none}.film-sound.is-on .fs-on{display:block}.film-sound.is-on .fs-off{display:none}
+@media (max-width:900px){
+  .pdp-hero--cine{padding:calc(var(--nav-h) + 40vh) 0 32px}
+  .hero-sales{display:none}
+  .hero-sales-video{display:block;position:absolute;top:0;left:0;right:0;width:100%;height:60vh;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);-webkit-mask-composite:initial;mask-composite:initial}
+  .pdp-cine-overlay{background:linear-gradient(180deg, rgba(4,13,36,.45) 0%, rgba(4,13,36,.05) 22%, rgba(4,13,36,.15) 38%, rgba(4,13,36,.9) 56%, #040D24 100%)}
+  .hero-right-col .lla-film{margin-top:0}
+  .hero-right-col{margin-top:26px}
+}
+/* round 10b: footage anchored to the hero itself */
+.pdp-cine-inner{position:static}
+.hero-sales-video{width:56%;height:64%;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);-webkit-mask-composite:initial;mask-composite:initial}
+.pdp-cine-overlay{background:linear-gradient(90deg,#040D24 0%,#061633 36%,rgba(6,22,51,.7) 48%,transparent 62%), linear-gradient(180deg, rgba(4,13,36,.35) 0%, transparent 22%)}
+.hero-fx{z-index:1}
+@media (max-width:900px){
+  .pdp-cine-inner{grid-template-columns:minmax(0,1fr) !important;display:grid}
+  .hero-sales{display:block;height:0;aspect-ratio:auto}
+  .hero-sales-video{width:100%;height:58vh;left:0;right:0}
+  .pdp-cine-overlay{background:linear-gradient(180deg, rgba(4,13,36,.45) 0%, rgba(4,13,36,.05) 22%, rgba(4,13,36,.15) 38%, rgba(4,13,36,.9) 56%, #040D24 100%)}
+}
+
+/* round 10c */
+.hero-right-col{position:static}
+.hero-right-col .lla-film{position:relative;z-index:2}
+/* round 10d: soft left edge on the burnt footage */
+@media (min-width:901px){
+  .hero-sales-video{-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%,#000 100%),linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%,#000 100%),linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+  .pdp-cine-overlay{background:linear-gradient(90deg,#040D24 0%,rgba(6,22,51,.9) 34%,rgba(6,22,51,.35) 48%,transparent 60%), linear-gradient(180deg, rgba(4,13,36,.35) 0%, transparent 22%)}
+}
+
 </style>
 </head>
 <body id="lpRoot">
@@ -1430,7 +1477,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     </div>
     <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/cells.mp4" poster="assets/cells-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></div><figure class="lla-film">
-        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto"></video><button type="button" class="film-sound" aria-label="Sound on or off" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="fs-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/><path class="fs-off" d="M23 9l-6 6M17 9l6 6"/></svg></button>
         <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
       </figure></div>
     
@@ -3808,6 +3855,53 @@ body{font-size:18px}
   #mechanism .fn-journey::before{display:none}
 }
 
+/* ==========================================================================
+   Round 10: cells burnt into the top right, Julie's clean film under it
+   ========================================================================== */
+.pdp-hero--cine{overflow:hidden;padding:calc(var(--nav-h) + 48px) 0 64px}
+.pdp-cine-inner{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:clamp(40px,5vw,84px);align-items:stretch}
+.hero-copy{display:flex;flex-direction:column;justify-content:center}
+.hero-right-col{justify-content:flex-end;gap:0}
+.hero-sales{position:static;border-radius:0;overflow:visible;background:none;box-shadow:none;aspect-ratio:16/8.6;width:100%;flex:none}
+.hero-sales-video{position:absolute;top:0;right:0;left:auto;width:52%;height:64%;object-fit:cover;object-position:50% 50%;border-radius:0;transform:none;z-index:1;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 100%),linear-gradient(180deg,#000 0%,#000 70%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 100%),linear-gradient(180deg,#000 0%,#000 70%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.pdp-cine-overlay{z-index:1;background:linear-gradient(90deg, rgba(4,13,36,.55) 0%, rgba(4,13,36,.15) 45%, transparent 62%), linear-gradient(180deg, rgba(4,13,36,.45) 0%, transparent 26%, transparent 60%, rgba(4,13,36,.6) 100%)}
+.hero-right-col .lla-film{position:relative;margin-top:-8%}
+.hero-right-col .lla-film video{border-radius:18px;box-shadow:0 40px 90px -40px rgba(0,0,0,.85), 0 0 70px -24px rgba(0,110,255,.8)}
+.hero-right-col .lla-film figcaption{padding:12px 2px 0}
+.film-sound{position:absolute;right:14px;top:14px;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;background:rgba(4,13,36,.55);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);cursor:pointer;z-index:3;transition:background .3s}
+.film-sound:hover{background:rgba(0,110,255,.7)}
+.film-sound .fs-on{display:none}.film-sound.is-on .fs-on{display:block}.film-sound.is-on .fs-off{display:none}
+@media (max-width:900px){
+  .pdp-hero--cine{padding:calc(var(--nav-h) + 40vh) 0 32px}
+  .hero-sales{display:none}
+  .hero-sales-video{display:block;position:absolute;top:0;left:0;right:0;width:100%;height:60vh;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);-webkit-mask-composite:initial;mask-composite:initial}
+  .pdp-cine-overlay{background:linear-gradient(180deg, rgba(4,13,36,.45) 0%, rgba(4,13,36,.05) 22%, rgba(4,13,36,.15) 38%, rgba(4,13,36,.9) 56%, #040D24 100%)}
+  .hero-right-col .lla-film{margin-top:0}
+  .hero-right-col{margin-top:26px}
+}
+/* round 10b: footage anchored to the hero itself */
+.pdp-cine-inner{position:static}
+.hero-sales-video{width:56%;height:64%;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);-webkit-mask-composite:initial;mask-composite:initial}
+.pdp-cine-overlay{background:linear-gradient(90deg,#040D24 0%,#061633 36%,rgba(6,22,51,.7) 48%,transparent 62%), linear-gradient(180deg, rgba(4,13,36,.35) 0%, transparent 22%)}
+.hero-fx{z-index:1}
+@media (max-width:900px){
+  .pdp-cine-inner{grid-template-columns:minmax(0,1fr) !important;display:grid}
+  .hero-sales{display:block;height:0;aspect-ratio:auto}
+  .hero-sales-video{width:100%;height:58vh;left:0;right:0}
+  .pdp-cine-overlay{background:linear-gradient(180deg, rgba(4,13,36,.45) 0%, rgba(4,13,36,.05) 22%, rgba(4,13,36,.15) 38%, rgba(4,13,36,.9) 56%, #040D24 100%)}
+}
+
+/* round 10c */
+.hero-right-col{position:static}
+.hero-right-col .lla-film{position:relative;z-index:2}
+/* round 10d: soft left edge on the burnt footage */
+@media (min-width:901px){
+  .hero-sales-video{-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%,#000 100%),linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%,#000 100%),linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+  .pdp-cine-overlay{background:linear-gradient(90deg,#040D24 0%,rgba(6,22,51,.9) 34%,rgba(6,22,51,.35) 48%,transparent 60%), linear-gradient(180deg, rgba(4,13,36,.35) 0%, transparent 22%)}
+}
+
 </style>
 <style>
 /* Floating enroll button, styles carried verbatim from the live page */
@@ -4565,6 +4659,10 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-cta:hover{ transform:translateY(
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', buildDots); else buildDots();
+  document.querySelectorAll('.film-sound').forEach(function(btn){
+    var v = btn.parentElement.querySelector('video'); if (!v) return;
+    btn.addEventListener('click', function(){ v.muted = !v.muted; if (!v.muted) { v.play(); } btn.setAttribute('aria-pressed', v.muted ? 'false' : 'true'); btn.classList.toggle('is-on', !v.muted); });
+  });
 
 })();
 </script>
