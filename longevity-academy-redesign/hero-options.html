@@ -64,7 +64,7 @@ p{text-wrap:pretty}
   position:relative; z-index:1;
 }
 section{position:relative;isolation:isolate;overflow:clip}
-.container > *,.fn-container > *,.hp-about-inner > *,.fn-offer-grid > *,.lla-value-layout > *,.lla-value-cards > *{min-width:0}
+.container > *, .fn-container > *, .fn-offer-grid > *, .lla-value-layout > *, .lla-value-cards > *{min-width:0}
 
 /* Ambient light layers: every fold gets its own lighting */
 .is-dark::before,.is-dark::after{content:"";position:absolute;pointer-events:none;z-index:0}
@@ -93,8 +93,8 @@ section{position:relative;isolation:isolate;overflow:clip}
 .section-title em,.fn-h2 em,.pdp-value-h2 em,.lla-shine-h2 em,.hp-about-mainhead .life-blue{
   color:var(--blue); background:linear-gradient(90deg,#006EFF,#22C4F5); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
 }
-.is-dark .section-title,.is-dark .lp-learn-title,.is-dark .fn-h2,.is-dark .pdp-value-h2,.is-dark .cgm-fold-title,.is-dark .hp-about-mainhead,.is-dark h3,.is-dark h4{color:#fff}
-.is-dark .section-subtitle,.is-dark .lp-learn-lead,.is-dark .fn-lead,.is-dark .cgm-fold-sub,.is-dark .hp-about-lead{color:rgba(232,240,255,.8)}
+.is-dark .section-title, .is-dark .lp-learn-title, .is-dark .fn-h2, .is-dark .pdp-value-h2, .is-dark .cgm-fold-title, .is-dark h3, .is-dark h4{color:#fff}
+.is-dark .section-subtitle, .is-dark .lp-learn-lead, .is-dark .fn-lead, .is-dark .cgm-fold-sub{color:rgba(232,240,255,.8)}
 .is-dark .section-title em,.is-dark .fn-h2 em,.is-dark .pdp-value-h2 em,.is-dark .hp-about-mainhead .life-blue{
   color:var(--cyan); background:linear-gradient(90deg,#7DE5FF,#CFE6FF 50%,#5EB6FF); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
   filter:drop-shadow(0 0 18px rgba(125,229,255,.45));
@@ -201,8 +201,8 @@ html.js .reveal.visible,html.js .fn-reveal.is-in{opacity:1;transform:none}
   .fn-navtoggle{display:flex}
   .fn-nav-logo img{height:44px}
   .fn-nav-pill{padding:11px 18px;font-size:14px}
-  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(34px, 9.6vw, 40px);margin-bottom:14px}
-  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead,.lla-shine-p{font-size:17px}
+.section-title, .lp-learn-title, .fn-h2, .pdp-value-h2, .cgm-fold-title{font-size:clamp(34px, 9.6vw, 40px);margin-bottom:14px}
+.section-subtitle, .lp-learn-lead, .fn-lead, .cgm-fold-sub, .lla-shine-p{font-size:17px}
 }
 
 /* Drawer */
@@ -448,51 +448,6 @@ body.fn-noscroll{overflow:hidden}
 .px-mark i{color:var(--blue)}
 .px-dot{width:5px;height:5px;border-radius:50%;background:var(--cyan-2);box-shadow:0 0 8px var(--cyan-2);flex:none}
 @media (max-width:900px){.pressx-in{flex-direction:column;align-items:flex-start;gap:12px}.px-mark{font-size:19px}}
-
-/* ==========================================================================
-   ABOUT + LOGOS, glowing dashboard
-   ========================================================================== */
-.hp-about{padding:clamp(64px,9vw,128px) 0 0;color:#fff;background:linear-gradient(180deg,#071A3D,#040D24)}
-.hp-about-link-wrap{display:block;color:inherit}
-.hp-about-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);grid-template-rows:auto auto 1fr;gap:clamp(30px,5vw,80px);align-items:start;padding-bottom:clamp(56px,7vw,96px)}
-.hp-about-header{grid-column:1}
-.hp-about-mainhead{color:#fff}
-.hp-about-body{grid-column:1}
-.hp-about-lead{color:rgba(232,240,255,.84);max-width:none}
-.hp-about-powered{
-  min-width:0; max-width:100%; grid-column:2; grid-row:1 / span 3; border-radius:var(--r-lg); padding:34px 34px 30px; position:relative;
-  background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03)); border:1px solid rgba(125,229,255,.2);
-  box-shadow:var(--shadow-dark), 0 0 80px -30px rgba(0,110,255,.8); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
-}
-.hp-about-powered::before{content:"";position:absolute;left:34px;right:34px;top:0;height:2px;background:linear-gradient(90deg,transparent,#7DE5FF,transparent);box-shadow:0 0 16px #7DE5FF}
-.hp-about-powered-label{font-size:15px;color:var(--cyan);margin-bottom:12px}
-.hp-about-powered-logo-img{height:44px;width:auto;margin-bottom:20px;filter:drop-shadow(0 0 12px rgba(125,229,255,.35))}
-.hp-about-powered-desc{font-size:17.5px;line-height:1.6;color:rgba(232,240,255,.82);margin-bottom:26px}
-.hp-hero-powered-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-.hp-hero-powered-stats li{padding:16px 12px 14px;border-radius:16px;display:flex;flex-direction:column;gap:8px;background:rgba(4,13,36,.55);border:1px solid rgba(125,229,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
-.hp-hero-powered-stats span{font-size:13px;color:rgba(232,240,255,.62);line-height:1.3}
-.hp-hero-powered-stats strong{font-weight:400;font-size:32px;line-height:1;color:#fff;display:flex;align-items:baseline;gap:3px;text-shadow:0 0 22px rgba(125,229,255,.55)}
-.hp-hero-powered-stats strong .unit{font-size:15px;color:var(--cyan)}
-.hp-hero-powered-live-dot{width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(125,229,255,.2);display:inline-block;margin-right:8px;align-self:center;animation:pulse-dot 2s ease-in-out infinite}
-.hp-about-readmore{grid-column:1;align-self:start;justify-self:start;display:inline-flex;align-items:center;gap:10px;font-size:18px;color:var(--cyan);text-transform:none;margin-top:6px;transition:gap .3s var(--ease)}
-.hp-about-readmore svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round}
-.hp-about-link-wrap:hover .hp-about-readmore{gap:16px;color:#fff}
-@media (max-width:1100px){.hp-hero-powered-stats{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:900px){
-  .hp-about-inner{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;gap:26px}
-  .hp-about-powered{grid-column:1;grid-row:auto;padding:24px 22px 20px}
-  .hp-about-powered::before{left:22px;right:22px}
-  .hp-hero-powered-stats{display:flex;overflow-x:auto;gap:10px;scrollbar-width:none;margin:0 -22px;padding:0 22px}
-  .hp-hero-powered-stats::-webkit-scrollbar{display:none}
-  .hp-hero-powered-stats li{flex:0 0 auto;min-width:140px}
-}
-.hp-trust-strip{padding:26px 0 30px;background:#040D24;border-top:1px solid rgba(125,229,255,.12)}
-.lla-logos-wrap{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
-.lla-logos-track{display:flex;align-items:center;gap:clamp(56px,8vw,120px);width:max-content;animation:logosMarquee 40s linear infinite}
-@keyframes logosMarquee{to{transform:translateX(-25%)}}
-.lla-logo-box{flex:none;display:flex;align-items:center;justify-content:center;height:44px;opacity:.9}
-.lla-logo-box img{height:34px;width:auto;object-fit:contain}
-.lla-logo-box--Intel img{height:40px}
 
 /* ==========================================================================
    TEACHERS
@@ -798,7 +753,7 @@ body.fn-noscroll{overflow:hidden}
 .section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{
   content:"";display:block;width:44px;height:3px;border-radius:3px;margin:0 0 18px;background:linear-gradient(90deg,#006EFF,#7DE5FF);box-shadow:0 0 14px rgba(125,229,255,.7)}
 .fn-head--center .fn-h2::before,.lla-films-head .section-title::before,.hp-instructors-header + * .section-title::before{margin-left:auto;margin-right:auto}
-.hp-about-header .hp-about-mainhead::before,.hp-instructors-header .section-title::before,.pdp-value-head .pdp-value-h2::before{display:none}
+.hp-instructors-header .section-title::before, .pdp-value-head .pdp-value-h2::before{display:none}
 .lla-shine-h2::before{display:none}
 /* distinct fold colors so the page reads as folds */
 .curriculum{background:linear-gradient(180deg,#EAF2FF,#F6F9FF)}
@@ -818,9 +773,9 @@ body.fn-noscroll{overflow:hidden}
 .lla-mini-price b sup,.lla-mini-price span{color:var(--blue)}
 /* mobile: tighter cards, clearer type scale */
 @media (max-width:900px){
-  .section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{margin-bottom:14px}
-  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(30px, 8.6vw, 38px);line-height:1.08}
-  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:16px;line-height:1.5}
+.section-title::before, .lp-learn-title::before, .fn-h2::before, .pdp-value-h2::before, .cgm-fold-title::before{margin-bottom:14px}
+.section-title, .lp-learn-title, .fn-h2, .pdp-value-h2, .cgm-fold-title{font-size:clamp(30px, 8.6vw, 38px);line-height:1.08}
+.section-subtitle, .lp-learn-lead, .fn-lead, .cgm-fold-sub{font-size:16px;line-height:1.5}
   .lp-learn-head,.curriculum-header,.hp-instructors-header,.testimonials-header,.pdp-value-head,.cgm-fold-header,.faq-header,.lla-films-head{margin-bottom:22px !important}
   .rail > *{flex:0 0 min(76%, 320px) !important}
   .lp-lrow-media{aspect-ratio:16/9 !important}
@@ -918,8 +873,8 @@ body.fn-noscroll{overflow:hidden}
    ========================================================================== */
 @media (max-width:900px){
   body{font-size:17px}
-  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(34px, 9.6vw, 42px);line-height:1.06}
-  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:17.5px;line-height:1.5}
+.section-title, .lp-learn-title, .fn-h2, .pdp-value-h2, .cgm-fold-title{font-size:clamp(34px, 9.6vw, 42px);line-height:1.06}
+.section-subtitle, .lp-learn-lead, .fn-lead, .cgm-fold-sub{font-size:17.5px;line-height:1.5}
   .eyebrow,.fn-pricecard-tag,.lla-shine-eyebrow,.cgm-fold-eyebrow{font-size:14px}
   .rail > *{flex:0 0 min(84%, 340px) !important}
   /* pillars: short media band, roomy text */
@@ -993,17 +948,12 @@ body.fn-noscroll{overflow:hidden}
    Mobile hardening: no sideways pan, stacked stats, wrapping floating bar
    ========================================================================== */
 @media (max-width:900px){
-  section,footer,.lla-shine,.lla-mini,.pressx,.lla-logos{overflow:hidden}
+section, footer, .lla-shine, .lla-mini, .pressx{overflow:hidden}
   @supports (overflow:clip){section,footer,.lla-shine,.lla-mini,.pressx,.lla-logos{overflow:clip}}
   html,body{overflow-x:hidden}
   @supports (overflow-x:clip){html,body{overflow-x:clip}}
   .is-dark::after,.is-light::after{left:0;right:0}
   .fn-pricecard{position:relative;top:auto}
-  .hp-hero-powered-stats{display:grid;grid-template-columns:1fr;gap:8px;margin:0;padding:0;overflow:visible}
-  .hp-hero-powered-stats li{flex-direction:row;align-items:center;justify-content:space-between;gap:12px;min-width:0;padding:13px 16px}
-  .hp-hero-powered-stats span{font-size:15px;color:rgba(232,240,255,.78)}
-  .hp-hero-powered-stats strong{font-size:26px}
-  .hp-hero-powered-stats strong .unit{font-size:14px}
 }
 
 /* ==========================================================================
@@ -1011,8 +961,8 @@ body.fn-noscroll{overflow:hidden}
    ========================================================================== */
 /* type scale */
 body{font-size:18px}
-.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(42px, 5.4vw, 78px);line-height:1.02;margin-bottom:22px}
-.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:clamp(19px, 1.7vw, 24px);line-height:1.5;color:var(--ink-2)}
+.section-title, .lp-learn-title, .fn-h2, .pdp-value-h2, .cgm-fold-title{font-size:clamp(42px, 5.4vw, 78px);line-height:1.02;margin-bottom:22px}
+.section-subtitle, .lp-learn-lead, .fn-lead, .cgm-fold-sub{font-size:clamp(19px, 1.7vw, 24px);line-height:1.5;color:var(--ink-2)}
 .eyebrow,.fn-pricecard-tag,.lla-shine-eyebrow{font-size:16px}
 .fn-nav-links a,.fn-nav a{font-size:17px}
 .pdp-cine-cta,.fn-btn,.section-cta-btn,.lla-shine-cta,.cgm-fold-cta,.pdp-cine-ghost,.fn-nav-pill{font-size:17px}
@@ -1041,8 +991,6 @@ body{font-size:18px}
 .faq-a-inner{font-size:17.5px;line-height:1.6}
 .fn-pricecard li{font-size:17.5px}
 .fn-pricecard-sub,.fn-pricecard p{font-size:16.5px}
-.hp-about-powered p{font-size:17.5px;line-height:1.6}
-.hp-hero-powered-stats span{font-size:14px}
 .footer-brand p,.footer-col a,.footer-col li{font-size:16.5px}
 .footer-col h4,.footer-col strong{font-size:19px}
 .footer-bottom,.footer-bottom *{font-size:15px}
@@ -1055,8 +1003,8 @@ body{font-size:18px}
 .lla-mini-card p{font-size:18px}
 @media (max-width:900px){
   body{font-size:17.5px}
-  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{font-size:clamp(36px, 10vw, 44px);line-height:1.04}
-  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{font-size:18px}
+.section-title, .lp-learn-title, .fn-h2, .pdp-value-h2, .cgm-fold-title{font-size:clamp(36px, 10vw, 44px);line-height:1.04}
+.section-subtitle, .lp-learn-lead, .fn-lead, .cgm-fold-sub{font-size:18px}
   .lp-lrow-title{font-size:25px}
   .lp-lrow-pay,.hp-teacher-card-live-bio,.lla-news-sub,.fn-stack-txt p,.pdp-value-card p,.fn-journey-txt p{font-size:16px;line-height:1.5}
   .hp-teacher-card-live-name,.fn-stack-txt h4,.pdp-value-card h3,.fn-journey-txt h3{font-size:23px}
@@ -1106,8 +1054,8 @@ body{font-size:18px}
 .quote-card,.pdp-value-card,.fn-stack-row,.lp-lrow{position:relative}
 /* buttons and headline accents glow harder */
 .pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.fn-nav-pill{box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 18px 40px -14px rgba(0,110,255,.9), 0 0 44px rgba(0,110,255,.55)}
-.section-title em,.fn-h2 em,.pdp-value-h2 em,.hp-about-mainhead .life-blue{filter:drop-shadow(0 0 22px rgba(0,110,255,.45))}
-.section-title::before,.lp-learn-title::before,.fn-h2::before,.pdp-value-h2::before,.cgm-fold-title::before,.hp-about-mainhead::before{width:56px;height:4px;box-shadow:0 0 22px rgba(125,229,255,.95), 0 0 50px rgba(0,110,255,.7)}
+.section-title em, .fn-h2 em, .pdp-value-h2 em{filter:drop-shadow(0 0 22px rgba(0,110,255,.45))}
+.section-title::before, .lp-learn-title::before, .fn-h2::before, .pdp-value-h2::before, .cgm-fold-title::before{width:56px;height:4px;box-shadow:0 0 22px rgba(125,229,255,.95), 0 0 50px rgba(0,110,255,.7)}
 .fn-nav{box-shadow:0 1px 0 rgba(125,229,255,.35), 0 10px 40px -20px rgba(0,110,255,.7)}
 .mock-browser{border:1px solid rgba(125,229,255,.45);box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.3), 0 0 90px -20px rgba(0,110,255,.9)}
 .lla-film{box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.35), 0 0 100px -20px rgba(0,110,255,.9)}
@@ -1128,8 +1076,8 @@ body{font-size:18px}
    ========================================================================== */
 .pdp-cine-h1{max-width:62%;font-size:clamp(44px,4.9vw,74px)}
 .pdp-cine-sub{max-width:60%;font-size:clamp(20px,1.75vw,25px)}
-.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{max-width:none}
-.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{max-width:1000px;font-size:clamp(20px,1.8vw,26px)}
+.section-title, .lp-learn-title, .fn-h2, .pdp-value-h2, .cgm-fold-title{max-width:none}
+.section-subtitle, .lp-learn-lead, .fn-lead, .cgm-fold-sub{max-width:1000px;font-size:clamp(20px,1.8vw,26px)}
 /* films: no box, natural full width, autoplaying */
 .lla-films{padding:clamp(40px,6vw,80px) 0 clamp(48px,6vw,90px)}
 .lla-film,.lla-films-grid .lla-film{background:none;border:0;box-shadow:none;padding:0;max-width:1240px;margin:0 auto}
@@ -1159,17 +1107,7 @@ body{font-size:18px}
 .lla-shine-h2{font-size:clamp(28px,2.6vw,40px);margin-bottom:6px;text-shadow:none}
 .lla-shine-p{font-size:17px;margin:0}
 .lla-shine-eyebrow{display:none}
-.hp-trust-strip{background:#000;border-top:0;padding:22px 0}
 /* about: card matches paragraph column, numbers aligned, no dead space */
-.hp-about{padding-bottom:0}
-.hp-about-inner{align-items:stretch;padding-bottom:40px;gap:clamp(24px,3vw,48px)}
-.hp-about-powered{display:flex;flex-direction:column}
-.hp-about-powered-desc{font-size:18px}
-.hp-hero-powered-stats{margin-top:auto;grid-template-columns:repeat(5,1fr);align-items:stretch}
-.hp-hero-powered-stats li{justify-content:flex-end;min-height:104px;padding:14px 12px}
-.hp-hero-powered-stats span{font-size:14px;min-height:34px;display:flex;align-items:flex-end}
-.hp-hero-powered-stats strong{font-size:30px}
-.hp-about-readmore{margin-top:0}
 /* teachers */
 .hp-teacher-card-live-name{font-size:26px}
 .hp-teacher-card-live-role{font-size:17px}
@@ -1200,9 +1138,6 @@ body{font-size:18px}
   .lla-film figcaption b,.lla-film-name{font-size:30px}
   .lla-film figcaption span,.lla-film-role{font-size:19px}
   .lla-shine-h2{font-size:30px}
-  .hp-hero-powered-stats{margin-top:12px}
-  .hp-hero-powered-stats li{min-height:0}
-  .hp-hero-powered-stats span{min-height:0}
 }
 
 .lla-film,.lla-films-grid .lla-film{width:100%;justify-self:stretch}
@@ -1220,14 +1155,8 @@ body{font-size:18px}
 .pdp-cine-ghost{min-height:58px;padding:0 30px;font-size:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .pdp-cine-cta svg,.fn-btn svg,.section-cta-btn svg,.cgm-fold-cta svg,.pdp-cine-ghost svg{width:20px;height:20px}
 /* no side notes or pills */
-.eyebrow,.hp-about-eyebrow,.hp-instructors-eyebrow{display:none !important}
+.eyebrow, .hp-instructors-eyebrow{display:none !important}
 /* about: equal columns */
-.hp-about-inner{grid-template-rows:auto 1fr auto;align-items:stretch;padding-bottom:56px}
-.hp-about-body{display:flex;flex-direction:column;justify-content:center}
-.hp-about-lead{font-size:clamp(20px,1.6vw,23px);line-height:1.6}
-.hp-about-powered{grid-row:1 / span 3;height:100%}
-.hp-about-powered-desc{font-size:19px;flex:none}
-.hp-about-readmore{font-size:20px}
 /* news header full width, press names as a strip */
 .lla-news .lla-films-head{grid-template-columns:1fr;text-align:left;gap:10px}
 .lla-news .lla-films-head .section-subtitle{max-width:1000px !important;margin:0 !important}
@@ -1276,8 +1205,6 @@ body{font-size:18px}
 .faq-list{gap:18px}
 @media (max-width:900px){
   .pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.lla-shine-cta,.pdp-cine-ghost{min-height:56px;font-size:17px}
-  .hp-about-inner{grid-template-rows:auto;padding-bottom:28px}
-  .hp-about-powered{grid-row:auto;height:auto}
   .lla-news .pressx-track,.lla-news .pressx-in > *{font-size:19px}
   .fn-pricecard h3{font-size:34px}
   .fn-pricecard-price b{font-size:72px}
@@ -1290,7 +1217,7 @@ body{font-size:18px}
   .faq-q{font-size:19px;padding:20px 18px}
   .faq-a-inner{font-size:17px;padding-left:18px}
 }
-.hp-instructors-header .eyebrow,.hp-about-header .eyebrow{display:none !important}
+.hp-instructors-header .eyebrow{display:none !important}
 .fn-microtrust span::before{display:none}
 /* why this course is different: mockup on top, four equal cards under it */
 @media (min-width:1001px){
@@ -1308,9 +1235,70 @@ body{font-size:18px}
   .pdp-value-grid{grid-auto-rows:auto}
 }
 @media (max-width:900px){
-  .hp-hero-powered-stats{grid-template-columns:1fr !important;margin-top:14px}
-  .hp-hero-powered-stats li{flex-direction:row;justify-content:space-between;align-items:center;min-height:0;padding:13px 16px}
-  .hp-hero-powered-stats span{min-height:0;display:block}
+}
+
+
+/* ==========================================================================
+   Round 9
+   ========================================================================== */
+:root{--font-display:'Playfair Display', Georgia, serif}
+/* every fold: headlines and leads run wide */
+.lp-learn-head,.curriculum-header,.hp-instructors-header,.testimonials-header,.pdp-value-head,.cgm-fold-header,.faq-header,.fn-head,.lla-films-head,.lla-news .lla-films-head{max-width:none !important}
+.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title{max-width:none !important;font-size:clamp(44px,5.6vw,82px)}
+.section-title br,.lp-learn-title br,.fn-h2 br,.pdp-value-h2 br,.cgm-fold-title br{display:none}
+.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub{max-width:1180px !important;font-size:clamp(21px,1.85vw,27px);line-height:1.5}
+.fn-head--center .fn-lead,.lla-films-head .section-subtitle{margin-left:auto !important;margin-right:auto !important}
+/* hero: split, taller, symmetrical */
+.pdp-hero--cine{min-height:auto;padding:calc(var(--nav-h) + 56px) 0 72px;background:radial-gradient(60% 70% at 8% 12%, rgba(0,110,255,.55), transparent 60%), radial-gradient(40% 50% at 92% 88%, rgba(125,229,255,.3), transparent 60%), linear-gradient(90deg,#040D24 0%,#061633 50%,#071A3D 100%)}
+.pdp-cine-overlay{background:linear-gradient(180deg, rgba(4,13,36,.3) 0%, transparent 30%, transparent 70%, rgba(4,13,36,.5) 100%)}
+.pdp-cine-inner{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(36px,4.5vw,72px);align-items:center}
+.hero-copy{position:relative;z-index:2}
+.pdp-cine-h1{max-width:none;font-size:clamp(46px,4.9vw,80px);line-height:1.02}
+.pdp-cine-sub{max-width:none;font-size:clamp(20px,1.6vw,25px);margin:26px 0 34px}
+.hero-right-col{position:relative;z-index:2;display:flex;flex-direction:column;gap:18px}
+.hero-sales{position:relative;border-radius:22px;overflow:hidden;background:#071A3D;box-shadow:0 50px 100px -40px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.4), 0 0 90px -20px rgba(0,110,255,.9)}
+.hero-sales-video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 50%;transform:scale(1.0)}
+.hero-right-col .lla-film{width:100%;max-width:none;margin:0;padding:0;background:none;border:0;box-shadow:none}
+.hero-right-col .lla-film::before{display:none}
+.hero-right-col .lla-film video{width:100% !important;aspect-ratio:16/9;height:auto;border-radius:22px;box-shadow:0 50px 100px -40px rgba(0,0,0,.8), 0 0 0 1px rgba(125,229,255,.4), 0 0 90px -20px rgba(0,110,255,.9)}
+.hero-right-col .lla-film figcaption{padding:14px 4px 0;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.hero-right-col .lla-film figcaption b,.hero-right-col .lla-film-name{font-size:26px;text-shadow:0 0 24px rgba(125,229,255,.5)}
+.hero-right-col .lla-film figcaption span,.hero-right-col .lla-film-role{font-size:17px;color:var(--cyan)}
+.hero-fx .grid{-webkit-mask-image:radial-gradient(60% 80% at 20% 50%, #000, transparent 100%);mask-image:radial-gradient(60% 80% at 20% 50%, #000, transparent 100%)}
+/* protocol fold: dark, techy, lit */
+#mechanism{background:radial-gradient(45% 60% at 12% 10%, rgba(0,110,255,.75), transparent 60%), radial-gradient(40% 50% at 88% 90%, rgba(125,229,255,.45), transparent 60%), linear-gradient(180deg,#061633,#040D24);color:#fff}
+#mechanism .fn-h2{color:#fff}
+#mechanism .fn-lead{color:rgba(232,240,255,.85)}
+#mechanism .fn-journey-step{background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(125,229,255,.35);box-shadow:0 40px 80px -40px rgba(0,0,0,.8), 0 0 60px -16px rgba(0,110,255,.85);backdrop-filter:blur(14px);color:#fff;padding:32px 26px 30px}
+#mechanism .fn-journey-step::before,#mechanism .fn-journey-step::after{display:none}
+#mechanism .fn-journey-when{color:var(--cyan);font-size:16px}
+#mechanism .fn-journey-num{background:linear-gradient(135deg,#006EFF,#22C4F5);color:#fff;box-shadow:0 0 24px rgba(34,196,245,.8), 0 0 0 6px rgba(125,229,255,.15)}
+#mechanism .fn-journey-txt h3{color:#fff;font-size:26px}
+#mechanism .fn-journey-txt p{color:rgba(232,240,255,.85);font-size:18px}
+#mechanism .fn-journey{position:relative}
+#mechanism .fn-journey::before{content:"";position:absolute;left:4%;right:4%;top:88px;height:2px;background:linear-gradient(90deg,transparent,#7DE5FF,#006EFF,#7DE5FF,transparent);box-shadow:0 0 18px #7DE5FF;opacity:.8}
+/* why this course is different: side by side, compact mockup, cards fit */
+@media (min-width:1001px){
+  .lla-value-layout{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:34px;align-items:center}
+  .lla-zoom-shot{max-width:none;margin:0}
+  .pdp-value-grid{grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:18px}
+  .pdp-value-card{padding:26px 24px 24px}
+  .pdp-value-card h3{font-size:24px;line-height:1.2}
+  .pdp-value-card p{font-size:17px;line-height:1.5}
+}
+/* syllabus: the first half of each lesson title carries the light */
+.curriculum-trigger-text h3{background:linear-gradient(90deg,#006EFF 0%,#22C4F5 28%,#0A2240 62%,#0A2240 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media (max-width:900px){
+  .pdp-hero--cine{padding:calc(var(--nav-h) + 28px) 0 40px;min-height:auto;align-items:flex-start}
+  .pdp-cine-inner{grid-template-columns:minmax(0,1fr);gap:26px}
+  .pdp-cine-h1{font-size:clamp(38px,10.4vw,48px)}
+  .pdp-cine-sub{font-size:17.5px;margin:16px 0 22px}
+  .hero-right-col{gap:14px}
+  .hero-right-col .lla-film figcaption b,.hero-right-col .lla-film-name{font-size:22px}
+  .hero-right-col .lla-film figcaption span,.hero-right-col .lla-film-role{font-size:15.5px}
+  .section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title{font-size:clamp(36px,10vw,44px)}
+  .section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub{font-size:18px}
+  #mechanism .fn-journey::before{display:none}
 }
 
 
@@ -1365,13 +1353,12 @@ body{font-size:18px}
     </div>
   </div>
 </header>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-1">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" style="object-position:50% 30%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-1">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>1</b><span>Julie.mov</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1386,16 +1373,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" style="object-position:50% 30%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-2">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/longevity-higgs-36.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-2">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>2</b><span>LONGEVITY HIGGS 36.mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1410,16 +1401,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/longevity-higgs-36.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-3">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/yoga-sunlight-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:58% 50%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-3">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>3</b><span>6153775_Flexible_Pose_Yoga_Sunlight_By_Evgenii_Petrunin_Artlist_4K.mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1434,16 +1429,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/yoga-sunlight-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:58% 50%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-4">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/sitting-exercise-mat-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 55%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-4">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>4</b><span>402502_Sitting_Exercise_Mat_Stretching_By_Polina_Borisova_Artlist_4K (1).mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1458,16 +1457,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/sitting-exercise-mat-artlist.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 55%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-5">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/dna-blue-code-particles.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-5">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>5</b><span>6256674_Dna_Blue_Code_Particles_Vj_By_Daniel_Megias_del_Pozo_Artlist_HD.mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1482,16 +1485,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/dna-blue-code-particles.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-6">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/cells.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-6">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>6</b><span>cells</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1506,16 +1513,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/cells.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-7">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/long-hii10.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-7">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>7</b><span>long hii10.mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1530,16 +1541,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/long-hii10.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-8">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/cells-genetics-double-helix.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-8">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>8</b><span>758958_Cells_Genetics_3d_Double_Helix_By_Eli_Magaziner_Artlist_2K.mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1554,16 +1569,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/cells-genetics-double-helix.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-9">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/loop-code-particles.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-9">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>9</b><span>6256681_Loop_Code_Particles_Vj_Animated_By_Daniel_Megias_del_Pozo_Artlist_HD.mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1578,16 +1597,20 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/loop-code-particles.mp4" autoplay muted loop playsinline preload="auto" style="object-position:50% 50%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
-<section class="pdp-hero pdp-hero--cine has-right" id="hero-10">
-  <div class="hero-right" aria-hidden="true"><video class="hero-right-video" src="assets/checking-insulin-wearing-woman.mp4" autoplay muted loop playsinline preload="auto" style="object-position:55% 45%;transform:scale(1)"></video></div>
-  <div class="pdp-cine-overlay" aria-hidden="true"></div>
+<section class="pdp-hero pdp-hero--cine" id="hero-10">
+    <div class="pdp-cine-overlay" aria-hidden="true"></div>
   <div class="hero-fx" aria-hidden="true"><i class="grid"></i><i class="beam"></i><i class="orb orb-1"></i><i class="orb orb-2"></i></div>
   <div class="hero-option-tag"><b>10</b><span>6087720_Checking_Insulin_Wearing_Woman_By_Pressmaster_Artlist_4K.mp4</span></div>
   <div class="pdp-cine-inner">
-    <div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
+    <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"/><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"/></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"/><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"/></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <img src="assets/lla-wordmark-only-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group" class="pdp-cine-wordmark" width="397" height="253" loading="eager">
     <h1 class="pdp-cine-h1">18 Weeks to Your Own <br><span class="pdp-cine-blue">Longevity Protocol.</span></h1>
     <p class="pdp-cine-sub"><strong>The longevity course.</strong> An 18-week guided protocol built around your biology, your numbers and your daily practice. Abbott Lingo CGM shipped free. Your written protocol by week 18.</p>
@@ -1602,6 +1625,11 @@ body{font-size:18px}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
+    </div>
+    <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/checking-insulin-wearing-woman.mp4" autoplay muted loop playsinline preload="auto" style="object-position:55% 45%;transform:scale(1)"></video></div><figure class="lla-film">
+        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop controls playsinline preload="auto"></video>
+        <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
+      </figure></div>
     
   </div>
 </section>
