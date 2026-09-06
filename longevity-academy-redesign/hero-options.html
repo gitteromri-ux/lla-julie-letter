@@ -1123,6 +1123,88 @@ body{font-size:18px}
 #mechanism{background:#FFFFFF}
 .faq{background:linear-gradient(180deg,#EAF2FF,#FFFFFF)}
 
+/* ==========================================================================
+   Round 7, document notes
+   ========================================================================== */
+.pdp-cine-h1{max-width:62%;font-size:clamp(44px,4.9vw,74px)}
+.pdp-cine-sub{max-width:60%;font-size:clamp(20px,1.75vw,25px)}
+.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{max-width:none}
+.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{max-width:1000px;font-size:clamp(20px,1.8vw,26px)}
+/* films: no box, natural full width, autoplaying */
+.lla-films{padding:clamp(40px,6vw,80px) 0 clamp(48px,6vw,90px)}
+.lla-film,.lla-films-grid .lla-film{background:none;border:0;box-shadow:none;padding:0;max-width:1240px;margin:0 auto}
+.lla-film video{width:100%;border-radius:24px;box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 100px -20px rgba(0,110,255,.7)}
+.lla-film figcaption{padding:22px 6px 0}
+.lla-film figcaption b,.lla-film-name{font-size:40px}
+.lla-film figcaption span,.lla-film-role{font-size:24px}
+/* pillars: one elegant row, readable text, one light only */
+.lp-lrow::after{display:none}
+.lp-lrow-body{text-shadow:none}
+.lp-lrow-title{font-size:30px}
+.lp-lrow-pay{font-size:18px;line-height:1.55;color:#fff}
+@media (min-width:901px){
+  .lp-learn-rows{display:flex !important;flex-wrap:nowrap;overflow-x:auto;gap:24px;scroll-snap-type:x mandatory;padding:10px 4px 26px;scrollbar-width:thin;scrollbar-color:rgba(0,110,255,.5) transparent}
+  .lp-learn-rows > *{flex:0 0 calc(33.333% - 16px);scroll-snap-align:start;transform:none !important;grid-column:auto !important;grid-row:auto !important}
+  .lla-news-grid{display:flex !important;flex-wrap:nowrap;overflow-x:auto;gap:24px;scroll-snap-type:x mandatory;padding:10px 4px 26px;scrollbar-width:thin;scrollbar-color:rgba(0,110,255,.5) transparent}
+  .lla-news-grid > *{flex:0 0 calc(33.333% - 16px);scroll-snap-align:start}
+}
+/* syllabus */
+.curriculum-tab-name,.curriculum-tab h3{font-size:28px}
+.curriculum-tab-sessions,.curriculum-tab span{font-size:17px}
+.curriculum-trigger-text h3{background:linear-gradient(90deg,#0A2240 0%,#006EFF 70%,#22C4F5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 0 14px rgba(0,110,255,.35))}
+/* strips: black and low */
+.lla-shine{background:#000 !important;padding:18px 0 !important}
+.lla-shine::before,.lla-shine::after,.lla-shine-in::before,.lla-shine-in::after{display:none}
+.lla-shine .lla-shine-in{padding:0}
+.lla-shine-h2{font-size:clamp(28px,2.6vw,40px);margin-bottom:6px;text-shadow:none}
+.lla-shine-p{font-size:17px;margin:0}
+.lla-shine-eyebrow{display:none}
+.hp-trust-strip{background:#000;border-top:0;padding:22px 0}
+/* about: card matches paragraph column, numbers aligned, no dead space */
+.hp-about{padding-bottom:0}
+.hp-about-inner{align-items:stretch;padding-bottom:40px;gap:clamp(24px,3vw,48px)}
+.hp-about-powered{display:flex;flex-direction:column}
+.hp-about-powered-desc{font-size:18px}
+.hp-hero-powered-stats{margin-top:auto;grid-template-columns:repeat(5,1fr);align-items:stretch}
+.hp-hero-powered-stats li{justify-content:flex-end;min-height:104px;padding:14px 12px}
+.hp-hero-powered-stats span{font-size:14px;min-height:34px;display:flex;align-items:flex-end}
+.hp-hero-powered-stats strong{font-size:30px}
+.hp-about-readmore{margin-top:0}
+/* teachers */
+.hp-teacher-card-live-name{font-size:26px}
+.hp-teacher-card-live-role{font-size:17px}
+.hp-teacher-card-live-bio{font-size:17.5px}
+.hp-teachers-grid-live > :last-child .hp-teacher-card-live-photo img{object-position:50% 18%}
+/* news: logos strip lives here, no channel words */
+.pressx-label{display:none !important}
+.lla-news .pressx,.lla-news .pressx-in{background:transparent;padding:0 0 26px}
+.lla-news .pressx-in{margin:0 auto 10px}
+.lla-news-card h3{font-size:24px}
+.lla-news-sub{font-size:17px}
+/* offer and value cards */
+.fn-pricecard li{font-size:19px}
+.fn-pricecard-sub,.fn-pricecard p{font-size:17.5px}
+.fn-stack-txt h4{font-size:26px}
+.fn-stack-txt p{font-size:18px}
+.pdp-value-card h3{font-size:27px}
+.pdp-value-card p{font-size:18px}
+.mock-browser{transform:scale(1.04);transform-origin:left center}
+/* cgm and faq */
+.cgm-fold-bullet{font-size:18.5px}
+.cgm-fold-img{box-shadow:var(--shadow-dark), 0 0 120px -20px rgba(0,110,255,1), 0 0 0 1px rgba(125,229,255,.5)}
+.faq-q,.faq-item button{font-size:22px}
+.faq-a-inner{font-size:18.5px}
+.eyebrow,.fn-pricecard-tag,.cgm-fold-eyebrow,.lla-news-src,.fn-journey-when{text-transform:none;letter-spacing:0}
+@media (max-width:900px){
+  .pdp-cine-h1,.pdp-cine-sub{max-width:none}
+  .lla-film figcaption b,.lla-film-name{font-size:30px}
+  .lla-film figcaption span,.lla-film-role{font-size:19px}
+  .lla-shine-h2{font-size:30px}
+  .hp-hero-powered-stats{margin-top:12px}
+  .hp-hero-powered-stats li{min-height:0}
+  .hp-hero-powered-stats span{min-height:0}
+}
+
 
 .pdp-hero--cine{min-height:92vh;border-bottom:1px solid rgba(255,255,255,.08)}
 .hero-option-tag{position:absolute;z-index:5;top:calc(var(--nav-h) + 18px);left:var(--gutter);display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);color:#fff;font-size:15px;max-width:calc(100% - var(--gutter)*2)}

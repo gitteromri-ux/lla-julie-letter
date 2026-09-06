@@ -1141,6 +1141,88 @@ body{font-size:18px}
 #mechanism{background:#FFFFFF}
 .faq{background:linear-gradient(180deg,#EAF2FF,#FFFFFF)}
 
+/* ==========================================================================
+   Round 7, document notes
+   ========================================================================== */
+.pdp-cine-h1{max-width:62%;font-size:clamp(44px,4.9vw,74px)}
+.pdp-cine-sub{max-width:60%;font-size:clamp(20px,1.75vw,25px)}
+.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{max-width:none}
+.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{max-width:1000px;font-size:clamp(20px,1.8vw,26px)}
+/* films: no box, natural full width, autoplaying */
+.lla-films{padding:clamp(40px,6vw,80px) 0 clamp(48px,6vw,90px)}
+.lla-film,.lla-films-grid .lla-film{background:none;border:0;box-shadow:none;padding:0;max-width:1240px;margin:0 auto}
+.lla-film video{width:100%;border-radius:24px;box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 100px -20px rgba(0,110,255,.7)}
+.lla-film figcaption{padding:22px 6px 0}
+.lla-film figcaption b,.lla-film-name{font-size:40px}
+.lla-film figcaption span,.lla-film-role{font-size:24px}
+/* pillars: one elegant row, readable text, one light only */
+.lp-lrow::after{display:none}
+.lp-lrow-body{text-shadow:none}
+.lp-lrow-title{font-size:30px}
+.lp-lrow-pay{font-size:18px;line-height:1.55;color:#fff}
+@media (min-width:901px){
+  .lp-learn-rows{display:flex !important;flex-wrap:nowrap;overflow-x:auto;gap:24px;scroll-snap-type:x mandatory;padding:10px 4px 26px;scrollbar-width:thin;scrollbar-color:rgba(0,110,255,.5) transparent}
+  .lp-learn-rows > *{flex:0 0 calc(33.333% - 16px);scroll-snap-align:start;transform:none !important;grid-column:auto !important;grid-row:auto !important}
+  .lla-news-grid{display:flex !important;flex-wrap:nowrap;overflow-x:auto;gap:24px;scroll-snap-type:x mandatory;padding:10px 4px 26px;scrollbar-width:thin;scrollbar-color:rgba(0,110,255,.5) transparent}
+  .lla-news-grid > *{flex:0 0 calc(33.333% - 16px);scroll-snap-align:start}
+}
+/* syllabus */
+.curriculum-tab-name,.curriculum-tab h3{font-size:28px}
+.curriculum-tab-sessions,.curriculum-tab span{font-size:17px}
+.curriculum-trigger-text h3{background:linear-gradient(90deg,#0A2240 0%,#006EFF 70%,#22C4F5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 0 14px rgba(0,110,255,.35))}
+/* strips: black and low */
+.lla-shine{background:#000 !important;padding:18px 0 !important}
+.lla-shine::before,.lla-shine::after,.lla-shine-in::before,.lla-shine-in::after{display:none}
+.lla-shine .lla-shine-in{padding:0}
+.lla-shine-h2{font-size:clamp(28px,2.6vw,40px);margin-bottom:6px;text-shadow:none}
+.lla-shine-p{font-size:17px;margin:0}
+.lla-shine-eyebrow{display:none}
+.hp-trust-strip{background:#000;border-top:0;padding:22px 0}
+/* about: card matches paragraph column, numbers aligned, no dead space */
+.hp-about{padding-bottom:0}
+.hp-about-inner{align-items:stretch;padding-bottom:40px;gap:clamp(24px,3vw,48px)}
+.hp-about-powered{display:flex;flex-direction:column}
+.hp-about-powered-desc{font-size:18px}
+.hp-hero-powered-stats{margin-top:auto;grid-template-columns:repeat(5,1fr);align-items:stretch}
+.hp-hero-powered-stats li{justify-content:flex-end;min-height:104px;padding:14px 12px}
+.hp-hero-powered-stats span{font-size:14px;min-height:34px;display:flex;align-items:flex-end}
+.hp-hero-powered-stats strong{font-size:30px}
+.hp-about-readmore{margin-top:0}
+/* teachers */
+.hp-teacher-card-live-name{font-size:26px}
+.hp-teacher-card-live-role{font-size:17px}
+.hp-teacher-card-live-bio{font-size:17.5px}
+.hp-teachers-grid-live > :last-child .hp-teacher-card-live-photo img{object-position:50% 18%}
+/* news: logos strip lives here, no channel words */
+.pressx-label{display:none !important}
+.lla-news .pressx,.lla-news .pressx-in{background:transparent;padding:0 0 26px}
+.lla-news .pressx-in{margin:0 auto 10px}
+.lla-news-card h3{font-size:24px}
+.lla-news-sub{font-size:17px}
+/* offer and value cards */
+.fn-pricecard li{font-size:19px}
+.fn-pricecard-sub,.fn-pricecard p{font-size:17.5px}
+.fn-stack-txt h4{font-size:26px}
+.fn-stack-txt p{font-size:18px}
+.pdp-value-card h3{font-size:27px}
+.pdp-value-card p{font-size:18px}
+.mock-browser{transform:scale(1.04);transform-origin:left center}
+/* cgm and faq */
+.cgm-fold-bullet{font-size:18.5px}
+.cgm-fold-img{box-shadow:var(--shadow-dark), 0 0 120px -20px rgba(0,110,255,1), 0 0 0 1px rgba(125,229,255,.5)}
+.faq-q,.faq-item button{font-size:22px}
+.faq-a-inner{font-size:18.5px}
+.eyebrow,.fn-pricecard-tag,.cgm-fold-eyebrow,.lla-news-src,.fn-journey-when{text-transform:none;letter-spacing:0}
+@media (max-width:900px){
+  .pdp-cine-h1,.pdp-cine-sub{max-width:none}
+  .lla-film figcaption b,.lla-film-name{font-size:30px}
+  .lla-film figcaption span,.lla-film-role{font-size:19px}
+  .lla-shine-h2{font-size:30px}
+  .hp-hero-powered-stats{margin-top:12px}
+  .hp-hero-powered-stats li{min-height:0}
+  .hp-hero-powered-stats span{min-height:0}
+}
+
 </style>
 </head>
 <body id="lpRoot">
@@ -1284,7 +1366,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="lp-lrow-body">
           <span class="lp-lrow-num" aria-hidden="true">01</span>
-          <h3 class="lp-lrow-title">Nutrition</h3>
+          <h3 class="lp-lrow-title">Master Nutrition</h3>
           <p class="lp-lrow-pay">Turn your kitchen into a medicine cabinet with plant-forward, nutrient-dense food patterns that fight inflammation and drive cellular rejuvenation.</p>
         </div>
       </article>
@@ -1297,7 +1379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="lp-lrow-body">
           <span class="lp-lrow-num" aria-hidden="true">02</span>
-          <h3 class="lp-lrow-title">Sleep</h3>
+          <h3 class="lp-lrow-title">Master Sleep</h3>
           <p class="lp-lrow-pay">Science-backed protocols that rebuild your sleep architecture, the most underutilised longevity lever, regulating cortisol rhythm, HGH secretion and glymphatic clearance.</p>
         </div>
       </article>
@@ -1310,7 +1392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="lp-lrow-body">
           <span class="lp-lrow-num" aria-hidden="true">03</span>
-          <h3 class="lp-lrow-title">Exercise and Movement</h3>
+          <h3 class="lp-lrow-title">Master Exercise and Movement</h3>
           <p class="lp-lrow-pay">Build a resilient body through functional strength, Zone 2 endurance and stability, so you extend lifespan and healthspan together.</p>
         </div>
       </article>
@@ -1323,7 +1405,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="lp-lrow-body">
           <span class="lp-lrow-num" aria-hidden="true">04</span>
-          <h3 class="lp-lrow-title">Supplements and Wearables</h3>
+          <h3 class="lp-lrow-title">Master Supplements and Wearables</h3>
           <p class="lp-lrow-pay">NAD+ precursors, omega-3s, D3 with K2, magnesium and the rest deployed against your specific lab-marker gaps, never stacked by trend. CGM, HRV and sleep data close the loop.</p>
         </div>
       </article>
@@ -1336,7 +1418,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="lp-lrow-body">
           <span class="lp-lrow-num" aria-hidden="true">05</span>
-          <h3 class="lp-lrow-title">Stress Management</h3>
+          <h3 class="lp-lrow-title">Master Stress Management</h3>
           <p class="lp-lrow-pay">Autonomic regulation, structured breathwork, deliberate cold exposure and vagal tone training against cortisol dysregulation and rising allostatic load.</p>
         </div>
       </article>
@@ -1349,7 +1431,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="lp-lrow-body">
           <span class="lp-lrow-num" aria-hidden="true">06</span>
-          <h3 class="lp-lrow-title">Your Longevity Protocol</h3>
+          <h3 class="lp-lrow-title">Master Your Longevity Protocol</h3>
           <p class="lp-lrow-pay">Your own bloodwork, ApoB, fasting insulin, inflammatory markers, body composition and wearable data become one individualised plan you own and keep iterating.</p>
         </div>
       </article>
@@ -1855,39 +1937,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 <section class="lla-shine" id="promo-strip" aria-label="Enroll now"><div class="lla-shine-in"><div class="lla-shine-copy"><span class="lla-shine-eyebrow">Enrollment open</span><h2 class="lla-shine-h2">$279 a month. <em>Everything included.</em></h2><p class="lla-shine-p">18 live sessions, your Abbott Lingo CGM shipped free, and your written Personal Longevity Blueprint by week 18. When a session fills, it closes.</p></div><a href="checkout.html" class="lla-shine-cta" data-fn-cta="strip">Enroll now <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div></section>
-<section class="pdp-press pressx" aria-label="As seen on">
-  <div class="pressx-in">
-    <span class="pressx-label">As seen on</span>
-    <div class="pressx-viewport">
-      <div class="pressx-track">
-      <span class="px-mark px-usat">USA TODAY</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-yah">yahoo<i>finance</i></span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-nb">NewsBreak</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-ein">EIN Presswire</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-usat">USA TODAY</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-yah">yahoo<i>finance</i></span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-nb">NewsBreak</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-ein">EIN Presswire</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-usat">USA TODAY</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-yah">yahoo<i>finance</i></span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-nb">NewsBreak</span>
-      <span class="px-dot"></span>
-      <span class="px-mark px-ein">EIN Presswire</span>
-      <span class="px-dot"></span>
-      </div>
-    </div>
-  </div>
-</section>
+
 <section class="hp-about is-dark" id="institution">
   <a class="hp-about-link-wrap" href="https://www.longevitylifeacademy.com/about.html" target="_blank" rel="noopener" aria-label="Read more about Longevity Life Academy and eTeacher Group">
   <div class="container">
@@ -1966,7 +2016,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="hp-instructors-header reveal" style="text-align: center; margin-bottom: 48px;">
       <span class="eyebrow" style="margin-bottom: 12px; display: block;">Your Instructors</span>
-      <h2 class="section-title">Taught by Leading Voices in Longevity Medicine</h2>
+      <h2 class="section-title">Taught by the Leading Voices in Longevity Practice</h2>
       <p class="section-subtitle" style="margin: 0 auto; max-width: 720px;">A faculty of certified specialists, researchers, and protocol designers backed by the most recognized credentialing bodies in the field.</p>
     </div>
 
@@ -2015,7 +2065,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 <!-- PRESS + JOURNAL -->
-<section class="lla-journal lla-news" id="journal"><div class="container"><div class="lla-films-head"><h2 class="section-title">Longevity Life Academy <em>News.</em></h2><p class="section-subtitle" style="margin:0 auto;max-width:640px;">Press coverage in AP News, News Channel 8 and Yahoo Finance, and three deep dives from The Longevity Blog.</p></div><div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/press/harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
+<section class="lla-journal lla-news" id="journal"><div class="container"><div class="lla-films-head"><h2 class="section-title">Longevity Life Academy <em>News.</em></h2><p class="section-subtitle" style="margin:0 auto;max-width:640px;">Press coverage in AP News, News Channel 8 and Yahoo Finance, and three deep dives from The Longevity Blog.</p></div><div class="pdp-press pressx" aria-label="As seen on">
+  <div class="pressx-in">
+    <span class="pressx-label">As seen on</span>
+    <div class="pressx-viewport">
+      <div class="pressx-track">
+      <span class="px-mark px-usat">USA TODAY</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-yah">yahoo<i>finance</i></span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-nb">NewsBreak</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-ein">EIN Presswire</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-usat">USA TODAY</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-yah">yahoo<i>finance</i></span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-nb">NewsBreak</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-ein">EIN Presswire</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-usat">USA TODAY</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-yah">yahoo<i>finance</i></span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-nb">NewsBreak</span>
+      <span class="px-dot"></span>
+      <span class="px-mark px-ein">EIN Presswire</span>
+      <span class="px-dot"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/press/harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
 <section class="testimonials lp-deep is-dark">
   <div class="container">
     <div class="testimonials-header reveal">
@@ -3413,6 +3496,88 @@ body{font-size:18px}
 .fn-offer{background:radial-gradient(60% 40% at 50% 0%, rgba(0,110,255,.3), transparent 60%), linear-gradient(180deg,#D3E4FF,#EAF2FF)}
 #mechanism{background:#FFFFFF}
 .faq{background:linear-gradient(180deg,#EAF2FF,#FFFFFF)}
+
+/* ==========================================================================
+   Round 7, document notes
+   ========================================================================== */
+.pdp-cine-h1{max-width:62%;font-size:clamp(44px,4.9vw,74px)}
+.pdp-cine-sub{max-width:60%;font-size:clamp(20px,1.75vw,25px)}
+.section-title,.lp-learn-title,.fn-h2,.pdp-value-h2,.cgm-fold-title,.hp-about-mainhead{max-width:none}
+.section-subtitle,.lp-learn-lead,.fn-lead,.cgm-fold-sub,.hp-about-lead{max-width:1000px;font-size:clamp(20px,1.8vw,26px)}
+/* films: no box, natural full width, autoplaying */
+.lla-films{padding:clamp(40px,6vw,80px) 0 clamp(48px,6vw,90px)}
+.lla-film,.lla-films-grid .lla-film{background:none;border:0;box-shadow:none;padding:0;max-width:1240px;margin:0 auto}
+.lla-film video{width:100%;border-radius:24px;box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 100px -20px rgba(0,110,255,.7)}
+.lla-film figcaption{padding:22px 6px 0}
+.lla-film figcaption b,.lla-film-name{font-size:40px}
+.lla-film figcaption span,.lla-film-role{font-size:24px}
+/* pillars: one elegant row, readable text, one light only */
+.lp-lrow::after{display:none}
+.lp-lrow-body{text-shadow:none}
+.lp-lrow-title{font-size:30px}
+.lp-lrow-pay{font-size:18px;line-height:1.55;color:#fff}
+@media (min-width:901px){
+  .lp-learn-rows{display:flex !important;flex-wrap:nowrap;overflow-x:auto;gap:24px;scroll-snap-type:x mandatory;padding:10px 4px 26px;scrollbar-width:thin;scrollbar-color:rgba(0,110,255,.5) transparent}
+  .lp-learn-rows > *{flex:0 0 calc(33.333% - 16px);scroll-snap-align:start;transform:none !important;grid-column:auto !important;grid-row:auto !important}
+  .lla-news-grid{display:flex !important;flex-wrap:nowrap;overflow-x:auto;gap:24px;scroll-snap-type:x mandatory;padding:10px 4px 26px;scrollbar-width:thin;scrollbar-color:rgba(0,110,255,.5) transparent}
+  .lla-news-grid > *{flex:0 0 calc(33.333% - 16px);scroll-snap-align:start}
+}
+/* syllabus */
+.curriculum-tab-name,.curriculum-tab h3{font-size:28px}
+.curriculum-tab-sessions,.curriculum-tab span{font-size:17px}
+.curriculum-trigger-text h3{background:linear-gradient(90deg,#0A2240 0%,#006EFF 70%,#22C4F5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 0 14px rgba(0,110,255,.35))}
+/* strips: black and low */
+.lla-shine{background:#000 !important;padding:18px 0 !important}
+.lla-shine::before,.lla-shine::after,.lla-shine-in::before,.lla-shine-in::after{display:none}
+.lla-shine .lla-shine-in{padding:0}
+.lla-shine-h2{font-size:clamp(28px,2.6vw,40px);margin-bottom:6px;text-shadow:none}
+.lla-shine-p{font-size:17px;margin:0}
+.lla-shine-eyebrow{display:none}
+.hp-trust-strip{background:#000;border-top:0;padding:22px 0}
+/* about: card matches paragraph column, numbers aligned, no dead space */
+.hp-about{padding-bottom:0}
+.hp-about-inner{align-items:stretch;padding-bottom:40px;gap:clamp(24px,3vw,48px)}
+.hp-about-powered{display:flex;flex-direction:column}
+.hp-about-powered-desc{font-size:18px}
+.hp-hero-powered-stats{margin-top:auto;grid-template-columns:repeat(5,1fr);align-items:stretch}
+.hp-hero-powered-stats li{justify-content:flex-end;min-height:104px;padding:14px 12px}
+.hp-hero-powered-stats span{font-size:14px;min-height:34px;display:flex;align-items:flex-end}
+.hp-hero-powered-stats strong{font-size:30px}
+.hp-about-readmore{margin-top:0}
+/* teachers */
+.hp-teacher-card-live-name{font-size:26px}
+.hp-teacher-card-live-role{font-size:17px}
+.hp-teacher-card-live-bio{font-size:17.5px}
+.hp-teachers-grid-live > :last-child .hp-teacher-card-live-photo img{object-position:50% 18%}
+/* news: logos strip lives here, no channel words */
+.pressx-label{display:none !important}
+.lla-news .pressx,.lla-news .pressx-in{background:transparent;padding:0 0 26px}
+.lla-news .pressx-in{margin:0 auto 10px}
+.lla-news-card h3{font-size:24px}
+.lla-news-sub{font-size:17px}
+/* offer and value cards */
+.fn-pricecard li{font-size:19px}
+.fn-pricecard-sub,.fn-pricecard p{font-size:17.5px}
+.fn-stack-txt h4{font-size:26px}
+.fn-stack-txt p{font-size:18px}
+.pdp-value-card h3{font-size:27px}
+.pdp-value-card p{font-size:18px}
+.mock-browser{transform:scale(1.04);transform-origin:left center}
+/* cgm and faq */
+.cgm-fold-bullet{font-size:18.5px}
+.cgm-fold-img{box-shadow:var(--shadow-dark), 0 0 120px -20px rgba(0,110,255,1), 0 0 0 1px rgba(125,229,255,.5)}
+.faq-q,.faq-item button{font-size:22px}
+.faq-a-inner{font-size:18.5px}
+.eyebrow,.fn-pricecard-tag,.cgm-fold-eyebrow,.lla-news-src,.fn-journey-when{text-transform:none;letter-spacing:0}
+@media (max-width:900px){
+  .pdp-cine-h1,.pdp-cine-sub{max-width:none}
+  .lla-film figcaption b,.lla-film-name{font-size:30px}
+  .lla-film figcaption span,.lla-film-role{font-size:19px}
+  .lla-shine-h2{font-size:30px}
+  .hp-hero-powered-stats{margin-top:12px}
+  .hp-hero-powered-stats li{min-height:0}
+  .hp-hero-powered-stats span{min-height:0}
+}
 
 </style>
 <style>
