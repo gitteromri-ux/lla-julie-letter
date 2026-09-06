@@ -1301,6 +1301,17 @@ body{font-size:18px}
   .pdp-value-card h3{font-size:26px}
   .pdp-value-card p{font-size:18px}
 }
+@media (max-width:1000px){
+  .lla-value-layout{display:grid;grid-template-columns:minmax(0,1fr) !important;gap:22px}
+  .lla-zoom-shot{display:block;max-width:none}
+  .lla-value-cards{display:block}
+  .pdp-value-grid{grid-auto-rows:auto}
+}
+@media (max-width:900px){
+  .hp-hero-powered-stats{grid-template-columns:1fr !important;margin-top:14px}
+  .hp-hero-powered-stats li{flex-direction:row;justify-content:space-between;align-items:center;min-height:0;padding:13px 16px}
+  .hp-hero-powered-stats span{min-height:0;display:block}
+}
 
 
 .pdp-hero--cine{min-height:92vh;border-bottom:1px solid rgba(255,255,255,.08)}
