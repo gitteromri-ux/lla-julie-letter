@@ -1230,6 +1230,96 @@ body{font-size:18px}
 .curriculum-tab .curriculum-tab-num{font-size:15px !important}
 .curriculum-tab{padding:22px 22px 20px !important}
 
+/* ==========================================================================
+   Round 8, every remaining document note
+   ========================================================================== */
+/* nicer CTAs */
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.lla-shine-cta{min-height:58px;padding:0 34px;font-size:18px;letter-spacing:.01em;border-radius:999px}
+.pdp-cine-ghost{min-height:58px;padding:0 30px;font-size:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.pdp-cine-cta svg,.fn-btn svg,.section-cta-btn svg,.cgm-fold-cta svg,.pdp-cine-ghost svg{width:20px;height:20px}
+/* no side notes or pills */
+.eyebrow,.hp-about-eyebrow,.hp-instructors-eyebrow{display:none !important}
+/* about: equal columns */
+.hp-about-inner{grid-template-rows:auto 1fr auto;align-items:stretch;padding-bottom:56px}
+.hp-about-body{display:flex;flex-direction:column;justify-content:center}
+.hp-about-lead{font-size:clamp(20px,1.6vw,23px);line-height:1.6}
+.hp-about-powered{grid-row:1 / span 3;height:100%}
+.hp-about-powered-desc{font-size:19px;flex:none}
+.hp-about-readmore{font-size:20px}
+/* news header full width, press names as a strip */
+.lla-news .lla-films-head{grid-template-columns:1fr;text-align:left;gap:10px}
+.lla-news .lla-films-head .section-subtitle{max-width:1000px !important;margin:0 !important}
+.lla-news .lla-films-head .section-title::before{margin-left:0}
+.lla-news .pressx-viewport{-webkit-mask-image:none;mask-image:none}
+.lla-news .pressx-track,.lla-news .pressx-in > *{font-size:24px;color:var(--navy)}
+.lla-news .pressx-in{padding:6px 0 28px}
+/* offer: the form itself */
+.fn-microtrust,.fn-cta-note{display:flex !important;justify-content:center;gap:22px;font-size:16px;color:rgba(232,240,255,.85);margin-top:14px}
+.fn-microtrust span{display:inline-flex;align-items:center;gap:8px}
+.fn-microtrust span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.fn-pricecard h3{font-size:42px}
+.fn-pricecard-sub{font-size:19px}
+.fn-pricecard-price b{font-size:96px}
+.fn-pricecard-price span{font-size:24px}
+.fn-pricecard-anchor{font-size:19px;line-height:1.5}
+.fn-pricecard li,.fn-pc-list li{font-size:20px;padding:13px 0 13px 26px}
+.lp-classfact b{font-size:20px}
+.lp-classfact span{font-size:17px}
+.fn-pricecard .fn-btn{font-size:19px;min-height:62px}
+.fn-stack-txt h4{font-size:28px}
+.fn-stack-txt p{font-size:19px;line-height:1.55}
+.fn-stack-row{padding:32px 30px 30px}
+/* why this course is different: bigger mockup, bigger equal cards */
+.lla-value-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:stretch}
+.lla-zoom-shot{display:flex;align-items:center}
+.mock-browser{transform:none;width:100%}
+.lla-value-cards{display:flex}
+.pdp-value-grid{grid-auto-rows:1fr;gap:22px;flex:1}
+.pdp-value-card{padding:34px 30px 32px}
+.pdp-value-card h3{font-size:28px;line-height:1.2}
+.pdp-value-card p{font-size:19px;line-height:1.55}
+.pdp-value-head{margin-bottom:44px}
+/* cgm: wider header, stronger light, bigger type */
+.cgm-fold-header{max-width:1140px}
+.cgm-fold-title{font-size:clamp(46px,5.6vw,84px)}
+.cgm-fold-sub{max-width:1000px;font-size:clamp(21px,1.8vw,26px)}
+.cgm-fold{background:radial-gradient(50% 60% at 15% 10%, rgba(0,110,255,.8), transparent 60%), radial-gradient(40% 50% at 90% 30%, rgba(125,229,255,.55), transparent 60%), radial-gradient(40% 40% at 50% 100%, rgba(0,110,255,.5), transparent 60%), linear-gradient(180deg,#061633,#040D24)}
+.cgm-fold-img{box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 140px -20px rgba(0,110,255,1), 0 0 0 1px rgba(125,229,255,.6)}
+.cgm-fold-bullet{font-size:20px;padding:20px 22px 20px 48px;background:rgba(255,255,255,.07);border:1px solid rgba(125,229,255,.3);box-shadow:0 0 40px -12px rgba(0,110,255,.8)}
+.cgm-fold-bullet::before{left:20px}
+/* faq */
+.faq-q{font-size:24px;padding:26px 26px;gap:18px}
+.faq-num{width:44px;height:44px;font-size:16px}
+.faq-a-inner{font-size:19px;padding-left:88px}
+.faq-list{gap:18px}
+@media (max-width:900px){
+  .pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.lla-shine-cta,.pdp-cine-ghost{min-height:56px;font-size:17px}
+  .hp-about-inner{grid-template-rows:auto;padding-bottom:28px}
+  .hp-about-powered{grid-row:auto;height:auto}
+  .lla-news .pressx-track,.lla-news .pressx-in > *{font-size:19px}
+  .fn-pricecard h3{font-size:34px}
+  .fn-pricecard-price b{font-size:72px}
+  .fn-pricecard li,.fn-pc-list li{font-size:18px}
+  .pdp-value-card{padding:24px 20px}
+  .pdp-value-card h3{font-size:24px}
+  .pdp-value-card p,.fn-stack-txt p{font-size:17px}
+  .cgm-fold-title{font-size:clamp(36px,10vw,44px)}
+  .cgm-fold-bullet{font-size:17px;padding:16px 16px 16px 42px}
+  .faq-q{font-size:19px;padding:20px 18px}
+  .faq-a-inner{font-size:17px;padding-left:18px}
+}
+.hp-instructors-header .eyebrow,.hp-about-header .eyebrow{display:none !important}
+.fn-microtrust span::before{display:none}
+/* why this course is different: mockup on top, four equal cards under it */
+@media (min-width:1001px){
+  .lla-value-layout{grid-template-columns:minmax(0,1fr);gap:36px}
+  .lla-zoom-shot{max-width:1120px;margin:0 auto;width:100%}
+  .pdp-value-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:22px}
+  .pdp-value-card{padding:30px 26px 28px}
+  .pdp-value-card h3{font-size:26px}
+  .pdp-value-card p{font-size:18px}
+}
+
 </style>
 </head>
 <body id="lpRoot">
@@ -2105,7 +2195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
-<div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/press/harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
+<div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/ceo-harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
 <section class="testimonials lp-deep is-dark">
   <div class="container">
     <div class="testimonials-header reveal">
@@ -2218,8 +2308,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="fn-pricecard-price">
           <b><sup>$</sup>279</b><span>/ month</span>
         </div>
-        <p class="fn-pricecard-anchor"><b>Five monthly payments.</b> Everything in the list is included.</p>
-        <ul class="fn-pc-list"><li>18 live sessions</li><li>Abbott Lingo CGM, shipped</li><li>Your written Blueprint</li><li>Every session recorded</li><li>Five payments of $279</li></ul><div class="lp-classfact">
+        <p class="fn-pricecard-anchor"><b>Five monthly payments of $279.</b> Everything below is included.</p>
+        <ul class="fn-pc-list"><li>18 live, instructor-led sessions</li><li>Abbott Lingo CGM shipped to your door before Lesson 5</li><li>Your Personal Longevity Blueprint, written for you</li><li>Lifetime access to every recording</li><li>Admissions review before day one</li><li>Full learning platform access</li></ul><div class="lp-classfact">
           <svg class="lp-ico" width="28" height="28" aria-hidden="true"><use href="#lpi-shield"/></svg>
           <b>14-day enrollment guarantee</b>
           <span>Full refund inside 14 days</span>
@@ -2285,9 +2375,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="cgm-fold-sub">Every student receives an Abbott Lingo continuous glucose monitor plus full Lingo app access, included with the course. Track your body's real-time response to food, sleep, and movement.</p>
     </div>
     <div class="cgm-fold-images reveal rail">
-      <div class="cgm-fold-img"><img src="assets/cgm/lingo-1.jpg" alt="Abbott Lingo biosensor and app" loading="lazy"></div>
-      <div class="cgm-fold-img"><img src="assets/cgm/lingo-2.jpg" alt="Lingo packaging" loading="lazy"></div>
-      <div class="cgm-fold-img"><img src="assets/cgm/lingo-6.jpg" alt="Lingo CGM lifestyle" loading="lazy"></div>
+      <div class="cgm-fold-img"><img src="assets/lingo-1.jpg" alt="Abbott Lingo biosensor and app" loading="lazy"></div>
+      <div class="cgm-fold-img"><img src="assets/lingo-2.jpg" alt="Lingo packaging" loading="lazy"></div>
+      <div class="cgm-fold-img"><img src="assets/lingo-6.jpg" alt="Lingo CGM lifestyle" loading="lazy"></div>
     </div>
     <div class="cgm-fold-bullets reveal">
       <div class="cgm-fold-bullet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>14-day Abbott Lingo biosensor, water-resistant, painless application</span></div>
@@ -3592,6 +3682,96 @@ body{font-size:18px}
 .curriculum-tab .curriculum-tab-meta{font-size:17px !important}
 .curriculum-tab .curriculum-tab-num{font-size:15px !important}
 .curriculum-tab{padding:22px 22px 20px !important}
+
+/* ==========================================================================
+   Round 8, every remaining document note
+   ========================================================================== */
+/* nicer CTAs */
+.pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.lla-shine-cta{min-height:58px;padding:0 34px;font-size:18px;letter-spacing:.01em;border-radius:999px}
+.pdp-cine-ghost{min-height:58px;padding:0 30px;font-size:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.pdp-cine-cta svg,.fn-btn svg,.section-cta-btn svg,.cgm-fold-cta svg,.pdp-cine-ghost svg{width:20px;height:20px}
+/* no side notes or pills */
+.eyebrow,.hp-about-eyebrow,.hp-instructors-eyebrow{display:none !important}
+/* about: equal columns */
+.hp-about-inner{grid-template-rows:auto 1fr auto;align-items:stretch;padding-bottom:56px}
+.hp-about-body{display:flex;flex-direction:column;justify-content:center}
+.hp-about-lead{font-size:clamp(20px,1.6vw,23px);line-height:1.6}
+.hp-about-powered{grid-row:1 / span 3;height:100%}
+.hp-about-powered-desc{font-size:19px;flex:none}
+.hp-about-readmore{font-size:20px}
+/* news header full width, press names as a strip */
+.lla-news .lla-films-head{grid-template-columns:1fr;text-align:left;gap:10px}
+.lla-news .lla-films-head .section-subtitle{max-width:1000px !important;margin:0 !important}
+.lla-news .lla-films-head .section-title::before{margin-left:0}
+.lla-news .pressx-viewport{-webkit-mask-image:none;mask-image:none}
+.lla-news .pressx-track,.lla-news .pressx-in > *{font-size:24px;color:var(--navy)}
+.lla-news .pressx-in{padding:6px 0 28px}
+/* offer: the form itself */
+.fn-microtrust,.fn-cta-note{display:flex !important;justify-content:center;gap:22px;font-size:16px;color:rgba(232,240,255,.85);margin-top:14px}
+.fn-microtrust span{display:inline-flex;align-items:center;gap:8px}
+.fn-microtrust span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.fn-pricecard h3{font-size:42px}
+.fn-pricecard-sub{font-size:19px}
+.fn-pricecard-price b{font-size:96px}
+.fn-pricecard-price span{font-size:24px}
+.fn-pricecard-anchor{font-size:19px;line-height:1.5}
+.fn-pricecard li,.fn-pc-list li{font-size:20px;padding:13px 0 13px 26px}
+.lp-classfact b{font-size:20px}
+.lp-classfact span{font-size:17px}
+.fn-pricecard .fn-btn{font-size:19px;min-height:62px}
+.fn-stack-txt h4{font-size:28px}
+.fn-stack-txt p{font-size:19px;line-height:1.55}
+.fn-stack-row{padding:32px 30px 30px}
+/* why this course is different: bigger mockup, bigger equal cards */
+.lla-value-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:stretch}
+.lla-zoom-shot{display:flex;align-items:center}
+.mock-browser{transform:none;width:100%}
+.lla-value-cards{display:flex}
+.pdp-value-grid{grid-auto-rows:1fr;gap:22px;flex:1}
+.pdp-value-card{padding:34px 30px 32px}
+.pdp-value-card h3{font-size:28px;line-height:1.2}
+.pdp-value-card p{font-size:19px;line-height:1.55}
+.pdp-value-head{margin-bottom:44px}
+/* cgm: wider header, stronger light, bigger type */
+.cgm-fold-header{max-width:1140px}
+.cgm-fold-title{font-size:clamp(46px,5.6vw,84px)}
+.cgm-fold-sub{max-width:1000px;font-size:clamp(21px,1.8vw,26px)}
+.cgm-fold{background:radial-gradient(50% 60% at 15% 10%, rgba(0,110,255,.8), transparent 60%), radial-gradient(40% 50% at 90% 30%, rgba(125,229,255,.55), transparent 60%), radial-gradient(40% 40% at 50% 100%, rgba(0,110,255,.5), transparent 60%), linear-gradient(180deg,#061633,#040D24)}
+.cgm-fold-img{box-shadow:0 60px 120px -50px rgba(0,0,0,.8), 0 0 140px -20px rgba(0,110,255,1), 0 0 0 1px rgba(125,229,255,.6)}
+.cgm-fold-bullet{font-size:20px;padding:20px 22px 20px 48px;background:rgba(255,255,255,.07);border:1px solid rgba(125,229,255,.3);box-shadow:0 0 40px -12px rgba(0,110,255,.8)}
+.cgm-fold-bullet::before{left:20px}
+/* faq */
+.faq-q{font-size:24px;padding:26px 26px;gap:18px}
+.faq-num{width:44px;height:44px;font-size:16px}
+.faq-a-inner{font-size:19px;padding-left:88px}
+.faq-list{gap:18px}
+@media (max-width:900px){
+  .pdp-cine-cta,.fn-btn,.section-cta-btn,.cgm-fold-cta,.lla-shine-cta,.pdp-cine-ghost{min-height:56px;font-size:17px}
+  .hp-about-inner{grid-template-rows:auto;padding-bottom:28px}
+  .hp-about-powered{grid-row:auto;height:auto}
+  .lla-news .pressx-track,.lla-news .pressx-in > *{font-size:19px}
+  .fn-pricecard h3{font-size:34px}
+  .fn-pricecard-price b{font-size:72px}
+  .fn-pricecard li,.fn-pc-list li{font-size:18px}
+  .pdp-value-card{padding:24px 20px}
+  .pdp-value-card h3{font-size:24px}
+  .pdp-value-card p,.fn-stack-txt p{font-size:17px}
+  .cgm-fold-title{font-size:clamp(36px,10vw,44px)}
+  .cgm-fold-bullet{font-size:17px;padding:16px 16px 16px 42px}
+  .faq-q{font-size:19px;padding:20px 18px}
+  .faq-a-inner{font-size:17px;padding-left:18px}
+}
+.hp-instructors-header .eyebrow,.hp-about-header .eyebrow{display:none !important}
+.fn-microtrust span::before{display:none}
+/* why this course is different: mockup on top, four equal cards under it */
+@media (min-width:1001px){
+  .lla-value-layout{grid-template-columns:minmax(0,1fr);gap:36px}
+  .lla-zoom-shot{max-width:1120px;margin:0 auto;width:100%}
+  .pdp-value-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:22px}
+  .pdp-value-card{padding:30px 26px 28px}
+  .pdp-value-card h3{font-size:26px}
+  .pdp-value-card p{font-size:18px}
+}
 
 </style>
 <style>
