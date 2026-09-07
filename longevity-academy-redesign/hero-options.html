@@ -1542,6 +1542,21 @@ body{font-size:18px}
 .pdp-cine-wordmark{width:190px;margin:2px 0 18px}
 @media (max-width:900px){ .pdp-cine-wordmark{width:160px;margin:0 0 14px} }
 
+/* ==========================================================================
+   Round 16: two-line headline, larger film to the right, visible press names
+   ========================================================================== */
+@media (min-width:901px){
+  .pdp-cine-inner{grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);gap:clamp(28px,3.5vw,56px)}
+  .pdp-cine-h1{white-space:nowrap;font-size:clamp(40px,4.35vw,66px);line-height:1.04}
+  .pdp-cine-h1 br{display:inline}
+  .hero-right-col{padding-left:7%}
+  .hero-right-col .lla-film{width:100%}
+}
+.lla-news .pressx,.lla-news .pressx *{color:#fff !important;opacity:1 !important}
+.lla-news .pressx-track,.lla-news .pressx-in > *{font-size:24px !important}
+.lla-news .pressx svg{fill:#fff !important;stroke:#fff !important}
+.lla-news .pressx img{filter:brightness(0) invert(1)}
+
 
 .pdp-hero--cine{min-height:92vh;border-bottom:1px solid rgba(255,255,255,.08)}
 .hero-option-tag{position:absolute;z-index:5;top:calc(var(--nav-h) + 18px);left:var(--gutter);display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);color:#fff;font-size:15px;max-width:calc(100% - var(--gutter)*2)}
