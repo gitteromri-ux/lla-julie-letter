@@ -26,7 +26,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style>
 /* ==========================================================================
    Longevity Life Academy, The Longevity Blueprint
@@ -1625,7 +1627,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="fn-nav" id="fnNav">
   <div class="fn-nav-in">
     <a href="index.html" class="fn-nav-logo" aria-label="Longevity Life Academy home">
-      <img class="nav-logo-img" src="assets/lla-logo-exact-transparent@2x.png?v=9" alt="Longevity Life Academy" width="1314" height="596" decoding="async" fetchpriority="high">
+      <img class="nav-logo-img" src="assets/lla-logo-nav.png" alt="Longevity Life Academy" width="1314" height="596" decoding="async" fetchpriority="high">
     </a>
     <nav class="fn-nav-links" aria-label="Primary">
       <a href="https://longevitylifeacademy.com/about.html">About</a>
@@ -1647,7 +1649,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="fn-drawer" id="fnDrawer" aria-hidden="true">
   <div class="fn-drawer-top">
-    <img src="assets/lla-logo-exact-transparent@2x.png?v=9" alt="Longevity Life Academy">
+    <img src="assets/lla-logo-nav.png" alt="Longevity Life Academy">
     <button class="fn-drawer-close" id="fnDrawerClose" aria-label="Close menu">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
@@ -1686,7 +1688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     </div>
     <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/cells-light.mp4" poster="assets/cells-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></div><figure class="lla-film">
-        <video src="assets/julie-hero-l.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" data-src-mobile="assets/julie-hero-l.mp4"></video><button type="button" class="film-sound" aria-label="Sound on or off" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="fs-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/><path class="fs-off" d="M23 9l-6 6M17 9l6 6"/></svg></button>
+        <video src="assets/julie-hero-l.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="metadata" data-src-mobile="assets/julie-hero-l.mp4"></video><button type="button" class="film-sound" aria-label="Sound on or off" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="fs-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/><path class="fs-off" d="M23 9l-6 6M17 9l6 6"/></svg></button>
         <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
       </figure></div>
     
@@ -1704,7 +1706,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="lp-lrow fn-reveal">
         <div class="lp-lrow-media">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/v2-nutrition-greens-v2.jpg" aria-label="Nutrition"><source src="assets/v2-nutrition-greens-v2.mp4" type="video/mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/v2-nutrition-greens-v2.jpg" aria-label="Nutrition"><source src="assets/v2-nutrition-greens-v2.mp4" type="video/mp4"></video>
           <img class="lp-lrow-fallback" src="assets/posters/v2-nutrition-greens-v2.jpg" alt="">
           <div class="lp-lrow-scrim" aria-hidden="true"></div>
         </div>
@@ -1717,7 +1719,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="lp-lrow lp-lrow--flip fn-reveal">
         <div class="lp-lrow-media">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/sleep-blog-v2.jpg" aria-label="Sleep"><source src="assets/sleep-blog-v2.mp4" type="video/mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/sleep-blog-v2.jpg" aria-label="Sleep"><source src="assets/sleep-blog-v2.mp4" type="video/mp4"></video>
           <img class="lp-lrow-fallback" src="assets/posters/sleep-blog-v2.jpg" alt="">
           <div class="lp-lrow-scrim" aria-hidden="true"></div>
         </div>
@@ -1730,7 +1732,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="lp-lrow fn-reveal">
         <div class="lp-lrow-media">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/exercise-yoga-v2.jpg" aria-label="Exercise and Movement"><source src="assets/exercise-yoga-v2.mp4" type="video/mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/exercise-yoga-v2.jpg" aria-label="Exercise and Movement"><source src="assets/exercise-yoga-v2.mp4" type="video/mp4"></video>
           <img class="lp-lrow-fallback" src="assets/posters/exercise-yoga-v2.jpg" alt="">
           <div class="lp-lrow-scrim" aria-hidden="true"></div>
         </div>
@@ -1743,7 +1745,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="lp-lrow lp-lrow--flip fn-reveal">
         <div class="lp-lrow-media">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/supplements-wearables-know-v2.jpg" aria-label="Supplements and Wearables"><source src="assets/supplements-wearables-know-v2.mp4" type="video/mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/supplements-wearables-know-v2.jpg" aria-label="Supplements and Wearables"><source src="assets/supplements-wearables-know-v2.mp4" type="video/mp4"></video>
           <img class="lp-lrow-fallback" src="assets/posters/supplements-wearables-know-v2.jpg" alt="">
           <div class="lp-lrow-scrim" aria-hidden="true"></div>
         </div>
@@ -1756,7 +1758,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="lp-lrow fn-reveal">
         <div class="lp-lrow-media">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/stress-management-cold-plunge-v2.jpg" aria-label="Stress Management"><source src="assets/stress-management-cold-plunge-v2.mp4" type="video/mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/stress-management-cold-plunge-v2.jpg" aria-label="Stress Management"><source src="assets/stress-management-cold-plunge-v2.mp4" type="video/mp4"></video>
           <img class="lp-lrow-fallback" src="assets/posters/stress-management-cold-plunge-v2.jpg" alt="">
           <div class="lp-lrow-scrim" aria-hidden="true"></div>
         </div>
@@ -1769,7 +1771,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="lp-lrow lp-lrow--flip fn-reveal">
         <div class="lp-lrow-media">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/daily-protocol-v2.jpg" aria-label="Your Longevity Protocol"><source src="assets/daily-protocol-v2.mp4" type="video/mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/daily-protocol-v2.jpg" aria-label="Your Longevity Protocol"><source src="assets/daily-protocol-v2.mp4" type="video/mp4"></video>
           <img class="lp-lrow-fallback" src="assets/posters/daily-protocol-v2.jpg" alt="">
           <div class="lp-lrow-scrim" aria-hidden="true"></div>
         </div>
@@ -2556,7 +2558,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
-<div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/ceo-harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="metadata" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" autoplay muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
+<div class="lla-news-grid rail"><a class="lla-news-card lla-news-card--press" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/ceo-harel-tayeb.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">AP News <i>eTeacher Group</i></span><h3>eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</h3><span class="lla-news-meta"><span>July 20, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="none" poster="assets/posters/v2-supplements-meds.jpg" src="assets/v2-supplements-meds.mp4" muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Supplements and Therapies</i></span><h3>Know What You're Actually Taking</h3><p class="lla-news-sub">NAD precursors, Vitamin D, omega-3s, creatine, senolytics, the short list of supplements with real human data, and the long list of marketing dressed up as science.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="none" poster="assets/posters/v2-mental-bubbles.jpg" src="assets/v2-mental-bubbles.mp4" muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>The Longevity Toolkit</i></span><h3>Five Habits That Move the Needle</h3><p class="lla-news-sub">Zone 2 cardio for mitochondrial health, VO2 max as the strongest predictor of all-cause mortality, CGM-driven metabolic tracking, ApoB management, and the sleep architecture that drives recovery.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="lla-news-media"><img src="assets/instructors/julie-gibson-clark.jpg" alt="" loading="lazy"></span><span class="lla-news-body"><span class="lla-news-outlet">Yahoo Finance <i>Julie Gibson Clark</i></span><h3>Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy by eTeacher Group</h3><span class="lla-news-meta"><span>July 27, 2026</span><em>Read the article</em></span></span></a><a class="lla-news-card lla-news-card--press lla-news-card--blog" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" target="_blank" rel="noopener"><span class="lla-news-media"><video preload="none" poster="assets/posters/skill-skin.jpg" src="assets/skill-skin.mp4" muted loop playsinline></video></span><span class="lla-news-body"><span class="lla-news-outlet">The Longevity Blog <i>Aging on the Outside</i></span><h3>The Visible Edge of Aging</h3><p class="lla-news-sub">Skin as a real-time marker of systemic aging, collagen turnover, oxidative stress, glycation, UV damage, and the topical and oral interventions with actual clinical evidence behind them.</p><span class="lla-news-meta"><span>Deep dive</span><em>Read the article</em></span></span></a></div></div></section>
 <section class="testimonials lp-deep is-dark">
   <div class="container">
     <div class="testimonials-header reveal">
@@ -2731,7 +2733,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-top">
       <div class="footer-brand">
         <div class="pr-footer-lockup">
-          <img src="assets/lla-logo-exact-transparent@2x.png?v=9" alt="Longevity Life Academy by eTeacher Group" width="1314" height="596">
+          <img src="assets/lla-logo-nav.png" alt="Longevity Life Academy by eTeacher Group" width="1314" height="596">
         </div>
         <p>A longevity and biohacking course from eTeacher Group. Read your own signals. Build your own protocol. Live your longest, strongest life.</p>
       </div>
@@ -5128,6 +5130,12 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-hero-powered-stats span,
       v.muted = true; v.defaultMuted = true; v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline','');
     });
     function kick(){ vids.forEach(function(v){ if (v.paused) { var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); } }); }
+    /* fold clips: load and play only when they come into view (autoplay is stripped from them at build time) */
+    var foldClips = Array.prototype.slice.call(document.querySelectorAll('video')).filter(function(v){ return vids.indexOf(v) < 0; });
+    if ('IntersectionObserver' in window) {
+      var fo = new IntersectionObserver(function(entries){ entries.forEach(function(en){ var v = en.target; if (en.isIntersecting) { if (v.preload === 'none') { v.preload = 'auto'; v.load(); } v.muted = true; var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); } else if (!v.paused) { v.pause(); } }); }, { rootMargin: '300px 0px' });
+      foldClips.forEach(function(v){ fo.observe(v); });
+    } else { foldClips.forEach(function(v){ v.preload = 'auto'; v.load(); v.play().catch(function(){}); }); }
     vids.forEach(function(v){ ['loadedmetadata','loadeddata','canplay','canplaythrough'].forEach(function(ev){ v.addEventListener(ev, kick); }); });
     kick(); setTimeout(kick, 800); setTimeout(kick, 3000); setTimeout(kick, 8000);
 
