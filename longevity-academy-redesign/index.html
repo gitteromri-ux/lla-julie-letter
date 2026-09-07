@@ -1495,6 +1495,8 @@ body{font-size:18px}
 
 @media (min-width:901px){ .hero-sales-video{left:55%;width:40%;height:78%;top:8%;opacity:.85} .pdp-cine-overlay{background:linear-gradient(90deg,rgba(4,13,36,.92) 0%,rgba(4,13,36,.7) 36%,rgba(4,13,36,.25) 50%,transparent 60%), linear-gradient(180deg, rgba(4,13,36,.45) 0%, transparent 20%, transparent 70%, rgba(4,13,36,.6) 100%)} }
 
+@media (min-width:901px){ .hero-sales-video{left:47%} }
+
 </style>
 </head>
 <body id="lpRoot">
@@ -1606,7 +1608,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     </div>
     <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/cells.mp4" poster="assets/cells-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></div><figure class="lla-film">
-        <video src="assets/julie-hero.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" data-src-mobile="assets/julie-hero-m.mp4"></video><button type="button" class="film-sound" aria-label="Sound on or off" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="fs-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/><path class="fs-off" d="M23 9l-6 6M17 9l6 6"/></svg></button>
+        <video src="assets/julie-hero-d.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" data-src-mobile="assets/julie-hero-m.mp4"></video><button type="button" class="film-sound" aria-label="Sound on or off" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="fs-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/><path class="fs-off" d="M23 9l-6 6M17 9l6 6"/></svg></button>
         <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
       </figure></div>
     
@@ -4160,6 +4162,8 @@ body{font-size:18px}
 
 @media (min-width:901px){ .hero-sales-video{left:55%;width:40%;height:78%;top:8%;opacity:.85} .pdp-cine-overlay{background:linear-gradient(90deg,rgba(4,13,36,.92) 0%,rgba(4,13,36,.7) 36%,rgba(4,13,36,.25) 50%,transparent 60%), linear-gradient(180deg, rgba(4,13,36,.45) 0%, transparent 20%, transparent 70%, rgba(4,13,36,.6) 100%)} }
 
+@media (min-width:901px){ .hero-sales-video{left:47%} }
+
 </style>
 <style>
 /* Floating enroll button, styles carried verbatim from the live page */
@@ -4942,7 +4946,8 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-hero-powered-stats span,
       v.muted = true; v.defaultMuted = true; v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline','');
     });
     function kick(){ vids.forEach(function(v){ if (v.paused) { var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); } }); }
-    kick(); setTimeout(kick, 800); setTimeout(kick, 3000);
+    vids.forEach(function(v){ ['loadedmetadata','loadeddata','canplay','canplaythrough'].forEach(function(ev){ v.addEventListener(ev, kick); }); });
+    kick(); setTimeout(kick, 800); setTimeout(kick, 3000); setTimeout(kick, 8000);
     ['touchstart','touchend','scroll','click','keydown'].forEach(function(ev){ window.addEventListener(ev, kick, { passive: true, once: true }); });
     document.addEventListener('visibilitychange', function(){ if (!document.hidden) kick(); });
   })();
