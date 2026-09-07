@@ -1518,6 +1518,32 @@ body{font-size:18px}
 
 @media (min-width:901px) and (max-width:1600px){ .hero-sales-video{left:51.5%;width:11%;height:30%;top:14%} }
 
+/* ==========================================================================
+   Hero as one composition: cells projected across the back, copy and film on top
+   ========================================================================== */
+@media (min-width:901px){
+  .hero-sales-video{position:absolute;left:0;top:0;right:0;bottom:0;width:100%;height:100%;transform:none;object-fit:cover;object-position:62% 45%;opacity:.55;
+    -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.7) 0%,#000 25%,#000 75%,rgba(0,0,0,.35) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,.7) 0%,#000 25%,#000 75%,rgba(0,0,0,.35) 100%);-webkit-mask-composite:initial;mask-composite:initial}
+  .pdp-cine-overlay{background:
+    radial-gradient(62% 90% at 24% 55%, rgba(4,13,36,.88) 0%, rgba(4,13,36,.55) 45%, transparent 75%),
+    radial-gradient(40% 70% at 80% 55%, rgba(4,13,36,.35) 0%, transparent 70%),
+    linear-gradient(90deg, rgba(4,13,36,.55) 0%, rgba(4,13,36,.2) 50%, rgba(4,13,36,.45) 100%),
+    linear-gradient(180deg, rgba(4,13,36,.6) 0%, transparent 22%, transparent 72%, rgba(4,13,36,.75) 100%)}
+  .hero-fx{display:none}
+  .pdp-hero--cine{background:linear-gradient(90deg,#040D24 0%,#061633 50%,#071A3D 100%)}
+  .pdp-cine-h1,.pdp-cine-sub{text-shadow:0 2px 20px rgba(0,0,0,.7), 0 0 60px rgba(4,13,36,.9)}
+  .hero-right-col .lla-film video{box-shadow:0 40px 90px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(125,229,255,.25)}
+}
+@media (max-width:900px){
+  .hero-sales-video{opacity:.7}
+}
+
+.pdp-cine-overlay{z-index:3 !important}
+.hero-copy,.hero-right-col .lla-film{z-index:5 !important}
+.hero-right-col{z-index:auto}
+
+.pdp-cine-inner{z-index:auto !important}
+
 </style>
 </head>
 <body id="lpRoot">
@@ -4205,6 +4231,32 @@ body{font-size:18px}
 @media (min-width:901px){ .pdp-cine-h1{max-width:none} }
 
 @media (min-width:901px) and (max-width:1600px){ .hero-sales-video{left:51.5%;width:11%;height:30%;top:14%} }
+
+/* ==========================================================================
+   Hero as one composition: cells projected across the back, copy and film on top
+   ========================================================================== */
+@media (min-width:901px){
+  .hero-sales-video{position:absolute;left:0;top:0;right:0;bottom:0;width:100%;height:100%;transform:none;object-fit:cover;object-position:62% 45%;opacity:.55;
+    -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.7) 0%,#000 25%,#000 75%,rgba(0,0,0,.35) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,.7) 0%,#000 25%,#000 75%,rgba(0,0,0,.35) 100%);-webkit-mask-composite:initial;mask-composite:initial}
+  .pdp-cine-overlay{background:
+    radial-gradient(62% 90% at 24% 55%, rgba(4,13,36,.88) 0%, rgba(4,13,36,.55) 45%, transparent 75%),
+    radial-gradient(40% 70% at 80% 55%, rgba(4,13,36,.35) 0%, transparent 70%),
+    linear-gradient(90deg, rgba(4,13,36,.55) 0%, rgba(4,13,36,.2) 50%, rgba(4,13,36,.45) 100%),
+    linear-gradient(180deg, rgba(4,13,36,.6) 0%, transparent 22%, transparent 72%, rgba(4,13,36,.75) 100%)}
+  .hero-fx{display:none}
+  .pdp-hero--cine{background:linear-gradient(90deg,#040D24 0%,#061633 50%,#071A3D 100%)}
+  .pdp-cine-h1,.pdp-cine-sub{text-shadow:0 2px 20px rgba(0,0,0,.7), 0 0 60px rgba(4,13,36,.9)}
+  .hero-right-col .lla-film video{box-shadow:0 40px 90px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(125,229,255,.25)}
+}
+@media (max-width:900px){
+  .hero-sales-video{opacity:.7}
+}
+
+.pdp-cine-overlay{z-index:3 !important}
+.hero-copy,.hero-right-col .lla-film{z-index:5 !important}
+.hero-right-col{z-index:auto}
+
+.pdp-cine-inner{z-index:auto !important}
 
 </style>
 <style>
