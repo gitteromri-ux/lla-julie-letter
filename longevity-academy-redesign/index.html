@@ -1547,6 +1547,16 @@ body{font-size:18px}
 @media (min-width:901px){ .hero-sales-video{opacity:.7} }
 
 
+/* ==========================================================================
+   Round 15: navy pillars, brand wordmark in the hero
+   ========================================================================== */
+.lp-learn{background:linear-gradient(180deg,#071A3D 0%,#050f2a 100%) !important}
+.pdp-cine-wordmark{display:block !important;width:250px;height:auto;margin:4px 0 22px}
+.hero-copy .pdp-tp-pill{margin-bottom:18px}
+@media (max-width:900px){
+  .pdp-cine-wordmark{width:200px;margin:0 0 16px}
+}
+
 </style>
 </head>
 <body id="lpRoot">
@@ -1658,7 +1668,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     </div>
     <div class="hero-right-col"><div class="hero-sales" aria-hidden="true"><video class="hero-sales-video" src="assets/cells.mp4" poster="assets/cells-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></div><figure class="lla-film">
-        <video src="assets/julie-hero-d.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" data-src-mobile="assets/julie-hero-m.mp4"></video><button type="button" class="film-sound" aria-label="Sound on or off" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="fs-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/><path class="fs-off" d="M23 9l-6 6M17 9l6 6"/></svg></button>
+        <video src="assets/julie-hero-m.mp4" poster="assets/julie-hero-poster.jpg" autoplay muted loop playsinline preload="auto" data-src-mobile="assets/julie-hero-m.mp4"></video><button type="button" class="film-sound" aria-label="Sound on or off" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="fs-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/><path class="fs-off" d="M23 9l-6 6M17 9l6 6"/></svg></button>
         <figcaption><b>Julie Gibson Clark</b><span>Founding Faculty, 2nd Slowest-Aging Woman on Earth</span></figcaption>
       </figure></div>
     
@@ -4266,6 +4276,16 @@ body{font-size:18px}
 @media (min-width:901px){ .hero-sales-video{opacity:.7} }
 
 
+/* ==========================================================================
+   Round 15: navy pillars, brand wordmark in the hero
+   ========================================================================== */
+.lp-learn{background:linear-gradient(180deg,#071A3D 0%,#050f2a 100%) !important}
+.pdp-cine-wordmark{display:block !important;width:250px;height:auto;margin:4px 0 22px}
+.hero-copy .pdp-tp-pill{margin-bottom:18px}
+@media (max-width:900px){
+  .pdp-cine-wordmark{width:200px;margin:0 0 16px}
+}
+
 </style>
 <style>
 /* Floating enroll button, styles carried verbatim from the live page */
@@ -4863,6 +4883,9 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-header .eyebrow{di
 html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-header .eyebrow::before{display:none !important}
 html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-powered-label{font-weight:400 !important;text-transform:none !important;letter-spacing:normal !important}
 html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-powered-logo-img{font-weight:400 !important}
+html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-lead{margin-bottom:36px !important}
+html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-powered-logo-img{height:46px !important;width:auto !important;image-rendering:auto !important}
+html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-powered-brand{padding:6px 0 10px !important}
 html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-hero-powered-stats span, html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-hero-powered-stats strong, html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-about-readmore{font-weight:400 !important}
 </style>
 
@@ -5050,19 +5073,7 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-hero-powered-stats span,
     function kick(){ vids.forEach(function(v){ if (v.paused) { var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); } }); }
     vids.forEach(function(v){ ['loadedmetadata','loadeddata','canplay','canplaythrough'].forEach(function(ev){ v.addEventListener(ev, kick); }); });
     kick(); setTimeout(kick, 800); setTimeout(kick, 3000); setTimeout(kick, 8000);
-    /* if a browser still refuses, show a play button on Julie's film */
-    setTimeout(function(){
-      vids.forEach(function(v){
-        if (!v.closest('.lla-film')) return;
-        if (!v.paused && v.currentTime > 0) return;
-        var fig = v.closest('.lla-film'); if (fig.querySelector('.film-play')) return;
-        var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'film-play'; btn.setAttribute('aria-label', 'Play');
-        btn.innerHTML = '<svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
-        btn.addEventListener('click', function(){ v.muted = false; v.play().catch(function(){ v.muted = true; v.play(); }); btn.remove(); var s = fig.querySelector('.film-sound'); if (s) { s.classList.add('is-on'); s.setAttribute('aria-pressed','true'); } });
-        v.insertAdjacentElement('afterend', btn);
-        v.addEventListener('playing', function(){ btn.remove(); });
-      });
-    }, 3500);
+
     ['touchstart','touchend','scroll','click','keydown'].forEach(function(ev){ window.addEventListener(ev, kick, { passive: true, once: true }); });
     document.addEventListener('visibilitychange', function(){ if (!document.hidden) kick(); });
   })();
