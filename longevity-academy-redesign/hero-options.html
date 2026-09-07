@@ -1425,6 +1425,38 @@ body{font-size:18px}
   .lla-shine-cta{width:100%}
 }
 
+/* ==========================================================================
+   Round 13
+   ========================================================================== */
+/* news: headline only, press names on a black strip */
+.lla-news .lla-films-head .section-subtitle{display:none !important}
+.lla-news .lla-films-head{margin-bottom:26px !important}
+.lla-news .pressx{background:#000;margin:0 calc(50% - 50vw) 34px;padding:18px 0;width:100vw;position:relative;left:auto}
+.lla-news .pressx::before,.lla-news .pressx::after{display:none}
+.lla-news .pressx-in{padding:0 var(--gutter);margin:0 auto}
+.lla-news .pressx-track,.lla-news .pressx-in > *{color:#fff}
+.lla-news .pressx-viewport{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+/* logos strip: never blank */
+.lla-logos-track{min-width:100%}
+.lla-logos-track img{opacity:1 !important;visibility:visible !important}
+/* closing card typography */
+.lla-mini-card{padding:44px 36px 40px}
+.lla-mini-card h3{font-size:clamp(30px,3vw,40px);line-height:1.1;margin:8px 0 12px}
+.lla-mini-card p{font-size:17px;line-height:1.5;margin:0 0 18px}
+.lla-mini-price{display:flex;align-items:baseline;justify-content:center;gap:8px;margin:0 0 22px}
+.lla-mini-price b{display:inline-flex;align-items:baseline;gap:2px;font-size:72px;line-height:1}
+.lla-mini-price b sup{position:static;top:auto;font-size:.42em;line-height:1;vertical-align:baseline;transform:translateY(-.9em);color:var(--blue)}
+.lla-mini-price span{font-size:20px;color:var(--blue)}
+.lla-mini-card .fn-pricecard-tag{font-size:15px;margin-bottom:6px}
+@media (max-width:900px){
+  .lla-mini-card{padding:32px 22px 30px}
+  .lla-mini-card h3{font-size:28px}
+  .lla-mini-card p{font-size:16px}
+  .lla-mini-price b{font-size:58px}
+  .lla-mini-price span{font-size:17px}
+  .lla-news .pressx{margin-bottom:22px;padding:14px 0}
+}
+
 
 .pdp-hero--cine{min-height:92vh;border-bottom:1px solid rgba(255,255,255,.08)}
 .hero-option-tag{position:absolute;z-index:5;top:calc(var(--nav-h) + 18px);left:var(--gutter);display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);color:#fff;font-size:15px;max-width:calc(100% - var(--gutter)*2)}
