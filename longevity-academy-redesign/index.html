@@ -1505,6 +1505,11 @@ body{font-size:18px}
 .pdp-cine-overlay{z-index:1}
 .hero-fx{z-index:1}
 
+@media (min-width:901px){ .hero-sales-video{width:30%;height:60%;top:16%;left:40%} }
+.film-play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;background:rgba(0,110,255,.85);border:1px solid rgba(255,255,255,.5);box-shadow:0 0 40px rgba(0,110,255,.8);cursor:pointer;z-index:3}
+.film-play:hover{background:#006EFF}
+.hero-right-col .lla-film{position:relative}
+
 </style>
 </head>
 <body id="lpRoot">
@@ -4180,6 +4185,11 @@ body{font-size:18px}
 .pdp-cine-overlay{z-index:1}
 .hero-fx{z-index:1}
 
+@media (min-width:901px){ .hero-sales-video{width:30%;height:60%;top:16%;left:40%} }
+.film-play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;background:rgba(0,110,255,.85);border:1px solid rgba(255,255,255,.5);box-shadow:0 0 40px rgba(0,110,255,.8);cursor:pointer;z-index:3}
+.film-play:hover{background:#006EFF}
+.hero-right-col .lla-film{position:relative}
+
 </style>
 <style>
 /* Floating enroll button, styles carried verbatim from the live page */
@@ -4964,6 +4974,19 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot .hp-hero-powered-stats span,
     function kick(){ vids.forEach(function(v){ if (v.paused) { var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); } }); }
     vids.forEach(function(v){ ['loadedmetadata','loadeddata','canplay','canplaythrough'].forEach(function(ev){ v.addEventListener(ev, kick); }); });
     kick(); setTimeout(kick, 800); setTimeout(kick, 3000); setTimeout(kick, 8000);
+    /* if a browser still refuses, show a play button on Julie's film */
+    setTimeout(function(){
+      vids.forEach(function(v){
+        if (!v.closest('.lla-film')) return;
+        if (!v.paused && v.currentTime > 0) return;
+        var fig = v.closest('.lla-film'); if (fig.querySelector('.film-play')) return;
+        var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'film-play'; btn.setAttribute('aria-label', 'Play');
+        btn.innerHTML = '<svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+        btn.addEventListener('click', function(){ v.muted = false; v.play().catch(function(){ v.muted = true; v.play(); }); btn.remove(); var s = fig.querySelector('.film-sound'); if (s) { s.classList.add('is-on'); s.setAttribute('aria-pressed','true'); } });
+        v.insertAdjacentElement('afterend', btn);
+        v.addEventListener('playing', function(){ btn.remove(); });
+      });
+    }, 3500);
     ['touchstart','touchend','scroll','click','keydown'].forEach(function(ev){ window.addEventListener(ev, kick, { passive: true, once: true }); });
     document.addEventListener('visibilitychange', function(){ if (!document.hidden) kick(); });
   })();
