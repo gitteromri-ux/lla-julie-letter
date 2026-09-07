@@ -1413,14 +1413,14 @@ body{font-size:18px}
 .lla-shine{background:#000 !important;padding:0 !important;position:relative}
 .lla-shine::before{content:"";display:block;position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(125,229,255,.7),transparent);transform:none;filter:none;animation:none;opacity:1}
 .lla-shine::after{content:"";position:absolute;left:0;right:0;bottom:0;top:auto;height:1px;background:linear-gradient(90deg,transparent,rgba(125,229,255,.45),transparent)}
-.lla-shine .lla-shine-in{padding:34px 0;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.lla-shine .lla-shine-in{padding:34px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:40px}
 .lla-shine-h2{font-size:clamp(28px,2.6vw,40px);line-height:1.15;margin:0;color:#fff;text-shadow:none;letter-spacing:-.01em}
 .lla-shine-h2 em{color:#7DE5FF;background:none;-webkit-text-fill-color:#7DE5FF}
 .lla-shine-cta{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);box-shadow:none;min-height:56px;padding:0 32px;font-size:17px}
 .lla-shine-cta:hover{background:#fff;color:#000;box-shadow:0 0 40px rgba(255,255,255,.35);filter:none}
 .lla-shine-cta svg{stroke:currentColor}
 @media (max-width:900px){
-  .lla-shine .lla-shine-in{padding:26px 0;flex-direction:column;align-items:flex-start;gap:16px}
+  .lla-shine .lla-shine-in{padding:26px var(--gutter);flex-direction:column;align-items:flex-start;gap:16px}
   .lla-shine-h2{font-size:26px}
   .lla-shine-cta{width:100%}
 }
