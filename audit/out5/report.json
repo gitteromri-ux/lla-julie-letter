@@ -1,0 +1,3148 @@
+{
+ "startedAt": "2026-11-05T16:55:28.151Z",
+ "land": "https://longevitylifeacademy.pages.dev/?fbclid=IwZXh0bgNhZW0BMABhZGlkAasYz9rA1XcBHfU_Lq3Kx7MzZ3oAbCdEf-AUDIT1105&cid=118149&adGroupID=108816&utm_source=Facebook&utm_medium=Topic&utm_campaign=120222000000000001&utm_term=52668330870828&utm_content=52674115544628&creative=52674115544628&placement=Facebook_Mobile_Feed&cq_src=facebook&cq_cmp=LGV_EN_PPC_ecomm-02&cq_con=audit&cq_med=Facebook_Mobile_Feed&cq_net=fb&cq_plt=fp",
+ "fbclid": "IwZXh0bgNhZW0BMABhZGlkAasYz9rA1XcBHfU_Lq3Kx7MzZ3oAbCdEf-AUDIT1105",
+ "scenarios": {
+  "com-iphone": {
+   "id": "com-iphone",
+   "device": "com-iphone",
+   "pixelRaw": [
+    {
+     "t": 1519,
+     "phase": "home",
+     "method": "GET",
+     "url": "https://www.facebook.com/tr/?id=1440305917310328&ev=PageView&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rl=&if=false&ts=1793897729735&iw=false&sw=390&sh=844&cud[external_id]=*****%23**%23%23*%23******%23*%23&ncud[external_id]=*****%23**%23%23*%23******%23*%23&ud[external_id]=fe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af&aud[external_id][0][v]=fe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af&aud[external_id][0][s]=0&udwv[em][0][v]=910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae&udwv[em][0][s]=3&v=2.9.435&r=stable&ec=0&o=79902&aems=0%3B0&fbp=fb.1.1793897729724.83957679284848703&cs_est=true&ler=empty&pmd[title]=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&pmd[locale]=en&pmd[description]=A%20longevity%20and%20biohacking%20course.%20Read%20your%20body%27s%20signals%2C%20build%20your%20personal%20protocol%2C%20and%20live%20longer%2C%20stronger%2C%20better.&iss=1&ss=%7B%22event_name%22%3A%5B%7B%22rid%22%3A%22928841190273862%22%2C%22v%22%3A%5B%22It%27s%20Your%20Life.%5CnLive%20It%20Well.%22%2C%22About%20Longevity%20Life%20Academy%22%5D%7D%5D%7D&imft=1&tz=-300&it=1793897729079&coo=false&eid=lla_pv_mw3se2e6wf52c524&expv2[0]=mr1&expv2[1]=pl0&expv2[2]=el2&expv2[3]=bc1&expv2[4]=ra2&expv2[5]=rp2&expv2[6]=ct2&expv2[7]=hf0&expv2[8]=dp1&expv2[9]=fw1&expv2[10]=cn1&expv2[11]=tz1&expv2[12]=pe1&expv2[13]=ee1&expv2[14]=bu1&expv2[15]=ta1&expv2[16]=ot1&expv2[17]=hv1&expv2[18]=ep3&expv2[19]=rh0&expv2[20]=ah0&expv2[21]=nv1&expv2[22]=oq0&rqm=GET",
+     "ctype": "",
+     "post": ""
+    },
+    {
+     "t": 1655,
+     "phase": "home",
+     "method": "GET",
+     "url": "https://www.facebook.com/tr/?id=1440305917310328&ev=ViewContent&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rl=&if=false&ts=1793897729873&iw=false&cd[content_name]=Longevity%20Life%20Academy&cd[content_ids]=%5B%22longevity-life-academy%22%5D&cd[content_type]=product&sw=390&sh=844&cud[external_id]=*****%23**%23%23*%23******%23*%23&ncud[external_id]=*****%23**%23%23*%23******%23*%23&ud[external_id]=fe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af&aud[external_id][0][v]=fe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af&aud[external_id][0][s]=0&udwv[em][0][v]=910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae&udwv[em][0][s]=3&v=2.9.435&r=stable&ec=1&o=79902&aems=0%3B0&fbp=fb.1.1793897729724.83957679284848703&ler=empty&pmd[locale]=en&pmd[description]=A%20longevity%20and%20biohacking%20course.%20Read%20your%20body%27s%20signals%2C%20build%20your%20personal%20protocol%2C%20and%20live%20longer%2C%20stronger%2C%20better.&iss=1&ss=%7B%22event_name%22%3A%5B%7B%22rid%22%3A%22928841190273862%22%2C%22v%22%3A%5B%22It%27s%20Your%20Life.%5CnLive%20It%20Well.%22%2C%22About%20Longevity%20Life%20Academy%22%5D%7D%5D%7D&imft=1&tz=-300&it=1793897729079&coo=false&eid=lla_vc_mw3se2e6wf52c524&expv2[0]=mr1&expv2[1]=pl0&expv2[2]=el2&expv2[3]=bc1&expv2[4]=ra2&expv2[5]=rp2&expv2[6]=ct2&expv2[7]=hf0&expv2[8]=dp1&expv2[9]=fw1&expv2[10]=cn1&expv2[11]=tz1&expv2[12]=pe1&expv2[13]=ee1&expv2[14]=bu1&expv2[15]=ta1&expv2[16]=ot1&expv2[17]=hv1&expv2[18]=ep3&expv2[19]=rh0&expv2[20]=ah0&expv2[21]=nv1&expv2[22]=oq0&rqm=GET",
+     "ctype": "",
+     "post": ""
+    },
+    {
+     "t": 55175,
+     "phase": "enroll",
+     "method": "POST",
+     "url": "https://www.facebook.com/tr/",
+     "ctype": "multipart/form-data; boundary=----WebKitFormBoundaryKdPjXmDmcx4haHih",
+     "post": "------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1440305917310328\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nSubscribedButtonClick\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://www.longevitylifeacademy.com/\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1793897783391\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"cd[buttonFeatures]\"\r\n\r\n{\"classList\":\"btn-primary btn-primary--lg\",\"destination\":\"https://www.longevitylifeacademy.com/#offer\",\"id\":\"\",\"imageUrl\":\"linear-gradient(135deg, rgb(46, 145, 255) 0%, rgb(0, 102, 255) 100%)\",\"innerText\":\"Enroll Now\",\"numChildButtons\":0,\"tag\":\"a\",\"type\":null,\"name\":\"\"}\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"cd[buttonText]\"\r\n\r\nEnroll Now\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"cd[formFeatures]\"\r\n\r\n[]\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"cd[pageFeatures]\"\r\n\r\n{\"title\":\"Longevity Life Academy, Design the Life Ahead of You\"}\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n390\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n844\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"cud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"cudff[country]\"\r\n\r\n^^\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"ncud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"ud[external_id]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"aud[external_id][0][v]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"aud[external_id][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"audff[country][0][v]\"\r\n\r\n79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"audff[country][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"udwv[em][0][v]\"\r\n\r\n910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"udwv[em][0][s]\"\r\n\r\n3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.435\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n2\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n79902\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1793897729724.83957679284848703\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"cs_est\"\r\n\r\ntrue\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nen\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nA longevity and biohacking course. Read your body's signals, build your personal protocol, and live longer, stronger, better.\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n1597\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"event_name\":[{\"rid\":\"928841190273862\",\"v\":[\"It's Your Life.\\nLive It Well.\",\"About Longevity Life Academy\"]}]}\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n-300\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1793897729079\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"es\"\r\n\r\nautomatic\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"est_fired\"\r\n\r\n\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"tm\"\r\n\r\n3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nct2\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\ndp3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nfw3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\ncn3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\ntz3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\npe3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\nee3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[14]\"\r\n\r\nbu1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[15]\"\r\n\r\nta1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[16]\"\r\n\r\not1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[17]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[18]\"\r\n\r\nep3\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[19]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[20]\"\r\n\r\nah0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[21]\"\r\n\r\nnv1\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"expv2[22]\"\r\n\r\noq0\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryKdPjXmDmcx4haHih--\r\n"
+    },
+    {
+     "t": 55207,
+     "phase": "enroll",
+     "method": "GET",
+     "url": "https://www.facebook.com/tr/?id=1440305917310328&ev=Clicked_on_Enroll&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rl=&if=false&ts=1793897783400&iw=false&sw=390&sh=844&cud[external_id]=*****%23**%23%23*%23******%23*%23&cudff[country]=%5E%5E&ncud[external_id]=*****%23**%23%23*%23******%23*%23&ud[external_id]=fe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af&aud[external_id][0][v]=fe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af&aud[external_id][0][s]=0&audff[country][0][v]=79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621&audff[country][0][s]=1&udwv[em][0][v]=910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae&udwv[em][0][s]=3&v=2.9.435&r=stable&ec=3&o=79902&aems=0%3B0&fbp=fb.1.1793897729724.83957679284848703&ler=empty&pmd[locale]=en&pmd[description]=A%20longevity%20and%20biohacking%20course.%20Read%20your%20body%27s%20signals%2C%20build%20your%20personal%20protocol%2C%20and%20live%20longer%2C%20stronger%2C%20better.&plt=1597&iss=1&ss=%7B%22event_name%22%3A%5B%7B%22rid%22%3A%22928841190273862%22%2C%22v%22%3A%5B%22It%27s%20Your%20Life.%5CnLive%20It%20Well.%22%2C%22About%20Longevity%20Life%20Academy%22%5D%7D%5D%7D&imft=1&tz=-300&it=1793897729079&coo=false&expv2[0]=mr1&expv2[1]=pl0&expv2[2]=el3&expv2[3]=bc1&expv2[4]=ra2&expv2[5]=rp2&expv2[6]=ct2&expv2[7]=hf0&expv2[8]=dp3&expv2[9]=fw3&expv2[10]=cn3&expv2[11]=tz3&expv2[12]=pe3&expv2[13]=ee3&expv2[14]=bu1&expv2[15]=ta1&expv2[16]=ot1&expv2[17]=hv1&expv2[18]=ep3&expv2[19]=rh0&expv2[20]=ah0&expv2[21]=nv1&expv2[22]=oq0&rqm=GET",
+     "ctype": "",
+     "post": ""
+    },
+    {
+     "t": 57054,
+     "phase": "enroll",
+     "method": "POST",
+     "url": "https://www.facebook.com/tr/",
+     "ctype": "multipart/form-data; boundary=----WebKitFormBoundaryS3Re7ex0eFJI6RKI",
+     "post": "------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1440305917310328\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nSubscribedButtonClick\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://www.longevitylifeacademy.com/\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1793897785265\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cd[buttonFeatures]\"\r\n\r\n{\"classList\":\"em-go\",\"destination\":\"\",\"id\":\"emGo1\",\"imageUrl\":\"\",\"innerText\":\"Continue\",\"numChildButtons\":0,\"tag\":\"button\",\"type\":\"button\",\"name\":\"\",\"value\":\"\"}\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cd[buttonText]\"\r\n\r\nContinue\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cd[formFeatures]\"\r\n\r\n[]\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cd[pageFeatures]\"\r\n\r\n{\"title\":\"Longevity Life Academy, Design the Life Ahead of You\"}\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n390\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n844\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cudff[country]\"\r\n\r\n^^\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cudff[fn]\"\r\n\r\n^***\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cudff[ln]\"\r\n\r\n^******\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ncud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ud[external_id]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"aud[external_id][0][v]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"aud[external_id][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ncudff[fn]\"\r\n\r\n****\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"udff[fn]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ncudff[ln]\"\r\n\r\n*******\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"udff[ln]\"\r\n\r\nc5a62ce3fa7f6d86af0009389ccd815277691ea64da0c5c98e302bb13dd59248\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ncudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"udff[em]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ncudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"udff[ph]\"\r\n\r\ndb136877bda13a4da77b169f7d67c750e9987938be0cb4e3c026773acea8c04b\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[country][0][v]\"\r\n\r\n79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[country][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[fn][0][v]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[fn][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[ln][0][v]\"\r\n\r\nf1c478cac9f644bac6a0260513d4001dc635ba29d050a123468aff10080db3e8\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[ln][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[em][0][v]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[em][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[ph][0][v]\"\r\n\r\nbaf4e06091e03b9f79cdd2e668467fc90110aca5e9cff4e86d388f9a98b0745d\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"audff[ph][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"udwv[em][0][v]\"\r\n\r\n910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"udwv[em][0][s]\"\r\n\r\n3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.435\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n4\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n79902\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1793897729724.83957679284848703\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"cs_est\"\r\n\r\ntrue\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nen\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nA longevity and biohacking course. Read your body's signals, build your personal protocol, and live longer, stronger, better.\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n1597\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"event_name\":[{\"rid\":\"928841190273862\",\"v\":[\"It's Your Life.\\nLive It Well.\",\"About Longevity Life Academy\"]}]}\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n-300\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1793897729079\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"es\"\r\n\r\nautomatic\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"est_fired\"\r\n\r\n\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"tm\"\r\n\r\n3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nct2\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\ndp3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nfw3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\ncn3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\ntz3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\npe3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\nee3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[14]\"\r\n\r\nbu1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[15]\"\r\n\r\nta1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[16]\"\r\n\r\not1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[17]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[18]\"\r\n\r\nep3\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[19]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[20]\"\r\n\r\nah0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[21]\"\r\n\r\nnv1\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"expv2[22]\"\r\n\r\noq0\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryS3Re7ex0eFJI6RKI--\r\n"
+    },
+    {
+     "t": 57054,
+     "phase": "enroll",
+     "method": "POST",
+     "url": "https://www.facebook.com/tr/",
+     "ctype": "multipart/form-data; boundary=----WebKitFormBoundaryq7vx76Xj861AE8Hc",
+     "post": "------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1440305917310328\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nAddToCart\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://www.longevitylifeacademy.com/\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1793897785271\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cd[value]\"\r\n\r\n79\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cd[currency]\"\r\n\r\nUSD\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cd[content_name]\"\r\n\r\nLongevity Blueprint\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cd[content_type]\"\r\n\r\nproduct\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cd[content_ids]\"\r\n\r\n[\"lla-longevity-blueprint\"]\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cd[contents]\"\r\n\r\n[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}]\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n390\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n844\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cudff[country]\"\r\n\r\n^^\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cudff[fn]\"\r\n\r\n^***\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cudff[ln]\"\r\n\r\n^******\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"cudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ncud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ud[external_id]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"aud[external_id][0][v]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"aud[external_id][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ncudff[fn]\"\r\n\r\n****\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"udff[fn]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ncudff[ln]\"\r\n\r\n*******\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"udff[ln]\"\r\n\r\nc5a62ce3fa7f6d86af0009389ccd815277691ea64da0c5c98e302bb13dd59248\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ncudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"udff[em]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ncudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"udff[ph]\"\r\n\r\ndb136877bda13a4da77b169f7d67c750e9987938be0cb4e3c026773acea8c04b\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[country][0][v]\"\r\n\r\n79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[country][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[fn][0][v]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[fn][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[ln][0][v]\"\r\n\r\nf1c478cac9f644bac6a0260513d4001dc635ba29d050a123468aff10080db3e8\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[ln][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[em][0][v]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[em][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[ph][0][v]\"\r\n\r\nbaf4e06091e03b9f79cdd2e668467fc90110aca5e9cff4e86d388f9a98b0745d\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"audff[ph][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"udwv[em][0][v]\"\r\n\r\n910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"udwv[em][0][s]\"\r\n\r\n3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.435\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n5\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n79902\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1793897729724.83957679284848703\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nen\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nA longevity and biohacking course. Read your body's signals, build your personal protocol, and live longer, stronger, better.\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n1597\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"event_name\":[{\"rid\":\"928841190273862\",\"v\":[\"It's Your Life.\\nLive It Well.\",\"About Longevity Life Academy\"]}]}\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n-300\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1793897729079\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nlla_addtocart_1793897785269_cdlaio\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel2\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nct2\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\ndp3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nfw3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\ncn3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\ntz3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\npe3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\nee3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[14]\"\r\n\r\nbu1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[15]\"\r\n\r\nta1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[16]\"\r\n\r\nmt1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[17]\"\r\n\r\not1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[18]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[19]\"\r\n\r\nep3\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[20]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[21]\"\r\n\r\nah0\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[22]\"\r\n\r\nnv1\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"expv2[23]\"\r\n\r\noq0\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryq7vx76Xj861AE8Hc--\r\n"
+    },
+    {
+     "t": 59917,
+     "phase": "enroll",
+     "method": "POST",
+     "url": "https://www.facebook.com/tr/",
+     "ctype": "multipart/form-data; boundary=----WebKitFormBoundaryj3CcbLU1aASpwctl",
+     "post": "------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1440305917310328\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nSubscribedButtonClick\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://www.longevitylifeacademy.com/\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1793897788131\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cd[buttonFeatures]\"\r\n\r\n{\"classList\":\"em-go\",\"destination\":\"\",\"id\":\"emGo2\",\"imageUrl\":\"\",\"innerText\":\"Continue\",\"numChildButtons\":0,\"tag\":\"button\",\"type\":\"button\",\"name\":\"\",\"value\":\"\"}\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cd[buttonText]\"\r\n\r\nContinue\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cd[formFeatures]\"\r\n\r\n[]\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cd[pageFeatures]\"\r\n\r\n{\"title\":\"Longevity Life Academy, Design the Life Ahead of You\"}\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n390\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n844\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cudff[country]\"\r\n\r\n^^\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cudff[fn]\"\r\n\r\n^***\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cudff[ln]\"\r\n\r\n^******\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ncud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ud[external_id]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"aud[external_id][0][v]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"aud[external_id][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ncudff[fn]\"\r\n\r\n****\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"udff[fn]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ncudff[ln]\"\r\n\r\n*******\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"udff[ln]\"\r\n\r\nc5a62ce3fa7f6d86af0009389ccd815277691ea64da0c5c98e302bb13dd59248\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ncudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"udff[em]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ncudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"udff[ph]\"\r\n\r\ndb136877bda13a4da77b169f7d67c750e9987938be0cb4e3c026773acea8c04b\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[country][0][v]\"\r\n\r\n79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[country][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[fn][0][v]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[fn][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[ln][0][v]\"\r\n\r\nf1c478cac9f644bac6a0260513d4001dc635ba29d050a123468aff10080db3e8\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[ln][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[em][0][v]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[em][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[ph][0][v]\"\r\n\r\nbaf4e06091e03b9f79cdd2e668467fc90110aca5e9cff4e86d388f9a98b0745d\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"audff[ph][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"udwv[em][0][v]\"\r\n\r\n910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"udwv[em][0][s]\"\r\n\r\n3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.435\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n6\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n79902\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1793897729724.83957679284848703\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"cs_est\"\r\n\r\ntrue\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nen\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nA longevity and biohacking course. Read your body's signals, build your personal protocol, and live longer, stronger, better.\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n1597\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"event_name\":[{\"rid\":\"928841190273862\",\"v\":[\"It's Your Life.\\nLive It Well.\",\"About Longevity Life Academy\"]}]}\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n-300\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1793897729079\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"es\"\r\n\r\nautomatic\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"est_fired\"\r\n\r\n\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"tm\"\r\n\r\n3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nct2\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\ndp3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nfw3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\ncn3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\ntz3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\npe3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\nee3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[14]\"\r\n\r\nbu1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[15]\"\r\n\r\nta1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[16]\"\r\n\r\not1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[17]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[18]\"\r\n\r\nep3\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[19]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[20]\"\r\n\r\nah0\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[21]\"\r\n\r\nnv1\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"expv2[22]\"\r\n\r\noq0\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryj3CcbLU1aASpwctl--\r\n"
+    },
+    {
+     "t": 59936,
+     "phase": "enroll",
+     "method": "POST",
+     "url": "https://www.facebook.com/tr/",
+     "ctype": "multipart/form-data; boundary=----WebKitFormBoundary5tg0jbQ3WQL0aOW7",
+     "post": "------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1440305917310328\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nInitiateCheckout\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://www.longevitylifeacademy.com/\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1793897788156\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cd[value]\"\r\n\r\n79\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cd[currency]\"\r\n\r\nUSD\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cd[content_name]\"\r\n\r\nLongevity Blueprint\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cd[content_type]\"\r\n\r\nproduct\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cd[content_ids]\"\r\n\r\n[\"lla-longevity-blueprint\"]\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cd[contents]\"\r\n\r\n[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}]\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n390\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n844\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cudff[country]\"\r\n\r\n^^\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cudff[fn]\"\r\n\r\n^***\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cudff[ln]\"\r\n\r\n^******\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"cudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ncud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ud[external_id]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"aud[external_id][0][v]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"aud[external_id][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ncudff[fn]\"\r\n\r\n****\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"udff[fn]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ncudff[ln]\"\r\n\r\n*******\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"udff[ln]\"\r\n\r\nc5a62ce3fa7f6d86af0009389ccd815277691ea64da0c5c98e302bb13dd59248\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ncudff[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"udff[em]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ncudff[ph]\"\r\n\r\n##########\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"udff[ph]\"\r\n\r\ndb136877bda13a4da77b169f7d67c750e9987938be0cb4e3c026773acea8c04b\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[country][0][v]\"\r\n\r\n79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[country][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[fn][0][v]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[fn][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[ln][0][v]\"\r\n\r\nf1c478cac9f644bac6a0260513d4001dc635ba29d050a123468aff10080db3e8\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[ln][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[em][0][v]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[em][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[ph][0][v]\"\r\n\r\nbaf4e06091e03b9f79cdd2e668467fc90110aca5e9cff4e86d388f9a98b0745d\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"audff[ph][0][s]\"\r\n\r\n1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"udwv[em][0][v]\"\r\n\r\n910f4cf09d3a370402e0c34c5004899bdb97a790a5a3ce2854a6cbd08948aeae\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"udwv[em][0][s]\"\r\n\r\n3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.435\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n7\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n79902\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ss_otp\"\r\n\r\n{\"cur\":\"$\",\"v\":755}\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1793897729724.83957679284848703\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nen\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nA longevity and biohacking course. Read your body's signals, build your personal protocol, and live longer, stronger, better.\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n1597\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"event_name\":[{\"rid\":\"928841190273862\",\"v\":[\"It's Your Life.\\nLive It Well.\",\"About Longevity Life Academy\"]}]}\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n-300\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1793897729079\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nlla_initiatecheckout_1793897788145_cou76z\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel2\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nct2\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\ndp3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nfw3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\ncn3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\ntz3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\npe3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\nee3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[14]\"\r\n\r\nbu1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[15]\"\r\n\r\nta1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[16]\"\r\n\r\not1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[17]\"\r\n\r\nhv1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[18]\"\r\n\r\nep3\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[19]\"\r\n\r\nrh0\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[20]\"\r\n\r\nah0\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[21]\"\r\n\r\nnv1\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"expv2[22]\"\r\n\r\noq0\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundary5tg0jbQ3WQL0aOW7--\r\n"
+    },
+    {
+     "t": 60319,
+     "phase": "enroll",
+     "method": "POST",
+     "url": "https://www.facebook.com/tr/",
+     "ctype": "multipart/form-data; boundary=----WebKitFormBoundaryVYFZPVsD4YOUWxTV",
+     "post": "------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1440305917310328\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\nhttps://www.longevitylifeacademy.com/\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1793897788540\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n390\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n844\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cud[ph]\"\r\n\r\n###########\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cud[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cud[fn]\"\r\n\r\n****\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cud[ln]\"\r\n\r\n*******\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cud[st]\"\r\n\r\n**\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cud[country]\"\r\n\r\n**\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ncud[external_id]\"\r\n\r\n*****#**##*#******#*#\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ud[external_id]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ncud[em]\"\r\n\r\n****.*******@***-*****.***\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ud[em]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ncud[ph]\"\r\n\r\n###########\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ud[ph]\"\r\n\r\nbaf4e06091e03b9f79cdd2e668467fc90110aca5e9cff4e86d388f9a98b0745d\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ncud[fn]\"\r\n\r\n****\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ud[fn]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ncud[ln]\"\r\n\r\n*******\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ud[ln]\"\r\n\r\nc5a62ce3fa7f6d86af0009389ccd815277691ea64da0c5c98e302bb13dd59248\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ncud[st]\"\r\n\r\n**\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ud[st]\"\r\n\r\n1b06e2003f8420d6fa42badd8f77ec0f706b976b7a48b13c567dc5a559681683\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ncud[country]\"\r\n\r\n**\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ud[country]\"\r\n\r\n79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[external_id][0][v]\"\r\n\r\nfe31791e81648941538e8a717600478f74622c7ff4b1fd57d8e4f428582102af\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[external_id][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[em][0][v]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[em][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[ph][0][v]\"\r\n\r\nbaf4e06091e03b9f79cdd2e668467fc90110aca5e9cff4e86d388f9a98b0745d\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[ph][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[fn][0][v]\"\r\n\r\n81f8f6dde88365f3928796ec7aa53f72820b06db8664f5fe76a7eb13e24546a2\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[fn][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[ln][0][v]\"\r\n\r\nc5a62ce3fa7f6d86af0009389ccd815277691ea64da0c5c98e302bb13dd59248\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[ln][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[st][0][v]\"\r\n\r\n1b06e2003f8420d6fa42badd8f77ec0f706b976b7a48b13c567dc5a559681683\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[st][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[country][0][v]\"\r\n\r\n79adb2a2fce5c6ba215fe5f27f532d4e7edbac4b6a5e09e1ef3a08084a904621\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aud[country][0][s]\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"udwv[em][0][v]\"\r\n\r\n71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"udwv[em][0][s]\"\r\n\r\n16\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.435\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n79902\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1793897729724.83957679284848703\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"cs_est\"\r\n\r\ntrue\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\nPlace your order — The Longevity Blueprint | Longevity Life Academy\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nen\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nPlace your order for The Longevity Blueprint at Longevity Life Academy.\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n178.5\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"event_name\":[{\"rid\":\"928841190273862\",\"v\":[\"Payment received\"]}]}\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n-300\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1793897788454\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nlla_pageview_1793897788301_jzzo9i\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel2\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nct2\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\npt0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\ndp1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nfw1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\ncn1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\ntz1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\npe1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[14]\"\r\n\r\nee1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[15]\"\r\n\r\nbu1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[16]\"\r\n\r\nta1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[17]\"\r\n\r\nmt0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[18]\"\r\n\r\not1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[19]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[20]\"\r\n\r\nep3\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[21]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[22]\"\r\n\r\nah0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[23]\"\r\n\r\nnv1\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"expv2[24]\"\r\n\r\noq0\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryVYFZPVsD4YOUWxTV--\r\n"
+    },
+    {
+     "t": 69499,
+     "phase": "masterclass",
+     "method": "GET",
+     "url": "https://www.facebook.com/tr/?id=1440305917310328&ev=PageView&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2Fjulie-masterclass%2F&rl=&if=false&ts=1793897797719&iw=false&sw=390&sh=844&udwv[em][0][v]=71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe&udwv[em][0][s]=16&v=2.9.435&r=stable&ec=0&o=79902&aems=0%3B0&fbp=fb.1.1793897729724.83957679284848703&cs_est=true&ler=empty&pmd[title]=Learn%20to%20age%20slower%20from%20the%202nd%20slowest%20aging%20human%20on%20earth%20%C2%B7%20Julie%20Gibson%20Clark%2C%20live%20%C2%B7%20From%20%2449&pmd[locale]=en&pmd[description]=Julie%20Gibson%20Clark%20ages%20eight%20months%20for%20every%20year.%20She%20teaches%20her%20complete%20protocol%20live%20on%20Zoom.%2060%20minutes.%20From%20%2449.&plt=306.3999999999651&iss=1&ss=%7B%22event_name%22%3A%5B%7B%22rid%22%3A%22928841190273862%22%2C%22v%22%3A%5B%22Payment%20received%22%5D%7D%5D%7D&imft=1&tz=-300&it=1793897797653&coo=false&eid=julie_pv_mw3sfj1yvm1ccc&expv2[0]=mr0&expv2[1]=pl0&expv2[2]=el2&expv2[3]=bc1&expv2[4]=ra2&expv2[5]=rp2&expv2[6]=ct2&expv2[7]=hf0&expv2[8]=dp1&expv2[9]=fw1&expv2[10]=cn1&expv2[11]=tz1&expv2[12]=pe1&expv2[13]=ee1&expv2[14]=bu1&expv2[15]=ta1&expv2[16]=ot1&expv2[17]=hv1&expv2[18]=ep3&expv2[19]=rh0&expv2[20]=ah0&expv2[21]=nv1&expv2[22]=oq0&rqm=GET",
+     "ctype": "",
+     "post": ""
+    },
+    {
+     "t": 69500,
+     "phase": "masterclass",
+     "method": "GET",
+     "url": "https://www.facebook.com/tr/?id=1440305917310328&ev=ViewContent&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2Fjulie-masterclass%2F&rl=&if=false&ts=1793897797722&iw=false&cd[content_ids]=%5B%22julie-masterclass-standard%22%2C%22julie-masterclass-vip%22%5D&cd[content_type]=product&cd[content_name]=Julie%20Gibson%20Clark%20Live%20Masterclass&cd[product_line]=julie_masterclass&sw=390&sh=844&udwv[em][0][v]=71e6f066b7bbc756fca126cfbe9600299c0db4357bc62dc8633ee8a4b57b98fe&udwv[em][0][s]=16&v=2.9.435&r=stable&ec=1&o=79902&aems=0%3B0&fbp=fb.1.1793897729724.83957679284848703&ler=empty&pmd[locale]=en&pmd[description]=Julie%20Gibson%20Clark%20ages%20eight%20months%20for%20every%20year.%20She%20teaches%20her%20complete%20protocol%20live%20on%20Zoom.%2060%20minutes.%20From%20%2449.&plt=306.3999999999651&iss=1&ss=%7B%22event_name%22%3A%5B%7B%22rid%22%3A%22928841190273862%22%2C%22v%22%3A%5B%22Payment%20received%22%5D%7D%5D%7D&imft=1&tz=-300&it=1793897797653&coo=false&eid=julie_vc_mw3sfj1yvm1ccc&expv2[0]=mr0&expv2[1]=pl0&expv2[2]=el3&expv2[3]=bc1&expv2[4]=ra2&expv2[5]=rp2&expv2[6]=ct2&expv2[7]=hf0&expv2[8]=dp1&expv2[9]=fw1&expv2[10]=cn1&expv2[11]=tz1&expv2[12]=pe1&expv2[13]=ee1&expv2[14]=bu1&expv2[15]=ta1&expv2[16]=ot1&expv2[17]=hv1&expv2[18]=ep3&expv2[19]=rh0&expv2[20]=ah0&expv2[21]=nv1&expv2[22]=oq0&rqm=GET",
+     "ctype": "",
+     "post": ""
+    }
+   ],
+   "worker": [
+    {
+     "t": 59918,
+     "phase": "enroll",
+     "method": "POST",
+     "path": "/api/lead/ecomm",
+     "body": "{\"ProductID\":26,\"FirstName\":\"Jane\",\"LastName\":\"Auditor\",\"Email\":\"jane.auditor@lla-audit.dev\",\"MobilePhone\":\"+12125550147\",\"CountryIsoCode\":\"US\",\"CountryIsoCodeByIp\":\"US\",\"LandingPage\":\"https://www.longevitylifeacademy.com/\",\"UserAgent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1\",\"ReferringSite\":\"www.longevitylifeacademy.com\",\"QueryString\":\"\",\"MainAbroadCourseId\":258,\"PreferredCourseId\":170275,\"PrefferdCourseID\":170275,\"ActivitySessionLevel1ID\":2395,\"SemesterID\":2395,\"AbroadCourseId\":1774,\"LanguageId\":101,\"IsTrial\":0,\"FirstPayment\":79,\"NumberOfPayments\":4,\"LeftToPay\":676,\"DynamicParameters\":\"plan=monthly&stateisocodebyip=NY&message=US%20State%20NY%20SELF%20SERVICE%20ECOMM%20CHECKOUT%20The%20Longevity%20Blueprint%20Start%20MonNov232026800PMEST500PMPSTweekly2026-11-23%20SMS%20consent%20yes\"}"
+    },
+    {
+     "t": 60107,
+     "phase": "enroll",
+     "method": "POST",
+     "path": "/api/checkout/details",
+     "body": "{\"studentId\":\"900000001\",\"orderId\":\"900000002\"}"
+    }
+   ],
+   "blocked": [
+    {
+     "t": 924,
+     "phase": "home",
+     "host": "www.google.com",
+     "method": "POST",
+     "path": "/ccm/collect",
+     "q": "?rcb=16&frm=0&apvc=1&ae=g&auid=2126850316.1793897729&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&en=page_view&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&scrsrc=www.googletagmanager.com&rnd=1694846435.1793897729&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6b40h2v9251342453za200zd9251342453xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~120385422~120412526~120420416~120469145~120469153~121191153~121246026~121246034~123814185~123820801&tft=1793897729141&tfd=860&fmt=8"
+    },
+    {
+     "t": 928,
+     "phase": "home",
+     "host": "ad.doubleclick.net",
+     "method": "POST",
+     "path": "/ccm/s/collect",
+     "q": "?auid=2126850316.1793897729&gtm=45He6b40h2v9251342453za200zd9251342453xeaxf1&fmt=8"
+    },
+    {
+     "t": 1249,
+     "phase": "home",
+     "host": "googleads.g.doubleclick.net",
+     "method": "GET",
+     "path": "/pagead/viewthroughconversion/18139914538/",
+     "q": "?random=1793897729411&cv=11&fst=1793897729411&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b40h2v9251478310za20ozb9251342453zd9251342453xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123814183~123820800&u_w=390&u_h=844&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=6&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=2126850316.1793897729&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0."
+    },
+    {
+     "t": 1259,
+     "phase": "home",
+     "host": "www.google.com",
+     "method": "POST",
+     "path": "/rmkt/collect/18139914538/",
+     "q": "?random=1793897729411&cv=11&fst=1793897729411&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b40h2v9251478310za20ozb9251342453zd9251342453xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123814183~123820800&u_w=390&u_h=844&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=6&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=2126850316.1793897729&uaa=arm&uab=64&uafvl=HeadlessChrome%3B"
+    },
+    {
+     "t": 1260,
+     "phase": "home",
+     "host": "www.google.com",
+     "method": "POST",
+     "path": "/ccm/collect",
+     "q": "?rcb=6&frm=0&apvc=0&auid=2126850316.1793897729&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&tid=AW-18139914538&en=page_view&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&scrsrc=www.googletagmanager.com&rnd=1694846435.1793897729&navt=n&npa=0&gtm=45be6b40h2v9251478310za20ozb9251342453zd9251342453xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123814183~123820800&tft=1793897729470&tfd=1189&tids=AW-18139914538&fmt=8"
+    },
+    {
+     "t": 1427,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088za20ozb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&sid=1793897729&sct=1&seg=0&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&dt=Longevity%20Life%20Academy"
+    },
+    {
+     "t": 16943,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&dt=Longevi"
+    },
+    {
+     "t": 23227,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&_s=3&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&dp=%2F&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2"
+    },
+    {
+     "t": 33786,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&dt=Longevi"
+    },
+    {
+     "t": 44324,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&_s=5&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&dp=%2F&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2"
+    },
+    {
+     "t": 50791,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&_s=6&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&dt=Longevity"
+    },
+    {
+     "t": 55206,
+     "phase": "enroll",
+     "host": "www.googleadservices.com",
+     "method": "GET",
+     "path": "/pagead/conversion/18139914538/",
+     "q": "?random=1793897783402&cv=11&fst=1793897783402&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6b40h2v9251478310z89251342453za20gzb9251342453zd9251342453xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123814183~123820800&u_w=390&u_h=844&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=6&label=5-ZSCLj986ccEKrC5MlD&capi=2&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=no"
+    },
+    {
+     "t": 55207,
+     "phase": "enroll",
+     "host": "www.googleadservices.com",
+     "method": "GET",
+     "path": "/ccm/conversion/18139914538/",
+     "q": "?random=1793897783402&cv=11&fst=1793897783402&fmt=3&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6b40h2v9251478310z89251342453za20gzb9251342453zd9251342453xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123814183~123820800&u_w=390&u_h=844&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=6&label=5-ZSCLj986ccEKrC5MlD&capi=2&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=no"
+    },
+    {
+     "t": 55790,
+     "phase": "enroll",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&dt=Longevi"
+    },
+    {
+     "t": 59959,
+     "phase": "enroll",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=398818956.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=390x844&uaa=arm&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=1&uap=iOS&uapv=16_0&uaw=0&ul=en-us&_s=8&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&dt=Longevity%20Li"
+    },
+    {
+     "t": 60806,
+     "phase": "checkout",
+     "host": "featureassets.org",
+     "method": "POST",
+     "path": "/v1/initialize",
+     "body": "91HbsVnb6ICbyV1ajFmYsxWYmJCLiMWOkdDO5ETNyYGOw0yNwMWOtMzNmRTLkNWYi1iN2MGZ3Q2MiJiOiQUSu9WazNXZzJCLiQDMhRmM4QWY5kDZk1SO0ATYtUDM5QTLlFDNk1iZ1kTZhZWZ2IiOiQUSlxmYhR3ciwiI05WZpx2YtQHcpJ3YzFmdhpmI6ISZwlHVrR2ciwiIw4yNx4yMiojIu9WazJXZWtGZzJye6ISY0FGZhRXZNdWazRXY0NnIswGb15mOi0Wdzt2Ylh2YfxGb1ZmIsU2csFmZ6ICZlR3c"
+    },
+    {
+     "t": 61257,
+     "phase": "checkout",
+     "host": "prodregistryv2.org",
+     "method": "POST",
+     "path": "/v1/rgstr",
+     "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�U�n�:\f���k9���ǶI�Y������\b\u0006\u001c�vՑ%W���\r���$M��\u0005��ve\u0001\u0014\u000f\u000fy��k�#Y\u000eм�����'h 0r�]�(��u��\f  \u0006��\\O��\u00194P��V뜲e���h�ɰn���dYTņd�\u0004\u00012\u0006v��,�d��E�[\u0005\r�x\u001bL\u0011����/,�w�ւ�:E@p��tA�'yp��N@7���Q{g{��@Y'�0x��d�,���#�H��h���\u0018\u00152�\u001c,�%C\u0003�j�h��\u0004\u0002z�\u0007��\u000et\u0005\r�#y4fb7�NS�\f\u0002X�\u0014\u0018�\u0001����U]�U�/�Q�&�� ?0\rЀ%���a��c��\u001d�Z\u00002S?04ŏ��U�\\"
+    },
+    {
+     "t": 61295,
+     "phase": "checkout",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-20TZ4CN27E&cid=1944166734.1793897789&en=page_view&dl=https%3A%2F%2Fcheckout.airwallex.com%2F%23%2Felements%2Fdropin%3Foptions%3D%257B%2522intent_id%2522%253A%2522int_AUDITMOCK0000000000%2522%252C%2522client_secret%2522%253A%2522AUDIT_MOCK_SECRET%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522mode%2522%253A%2522recurring%2522%252C%2522customer_id%2522%253A%2522cus_AUDITMOCK%2522%252C%2522recurringOptions%2522%253A%257B%2522next_triggered_by%2522%253A%2522merchant%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522merchant_trigger_reason%2522%253A%2522unscheduled%2522%257D"
+    },
+    {
+     "t": 61327,
+     "phase": "checkout",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-20TZ4CN27E&cid=1944166734.1793897789&sid=1793897789&en=payment_failure&dl=https%3A%2F%2Fcheckout.airwallex.com%2F%23%2Felements%2Fdropin%3Foptions%3D%257B%2522intent_id%2522%253A%2522int_AUDITMOCK0000000000%2522%252C%2522client_secret%2522%253A%2522AUDIT_MOCK_SECRET%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522mode%2522%253A%2522recurring%2522%252C%2522customer_id%2522%253A%2522cus_AUDITMOCK%2522%252C%2522recurringOptions%2522%253A%257B%2522next_triggered_by%2522%253A%2522merchant%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522merchant_trigger_reason%2522%253A%2522"
+    },
+    {
+     "t": 61478,
+     "phase": "checkout",
+     "host": "www.recaptcha.net",
+     "method": "POST",
+     "path": "/recaptcha/enterprise/pat",
+     "body": "\n(6Le5pc4aAAAAAI8ViPHvs5cq09x7W4vT3TmhXU_9\u0012\u0018bSuJ2xBC8cFy7pM4Z3Hu9boH\u001a�\u000f03AFcWeA50uUG1eL6RMBsYsqmV7W6WZbyYH4GZ2NKgsGvir0WivwmX7RyXwMUBgXBYKAoFesq_Rh7HcxMLS_aUPQkZpLIPa6CU3zPgxR_3xLVFdRG3FmXYRF4VbycCydYg1BhTFfLB5LkHulNg3-4FSUMt1eSzOJhc42fMZ-LiV7RbnbwPfNHcOkLEX6U7QucIL-kt7HjUBt4w36zxhZtqeRgPUZkIrJcbL2-"
+    },
+    {
+     "t": 61498,
+     "phase": "checkout",
+     "host": "www.recaptcha.net",
+     "method": "POST",
+     "path": "/recaptcha/enterprise/pat",
+     "body": "\n(6Le5pc4aAAAAAI8ViPHvs5cq09x7W4vT3TmhXU_9\u0012\u0018bSuJ2xBC8cFy7pM4Z3Hu9boH\u001a�\u000f03AFcWeA5so4qFMMAxJkqJDvrySlYFCRh7qmdjV1W8qjzbUuu2slYCOrM8aCMQa-JWR59zJgWXj5etUwFaerf9LY5854LSTdkXSHtVuloLWAne3gMg8SCCQ9K8cBqC1yL_PiutGJ19AtmsrlGFhfH2THgbVXzEn328ZbMoNI_iink1H3XGTzm0R8mZqcFKa1dkD4aMNhYVQwynRRyg6RHDWHrLLysmf6PrATH"
+    },
+    {
+     "t": 61559,
+     "phase": "checkout",
+     "host": "www.recaptcha.net",
+     "method": "POST",
+     "path": "/recaptcha/api2/jserrorlogging",
+     "body": "trace=Error%3A%20mid%0A%20%20%20%20at%20Array.%3Canonymous%3E%20(https%3A%2F%2Fwww.gstatic.com%2Frecaptcha%2Freleases%2FbSuJ2xBC8cFy7pM4Z3Hu9boH%2Frecaptcha__en.js%3A203%3A182)%0A%20%20%20%20at%20FB.%3Canonymous%3E%20(https%3A%2F%2Fwww.gstatic.com%2Frecaptcha%2Freleases%2FbSuJ2xBC8cFy7pM4Z3Hu9boH%2F"
+    },
+    {
+     "t": 61571,
+     "phase": "checkout",
+     "host": "www.recaptcha.net",
+     "method": "POST",
+     "path": "/recaptcha/api2/jserrorlogging",
+     "body": "trace=Error%3A%20mid%0A%20%20%20%20at%20Array.%3Canonymous%3E%20(https%3A%2F%2Fwww.gstatic.com%2Frecaptcha%2Freleases%2FbSuJ2xBC8cFy7pM4Z3Hu9boH%2Frecaptcha__en.js%3A203%3A182)%0A%20%20%20%20at%20FB.%3Canonymous%3E%20(https%3A%2F%2Fwww.gstatic.com%2Frecaptcha%2Freleases%2FbSuJ2xBC8cFy7pM4Z3Hu9boH%2F"
+    },
+    {
+     "t": 61760,
+     "phase": "checkout",
+     "host": "a1df925fc3b940f9b5d9a37c4e950122-3f5451d08253.cdn.forter.com",
+     "method": "POST",
+     "path": "/prop.json",
+     "body": ""
+    },
+    {
+     "t": 61880,
+     "phase": "checkout",
+     "host": "cdn0.forter.com",
+     "method": "POST",
+     "path": "/3f5451d08253/a1df925fc3b940f9b5d9a37c4e950122/wpt.json",
+     "body": "{\"wpt\":61.20000000001164,\"sct\":0,\"dlt\":0}"
+    },
+    {
+     "t": 62173,
+     "phase": "checkout",
+     "host": "cdn3.forter.com",
+     "method": "POST",
+     "path": "/events",
+     "body": "�Be\u0001���u;\\�4�\u0004��t&?�.\f�s\u001b��t�/�\u0007�3b��/�\u0005�~J\t\u00115Qg���\\;���P\"m�'=����py�Cׁ��n0Ƒ��7\u001d�\u0007���q����ڃ���w��c��^N\u0014/x�n_��Ba21�\u0004ƏF\u001b���hc��ҩ�\u0000s�۟�ڥ_\"ν��k�\b��gM�}Â��*EQ�p�$W\u0007r��Z��!|�N\u0018#\b_\u001f\u0010_���P���a\u0000���\u000e����w\u0018�{V\u0015\u000b�X�C?�dbUQ�����M��\u0007\u000b�\u0016�S�^ø�RU�\t\r��9\t3\u0006�Xʑ�\u0018�:*�'�9��u�c�K\u00111�m�U{\u0016�,X�E�V��郗Zw\u0015\b\u0000\u0005��է�e�yڢ\u0012���[�4s"
+    },
+    {
+     "t": 62258,
+     "phase": "checkout",
+     "host": "a1df925fc3b940f9b5d9a37c4e950122-3f5451d08253.cdn.forter.com",
+     "method": "POST",
+     "path": "/prop.json",
+     "body": ""
+    },
+    {
+     "t": 62259,
+     "phase": "checkout",
+     "host": "cdn6.forter.com",
+     "method": "POST",
+     "path": "/3f5451d08253/a1df925fc3b940f9b5d9a37c4e950122/prop.json",
+     "body": ""
+    },
+    {
+     "t": 62479,
+     "phase": "checkout",
+     "host": "d2o5idwacg3gyw.cloudfront.net",
+     "method": "POST",
+     "path": "/events",
+     "body": "�Be\u0001���u;\\�4�\u0004��t&?�.\f�sU��t�/�\u0007�3�*h�83�ֈ&N��5�+�\r#��P\"m��<����py��ց��n0Ƒǀ7\u0013�\u0007S��q�����Q����ā \n\u001e��#З(���M��1\u0003\u000b)K״X�3�0*o!�\u001bm/\u0018@��\u0002�\u0018{+ p�\"�� �l_�B�T�o��v�&2*�\u000b*{5_6�§Q�֐/\u001c�\t�c�\u0002���I5l��w%\n���C�FX;�F[?I��;�\r�\u000fk�y\u0000���n�\u0012a=D��;62�<\u0013�Ėv`\tO(wM�\u0016����\u0012��\u0006���Z|u\u0015@\u0015>��.'\u000b]\\���#��0`R�\u0015\u0014���%C!t�Y<�xX\u0005��Y�2��%"
+    },
+    {
+     "t": 62759,
+     "phase": "checkout",
+     "host": "a1df925fc3b940f9b5d9a37c4e950122-3f5451d08253.cdn.forter.com",
+     "method": "POST",
+     "path": "/prop.json",
+     "body": ""
+    },
+    {
+     "t": 63026,
+     "phase": "checkout",
+     "host": "d6rak4b14t5gp.cloudfront.net",
+     "method": "POST",
+     "path": "/ZXZlbnRz",
+     "body": "�Be\u0001���u;\\�4�\u0018��T&?az_���*\u0006��W&�Sq9\u0000�FW�Y\u0002\u0017�te�l( t|��\u0016�\u0001YDI�\u0005�����\u001c\u001d:����\u001b�B$(j�楥\u001aXDf�gA�p(�|�S��{��t\"�\b\u0016E;h>�\u0006\u000e(�b�{>`У�H��\u0011�G�ėDt�d~S�\u0006.����/�G>�u�ه��CN��\u0012���\u001b\u001d\u001a�\u000fM�\u0017`:5\b$�i~\u0010]\u0004s>%��}��\u0007@�ڢ5Tl��H诡�R��~�\b�KY���\u0007ف�9�����!P�O\u0018���(fiXoq&��sf(A��=e� �`3Ma��b�,'�,u\"�L3��\u001a�!�+�̄�\u0004~�\u0003\u00103\"��&÷�\n��\u001fD��lPK"
+    },
+    {
+     "t": 63332,
+     "phase": "checkout",
+     "host": "1.1.1.1",
+     "method": "POST",
+     "path": "/dns-query",
+     "body": "\u0000\u0000\u0001\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0003app\u0013siteperformancetest\u0003net\u0000\u0000\u0010\u0000\u0001"
+    }
+   ],
+   "hosts": {
+    "www.longevitylifeacademy.com": 93,
+    "connect.facebook.net": 7,
+    "www.googletagmanager.com": 4,
+    "fonts.googleapis.com": 5,
+    "fonts.cdnfonts.com": 7,
+    "www.google.com": 3,
+    "ad.doubleclick.net": 1,
+    "fonts.gstatic.com": 8,
+    "googleads.g.doubleclick.net": 1,
+    "www.google-analytics.com": 10,
+    "www.facebook.com": 11,
+    "lla-ac-events.vercel.app": 7,
+    "www.googleadservices.com": 2,
+    "eteacher-leads-proxy.gitter-omri.workers.dev": 2,
+    "longevitylifeacademy.pages.dev": 1,
+    "checkout.airwallex.com": 73,
+    "www.paypal.com": 4,
+    "applepay.cdn-apple.com": 1,
+    "static.airwallex.com": 8,
+    "o11y.airwallex.com": 42,
+    "bluewhale.airwallex.com": 12,
+    "turing.captcha.qcloud.com": 2,
+    "www.recaptcha.net": 10,
+    "3f5451d08253.cdn4.forter.com": 1,
+    "www.gstatic.com": 9,
+    "featureassets.org": 1,
+    "components.airwallex.com": 2,
+    "www.airwallex.com": 1,
+    "prodregistryv2.org": 1,
+    "turing.captcha.gtimg.com": 8,
+    "cdn0.forter.com": 4,
+    "a1df925fc3b940f9b5d9a37c4e950122-3f5451d08253.cdn.forter.com": 3,
+    "cdn3.forter.com": 1,
+    "cdn6.forter.com": 1,
+    "d2o5idwacg3gyw.cloudfront.net": 1,
+    "db7q4jg5rkhk8.cloudfront.net": 1,
+    "d6rak4b14t5gp.cloudfront.net": 1,
+    "1.1.1.1": 1,
+    "d2ol7oe51mr4n9.cloudfront.net": 4,
+    "cdn.jsdelivr.net": 3
+   },
+   "console": [
+    {
+     "t": 732,
+     "phase": "home",
+     "type": "error",
+     "text": "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+    },
+    {
+     "t": 1498,
+     "phase": "home",
+     "type": "warning",
+     "text": "[Meta Pixel] - Duplicate Pixel ID: 1440305917310328."
+    },
+    {
+     "t": 55175,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "[Meta Pixel] - You are sending a non-standard event 'Clicked_on_Enroll'. The preferred way to send these events is using trackCustom. See 'https://developers.facebook.com/docs/ads-for-websites/pixel-events/#events' for more information."
+    },
+    {
+     "t": 60122,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "Allow attribute will take precedence over 'allowpaymentrequest'."
+    },
+    {
+     "t": 60314,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "[Meta Pixel] - Duplicate Pixel ID: 1440305917310328."
+    },
+    {
+     "t": 60802,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "  WARN  [Statsig] Attempting to retrieve a StatsigClient but none was set."
+    },
+    {
+     "t": 61028,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "Unrecognized feature: 'private-token'."
+    },
+    {
+     "t": 61043,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0301C00CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 61183,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "Failed to create WebGPU Context Provider"
+    },
+    {
+     "t": 61218,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 61226,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 61226,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0901C00CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 61226,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A080D402CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 61260,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 61260,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 61260,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0B0D402CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 61333,
+     "phase": "checkout",
+     "type": "error",
+     "text": "{status: 401, message: Access denied, authentication failed, code: unauthorized, details: Object} []"
+    },
+    {
+     "t": 61507,
+     "phase": "checkout",
+     "type": "error",
+     "text": "requestStorageAccess: Permission denied."
+    },
+    {
+     "t": 61516,
+     "phase": "checkout",
+     "type": "error",
+     "text": "requestStorageAccess: Permission denied."
+    },
+    {
+     "t": 61599,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0E0D402CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 61604,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A010D502CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 61648,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0004A01CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 61705,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0304A01CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 69165,
+     "phase": "masterclass",
+     "type": "warning",
+     "text": "GSAP target .h-under .hu not found. https://gsap.com"
+    },
+    {
+     "t": 69165,
+     "phase": "masterclass",
+     "type": "warning",
+     "text": "GSAP target  not found. https://gsap.com"
+    },
+    {
+     "t": 76466,
+     "phase": "masterclass",
+     "type": "warning",
+     "text": "The resource https://d2ol7oe51mr4n9.cloudfront.net/user_3B2TkzjFQaqg6v69LxXPlh5VT9f/b7dec8a8-7ef1-4092-a8e1-0e6488022de6.jpg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentio"
+    }
+   ],
+   "pageErrors": [
+    {
+     "phase": "checkout",
+     "text": "nI"
+    },
+    {
+     "phase": "checkout",
+     "text": "nI"
+    }
+   ],
+   "failed": [
+    {
+     "phase": "home",
+     "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=2126850316.1793897729&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://ad.doubleclick.net/ccm/s/collect?auid=2126850316.1793897729&gtm=45He6b40h2v9251342453za200zd9251342453xeaxf1&fmt=8",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google.com/rmkt/collect/18139914538/?random=1793897729411&cv=11&fst=1793897729411&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b40h2v9251",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=0&auid=2126850316.1793897729&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&tid=A",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088za20ozb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/v2-nutrition-greens-v2.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/skill-skin.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l3l3l1l1&npa=",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "enroll",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b40h2v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728952&gcd=13l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "enroll",
+     "url": "https://connect.facebook.net//log/error?p=pixel&sl=0&v=2.9.435&e=Duplicate%20Pixel%20ID%3A%201440305917310328.&ue=1&rs=stable&rqm=FGET",
+     "err": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+     "phase": "masterclass",
+     "url": "https://www.longevitylifeacademy.com/julie-masterclass/assets/film/julie-film-720p.mp4",
+     "err": "net::ERR_ABORTED"
+    }
+   ],
+   "shots": [
+    "shots/com-iphone-01-home-first-screen.jpg",
+    "shots/com-iphone-02-screen01.jpg",
+    "shots/com-iphone-03-screen02.jpg",
+    "shots/com-iphone-04-screen03.jpg",
+    "shots/com-iphone-05-screen04.jpg",
+    "shots/com-iphone-06-screen05.jpg",
+    "shots/com-iphone-07-screen06.jpg",
+    "shots/com-iphone-08-screen07.jpg",
+    "shots/com-iphone-09-screen08.jpg",
+    "shots/com-iphone-10-screen09.jpg",
+    "shots/com-iphone-11-screen10.jpg",
+    "shots/com-iphone-12-screen11.jpg",
+    "shots/com-iphone-13-screen12.jpg",
+    "shots/com-iphone-14-screen13.jpg",
+    "shots/com-iphone-15-screen14.jpg",
+    "shots/com-iphone-16-screen15.jpg",
+    "shots/com-iphone-17-screen16.jpg",
+    "shots/com-iphone-18-screen17.jpg",
+    "shots/com-iphone-19-screen18.jpg",
+    "shots/com-iphone-20-screen19.jpg",
+    "shots/com-iphone-21-screen20.jpg",
+    "shots/com-iphone-22-screen21.jpg",
+    "shots/com-iphone-23-screen22.jpg",
+    "shots/com-iphone-24-screen23.jpg",
+    "shots/com-iphone-25-screen24.jpg",
+    "shots/com-iphone-26-screen25.jpg",
+    "shots/com-iphone-27-screen26.jpg",
+    "shots/com-iphone-28-screen27.jpg",
+    "shots/com-iphone-29-screen28.jpg",
+    "shots/com-iphone-30-screen29.jpg",
+    "shots/com-iphone-31-screen30.jpg",
+    "shots/com-iphone-32-screen31.jpg",
+    "shots/com-iphone-33-screen32.jpg",
+    "shots/com-iphone-34-screen33.jpg",
+    "shots/com-iphone-35-screen34.jpg",
+    "shots/com-iphone-36-screen35.jpg",
+    "shots/com-iphone-37-screen36.jpg",
+    "shots/com-iphone-38-screen37.jpg",
+    "shots/com-iphone-39-screen38.jpg",
+    "shots/com-iphone-40-screen39.jpg",
+    "shots/com-iphone-41-screen40.jpg",
+    "shots/com-iphone-42-screen41.jpg",
+    "shots/com-iphone-43-screen42.jpg",
+    "shots/com-iphone-44-screen43.jpg",
+    "shots/com-iphone-45-screen44.jpg",
+    "shots/com-iphone-46-screen45.jpg",
+    "shots/com-iphone-47-teachers.jpg",
+    "shots/com-iphone-teachers-section.jpg",
+    "shots/com-iphone-section-offer.jpg",
+    "shots/com-iphone-section-syllabus.jpg",
+    "shots/com-iphone-48-enroll-step1.jpg",
+    "shots/com-iphone-49-enroll-step2.jpg",
+    "shots/com-iphone-50-checkout-top.jpg",
+    "shots/com-iphone-51-checkout-full.jpg",
+    "shots/com-iphone-masterclass-packages.jpg",
+    "shots/com-iphone-52-masterclass-packages-view.jpg",
+    "shots/com-iphone-masterclass-card1.jpg",
+    "shots/com-iphone-masterclass-card2.jpg"
+   ],
+   "n": 52,
+   "phase": "end",
+   "t0": 1793897728224,
+   "notes": [],
+   "layout": {
+    "W": 390,
+    "H": 664,
+    "docW": 390,
+    "screens": 44.9,
+    "h1": "It's Your Life.\nLive It Well.",
+    "heroSub": "",
+    "secs": [
+     {
+      "id": "hero",
+      "screen": 0,
+      "h": 1.3,
+      "head": "It's Your Life. Live It Well."
+     },
+     {
+      "id": "syllabus",
+      "screen": 6.6,
+      "h": 2.1,
+      "head": "18 Live Sessions. 4 Phases. One Protocol."
+     },
+     {
+      "id": "offer",
+      "screen": 8.7,
+      "h": 2.8,
+      "head": "Tuition and coupon codes"
+     },
+     {
+      "id": "vip",
+      "screen": 11.5,
+      "h": 2.5,
+      "head": "Julie Gibson Clark's VIP Masterclass, live on November 14."
+     },
+     {
+      "id": "included",
+      "screen": 14,
+      "h": 2.6,
+      "head": "What the course includes"
+     },
+     {
+      "id": "cgm",
+      "screen": 16.6,
+      "h": 2.6,
+      "head": "Continuous Glucose Monitoring, Included in Your Course"
+     },
+     {
+      "id": "about",
+      "screen": 19.1,
+      "h": 1.9,
+      "head": "About Longevity Life Academy"
+     },
+     {
+      "id": "teachers",
+      "screen": 21.2,
+      "h": 5,
+      "head": "Taught by Leading Voices in Longevity Medicine"
+     },
+     {
+      "id": "how",
+      "screen": 26.2,
+      "h": 1.5,
+      "head": "How It Works"
+     },
+     {
+      "id": "skills",
+      "screen": 27.8,
+      "h": 2.5,
+      "head": "What Your Doctor Doesn't Have Time to Teach You."
+     },
+     {
+      "id": "lead-gen",
+      "screen": 37.4,
+      "h": 3,
+      "head": "Enroll Now in Longevity Life Academy"
+     },
+     {
+      "id": "faq",
+      "screen": 40.4,
+      "h": 2.6,
+      "head": "Questions worth answering."
+     },
+     {
+      "id": "apply",
+      "screen": 43,
+      "h": 0.6,
+      "head": "It's Your Life. Live It Well."
+     },
+     {
+      "id": "FOOTER",
+      "screen": 43.6,
+      "h": 1.3,
+      "head": ""
+     }
+    ],
+    "ctas": [
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "btn-primary btn-primary--lg",
+      "screen": 0.9,
+      "fixed": false
+     },
+     {
+      "text": "02 Sleep Actionable, science-backed protocols to optimize yo",
+      "href": "topics/sleep-circadian-health.html",
+      "id": "",
+      "cls": "topic-v2 topic-v2--indigo reveal",
+      "screen": 2.7,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 6.5,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 8.5,
+      "fixed": false
+     },
+     {
+      "text": "Apply code & enroll",
+      "href": "",
+      "id": "novApply",
+      "cls": "nov-apply",
+      "screen": 10.1,
+      "fixed": false
+     },
+     {
+      "text": "Reserve My Seat",
+      "href": "#offer",
+      "id": "",
+      "cls": "nov-vip-cta",
+      "screen": 13.7,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 26,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 27.6,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 30.2,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn deepdive-cta-btn",
+      "screen": 33.3,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 37.3,
+      "fixed": false
+     },
+     {
+      "text": "Start Chat on WhatsApp",
+      "href": "https://wa.me/12015023701",
+      "id": "",
+      "cls": "et-bump-btn bump-whatsapp lla-wa-inline",
+      "screen": 39.9,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Online Now · $79 month 1/mo Register → Choose your da",
+      "href": "#",
+      "id": "",
+      "cls": "lg-buy",
+      "screen": 40.1,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 42.8,
+      "fixed": false
+     },
+     {
+      "text": "ENROLL NOW The Longevity Blueprint $79 MONTH 1",
+      "href": "#offer",
+      "id": "llaFloatCta",
+      "cls": "lla-float-cta is-visible",
+      "screen": 0,
+      "fixed": true
+     }
+    ],
+    "vids": [
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/v2-nutrition-greens-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 350,
+      "h": 460,
+      "screen": 2
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/sleep-blog-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 350,
+      "h": 460,
+      "screen": 2.7
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/exercise-yoga-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 350,
+      "h": 460,
+      "screen": 3.5
+     },
+     {
+      "src": "/www.longevitylifeacademy.com/assets/supplements-wearables-know-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 350,
+      "h": 460,
+      "screen": 4.2
+     },
+     {
+      "src": "w.longevitylifeacademy.com/assets/stress-management-cold-plunge-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 350,
+      "h": 460,
+      "screen": 4.9
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/daily-protocol-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 350,
+      "h": 460,
+      "screen": 5.6
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 348,
+      "h": 318,
+      "screen": 28.4
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/v2-mental-bubbles.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 348,
+      "h": 318,
+      "screen": 28.9
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/skill-skin.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 348,
+      "h": 318,
+      "screen": 29.4
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/cta-bg.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 390,
+      "h": 398,
+      "screen": 43.1
+     }
+    ],
+    "fonts": [
+     "Inter normal 400",
+     "Inter normal 500",
+     "Inter normal 600",
+     "Inter normal 700",
+     "Inter normal 800",
+     "Instrument Serif italic 400",
+     "Codec Pro normal 400",
+     "Codec Pro italic 400"
+    ],
+    "textUnder14px": 51,
+    "mockBar": "",
+    "mockStrip": ""
+   },
+   "screens": 44.9,
+   "modalOpened": true,
+   "checkoutUrl": "https://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002",
+   "packagesFound": 1,
+   "pixel": [
+    {
+     "t": 1519,
+     "phase": "home",
+     "path": "/tr/",
+     "ev": "PageView",
+     "eid": "lla_pv_mw3se2e6wf52c524",
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {},
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 1655,
+     "phase": "home",
+     "path": "/tr/",
+     "ev": "ViewContent",
+     "eid": "lla_vc_mw3se2e6wf52c524",
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {
+      "content_name": "Longevity Life Academy",
+      "content_ids": "[\"longevity-life-academy\"]",
+      "content_type": "product"
+     },
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 55175,
+     "phase": "enroll",
+     "path": "/tr/",
+     "ev": "SubscribedButtonClick",
+     "eid": null,
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {
+      "buttonFeatures": "{\"classList\":\"btn-primary btn-primary--lg\",\"destination\":\"https://www.longevitylifeacademy.com/#offer\",\"id\":\"\",\"imageUrl",
+      "buttonText": "Enroll Now",
+      "formFeatures": "[]",
+      "pageFeatures": "{\"title\":\"Longevity Life Academy, Design the Life Ahead of You\"}"
+     },
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 55207,
+     "phase": "enroll",
+     "path": "/tr/",
+     "ev": "Clicked_on_Enroll",
+     "eid": null,
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {},
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 57054,
+     "phase": "enroll",
+     "path": "/tr/",
+     "ev": "SubscribedButtonClick",
+     "eid": null,
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {
+      "buttonFeatures": "{\"classList\":\"em-go\",\"destination\":\"\",\"id\":\"emGo1\",\"imageUrl\":\"\",\"innerText\":\"Continue\",\"numChildButtons\":0,\"tag\":\"butto",
+      "buttonText": "Continue",
+      "formFeatures": "[]",
+      "pageFeatures": "{\"title\":\"Longevity Life Academy, Design the Life Ahead of You\"}"
+     },
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 57054,
+     "phase": "enroll",
+     "path": "/tr/",
+     "ev": "AddToCart",
+     "eid": "lla_addtocart_1793897785269_cdlaio",
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {
+      "value": "79",
+      "currency": "USD",
+      "content_name": "Longevity Blueprint",
+      "content_type": "product",
+      "content_ids": "[\"lla-longevity-blueprint\"]",
+      "contents": "[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}]"
+     },
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 59917,
+     "phase": "enroll",
+     "path": "/tr/",
+     "ev": "SubscribedButtonClick",
+     "eid": null,
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {
+      "buttonFeatures": "{\"classList\":\"em-go\",\"destination\":\"\",\"id\":\"emGo2\",\"imageUrl\":\"\",\"innerText\":\"Continue\",\"numChildButtons\":0,\"tag\":\"butto",
+      "buttonText": "Continue",
+      "formFeatures": "[]",
+      "pageFeatures": "{\"title\":\"Longevity Life Academy, Design the Life Ahead of You\"}"
+     },
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 59936,
+     "phase": "enroll",
+     "path": "/tr/",
+     "ev": "InitiateCheckout",
+     "eid": "lla_initiatecheckout_1793897788145_cou76z",
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/",
+     "cd": {
+      "value": "79",
+      "currency": "USD",
+      "content_name": "Longevity Blueprint",
+      "content_type": "product",
+      "content_ids": "[\"lla-longevity-blueprint\"]",
+      "contents": "[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}]"
+     },
+     "ud": [
+      "external_id"
+     ]
+    },
+    {
+     "t": 60319,
+     "phase": "enroll",
+     "path": "/tr/",
+     "ev": "PageView",
+     "eid": "lla_pageview_1793897788301_jzzo9i",
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002",
+     "cd": {},
+     "ud": [
+      "external_id",
+      "em",
+      "ph",
+      "fn",
+      "ln",
+      "st",
+      "country"
+     ]
+    },
+    {
+     "t": 69499,
+     "phase": "masterclass",
+     "path": "/tr/",
+     "ev": "PageView",
+     "eid": "julie_pv_mw3sfj1yvm1ccc",
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/julie-masterclass/",
+     "cd": {},
+     "ud": []
+    },
+    {
+     "t": 69500,
+     "phase": "masterclass",
+     "path": "/tr/",
+     "ev": "ViewContent",
+     "eid": "julie_vc_mw3sfj1yvm1ccc",
+     "id": "1440305917310328",
+     "fbp": "fb.1.1793897729724.83957679284848703",
+     "fbc": null,
+     "dl": "https://www.longevitylifeacademy.com/julie-masterclass/",
+     "cd": {
+      "content_ids": "[\"julie-masterclass-standard\",\"julie-masterclass-vip\"]",
+      "content_type": "product",
+      "content_name": "Julie Gibson Clark Live Masterclass",
+      "product_line": "julie_masterclass"
+     },
+     "ud": []
+    }
+   ],
+   "relay": [
+    {
+     "t": 2417,
+     "phase": "home",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "PageView",
+       "event_id": "lla_pv_mw3se2e6wf52c524",
+       "url": "https://www.longevitylifeacademy.com/",
+       "fbp": "fb.1.1793897729724.83957679284848703",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "llamw3se27a3nmzfol0x7",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "release",
+      "fbp",
+      "fbc",
+      "fbclid"
+     ],
+     "body": "{\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"llamw3se27a3nmzfol0x7\",\"event_name\":\"PageView\",\"event_id\":\"lla_pv_mw3se2e6wf52c524\",\"event_time\":1793897729,\"url\":\"https://www.longevitylifeacademy.com/\",\"referrer\":\"\",\"release\":\"lla-page-meta-20261104-1\",\"fbp\":\"fb.1.1793897729724.83957679284848703\",\"fbc\":\"\",\"fbclid\":\"\"}"
+    },
+    {
+     "t": 2418,
+     "phase": "home",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "ViewContent",
+       "event_id": "lla_vc_mw3se2e6wf52c524",
+       "url": "https://www.longevitylifeacademy.com/",
+       "content_ids": [
+        "longevity-life-academy"
+       ],
+       "fbp": "fb.1.1793897729724.83957679284848703",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "llamw3se27a3nmzfol0x7",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "release",
+      "content_name",
+      "content_ids",
+      "content_type",
+      "fbp",
+      "fbc",
+      "fbclid"
+     ],
+     "body": "{\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"llamw3se27a3nmzfol0x7\",\"event_name\":\"ViewContent\",\"event_id\":\"lla_vc_mw3se2e6wf52c524\",\"event_time\":1793897729,\"url\":\"https://www.longevitylifeacademy.com/\",\"referrer\":\"\",\"release\":\"lla-page-meta-20261104-1\",\"content_name\":\"Longevity Life Academy\",\"content_ids\":[\"longevity-life-academy\"],\"content_type\":\"product\",\"fbp\":\"fb.1.1793897729724.83957679284848703\",\"fbc\":\"\",\"fbclid\":\"\"}"
+    },
+    {
+     "t": 58551,
+     "phase": "enroll",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "AddToCart",
+       "event_id": "lla_addtocart_1793897785269_cdlaio",
+       "url": "https://www.longevitylifeacademy.com/",
+       "value": 79,
+       "currency": "USD",
+       "content_ids": [
+        "lla-longevity-blueprint"
+       ],
+       "order_id": "",
+       "fbp": "fb.1.1793897729724.83957679284848703",
+       "email": "jane.auditor@lla-audit.dev",
+       "phone": "2125550147",
+       "fn": "jane",
+       "ln": "auditor",
+       "st": "",
+       "country": "us",
+       "external_id": "llamw3se27a3nmzfol0x7",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "event_name",
+      "event_id",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "value",
+      "currency",
+      "content_name",
+      "order_id",
+      "content_type",
+      "content_ids",
+      "contents",
+      "cta_location",
+      "event_time",
+      "user_agent",
+      "url",
+      "release",
+      "fbp",
+      "fbc"
+     ],
+     "body": "{\"event_name\":\"AddToCart\",\"event_id\":\"lla_addtocart_1793897785269_cdlaio\",\"email\":\"jane.auditor@lla-audit.dev\",\"phone\":\"2125550147\",\"fn\":\"jane\",\"ln\":\"auditor\",\"st\":\"\",\"country\":\"us\",\"external_id\":\"llamw3se27a3nmzfol0x7\",\"value\":79,\"currency\":\"USD\",\"content_name\":\"Longevity Blueprint\",\"order_id\":\"\",\"content_type\":\"product\",\"content_ids\":[\"lla-longevity-blueprint\"],\"contents\":[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}],\"cta_location\":\"\",\"event_time\":1793897785,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1\",\"url\":\"https://www.longevitylifeacademy.com/\",\"release\":\"lla-funnel-20261104-1\",\"fbp\":\"fb.1.1793897729724.83957679284848703\",\"fbc\":\"\"}"
+    },
+    {
+     "t": 59937,
+     "phase": "enroll",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "InitiateCheckout",
+       "event_id": "lla_initiatecheckout_1793897788145_cou76z",
+       "url": "https://www.longevitylifeacademy.com/",
+       "value": 79,
+       "currency": "USD",
+       "content_ids": [
+        "lla-longevity-blueprint"
+       ],
+       "order_id": "",
+       "fbp": "fb.1.1793897729724.83957679284848703",
+       "email": "jane.auditor@lla-audit.dev",
+       "phone": "12125550147",
+       "fn": "jane",
+       "ln": "auditor",
+       "st": "ny",
+       "country": "us",
+       "external_id": "llamw3se27a3nmzfol0x7",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "event_name",
+      "event_id",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "value",
+      "currency",
+      "content_name",
+      "order_id",
+      "content_type",
+      "content_ids",
+      "contents",
+      "cta_location",
+      "event_time",
+      "user_agent",
+      "url",
+      "release",
+      "fbp",
+      "fbc"
+     ],
+     "body": "{\"event_name\":\"InitiateCheckout\",\"event_id\":\"lla_initiatecheckout_1793897788145_cou76z\",\"email\":\"jane.auditor@lla-audit.dev\",\"phone\":\"12125550147\",\"fn\":\"jane\",\"ln\":\"auditor\",\"st\":\"ny\",\"country\":\"us\",\"external_id\":\"llamw3se27a3nmzfol0x7\",\"value\":79,\"currency\":\"USD\",\"content_name\":\"Longevity Blueprint\",\"order_id\":\"\",\"content_type\":\"product\",\"content_ids\":[\"lla-longevity-blueprint\"],\"contents\":[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}],\"cta_location\":\"\",\"event_time\":1793897788,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1\",\"url\":\"https://www.longevitylifeacademy.com/\",\"release\":\"lla-funnel-20261104-1\",\"fbp\":\"fb.1.1793897729724.83957679284848703\",\"fbc\":\"\"}"
+    },
+    {
+     "t": 61604,
+     "phase": "checkout",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "PageView",
+       "event_id": "lla_pageview_1793897788301_jzzo9i",
+       "url": "https://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002",
+       "value": 0,
+       "currency": "USD",
+       "content_ids": [],
+       "order_id": "",
+       "fbp": "fb.1.1793897729724.83957679284848703",
+       "email": "jane.auditor@lla-audit.dev",
+       "phone": "+12125550147",
+       "fn": "jane",
+       "ln": "auditor",
+       "st": "ny",
+       "country": "us",
+       "external_id": "llamw3se27a3nmzfol0x7",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "event_name",
+      "event_id",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "value",
+      "currency",
+      "content_name",
+      "order_id",
+      "content_type",
+      "content_ids",
+      "contents",
+      "cta_location",
+      "event_time",
+      "user_agent",
+      "url",
+      "fbp",
+      "fbc"
+     ],
+     "body": "{\"event_name\":\"PageView\",\"event_id\":\"lla_pageview_1793897788301_jzzo9i\",\"email\":\"jane.auditor@lla-audit.dev\",\"phone\":\"+12125550147\",\"fn\":\"jane\",\"ln\":\"auditor\",\"st\":\"ny\",\"country\":\"us\",\"external_id\":\"llamw3se27a3nmzfol0x7\",\"value\":0,\"currency\":\"USD\",\"content_name\":\"\",\"order_id\":\"\",\"content_type\":\"\",\"content_ids\":[],\"contents\":[],\"cta_location\":\"\",\"event_time\":1793897788,\"user_agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1\",\"url\":\"https://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002\",\"fbp\":\"fb.1.1793897729724.83957679284848703\",\"fbc\":\"\"}"
+    },
+    {
+     "t": 70891,
+     "phase": "masterclass",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "PageView",
+       "event_id": "julie_pv_mw3sfj1yvm1ccc",
+       "url": "https://www.longevitylifeacademy.com/julie-masterclass/",
+       "fbp": "fb.1.1793897729724.83957679284848703",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "mw3sfj1zve36ywjx9w",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "source",
+      "release",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "identity_source",
+      "fbp",
+      "fbc",
+      "fbclid"
+     ],
+     "body": "{\"source\":\"julie-masterclass\",\"release\":\"julie-meta-20261104-2\",\"event_name\":\"PageView\",\"event_id\":\"julie_pv_mw3sfj1yvm1ccc\",\"event_time\":1793897797,\"url\":\"https://www.longevitylifeacademy.com/julie-masterclass/\",\"referrer\":\"\",\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"mw3sfj1zve36ywjx9w\",\"identity_source\":\"anonymous\",\"fbp\":\"fb.1.1793897729724.83957679284848703\",\"fbc\":\"\",\"fbclid\":\"\"}"
+    },
+    {
+     "t": 70891,
+     "phase": "masterclass",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "ViewContent",
+       "event_id": "julie_vc_mw3sfj1yvm1ccc",
+       "url": "https://www.longevitylifeacademy.com/julie-masterclass/",
+       "content_ids": [
+        "julie-masterclass-standard",
+        "julie-masterclass-vip"
+       ],
+       "fbp": "fb.1.1793897729724.83957679284848703",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "mw3sfj1zve36ywjx9w",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "source",
+      "release",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "identity_source",
+      "fbp",
+      "fbc",
+      "fbclid",
+      "content_ids",
+      "content_type",
+      "content_name"
+     ],
+     "body": "{\"source\":\"julie-masterclass\",\"release\":\"julie-meta-20261104-2\",\"event_name\":\"ViewContent\",\"event_id\":\"julie_vc_mw3sfj1yvm1ccc\",\"event_time\":1793897797,\"url\":\"https://www.longevitylifeacademy.com/julie-masterclass/\",\"referrer\":\"\",\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"mw3sfj1zve36ywjx9w\",\"identity_source\":\"anonymous\",\"fbp\":\"fb.1.1793897729724.83957679284848703\",\"fbc\":\"\",\"fbclid\":\"\",\"content_ids\":[\"julie-masterclass-standard\",\"julie-masterclass-vip\"],\"content_type\":\"product\",\"content_name\":\"Julie Gibson Clark Live Masterclass\"}"
+    }
+   ],
+   "eventPairs": [
+    {
+     "phase": "home",
+     "ev": "PageView",
+     "eid": "lla_pv_mw3se2e6wf52c524",
+     "browser": true,
+     "server": true
+    },
+    {
+     "phase": "home",
+     "ev": "ViewContent",
+     "eid": "lla_vc_mw3se2e6wf52c524",
+     "browser": true,
+     "server": true
+    },
+    {
+     "phase": "enroll",
+     "ev": "SubscribedButtonClick",
+     "eid": null,
+     "browser": true,
+     "server": false
+    },
+    {
+     "phase": "enroll",
+     "ev": "Clicked_on_Enroll",
+     "eid": null,
+     "browser": true,
+     "server": false
+    },
+    {
+     "phase": "enroll",
+     "ev": "SubscribedButtonClick",
+     "eid": null,
+     "browser": true,
+     "server": false
+    },
+    {
+     "phase": "enroll",
+     "ev": "AddToCart",
+     "eid": "lla_addtocart_1793897785269_cdlaio",
+     "browser": true,
+     "server": true,
+     "value": "79",
+     "serverValue": 79
+    },
+    {
+     "phase": "enroll",
+     "ev": "SubscribedButtonClick",
+     "eid": null,
+     "browser": true,
+     "server": false
+    },
+    {
+     "phase": "enroll",
+     "ev": "InitiateCheckout",
+     "eid": "lla_initiatecheckout_1793897788145_cou76z",
+     "browser": true,
+     "server": true,
+     "value": "79",
+     "serverValue": 79
+    },
+    {
+     "phase": "enroll",
+     "ev": "PageView",
+     "eid": "lla_pageview_1793897788301_jzzo9i",
+     "browser": true,
+     "server": true,
+     "serverValue": 0
+    },
+    {
+     "phase": "masterclass",
+     "ev": "PageView",
+     "eid": "julie_pv_mw3sfj1yvm1ccc",
+     "browser": true,
+     "server": true
+    },
+    {
+     "phase": "masterclass",
+     "ev": "ViewContent",
+     "eid": "julie_vc_mw3sfj1yvm1ccc",
+     "browser": true,
+     "server": true
+    }
+   ]
+  },
+  "com-desktop": {
+   "id": "com-desktop",
+   "device": "com-desktop",
+   "pixelRaw": [],
+   "worker": [
+    {
+     "t": 39067,
+     "phase": "enroll",
+     "method": "POST",
+     "path": "/api/lead/ecomm",
+     "body": "{\"ProductID\":26,\"FirstName\":\"Jane\",\"LastName\":\"Auditor\",\"Email\":\"jane.auditor@lla-audit.dev\",\"MobilePhone\":\"+12125550147\",\"CountryIsoCode\":\"US\",\"CountryIsoCodeByIp\":\"US\",\"LandingPage\":\"https://www.longevitylifeacademy.com/\",\"UserAgent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36\",\"ReferringSite\":\"www.longevitylifeacademy.com\",\"QueryString\":\"\",\"MainAbroadCourseId\":258,\"PreferredCourseId\":170275,\"PrefferdCourseID\":170275,\"ActivitySessionLevel1ID\":2395,\"SemesterID\":2395,\"AbroadCourseId\":1774,\"LanguageId\":101,\"IsTrial\":0,\"FirstPayment\":79,\"NumberOfPayments\":4,\"LeftToPay\":676,\"DynamicParameters\":\"plan=monthly&stateisocodebyip=NY&message=US%20State%20NY%20SELF%20SERVICE%20ECOMM%20CHECKOUT%20The%20Longevity%20Blueprint%20Start%20MonNov232026800PMEST500PMPSTweekly2026-11-23%20SMS%20consent%20yes\"}"
+    },
+    {
+     "t": 39953,
+     "phase": "enroll",
+     "method": "POST",
+     "path": "/api/checkout/details",
+     "body": "{\"studentId\":\"900000001\",\"orderId\":\"900000002\"}"
+    }
+   ],
+   "blocked": [
+    {
+     "t": 1366,
+     "phase": "home",
+     "host": "www.google.com",
+     "method": "POST",
+     "path": "/ccm/collect",
+     "q": "?rcb=15&frm=0&apvc=1&ae=g&auid=1099316533.1793897730&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&en=page_view&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&scrsrc=www.googletagmanager.com&rnd=224794207.1793897730&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6b31v9251342453za200zd9251342453xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~119381663~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123814183~123820800&tft=1793897729584&tfd=1306&fmt=8"
+    },
+    {
+     "t": 1366,
+     "phase": "home",
+     "host": "ad.doubleclick.net",
+     "method": "POST",
+     "path": "/ccm/s/collect",
+     "q": "?auid=1099316533.1793897730&gtm=45He6b31v9251342453za200zd9251342453xeaxf1&fmt=8"
+    },
+    {
+     "t": 1550,
+     "phase": "home",
+     "host": "googleads.g.doubleclick.net",
+     "method": "GET",
+     "path": "/pagead/viewthroughconversion/18139914538/",
+     "q": "?random=1793897729725&cv=11&fst=1793897729725&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b31v9251478310za20ozb9251342453zd9251342453xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~119381663~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123814185~123820802&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=13&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1099316533.1793897730&uaa=x86&uab=64&uafvl=Hea"
+    },
+    {
+     "t": 1551,
+     "phase": "home",
+     "host": "www.google.com",
+     "method": "POST",
+     "path": "/rmkt/collect/18139914538/",
+     "q": "?random=1793897729725&cv=11&fst=1793897729725&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b31v9251478310za20ozb9251342453zd9251342453xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~119381663~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123814185~123820802&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=13&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1099316533.1793897730&uaa=x86&uab=64&uaf"
+    },
+    {
+     "t": 1551,
+     "phase": "home",
+     "host": "www.google.com",
+     "method": "POST",
+     "path": "/ccm/collect",
+     "q": "?rcb=13&frm=0&apvc=0&auid=1099316533.1793897730&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&tid=AW-18139914538&en=page_view&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&scrsrc=www.googletagmanager.com&rnd=224794207.1793897730&navt=n&npa=0&gtm=45be6b31v9251478310za20ozb9251342453zd9251342453xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~119381663~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123814185~123820802&tft=1793897729776&tfd=1498&tids=AW-18139914538&fmt=8"
+    },
+    {
+     "t": 1709,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088za20ozb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=1931569312.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=7.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~123820801&sid=1793897729&sct=1&seg=0&dl=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&dt=Lon"
+    },
+    {
+     "t": 14520,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1931569312.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=7.0.0&uaw=0&ul=en-us&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~123820801&dp=%2F&sid=1793897729&sct=1&seg=0&dl=https%3A%2F%2Fwww.longevit"
+    },
+    {
+     "t": 21358,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1931569312.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=7.0.0&uaw=0&ul=en-us&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~123820801&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeac"
+    },
+    {
+     "t": 26911,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1931569312.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=7.0.0&uaw=0&ul=en-us&_s=4&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~123820801&dp=%2F&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.lon"
+    },
+    {
+     "t": 29616,
+     "phase": "home",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1931569312.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=7.0.0&uaw=0&ul=en-us&_s=5&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~123820801&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacad"
+    },
+    {
+     "t": 34146,
+     "phase": "enroll",
+     "host": "www.googleadservices.com",
+     "method": "GET",
+     "path": "/pagead/conversion/18139914538/",
+     "q": "?random=1793897762350&cv=11&fst=1793897762350&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6b31v9251478310z89251342453za20gzb9251342453zd9251342453xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~119381663~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123814185~123820802&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=13&label=5-ZSCLj986ccEKrC5MlD&capi=1&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&bttype=purchase&value=0&hn=www.googleadservice"
+    },
+    {
+     "t": 34147,
+     "phase": "enroll",
+     "host": "www.googleadservices.com",
+     "method": "POST",
+     "path": "/ccm/conversion/18139914538/",
+     "q": "?random=1793897762350&cv=11&fst=1793897762350&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6b31v9251478310z89251342453za20gzb9251342453zd9251342453xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~119381663~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123814185~123820802&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.longevitylifeacademy.com%2F&rcb=13&label=5-ZSCLj986ccEKrC5MlD&capi=1&frm=0&tiba=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&bttype=purchase&value=0&hn=www.googleadservice"
+    },
+    {
+     "t": 34615,
+     "phase": "enroll",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1931569312.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=7.0.0&uaw=0&ul=en-us&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~123820801&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeac"
+    },
+    {
+     "t": 39371,
+     "phase": "enroll",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1931569312.1793897730&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B131.0.6778.33%7CChromium%3B131.0.6778.33%7CNot_A%2520Brand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=7.0.0&uaw=0&ul=en-us&_s=7&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~123820801&sid=1793897729&sct=1&seg=1&dl=https%3A%2F%2Fwww.longevitylifeacademy.c"
+    },
+    {
+     "t": 40634,
+     "phase": "enroll",
+     "host": "featureassets.org",
+     "method": "POST",
+     "path": "/v1/initialize",
+     "body": "91HbsVnb6ICbyV1ajFmYsxWYmJCLiUGZjJDZxcDMzMmNh1SNldDOtETY0QTL0YTZz0SNiJGM2QzYmJiOiQUSu9WazNXZzJCLiADOyETN0YWO0UjMi1CMyQDOtMGOiRTL3QjN00iZyMDZjlzMyIiOiQUSlxmYhR3ciwiI05WZpx2YtQHcpJ3YzFmdhpmI6ISZwlHVrR2ciwiIw4yNx4yMiojIu9WazJXZWtGZzJye6ISY0FGZhRXZNdWazRXY0NnIswGb15mOi0Wdzt2Ylh2YfxGb1ZmIsU2csFmZ6ICZlR3c"
+    },
+    {
+     "t": 40954,
+     "phase": "enroll",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-20TZ4CN27E&cid=1445117226.1793897769&en=page_view&dl=https%3A%2F%2Fcheckout.airwallex.com%2F%23%2Felements%2Fdropin%3Foptions%3D%257B%2522intent_id%2522%253A%2522int_AUDITMOCK0000000000%2522%252C%2522client_secret%2522%253A%2522AUDIT_MOCK_SECRET%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522mode%2522%253A%2522recurring%2522%252C%2522customer_id%2522%253A%2522cus_AUDITMOCK%2522%252C%2522recurringOptions%2522%253A%257B%2522next_triggered_by%2522%253A%2522merchant%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522merchant_trigger_reason%2522%253A%2522unscheduled%2522%257D"
+    },
+    {
+     "t": 40956,
+     "phase": "enroll",
+     "host": "prodregistryv2.org",
+     "method": "POST",
+     "path": "/v1/rgstr",
+     "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�U�n�6\u0010�\u0015cΔ��ծ���.���E��R\u0018�\u00119RإH�\u001cn�\u001a�����ذ['@\f\u0004hN\"0�7o�=jd9@���||�=A\r�����Zi�\u000b�e\u0000\u00011���n��.��E٢�T�\u0015U�̊\n1kV��B\u0015�V���p\u000b\u0002d\f���EH�(���w\nj��!�\"�����Y(\u0005�4E@p��tA~ yp��N@��/�Q{g{��@Y'�0x��d�,���#�HP�h���\u0018\u00152�\u001c,�\rC\r�j�h��\u0004\u0002z�\u0007��\u000et\u000b5�#y4fb7�NS�\f\u0002X�\u0014\u0018�\u0001�e�]U۲�T�:\u001f�C�\u0013�g��i�\u001a,�G�\u000f{OE\n�\u0001�\u0016���\u000f\f��\"d�"
+    },
+    {
+     "t": 41160,
+     "phase": "enroll",
+     "host": "www.google-analytics.com",
+     "method": "POST",
+     "path": "/g/collect",
+     "q": "?v=2&tid=G-20TZ4CN27E&cid=1445117226.1793897769&sid=1793897769&en=payment_failure&dl=https%3A%2F%2Fcheckout.airwallex.com%2F%23%2Felements%2Fdropin%3Foptions%3D%257B%2522intent_id%2522%253A%2522int_AUDITMOCK0000000000%2522%252C%2522client_secret%2522%253A%2522AUDIT_MOCK_SECRET%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522mode%2522%253A%2522recurring%2522%252C%2522customer_id%2522%253A%2522cus_AUDITMOCK%2522%252C%2522recurringOptions%2522%253A%257B%2522next_triggered_by%2522%253A%2522merchant%2522%252C%2522currency%2522%253A%2522USD%2522%252C%2522merchant_trigger_reason%2522%253A%2522"
+    },
+    {
+     "t": 42171,
+     "phase": "checkout",
+     "host": "cdn0.forter.com",
+     "method": "POST",
+     "path": "/3f5451d08253/da96dd8311bd4d63bd31b51edbf79f90/wpt.json",
+     "body": "{\"wpt\":61.70000000001164,\"sct\":0,\"dlt\":0}"
+    },
+    {
+     "t": 42179,
+     "phase": "checkout",
+     "host": "da96dd8311bd4d63bd31b51edbf79f90-3f5451d08253.cdn.forter.com",
+     "method": "POST",
+     "path": "/prop.json",
+     "body": ""
+    },
+    {
+     "t": 42607,
+     "phase": "checkout",
+     "host": "da96dd8311bd4d63bd31b51edbf79f90-3f5451d08253.cdn.forter.com",
+     "method": "POST",
+     "path": "/prop.json",
+     "body": ""
+    },
+    {
+     "t": 42608,
+     "phase": "checkout",
+     "host": "cdn6.forter.com",
+     "method": "POST",
+     "path": "/3f5451d08253/da96dd8311bd4d63bd31b51edbf79f90/prop.json",
+     "body": ""
+    },
+    {
+     "t": 42651,
+     "phase": "checkout",
+     "host": "cdn3.forter.com",
+     "method": "POST",
+     "path": "/events",
+     "body": "�Be\u0001���u;\\�4�\u0004�\nT&?e-%�s\u001b��tP�\u0001JV�8*h5L8шֈ&N��5���\r#�G���\f\\ǰ�u��Ū�3\u000e�e��>�� j�N�ߞ�^���ڃ���w��_\u0002�^N\u0014/x\u000en_��\u0002a^&f�\u001dur=�\n\u000f��\n�j\u0004p���8T�7\u001d�6����ZP8��\u001c]Ã��-EQ�p�$W\u0007r��Z�L!|�N\u0018#\b_\u001f\u0010_=�?NW�TmK���\u0006�&�8q���\u000b$\u000fK���^�l�Y�*�HLಆ�{d?\u001a��\u0002�J���O� \u0019 �e٨�(�\u0015.+6��\u0007�\u0014'{]:d�\u0011ܯ��Wi\u0015���\u001e�9@\u0003QM��a�h�:(l3��עa���ژİ\u0002�J��}�0"
+    },
+    {
+     "t": 42963,
+     "phase": "checkout",
+     "host": "d2o5idwacg3gyw.cloudfront.net",
+     "method": "POST",
+     "path": "/events",
+     "body": "�Be\u0001���u;\\�4�\u0018��T&?az\u000f\u0003/\\q\u0003d`��W��}���\u000e��K�z�c/]� u|��V�\u0001UDI�\u0005\"�b�d\u001e-:�.��P�B&4g�\u001f��Qh�\u001fP��\u0015�\u0010%嶾<\u001f=�6\u0006{\u0014R��o,J�+\u0007��^\u0013\tZ�M붥�2���ڝ׫!F�r\u0002�#Y\u0015�#Ȕ4)cbԜ|UX�b�3\u0000�^!\u001fw}��k�Hr�\u0004��Jw���R�1�N7��\u0004;v�Yj�\u0015$<�\u000fg\\<J��z9�\u0017O�|\t�+U1D\u0002��%�;K��,\u0002��Y4��\u000f�����۔\u000bS2�K_�}@�zd��(@��g)���0����&Rb^C@\nW���j������\t>ˎk�f{�N�\u0010�\u0015 �"
+    },
+    {
+     "t": 43109,
+     "phase": "checkout",
+     "host": "da96dd8311bd4d63bd31b51edbf79f90-3f5451d08253.cdn.forter.com",
+     "method": "POST",
+     "path": "/prop.json",
+     "body": ""
+    },
+    {
+     "t": 43627,
+     "phase": "checkout",
+     "host": "d6rak4b14t5gp.cloudfront.net",
+     "method": "POST",
+     "path": "/ZXZlbnRz",
+     "body": "�Be\u0001���u;\\�4i\u0004�\nT'C�.\f�p�6���_��?ʛG?5L8шֈ&N��5�+�\r#��\u0013��\r>'\u0018����Ū�3�@O/u\u001e��@��L�\u001f��Zsth�1��(�����g����(�⭾�\\�3\t��T%^ߌoRȍ���i�\u0018��ۗ�:e_\"֥���m���gM��\u0012ڰ\u0003&\u001c���쬌�u�����\u0005�`�\u0016\u0019̜�\u001d����\u0017���K��#Ō��Y\u001f&E_�[;�F�g�\u001e����*E�}K��c}\u001d�\u000b\u0010�\n��\u000b�\u001f�\u0001��d\u0006t\u001er\t\u000f�E\u001c�܅\u000e0:�_PLn^9\u001f7Xܡ'��\n�U���\u000f�O����Gl��\u0000C���\u0016g�\u0010�mk�Q'�p\n�\u001db\f\u001a5��\u0006"
+    },
+    {
+     "t": 43934,
+     "phase": "checkout",
+     "host": "1.1.1.1",
+     "method": "POST",
+     "path": "/dns-query",
+     "body": "\u0000\u0000\u0001\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0003app\u0013siteperformancetest\u0003net\u0000\u0000\u0010\u0000\u0001"
+    }
+   ],
+   "hosts": {
+    "www.longevitylifeacademy.com": 93,
+    "fonts.googleapis.com": 5,
+    "fonts.cdnfonts.com": 7,
+    "connect.facebook.net": 6,
+    "www.googletagmanager.com": 4,
+    "fonts.gstatic.com": 8,
+    "www.google.com": 3,
+    "ad.doubleclick.net": 1,
+    "googleads.g.doubleclick.net": 1,
+    "www.google-analytics.com": 9,
+    "lla-ac-events.vercel.app": 7,
+    "www.googleadservices.com": 2,
+    "eteacher-leads-proxy.gitter-omri.workers.dev": 2,
+    "longevitylifeacademy.pages.dev": 1,
+    "checkout.airwallex.com": 73,
+    "www.paypal.com": 4,
+    "o11y.airwallex.com": 40,
+    "applepay.cdn-apple.com": 1,
+    "static.airwallex.com": 6,
+    "turing.captcha.qcloud.com": 2,
+    "www.recaptcha.net": 6,
+    "www.gstatic.com": 9,
+    "components.airwallex.com": 2,
+    "bluewhale.airwallex.com": 10,
+    "featureassets.org": 1,
+    "www.airwallex.com": 1,
+    "3f5451d08253.cdn4.forter.com": 1,
+    "prodregistryv2.org": 1,
+    "turing.captcha.gtimg.com": 8,
+    "cdn0.forter.com": 4,
+    "da96dd8311bd4d63bd31b51edbf79f90-3f5451d08253.cdn.forter.com": 3,
+    "cdn6.forter.com": 1,
+    "cdn3.forter.com": 1,
+    "d2o5idwacg3gyw.cloudfront.net": 1,
+    "db7q4jg5rkhk8.cloudfront.net": 1,
+    "d6rak4b14t5gp.cloudfront.net": 1,
+    "1.1.1.1": 1,
+    "d2ol7oe51mr4n9.cloudfront.net": 4,
+    "cdn.jsdelivr.net": 3
+   },
+   "console": [
+    {
+     "t": 730,
+     "phase": "home",
+     "type": "error",
+     "text": "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+    },
+    {
+     "t": 1588,
+     "phase": "home",
+     "type": "warning",
+     "text": "[Meta Pixel] - Duplicate Pixel ID: 1440305917310328."
+    },
+    {
+     "t": 34113,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "[Meta Pixel] - You are sending a non-standard event 'Clicked_on_Enroll'. The preferred way to send these events is using trackCustom. See 'https://developers.facebook.com/docs/ads-for-websites/pixel-events/#events' for more information."
+    },
+    {
+     "t": 39818,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "[Meta Pixel] - Duplicate Pixel ID: 1440305917310328."
+    },
+    {
+     "t": 39974,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "Allow attribute will take precedence over 'allowpaymentrequest'."
+    },
+    {
+     "t": 40318,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40325,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40331,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40339,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40340,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40624,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "  WARN  [Statsig] Attempting to retrieve a StatsigClient but none was set."
+    },
+    {
+     "t": 40638,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40640,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40640,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40661,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40841,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 40842,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 40842,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 40842,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+     "t": 40842,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40960,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 40960,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41039,
+     "phase": "enroll",
+     "type": "error",
+     "text": "{status: 401, code: unauthorized, message: Access denied, authentication failed, details: Object} []"
+    },
+    {
+     "t": 41042,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41144,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41146,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41146,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41148,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41149,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41150,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41151,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41365,
+     "phase": "enroll",
+     "type": "error",
+     "text": "requestStorageAccess: Permission denied."
+    },
+    {
+     "t": 41367,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0004A01CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 41427,
+     "phase": "enroll",
+     "type": "error",
+     "text": "requestStorageAccess: Permission denied."
+    },
+    {
+     "t": 41431,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41431,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41432,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41432,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41440,
+     "phase": "enroll",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41470,
+     "phase": "enroll",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0304A01CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 41548,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "Failed to create WebGPU Context Provider"
+    },
+    {
+     "t": 41548,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41566,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41601,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41607,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0901C00CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 41607,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A0604A01CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 41630,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41631,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41633,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41644,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41692,
+     "phase": "checkout",
+     "type": "warning",
+     "text": "[GroupMarkerNotSet(crbug.com/242999)!:A080D402CC350000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content."
+    },
+    {
+     "t": 41697,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41732,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 41778,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 43354,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 43382,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 43596,
+     "phase": "checkout",
+     "type": "error",
+     "text": "Failed to load resource: the server responded with a status of 403 ()"
+    },
+    {
+     "t": 51035,
+     "phase": "masterclass",
+     "type": "warning",
+     "text": "GSAP target .h-under .hu not found. https://gsap.com"
+    },
+    {
+     "t": 51035,
+     "phase": "masterclass",
+     "type": "warning",
+     "text": "GSAP target  not found. https://gsap.com"
+    },
+    {
+     "t": 55553,
+     "phase": "masterclass",
+     "type": "warning",
+     "text": "The resource https://d2ol7oe51mr4n9.cloudfront.net/user_3B2TkzjFQaqg6v69LxXPlh5VT9f/b7dec8a8-7ef1-4092-a8e1-0e6488022de6.jpg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentio"
+    },
+    {
+     "t": 59214,
+     "phase": "end",
+     "type": "warning",
+     "text": "The resource https://d2ol7oe51mr4n9.cloudfront.net/user_3B2TkzjFQaqg6v69LxXPlh5VT9f/b7dec8a8-7ef1-4092-a8e1-0e6488022de6.jpg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentio"
+    }
+   ],
+   "pageErrors": [],
+   "failed": [
+    {
+     "phase": "home",
+     "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=1099316533.1793897730&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1099316533.1793897730&gtm=45He6b31v9251342453za200zd9251342453xeaxf1&fmt=8",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google.com/rmkt/collect/18139914538/?random=1793897729725&cv=11&fst=1793897729725&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b31v925147",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=0&auid=1099316533.1793897730&dt=Longevity%20Life%20Academy%2C%20Design%20the%20Life%20Ahead%20of%20You&tid=",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088za20ozb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/v2-nutrition-greens-v2.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/skill-skin.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/daily-protocol-v2.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/v2-mental-bubbles.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.longevitylifeacademy.com/assets/cta-bg.mp4",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "home",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l3l1l1&npa=0&",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "enroll",
+     "url": "https://www.googleadservices.com/ccm/conversion/18139914538/?random=1793897762350&cv=11&fst=1793897762350&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "enroll",
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDT6DPCBQN&gtm=45je6b31v9251386088z89251342453za20gzb9251342453zd9251342453xf1&_p=1793897728954&gcd=13l3l3l",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "phase": "masterclass",
+     "url": "https://www.longevitylifeacademy.com/julie-masterclass/assets/film/julie-film-720p.mp4",
+     "err": "net::ERR_ABORTED"
+    }
+   ],
+   "shots": [
+    "shots/com-desktop-01-home-first-screen.jpg",
+    "shots/com-desktop-02-screen01.jpg",
+    "shots/com-desktop-03-screen02.jpg",
+    "shots/com-desktop-04-screen03.jpg",
+    "shots/com-desktop-05-screen04.jpg",
+    "shots/com-desktop-06-screen05.jpg",
+    "shots/com-desktop-07-screen06.jpg",
+    "shots/com-desktop-08-screen07.jpg",
+    "shots/com-desktop-09-screen08.jpg",
+    "shots/com-desktop-10-screen09.jpg",
+    "shots/com-desktop-11-screen10.jpg",
+    "shots/com-desktop-12-screen11.jpg",
+    "shots/com-desktop-13-screen12.jpg",
+    "shots/com-desktop-14-screen13.jpg",
+    "shots/com-desktop-15-screen14.jpg",
+    "shots/com-desktop-16-screen15.jpg",
+    "shots/com-desktop-17-screen16.jpg",
+    "shots/com-desktop-18-screen17.jpg",
+    "shots/com-desktop-19-screen18.jpg",
+    "shots/com-desktop-20-screen19.jpg",
+    "shots/com-desktop-21-screen20.jpg",
+    "shots/com-desktop-22-screen21.jpg",
+    "shots/com-desktop-23-screen22.jpg",
+    "shots/com-desktop-24-screen23.jpg",
+    "shots/com-desktop-25-screen24.jpg",
+    "shots/com-desktop-26-screen25.jpg",
+    "shots/com-desktop-27-teachers.jpg",
+    "shots/com-desktop-teachers-section.jpg",
+    "shots/com-desktop-section-offer.jpg",
+    "shots/com-desktop-section-syllabus.jpg",
+    "shots/com-desktop-28-enroll-step1.jpg",
+    "shots/com-desktop-29-enroll-step2.jpg",
+    "shots/com-desktop-30-checkout-top.jpg",
+    "shots/com-desktop-31-checkout-full.jpg",
+    "shots/com-desktop-masterclass-packages.jpg",
+    "shots/com-desktop-32-masterclass-packages-view.jpg",
+    "shots/com-desktop-masterclass-card1.jpg",
+    "shots/com-desktop-masterclass-card2.jpg"
+   ],
+   "n": 32,
+   "phase": "end",
+   "t0": 1793897728228,
+   "notes": [],
+   "layout": {
+    "W": 1440,
+    "H": 900,
+    "docW": 1440,
+    "screens": 24.3,
+    "h1": "It's Your Life.\nLive It Well.",
+    "heroSub": "",
+    "secs": [
+     {
+      "id": "hero",
+      "screen": 0,
+      "h": 1,
+      "head": "It's Your Life. Live It Well."
+     },
+     {
+      "id": "syllabus",
+      "screen": 2.9,
+      "h": 1.4,
+      "head": "18 Live Sessions. 4 Phases. One Protocol."
+     },
+     {
+      "id": "offer",
+      "screen": 4.3,
+      "h": 1.3,
+      "head": "Tuition and coupon codes"
+     },
+     {
+      "id": "vip",
+      "screen": 5.6,
+      "h": 1.1,
+      "head": "Julie Gibson Clark's VIP Masterclass, live on November 14."
+     },
+     {
+      "id": "included",
+      "screen": 6.8,
+      "h": 1,
+      "head": "What the course includes"
+     },
+     {
+      "id": "cgm",
+      "screen": 7.8,
+      "h": 1.1,
+      "head": "Continuous Glucose Monitoring, Included in Your Course"
+     },
+     {
+      "id": "about",
+      "screen": 8.9,
+      "h": 1.2,
+      "head": "About Longevity Life Academy"
+     },
+     {
+      "id": "teachers",
+      "screen": 10.2,
+      "h": 1.9,
+      "head": "Taught by Leading Voices in Longevity Medicine"
+     },
+     {
+      "id": "how",
+      "screen": 12.1,
+      "h": 1.2,
+      "head": "How It Works"
+     },
+     {
+      "id": "skills",
+      "screen": 13.3,
+      "h": 1.3,
+      "head": "What Your Doctor Doesn't Have Time to Teach You."
+     },
+     {
+      "id": "lead-gen",
+      "screen": 19.2,
+      "h": 1.7,
+      "head": "Enroll Now in Longevity Life Academy"
+     },
+     {
+      "id": "faq",
+      "screen": 20.9,
+      "h": 2.1,
+      "head": "Questions worth answering."
+     },
+     {
+      "id": "apply",
+      "screen": 23,
+      "h": 0.8,
+      "head": "It's Your Life. Live It Well."
+     },
+     {
+      "id": "FOOTER",
+      "screen": 23.8,
+      "h": 0.5,
+      "head": ""
+     }
+    ],
+    "ctas": [
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "btn-primary btn-primary--lg",
+      "screen": 0.8,
+      "fixed": false
+     },
+     {
+      "text": "02 Sleep Actionable, science-backed protocols to optimize yo",
+      "href": "topics/sleep-circadian-health.html",
+      "id": "",
+      "cls": "topic-v2 topic-v2--indigo reveal",
+      "screen": 1.5,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 2.8,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 4.2,
+      "fixed": false
+     },
+     {
+      "text": "Apply code & enroll",
+      "href": "",
+      "id": "novApply",
+      "cls": "nov-apply",
+      "screen": 5.4,
+      "fixed": false
+     },
+     {
+      "text": "Reserve My Seat",
+      "href": "#offer",
+      "id": "",
+      "cls": "nov-vip-cta",
+      "screen": 6.5,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 11.9,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 13.2,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 14.5,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn deepdive-cta-btn",
+      "screen": 17.1,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 19,
+      "fixed": false
+     },
+     {
+      "text": "Start Chat on WhatsApp",
+      "href": "https://wa.me/12015023701",
+      "id": "",
+      "cls": "et-bump-btn bump-whatsapp lla-wa-inline",
+      "screen": 20.4,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Online Now · $79 month 1/mo Register → Choose your da",
+      "href": "#",
+      "id": "",
+      "cls": "lg-buy",
+      "screen": 20.6,
+      "fixed": false
+     },
+     {
+      "text": "Enroll Now",
+      "href": "#offer",
+      "id": "",
+      "cls": "section-cta-btn",
+      "screen": 22.8,
+      "fixed": false
+     },
+     {
+      "text": "ENROLL NOW The Longevity Blueprint $79 MONTH 1",
+      "href": "#offer",
+      "id": "llaFloatCta",
+      "cls": "lla-float-cta is-visible",
+      "screen": 0.1,
+      "fixed": true
+     }
+    ],
+    "vids": [
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/v2-nutrition-greens-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 387,
+      "h": 520,
+      "screen": 1.5
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/sleep-blog-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 387,
+      "h": 520,
+      "screen": 1.5
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/exercise-yoga-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 387,
+      "h": 520,
+      "screen": 1.5
+     },
+     {
+      "src": "/www.longevitylifeacademy.com/assets/supplements-wearables-know-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 387,
+      "h": 520,
+      "screen": 2.1
+     },
+     {
+      "src": "w.longevitylifeacademy.com/assets/stress-management-cold-plunge-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 387,
+      "h": 520,
+      "screen": 2.1
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/daily-protocol-v2.mp4",
+      "preload": "auto",
+      "autoplay": true,
+      "w": 387,
+      "h": 520,
+      "screen": 2.1
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 390,
+      "h": 418,
+      "screen": 13.9
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/v2-mental-bubbles.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 390,
+      "h": 418,
+      "screen": 13.9
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/skill-skin.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 390,
+      "h": 418,
+      "screen": 13.9
+     },
+     {
+      "src": "https://www.longevitylifeacademy.com/assets/cta-bg.mp4",
+      "preload": "metadata",
+      "autoplay": true,
+      "w": 1440,
+      "h": 720,
+      "screen": 23
+     }
+    ],
+    "fonts": [
+     "Inter normal 400",
+     "Inter normal 500",
+     "Inter normal 600",
+     "Inter normal 700",
+     "Inter normal 800",
+     "Instrument Serif italic 400",
+     "Codec Pro normal 400",
+     "Codec Pro italic 400"
+    ],
+    "textUnder14px": 51,
+    "mockBar": "",
+    "mockStrip": ""
+   },
+   "screens": 24.3,
+   "modalOpened": true,
+   "checkoutUrl": "https://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002",
+   "packagesFound": 1,
+   "pixel": [],
+   "relay": [
+    {
+     "t": 2855,
+     "phase": "home",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "PageView",
+       "event_id": "lla_pv_mw3se2e6tc5gqih3",
+       "url": "https://www.longevitylifeacademy.com/",
+       "fbp": "fb.1.1793897729818.632022430172583424",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "llamw3se27a1qjac04klh",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "release",
+      "fbp",
+      "fbc",
+      "fbclid"
+     ],
+     "body": "{\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"llamw3se27a1qjac04klh\",\"event_name\":\"PageView\",\"event_id\":\"lla_pv_mw3se2e6tc5gqih3\",\"event_time\":1793897729,\"url\":\"https://www.longevitylifeacademy.com/\",\"referrer\":\"\",\"release\":\"lla-page-meta-20261104-1\",\"fbp\":\"fb.1.1793897729818.632022430172583424\",\"fbc\":\"\",\"fbclid\":\"\"}"
+    },
+    {
+     "t": 2855,
+     "phase": "home",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "ViewContent",
+       "event_id": "lla_vc_mw3se2e6tc5gqih3",
+       "url": "https://www.longevitylifeacademy.com/",
+       "content_ids": [
+        "longevity-life-academy"
+       ],
+       "fbp": "fb.1.1793897729818.632022430172583424",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "llamw3se27a1qjac04klh",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "release",
+      "content_name",
+      "content_ids",
+      "content_type",
+      "fbp",
+      "fbc",
+      "fbclid"
+     ],
+     "body": "{\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"llamw3se27a1qjac04klh\",\"event_name\":\"ViewContent\",\"event_id\":\"lla_vc_mw3se2e6tc5gqih3\",\"event_time\":1793897729,\"url\":\"https://www.longevitylifeacademy.com/\",\"referrer\":\"\",\"release\":\"lla-page-meta-20261104-1\",\"content_name\":\"Longevity Life Academy\",\"content_ids\":[\"longevity-life-academy\"],\"content_type\":\"product\",\"fbp\":\"fb.1.1793897729818.632022430172583424\",\"fbc\":\"\",\"fbclid\":\"\"}"
+    },
+    {
+     "t": 37394,
+     "phase": "enroll",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "AddToCart",
+       "event_id": "lla_addtocart_1793897764113_tbh8m6",
+       "url": "https://www.longevitylifeacademy.com/",
+       "value": 79,
+       "currency": "USD",
+       "content_ids": [
+        "lla-longevity-blueprint"
+       ],
+       "order_id": "",
+       "fbp": "fb.1.1793897729818.632022430172583424",
+       "email": "jane.auditor@lla-audit.dev",
+       "phone": "2125550147",
+       "fn": "jane",
+       "ln": "auditor",
+       "st": "",
+       "country": "us",
+       "external_id": "llamw3se27a1qjac04klh",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "event_name",
+      "event_id",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "value",
+      "currency",
+      "content_name",
+      "order_id",
+      "content_type",
+      "content_ids",
+      "contents",
+      "cta_location",
+      "event_time",
+      "user_agent",
+      "url",
+      "release",
+      "fbp",
+      "fbc"
+     ],
+     "body": "{\"event_name\":\"AddToCart\",\"event_id\":\"lla_addtocart_1793897764113_tbh8m6\",\"email\":\"jane.auditor@lla-audit.dev\",\"phone\":\"2125550147\",\"fn\":\"jane\",\"ln\":\"auditor\",\"st\":\"\",\"country\":\"us\",\"external_id\":\"llamw3se27a1qjac04klh\",\"value\":79,\"currency\":\"USD\",\"content_name\":\"Longevity Blueprint\",\"order_id\":\"\",\"content_type\":\"product\",\"content_ids\":[\"lla-longevity-blueprint\"],\"contents\":[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}],\"cta_location\":\"\",\"event_time\":1793897764,\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36\",\"url\":\"https://www.longevitylifeacademy.com/\",\"release\":\"lla-funnel-20261104-1\",\"fbp\":\"fb.1.1793897729818.632022430172583424\",\"fbc\":\"\"}"
+    },
+    {
+     "t": 39088,
+     "phase": "enroll",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "InitiateCheckout",
+       "event_id": "lla_initiatecheckout_1793897767297_bnfb9o",
+       "url": "https://www.longevitylifeacademy.com/",
+       "value": 79,
+       "currency": "USD",
+       "content_ids": [
+        "lla-longevity-blueprint"
+       ],
+       "order_id": "",
+       "fbp": "fb.1.1793897729818.632022430172583424",
+       "email": "jane.auditor@lla-audit.dev",
+       "phone": "12125550147",
+       "fn": "jane",
+       "ln": "auditor",
+       "st": "ny",
+       "country": "us",
+       "external_id": "llamw3se27a1qjac04klh",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "event_name",
+      "event_id",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "value",
+      "currency",
+      "content_name",
+      "order_id",
+      "content_type",
+      "content_ids",
+      "contents",
+      "cta_location",
+      "event_time",
+      "user_agent",
+      "url",
+      "release",
+      "fbp",
+      "fbc"
+     ],
+     "body": "{\"event_name\":\"InitiateCheckout\",\"event_id\":\"lla_initiatecheckout_1793897767297_bnfb9o\",\"email\":\"jane.auditor@lla-audit.dev\",\"phone\":\"12125550147\",\"fn\":\"jane\",\"ln\":\"auditor\",\"st\":\"ny\",\"country\":\"us\",\"external_id\":\"llamw3se27a1qjac04klh\",\"value\":79,\"currency\":\"USD\",\"content_name\":\"Longevity Blueprint\",\"order_id\":\"\",\"content_type\":\"product\",\"content_ids\":[\"lla-longevity-blueprint\"],\"contents\":[{\"id\":\"lla-longevity-blueprint\",\"quantity\":1,\"item_price\":79}],\"cta_location\":\"\",\"event_time\":1793897767,\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36\",\"url\":\"https://www.longevitylifeacademy.com/\",\"release\":\"lla-funnel-20261104-1\",\"fbp\":\"fb.1.1793897729818.632022430172583424\",\"fbc\":\"\"}"
+    },
+    {
+     "t": 41270,
+     "phase": "enroll",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "PageView",
+       "event_id": "lla_pageview_1793897767862_6rxq7m",
+       "url": "https://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002",
+       "value": 0,
+       "currency": "USD",
+       "content_ids": [],
+       "order_id": "",
+       "fbp": "fb.1.1793897729818.632022430172583424",
+       "email": "jane.auditor@lla-audit.dev",
+       "phone": "+12125550147",
+       "fn": "jane",
+       "ln": "auditor",
+       "st": "ny",
+       "country": "us",
+       "external_id": "llamw3se27a1qjac04klh",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "event_name",
+      "event_id",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "value",
+      "currency",
+      "content_name",
+      "order_id",
+      "content_type",
+      "content_ids",
+      "contents",
+      "cta_location",
+      "event_time",
+      "user_agent",
+      "url",
+      "fbp",
+      "fbc"
+     ],
+     "body": "{\"event_name\":\"PageView\",\"event_id\":\"lla_pageview_1793897767862_6rxq7m\",\"email\":\"jane.auditor@lla-audit.dev\",\"phone\":\"+12125550147\",\"fn\":\"jane\",\"ln\":\"auditor\",\"st\":\"ny\",\"country\":\"us\",\"external_id\":\"llamw3se27a1qjac04klh\",\"value\":0,\"currency\":\"USD\",\"content_name\":\"\",\"order_id\":\"\",\"content_type\":\"\",\"content_ids\":[],\"contents\":[],\"cta_location\":\"\",\"event_time\":1793897767,\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36\",\"url\":\"https://www.longevitylifeacademy.com/checkout.html?stid=900000001&orderid=900000002\",\"fbp\":\"fb.1.1793897729818.632022430172583424\",\"fbc\":\"\"}"
+    },
+    {
+     "t": 52550,
+     "phase": "masterclass",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "PageView",
+       "event_id": "julie_pv_mw3sf4uui9wr6m",
+       "url": "https://www.longevitylifeacademy.com/julie-masterclass/",
+       "fbp": "fb.1.1793897729818.632022430172583424",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "mw3sf4uvie5o1kc4xu",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "source",
+      "release",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "identity_source",
+      "fbp",
+      "fbc",
+      "fbclid"
+     ],
+     "body": "{\"source\":\"julie-masterclass\",\"release\":\"julie-meta-20261104-2\",\"event_name\":\"PageView\",\"event_id\":\"julie_pv_mw3sf4uui9wr6m\",\"event_time\":1793897778,\"url\":\"https://www.longevitylifeacademy.com/julie-masterclass/\",\"referrer\":\"\",\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"mw3sf4uvie5o1kc4xu\",\"identity_source\":\"anonymous\",\"fbp\":\"fb.1.1793897729818.632022430172583424\",\"fbc\":\"\",\"fbclid\":\"\"}"
+    },
+    {
+     "t": 52551,
+     "phase": "masterclass",
+     "path": "/api/meta/capi",
+     "events": [
+      {
+       "event_name": "ViewContent",
+       "event_id": "julie_vc_mw3sf4uui9wr6m",
+       "url": "https://www.longevitylifeacademy.com/julie-masterclass/",
+       "content_ids": [
+        "julie-masterclass-standard",
+        "julie-masterclass-vip"
+       ],
+       "fbp": "fb.1.1793897729818.632022430172583424",
+       "fn": "",
+       "ln": "",
+       "st": "",
+       "country": "",
+       "external_id": "mw3sf4uvie5o1kc4xu",
+       "test_event_code": null
+      }
+     ],
+     "topKeys": [
+      "source",
+      "release",
+      "event_name",
+      "event_id",
+      "event_time",
+      "url",
+      "referrer",
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "st",
+      "country",
+      "external_id",
+      "identity_source",
+      "fbp",
+      "fbc",
+      "fbclid",
+      "content_ids",
+      "content_type",
+      "content_name"
+     ],
+     "body": "{\"source\":\"julie-masterclass\",\"release\":\"julie-meta-20261104-2\",\"event_name\":\"ViewContent\",\"event_id\":\"julie_vc_mw3sf4uui9wr6m\",\"event_time\":1793897778,\"url\":\"https://www.longevitylifeacademy.com/julie-masterclass/\",\"referrer\":\"\",\"email\":\"\",\"phone\":\"\",\"fn\":\"\",\"ln\":\"\",\"st\":\"\",\"country\":\"\",\"external_id\":\"mw3sf4uvie5o1kc4xu\",\"identity_source\":\"anonymous\",\"fbp\":\"fb.1.1793897729818.632022430172583424\",\"fbc\":\"\",\"fbclid\":\"\",\"content_ids\":[\"julie-masterclass-standard\",\"julie-masterclass-vip\"],\"content_type\":\"product\",\"content_name\":\"Julie Gibson Clark Live Masterclass\"}"
+    }
+   ],
+   "eventPairs": [
+    {
+     "phase": "home",
+     "ev": "PageView",
+     "eid": "lla_pv_mw3se2e6tc5gqih3",
+     "browser": false,
+     "server": true
+    },
+    {
+     "phase": "home",
+     "ev": "ViewContent",
+     "eid": "lla_vc_mw3se2e6tc5gqih3",
+     "browser": false,
+     "server": true
+    },
+    {
+     "phase": "enroll",
+     "ev": "AddToCart",
+     "eid": "lla_addtocart_1793897764113_tbh8m6",
+     "browser": false,
+     "server": true,
+     "serverValue": 79
+    },
+    {
+     "phase": "enroll",
+     "ev": "InitiateCheckout",
+     "eid": "lla_initiatecheckout_1793897767297_bnfb9o",
+     "browser": false,
+     "server": true,
+     "serverValue": 79
+    },
+    {
+     "phase": "enroll",
+     "ev": "PageView",
+     "eid": "lla_pageview_1793897767862_6rxq7m",
+     "browser": false,
+     "server": true,
+     "serverValue": 0
+    },
+    {
+     "phase": "masterclass",
+     "ev": "PageView",
+     "eid": "julie_pv_mw3sf4uui9wr6m",
+     "browser": false,
+     "server": true
+    },
+    {
+     "phase": "masterclass",
+     "ev": "ViewContent",
+     "eid": "julie_vc_mw3sf4uui9wr6m",
+     "browser": false,
+     "server": true
+    }
+   ]
+  }
+ },
+ "live": {},
+ "finishedAt": "2026-11-05T16:56:46.920Z"
+}
