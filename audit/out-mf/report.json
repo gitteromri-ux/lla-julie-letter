@@ -5,7 +5,7 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
         {
@@ -21,12 +21,12 @@
           "w": 350
         }
       ],
-      "height": 17652,
+      "height": 22631,
       "vh": 664,
-      "screens": 26.6,
+      "screens": 34.1,
       "overflowX": 0,
       "broken": [
-        "cgm-man.jpg"
+        "julie-seated.jpg"
       ],
       "videosPlaying": 0,
       "videos": 15,
@@ -38,7 +38,7 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
         {
@@ -54,12 +54,12 @@
           "w": 372
         }
       ],
-      "height": 17593,
+      "height": 22441,
       "vh": 839,
-      "screens": 21,
+      "screens": 26.7,
       "overflowX": 0,
       "broken": [
-        "cgm-man.jpg"
+        "julie-seated.jpg"
       ],
       "videosPlaying": 1,
       "videos": 15,
@@ -71,7 +71,7 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
         {
@@ -87,12 +87,12 @@
           "w": 280
         }
       ],
-      "height": 19653,
+      "height": 25282,
       "vh": 568,
-      "screens": 34.6,
+      "screens": 44.5,
       "overflowX": 0,
       "broken": [
-        "cgm-man.jpg"
+        "julie-seated.jpg"
       ],
       "videosPlaying": 7,
       "videos": 15,
@@ -104,28 +104,28 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
         {
           "src": "cells-light.mp4",
           "paused": true,
           "readyState": 0,
-          "w": 1395
+          "w": 1440
         },
         {
           "src": "full-film-720p.mp4",
           "paused": true,
           "readyState": 0,
-          "w": 583
+          "w": 560
         }
       ],
-      "height": 18082,
+      "height": 22771,
       "vh": 900,
-      "screens": 20.1,
+      "screens": 25.3,
       "overflowX": 0,
       "broken": [
-        "cgm-man.jpg"
+        "julie-seated.jpg"
       ],
       "videosPlaying": 1,
       "videos": 15,
@@ -149,7 +149,7 @@
         },
         {
           "k": "hero",
-          "opensCheckout": true
+          "found": false
         },
         {
           "k": "julie",
@@ -185,7 +185,7 @@
         "step2Text": "Preferred class time Mon Nov 23 · 8:00 PM ET (5:00 PM PT) Wed Nov 25 · 12:00 PM ET (9:00 AM PT) The Longevity Blueprint Schedule: 18 live sessions across 18 weeks, one session every week Time: Monday 8:00 PM ET or Wednesday 12:00 PM ET Lesson duration: 50 min Period: 18 weeks Course tuition $79 for month 1, then $169 a month for 4 months. $755 total. Masterclass credit JULIE249 applied. I have pro",
         "err": ""
       },
-      "ctaCount": 15,
+      "ctaCount": 17,
       "trackingCount": 2
     },
     "desktop": {
@@ -203,7 +203,7 @@
         },
         {
           "k": "hero",
-          "opensCheckout": true
+          "found": false
         },
         {
           "k": "julie",
@@ -239,7 +239,7 @@
         "step2Text": "Preferred class time Mon Nov 23 · 8:00 PM ET (5:00 PM PT) Wed Nov 25 · 12:00 PM ET (9:00 AM PT) The Longevity Blueprint Schedule: 18 live sessions across 18 weeks, one session every week Time: Monday 8:00 PM ET or Wednesday 12:00 PM ET Lesson duration: 50 min Period: 18 weeks Course tuition $79 for month 1, then $169 a month for 4 months. $755 total. Masterclass credit JULIE249 applied. I have pro",
         "err": ""
       },
-      "ctaCount": 15,
+      "ctaCount": 17,
       "trackingCount": 2
     }
   }
