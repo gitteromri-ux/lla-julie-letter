@@ -28,7 +28,7 @@ jobs:
       - name: Wait for GitHub Pages to publish the latest commit
         run: |
           for i in $(seq 1 30); do
-            if curl -s "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/?n=$i" | grep -q "169 a month for 4 months"; then echo live; break; fi
+            if curl -s "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/?n=$i" | grep -q "One price. <span class=\"pk-accent\">Everything included"; then echo live; break; fi
             sleep 10
           done
       - name: Screenshot the live page
