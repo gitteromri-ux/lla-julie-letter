@@ -4,13 +4,19 @@
       "tracking": [],
       "blockedPosts": [],
       "errors": [],
-      "failed": [],
+      "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/pace-poster.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/curve-poster.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/pace-poster.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/curve-poster.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-goldenhour-crop.jpg"
+      ],
       "heroVideo": [
         {
           "src": "cells-light.mp4",
-          "paused": true,
+          "paused": false,
           "readyState": 4,
-          "w": 0
+          "w": 390
         },
         {
           "src": "full-film-720p.mp4",
@@ -19,13 +25,15 @@
           "w": 350
         }
       ],
-      "height": 19105,
+      "height": 17574,
       "vh": 664,
-      "screens": 28.8,
+      "screens": 26.5,
       "overflowX": 0,
-      "broken": [],
-      "videosPlaying": 1,
-      "videos": 12,
+      "broken": [
+        "julie-goldenhour-crop.jpg"
+      ],
+      "videosPlaying": 0,
+      "videos": 15,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -39,7 +47,7 @@
           "src": "cells-light.mp4",
           "paused": true,
           "readyState": 0,
-          "w": 0
+          "w": 412
         },
         {
           "src": "full-film-720p.mp4",
@@ -48,13 +56,13 @@
           "w": 372
         }
       ],
-      "height": 18998,
+      "height": 17577,
       "vh": 839,
-      "screens": 22.6,
+      "screens": 20.9,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 1,
-      "videos": 12,
+      "videos": 15,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -67,8 +75,8 @@
         {
           "src": "cells-light.mp4",
           "paused": true,
-          "readyState": 0,
-          "w": 0
+          "readyState": 4,
+          "w": 320
         },
         {
           "src": "full-film-720p.mp4",
@@ -77,13 +85,13 @@
           "w": 280
         }
       ],
-      "height": 21371,
+      "height": 19454,
       "vh": 568,
-      "screens": 37.6,
+      "screens": 34.3,
       "overflowX": 0,
       "broken": [],
-      "videosPlaying": 5,
-      "videos": 12,
+      "videosPlaying": 7,
+      "videos": 15,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -97,7 +105,7 @@
           "src": "cells-light.mp4",
           "paused": true,
           "readyState": 0,
-          "w": 1440
+          "w": 1395
         },
         {
           "src": "full-film-720p.mp4",
@@ -106,13 +114,13 @@
           "w": 583
         }
       ],
-      "height": 18211,
+      "height": 18239,
       "vh": 900,
-      "screens": 20.2,
+      "screens": 20.3,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 1,
-      "videos": 12,
+      "videos": 15,
       "floater": "lla-float-cta is-visible mf-hide",
       "whatsapp": true
     }
@@ -136,7 +144,7 @@
           "opensCheckout": true
         },
         {
-          "k": "vip",
+          "k": "julie",
           "opensCheckout": true
         },
         {
@@ -148,7 +156,11 @@
           "opensCheckout": true
         },
         {
-          "k": "pillars",
+          "k": "learn",
+          "opensCheckout": true
+        },
+        {
+          "k": "news",
           "found": false
         },
         {
@@ -186,7 +198,7 @@
           "opensCheckout": true
         },
         {
-          "k": "vip",
+          "k": "julie",
           "opensCheckout": true
         },
         {
@@ -198,7 +210,11 @@
           "opensCheckout": true
         },
         {
-          "k": "pillars",
+          "k": "learn",
+          "opensCheckout": true
+        },
+        {
+          "k": "news",
           "found": false
         },
         {
