@@ -1,0 +1,45 @@
+name: meta-final-shots
+on:
+  push:
+    branches: [ccr-fb60a687-apnfd5]
+    paths: ['audit/meta-final.js']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: lla-live-audit
+  cancel-in-progress: false
+jobs:
+  shots:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright
+        working-directory: audit
+        timeout-minutes: 8
+        run: |
+          npm init -y >/dev/null
+          npm i playwright@1.49.1
+          npx playwright install --with-deps chromium
+      - name: Wait for GitHub Pages to publish the latest commit
+        run: |
+          for i in $(seq 1 30); do
+            if curl -s "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/?n=$i" | grep -q "November 14, 1:00 PM ET"; then echo live; break; fi
+            sleep 10
+          done
+      - name: Screenshot the live page
+        working-directory: audit
+        continue-on-error: true
+        run: node meta-final.js
+      - name: Commit results
+        run: |
+          git config user.name "lla-audit-bot"
+          git config user.email "lla-audit-bot@users.noreply.github.com"
+          git add -A audit/out-meta
+          git commit -m "Meta final live shots $(date -u +%FT%TZ) [skip ci]" || echo "nothing to commit"
+          git pull --rebase origin ccr-fb60a687-apnfd5 || true
+          git push origin HEAD:ccr-fb60a687-apnfd5
