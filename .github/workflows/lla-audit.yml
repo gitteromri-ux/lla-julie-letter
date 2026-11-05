@@ -1,0 +1,41 @@
+name: lla-live-audit
+on:
+  push:
+    branches: [ccr-fb60a687-apnfd5]
+    paths: ['audit/run.js', 'audit/trigger.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: lla-live-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Safety net. Tracking, relay and CRM hosts resolve to nowhere on this runner
+        run: |
+          echo "0.0.0.0 lla-ac-events.vercel.app eteacher-leads-proxy.gitter-omri.workers.dev www.facebook.com facebook.com web.facebook.com m.facebook.com business.facebook.com www.google-analytics.com region1.google-analytics.com analytics.google.com stats.g.doubleclick.net googleads.g.doubleclick.net td.doubleclick.net www.googleadservices.com px.ads.linkedin.com static.cloudflareinsights.com cloudflareinsights.com" | sudo tee -a /etc/hosts
+          getent hosts lla-ac-events.vercel.app eteacher-leads-proxy.gitter-omri.workers.dev www.facebook.com || true
+      - name: Install Playwright
+        working-directory: audit
+        run: |
+          npm init -y >/dev/null
+          npm i playwright@1.49.1
+          npx playwright install --with-deps chromium webkit
+      - name: Run audit
+        working-directory: audit
+        continue-on-error: true
+        run: node run.js
+      - name: Commit results
+        run: |
+          git config user.name "lla-audit-bot"
+          git config user.email "lla-audit-bot@users.noreply.github.com"
+          git add -A audit/out
+          git commit -m "Audit results $(date -u +%FT%TZ) [skip ci]" || echo "nothing to commit"
+          git push origin HEAD:ccr-fb60a687-apnfd5
