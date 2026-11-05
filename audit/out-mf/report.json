@@ -19,7 +19,7 @@
           "w": 350
         }
       ],
-      "height": 20476,
+      "height": 20462,
       "vh": 664,
       "screens": 30.8,
       "overflowX": 0,
@@ -48,7 +48,7 @@
           "w": 372
         }
       ],
-      "height": 20226,
+      "height": 20181,
       "vh": 839,
       "screens": 24.1,
       "overflowX": 0,
@@ -77,9 +77,9 @@
           "w": 280
         }
       ],
-      "height": 22376,
+      "height": 22504,
       "vh": 568,
-      "screens": 39.4,
+      "screens": 39.6,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 5,
@@ -106,9 +106,9 @@
           "w": 560
         }
       ],
-      "height": 21105,
+      "height": 21108,
       "vh": 900,
-      "screens": 23.4,
+      "screens": 23.5,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 0,
@@ -137,7 +137,7 @@
         },
         {
           "k": "julie",
-          "found": false
+          "opensCheckout": false
         },
         {
           "k": "nav",
@@ -211,7 +211,7 @@
         },
         {
           "k": "julie",
-          "found": false
+          "opensCheckout": false
         },
         {
           "k": "nav",

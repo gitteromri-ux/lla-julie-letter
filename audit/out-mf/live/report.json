@@ -1,0 +1,110 @@
+{
+ "url": "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/",
+ "fixtureSha": "215c2db400dd5dbb",
+ "status": 200,
+ "servedSha": "215c2db400dd5dbb",
+ "sameAsBuild": true,
+ "tries": 1,
+ "iphone": {
+  "tracking": [],
+  "logos": [
+   {
+    "cls": "nav-logo-img",
+    "src": "lla-logo-no-tagline@2x.png",
+    "natural": "1268x397",
+    "shown": "109x34",
+    "dpr": 3,
+    "filter": "drop-shadow(rgba(0, 0, 0, 0.45) 0px 2px 8px)"
+   },
+   {
+    "cls": "hero-wordmark-img",
+    "src": "lla-wordmark-only-transparent@2x.png?v=10",
+    "natural": "397x253",
+    "shown": "64x41",
+    "dpr": 3,
+    "filter": "none"
+   }
+  ],
+  "order": [
+   "hero",
+   "topics",
+   "syllabus",
+   "cgm",
+   "julie",
+   "pricing",
+   "how",
+   "about",
+   "trust-strip",
+   "teachers",
+   "deepdive",
+   "skills",
+   "testimonials",
+   "included",
+   "value",
+   "bioquiz",
+   "faq",
+   "lead-gen",
+   "apply"
+  ],
+  "#julie": {
+   "screens": 0.66
+  },
+  "#pricing": {
+   "screens": 1.77
+  },
+  "#cgm": {
+   "screens": 1.41
+  }
+ },
+ "desktop": {
+  "tracking": [],
+  "logos": [
+   {
+    "cls": "nav-logo-img",
+    "src": "lla-logo-no-tagline@2x.png",
+    "natural": "1268x397",
+    "shown": "141x44",
+    "dpr": 2,
+    "filter": "drop-shadow(rgba(0, 0, 0, 0.45) 0px 2px 8px)"
+   },
+   {
+    "cls": "hero-wordmark-img",
+    "src": "lla-wordmark-only-transparent@2x.png?v=10",
+    "natural": "397x253",
+    "shown": "112x71",
+    "dpr": 2,
+    "filter": "none"
+   }
+  ],
+  "order": [
+   "hero",
+   "topics",
+   "syllabus",
+   "cgm",
+   "julie",
+   "pricing",
+   "how",
+   "about",
+   "trust-strip",
+   "teachers",
+   "deepdive",
+   "skills",
+   "testimonials",
+   "included",
+   "value",
+   "bioquiz",
+   "faq",
+   "lead-gen",
+   "apply"
+  ],
+  "#julie": {
+   "screens": 0.4
+  },
+  "#pricing": {
+   "screens": 1.34
+  },
+  "#cgm": {
+   "screens": 0.89
+  }
+ }
+}
