@@ -5,7 +5,7 @@
  * - no real order, lead, payment or Meta event is created. */
 const { chromium, webkit, devices } = require('playwright');
 const fs = require('fs'); const path = require('path'); const crypto = require('crypto');
-const OUT = path.join(__dirname, 'out'); const SHOTS = path.join(OUT, 'shots'); const LIVE = path.join(OUT, 'live');
+const OUT = path.join(__dirname, process.env.AUDIT_SET === '3' ? 'out3' : 'out'); const SHOTS = path.join(OUT, 'shots'); const LIVE = path.join(OUT, 'live');
 fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(SHOTS, { recursive: true }); fs.mkdirSync(LIVE, { recursive: true });
 const SITE = process.env.LLA_SITE || 'https://longevitylifeacademy.pages.dev';
 const FBCLID = 'IwZXh0bgNhZW0BMABhZGlkAasYz9rA1XcBHfU_Lq3Kx7MzZ3oAbCdEf-AUDIT1105';
@@ -379,13 +379,54 @@ async function scenarioSilenced(cr) {
   sc.phase = 'end'; await ctx.close(); summarise(sc); save();
 }
 
+async function scenarioExtra(cr) {
+  const sc = report.scenarios.extra = { id: 'G-iphone-ctas-form', device: 'iPhone 14 viewport, Chromium' };
+  const ctx = await cr.newContext({ ...devices['iPhone 14'], locale: 'en-US', timezoneId: 'America/New_York' });
+  await setup(ctx, sc); const page = await ctx.newPage(); watch(page, sc); sc.checks = {};
+  sc.phase = 'land'; await page.goto(LAND.replace('AUDIT1105', 'AUDIT1105G'), { waitUntil: 'load', timeout: 120000 }).catch(() => {}); await sleep(4000);
+  // 1 floating bar after scrolling into the page
+  sc.phase = 'floating-bar';
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight * 0.35)); await sleep(1500);
+  const barInfo = await page.evaluate(() => { const a = document.querySelector('#mockBar a'); if (!a) return null; const r = a.getBoundingClientRect(); const bar = document.getElementById('mockBar'); return { href: a.getAttribute('href'), text: a.innerText.trim(), inView: r.top >= 0 && r.bottom <= innerHeight, x: r.left + r.width / 2, y: r.top + r.height / 2, barVisible: bar ? getComputedStyle(bar).visibility + '/' + getComputedStyle(bar).opacity + '/' + getComputedStyle(bar).transform : null, topEl: (() => { const e = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2); return e ? (e.id || e.tagName) + '.' + String(e.className).slice(0, 30) : null; })() }; });
+  sc.checks.floatingBar = { info: barInfo };
+  await shot(page, sc, 'floating-bar-before');
+  if (barInfo && barInfo.inView) { const y0 = await page.evaluate(() => scrollY); await page.mouse.click(barInfo.x, barInfo.y); await sleep(1500); sc.checks.floatingBar.opensModal = await modalOpen(page); sc.checks.floatingBar.scrolledTo = Math.round(await page.evaluate(() => scrollY)) - Math.round(y0); await shot(page, sc, 'floating-bar-after'); }
+  if (await modalOpen(page)) { const x = await vis(page, '#enrollModal .em-x'); if (x) await x.click().catch(() => {}); await sleep(600); }
+  // 2 offer card buttons
+  sc.phase = 'offer-cta';
+  const off = await page.$('#offer'); if (off) { await off.scrollIntoViewIfNeeded().catch(() => {}); await sleep(800); }
+  sc.checks.offerButtons = await page.evaluate(() => [...document.querySelectorAll('#offer a, #offer button')].filter(e => e.getClientRects().length).map(e => ({ tag: e.tagName, id: e.id, text: (e.innerText || '').trim().slice(0, 50), href: e.getAttribute('href') || '' })));
+  const ob = await vis(page, '#offer button:has-text("enroll"), #offer a:has-text("enroll"), #codeApply');
+  if (ob) { await ob.scrollIntoViewIfNeeded().catch(() => {}); await shot(page, sc, 'offer-card'); await ob.click().catch(() => {}); await sleep(1800); sc.checks.offerCta = { text: (await ob.innerText().catch(() => '')).trim(), opensModal: await modalOpen(page), modalStep: (await modalText(page) || '').slice(0, 160), url: page.url().slice(0, 120) }; await shot(page, sc, 'offer-cta-after'); }
+  if (await modalOpen(page)) { const x = await vis(page, '#enrollModal .em-x'); if (x) await x.click().catch(() => {}); await sleep(600); }
+  // 3 callback form
+  sc.phase = 'callback-form';
+  const form = page.locator('#ask form').first();
+  if (await form.count()) {
+    await form.scrollIntoViewIfNeeded().catch(() => {}); await sleep(600);
+    sc.checks.formFields = await form.evaluate(f => [...f.querySelectorAll('input,select,textarea,button')].map(e => ({ tag: e.tagName, type: e.type, id: e.id, name: e.name, req: e.required, ph: e.placeholder || '', visible: !!e.getClientRects().length })));
+    const fill = async (sel, v) => { const e = await vis(page, '#ask ' + sel); if (e) { await e.fill(v).catch(() => {}); return true; } return false; };
+    await fill('input[name*="first" i], input[id*="first" i]', 'Sam'); await fill('input[name*="last" i], input[id*="last" i]', 'Upfront');
+    await fill('input[type=email]', 'sam.upfront@lla-audit.dev'); await fill('input[type=tel]', '3125550178'); await fill('textarea', 'Audit test question, please ignore.');
+    for (const s of await page.locator('#ask form select').all()) { if (await s.isVisible().catch(() => false)) { const v = await s.locator('option').evaluateAll(os => (os.find(o => o.value && !o.disabled) || {}).value); const cur = await s.inputValue().catch(() => ''); if (!cur && v) await s.selectOption(v).catch(() => {}); } }
+    for (const c of await page.locator('#ask form input[type=checkbox]').all()) { if (await c.isVisible().catch(() => false)) await c.check({ force: true }).catch(() => {}); }
+    await shot(page, sc, 'callback-filled');
+    const btn = await vis(page, '#ask form button[type=submit], #ask form button:has-text("Send"), #ask form [type=submit]');
+    const before = sc.worker.length; if (btn) await btn.click().catch(() => {}); await sleep(4500);
+    sc.checks.callback = { submitted: sc.worker.length > before, workerCalls: sc.worker.slice(before).map(w => w.method + ' ' + w.path), invalid: await page.evaluate(() => [...document.querySelectorAll('#ask form :invalid')].map(e => e.name || e.id)).catch(() => null), msg: await page.evaluate(() => ((document.querySelector('#ask form .form-error, #ask .form-success, #ask [role=alert], #ask .ok, #ask .success') || {}).innerText || '').slice(0, 200)).catch(() => null), after: await page.evaluate(() => ((document.querySelector('#ask') || {}).innerText || '').replace(/\s+/g, ' ').slice(-400)).catch(() => null) };
+    await shot(page, sc, 'callback-after');
+  }
+  sc.phase = 'end'; await sleep(2500); await ctx.close(); summarise(sc); save();
+}
+
 (async () => {
-  try { await liveFiles(); } catch (e) { report.live.err = e.message; }
+  if (!process.env.AUDIT_SET || process.env.AUDIT_SET !== '3') { try { await liveFiles(); } catch (e) { report.live.err = e.message; } }
   const cr = await chromium.launch(); const wk = process.env.SMOKE ? cr : await webkit.launch();
   const jobs = [['iphoneChrome', b => scenarioIphoneFull(b, 'iphoneChrome', 'A-iphone14-chromeEngine', { device: 'iPhone 14 viewport and UA, Chromium engine, videos on' }), cr],
     ['iphoneSafari', b => scenarioIphoneFull(b, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked to avoid a WebKit-on-Linux video crash', blockVideo: true, scroll: false }), wk],
     ['android', scenarioAndroidTimed, cr], ['smallphone', scenarioSmallPhoneCountry, wk], ['desktop', scenarioDesktop, cr], ['directCheckout', scenarioDirectCheckout, wk], ['silenced', scenarioSilenced, cr]];
-  for (const [name, fn, br] of jobs) {
+  const run = process.env.AUDIT_SET === '3' ? [['extra', scenarioExtra, cr], ['iphoneSafari', b => scenarioIphoneFull(b, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked', blockVideo: true, scroll: false, backForward: false }), wk]] : jobs;
+  for (const [name, fn, br] of run) {
     try { await fn(br); } catch (e) { const s2 = (report.scenarios[name] = report.scenarios[name] || {}); s2.fatal = String(e).slice(0, 400); try { if (s2.relayRaw) summarise(s2); } catch (_) {} save(); }
   }
   if (wk !== cr) await wk.close(); await cr.close();
