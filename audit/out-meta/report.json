@@ -1,0 +1,76 @@
+{
+  "iphone": {
+    "status": 200,
+    "title": "The Longevity Blueprint | Your personal longevity protocol in 18 weeks",
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "height": 13017,
+    "brokenImages": [
+      "img/lingo-2.jpg",
+      "img/lingo-1.jpg",
+      "img/lingo-6.jpg",
+      "img/natalie.jpg",
+      "img/courtney.jpg",
+      "img/amy.jpg",
+      "img/jordan.jpg"
+    ],
+    "fonts": [
+      [
+        "Playfair Display",
+        false
+      ],
+      [
+        "Inter",
+        true
+      ],
+      [
+        "Codec Pro",
+        true
+      ],
+      [
+        "Instrument Serif",
+        true
+      ]
+    ],
+    "masterclassTime": true,
+    "price79": true,
+    "errors": []
+  },
+  "desktop": {
+    "status": 200,
+    "title": "The Longevity Blueprint | Your personal longevity protocol in 18 weeks",
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "height": 9932,
+    "brokenImages": [
+      "img/lingo-2.jpg",
+      "img/lingo-1.jpg",
+      "img/lingo-6.jpg",
+      "img/natalie.jpg",
+      "img/courtney.jpg",
+      "img/amy.jpg",
+      "img/jordan.jpg"
+    ],
+    "fonts": [
+      [
+        "Playfair Display",
+        false
+      ],
+      [
+        "Inter",
+        true
+      ],
+      [
+        "Codec Pro",
+        true
+      ],
+      [
+        "Instrument Serif",
+        true
+      ]
+    ],
+    "masterclassTime": true,
+    "price79": true,
+    "errors": []
+  }
+}
