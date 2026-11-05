@@ -1,0 +1,222 @@
+{
+  "preview": {
+    "iphone14-safari": {
+      "tracking": [],
+      "blockedPosts": [],
+      "errors": [],
+      "failed": [],
+      "heroVideo": [
+        {
+          "src": "cells-light.mp4",
+          "paused": true,
+          "readyState": 4,
+          "w": 0
+        },
+        {
+          "src": "full-film-720p.mp4",
+          "paused": false,
+          "readyState": 4,
+          "w": 350
+        }
+      ],
+      "height": 19105,
+      "vh": 664,
+      "screens": 28.8,
+      "overflowX": 0,
+      "broken": [],
+      "videosPlaying": 1,
+      "videos": 12,
+      "floater": "lla-float-cta is-visible",
+      "whatsapp": true
+    },
+    "pixel7-chrome": {
+      "tracking": [],
+      "blockedPosts": [],
+      "errors": [],
+      "failed": [],
+      "heroVideo": [
+        {
+          "src": "cells-light.mp4",
+          "paused": true,
+          "readyState": 0,
+          "w": 0
+        },
+        {
+          "src": "full-film-720p.mp4",
+          "paused": true,
+          "readyState": 0,
+          "w": 372
+        }
+      ],
+      "height": 18998,
+      "vh": 839,
+      "screens": 22.6,
+      "overflowX": 0,
+      "broken": [],
+      "videosPlaying": 1,
+      "videos": 12,
+      "floater": "lla-float-cta is-visible",
+      "whatsapp": true
+    },
+    "iphoneSE-safari": {
+      "tracking": [],
+      "blockedPosts": [],
+      "errors": [],
+      "failed": [],
+      "heroVideo": [
+        {
+          "src": "cells-light.mp4",
+          "paused": true,
+          "readyState": 0,
+          "w": 0
+        },
+        {
+          "src": "full-film-720p.mp4",
+          "paused": false,
+          "readyState": 4,
+          "w": 280
+        }
+      ],
+      "height": 21371,
+      "vh": 568,
+      "screens": 37.6,
+      "overflowX": 0,
+      "broken": [],
+      "videosPlaying": 5,
+      "videos": 12,
+      "floater": "lla-float-cta is-visible",
+      "whatsapp": true
+    },
+    "desktop-chrome": {
+      "tracking": [],
+      "blockedPosts": [],
+      "errors": [],
+      "failed": [],
+      "heroVideo": [
+        {
+          "src": "cells-light.mp4",
+          "paused": true,
+          "readyState": 0,
+          "w": 1440
+        },
+        {
+          "src": "full-film-720p.mp4",
+          "paused": true,
+          "readyState": 0,
+          "w": 583
+        }
+      ],
+      "height": 18211,
+      "vh": 900,
+      "screens": 20.2,
+      "overflowX": 0,
+      "broken": [],
+      "videosPlaying": 1,
+      "videos": 12,
+      "floater": "lla-float-cta is-visible mf-hide",
+      "whatsapp": true
+    }
+  },
+  "production": {
+    "iphone": {
+      "tracking": [
+        "GET connect.facebook.net/en_US/fbevents.js",
+        "GET www.googletagmanager.com/gtm.js"
+      ],
+      "blockedPosts": [],
+      "errors": [],
+      "failed": [],
+      "buttons": [
+        {
+          "k": "pricing",
+          "opensCheckout": true
+        },
+        {
+          "k": "hero",
+          "opensCheckout": true
+        },
+        {
+          "k": "vip",
+          "opensCheckout": true
+        },
+        {
+          "k": "nav",
+          "click": "failed elementHandle.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.\nCall log:\n  - at"
+        },
+        {
+          "k": "final",
+          "opensCheckout": true
+        },
+        {
+          "k": "pillars",
+          "found": false
+        },
+        {
+          "k": "floater",
+          "opensCheckout": true
+        }
+      ],
+      "faq": {
+        "questions": 8,
+        "opened": 8
+      },
+      "modal": {
+        "step2": true,
+        "step2Text": "Preferred class time Mon Nov 23 · 8:00 PM ET (5:00 PM PT) Wed Nov 25 · 12:00 PM ET (9:00 AM PT) The Longevity Blueprint Schedule: 18 live sessions across 18 weeks, one session every week Time: Monday 8:00 PM ET or Wednesday 12:00 PM ET Lesson duration: 50 min Period: 18 weeks Course tuition $79 for month 1, then $169 a month for 4 months. $755 total. Masterclass credit JULIE249 applied. I have pro",
+        "err": ""
+      },
+      "ctaCount": 15,
+      "trackingCount": 2
+    },
+    "desktop": {
+      "tracking": [
+        "GET connect.facebook.net/en_US/fbevents.js",
+        "GET www.googletagmanager.com/gtm.js"
+      ],
+      "blockedPosts": [],
+      "errors": [],
+      "failed": [],
+      "buttons": [
+        {
+          "k": "pricing",
+          "opensCheckout": true
+        },
+        {
+          "k": "hero",
+          "opensCheckout": true
+        },
+        {
+          "k": "vip",
+          "opensCheckout": true
+        },
+        {
+          "k": "nav",
+          "opensCheckout": true
+        },
+        {
+          "k": "final",
+          "opensCheckout": true
+        },
+        {
+          "k": "pillars",
+          "found": false
+        },
+        {
+          "k": "floater",
+          "opensCheckout": true
+        }
+      ],
+      "faq": {
+        "questions": 8,
+        "opened": 8
+      },
+      "modal": {
+        "step2": true,
+        "step2Text": "Preferred class time Mon Nov 23 · 8:00 PM ET (5:00 PM PT) Wed Nov 25 · 12:00 PM ET (9:00 AM PT) The Longevity Blueprint Schedule: 18 live sessions across 18 weeks, one session every week Time: Monday 8:00 PM ET or Wednesday 12:00 PM ET Lesson duration: 50 min Period: 18 weeks Course tuition $79 for month 1, then $169 a month for 4 months. $755 total. Masterclass credit JULIE249 applied. I have pro",
+        "err": ""
+      },
+      "ctaCount": 15,
+      "trackingCount": 2
+    }
+  }
+}
