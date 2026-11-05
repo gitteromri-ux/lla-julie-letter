@@ -5,7 +5,7 @@
  * - no real order, lead, payment or Meta event is created. */
 const { chromium, webkit, devices } = require('playwright');
 const fs = require('fs'); const path = require('path'); const crypto = require('crypto');
-const OUT = path.join(__dirname, process.env.AUDIT_SET === '3' ? 'out3' : 'out'); const SHOTS = path.join(OUT, 'shots'); const LIVE = path.join(OUT, 'live');
+const OUT = path.join(__dirname, process.env.AUDIT_SET === '3' ? 'out3' : process.env.AUDIT_SET === '4' ? 'out4' : 'out'); const SHOTS = path.join(OUT, 'shots'); const LIVE = path.join(OUT, 'live');
 fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(SHOTS, { recursive: true }); fs.mkdirSync(LIVE, { recursive: true });
 const SITE = process.env.LLA_SITE || 'https://longevitylifeacademy.pages.dev';
 const FBCLID = 'IwZXh0bgNhZW0BMABhZGlkAasYz9rA1XcBHfU_Lq3Kx7MzZ3oAbCdEf-AUDIT1105';
@@ -268,6 +268,15 @@ async function scenarioIphoneFull(br, key, label, opt) {
   await page.waitForFunction(() => { const m = document.getElementById('awx-dropin'); return m && (m.querySelector('iframe') || /disabled|error|could not|try again/i.test(m.innerText)); }, null, { timeout: 25000 }).catch(() => {});
   sc.checkoutReadyMs = Date.now() - tStep2; await sleep(2500);
   await shot(page, sc, 'checkout-after-mount'); await shot(page, sc, 'checkout-full', true);
+  if (opt.paypalTab) {
+    sc.phase = 'paypal-tab';
+    const tab = await vis(page, '[data-pm="paypal"], [data-method="paypal"], button:has(img[alt*="PayPal" i]), [role=tab]:has-text("PayPal"), img[alt*="PayPal" i]');
+    sc.paypalTabFound = !!tab;
+    if (tab) { await tab.scrollIntoViewIfNeeded().catch(() => {}); await tab.click().catch(() => {}); await sleep(6000); }
+    sc.paypalState = await page.evaluate(() => { const b = document.getElementById('paypalBox'); const c = document.getElementById('paypal-button-container'); return { boxShown: !!(b && getComputedStyle(b).display !== 'none'), buttonFrames: c ? c.querySelectorAll('iframe').length : 0, status: ((document.getElementById('paypal-status') || {}).innerText || '').slice(0, 120), sdk: !!(window.paypal && window.paypal.Buttons) }; }).catch(e => ({ err: e.message }));
+    await shot(page, sc, 'paypal-tab');
+    const pb = await page.$('#paypalBox'); if (pb) { await pb.scrollIntoViewIfNeeded().catch(() => {}); await sleep(800); await shot(page, sc, 'paypal-buttons'); }
+  }
   sc.checkoutState = await state(page); sc.checkoutLayout = await layout(page); sc.checkoutPrices = await priceTexts(page);
   sc.checkoutText = await page.evaluate(() => document.body.innerText.replace(/\s+/g, ' ').slice(0, 3000)).catch(() => null);
   sc.payMethods = await page.evaluate(() => ({ awxMount: !!document.getElementById('awx-dropin'), awxIframes: [...document.querySelectorAll('iframe')].map(f => (f.src || '').slice(0, 120)), paypalSdk: !!document.querySelector('script[src*="paypal.com/sdk"]'), paypalSdkSrc: (document.querySelector('script[src*="paypal.com/sdk"]') || {}).src || null, paypalButtons: !!document.querySelector('[id*=paypal i] iframe, .paypal-buttons'), awxSdk: !!window.Airwallex, applePayText: /apple pay/i.test(document.body.innerText), googlePayText: /google pay/i.test(document.body.innerText), applePayEl: !!document.querySelector('apple-pay-button,[class*=apple-pay i],[id*=applepay i]'), googlePayEl: !!document.querySelector('[class*=gpay i],[id*=gpay i],[class*=google-pay i]'), recurringWords: (document.body.innerText.match(/.{0,60}(recurring|subscription|auto-?renew|automatically charge|future payments|save (your )?card).{0,60}/ig) || []).slice(0, 6) })).catch(e => ({ err: e.message }));
@@ -420,11 +429,18 @@ async function scenarioExtra(cr) {
 }
 
 (async () => {
-  if (!process.env.AUDIT_SET || process.env.AUDIT_SET !== '3') { try { await liveFiles(); } catch (e) { report.live.err = e.message; } }
+  if (!process.env.AUDIT_SET) { try { await liveFiles(); } catch (e) { report.live.err = e.message; } }
   const cr = await chromium.launch(); const wk = process.env.SMOKE ? cr : await webkit.launch();
   const jobs = [['iphoneChrome', b => scenarioIphoneFull(b, 'iphoneChrome', 'A-iphone14-chromeEngine', { device: 'iPhone 14 viewport and UA, Chromium engine, videos on' }), cr],
     ['iphoneSafari', b => scenarioIphoneFull(b, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked to avoid a WebKit-on-Linux video crash', blockVideo: true, scroll: false }), wk],
     ['android', scenarioAndroidTimed, cr], ['smallphone', scenarioSmallPhoneCountry, wk], ['desktop', scenarioDesktop, cr], ['directCheckout', scenarioDirectCheckout, wk], ['silenced', scenarioSilenced, cr]];
+  if (process.env.AUDIT_SET === '4') {
+    await Promise.all([
+      scenarioIphoneFull(cr, 'iphoneChrome', 'A-iphone14-chromeEngine', { device: 'iPhone 14, Chromium engine, videos on', paypalTab: true, backForward: false }).catch(e => { (report.scenarios.iphoneChrome = report.scenarios.iphoneChrome || {}).fatal = String(e).slice(0, 300); }),
+      scenarioIphoneFull(wk, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked', blockVideo: true, scroll: false, paypalTab: true, backForward: false }).catch(e => { (report.scenarios.iphoneSafari = report.scenarios.iphoneSafari || {}).fatal = String(e).slice(0, 300); })
+    ]);
+    if (wk !== cr) await wk.close(); await cr.close(); report.finishedAt = new Date().toISOString(); save(); console.log('done set 4'); return;
+  }
   const run = process.env.AUDIT_SET === '3' ? [['extra', scenarioExtra, cr], ['iphoneSafari', b => scenarioIphoneFull(b, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked', blockVideo: true, scroll: false, backForward: false }), wk]] : jobs;
   for (const [name, fn, br] of run) {
     try { await fn(br); } catch (e) { const s2 = (report.scenarios[name] = report.scenarios[name] || {}); s2.fatal = String(e).slice(0, 400); try { if (s2.relayRaw) summarise(s2); } catch (_) {} save(); }
