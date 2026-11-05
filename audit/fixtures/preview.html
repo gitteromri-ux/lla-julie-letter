@@ -10019,6 +10019,23 @@ html.mf body #teachers .teacher-card-live:nth-child(odd){background:linear-gradi
 html.mf body #teachers .teacher-card-live:nth-child(even),html.mf body #teachers .teachers-row2 .teacher-card-live:nth-child(odd){background:linear-gradient(165deg,#DCEBFF 0%,#BFDCFF 100%)!important}
 html.mf body #teachers .teachers-row2 .teacher-card-live:nth-child(even){background:linear-gradient(165deg,#FFFFFF 0%,#EEF5FF 100%)!important}
 html.mf body #teachers .teacher-card-live{border:1px solid rgba(0,110,255,.22)!important;box-shadow:0 22px 44px -26px rgba(0,40,120,.55),0 0 24px -12px rgba(0,110,255,.35)!important}
+/* ===== Round 30 (Omri: design the Julie fold from her deck): her photo card plus a row of her real masterclass slides ===== */
+html.mf body #julie .jdeck-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 18px;-webkit-overflow-scrolling:touch}
+html.mf body #julie .jdeck-track figure{flex:0 0 auto;margin:0;scroll-snap-align:start;border-radius:18px;overflow:hidden;border:1.5px solid rgba(154,216,255,.7);box-shadow:0 0 8px rgba(154,216,255,.7),0 0 26px rgba(59,167,255,.55),0 30px 60px -30px rgba(0,20,70,.95);background:#050B19}
+html.mf body #julie .jdeck-track img{display:block;width:100%;height:auto}
+@media (min-width:1025px){
+  html.mf body #julie .container{display:grid!important;grid-template-columns:340px minmax(0,1fr);column-gap:24px;align-items:start}
+  html.mf body #julie .container > :is(.mf-head,.jg-cta){grid-column:1/-1}
+  html.mf body #julie .jgrid{grid-template-columns:1fr!important;margin-top:0}
+  html.mf body #julie .jg-photo img{height:260px!important}
+  html.mf body #julie .jdeck{min-width:0}
+  html.mf body #julie .jdeck-track figure{width:600px}
+}
+@media (max-width:1024px){
+  html.mf body #julie .jdeck{margin-top:14px}
+  html.mf body #julie .jdeck-track figure{width:86vw}
+  html.mf body #julie .jgrid{grid-template-columns:1fr!important}
+}
 
 /* Round 12 (Omri): pricing card in the masterclass card language. White glass card, blue halo, left-aligned, Playfair title and price, label rows instead of check bullets */
 html.mf body section.mfp{position:relative;padding:72px 0 64px;background:radial-gradient(60% 45% at 50% 38%,rgba(0,110,255,.30),transparent 70%),radial-gradient(40% 30% at 85% 90%,rgba(59,167,255,.14),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)}
@@ -10928,14 +10945,14 @@ html.mf body .mfp-tbonus.mfp-twide{margin:4px 0 0!important}
           <p>The 2nd slowest-aging woman on Earth. Founding Faculty at Longevity Life Academy.</p>
         </div>
       </article>
-      <article class="jg jg-vid">
-        <video src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/ANIM_PACE_1080.mp4" poster="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/pace-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="jg-body"><b>She ages 8 months a year.</b><p>DunedinPACE 0.665, verified by epigenetic testing.</p></div>
-      </article>
-      <article class="jg jg-vid">
-        <video src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/PLAY_V6_LLA_RANK.mp4" poster="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="jg-body"><b>No. 2 on Earth.</b><p>Rejuvenation Olympics, ahead of Bryan Johnson&rsquo;s $2M-a-year program.</p></div>
-      </article>
+    </div>
+    <div class="jdeck" aria-label="Slides from Julie's masterclass">
+      <div class="jdeck-track">
+        <figure><img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n03-dunedin.jpg" alt="Julie's slide: Ten years pass. By this test, I age about 6.5." loading="lazy" width="1600" height="900"></figure>
+        <figure><img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n16-protocol.jpg" alt="Julie's slide: Julie Gibson Clark's Longevity Protocol, her day from 5:00 AM to 9:00 PM" loading="lazy" width="1600" height="900"></figure>
+        <figure><img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n02-why.jpg" alt="Julie's slide: I didn't do this to win" loading="lazy" width="1600" height="900"></figure>
+        <figure><img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n17-notebook.jpg" alt="Julie's slide: You don't need a lab. You need a notebook." loading="lazy" width="1600" height="900"></figure>
+      </div>
     </div>
     <div class="jg-cta"><a class="mf-jbtn" href="#pricing">Enroll Now</a></div>
   </div>
