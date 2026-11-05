@@ -2,7 +2,7 @@ name: meta-final-shots
 on:
   push:
     branches: [ccr-fb60a687-apnfd5]
-    paths: ['audit/meta-final.js']
+    paths: ['audit/meta-final.js', 'audit/fixtures/**']
   workflow_dispatch:
 permissions:
   contents: write
@@ -12,34 +12,32 @@ concurrency:
 jobs:
   shots:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Safety net. Tracking, relay and CRM hosts resolve to nowhere on this runner
+        run: |
+          echo "0.0.0.0 lla-ac-events.vercel.app eteacher-leads-proxy.gitter-omri.workers.dev www.facebook.com facebook.com connect.facebook.net web.facebook.com www.google-analytics.com region1.google-analytics.com analytics.google.com www.googletagmanager.com stats.g.doubleclick.net googleads.g.doubleclick.net td.doubleclick.net www.googleadservices.com px.ads.linkedin.com snap.licdn.com static.cloudflareinsights.com" | sudo tee -a /etc/hosts
       - name: Install Playwright
         working-directory: audit
-        timeout-minutes: 8
+        timeout-minutes: 12
         run: |
           npm init -y >/dev/null
           npm i playwright@1.49.1
-          npx playwright install --with-deps chromium
-      - name: Wait for GitHub Pages to publish the latest commit
-        run: |
-          for i in $(seq 1 30); do
-            if curl -s "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/?n=$i" | grep -q "One price. <span class=\"pk-accent\">Everything included"; then echo live; break; fi
-            sleep 10
-          done
-      - name: Screenshot the live page
+          npx playwright install --with-deps chromium webkit
+      - name: Check preview on four devices and the production checkout
         working-directory: audit
         continue-on-error: true
+        timeout-minutes: 14
         run: node meta-final.js
       - name: Commit results
         run: |
           git config user.name "lla-audit-bot"
           git config user.email "lla-audit-bot@users.noreply.github.com"
-          git add -A audit/out-meta
-          git commit -m "Meta final live shots $(date -u +%FT%TZ) [skip ci]" || echo "nothing to commit"
+          git add -A audit/out-mf
+          git commit -m "Meta final device check $(date -u +%FT%TZ) [skip ci]" || echo "nothing to commit"
           git pull --rebase origin ccr-fb60a687-apnfd5 || true
           git push origin HEAD:ccr-fb60a687-apnfd5
