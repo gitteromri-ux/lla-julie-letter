@@ -5,7 +5,7 @@
  * - no real order, lead, payment or Meta event is created. */
 const { chromium, webkit, devices } = require('playwright');
 const fs = require('fs'); const path = require('path'); const crypto = require('crypto');
-const OUT = path.join(__dirname, process.env.AUDIT_SET === '3' ? 'out3' : process.env.AUDIT_SET === '4' ? 'out4' : 'out'); const SHOTS = path.join(OUT, 'shots'); const LIVE = path.join(OUT, 'live');
+const OUT = path.join(__dirname, process.env.AUDIT_SET === '3' ? 'out3' : process.env.AUDIT_SET === '4' ? 'out4' : process.env.AUDIT_SET === '5' ? 'out5' : 'out'); const SHOTS = path.join(OUT, 'shots'); const LIVE = path.join(OUT, 'live');
 fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(SHOTS, { recursive: true }); fs.mkdirSync(LIVE, { recursive: true });
 const SITE = process.env.LLA_SITE || 'https://longevitylifeacademy.pages.dev';
 const FBCLID = 'IwZXh0bgNhZW0BMABhZGlkAasYz9rA1XcBHfU_Lq3Kx7MzZ3oAbCdEf-AUDIT1105';
@@ -428,12 +428,49 @@ async function scenarioExtra(cr) {
   sc.phase = 'end'; await sleep(2500); await ctx.close(); summarise(sc); save();
 }
 
+async function scenarioDotCom(cr, key, ctxOpts, maxScreens) {
+  const sc = report.scenarios[key] = { id: key, device: key };
+  const ctx = await cr.newContext({ ...ctxOpts, locale: 'en-US', timezoneId: 'America/New_York' });
+  await setup(ctx, sc); const page = await ctx.newPage(); watch(page, sc);
+  const COM = 'https://www.longevitylifeacademy.com';
+  sc.phase = 'home'; await page.goto(COM + '/', { waitUntil: 'load', timeout: 120000 }).catch(e => sc.notes.push('goto ' + e.message.slice(0, 80))); await sleep(5000);
+  sc.layout = await layout(page); await shot(page, sc, 'home-first-screen'); await scrollShots(page, sc, maxScreens);
+  sc.phase = 'teachers'; const t = page.locator('#teachers'); if (await t.count()) { await t.first().scrollIntoViewIfNeeded().catch(() => {}); await sleep(1200); await shot(page, sc, 'teachers'); try { await t.first().screenshot({ path: path.join(OUT, 'shots', key + '-teachers-section.jpg'), type: 'jpeg', quality: 70 }); sc.shots.push('shots/' + key + '-teachers-section.jpg'); } catch (e) {} }
+  for (const id of ['offer', 'institution', 'syllabus']) { const el = page.locator('#' + id); if (await el.count()) { try { await el.first().screenshot({ path: path.join(OUT, 'shots', key + '-section-' + id + '.jpg'), type: 'jpeg', quality: 70 }); sc.shots.push('shots/' + key + '-section-' + id + '.jpg'); } catch (e) { sc.notes.push('section ' + id + ' ' + e.message.slice(0, 60)); } } }
+  sc.phase = 'enroll'; await page.evaluate(() => scrollTo(0, 0)); await sleep(600);
+  sc.modalOpened = await openModalFromHero(page, sc); await shot(page, sc, 'enroll-step1');
+  if (sc.modalOpened) {
+    await fillStep1(page, { name: BUYER.name, email: BUYER.email, phone: BUYER.phone, country: 'United States', state: 'New York' }); await clickContinue(page); await sleep(2500); await shot(page, sc, 'enroll-step2');
+    const d = await vis(page, '#enrollModal button.dp-card'); if (d) { await d.click().catch(() => {}); await sleep(800); }
+    const c = await vis(page, '#emGo2, #enrollModal button:has-text("Continue")'); if (c) { await c.scrollIntoViewIfNeeded().catch(() => {}); await c.click().catch(() => {}); }
+    await page.waitForURL(/checkout/, { timeout: 45000 }).catch(() => sc.notes.push('no checkout nav'));
+    sc.phase = 'checkout'; await sleep(8000); sc.checkoutUrl = page.url().slice(0, 200); await shot(page, sc, 'checkout-top'); await shot(page, sc, 'checkout-full', true);
+  }
+  sc.phase = 'masterclass'; await page.goto(COM + '/julie-masterclass/', { waitUntil: 'load', timeout: 120000 }).catch(e => sc.notes.push('mc ' + e.message.slice(0, 80))); await sleep(4000);
+  const pk = page.locator('#packages'); sc.packagesFound = await pk.count();
+  if (sc.packagesFound) {
+    await pk.first().scrollIntoViewIfNeeded().catch(() => {}); await sleep(1500);
+    try { await pk.first().screenshot({ path: path.join(OUT, 'shots', key + '-masterclass-packages.jpg'), type: 'jpeg', quality: 78 }); sc.shots.push('shots/' + key + '-masterclass-packages.jpg'); } catch (e) { sc.notes.push('pk ' + e.message.slice(0, 60)); }
+    await shot(page, sc, 'masterclass-packages-view');
+    const cards = await pk.first().locator('article, .pkg, [class*="card"]').all(); let i = 0;
+    for (const cd of cards) { const bb = await cd.boundingBox().catch(() => null); if (!bb || bb.width < 220 || bb.height < 300) continue; i++; if (i > 3) break; try { await cd.scrollIntoViewIfNeeded().catch(() => {}); await sleep(500); await cd.screenshot({ path: path.join(OUT, 'shots', key + '-masterclass-card' + i + '.jpg'), type: 'jpeg', quality: 80 }); sc.shots.push('shots/' + key + '-masterclass-card' + i + '.jpg'); } catch (e) {} }
+  }
+  sc.phase = 'end'; await sleep(1500); await ctx.close(); summarise(sc); save();
+}
+
 (async () => {
   if (!process.env.AUDIT_SET) { try { await liveFiles(); } catch (e) { report.live.err = e.message; } }
   const cr = await chromium.launch(); const wk = process.env.SMOKE ? cr : await webkit.launch();
   const jobs = [['iphoneChrome', b => scenarioIphoneFull(b, 'iphoneChrome', 'A-iphone14-chromeEngine', { device: 'iPhone 14 viewport and UA, Chromium engine, videos on' }), cr],
     ['iphoneSafari', b => scenarioIphoneFull(b, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked to avoid a WebKit-on-Linux video crash', blockVideo: true, scroll: false }), wk],
     ['android', scenarioAndroidTimed, cr], ['smallphone', scenarioSmallPhoneCountry, wk], ['desktop', scenarioDesktop, cr], ['directCheckout', scenarioDirectCheckout, wk], ['silenced', scenarioSilenced, cr]];
+  if (process.env.AUDIT_SET === '5') {
+    await Promise.all([
+      scenarioDotCom(cr, 'com-iphone', { ...devices['iPhone 14'] }, 45).catch(e => { (report.scenarios['com-iphone'] = report.scenarios['com-iphone'] || {}).fatal = String(e).slice(0, 300); }),
+      scenarioDotCom(cr, 'com-desktop', { viewport: { width: 1440, height: 900 } }, 30).catch(e => { (report.scenarios['com-desktop'] = report.scenarios['com-desktop'] || {}).fatal = String(e).slice(0, 300); })
+    ]);
+    if (wk !== cr) await wk.close(); await cr.close(); report.finishedAt = new Date().toISOString(); save(); console.log('done set 5'); return;
+  }
   if (process.env.AUDIT_SET === '4') {
     await Promise.all([
       scenarioIphoneFull(cr, 'iphoneChrome', 'A-iphone14-chromeEngine', { device: 'iPhone 14, Chromium engine, videos on', paypalTab: true, backForward: false }).catch(e => { (report.scenarios.iphoneChrome = report.scenarios.iphoneChrome || {}).fatal = String(e).slice(0, 300); }),

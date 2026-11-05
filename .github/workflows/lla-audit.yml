@@ -31,11 +31,11 @@ jobs:
       - name: Run audit
         working-directory: audit
         continue-on-error: true
-        run: AUDIT_SET=4 node run.js
+        run: AUDIT_SET=5 node run.js
       - name: Commit results
         run: |
           git config user.name "lla-audit-bot"
           git config user.email "lla-audit-bot@users.noreply.github.com"
-          git add -A audit/out4
+          git add -A audit/out5
           git commit -m "Audit results $(date -u +%FT%TZ) [skip ci]" || echo "nothing to commit"
           git push origin HEAD:ccr-fb60a687-apnfd5
