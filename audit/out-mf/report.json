@@ -72,8 +72,8 @@
         },
         {
           "src": "full-film-720p.mp4",
-          "paused": false,
-          "readyState": 4,
+          "paused": true,
+          "readyState": 0,
           "w": 280
         }
       ],
@@ -137,7 +137,7 @@
         },
         {
           "k": "julie",
-          "opensCheckout": false
+          "opensCheckout": true
         },
         {
           "k": "nav",
@@ -189,7 +189,7 @@
         "step2Text": "Preferred class time Mon Nov 23 · 8:00 PM ET (5:00 PM PT) Wed Nov 25 · 12:00 PM ET (9:00 AM PT) The Longevity Blueprint Schedule: 18 live sessions across 18 weeks, one session every week Time: Monday 8:00 PM ET or Wednesday 12:00 PM ET Lesson duration: 50 min Period: 18 weeks Course tuition $79 for month 1, then $169 a month for 4 months. $755 total. Masterclass credit JULIE249 applied. I have pro",
         "err": ""
       },
-      "ctaCount": 16,
+      "ctaCount": 17,
       "trackingCount": 2
     },
     "desktop": {
@@ -211,7 +211,7 @@
         },
         {
           "k": "julie",
-          "opensCheckout": false
+          "opensCheckout": true
         },
         {
           "k": "nav",
@@ -263,7 +263,7 @@
         "step2Text": "Preferred class time Mon Nov 23 · 8:00 PM ET (5:00 PM PT) Wed Nov 25 · 12:00 PM ET (9:00 AM PT) The Longevity Blueprint Schedule: 18 live sessions across 18 weeks, one session every week Time: Monday 8:00 PM ET or Wednesday 12:00 PM ET Lesson duration: 50 min Period: 18 weeks Course tuition $79 for month 1, then $169 a month for 4 months. $755 total. Masterclass credit JULIE249 applied. I have pro",
         "err": ""
       },
-      "ctaCount": 16,
+      "ctaCount": 17,
       "trackingCount": 2
     }
   }

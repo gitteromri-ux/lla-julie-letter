@@ -1,10 +1,15 @@
 {
  "url": "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/",
- "fixtureSha": "215c2db400dd5dbb",
+ "fixtureSha": "70163bafc7dd9f09",
  "status": 200,
- "servedSha": "215c2db400dd5dbb",
+ "servedSha": "70163bafc7dd9f09",
  "sameAsBuild": true,
  "tries": 1,
+ "board": {
+  "status": 200,
+  "isRound38": true,
+  "tries": 1
+ },
  "iphone": {
   "tracking": [],
   "logos": [
