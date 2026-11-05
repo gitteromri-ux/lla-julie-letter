@@ -10079,6 +10079,113 @@ html.mf body #julie .jher-proof img{display:block;width:100%;height:auto}
 /* Round 33 (Omri: you can't show her decks): no slide; photo and three facts */
 @media (min-width:901px){html.mf body #julie .jher{grid-template-columns:minmax(0,400px) minmax(0,1fr)!important;grid-template-areas:"photo facts"!important;align-items:center!important}html.mf body #julie .jher-photo img{aspect-ratio:1/1;height:auto}html.mf body #julie .jher-facts{display:block!important}html.mf body #julie .jher-facts li,html.mf body #julie .jher-facts li:first-child{padding:18px 0!important;border-left:0!important;border-bottom:1px solid rgba(160,210,255,.22)!important}html.mf body #julie .jher-facts li:last-child{border-bottom:0!important}html.mf body #julie .jher-facts li:first-child{padding-top:0!important}}
 @media (max-width:900px){html.mf body #julie .jher-facts li:nth-child(2){display:block!important}}
+/* ===== Round 34 (Omri: look at the masterclass, shorten it): the masterclass Julie bento on its light ice background, no stats band, all cards visible on phones ===== */
+html.mf body #julie.mf-julie-light{background:radial-gradient(60% 50% at 85% 0%,rgba(0,110,255,.16),transparent 70%),linear-gradient(180deg,#F2F7FF 0%,#E4EEFB 100%)!important;padding:64px 0 60px!important}
+html.mf body #julie.mf-julie-light .mf-head .section-title{color:#0D1C33!important;-webkit-text-fill-color:#0D1C33!important}
+html.mf body #julie.mf-julie-light .mf-head .section-title :is(em,span){background:none!important;color:#006EFF!important;-webkit-text-fill-color:#006EFF!important}
+html.mf body #julie.mf-julie-light .mf-head :is(.eyebrow){color:#006EFF!important;-webkit-text-fill-color:#006EFF!important}
+html.mf body #julie.mf-julie-light .mf-head .section-subtitle{display:block!important;color:#0A1E3A!important;-webkit-text-fill-color:#0A1E3A!important;font-size:21px!important}
+@media (min-width:901px){
+  html.mf body #julie.mf-julie-light .jbento{display:grid!important;grid-template-columns:repeat(12,minmax(0,1fr))!important;grid-template-rows:auto auto!important;gap:16px!important;align-items:stretch!important;max-width:1180px;margin:0 auto}
+  html.mf body #julie.mf-julie-light .jbento > .jb.jb-photo{grid-column:1/5!important;grid-row:1/3!important;display:flex!important;flex-direction:column!important}
+  html.mf body #julie.mf-julie-light .jbento > .jb.jb-vid:nth-child(2){grid-column:5/9!important;grid-row:1!important}
+  html.mf body #julie.mf-julie-light .jbento > .jb.jb-vid:nth-child(3){grid-column:9/13!important;grid-row:1!important}
+  html.mf body #julie.mf-julie-light .jbento > .jb.jb-wide{grid-column:5/13!important;grid-row:2!important;display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important}
+  html.mf body #julie.mf-julie-light .jb-photo img{height:auto!important;flex:1 1 0!important;min-height:0!important;object-fit:cover!important;object-position:50% 22%!important}
+  html.mf body #julie.mf-julie-light .jb-vid video{height:170px!important;width:100%!important;object-fit:cover!important}
+  html.mf body #julie.mf-julie-light .jb-wide video{height:100%!important;max-height:none!important;min-height:0!important;object-fit:cover!important}
+  html.mf body #julie.mf-julie-light .jb-wide .jb-wide-body{padding:24px 26px!important;justify-content:center!important}
+  html.mf body #julie.mf-julie-light .jb-cap b{font-size:23px!important}
+  html.mf body #julie.mf-julie-light .jb-cap span{font-size:18px!important}
+}
+@media (max-width:900px){
+  html.mf body #julie.mf-julie-light{padding:44px 0 40px!important}
+  html.mf body #julie.mf-julie-light .jbento{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;overflow:visible!important;padding:0!important}
+  html.mf body #julie.mf-julie-light .jbento > .jb{width:auto!important;min-width:0!important;max-width:none!important;flex:none!important;grid-column:auto!important;grid-row:auto!important}
+  html.mf body #julie.mf-julie-light .jbento > .jb.jb-photo{grid-column:1/-1!important;display:grid!important;grid-template-columns:42% minmax(0,1fr)!important;align-items:center}
+  html.mf body #julie.mf-julie-light .jb-photo img{height:100%!important;min-height:200px;object-fit:cover!important;object-position:50% 22%!important}
+  html.mf body #julie.mf-julie-light .jb-photo-body{padding:14px!important}
+  html.mf body #julie.mf-julie-light .jb-photo-body h3{font-size:24px!important}
+  html.mf body #julie.mf-julie-light .jb-role{font-size:17px!important}
+  html.mf body #julie.mf-julie-light .jb-vid video{height:105px!important;width:100%!important;object-fit:cover!important}
+  html.mf body #julie.mf-julie-light .jb-cap{padding:12px 12px 14px!important}
+  html.mf body #julie.mf-julie-light .jb-cap b{font-size:19px!important;line-height:1.2!important}
+  html.mf body #julie.mf-julie-light .jb-cap span{font-size:17px!important}
+  html.mf body #julie.mf-julie-light .jbento > .jb.jb-wide{grid-column:1/-1!important;display:flex!important;flex-direction:column!important}
+  html.mf body #julie.mf-julie-light .jb-wide video{height:160px!important;max-height:none!important;width:100%!important;object-fit:cover!important}
+}
+html.mf body #julie.mf-julie-light .mf-head h2.section-title em,html.mf body #julie.mf-julie-light .mf-head h2.section-title span{background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;color:#006EFF!important;-webkit-text-fill-color:#006EFF!important;filter:none!important}
+@media (max-width:900px){
+  html.mf body #julie.mf-julie-light .jbento{margin:0!important;width:auto!important}
+  html.mf body #julie.mf-julie-light .jb-photo-body{position:static!important;margin:0!important;transform:none!important;background:none!important}
+  html.mf body #julie.mf-julie-light .jb-wide video{display:none!important}
+  html.mf body #julie.mf-julie-light .jb-wide .jb-wide-body{padding:18px 16px 20px!important}
+}
+html.mf body #julie.mf-julie-light .jb-role{font:500 19px/1.45 Inter,sans-serif!important;color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+@media (max-width:900px){html.mf body #julie.mf-julie-light .jb-role{font-size:18px!important}}
+/* ===== Round 35 (Omri: she is not the thing, the image is too large): Julie as one compact bonus card ===== */
+html.mf body #julie.mf-julie-bonus{background:linear-gradient(180deg,#071433 0%,#040B1E 100%)!important;padding:36px 0!important}
+html.mf body #julie .jbonus{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;align-items:center;max-width:900px;margin:0 auto;padding:22px 24px;border-radius:24px;background:radial-gradient(80% 90% at 50% 0%,rgba(0,110,255,.22),transparent 70%),linear-gradient(180deg,#0A1A40 0%,#050D24 100%);border:1.5px solid #9AD8FF;box-shadow:0 0 8px rgba(154,216,255,.9),0 0 24px rgba(59,167,255,.7),0 0 54px rgba(0,110,255,.5),inset 0 0 16px rgba(124,200,255,.3)}
+html.mf body #julie .jbonus-photo{width:150px;height:150px;border-radius:18px;object-fit:cover;object-position:50% 25%;border:1.5px solid rgba(154,216,255,.7)}
+html.mf body #julie .jbonus-tag{margin:0 0 6px;font:italic 500 20px/1.2 'Playfair Display',Georgia,serif;color:#BFE6FF;text-shadow:0 0 10px rgba(124,200,255,.8)}
+html.mf body #julie .jbonus-title{margin:0 0 8px;font:500 30px/1.15 'Playfair Display',Georgia,serif!important;color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important;letter-spacing:-.01em}
+html.mf body #julie .jbonus-title em{font-style:italic;font-weight:400;background:linear-gradient(180deg,#E3F2FF,#7CC0FF);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+html.mf body #julie .jbonus-text{margin:0 0 12px;font:500 19px/1.45 Inter,sans-serif;color:#FFFFFF}
+html.mf body #julie .jbonus-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 16px}
+html.mf body #julie .jbonus-facts span{font:500 18px/1.3 Inter,sans-serif;color:#CFE8FF}
+html.mf body #julie .jbonus-facts b{font:italic 500 24px/1 'Playfair Display',Georgia,serif;color:#FFFFFF;margin-right:4px}
+html.mf body #julie .jbonus .mf-jbtn{display:inline-flex}
+@media (max-width:900px){
+  html.mf body #julie.mf-julie-bonus{padding:28px 0!important}
+  html.mf body #julie .jbonus{grid-template-columns:96px minmax(0,1fr);gap:14px;padding:16px;align-items:start}
+  html.mf body #julie .jbonus-photo{width:96px;height:96px;border-radius:14px}
+  html.mf body #julie .jbonus-tag{font-size:18px}
+  html.mf body #julie .jbonus-title{font-size:25px!important}
+  html.mf body #julie .jbonus-text,html.mf body #julie .jbonus-facts,html.mf body #julie .jbonus .mf-jbtn{grid-column:1/-1}
+  html.mf body #julie .jbonus-body{display:contents}
+  html.mf body #julie .jbonus-tag,html.mf body #julie .jbonus-title{grid-column:2}
+  html.mf body #julie .jbonus-text{font-size:18px}
+  html.mf body #julie .jbonus .mf-jbtn{justify-self:start}
+}
+/* Round 35b (Omri: not a whole phone long fold): a slim bonus strip on phones */
+@media (max-width:900px){
+  html.mf body #julie.mf-julie-bonus{padding:20px 0!important}
+  html.mf body #julie .jbonus{grid-template-columns:72px minmax(0,1fr);gap:6px 12px;padding:14px 14px 12px;align-items:center}
+  html.mf body #julie .jbonus-photo{width:72px;height:72px;border-radius:12px;grid-row:1/3}
+  html.mf body #julie .jbonus-tag{grid-column:2;grid-row:1;margin:0;font-size:17px}
+  html.mf body #julie .jbonus-title{grid-column:2;grid-row:2;margin:0;font-size:22px!important;line-height:1.12!important}
+  html.mf body #julie .jbonus-text{grid-column:1/-1;margin:8px 0 6px;font-size:18px}
+  html.mf body #julie .jbonus-facts{grid-column:1/-1;margin:0;gap:4px 14px}
+  html.mf body #julie .jbonus-facts span{font-size:17px}
+  html.mf body #julie .jbonus-facts b{font-size:21px}
+  html.mf body #julie .jbonus .mf-jbtn{display:none!important}
+}
+/* ===== Round 36 (Omri: symmetrical, no wasted space, shine, no plain white text): centred bonus card, photo between two equal facts ===== */
+html.mf body #julie.mf-julie-bonus{background:linear-gradient(180deg,#071433 0%,#040B1E 100%)!important;padding:28px 0!important}
+html.mf body #julie .jb2{max-width:760px;margin:0 auto;padding:20px 22px 18px;text-align:center;border-radius:26px;background:radial-gradient(70% 80% at 50% 0%,rgba(0,110,255,.30),transparent 70%),linear-gradient(180deg,#0A1A40 0%,#050D24 100%);border:2px solid #9AD8FF;box-shadow:0 0 10px rgba(154,216,255,1),0 0 30px rgba(59,167,255,.85),0 0 70px rgba(0,110,255,.6),inset 0 0 20px rgba(124,200,255,.35);animation:mfpNeon 3.2s ease-in-out infinite}
+html.mf body #julie .jb2-tag{margin:0;font:italic 500 20px/1.2 'Playfair Display',Georgia,serif;color:#CFEBFF;text-shadow:0 0 10px rgba(124,200,255,1),0 0 22px rgba(59,167,255,.8)}
+html.mf body #julie .jb2-title{margin:4px 0 14px;font:500 30px/1.15 'Playfair Display',Georgia,serif!important;background:linear-gradient(180deg,#FFFFFF 0%,#BFE2FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent!important}
+html.mf body #julie .jb2-title em{font-style:italic;font-weight:400;background:linear-gradient(180deg,#E3F2FF 0%,#7CC0FF 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+html.mf body #julie .jb2-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+html.mf body #julie .jb2-photo{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:2px solid #CFEBFF;box-shadow:0 0 0 4px rgba(0,110,255,.35),0 0 18px rgba(154,216,255,1),0 0 40px rgba(59,167,255,.8)}
+html.mf body #julie .jb2-fact{padding:12px 8px;border-radius:16px;background:linear-gradient(160deg,rgba(44,123,255,.35),rgba(10,79,216,.18));border:1.5px solid rgba(154,216,255,.6);box-shadow:0 0 16px -4px rgba(59,167,255,.8),inset 0 1px 0 rgba(255,255,255,.25)}
+html.mf body #julie .jb2-fact b{display:block;font:italic 500 30px/1.05 'Playfair Display',Georgia,serif;background:linear-gradient(180deg,#FFFFFF 0%,#9FD6FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 8px rgba(124,192,255,.7))}
+html.mf body #julie .jb2-fact span{display:block;margin-top:4px;font:600 17px/1.25 Inter,sans-serif;color:#BFE2FF}
+html.mf body #julie .jb2-line{margin:14px 0 0;font:600 19px/1.4 Inter,sans-serif;color:#9FD6FF;text-shadow:0 0 12px rgba(59,167,255,.5)}
+@media (max-width:900px){
+  html.mf body #julie.mf-julie-bonus{padding:20px 0!important}
+  html.mf body #julie .jb2{padding:16px 12px 14px}
+  html.mf body #julie .jb2-tag{font-size:18px}
+  html.mf body #julie .jb2-title{font-size:23px!important;margin:2px 0 12px}
+  html.mf body #julie .jb2-row{gap:10px}
+  html.mf body #julie .jb2-photo{width:84px;height:84px}
+  html.mf body #julie .jb2-fact{padding:10px 6px}
+  html.mf body #julie .jb2-fact b{font-size:24px}
+  html.mf body #julie .jb2-fact span{font-size:15.5px}
+  html.mf body #julie .jb2-line{font-size:17px;margin-top:12px}
+}
+html.mf body #julie .jb2-fact span{font-size:18px!important;white-space:nowrap}
+@media (max-width:900px){html.mf body #julie .jb2-fact b{font-size:26px}html.mf body #julie .jb2-fact span{font-size:17px!important}html.mf body #julie .jb2-line{font-size:18px}}
 
 /* Round 12 (Omri): pricing card in the masterclass card language. White glass card, blue halo, left-aligned, Playfair title and price, label rows instead of check bullets */
 html.mf body section.mfp{position:relative;padding:72px 0 64px;background:radial-gradient(60% 45% at 50% 38%,rgba(0,110,255,.30),transparent 70%),radial-gradient(40% 30% at 85% 90%,rgba(59,167,255,.14),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)}
@@ -10385,7 +10492,7 @@ html.mf body .mfp-tbonus.mfp-twide{margin:4px 0 0!important}
   <div class="container">
     <div class="topics-header reveal">
       <span class="eyebrow">The Six Pillars</span>
-      <h2 class="section-title">Learn to Master<br><span class="mf-acc">Six Pillars of a Longer, Better Life.</span></h2>
+      <h2 class="section-title">Learn to Master Six Pillars<br><span class="mf-acc">for a Longer, Better Life.</span></h2>
       <p class="section-subtitle" style="margin:0 auto;">The interconnected systems, nutrition, sleep, movement, supplements and wearables, stress, and your personal protocol, that compound a longer, better life across every decade.</p>
     </div>
     <div class="topic-grid-v2">
@@ -10945,6 +11052,39 @@ html.mf body .mfp-tbonus.mfp-twide{margin:4px 0 0!important}
       <a href="#pricing" class="section-cta-btn" data-fn-cta="section">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
     </div>
   </section>
+<section class="cgm8" id="cgm">
+  <div class="container">
+    <div class="cgm8-head">
+      <span class="eyebrow">Included in Your Course</span>
+      <h2 class="section-title">Continuous Glucose Monitoring, <span class="mf-lb">Included in Your Course</span></h2>
+    </div>
+    <div class="cgm9">
+      <figure class="cgm9-shot"><img src="https://www.longevitylifeacademy.com/assets/cgm/lingo-1.jpg" alt="The Abbott Lingo app showing a live glucose reading of 110, next to the Lingo biosensor" loading="lazy" width="900" height="900"></figure>
+      <ol class="cgm9-list">
+        <li><b>Minute-by-minute glucose</b><span>tracked for 2 weeks</span></li>
+        <li><b>Lingo coaching</b><span>to build habits and adjust your nutrition</span></li>
+        <li><b>Free, shipped to your home</b><span>full app access on iOS and Android</span></li>
+      </ol>
+    </div>
+    <p class="cgm8-fine">For students 18+. Not for insulin users. Not for medical diagnosis. One unit per student, shipped to U.S. addresses.</p>
+  </div>
+</section>
+
+<section class="mf-julie mf-julie-bonus" id="julie">
+  <div class="container">
+    <article class="jb2">
+      <p class="jb2-tag">Bonus, included</p>
+      <h2 class="jb2-title">VIP Masterclass with <em>Julie Gibson Clark</em></h2>
+      <div class="jb2-row">
+        <div class="jb2-fact"><b>No. 2</b><span>on Earth</span></div>
+        <img class="jb2-photo" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg" alt="Julie Gibson Clark" width="600" height="600">
+        <div class="jb2-fact"><b>8 months</b><span>aging a year</span></div>
+      </div>
+      <p class="jb2-line">90-minute live masterclass, Q&amp;A included, Nov&nbsp;14.</p>
+    </article>
+  </div>
+</section>
+
 <section class="mfp" id="pricing">
   <div class="container">
     <header class="mfp-head">
@@ -10973,59 +11113,63 @@ html.mf body .mfp-tbonus.mfp-twide{margin:4px 0 0!important}
   </div>
 </section>
 
-<section class="mf-julie v8-julie v9-julie" id="julie">
+<section class="how-v2" id="how"><span class="lla-neon-top" aria-hidden="true"></span><span class="lla-neon-glow" aria-hidden="true"></span>
   <div class="container">
-    <div class="mf-head">
-      <span class="eyebrow">Included with enrollment</span>
-      <h2 class="section-title">Your VIP Masterclass with <em>Julie Gibson Clark.</em></h2>
-      <p class="section-subtitle">Exclusive access to her 90-minute live masterclass, Q&amp;A included. Saturday, November&nbsp;14.</p>
+    <div class="how-v2-header reveal">
+      <img loading="lazy" decoding="async" src="https://www.longevitylifeacademy.com/assets/e-teacher-logo.png" alt="eTeacher Group" class="how-v2-logo">
+      <h2 class="how-v2-title">How It <em class="mf-acc">Works</em></h2>
+      <p class="how-v2-sub">Six clear steps from enrollment to your personal longevity protocol.</p>
     </div>
-    <div class="jher">
-      <figure class="jher-photo">
-        <img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg" alt="Julie Gibson Clark" loading="lazy" width="600" height="600">
-        <figcaption><b>Julie Gibson Clark</b><span>The 2nd slowest-aging woman on Earth</span></figcaption>
-      </figure>
-      <ol class="jher-facts">
-        <li><b>No. 2 on Earth</b><span>Rejuvenation Olympics, ahead of Bryan Johnson&rsquo;s $2M-a-year program.</span></li>
-        <li><b>8 months a year</b><span>Her pace of aging. DunedinPACE 0.665, verified by epigenetic testing.</span></li>
-        <li><b>VIP access included</b><span>Her 90-minute live masterclass, Q&amp;A included, Nov&nbsp;14.</span></li>
-      </ol>
+    <div class="how-v2-slider-wrap reveal">
+      <button class="how-v2-arrow how-v2-prev" aria-label="Previous"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="how-v2-track-container">
+        <div class="how-v2-track" id="howTrack">
+          <div class="how-v2-card" style="border-top: 3px solid #006EFF;">
+            <span class="how-v2-num">01</span>
+            <h3 class="how-v2-card-title">Apply &amp; Match</h3>
+            <p class="how-v2-card-desc">Submit a short application. We review your background and goals, then place you in a small class of 8 to 15 people with compatible interests and schedules.</p>
+            <span class="how-v2-card-meta">Takes about 5 minutes</span>
+          </div>
+          <div class="how-v2-card" style="border-top: 3px solid #338BFF;">
+            <span class="how-v2-num">02</span>
+            <h3 class="how-v2-card-title">Baseline Assessment</h3>
+            <p class="how-v2-card-desc">Complete a health intake questionnaire and share any existing lab work. This becomes your personal starting point, the data you'll track against over 18 weeks.</p>
+            <span class="how-v2-card-meta">Health data + lab review</span>
+          </div>
+          <div class="how-v2-card" style="border-top: 3px solid #4DA6FF;">
+            <span class="how-v2-num">03</span>
+            <h3 class="how-v2-card-title">Meet Your Class</h3>
+            <p class="how-v2-card-desc">Join a live orientation call with your instructor and classmates. Set expectations, learn the platform, and build the group dynamic that carries you through 18 weeks.</p>
+            <span class="how-v2-card-meta">Live kickoff session</span>
+          </div>
+          <div class="how-v2-card" style="border-top: 3px solid #0099FF;">
+            <span class="how-v2-num">04</span>
+            <h3 class="how-v2-card-title">Learn Live Weekly</h3>
+            <p class="how-v2-card-desc">Attend 50-minute live online sessions with your class and instructor. Each week covers a new longevity topic, with real data, case studies, and hands-on exercises.</p>
+            <span class="how-v2-card-meta">18 weeks · 50 min each</span>
+          </div>
+          <div class="how-v2-card" style="border-top: 3px solid #006EFF;">
+            <span class="how-v2-num">05</span>
+            <h3 class="how-v2-card-title">Experiment Between Sessions</h3>
+            <p class="how-v2-card-desc">Apply what you learn each week with guided experiments, food logs, sleep tracking, movement challenges. Real change comes from practice, not just theory.</p>
+            <span class="how-v2-card-meta">Hands-on weekly protocols</span>
+          </div>
+          <div class="how-v2-card" style="border-top: 3px solid #338BFF;">
+            <span class="how-v2-num">06</span>
+            <h3 class="how-v2-card-title">Build Your Protocol</h3>
+            <p class="how-v2-card-desc">In the final phase, you assemble everything you've learned into a written, personalized longevity protocol, tested, peer-reviewed by your class, and yours to keep.</p>
+            <span class="how-v2-card-meta">Your personal blueprint</span>
+          </div>
+        </div>
+      </div>
+      <button class="how-v2-arrow how-v2-next" aria-label="Next"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></button>
     </div>
-    <div class="jg-cta"><a class="mf-jbtn" href="#pricing">Enroll Now</a></div>
+    <div class="how-v2-dots" id="howDots"></div>
   </div>
-</section>
-
-<section class="nov-incl" id="included">
-  <div class="container">
-    <span class="eyebrow">Everything in the course</span>
-    <h2 class="section-title">What the course <span class="nov-accent">includes</span></h2>
-    <div class="nov-incl-grid">
-      <article class="nov-incl-card" style="--c1:#006EFF;--c2:#5EB6FF"><div class="n">01</div><h3>18 live classes, one a week</h3><p>50 minutes on Zoom with a certified longevity instructor. Every class is recorded and stays yours.</p><span class="tag">Included</span></article>
-      <article class="nov-incl-card" style="--c1:#22B27A;--c2:#7DE5C1"><div class="n">02</div><h3>The six pillars of longevity</h3><p>Nutrition, sleep, movement, supplements and wearables, stress, and your own protocol.</p><span class="tag">Included</span></article>
-      <article class="nov-incl-card" style="--c1:#FF7A45;--c2:#FFB38A"><div class="n">03</div><h3>Abbott Lingo glucose sensor and app</h3><p>Shipped to your door. Read your own biomarkers by lesson 5 and build your protocol on them.</p><span class="tag">Included</span></article>
-      <article class="nov-incl-card" style="--c1:#7C5CFF;--c2:#B79DFF"><div class="n">04</div><h3>Julie Gibson Clark's live Masterclass</h3><p>A live session with the 2nd slowest-aging woman on Earth. Free for Blueprint students.</p><span class="tag">Included</span></article>
-      <article class="nov-incl-card" style="--c1:#12B5CB;--c2:#7DE5F2"><div class="n">05</div><h3>Your personal Longevity Blueprint</h3><p>Built on your own numbers by week 18. A protocol you can actually live with.</p><span class="tag">Included</span></article>
+    <div class="how-v2-cta reveal" style="text-align:center; margin-top:48px;">
+      <a href="#pricing" class="section-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
-  </div>
-</section>
-<section class="cgm8" id="cgm">
-  <div class="container">
-    <div class="cgm8-head">
-      <span class="eyebrow">Included in Your Course</span>
-      <h2 class="section-title">Continuous Glucose Monitoring, <span class="mf-lb">Included in Your Course</span></h2>
-    </div>
-    <div class="cgm9">
-      <figure class="cgm9-shot"><img src="https://www.longevitylifeacademy.com/assets/cgm/lingo-1.jpg" alt="The Abbott Lingo app showing a live glucose reading of 110, next to the Lingo biosensor" loading="lazy" width="900" height="900"></figure>
-      <ol class="cgm9-list">
-        <li><b>Minute-by-minute glucose</b><span>tracked for 2 weeks</span></li>
-        <li><b>Lingo coaching</b><span>to build habits and adjust your nutrition</span></li>
-        <li><b>Free, shipped to your home</b><span>full app access on iOS and Android</span></li>
-      </ol>
-    </div>
-    <p class="cgm8-fine">For students 18+. Not for insulin users. Not for medical diagnosis. One unit per student, shipped to U.S. addresses.</p>
-  </div>
-</section>
-
+  </section>
 <section class="about" id="about">
   <a class="about-link-wrap" href="https://www.longevitylifeacademy.com/about.html" aria-label="Read more about Longevity Life Academy and eTeacher Group">
   <div class="container">
@@ -11230,152 +11374,6 @@ html.mf body .mfp-tbonus.mfp-twide{margin:4px 0 0!important}
       <a href="#pricing" class="section-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </section>
-<section class="how-v2" id="how"><span class="lla-neon-top" aria-hidden="true"></span><span class="lla-neon-glow" aria-hidden="true"></span>
-  <div class="container">
-    <div class="how-v2-header reveal">
-      <img loading="lazy" decoding="async" src="https://www.longevitylifeacademy.com/assets/e-teacher-logo.png" alt="eTeacher Group" class="how-v2-logo">
-      <h2 class="how-v2-title">How It <em class="mf-acc">Works</em></h2>
-      <p class="how-v2-sub">Six clear steps from enrollment to your personal longevity protocol.</p>
-    </div>
-    <div class="how-v2-slider-wrap reveal">
-      <button class="how-v2-arrow how-v2-prev" aria-label="Previous"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></button>
-      <div class="how-v2-track-container">
-        <div class="how-v2-track" id="howTrack">
-          <div class="how-v2-card" style="border-top: 3px solid #006EFF;">
-            <span class="how-v2-num">01</span>
-            <h3 class="how-v2-card-title">Apply &amp; Match</h3>
-            <p class="how-v2-card-desc">Submit a short application. We review your background and goals, then place you in a small class of 8 to 15 people with compatible interests and schedules.</p>
-            <span class="how-v2-card-meta">Takes about 5 minutes</span>
-          </div>
-          <div class="how-v2-card" style="border-top: 3px solid #338BFF;">
-            <span class="how-v2-num">02</span>
-            <h3 class="how-v2-card-title">Baseline Assessment</h3>
-            <p class="how-v2-card-desc">Complete a health intake questionnaire and share any existing lab work. This becomes your personal starting point, the data you'll track against over 18 weeks.</p>
-            <span class="how-v2-card-meta">Health data + lab review</span>
-          </div>
-          <div class="how-v2-card" style="border-top: 3px solid #4DA6FF;">
-            <span class="how-v2-num">03</span>
-            <h3 class="how-v2-card-title">Meet Your Class</h3>
-            <p class="how-v2-card-desc">Join a live orientation call with your instructor and classmates. Set expectations, learn the platform, and build the group dynamic that carries you through 18 weeks.</p>
-            <span class="how-v2-card-meta">Live kickoff session</span>
-          </div>
-          <div class="how-v2-card" style="border-top: 3px solid #0099FF;">
-            <span class="how-v2-num">04</span>
-            <h3 class="how-v2-card-title">Learn Live Weekly</h3>
-            <p class="how-v2-card-desc">Attend 50-minute live online sessions with your class and instructor. Each week covers a new longevity topic, with real data, case studies, and hands-on exercises.</p>
-            <span class="how-v2-card-meta">18 weeks · 50 min each</span>
-          </div>
-          <div class="how-v2-card" style="border-top: 3px solid #006EFF;">
-            <span class="how-v2-num">05</span>
-            <h3 class="how-v2-card-title">Experiment Between Sessions</h3>
-            <p class="how-v2-card-desc">Apply what you learn each week with guided experiments, food logs, sleep tracking, movement challenges. Real change comes from practice, not just theory.</p>
-            <span class="how-v2-card-meta">Hands-on weekly protocols</span>
-          </div>
-          <div class="how-v2-card" style="border-top: 3px solid #338BFF;">
-            <span class="how-v2-num">06</span>
-            <h3 class="how-v2-card-title">Build Your Protocol</h3>
-            <p class="how-v2-card-desc">In the final phase, you assemble everything you've learned into a written, personalized longevity protocol, tested, peer-reviewed by your class, and yours to keep.</p>
-            <span class="how-v2-card-meta">Your personal blueprint</span>
-          </div>
-        </div>
-      </div>
-      <button class="how-v2-arrow how-v2-next" aria-label="Next"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></button>
-    </div>
-    <div class="how-v2-dots" id="howDots"></div>
-  </div>
-    <div class="how-v2-cta reveal" style="text-align:center; margin-top:48px;">
-      <a href="#pricing" class="section-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
-  </section>
-<section class="skills" id="skills">
-  <div class="container">
-    <div class="skills-header reveal">
-      <span class="eyebrow">Deep Dives</span>
-      <h2 class="section-title">What Your Doctor<br><span class="mf-lb">Doesn't Have Time to Teach You.</span></h2>
-      <p class="section-subtitle">Deep-dive lectures on the science, the daily habits, and the real-world results behind a longer, better life.</p>
-    </div>
-    <div class="skills-grid skills-grid-3up">
-      <a class="skill-card reveal" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" aria-label="Supplements and longevity therapies that have real data">
-        <div class="skill-bg supplements"><video preload="metadata" autoplay muted loop playsinline><source src="https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4" type="video/mp4"></video></div>
-        <div class="skill-overlay"></div>
-        <span class="skill-arrow" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </span>
-        <div class="skill-content">
-          <div class="skill-eyebrow">Supplements &amp; Therapies</div>
-          <h3 class="skill-title">Know What You're Actually Taking</h3>
-          <p class="skill-sub">The short list of supplements with real human data, and the long list of marketing dressed up as science.</p>
-        </div>
-      </a>
-      <a class="skill-card reveal" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" aria-label="The longevity toolkit, the habits that move the needle">
-        <div class="skill-bg mindset"><video preload="metadata" autoplay muted loop playsinline><source src="https://www.longevitylifeacademy.com/assets/v2-mental-bubbles.mp4" type="video/mp4"></video></div>
-        <div class="skill-overlay"></div>
-        <span class="skill-arrow" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </span>
-        <div class="skill-content">
-          <div class="skill-eyebrow">The Longevity Toolkit</div>
-          <h3 class="skill-title">Five Habits That Move the Needle</h3>
-          <p class="skill-sub">Zone 2 cardio, VO2 max, CGM-driven metabolic tracking, ApoB management, and the sleep that drives recovery.</p>
-        </div>
-      </a>
-      <a class="skill-card reveal" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" aria-label="Skin and the visible markers of aging">
-        <div class="skill-bg skin"><video preload="metadata" autoplay muted loop playsinline><source src="https://www.longevitylifeacademy.com/assets/skill-skin.mp4" type="video/mp4"></video></div>
-        <div class="skill-overlay"></div>
-        <span class="skill-arrow" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </span>
-        <div class="skill-content">
-          <div class="skill-eyebrow">Aging on the Outside</div>
-          <h3 class="skill-title">The Visible Edge of Aging</h3>
-          <p class="skill-sub">Skin as a real-time biomarker of aging, and the treatments with actual clinical evidence behind them.</p>
-        </div>
-      </a>
-    </div>
-    <div class="fold-cta reveal" style="text-align:center; margin-top:72px;">
-      <p style="font-size:18px; color:rgba(10,22,40,0.7); margin:0 0 20px; max-width:560px; margin-left:auto; margin-right:auto;">Go deeper than your annual physical ever will.</p>
-      <a href="#pricing" class="section-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
-  </div>
-</section>
-<section class="value">
-  <div class="container">
-    <div class="value-header reveal">
-      <div>
-        <span class="eyebrow">What Makes This Different</span>
-        <h2 class="section-title">Why This Course<br><span class="mf-acc">Is Different</span></h2>
-      </div>
-      <div class="value-nav">
-        <button class="value-arrow" id="valPrev" aria-label="Previous">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
-        <button class="value-arrow" id="valNext" aria-label="Next">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-        </button>
-      </div>
-    </div>
-    <div class="value-track-wrap">
-      <div class="value-track" id="valTrack">
-        <div class="value-card reveal" data-accent="1">
-          <h3 class="value-title">Live, not recorded.</h3>
-          <p class="value-desc">Every session is live with a certified instructor and your classmates. You ask questions in real time. You get real answers. Recordings are available if you miss one, but the live room is where the learning happens.</p>
-        </div>
-        <div class="value-card reveal" data-accent="2">
-          <h3 class="value-title">Your data, your curriculum.</h3>
-          <p class="value-desc">You don't memorize facts about glucose or sleep, you watch them move in your own body. CGM readings, lifestyle logs, and food experiments shape every session you attend.</p>
-        </div>
-        <div class="value-card reveal" data-accent="3">
-          <h3 class="value-title">Small classes, real accountability.</h3>
-          <p class="value-desc">Eight to fifteen people. You'll know your classmates' names and they'll know yours. Peer coaching in the final weeks builds the accountability that keeps the protocol alive.</p>
-        </div>
-        <div class="value-card reveal" data-accent="4">
-          <h3 class="value-title">A written protocol you'll keep.</h3>
-          <p class="value-desc">The course ends with a document, your personal longevity blueprint, tested against your body over 18 weeks. It's the one deliverable designed to outlast the course itself.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="deepdive"><span class="lla-neon-top" aria-hidden="true"></span><span class="lla-neon-glow" aria-hidden="true"></span>
   <div class="container">
     <div class="deepdive-header reveal">
@@ -11494,24 +11492,54 @@ html.mf body .mfp-tbonus.mfp-twide{margin:4px 0 0!important}
       <a href="#pricing" class="section-cta-btn deepdive-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </section>
-<section class="bioquiz">
+<section class="skills" id="skills">
   <div class="container">
-    <div class="bioquiz-card reveal">
-      <div class="bioquiz-text">
-        <span class="bioquiz-eyebrow">Free · 2 Minutes</span>
-        <h2 class="bioquiz-title">What's your true<br><span class="mf-acc">biological age?</span></h2>
-        <p class="bioquiz-body">Your birthday is one number. Your body tells a different story. Answer twelve questions about your sleep, energy, and habits, and get an estimate of how your biology compares to your calendar age.</p>
-        <a href="https://www.longevitylifeacademy.com/biological-age-light.html" class="bioquiz-cta">
-          Take the 2-Minute Quiz
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-      <div class="bioquiz-visual">
-        <div class="bioquiz-badge">
-          <div class="bioquiz-badge-num">?</div>
-          <div class="bioquiz-badge-label">Your Bio-Age</div>
+    <div class="skills-header reveal">
+      <span class="eyebrow">Deep Dives</span>
+      <h2 class="section-title">What Your Doctor<br><span class="mf-lb">Doesn't Have Time to Teach You.</span></h2>
+      <p class="section-subtitle">Deep-dive lectures on the science, the daily habits, and the real-world results behind a longer, better life.</p>
+    </div>
+    <div class="skills-grid skills-grid-3up">
+      <a class="skill-card reveal" href="https://www.longevitylifeacademy.com/topics/supplements-health-tech.html" aria-label="Supplements and longevity therapies that have real data">
+        <div class="skill-bg supplements"><video preload="metadata" autoplay muted loop playsinline><source src="https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4" type="video/mp4"></video></div>
+        <div class="skill-overlay"></div>
+        <span class="skill-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </span>
+        <div class="skill-content">
+          <div class="skill-eyebrow">Supplements &amp; Therapies</div>
+          <h3 class="skill-title">Know What You're Actually Taking</h3>
+          <p class="skill-sub">The short list of supplements with real human data, and the long list of marketing dressed up as science.</p>
         </div>
-      </div>
+      </a>
+      <a class="skill-card reveal" href="https://www.longevitylifeacademy.com/topics/mental-emotional-health.html" aria-label="The longevity toolkit, the habits that move the needle">
+        <div class="skill-bg mindset"><video preload="metadata" autoplay muted loop playsinline><source src="https://www.longevitylifeacademy.com/assets/v2-mental-bubbles.mp4" type="video/mp4"></video></div>
+        <div class="skill-overlay"></div>
+        <span class="skill-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </span>
+        <div class="skill-content">
+          <div class="skill-eyebrow">The Longevity Toolkit</div>
+          <h3 class="skill-title">Five Habits That Move the Needle</h3>
+          <p class="skill-sub">Zone 2 cardio, VO2 max, CGM-driven metabolic tracking, ApoB management, and the sleep that drives recovery.</p>
+        </div>
+      </a>
+      <a class="skill-card reveal" href="https://www.longevitylifeacademy.com/topics/protocols-habits.html" aria-label="Skin and the visible markers of aging">
+        <div class="skill-bg skin"><video preload="metadata" autoplay muted loop playsinline><source src="https://www.longevitylifeacademy.com/assets/skill-skin.mp4" type="video/mp4"></video></div>
+        <div class="skill-overlay"></div>
+        <span class="skill-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </span>
+        <div class="skill-content">
+          <div class="skill-eyebrow">Aging on the Outside</div>
+          <h3 class="skill-title">The Visible Edge of Aging</h3>
+          <p class="skill-sub">Skin as a real-time biomarker of aging, and the treatments with actual clinical evidence behind them.</p>
+        </div>
+      </a>
+    </div>
+    <div class="fold-cta reveal" style="text-align:center; margin-top:72px;">
+      <p style="font-size:18px; color:rgba(10,22,40,0.7); margin:0 0 20px; max-width:560px; margin-left:auto; margin-right:auto;">Go deeper than your annual physical ever will.</p>
+      <a href="#pricing" class="section-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
@@ -11561,6 +11589,78 @@ html.mf body .mfp-tbonus.mfp-twide{margin:4px 0 0!important}
     </div>
     <div style="text-align: center; padding-top: 32px;">
       <a href="#pricing" class="section-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+<section class="nov-incl" id="included">
+  <div class="container">
+    <span class="eyebrow">Everything in the course</span>
+    <h2 class="section-title">What the course <span class="nov-accent">includes</span></h2>
+    <div class="nov-incl-grid">
+      <article class="nov-incl-card" style="--c1:#006EFF;--c2:#5EB6FF"><div class="n">01</div><h3>18 live classes, one a week</h3><p>50 minutes on Zoom with a certified longevity instructor. Every class is recorded and stays yours.</p><span class="tag">Included</span></article>
+      <article class="nov-incl-card" style="--c1:#22B27A;--c2:#7DE5C1"><div class="n">02</div><h3>The six pillars of longevity</h3><p>Nutrition, sleep, movement, supplements and wearables, stress, and your own protocol.</p><span class="tag">Included</span></article>
+      <article class="nov-incl-card" style="--c1:#FF7A45;--c2:#FFB38A"><div class="n">03</div><h3>Abbott Lingo glucose sensor and app</h3><p>Shipped to your door. Read your own biomarkers by lesson 5 and build your protocol on them.</p><span class="tag">Included</span></article>
+      <article class="nov-incl-card" style="--c1:#7C5CFF;--c2:#B79DFF"><div class="n">04</div><h3>Julie Gibson Clark's live Masterclass</h3><p>A live session with the 2nd slowest-aging woman on Earth. Free for Blueprint students.</p><span class="tag">Included</span></article>
+      <article class="nov-incl-card" style="--c1:#12B5CB;--c2:#7DE5F2"><div class="n">05</div><h3>Your personal Longevity Blueprint</h3><p>Built on your own numbers by week 18. A protocol you can actually live with.</p><span class="tag">Included</span></article>
+    </div>
+  </div>
+</section>
+<section class="value">
+  <div class="container">
+    <div class="value-header reveal">
+      <div>
+        <span class="eyebrow">What Makes This Different</span>
+        <h2 class="section-title">Why This Course<br><span class="mf-acc">Is Different</span></h2>
+      </div>
+      <div class="value-nav">
+        <button class="value-arrow" id="valPrev" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="value-arrow" id="valNext" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="value-track-wrap">
+      <div class="value-track" id="valTrack">
+        <div class="value-card reveal" data-accent="1">
+          <h3 class="value-title">Live, not recorded.</h3>
+          <p class="value-desc">Every session is live with a certified instructor and your classmates. You ask questions in real time. You get real answers. Recordings are available if you miss one, but the live room is where the learning happens.</p>
+        </div>
+        <div class="value-card reveal" data-accent="2">
+          <h3 class="value-title">Your data, your curriculum.</h3>
+          <p class="value-desc">You don't memorize facts about glucose or sleep, you watch them move in your own body. CGM readings, lifestyle logs, and food experiments shape every session you attend.</p>
+        </div>
+        <div class="value-card reveal" data-accent="3">
+          <h3 class="value-title">Small classes, real accountability.</h3>
+          <p class="value-desc">Eight to fifteen people. You'll know your classmates' names and they'll know yours. Peer coaching in the final weeks builds the accountability that keeps the protocol alive.</p>
+        </div>
+        <div class="value-card reveal" data-accent="4">
+          <h3 class="value-title">A written protocol you'll keep.</h3>
+          <p class="value-desc">The course ends with a document, your personal longevity blueprint, tested against your body over 18 weeks. It's the one deliverable designed to outlast the course itself.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bioquiz">
+  <div class="container">
+    <div class="bioquiz-card reveal">
+      <div class="bioquiz-text">
+        <span class="bioquiz-eyebrow">Free · 2 Minutes</span>
+        <h2 class="bioquiz-title">What's your true<br><span class="mf-acc">biological age?</span></h2>
+        <p class="bioquiz-body">Your birthday is one number. Your body tells a different story. Answer twelve questions about your sleep, energy, and habits, and get an estimate of how your biology compares to your calendar age.</p>
+        <a href="https://www.longevitylifeacademy.com/biological-age-light.html" class="bioquiz-cta">
+          Take the 2-Minute Quiz
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="bioquiz-visual">
+        <div class="bioquiz-badge">
+          <div class="bioquiz-badge-num">?</div>
+          <div class="bioquiz-badge-label">Your Bio-Age</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
