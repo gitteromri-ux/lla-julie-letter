@@ -7,7 +7,7 @@
       "failed": [
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
       ],
       "heroVideo": [
         {
@@ -23,15 +23,15 @@
           "w": 350
         }
       ],
-      "height": 22252,
+      "height": 20482,
       "vh": 664,
-      "screens": 33.5,
+      "screens": 30.8,
       "overflowX": 0,
       "broken": [
-        "julie-seated.jpg"
+        "julie-face.jpg"
       ],
       "videosPlaying": 0,
-      "videos": 15,
+      "videos": 14,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -41,7 +41,7 @@
       "errors": [],
       "failed": [
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
       ],
       "heroVideo": [
         {
@@ -57,15 +57,15 @@
           "w": 372
         }
       ],
-      "height": 22001,
+      "height": 20321,
       "vh": 839,
-      "screens": 26.2,
+      "screens": 24.2,
       "overflowX": 0,
       "broken": [
-        "julie-seated.jpg"
+        "julie-face.jpg"
       ],
       "videosPlaying": 0,
-      "videos": 15,
+      "videos": 14,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -76,7 +76,7 @@
       "failed": [
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
       ],
       "heroVideo": [
         {
@@ -92,15 +92,15 @@
           "w": 280
         }
       ],
-      "height": 24685,
+      "height": 22643,
       "vh": 568,
-      "screens": 43.5,
+      "screens": 39.9,
       "overflowX": 0,
       "broken": [
-        "julie-seated.jpg"
+        "julie-face.jpg"
       ],
-      "videosPlaying": 7,
-      "videos": 15,
+      "videosPlaying": 6,
+      "videos": 14,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -110,7 +110,7 @@
       "errors": [],
       "failed": [
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
       ],
       "heroVideo": [
         {
@@ -126,15 +126,15 @@
           "w": 560
         }
       ],
-      "height": 23447,
+      "height": 21223,
       "vh": 900,
-      "screens": 26.1,
+      "screens": 23.6,
       "overflowX": 0,
       "broken": [
-        "julie-seated.jpg"
+        "julie-face.jpg"
       ],
       "videosPlaying": 0,
-      "videos": 15,
+      "videos": 14,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     }
