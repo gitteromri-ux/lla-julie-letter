@@ -1,4 +1,5 @@
 // Screenshots the published Final website for Meta on iPhone and desktop. Read-only. No forms are submitted.
+// Run 2: waits for the sourced trust line build.
 const { chromium, devices } = require('playwright');
 const fs = require('fs');
 const URL = 'https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/?v=' + Date.now();
