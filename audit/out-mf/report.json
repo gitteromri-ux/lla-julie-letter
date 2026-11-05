@@ -5,11 +5,7 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/pace-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/curve-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/pace-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/curve-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-goldenhour-crop.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
       ],
       "heroVideo": [
         {
@@ -25,12 +21,12 @@
           "w": 350
         }
       ],
-      "height": 17574,
+      "height": 17652,
       "vh": 664,
-      "screens": 26.5,
+      "screens": 26.6,
       "overflowX": 0,
       "broken": [
-        "julie-goldenhour-crop.jpg"
+        "cgm-man.jpg"
       ],
       "videosPlaying": 0,
       "videos": 15,
@@ -41,7 +37,9 @@
       "tracking": [],
       "blockedPosts": [],
       "errors": [],
-      "failed": [],
+      "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
+      ],
       "heroVideo": [
         {
           "src": "cells-light.mp4",
@@ -56,11 +54,13 @@
           "w": 372
         }
       ],
-      "height": 17577,
+      "height": 17593,
       "vh": 839,
-      "screens": 20.9,
+      "screens": 21,
       "overflowX": 0,
-      "broken": [],
+      "broken": [
+        "cgm-man.jpg"
+      ],
       "videosPlaying": 1,
       "videos": 15,
       "floater": "lla-float-cta is-visible",
@@ -70,11 +70,13 @@
       "tracking": [],
       "blockedPosts": [],
       "errors": [],
-      "failed": [],
+      "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
+      ],
       "heroVideo": [
         {
           "src": "cells-light.mp4",
-          "paused": true,
+          "paused": false,
           "readyState": 4,
           "w": 320
         },
@@ -85,11 +87,13 @@
           "w": 280
         }
       ],
-      "height": 19454,
+      "height": 19653,
       "vh": 568,
-      "screens": 34.3,
+      "screens": 34.6,
       "overflowX": 0,
-      "broken": [],
+      "broken": [
+        "cgm-man.jpg"
+      ],
       "videosPlaying": 7,
       "videos": 15,
       "floater": "lla-float-cta is-visible",
@@ -99,7 +103,9 @@
       "tracking": [],
       "blockedPosts": [],
       "errors": [],
-      "failed": [],
+      "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg"
+      ],
       "heroVideo": [
         {
           "src": "cells-light.mp4",
@@ -114,11 +120,13 @@
           "w": 583
         }
       ],
-      "height": 18239,
+      "height": 18082,
       "vh": 900,
-      "screens": 20.3,
+      "screens": 20.1,
       "overflowX": 0,
-      "broken": [],
+      "broken": [
+        "cgm-man.jpg"
+      ],
       "videosPlaying": 1,
       "videos": 15,
       "floater": "lla-float-cta is-visible mf-hide",
