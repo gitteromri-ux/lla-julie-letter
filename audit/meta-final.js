@@ -78,7 +78,7 @@ async function productionRun(name, ctxOpts) {
   await p.goto(PROD_URL + '?llatest=1', { waitUntil: 'load', timeout: 90000 }).catch(e => rec.errors.push('goto ' + e));
   await p.waitForTimeout(3000);
   rec.ctaCount = await p.evaluate(() => document.querySelectorAll('[data-checkout-open]').length);
-  const sels = { pricing: '#pricing .pk-btn', hero: '#hero .pdp-cine-cta', vip: '#vip .nov-vip-cta', nav: '.nav .nav-cta', final: '#apply .btn-primary', pillars: '.topics .btn-primary', floater: '#llaFloatCta' };
+  const sels = { pricing: '#pricing .pk-btn', hero: '#hero .pdp-cine-cta', julie: '#julie .mf-jbtn', nav: '.nav .nav-cta', final: '#apply .btn-primary', learn: '#syllabus .section-cta-btn', news: '#skills .btn-primary', floater: '#llaFloatCta' };
   for (const [k, sel] of Object.entries(sels)) {
     const el = await p.$(sel);
     if (!el) { rec.buttons.push({ k, found: false }); continue; }
