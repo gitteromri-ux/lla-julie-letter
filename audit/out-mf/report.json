@@ -5,6 +5,8 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
@@ -21,9 +23,9 @@
           "w": 350
         }
       ],
-      "height": 22631,
+      "height": 22252,
       "vh": 664,
-      "screens": 34.1,
+      "screens": 33.5,
       "overflowX": 0,
       "broken": [
         "julie-seated.jpg"
@@ -38,6 +40,7 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
@@ -54,14 +57,14 @@
           "w": 372
         }
       ],
-      "height": 22441,
+      "height": 22001,
       "vh": 839,
-      "screens": 26.7,
+      "screens": 26.2,
       "overflowX": 0,
       "broken": [
         "julie-seated.jpg"
       ],
-      "videosPlaying": 1,
+      "videosPlaying": 0,
       "videos": 15,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
@@ -71,6 +74,8 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
@@ -87,9 +92,9 @@
           "w": 280
         }
       ],
-      "height": 25282,
+      "height": 24685,
       "vh": 568,
-      "screens": 44.5,
+      "screens": 43.5,
       "overflowX": 0,
       "broken": [
         "julie-seated.jpg"
@@ -104,6 +109,7 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg"
       ],
       "heroVideo": [
@@ -120,16 +126,16 @@
           "w": 560
         }
       ],
-      "height": 22771,
+      "height": 23447,
       "vh": 900,
-      "screens": 25.3,
+      "screens": 26.1,
       "overflowX": 0,
       "broken": [
         "julie-seated.jpg"
       ],
-      "videosPlaying": 1,
+      "videosPlaying": 0,
       "videos": 15,
-      "floater": "lla-float-cta is-visible mf-hide",
+      "floater": "lla-float-cta is-visible",
       "whatsapp": true
     }
   },
@@ -149,7 +155,7 @@
         },
         {
           "k": "hero",
-          "found": false
+          "opensCheckout": true
         },
         {
           "k": "julie",
@@ -169,7 +175,27 @@
         },
         {
           "k": "news",
-          "found": false
+          "opensCheckout": true
+        },
+        {
+          "k": "how",
+          "opensCheckout": true
+        },
+        {
+          "k": "teachers",
+          "opensCheckout": true
+        },
+        {
+          "k": "faq",
+          "opensCheckout": true
+        },
+        {
+          "k": "reviews",
+          "opensCheckout": true
+        },
+        {
+          "k": "systems",
+          "opensCheckout": true
         },
         {
           "k": "floater",
@@ -203,7 +229,7 @@
         },
         {
           "k": "hero",
-          "found": false
+          "opensCheckout": true
         },
         {
           "k": "julie",
@@ -223,7 +249,27 @@
         },
         {
           "k": "news",
-          "found": false
+          "opensCheckout": true
+        },
+        {
+          "k": "how",
+          "opensCheckout": true
+        },
+        {
+          "k": "teachers",
+          "opensCheckout": true
+        },
+        {
+          "k": "faq",
+          "opensCheckout": true
+        },
+        {
+          "k": "reviews",
+          "opensCheckout": true
+        },
+        {
+          "k": "systems",
+          "opensCheckout": true
         },
         {
           "k": "floater",
