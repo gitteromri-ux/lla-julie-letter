@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mf">
 <head>
 <meta name="robots" content="noindex, nofollow">
 <!-- Meta identity bootstrap.
@@ -9283,7 +9283,7 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot #hero .
 .is-dark .section-title em,.mc-pricing .section-title span,.mf-julie .section-title em,.cgm3 .section-title em,.lead-gen .lead-gen-v2-headline span{color:#6FC3FF!important}
 
 /* ======== No beige anywhere ======== */
-.instructors,.testimonials,.value,.faq{background:linear-gradient(180deg,#F4F8FF 0%,#EAF2FF 100%)!important}
+body section.instructors,body section.testimonials,body section.faq,body section#teachers{background:linear-gradient(180deg,#F4F8FF 0%,#EAF2FF 100%)!important;background-color:#F4F8FF!important}
 
 /* ======== Hero: pages.dev cells motion behind everything; no empty space on phones; Trustpilot pill ======== */
 .pdp-hero{position:relative!important;overflow:hidden}
@@ -9298,7 +9298,8 @@ html body#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot#lpRoot #hero .
 .pdp-hero .lla-tp-stars svg{width:20px!important;height:20px!important}
 .pdp-hero .lla-tp-brand{display:inline-flex!important;align-items:center!important;gap:4px!important;font:800 16px/1 Inter,sans-serif!important;color:#0B1E4F!important}
 .pdp-hero .lla-tp-brand b{color:#0B1E4F!important}
-.pdp-hero .lla-tp{width:max-content!important;max-width:100%!important;flex-wrap:wrap!important;row-gap:4px!important}
+.pdp-hero .lla-tp{width:auto!important;max-width:100%!important;flex-wrap:wrap!important;row-gap:4px!important}
+.pdp-hero .hero-copy{width:100%!important;min-width:0!important;max-width:100%!important}
 .pdp-hero .lla-tp-text,.pdp-hero .lla-tp-text *{font:600 15px/1.2 Inter,sans-serif!important;color:#33456B!important;-webkit-text-fill-color:#33456B!important;background:none!important;opacity:1!important}
 .pdp-hero .lla-tp-text b{color:#0B1E4F!important;-webkit-text-fill-color:#0B1E4F!important;font-weight:800!important}
 .pdp-hero .hero-trust{font-size:16px!important;color:#CFE0FF!important}
@@ -9835,9 +9836,10 @@ html body .jstats i{font-size:16px!important}}
 @media (prefers-reduced-motion:reduce){.cgm3-phone,.cgm3-sensor,.cgm3-line,.cgm3-live i{animation:none!important;stroke-dashoffset:0}}
 
 /* ======== Client logos: full colour, moving ======== */
-.trust-strip{background:linear-gradient(90deg,#F4F8FF,#FFFFFF,#F4F8FF)!important;padding:26px 0!important;overflow:hidden}
+body section.trust-strip{background:linear-gradient(90deg,#071226,#0B1D40,#071226)!important;padding:26px 0!important;overflow:hidden;border-top:1px solid rgba(124,196,255,.18);border-bottom:1px solid rgba(124,196,255,.18)}
+body section.trust-strip::before,body section.trust-strip::after,.trust-strip-track-wrap::before,.trust-strip-track-wrap::after{display:none!important}
 .trust-strip .trust-strip-track{display:flex!important;width:max-content!important;gap:28px!important;animation:mfmarquee 26s linear infinite!important}
-.trust-strip .trust-logo{flex:0 0 auto;display:flex;align-items:center;justify-content:center;height:72px;padding:12px 24px;border-radius:16px;background:#fff;box-shadow:0 1px 0 #fff inset,0 12px 26px -16px rgba(10,40,110,.45);border:1px solid #E5ECF8}
+.trust-strip .trust-logo{flex:0 0 auto;display:flex;align-items:center;justify-content:center;height:76px;padding:12px 26px;border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.04));box-shadow:0 1px 0 rgba(255,255,255,.15) inset,0 16px 30px -18px rgba(0,0,0,.9),0 0 30px -12px rgba(94,182,255,.5);border:1px solid rgba(255,255,255,.14)}
 .trust-strip .trust-logo-img{height:44px!important;width:auto!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important}
 @keyframes mfmarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.trust-strip .trust-strip-track{animation:none!important}}
@@ -9989,6 +9991,301 @@ body section.topics .topic-v2-num{font-size:15px!important}
   .topic-grid-v2,.nov-incl-grid,.skills-grid,.value div:has(> .value-card),.testimonials div:has(> .quote-card){align-items:stretch!important}
 }
 
+/* =====================================================================
+   BRAND SYSTEM from Omri's masterclass deck (lla-masterclass-syllabus v46)
+   Fonts: Playfair Display for every headline, subheader and card title. Inter only for short lines, 18px or more.
+   Colours: navy/black, royal blue, light blue, white, logo teal. Nothing else.
+   One big idea per fold: huge italic headline, few large words, glass 3D cards, soft blue glow.
+   ===================================================================== */
+:root{--b-navy:#040B1E;--b-deep:#0A1633;--b-blue:#1A7FFF;--b-royal:#2B6BFF;--b-sky:#7EC8FF;--b-ice:#CFE6FF;--b-teal:#5ED6C8;--b-white:#FFFFFF;--b-mute:#B9CCEA}
+
+/* ---- Type: Playfair Display for all display type ---- */
+.section-title,.lead-gen-v2-headline,.final-cta-title,.pk-head .section-title,.testimonials-header .section-title,.instructors-header .section-title,.faq-header .section-title,.topics-header .section-title,.skills .section-title,.about .section-title,.nov-incl .section-title,.curriculum-header .section-title,.mf-head .section-title,.cgm4-title,.pdp-cine-h1{
+  font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important;letter-spacing:-.015em!important;line-height:1.06!important}
+.section-title{font-size:clamp(40px,4.6vw,68px)!important}
+.section-title em,.section-title span,.cgm4-title em,.pdp-cine-h1 span{font-style:italic!important;font-weight:500!important}
+.topic-v2 h3,.nov-incl-card h3,.skill-card h3,.teacher-card-live-name,.faq-q,.quote-text,.jb-cap b,.curriculum-trigger h3,.phase-block-name,.lead-gen-v2-form-title,.pk-title{font-family:'Playfair Display',Georgia,serif!important}
+.topic-v2 h3,.skill-card h3,.nov-incl-card h3{font-style:italic!important;font-weight:500!important}
+.eyebrow,.cgm4-eyebrow{font-family:Inter,sans-serif!important;font-size:15px!important;font-weight:600!important;letter-spacing:.2em!important;text-transform:uppercase!important;color:var(--b-sky)!important}
+.section-subtitle{font-size:clamp(19px,1.5vw,22px)!important;line-height:1.55!important;max-width:44ch!important;margin-left:auto!important;margin-right:auto!important}
+@media (max-width:760px){.section-title{font-size:40px!important}.section-subtitle{font-size:19px!important}}
+
+
+/* =====================================================================
+   REFERENCE PALETTE AND 3D, from the five deck slides Omri sent (stress, sugar, sleep, food, testing):
+   deep navy, glass cards with a coloured top bar (teal, blue, violet, magenta), glowing curves.
+   ===================================================================== */
+:root{--r-teal:#2EC4B6;--r-blue:#3D7BFF;--r-violet:#8A6CFF;--r-magenta:#D46BD8;--r-pink:#FF7FA8;--r-sky:#8FC7FF;--r-lav:#B9C3FF;--r-ink:#D9E3FF}
+/* deep navy folds with soft glows */
+html.mf body section.mf-learn,html.mf body section.nov-incl,html.mf body section.instructors,html.mf body section#teachers,html.mf body section.testimonials,html.mf body section.faq,html.mf body section.skills{
+  background:radial-gradient(55% 45% at 8% 0%,rgba(61,123,255,.26),transparent 70%),radial-gradient(50% 45% at 100% 100%,rgba(138,108,255,.22),transparent 70%),linear-gradient(180deg,#050C22 0%,#081638 100%)!important;background-color:#050C22!important;color:#fff!important}
+
+html.mf body section.mf-learn .section-title,html.mf body section.nov-incl .section-title,html.mf body section.instructors .section-title,html.mf body section.testimonials .section-title,html.mf body section.faq .section-title,html.mf body section.skills .section-title{color:#fff!important}
+
+html.mf body section .section-title em,html.mf body section .section-title span{color:var(--r-lav)!important}
+
+html.mf body section.mf-learn .section-subtitle,html.mf body section.instructors .section-subtitle,html.mf body section.skills .section-subtitle,html.mf body section.nov-incl .section-subtitle{color:var(--r-ink)!important}
+
+html.mf body .eyebrow,html.mf body .cgm4-eyebrow{color:var(--r-sky)!important}
+/* the glass card: coloured gradient fill and top bar, like the food and testing slides */
+html.mf body .nov-incl-card,html.mf body .mf-learn .curriculum-tab,html.mf body .quote-card,html.mf body .faq-item,html.mf body .teacher-card-live,html.mf body .cgm4-facts li,html.mf body .mf-learn .curriculum-item,html.mf body .mf-learn .phase-benefit{
+  background:linear-gradient(90deg,var(--c,#3D7BFF),color-mix(in srgb,var(--c,#3D7BFF) 55%,#fff)) 18px 14px/calc(100% - 36px) 4px no-repeat,
+             linear-gradient(165deg,color-mix(in srgb,var(--c,#3D7BFF) 36%,#0A1633) 0%,color-mix(in srgb,var(--c,#3D7BFF) 10%,#0A1633) 100%)!important;
+  border:1px solid color-mix(in srgb,var(--c,#3D7BFF) 42%,transparent)!important;border-radius:18px!important;
+  box-shadow:0 1px 0 rgba(255,255,255,.14) inset,0 26px 50px -26px rgba(0,0,0,.9),0 0 44px -20px var(--c,#3D7BFF)!important;color:#fff!important}
+
+html.mf body .nov-incl-card,html.mf body .quote-card,html.mf body .teacher-card-live,html.mf body .cgm4-facts li{padding-top:34px!important}
+/* colour order teal, blue, violet, magenta, as in the deck */
+html.mf body .nov-incl-card:nth-child(4n+1),html.mf body .quote-card:nth-child(4n+1),html.mf body .faq-item:nth-child(4n+1),html.mf body .teacher-card-live:nth-child(4n+1),html.mf body .cgm4-facts li:nth-child(1){--c:#2EC4B6}
+
+html.mf body .nov-incl-card:nth-child(4n+2),html.mf body .quote-card:nth-child(4n+2),html.mf body .faq-item:nth-child(4n+2),html.mf body .teacher-card-live:nth-child(4n+2),html.mf body .cgm4-facts li:nth-child(2){--c:#3D7BFF}
+
+html.mf body .nov-incl-card:nth-child(4n+3),html.mf body .quote-card:nth-child(4n+3),html.mf body .faq-item:nth-child(4n+3),html.mf body .teacher-card-live:nth-child(4n+3),html.mf body .cgm4-facts li:nth-child(3){--c:#8A6CFF}
+
+html.mf body .nov-incl-card:nth-child(4n+4),html.mf body .quote-card:nth-child(4n+4),html.mf body .faq-item:nth-child(4n+4),html.mf body .teacher-card-live:nth-child(4n+4){--c:#D46BD8}
+
+html.mf body .teachers-row2 .teacher-card-live:nth-child(1){--c:#D46BD8}
+
+html.mf body .teachers-row2 .teacher-card-live:nth-child(2){--c:#2EC4B6}
+
+html.mf body .mf-learn .curriculum-tab[data-phase-tab="1"],html.mf body .mf-learn .phase-block[data-phase="1"]{--ph:#2EC4B6!important;--c:#2EC4B6}
+
+html.mf body .mf-learn .curriculum-tab[data-phase-tab="2"],html.mf body .mf-learn .phase-block[data-phase="2"]{--ph:#3D7BFF!important;--c:#3D7BFF}
+
+html.mf body .mf-learn .curriculum-tab[data-phase-tab="3"],html.mf body .mf-learn .phase-block[data-phase="3"]{--ph:#8A6CFF!important;--c:#8A6CFF}
+
+html.mf body .mf-learn .curriculum-tab[data-phase-tab="4"],html.mf body .mf-learn .phase-block[data-phase="4"]{--ph:#D46BD8!important;--c:#D46BD8}
+
+html.mf body .mf-learn .phase-block .curriculum-item,html.mf body .mf-learn .phase-block .phase-benefit{--c:var(--ph)}
+
+html.mf body .topic-v2--green,html.mf body .topic-v2--cyan{--acc:#2EC4B6}
+
+html.mf body .topic-v2--blue{--acc:#3D7BFF}
+
+html.mf body .topic-v2--indigo,html.mf body .topic-v2--violet{--acc:#8A6CFF}
+
+html.mf body .topic-v2--orange{--acc:#D46BD8}
+
+html.mf body .skills .skill-card:nth-child(1){--acc:#2EC4B6}
+
+html.mf body .skills .skill-card:nth-child(2){--acc:#3D7BFF}
+
+html.mf body .skills .skill-card:nth-child(3){--acc:#8A6CFF}
+
+html.mf body .skills .skill-card{box-shadow:inset 0 4px 0 var(--acc),0 26px 50px -26px rgba(0,0,0,.9),0 0 44px -20px var(--acc)!important}
+/* text inside glass cards: large, white and light lavender, never small grey */
+html.mf body .nov-incl-card .n{color:color-mix(in srgb,var(--c) 55%,#fff)!important;font:600 15px/1 Inter,sans-serif!important;letter-spacing:.18em!important;font-style:normal!important}
+
+html.mf body .nov-incl-card h3{font-size:26px!important;color:#fff!important;font-style:normal!important;margin-top:8px!important}
+
+html.mf body .nov-incl-card p{font-family:'Playfair Display',Georgia,serif!important;font-style:italic!important;font-size:19px!important;line-height:1.45!important;color:var(--r-ink)!important}
+
+html.mf body .nov-incl-card .tag{background:color-mix(in srgb,var(--c) 30%,transparent)!important;color:#fff!important;border:1px solid color-mix(in srgb,var(--c) 60%,transparent)!important;font-size:14px!important}
+
+html.mf body .mf-learn .curriculum-tab{background-position:16px 12px,0 0!important;background-size:calc(100% - 32px) 4px,auto!important;padding-top:28px!important}
+
+html.mf body .mf-learn .curriculum-tab .curriculum-tab-num{color:color-mix(in srgb,var(--ph) 55%,#fff)!important;font:600 14px/1 Inter,sans-serif!important;letter-spacing:.18em!important;font-style:normal!important}
+
+html.mf body .mf-learn .curriculum-tab .curriculum-tab-name{font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important;font-size:22px!important;color:#fff!important}
+
+html.mf body .mf-learn .curriculum-tab .curriculum-tab-meta{color:var(--r-ink)!important;font-size:15px!important}
+
+html.mf body .mf-learn .curriculum-tab.is-active{background:linear-gradient(90deg,#fff,#fff) 16px 12px/calc(100% - 32px) 4px no-repeat,linear-gradient(160deg,var(--ph),color-mix(in srgb,var(--ph) 45%,#0A1633))!important;transform:translateY(-4px)}
+
+html.mf body .mf-learn .phase-block-label{color:color-mix(in srgb,var(--ph) 60%,#fff)!important}
+
+html.mf body .mf-learn .phase-block-name{color:#fff!important;font-size:34px!important}
+
+html.mf body .mf-learn .phase-benefit{font-size:19px!important;color:#fff!important;padding:30px 22px 18px!important}
+
+html.mf body .mf-learn .phase-benefit b{color:color-mix(in srgb,var(--ph) 50%,#fff)!important}
+
+html.mf body .mf-learn .phase-benefit::before{display:none!important}
+
+html.mf body .mf-learn .curriculum-item{background-image:linear-gradient(165deg,color-mix(in srgb,var(--ph) 18%,#0A1633),#0A1633)!important;background-size:auto!important}
+
+html.mf body .mf-learn .curriculum-num{background:color-mix(in srgb,var(--ph) 30%,transparent)!important;color:#fff!important}
+
+html.mf body .mf-learn .curriculum-trigger h3{color:#fff!important;font-size:20px!important;font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important}
+
+html.mf body .mf-learn .curriculum-body-inner,html.mf body .mf-learn .curriculum-goals li,html.mf body .mf-learn .curriculum-flow,html.mf body .mf-learn .curriculum-work{color:var(--r-ink)!important;font-size:18px!important}
+
+html.mf body .mf-learn .curriculum-section-label{color:color-mix(in srgb,var(--ph) 55%,#fff)!important}
+
+html.mf body .mf-learn .syl-benefit{color:#fff!important}
+
+html.mf body .quote-card .quote-text{font-family:'Playfair Display',Georgia,serif!important;font-style:italic!important;font-size:22px!important;line-height:1.45!important;color:#fff!important;font-weight:400!important}
+
+html.mf body .quote-card .quote-mark{color:color-mix(in srgb,var(--c) 60%,#fff)!important}
+
+html.mf body .quote-card .quote-stars svg{color:#fff!important;fill:#fff!important}
+
+html.mf body .quote-card .quote-meta{color:color-mix(in srgb,var(--c) 55%,#fff)!important;font-size:15px!important}
+
+html.mf body .faq-item{padding-top:10px!important;background-position:18px 10px,0 0!important}
+
+html.mf body .faq .faq-q{color:#fff!important;font-size:21px!important;font-weight:500!important}
+
+html.mf body .faq .faq-num{background:color-mix(in srgb,var(--c) 30%,transparent)!important;color:#fff!important}
+
+html.mf body .faq .faq-icon{color:#fff!important}
+
+html.mf body .faq .faq-a-inner{color:var(--r-ink)!important;font-size:18.5px!important}
+
+html.mf body .teacher-card-live{overflow:hidden}
+
+html.mf body .teacher-card-live .teacher-card-live-name{color:#fff!important;font-size:23px!important;font-weight:500!important}
+
+html.mf body .teacher-card-live .teacher-card-live-role{color:color-mix(in srgb,var(--c) 55%,#fff)!important;font-size:14px!important}
+
+html.mf body .teacher-card-live .teacher-card-live-bio{color:var(--r-ink)!important;font-size:17.5px!important}
+
+html.mf body .cgm4-facts b{color:#fff!important}
+
+html.mf body .cgm4-facts li:nth-child(1) b{color:#7FE3D8!important}
+
+html.mf body .cgm4-facts li:nth-child(2) b{color:#A9C4FF!important}
+
+html.mf body .cgm4-facts li:nth-child(3) b{color:#C7B8FF!important}
+
+html.mf body .mc-pricing .pk-rows li:nth-child(1){--dot:#2EC4B6}
+
+html.mf body .mc-pricing .pk-rows li:nth-child(2){--dot:#8FC7FF}
+
+html.mf body .mc-pricing .pk-rows li:nth-child(3){--dot:#B9A8FF}
+
+html.mf body .mc-pricing .pk-rows li:nth-child(4){--dot:#F09BEA}
+
+html.mf body .mc-pricing .pk-len{background:linear-gradient(90deg,#2EC4B6,#3D7BFF)!important;color:#fff!important}
+
+html.mf body .mf-julie .jstats>div:nth-child(1) b{color:#7FE3D8!important}
+
+html.mf body .mf-julie .jstats>div:nth-child(2) b{color:#A9C4FF!important}
+
+html.mf body .mf-julie .jstats>div:nth-child(3) b{color:#C7B8FF!important}
+
+html.mf body .mf-julie .jstats>div:nth-child(4) b{color:#F09BEA!important}
+
+html.mf body .lead-gen-v2 .lead-gen-v2-bullets li:nth-child(1) svg{color:#2EC4B6!important}
+
+html.mf body .lead-gen-v2 .lead-gen-v2-bullets li:nth-child(2) svg{color:#3D7BFF!important}
+
+html.mf body .lead-gen-v2 .lead-gen-v2-bullets li:nth-child(3) svg{color:#8A6CFF!important}
+
+html.mf body .lead-gen-v2 .lead-gen-v2-bullets li:nth-child(4) svg{color:#D46BD8!important}
+
+html.mf body .lead-gen-v2 .lead-gen-v2-eyebrow{color:var(--r-sky)!important}
+
+html.mf body .skills .skill-card .skill-eyebrow{color:color-mix(in srgb,var(--acc) 55%,#fff)!important}
+
+html.mf body .instructors .btn-primary,html.mf body .testimonials .btn-primary,html.mf body .faq .btn-primary{box-shadow:0 18px 40px -12px rgba(61,123,255,.8)!important}
+
+html.mf body .mf-swipe{color:var(--r-ink)!important}
+
+
+/* ---- Hero: brand tagline over the cells motion at full contrast ---- */
+.pdp-hero .hero-sales-video{opacity:1!important;filter:brightness(1.1) saturate(1.15) contrast(1.08)!important}
+.pdp-hero .pdp-cine-overlay{background:linear-gradient(90deg,rgba(4,11,30,.88) 0%,rgba(4,11,30,.55) 42%,rgba(4,11,30,.05) 75%)!important}
+.pdp-hero .pdp-cine-h1{font-size:clamp(54px,6.4vw,96px)!important;color:#fff!important;text-shadow:0 4px 30px rgba(0,0,0,.45)}
+.pdp-hero .pdp-cine-h1 .pdp-cine-blue{color:var(--b-sky)!important;-webkit-text-fill-color:var(--b-sky)!important;background:none!important}
+.pdp-hero .mf-hero-sub{font-family:Inter,sans-serif!important;font-style:normal!important;font-size:22px!important;line-height:1.5!important;color:#E8F1FF!important;max-width:30ch!important;margin:18px 0 0!important;text-shadow:0 2px 16px rgba(0,0,0,.5)}
+.pdp-hero .mf-hero-sub strong{color:#fff;font-weight:700}
+.pdp-hero .mf-hero-sub em{font-style:normal;color:var(--b-sky);font-weight:600}
+.pdp-hero .hero-trust{font-size:16px!important;color:var(--b-ice)!important}
+.pdp-hero .pdp-cine-cta{font-size:20px!important;padding:18px 30px!important;min-height:62px!important;border-radius:16px!important}
+@media (max-width:900px){
+  .pdp-hero .pdp-cine-overlay{background:linear-gradient(180deg,rgba(4,11,30,.15) 0%,rgba(4,11,30,.55) 45%,rgba(4,11,30,.92) 100%)!important}
+  .pdp-hero.pdp-hero--cine{padding-top:96px!important}
+  .pdp-hero .pdp-cine-h1{font-size:54px!important;line-height:1.02!important}
+  .pdp-hero .mf-hero-sub{font-size:20px!important;max-width:none!important}
+  .pdp-hero .hero-trust{font-size:15px!important}
+}
+
+/* ---- Six pillars on phones: the motion footage large ---- */
+@media (max-width:760px){
+  .topic-grid-v2>*{flex:0 0 88%!important;width:88%!important}
+  .topic-v2{min-height:72vh!important;height:72vh!important;border-radius:26px!important;overflow:hidden!important}
+  .topic-v2 .topic-v2-media,.topic-v2 .topic-v2-media video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important}
+  .topic-v2 .topic-v2-overlay{background:linear-gradient(180deg,rgba(4,11,30,0) 35%,rgba(4,11,30,.88) 78%)!important}
+  .topic-v2 .topic-v2-content{position:absolute!important;left:0;right:0;bottom:0;padding:22px 22px 26px!important}
+  .topic-v2 h3{font-size:34px!important;line-height:1.05!important;margin-bottom:10px!important}
+  body section.topics .topic-v2-desc{font-size:18px!important;line-height:1.45!important;-webkit-line-clamp:3!important;max-height:calc(1.45em * 3)!important}
+}
+@media (min-width:761px){
+  .topic-v2 h3{font-size:30px!important}
+  body section.topics .topic-v2-desc{font-size:18px!important;-webkit-line-clamp:4!important;max-height:calc(1.5em * 4)!important}
+}
+
+/* ---- CGM: the deck's real CGM photo, huge type, three big facts ---- */
+.cgm4{position:relative;overflow:hidden;background:radial-gradient(60% 80% at 25% 40%,rgba(26,127,255,.38),transparent 70%),linear-gradient(180deg,#040B1E,#071433);color:#fff;padding:0}
+.cgm4-wrap{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:40px;padding:0 40px}
+.cgm4-photo{position:relative;height:620px}
+.cgm4-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 80%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 10%,#000 85%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 80%,transparent 100%);mask-composite:intersect}
+.cgm4-callout{position:absolute;left:66%;top:66%;display:grid;grid-template-columns:auto;gap:2px;padding:14px 18px 14px 18px;border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.16),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 24px 50px -20px rgba(0,0,0,.8),0 0 40px -10px rgba(126,200,255,.6)}
+.cgm4-callout i{position:absolute;left:-46px;top:26px;width:46px;height:2px;background:linear-gradient(90deg,transparent,var(--b-sky))}
+.cgm4-callout i::before{content:'';position:absolute;left:-6px;top:-5px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(126,200,255,.35),0 0 16px var(--b-sky)}
+.cgm4-callout b{font:italic 500 28px/1.05 'Playfair Display',Georgia,serif;color:var(--b-sky)}
+.cgm4-callout span{font:500 17px/1.3 Inter,sans-serif;color:#fff}
+.cgm4-copy{padding:70px 0}
+.cgm4-title{font-size:clamp(44px,4.6vw,70px)!important;color:#fff!important;margin:14px 0 30px!important}
+.cgm4-title em{color:var(--b-sky)!important}
+.cgm4-facts{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.cgm4-facts li{display:grid;grid-template-columns:170px 1fr;align-items:center;gap:20px;padding:18px 22px;border-radius:20px;background:linear-gradient(160deg,rgba(255,255,255,.11),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.16);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 24px 44px -26px rgba(0,0,0,.9),0 0 50px -24px rgba(26,127,255,.7)}
+.cgm4-facts b{font:italic 500 40px/1 'Playfair Display',Georgia,serif;color:var(--b-sky)}
+.cgm4-facts li:nth-child(2) b{color:var(--b-teal)}
+.cgm4-facts li:nth-child(3) b{color:#fff}
+.cgm4-facts span{font:500 19px/1.45 Inter,sans-serif;color:#E3EEFF}
+.cgm4-fine{margin:18px 0 0;font:500 16px/1.5 Inter,sans-serif;color:var(--b-mute)}
+@media (max-width:900px){
+  .cgm4-wrap{grid-template-columns:1fr;gap:0;padding:0 16px}
+  .cgm4-photo{height:400px;margin:0 -16px}
+  .cgm4-photo img{object-position:50% 22%}
+  .cgm4-callout{left:auto;right:16px;top:auto;bottom:40px}
+  .cgm4-callout b{font-size:24px}.cgm4-callout span{font-size:16px}
+  .cgm4-copy{padding:8px 0 56px}
+  .cgm4-title{font-size:40px!important;margin:10px 0 22px!important}
+  .cgm4-facts li{grid-template-columns:1fr;gap:4px;padding:16px 18px}
+  .cgm4-facts b{font-size:34px}
+  .cgm4-facts span{font-size:18.5px}
+}
+
+/* ---- No long small text on dark: clamp long paragraphs, raise sizes ---- */
+.skills .skill-content p{font-size:18px!important;display:-webkit-box!important;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.about p{font-size:21px!important;max-width:40ch!important;margin-left:auto!important;margin-right:auto!important}
+.about .about-powered-desc{font-size:19px!important;display:-webkit-box!important;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.mf-julie .jb-wide-body p:not(.jb-quote){font-size:19px!important;display:-webkit-box!important;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+
+/* hero headline: fits beside the film on desktop, never clipped on phones */
+.pdp-hero .pdp-cine-h1{font-size:clamp(48px,4.8vw,78px)!important;max-width:11ch}
+.pdp-hero .hero-copy{max-width:560px!important}
+@media (max-width:900px){.pdp-hero .pdp-cine-h1{font-size:50px!important;max-width:none}.pdp-hero .hero-copy{max-width:100%!important}}
+/* enroll form: blue buttons (WhatsApp stays WhatsApp green) */
+.lead-gen-v2 .lg-buy,.lead-gen-v2 a[class*="buy"],.lead-gen-v2 .lead-gen-v2-ecom{background:linear-gradient(160deg,#3D7BFF,#1D3FA8)!important;border-color:transparent!important;box-shadow:0 18px 40px -14px rgba(61,123,255,.9)!important}
+/* About: no long white block */
+.about .about-inner>p,.about p.about-desc,.about .about-text p{display:-webkit-box!important;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.mf-learn .curriculum-trigger-text h3{color:#fff!important}
+
+/* hero text always readable over the cells */
+@media (max-width:900px){
+  .pdp-hero .pdp-cine-overlay{background:linear-gradient(180deg,rgba(4,11,30,.35) 0%,rgba(4,11,30,.78) 30%,rgba(4,11,30,.9) 60%,rgba(4,11,30,.96) 100%)!important}
+}
+@media (min-width:901px){
+  .pdp-hero .pdp-cine-overlay{background:linear-gradient(90deg,rgba(4,11,30,.94) 0%,rgba(4,11,30,.82) 38%,rgba(4,11,30,.25) 70%,rgba(4,11,30,.1) 100%)!important}
+}
+.pdp-hero .pdp-cine-h1,.pdp-hero .mf-hero-sub{text-shadow:0 2px 24px rgba(4,11,30,.9)!important}
+
+/* hero: darker behind the headline on phones */
+@media (max-width:900px){
+  .pdp-hero .pdp-cine-overlay{background:linear-gradient(180deg,rgba(4,11,30,.62) 0%,rgba(4,11,30,.86) 26%,rgba(4,11,30,.92) 60%,rgba(4,11,30,.97) 100%)!important}
+}
+/* final banner: readable over its video */
+.final-cta .final-cta-overlay{background:linear-gradient(180deg,rgba(4,11,30,.55),rgba(4,11,30,.8))!important;opacity:1!important}
+.final-cta .final-cta-title{font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important;font-size:clamp(44px,5vw,72px)!important;text-shadow:0 2px 24px rgba(4,11,30,.8)}
+.final-cta .final-cta-sub{font-size:21px!important;text-shadow:0 2px 16px rgba(4,11,30,.9)}
+/* About: the lead stays short */
+.about .about-lead{font-size:21px!important;line-height:1.6!important;display:-webkit-box!important;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;max-width:40ch;margin-left:auto!important;margin-right:auto!important}
+
+
 </style>
 </head>
 <body>
@@ -10062,8 +10359,8 @@ body section.topics .topic-v2-num{font-size:15px!important}
   <div class="pdp-cine-inner">
     <div class="hero-copy"><div class="pdp-tp-pill lla-tp" role="img" aria-label="Trustpilot rating 4.6 out of 5 from over 600 verified reviews"><span class="lla-tp-stars" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"></rect><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"></path></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"></rect><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"></path></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"></rect><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"></path></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"></rect><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"></path></svg><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="2" fill="#00B67A"></rect><path fill="#fff" d="M12 3.6l2.3 6.1h6.4l-5.1 3.9 1.9 6.3L12 16l-5.5 3.9 1.9-6.3-5.1-3.9h6.4z"></path></svg></span><span class="lla-tp-brand"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#00B67A" d="M12 1.5l2.9 8.2H24l-7.1 5.2 2.7 8.6L12 18.3l-7.6 5.2 2.7-8.6L0 9.7h9.1z"></path><path fill="#0B1E4F" d="M12 18.3l4.6-1.2 1.9 6.4z"></path></svg><b>Trustpilot</b></span><span class="lla-tp-text"><b>4.6 / 5</b>, 600+ verified reviews</span></div>
     <p class="hero-trust">400,000+ students taught live since 2000 <i></i> As seen in AP News, Yahoo Finance, USA Today</p>
-    <h1 class="pdp-cine-h1 pdp-cine-h1--v59 pdp-cine-h1--approved">Slow down your <span class="pdp-cine-blue">pace of aging.</span></h1>
-    <p class="pdp-cine-sub pdp-cine-sub--approved" data-mock="1" style="font-style: italic !important; font-family: &quot;Playfair Display&quot;, Georgia, serif !important; font-weight: 500 !important; font-size: 26px !important; line-height: 1.35 !important; color: rgb(230, 238, 255) !important; max-width: 620px !important;"><strong style="color: rgb(255, 255, 255) !important; font-weight: 600 !important;">The longevity course</strong>, a guided protocol built around <em style="color: rgb(143, 199, 255) !important; ">your biology, your numbers</em>, and the daily practice that turns the next decades into your strongest.</p>
+    <h1 class="pdp-cine-h1">It's Your Life. <span class="pdp-cine-blue">Live It Well.</span></h1>
+    <p class="pdp-cine-sub mf-hero-sub"><strong>The longevity course</strong>, a guided protocol built around <em>your biology, your numbers</em>, and the daily practice that turns the next decades into your strongest.</p>
     <div class="pdp-cine-ctas">
       <a href="#pricing" class="pdp-cine-cta">Enroll now
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
@@ -10727,47 +11024,21 @@ body section.topics .topic-v2-num{font-size:15px!important}
     </div>
   </div>
 </section>
-<section class="cgm3" id="cgm">
-  <div class="container cgm3-wrap">
-    <div class="cgm3-scene" aria-hidden="true">
-      <div class="cgm3-halo"></div>
-      <div class="cgm3-phone">
-        <div class="cgm3-island"></div>
-        <div class="cgm3-app">
-          <div class="cgm3-bar"><span>Today</span><span class="cgm3-live"><i></i>Live</span></div>
-          <div class="cgm3-now"><b>98</b><small>mg/dL</small><em>In range</em></div>
-          <svg class="cgm3-chart" viewBox="0 0 300 150" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="cgm3fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F7BFF" stop-opacity=".32"/><stop offset="1" stop-color="#1F7BFF" stop-opacity="0"/></linearGradient>
-            </defs>
-            <rect x="0" y="52" width="300" height="52" fill="#E6F7EF"/>
-            <line x1="0" y1="52" x2="300" y2="52" stroke="#9FDDBF" stroke-dasharray="3 4"/>
-            <line x1="0" y1="104" x2="300" y2="104" stroke="#9FDDBF" stroke-dasharray="3 4"/>
-            <path d="M0,92 C25,90 40,86 60,84 C80,82 95,80 112,72 C126,64 134,30 150,24 C166,18 176,46 190,64 C204,82 214,92 232,90 C250,88 262,76 276,74 C288,72 294,76 300,78 L300,150 L0,150 Z" fill="url(#cgm3fill)"/>
-            <path class="cgm3-line" pathLength="1" d="M0,92 C25,90 40,86 60,84 C80,82 95,80 112,72 C126,64 134,30 150,24 C166,18 176,46 190,64 C204,82 214,92 232,90 C250,88 262,76 276,74 C288,72 294,76 300,78" fill="none" stroke="#1F7BFF" stroke-width="3.2" stroke-linecap="round"/>
-            <circle cx="150" cy="24" r="4.5" fill="#FF7A45"/>
-            <circle cx="232" cy="90" r="4.5" fill="#22B27A"/>
-          </svg>
-          <div class="cgm3-axis"><span>6a</span><span>9a</span><span>12p</span><span>3p</span><span>6p</span></div>
-          <div class="cgm3-events">
-            <div class="cgm3-ev" style="--c:#FF7A45"><b>Lunch</b><span>Spike, then back in range</span></div>
-            <div class="cgm3-ev" style="--c:#22B27A"><b>Walk</b><span>Steady afternoon</span></div>
-          </div>
-          <div class="cgm3-sample">Sample day</div>
-        </div>
-      </div>
-      <div class="cgm3-sensor"><div class="cgm3-disc"><div class="cgm3-dome"></div></div><div class="cgm3-shadow"></div></div>
+<section class="cgm4" id="cgm">
+  <div class="cgm4-wrap">
+    <div class="cgm4-photo">
+      <img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/cgm-man.jpg" alt="A student wearing the Abbott Lingo sensor on his arm, reading his glucose on his phone" loading="lazy">
+      <div class="cgm4-callout"><i></i><b>Your CGM</b><span>live glucose sensor</span></div>
     </div>
-    <div class="cgm3-copy">
-      <span class="eyebrow">Free Abbott Lingo CGM</span>
-      <h2 class="section-title">Continuous Glucose Monitoring, <em>Included in Your Course</em></h2>
-      <p class="cgm3-lead">Every student receives an Abbott Lingo continuous glucose monitor plus full Lingo app access, included with the course. Track your body's real-time response to food, sleep, and movement.</p>
-      <ul class="cgm3-specs">
-        <li style="--c:#1F7BFF"><span class="cgm3-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></span><b>14-day Abbott Lingo biosensor</b><span>Water-resistant, painless application</span></li>
-        <li style="--c:#22B27A"><span class="cgm3-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10 5.5h4"/><path d="M9 15l2-3 2 2 2-4"/></svg></span><b>Full Lingo app access</b><span>iOS and Android, Apple Health and Health Connect</span></li>
-        <li style="--c:#FF7A45"><span class="cgm3-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.8-3.3 8.4-7 10-3.7-1.6-7-5.2-7-10V6z"/><path d="M8.6 12.2l2.4 2.4 4.4-4.8"/></svg></span><b>No prescription needed</b><span>One unit per student, shipped to U.S. addresses before Lesson 5</span></li>
+    <div class="cgm4-copy">
+      <span class="cgm4-eyebrow">Included in your course</span>
+      <h2 class="cgm4-title">Free Abbott Lingo CGM, <em>shipped to your home.</em></h2>
+      <ul class="cgm4-facts">
+        <li><b>14 days</b><span>per Abbott Lingo biosensor. Water-resistant, painless to apply.</span></li>
+        <li><b>Live</b><span>glucose on your phone. Lingo app for iOS and Android.</span></li>
+        <li><b>Lesson 5</b><span>it arrives before you start reading your own data.</span></li>
       </ul>
-      <p class="cgm3-fine">For students 18+. Not for insulin users. Not for medical diagnosis.</p>
+      <p class="cgm4-fine">No prescription needed. For students 18+, not for insulin users, not for medical diagnosis.</p>
     </div>
   </div>
 </section>
@@ -12430,6 +12701,14 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
   var extra=[document.querySelector('.value .value-card'),document.querySelector('.testimonials .quote-card')];
   extra.forEach(function(c){if(c&&c.parentNode)sets=Array.prototype.concat.call([],Array.prototype.slice.call(sets),[c.parentNode]);});
   Array.prototype.forEach.call(sets,function(g){if(!g||g.nextElementSibling&&g.nextElementSibling.classList.contains('mf-swipe'))return;var p=document.createElement('p');p.className='mf-swipe';p.textContent='Swipe for more';g.insertAdjacentElement('afterend',p);});
+})();
+(function(){
+  /* the hero cells motion always plays (muted, inline), on phones too */
+  var v=document.querySelector('#hero .hero-sales-video'); if(!v) return;
+  v.muted=true; v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.loop=true;
+  function go(){ try{ if(v.preload==='none') v.preload='auto'; var p=v.play(); if(p&&p.catch) p.catch(function(){}); }catch(e){} }
+  if(document.readyState!=='loading') go(); else document.addEventListener('DOMContentLoaded',go);
+  addEventListener('load',go); addEventListener('touchstart',go,{once:true,passive:true}); addEventListener('scroll',go,{once:true,passive:true});
 })();
 
 </script>
