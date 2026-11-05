@@ -5,9 +5,8 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n03-dunedin.jpg"
       ],
       "heroVideo": [
         {
@@ -23,15 +22,16 @@
           "w": 350
         }
       ],
-      "height": 20482,
+      "height": 21309,
       "vh": 664,
-      "screens": 30.8,
+      "screens": 32.1,
       "overflowX": 0,
       "broken": [
-        "julie-face.jpg"
+        "julie-face.jpg",
+        "n03-dunedin.jpg"
       ],
       "videosPlaying": 0,
-      "videos": 14,
+      "videos": 12,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -40,8 +40,8 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n03-dunedin.jpg"
       ],
       "heroVideo": [
         {
@@ -57,15 +57,16 @@
           "w": 372
         }
       ],
-      "height": 20321,
+      "height": 20989,
       "vh": 839,
-      "screens": 24.2,
+      "screens": 25,
       "overflowX": 0,
       "broken": [
-        "julie-face.jpg"
+        "julie-face.jpg",
+        "n03-dunedin.jpg"
       ],
       "videosPlaying": 0,
-      "videos": 14,
+      "videos": 12,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -74,9 +75,8 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n03-dunedin.jpg"
       ],
       "heroVideo": [
         {
@@ -92,15 +92,16 @@
           "w": 280
         }
       ],
-      "height": 22643,
+      "height": 23273,
       "vh": 568,
-      "screens": 39.9,
+      "screens": 41,
       "overflowX": 0,
       "broken": [
-        "julie-face.jpg"
+        "julie-face.jpg",
+        "n03-dunedin.jpg"
       ],
-      "videosPlaying": 6,
-      "videos": 14,
+      "videosPlaying": 5,
+      "videos": 12,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     },
@@ -109,7 +110,7 @@
       "blockedPosts": [],
       "errors": [],
       "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg",
+        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/deck/n03-dunedin.jpg",
         "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg"
       ],
       "heroVideo": [
@@ -126,15 +127,16 @@
           "w": 560
         }
       ],
-      "height": 21223,
+      "height": 21816,
       "vh": 900,
-      "screens": 23.6,
+      "screens": 24.2,
       "overflowX": 0,
       "broken": [
-        "julie-face.jpg"
+        "julie-face.jpg",
+        "n03-dunedin.jpg"
       ],
       "videosPlaying": 0,
-      "videos": 14,
+      "videos": 12,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
     }
