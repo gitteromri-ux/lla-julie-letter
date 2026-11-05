@@ -1,23 +1,21 @@
 {
   "iphone": {
     "status": 200,
-    "title": "The Longevity Blueprint | Your personal longevity protocol in 18 weeks",
+    "title": "The Longevity Blueprint | November offer: $79 first month",
     "scrollWidth": 390,
     "innerWidth": 390,
-    "height": 12718,
+    "height": 25838,
     "brokenImages": [
-      "img/lingo-2.jpg",
-      "img/lingo-1.jpg",
-      "img/lingo-6.jpg",
-      "img/natalie.jpg",
-      "img/courtney.jpg",
-      "img/amy.jpg",
-      "img/jordan.jpg"
+      "press/julie-sun.jpg",
+      "press/julie-portrait.jpg",
+      "press/julie-standing-hd.jpg",
+      "press/harel-tayeb.jpg",
+      "press/julie-jeans.jpg"
     ],
     "fonts": [
       [
         "Playfair Display",
-        false
+        true
       ],
       [
         "Inter",
@@ -29,32 +27,44 @@
       ],
       [
         "Instrument Serif",
-        true
+        false
       ]
     ],
     "masterclassTime": true,
+    "pricingCard": true,
+    "press": 9,
+    "videos": [
+      "v2-nutrition-greens-v2.mp4",
+      "sleep-blog-v2.mp4",
+      "exercise-yoga-v2.mp4",
+      "supplements-wearables-know-v2.mp4",
+      "stress-management-cold-plunge-v2.mp4",
+      "daily-protocol-v2.mp4",
+      "v2-supplements-meds.mp4",
+      "v2-mental-bubbles.mp4",
+      "skill-skin.mp4",
+      "cta-bg.mp4"
+    ],
     "price79": true,
-    "errors": []
+    "errors": [
+      "failed https://www.longevitylifeacademy.com/assets/exercise-yoga-v2.mp4"
+    ],
+    "tracking": []
   },
   "desktop": {
     "status": 200,
-    "title": "The Longevity Blueprint | Your personal longevity protocol in 18 weeks",
+    "title": "The Longevity Blueprint | November offer: $79 first month",
     "scrollWidth": 1440,
     "innerWidth": 1440,
-    "height": 9944,
+    "height": 17852,
     "brokenImages": [
-      "img/lingo-2.jpg",
-      "img/lingo-1.jpg",
-      "img/lingo-6.jpg",
-      "img/natalie.jpg",
-      "img/courtney.jpg",
-      "img/amy.jpg",
-      "img/jordan.jpg"
+      "press/harel-tayeb.jpg",
+      "press/julie-jeans.jpg"
     ],
     "fonts": [
       [
         "Playfair Display",
-        false
+        true
       ],
       [
         "Inter",
@@ -66,11 +76,40 @@
       ],
       [
         "Instrument Serif",
-        true
+        false
       ]
     ],
     "masterclassTime": true,
+    "pricingCard": true,
+    "press": 9,
+    "videos": [
+      "v2-nutrition-greens-v2.mp4",
+      "sleep-blog-v2.mp4",
+      "exercise-yoga-v2.mp4",
+      "supplements-wearables-know-v2.mp4",
+      "stress-management-cold-plunge-v2.mp4",
+      "daily-protocol-v2.mp4",
+      "v2-supplements-meds.mp4",
+      "v2-mental-bubbles.mp4",
+      "skill-skin.mp4",
+      "cta-bg.mp4"
+    ],
     "price79": true,
-    "errors": []
+    "errors": [
+      "failed https://www.longevitylifeacademy.com/assets/v2-nutrition-greens-v2.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/v2-mental-bubbles.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/skill-skin.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/cta-bg.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/stress-management-cold-plunge-v2.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/daily-protocol-v2.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/v2-supplements-meds.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/v2-mental-bubbles.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/skill-skin.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/cta-bg.mp4",
+      "failed https://www.longevitylifeacademy.com/assets/cta-bg.mp4"
+    ],
+    "tracking": []
   }
 }
