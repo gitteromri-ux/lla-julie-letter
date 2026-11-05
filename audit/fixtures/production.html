@@ -10076,6 +10076,31 @@ html.mf body #julie .jdeck-track img{display:block;width:100%;height:auto}
   html.mf body #julie .jdeck-track figure{width:86vw}
   html.mf body #julie .jgrid{grid-template-columns:1fr!important}
 }
+/* ===== Round 31 (Omri: on her, not from the deck): her face large beside three facts in large type ===== */
+html.mf body #julie .container{display:block!important}
+html.mf body #julie .jher{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:44px;align-items:center;max-width:1080px;margin:0 auto}
+html.mf body #julie .jher-photo{position:relative;margin:0;border-radius:28px;overflow:hidden;border:1.5px solid rgba(154,216,255,.75);box-shadow:0 0 10px rgba(154,216,255,.75),0 0 34px rgba(59,167,255,.6),0 46px 90px -34px rgba(0,20,70,.95)}
+html.mf body #julie .jher-photo img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+html.mf body #julie .jher-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 22px 20px;background:linear-gradient(180deg,transparent,rgba(4,11,30,.92) 70%)}
+html.mf body #julie .jher-photo figcaption b{display:block;font:italic 500 32px/1.1 'Playfair Display',Georgia,serif;color:#FFFFFF}
+html.mf body #julie .jher-photo figcaption span{display:block;margin-top:6px;font:500 19px/1.35 Inter,sans-serif;color:#E3F2FF}
+html.mf body #julie .jher-facts{list-style:none;margin:0;padding:0}
+html.mf body #julie .jher-facts li{padding:20px 0;border-bottom:1px solid rgba(160,210,255,.22)}
+html.mf body #julie .jher-facts li:first-child{padding-top:0}
+html.mf body #julie .jher-facts li:last-child{border-bottom:0}
+html.mf body #julie .jher-facts b{display:block;font:italic 500 38px/1.08 'Playfair Display',Georgia,serif;background:linear-gradient(180deg,#E3F2FF 0%,#7CC0FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 10px rgba(124,192,255,.45))}
+html.mf body #julie .jher-facts span{display:block;margin-top:8px;font:500 20px/1.45 Inter,sans-serif;color:#FFFFFF}
+html.mf body #julie .jher-facts li:last-child b{background:linear-gradient(180deg,#FFFFFF 0%,#BFE6FF 100%);-webkit-background-clip:text;background-clip:text}
+@media (max-width:900px){
+  html.mf body #julie .jher{grid-template-columns:minmax(0,1fr);gap:20px}
+  html.mf body #julie .jher-photo{max-width:340px;margin:0 auto}
+  html.mf body #julie .jher-photo figcaption b{font-size:28px}
+  html.mf body #julie .jher-photo figcaption span{font-size:18px}
+  html.mf body #julie .jher-facts li{padding:14px 0}
+  html.mf body #julie .jher-facts b{font-size:31px}
+  html.mf body #julie .jher-facts span{font-size:18.5px}
+}
+@media (max-width:900px){html.mf body #julie .jher-photo{max-width:250px}html.mf body #julie .jher-photo figcaption{padding:44px 14px 12px}html.mf body #julie .jher-photo figcaption b{font-size:24px}html.mf body #julie .jher-photo figcaption span{font-size:17px}html.mf body #julie .jher-facts b{font-size:28px}html.mf body #julie .jher-facts li{padding:12px 0}}
 
 /* Round 12 (Omri): pricing card in the masterclass card language. White glass card, blue halo, left-aligned, Playfair title and price, label rows instead of check bullets */
 html.mf body section.mfp{position:relative;padding:72px 0 64px;background:radial-gradient(60% 45% at 50% 38%,rgba(0,110,255,.30),transparent 70%),radial-gradient(40% 30% at 85% 90%,rgba(59,167,255,.14),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)}
@@ -10980,22 +11005,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="section-title">Your VIP Masterclass with <em>Julie Gibson Clark.</em></h2>
       <p class="section-subtitle">Exclusive access to her 90-minute live masterclass, Q&amp;A included. Saturday, November&nbsp;14.</p>
     </div>
-    <div class="jgrid">
-      <article class="jg jg-photo">
-        <img src="assets/mf/julie-face.jpg" alt="Julie Gibson Clark" loading="lazy">
-        <div class="jg-body">
-          <h3>Julie Gibson Clark</h3>
-          <p>The 2nd slowest-aging woman on Earth. Founding Faculty at Longevity Life Academy.</p>
-        </div>
-      </article>
-    </div>
-    <div class="jdeck" aria-label="Slides from Julie's masterclass">
-      <div class="jdeck-track">
-        <figure><img src="assets/mf/deck/n03-dunedin.jpg" alt="Julie's slide: Ten years pass. By this test, I age about 6.5." loading="lazy" width="1600" height="900"></figure>
-        <figure><img src="assets/mf/deck/n16-protocol.jpg" alt="Julie's slide: Julie Gibson Clark's Longevity Protocol, her day from 5:00 AM to 9:00 PM" loading="lazy" width="1600" height="900"></figure>
-        <figure><img src="assets/mf/deck/n02-why.jpg" alt="Julie's slide: I didn't do this to win" loading="lazy" width="1600" height="900"></figure>
-        <figure><img src="assets/mf/deck/n17-notebook.jpg" alt="Julie's slide: You don't need a lab. You need a notebook." loading="lazy" width="1600" height="900"></figure>
-      </div>
+    <div class="jher">
+      <figure class="jher-photo">
+        <img src="assets/mf/julie-face.jpg" alt="Julie Gibson Clark" loading="lazy" width="600" height="600">
+        <figcaption><b>Julie Gibson Clark</b><span>The 2nd slowest-aging woman on Earth</span></figcaption>
+      </figure>
+      <ol class="jher-facts">
+        <li><b>No. 2 on Earth</b><span>Rejuvenation Olympics, ahead of Bryan Johnson&rsquo;s $2M-a-year program.</span></li>
+        <li><b>8 months a year</b><span>Her pace of aging. DunedinPACE 0.665, verified by epigenetic testing.</span></li>
+        <li><b>VIP access included</b><span>Her 90-minute live masterclass, Q&amp;A included, Nov&nbsp;14.</span></li>
+      </ol>
     </div>
     <div class="jg-cta"><a class="mf-jbtn" href="#lead-gen">Enroll Now</a></div>
   </div>
