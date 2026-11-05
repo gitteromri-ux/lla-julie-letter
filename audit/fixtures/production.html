@@ -10314,6 +10314,8 @@ html.mf body #julie .jb2-title{text-wrap:balance}
 @media (min-width:901px){html.mf body #julie .jb2-msg b{font-size:36px!important}html.mf body #julie .jb2-msg span{font-size:21px!important}html.mf body #julie .jb2-when b{font-size:34px!important}html.mf body #julie .jb2-when span{font-size:20px!important}}
 html.mf body section#about h1.about-mainhead span.life-blue:not(.mf-x):not(.mf-y){background:linear-gradient(180deg,#3B8BFF 0%,#0A4FD8 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important}
 html.mf body #about .hero-powered-stats .unit{font-size:18px!important}
+/* Phones: the WhatsApp button waits until the November offer bar appears (after the first scroll), so it never covers the hero Trustpilot */
+@media (max-width:900px){html.mf body:has(#llaFloatCta:not(.is-visible)) #et-bumpyard-widget{opacity:0!important;pointer-events:none!important;transition:opacity .25s}html.mf body #et-bumpyard-widget{transition:opacity .25s}}
 
 /* Round 12 (Omri): pricing card in the masterclass card language. White glass card, blue halo, left-aligned, Playfair title and price, label rows instead of check bullets */
 html.mf body section.mfp{position:relative;padding:72px 0 64px;background:radial-gradient(60% 45% at 50% 38%,rgba(0,110,255,.30),transparent 70%),radial-gradient(40% 30% at 85% 90%,rgba(59,167,255,.14),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)}
