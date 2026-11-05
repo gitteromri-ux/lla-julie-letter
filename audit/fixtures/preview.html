@@ -9846,6 +9846,107 @@ html.mf body section.final-cta .final-cta-overlay{background:linear-gradient(180
   html.mf body #julie .jb-photo img{height:220px!important}
 }
 @media (max-width:900px){html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{height:170px!important}html.mf body .skills .skill-card .skill-bg{height:180px!important}}
+/* ===== Round 27 (Omri: short folds; Julie half size; teachers short; Lingo 3D with less text; includes and Six Systems colouring; form at the end and smaller) ===== */
+/* Julie: one row, who she is and the masterclass included */
+html.mf body #julie.mf-julie{padding:56px 0 52px!important}
+html.mf body #julie .mf-head{margin-bottom:26px!important}
+html.mf body #julie .jb-incl{margin:12px 0 16px!important;padding:12px 14px!important;border:1.5px solid #9AD8FF;border-radius:14px;background:rgba(5,13,36,.45);box-shadow:0 0 6px rgba(154,216,255,.9),0 0 22px rgba(59,167,255,.6),inset 0 0 14px rgba(124,200,255,.25);font:600 19px/1.4 Inter,sans-serif!important;color:#FFFFFF!important}
+html.mf body #julie .jb-quote{display:none!important}
+@media (min-width:1025px){
+  html.mf body #julie .jbento{display:grid!important;grid-template-columns:1fr 1fr 1.3fr!important;grid-template-rows:auto!important;grid-auto-rows:auto!important;gap:18px!important;align-items:stretch!important}
+  html.mf body #julie .jbento > .jb{grid-column:auto!important;grid-row:auto!important;min-height:0!important}
+  html.mf body #julie .jb-photo img{height:300px!important;flex:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:50% 20%!important}
+  html.mf body #julie .jb-wide{display:flex!important;flex-direction:column!important}
+}
+@media (max-width:900px){html.mf body #julie .jb-photo img{height:230px!important;object-position:50% 20%!important}}
+/* Instructors: short fold. Desktop one row of five; phones a slider of short cards */
+html.mf body #teachers.instructors,html.mf body section.instructors{padding:56px 0 48px!important}
+html.mf body #teachers .teachers-row2{display:contents!important}
+@media (min-width:1025px){
+  html.mf body #teachers .teachers-grid-live{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:16px!important;align-items:stretch!important}
+  html.mf body #teachers .teacher-card-live{padding:18px 16px 20px!important;transform:none!important}
+  html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{width:110px!important;height:110px!important;border-radius:50%!important;overflow:hidden!important;margin:0 auto 12px!important}
+  html.mf body #teachers .teacher-card-live-photo img{width:100%!important;height:100%!important;object-fit:cover!important}
+  html.mf body #teachers .teacher-card-live-body{text-align:center!important}
+  html.mf body #teachers .teacher-card-live-bio{font-size:17px!important}
+}
+@media (max-width:900px){
+  html.mf body #teachers .section-subtitle{display:none!important}
+  html.mf body #teachers .teachers-grid-live{display:flex!important;overflow-x:auto!important;scroll-snap-type:x mandatory;gap:12px!important;padding:6px 2px 18px!important;-webkit-overflow-scrolling:touch}
+  html.mf body #teachers .teacher-card-live{flex:0 0 82vw!important;width:82vw!important;min-width:82vw!important;max-width:82vw!important;scroll-snap-align:start;display:grid!important;grid-template-columns:84px minmax(0,1fr)!important;column-gap:14px!important;align-items:center!important;padding:16px!important;transform:none!important}
+  html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{grid-row:1;width:84px!important;height:84px!important;border-radius:50%!important;overflow:hidden!important;margin:0!important}
+  html.mf body #teachers .teacher-card-live-photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% 20%!important}
+  html.mf body #teachers .teacher-card-live-body{display:contents!important}
+  html.mf body #teachers .teacher-card-live-name{grid-column:2;grid-row:1;align-self:start;margin:4px 0 0!important;font-size:21px!important}
+  html.mf body #teachers .teacher-card-live-role{grid-column:2;grid-row:1;align-self:end;margin:0 0 6px!important}
+  html.mf body #teachers .teacher-card-live-bio{grid-column:1/-1;margin:12px 0 0!important;font-size:18px!important}
+}
+/* Lingo: deck-style neon glass tiles instead of the white list */
+html.mf body #cgm .cgm8-tiles{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+html.mf body #cgm .cgm8-tile{position:relative;padding:20px 18px 18px;border-radius:20px;background:linear-gradient(160deg,rgba(255,255,255,.11) 0%,rgba(255,255,255,.03) 100%);border:1px solid rgba(160,210,255,.35);box-shadow:0 24px 50px -24px rgba(0,20,70,.9),0 0 34px -10px rgba(0,110,255,.55),inset 0 1px 0 rgba(255,255,255,.25);overflow:hidden}
+html.mf body #cgm .cgm8-tile::before{content:'';position:absolute;left:18px;right:18px;top:0;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#9AD8FF,transparent);box-shadow:0 0 12px rgba(154,216,255,.9)}
+html.mf body #cgm .cgm8-tile b{display:block;font:italic 500 32px/1.05 'Playfair Display',Georgia,serif;background:linear-gradient(180deg,#E3F2FF 0%,#7CC0FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 10px rgba(124,192,255,.45))}
+html.mf body #cgm .cgm8-tile span{display:block;margin-top:8px;font:500 18px/1.35 Inter,sans-serif;color:#FFFFFF}
+html.mf body #cgm .cgm8-wrap{grid-template-columns:300px minmax(0,1fr)!important}
+@media (max-width:900px){
+  html.mf body #cgm .cgm8-wrap{grid-template-columns:minmax(0,1fr)!important}
+  html.mf body #cgm .cgm8-tiles{gap:10px}
+  html.mf body #cgm .cgm8-tile{padding:16px 14px 14px}
+  html.mf body #cgm .cgm8-tile b{font-size:26px}
+  html.mf body #cgm .cgm8-tile span{font-size:17px}
+}
+/* What the course includes: the masterclass card language, navy fold, white and blue glass, large text */
+html.mf body section.nov-incl{background:radial-gradient(55% 45% at 70% 30%,rgba(0,110,255,.28),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)!important}
+html.mf body section.nov-incl :is(.section-title){color:#FFFFFF!important}
+html.mf body section.nov-incl .section-title :is(span,em){background:linear-gradient(180deg,#CFE8FF 0%,#7CC0FF 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important}
+html.mf body section.nov-incl .eyebrow{color:#7CC0FF!important;-webkit-text-fill-color:#7CC0FF!important}
+html.mf body section.nov-incl .nov-incl-card{border-radius:22px!important;padding:24px 22px!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(odd){background:linear-gradient(165deg,#FFFFFF 0%,#F4F8FF 55%,#E4EFFF 100%)!important;border:1px solid rgba(255,255,255,.85)!important;box-shadow:0 0 0 1px rgba(0,110,255,.18),0 30px 60px -30px rgba(0,20,70,.9),0 0 50px -14px rgba(0,110,255,.55)!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(even){background:radial-gradient(70% 55% at 88% 8%,rgba(255,255,255,.28),transparent 62%),linear-gradient(160deg,#2C7BFF 0%,#0A4FD8 100%)!important;border:1px solid rgba(160,205,255,.55)!important;box-shadow:0 30px 60px -30px rgba(0,20,70,.9),0 0 50px -12px rgba(0,110,255,.7)!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(odd) :is(h3,.n){color:#0A1E3A!important;-webkit-text-fill-color:#0A1E3A!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(odd) .n{color:#006EFF!important;-webkit-text-fill-color:#006EFF!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(odd) p{color:#22385E!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(odd) .tag{color:#006EFF!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(even) :is(h3,p,.tag){color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+html.mf body section.nov-incl .nov-incl-card:nth-child(even) .n{color:#CFE8FF!important;-webkit-text-fill-color:#CFE8FF!important}
+html.mf body section.nov-incl .nov-incl-card h3{font:700 23px/1.25 Inter,sans-serif!important}
+html.mf body section.nov-incl .nov-incl-card p{font:500 20px/1.45 Inter,sans-serif!important}
+html.mf body section.nov-incl .nov-incl-card .tag{font:700 17px/1 Inter,sans-serif!important;background:none!important;padding:0!important}
+html.mf body section.nov-incl .nov-incl-card::before,html.mf body section.nov-incl .nov-incl-card::after{display:none!important}
+/* Six Systems: one clean language. Navy glass tiles with light blue lines, white glass detail card */
+html.mf body section.deepdive .hex-node,html.mf body section.deepdive .hex-node:is([data-hex="0"],[data-hex="1"],[data-hex="2"],[data-hex="3"],[data-hex="4"],[data-hex="5"]){background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03))!important;border:1px solid rgba(160,210,255,.45)!important;box-shadow:0 0 22px -6px rgba(0,110,255,.55),inset 0 1px 0 rgba(255,255,255,.2)!important}
+html.mf body section.deepdive .hex-node.active,html.mf body section.deepdive .hex-node.is-active,html.mf body section.deepdive .hex-node[aria-selected="true"]{background:linear-gradient(160deg,#2C7BFF,#0A4FD8)!important;border-color:#9AD8FF!important;box-shadow:0 0 8px rgba(154,216,255,.9),0 0 30px rgba(0,110,255,.7)!important}
+html.mf body section.deepdive .hex-node .hex-node-icon{background:none!important;border:0!important;color:#BFE2FF!important}
+html.mf body section.deepdive .hex-node-label{color:#FFFFFF!important}
+html.mf body section.deepdive #hexDetail,html.mf body section.deepdive .hex-detail{background:linear-gradient(165deg,#FFFFFF 0%,#F4F8FF 55%,#E4EFFF 100%)!important;border:1px solid rgba(255,255,255,.85)!important;box-shadow:0 0 0 1px rgba(0,110,255,.18),0 34px 70px -32px rgba(0,20,70,.9),0 0 60px -14px rgba(0,110,255,.6)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+html.mf body section.deepdive :is(#hexDetailTitle,.hex-detail-title){color:#0A1E3A!important;-webkit-text-fill-color:#0A1E3A!important}
+html.mf body section.deepdive :is(#hexDetailTag,.hex-detail-tag){color:#006EFF!important;-webkit-text-fill-color:#006EFF!important}
+/* Form near the end, much shorter on phones */
+@media (max-width:900px){
+  html.mf body #lead-gen .lead-gen-v2-bullets,html.mf body #lead-gen .lead-gen-v2-sub,html.mf body #lead-gen .lg-wa,html.mf body #lead-gen .et-bump-btn,html.mf body #lead-gen .bump-whatsapp{display:none!important}
+  html.mf body section.lead-gen{padding:44px 0 40px!important}
+  html.mf body #lead-gen .lead-gen-v2-form{padding:22px 18px!important}
+  html.mf body #lead-gen .lead-gen-v2-form label{margin-bottom:4px!important}
+  html.mf body #lead-gen .lead-gen-v2-form :is(input,select){height:50px!important;margin-bottom:12px!important}
+}
+/* Round 27b: fixes after the check */
+html.mf body #julie .jb-wide{display:flex!important;flex-direction:column!important}
+html.mf body #julie .jb-wide video{position:relative!important;inset:auto!important;width:100%!important;height:220px!important;flex:none!important;object-fit:cover!important}
+html.mf body #julie .jb-wide .jb-wide-body{position:relative!important;inset:auto!important}
+@media (max-width:900px){
+  html.mf body #julie .jb-photo img{height:190px!important}
+  html.mf body #julie .jb-photo .jb-kicker,html.mf body #julie .jb-photo .jb-chips{display:none!important}
+  html.mf body #julie .jb-wide video{height:170px!important}
+  html.mf body #julie.mf-julie{padding:40px 0 36px!important}
+  html.mf body #teachers .teacher-card-live{grid-template-rows:auto auto auto!important}
+  html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{grid-row:1 / span 2!important}
+  html.mf body #teachers .teacher-card-live-name{grid-row:1!important;align-self:end!important;margin:0!important;line-height:1.15!important}
+  html.mf body #teachers .teacher-card-live-role{grid-row:2!important;align-self:start!important;margin:4px 0 0!important}
+  html.mf body #teachers .teacher-card-live-bio{grid-row:3!important}
+}
+@media (min-width:1025px){html.mf body #teachers .teacher-card-live-bio{display:none!important}html.mf body #teachers .section-subtitle{max-width:760px;margin-left:auto;margin-right:auto}}
+html.mf body #julie .jb-wide video{min-height:0!important;max-height:240px!important}
+@media (max-width:900px){html.mf body #julie .mf-head .section-subtitle{display:none!important}html.mf body #julie .mf-head{margin-bottom:18px!important}}
 
 /* Round 12 (Omri): pricing card in the masterclass card language. White glass card, blue halo, left-aligned, Playfair title and price, label rows instead of check bullets */
 html.mf body section.mfp{position:relative;padding:72px 0 64px;background:radial-gradient(60% 45% at 50% 38%,rgba(0,110,255,.30),transparent 70%),radial-gradient(40% 30% at 85% 90%,rgba(59,167,255,.14),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)}
@@ -10734,41 +10835,31 @@ html.mf body .mfp-card .pk-foot{margin:10px 0 10px!important}
     <div class="mf-head">
       <span class="eyebrow">About Julie · VIP Masterclass included</span>
       <h2 class="section-title">Ten years pass. <em>She ages six.</em></h2>
-      <p class="section-subtitle">Julie Gibson Clark. 56. A single mom and recruiter from Phoenix with the second slowest measured pace of aging on Earth. No lab. No team of doctors. No millions.</p>
+      <p class="section-subtitle">A single mom from Phoenix with the second slowest measured pace of aging on Earth. No lab. No millions.</p>
     </div>
     <div class="jbento">
       <article class="jb jb-photo tcard t-navy">
-        <img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-seated.jpg" alt="Julie Gibson Clark" loading="lazy">
+        <img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg" alt="Julie Gibson Clark" loading="lazy">
         <div class="jb-photo-body">
           <p class="jb-kicker">Founding Faculty &middot; Longevity Life Academy</p>
           <h3>Julie Gibson Clark</h3>
           <p class="serif-i jb-role">The 2nd slowest-aging human ever measured. She teaches the masterclass live.</p>
-          <div class="jb-chips"><span>56 &middot; Phoenix, AZ</span><span>~$100 / month</span><span>5:00 am &middot; 9:00 pm</span></div>
+          <div class="jb-chips"><span>56 &middot; Phoenix, AZ</span></div>
         </div>
       </article>
       <article class="jb jb-vid tcard t-navy">
         <video src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/ANIM_PACE_1080.mp4" poster="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/pace-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
         <div class="jb-cap"><b>She ages 8 months a year.</b><span>DunedinPACE 0.665, proven by verified epigenetic testing.</span></div>
       </article>
-      <article class="jb jb-vid tcard t-navy">
-        <video src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/ANIM_CURVE_1080.mp4" poster="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/curve-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="jb-cap"><b>34% slower than average.</b><span>Most people age one full year, every year. She doesn&rsquo;t.</span></div>
-      </article>
       <article class="jb jb-wide tcard t-royal">
         <video src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/PLAY_V6_LLA_RANK.mp4" poster="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
         <div class="jb-wide-body">
           <b class="jb-big">No. 2 on Earth.</b>
-          <p>Rejuvenation Olympics leaderboard, ahead of Bryan Johnson&rsquo;s $2M-a-year program.<span class="mf-dsk"> Her protocol: a sleep system, plate architecture, a lean supplement stack, daily movement, and a testing loop that proves it works.</span></p>
-          <p class="serif-i jb-quote">&ldquo;We don&rsquo;t need millions of dollars to live long, vibrant lives.&rdquo;</p>
+          <p>Rejuvenation Olympics leaderboard, ahead of Bryan Johnson&rsquo;s $2M-a-year program.</p>
+          <p class="jb-incl">VIP Masterclass access included: 90&nbsp;min, live&nbsp;Q&amp;A, Nov&nbsp;14.</p>
           <div class="jcta"><a class="mf-jbtn" href="#pricing">Enroll Now</a></div>
         </div>
       </article>
-    </div>
-    <div class="jstats">
-      <div><b>#2</b><span>Reported ranking</span><i>Rejuvenation Olympics</i></div>
-      <div><b>0.665</b><span>Pace of aging</span><i>DunedinPACE, verified</i></div>
-      <div><b>~8 mo</b><span>Biological aging</span><i>Per calendar year</i></div>
-      <div><b>~$100</b><span>Monthly stack</span><i>vs $2M-a-year rivals</i></div>
     </div>
   </div>
 </section>
@@ -10829,16 +10920,11 @@ html.mf body .mfp-card .pk-foot{margin:10px 0 10px!important}
       </div>
       <div class="cgm8-callout"><b>Your CGM</b><span>live glucose sensor</span></div>
       </div>
-      <div class="cgm8-included">
-        <div class="cgm8-panel">
-          <h3>What's included</h3>
-          <ul>
-            <li style="--c:#006EFF"><i class="cgm8-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2"/></svg></i><span>1 x Lingo biosensor with 2 weeks of minute-by-minute continuous glucose tracking</span></li>
-            <li style="--c:#3BA7FF"><i class="cgm8-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v10.5H10l-5 4v-4H4z"/></svg></i><span>Lingo coaching program to help build habits and adjust your nutrition</span></li>
-            <li style="--c:#1B4FD8"><i class="cgm8-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.8" width="10" height="18.4" rx="2.6"/><path d="M10.8 17.6h2.4"/></svg></i><span>Full access to the Lingo app</span></li>
-            <li style="--c:#0A1E3A"><i class="cgm8-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="7" width="8" height="13.5" rx="2"/><rect x="13.2" y="3.5" width="8" height="13.5" rx="2"/></svg></i><span>Works with iOS and Android</span></li>
-          </ul>
-        </div>
+      <div class="cgm8-tiles">
+        <div class="cgm8-tile"><b>2 weeks</b><span>of minute-by-minute glucose tracking</span></div>
+        <div class="cgm8-tile"><b>1 biosensor</b><span>Abbott Lingo, shipped to your home</span></div>
+        <div class="cgm8-tile"><b>Coaching</b><span>to build habits and adjust your nutrition</span></div>
+        <div class="cgm8-tile"><b>The Lingo app</b><span>full access, on iOS and Android</span></div>
       </div>
     </div>
     <p class="cgm8-fine">For students 18+. Not for insulin users. Not for medical diagnosis. One unit per student, shipped to U.S. addresses.</p>
@@ -11157,129 +11243,6 @@ html.mf body .mfp-card .pk-foot{margin:10px 0 10px!important}
     </div>
   </div>
 </section>
-<section class="lead-gen lead-gen-v2" id="lead-gen">
-  <div class="lead-gen-v2-bg" aria-hidden="true"></div>
-  <div class="container">
-    <div class="lead-gen-v2-grid reveal">
-      <div class="lead-gen-v2-left">
-        <span class="eyebrow lead-gen-v2-eyebrow">Apply for the Next Class</span>
-        <h2 class="lead-gen-v2-headline">Enroll Now in <span>Longevity Life Academy</span></h2>
-        <p class="lead-gen-v2-sub">Classes are small. Seats are limited. Tell us a little about yourself and our admissions team will reach out personally with the next class dates and program details.</p>
-        <ul class="lead-gen-v2-bullets">
-          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Live, instructor-led 18-week program</li>
-          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Small classes (8 to 15 students)</li>
-          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Personal longevity protocol included</li>
-          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 1:1 admissions consultation</li>
-        </ul>
-      </div>
-      <div class="lead-gen-v2-right">
-        <form class="lead-gen-v2-form form-with-thankyou" id="leadGenV2Form" data-thankyou-target="leadGenV2ThankYou">
-          <h3 class="lead-gen-v2-form-title">Apply Now</h3>
-          <p class="lead-gen-v2-form-sub">Our admissions team replies within 24 hours.</p>
-          <div class="lead-gen-v2-field">
-            <label for="lg-fname">First Name</label>
-            <input id="lg-fname" type="text" placeholder="Your first name" required autocomplete="given-name">
-          </div>
-          <div class="lead-gen-v2-field">
-            <label for="lg-lname">Last Name</label>
-            <input id="lg-lname" type="text" placeholder="Your last name" required autocomplete="family-name">
-          </div>
-          <div class="lead-gen-v2-field">
-            <label for="lg-email">Email Address</label>
-            <input id="lg-email" type="email" placeholder="you@example.com" required autocomplete="email">
-          </div>
-          <div class="lead-gen-v2-field">
-            <label for="lg-phone">Phone Number</label>
-            <input id="lg-phone" type="tel" placeholder="Mobile number" required autocomplete="tel" inputmode="tel" maxlength="20" pattern="[0-9()+\-.\s]{6,20}">
-          </div>
-          <div class="lead-gen-v2-field">
-            <label for="lg-country">State</label>
-                        <select id="lg-country" name="country" required>
-              <option value="" disabled selected>Select your state</option>
-              <option value="AL">Alabama</option>
-              <option value="AK">Alaska</option>
-              <option value="AZ">Arizona</option>
-              <option value="AR">Arkansas</option>
-              <option value="CA">California</option>
-              <option value="CO">Colorado</option>
-              <option value="CT">Connecticut</option>
-              <option value="DE">Delaware</option>
-              <option value="DC">District of Columbia</option>
-              <option value="FL">Florida</option>
-              <option value="GA">Georgia</option>
-              <option value="HI">Hawaii</option>
-              <option value="ID">Idaho</option>
-              <option value="IL">Illinois</option>
-              <option value="IN">Indiana</option>
-              <option value="IA">Iowa</option>
-              <option value="KS">Kansas</option>
-              <option value="KY">Kentucky</option>
-              <option value="LA">Louisiana</option>
-              <option value="ME">Maine</option>
-              <option value="MD">Maryland</option>
-              <option value="MA">Massachusetts</option>
-              <option value="MI">Michigan</option>
-              <option value="MN">Minnesota</option>
-              <option value="MS">Mississippi</option>
-              <option value="MO">Missouri</option>
-              <option value="MT">Montana</option>
-              <option value="NE">Nebraska</option>
-              <option value="NV">Nevada</option>
-              <option value="NH">New Hampshire</option>
-              <option value="NJ">New Jersey</option>
-              <option value="NM">New Mexico</option>
-              <option value="NY">New York</option>
-              <option value="NC">North Carolina</option>
-              <option value="ND">North Dakota</option>
-              <option value="OH">Ohio</option>
-              <option value="OK">Oklahoma</option>
-              <option value="OR">Oregon</option>
-              <option value="PA">Pennsylvania</option>
-              <option value="RI">Rhode Island</option>
-              <option value="SC">South Carolina</option>
-              <option value="SD">South Dakota</option>
-              <option value="TN">Tennessee</option>
-              <option value="TX">Texas</option>
-              <option value="UT">Utah</option>
-              <option value="VT">Vermont</option>
-              <option value="VA">Virginia</option>
-              <option value="WA">Washington</option>
-              <option value="WV">West Virginia</option>
-              <option value="WI">Wisconsin</option>
-              <option value="WY">Wyoming</option>
-            </select>
-          </div>
-          <button type="submit" class="lead-gen-v2-submit">
-            Submit Application
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </button>
-          <p class="lead-gen-v2-trust">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Your information is secure. We'll never share your details.
-          </p>
-          
-<a class="et-bump-btn bump-whatsapp lla-wa-inline" href="https://wa.me/12015023701" target="_blank" rel="noopener"><img src="https://www.longevitylifeacademy.com/assets/wa/wapp.png" alt="whatsapp"> <span>Start Chat on WhatsApp</span></a>
-<div class="lg-or" aria-hidden="true"><span>or</span></div>
-          <a href="#" class="lg-buy">
-            <span class="lg-buy-main"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2.5 3h3l2.6 12.5a2 2 0 0 0 2 1.5h7.9a2 2 0 0 0 2-1.6L21.5 8H6.2"/></svg> Enroll Online Now &middot; $79 first month</span>
-            <span class="lg-buy-sub">Register, choose your dates, pay online, done in 2 minutes</span>
-          </a>
-        </form>
-        <div class="form-thankyou" id="leadGenV2ThankYou" role="status" aria-live="polite">
-          <div class="form-thankyou-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
-          </div>
-          <h3 class="form-thankyou-headline">Thank you.</h3>
-          <p class="form-thankyou-text">We have received your details. One of our team members will be in touch with you shortly. We look forward to welcoming you to Longevity Life Academy.</p>
-          <a class="form-thankyou-cta" href="https://www.longevitylifeacademy.com/">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            Back to Home
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="value">
   <div class="container">
     <div class="value-header reveal">
@@ -11580,6 +11543,129 @@ html.mf body .mfp-card .pk-foot{margin:10px 0 10px!important}
     </div>
     <div style="text-align: center; padding-top: 32px;">
       <a href="#pricing" class="section-cta-btn">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+<section class="lead-gen lead-gen-v2" id="lead-gen">
+  <div class="lead-gen-v2-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="lead-gen-v2-grid reveal">
+      <div class="lead-gen-v2-left">
+        <span class="eyebrow lead-gen-v2-eyebrow">Apply for the Next Class</span>
+        <h2 class="lead-gen-v2-headline">Enroll Now in <span>Longevity Life Academy</span></h2>
+        <p class="lead-gen-v2-sub">Classes are small. Seats are limited. Tell us a little about yourself and our admissions team will reach out personally with the next class dates and program details.</p>
+        <ul class="lead-gen-v2-bullets">
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Live, instructor-led 18-week program</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Small classes (8 to 15 students)</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Personal longevity protocol included</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 1:1 admissions consultation</li>
+        </ul>
+      </div>
+      <div class="lead-gen-v2-right">
+        <form class="lead-gen-v2-form form-with-thankyou" id="leadGenV2Form" data-thankyou-target="leadGenV2ThankYou">
+          <h3 class="lead-gen-v2-form-title">Apply Now</h3>
+          <p class="lead-gen-v2-form-sub">Our admissions team replies within 24 hours.</p>
+          <div class="lead-gen-v2-field">
+            <label for="lg-fname">First Name</label>
+            <input id="lg-fname" type="text" placeholder="Your first name" required autocomplete="given-name">
+          </div>
+          <div class="lead-gen-v2-field">
+            <label for="lg-lname">Last Name</label>
+            <input id="lg-lname" type="text" placeholder="Your last name" required autocomplete="family-name">
+          </div>
+          <div class="lead-gen-v2-field">
+            <label for="lg-email">Email Address</label>
+            <input id="lg-email" type="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+          <div class="lead-gen-v2-field">
+            <label for="lg-phone">Phone Number</label>
+            <input id="lg-phone" type="tel" placeholder="Mobile number" required autocomplete="tel" inputmode="tel" maxlength="20" pattern="[0-9()+\-.\s]{6,20}">
+          </div>
+          <div class="lead-gen-v2-field">
+            <label for="lg-country">State</label>
+                        <select id="lg-country" name="country" required>
+              <option value="" disabled selected>Select your state</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+          </div>
+          <button type="submit" class="lead-gen-v2-submit">
+            Submit Application
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="lead-gen-v2-trust">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Your information is secure. We'll never share your details.
+          </p>
+          
+<a class="et-bump-btn bump-whatsapp lla-wa-inline" href="https://wa.me/12015023701" target="_blank" rel="noopener"><img src="https://www.longevitylifeacademy.com/assets/wa/wapp.png" alt="whatsapp"> <span>Start Chat on WhatsApp</span></a>
+<div class="lg-or" aria-hidden="true"><span>or</span></div>
+          <a href="#" class="lg-buy">
+            <span class="lg-buy-main"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2.5 3h3l2.6 12.5a2 2 0 0 0 2 1.5h7.9a2 2 0 0 0 2-1.6L21.5 8H6.2"/></svg> Enroll Online Now &middot; $79 first month</span>
+            <span class="lg-buy-sub">Register, choose your dates, pay online, done in 2 minutes</span>
+          </a>
+        </form>
+        <div class="form-thankyou" id="leadGenV2ThankYou" role="status" aria-live="polite">
+          <div class="form-thankyou-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          </div>
+          <h3 class="form-thankyou-headline">Thank you.</h3>
+          <p class="form-thankyou-text">We have received your details. One of our team members will be in touch with you shortly. We look forward to welcoming you to Longevity Life Academy.</p>
+          <a class="form-thankyou-cta" href="https://www.longevitylifeacademy.com/">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
