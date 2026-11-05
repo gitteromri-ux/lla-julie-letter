@@ -9865,6 +9865,27 @@ html.mf body section.trust-strip .trust-logo-img{mix-blend-mode:lighten!importan
 html.mf body :is(#hexDetailTitle,.bump-whatsapp,.et-bump-btn){font-family:Inter,system-ui,sans-serif!important}
 html.mf body section.value .value-header h2.section-title :is(span,em){background:linear-gradient(180deg,#CFE8FF 0%,#7CC0FF 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important}
 html.mf body #lead-gen .lead-gen-v2-trust svg{display:none!important}
+/* ===== Round 26 (Omri: no long cards with small text on phones; footage as before) ===== */
+@media (max-width:900px){
+  html.mf body .mf-dsk{display:none}
+  html.mf body #teachers .teacher-card-live-photo{height:190px!important;aspect-ratio:auto!important}
+  html.mf body #teachers .teacher-card-live-photo img{height:100%!important;object-fit:cover!important;object-position:50% 18%!important}
+  html.mf body #teachers .teacher-card-live-bio{font-size:18px!important;line-height:1.45!important}
+  html.mf body .skills .skill-card .skill-bg{height:200px!important}
+  html.mf body section.testimonials .quote-card{padding:22px 20px!important}
+}
+/* final banner: original footage colour shifted to brand blue, not greyed out */
+html.mf body section.final-cta .final-cta-video{filter:hue-rotate(28deg) saturate(1.05) brightness(.9)!important}
+html.mf body section.final-cta .final-cta-overlay{background:linear-gradient(180deg,rgba(0,40,120,.35) 0%,rgba(0,14,40,.65) 100%)!important}
+@media (max-width:900px){
+  html.mf body #teachers .teacher-card-live{flex:0 0 82vw!important;width:82vw!important;min-width:82vw!important;max-width:82vw!important}
+  html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{width:100%!important;height:200px!important}
+  html.mf body .skills .skill-card{flex:0 0 82vw!important;width:82vw!important;min-width:82vw!important;max-width:82vw!important}
+  html.mf body #julie .jbento{align-items:flex-start!important}
+  html.mf body #julie .jb{min-height:0!important;height:auto!important}
+  html.mf body #julie .jb-photo img{height:220px!important}
+}
+@media (max-width:900px){html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{height:170px!important}html.mf body .skills .skill-card .skill-bg{height:180px!important}}
 
 /* Round 12 (Omri): pricing card in the masterclass card language. White glass card, blue halo, left-aligned, Playfair title and price, label rows instead of check bullets */
 html.mf body section.mfp{position:relative;padding:72px 0 64px;background:radial-gradient(60% 45% at 50% 38%,rgba(0,110,255,.30),transparent 70%),radial-gradient(40% 30% at 85% 90%,rgba(59,167,255,.14),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)}
@@ -10046,6 +10067,13 @@ html.mf body .mfp-tbonus.mfp-twide span{font:500 17px/1.38 Inter,sans-serif!impo
 @keyframes mfpNeon{0%,100%{box-shadow:0 0 8px rgba(154,216,255,1),0 0 22px rgba(59,167,255,.9),0 0 54px rgba(0,110,255,.7),inset 0 0 16px rgba(124,200,255,.45),inset 0 0 36px rgba(0,110,255,.3)}50%{box-shadow:0 0 10px rgba(154,216,255,1),0 0 30px rgba(59,167,255,1),0 0 72px rgba(0,110,255,.85),inset 0 0 20px rgba(124,200,255,.55),inset 0 0 42px rgba(0,110,255,.35)}}
 @media (min-width:761px){html.mf body .mfp-tbonus.mfp-twide .mfp-bhead b{font-size:24px!important}html.mf body .mfp-bhead em{font-size:22px}html.mf body .mfp-tbonus.mfp-twide span{font-size:18px!important}}
 html.mf body .mfp-tbonus.mfp-twide .mfp-bhead b{white-space:nowrap}
+/* Round 26 (Omri: trust items at the payment): lock, Secure checkout, official card and PayPal marks from the .com checkout */
+html.mf body .mfp-secure{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 14px;margin:2px 0 20px}
+html.mf body .mfp-lock{display:inline-flex;align-items:center;gap:6px;font:600 17px/1 Inter,sans-serif;color:#0A1E3A}
+html.mf body .mfp-lock svg{width:18px;height:18px;fill:none;stroke:#0A1E3A;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+html.mf body .mfp-pay{display:inline-flex;align-items:center;gap:6px}
+html.mf body .mfp-pay img{height:26px;width:auto;display:block}
+html.mf body .mfp-card .pk-foot{margin:10px 0 10px!important}
 
 
 </style>
@@ -10732,6 +10760,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="mfp-then">Then $169 a month for 4 months</p>
       <a class="pk-btn" href="#lead-gen"><span>Enroll Now</span><span class="pk-arr" aria-hidden="true">&rarr;</span></a>
       <p class="pk-foot">14-day try-out refund on the course.</p>
+      <div class="mfp-secure"><span class="mfp-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>Secure checkout</span><span class="mfp-pay"><img src="assets/pay/visa.svg" alt="Visa" width="44" height="28"><img src="assets/pay/mastercard.svg" alt="Mastercard" width="44" height="28"><img src="assets/pay/amex.svg" alt="American Express" width="44" height="28"><img src="assets/pay/paypal.svg" alt="PayPal" width="62" height="28"></span></div>
       <div class="mfp-tiles">
         <div class="mfp-t"><b>18 live classes<br>18 weeks</b><span>Small groups, top longevity experts</span></div>
         <div class="mfp-t"><b>Your longevity protocol</b><span>Tailored to your biomarkers</span></div>
@@ -10772,7 +10801,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <video src="assets/mf/anim/PLAY_V6_LLA_RANK.mp4" poster="assets/mf/anim/rank-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
         <div class="jb-wide-body">
           <b class="jb-big">No. 2 on Earth.</b>
-          <p>Rejuvenation Olympics leaderboard, ahead of Bryan Johnson&rsquo;s $2M-a-year program. Her protocol: a sleep system, plate architecture, a lean supplement stack, daily movement, and a testing loop that proves it works.</p>
+          <p>Rejuvenation Olympics leaderboard, ahead of Bryan Johnson&rsquo;s $2M-a-year program.<span class="mf-dsk"> Her protocol: a sleep system, plate architecture, a lean supplement stack, daily movement, and a testing loop that proves it works.</span></p>
           <p class="serif-i jb-quote">&ldquo;We don&rsquo;t need millions of dollars to live long, vibrant lives.&rdquo;</p>
           <div class="jcta"><a class="mf-jbtn" href="#lead-gen">Enroll Now</a></div>
         </div>
@@ -11487,7 +11516,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <p class="quote-text">So happy finding eTeacher Group. They are genuinely concerned that you learn what you want to learn. They listen to what you want to learn and why, and then give thoughtful recommendations. Excellent classes and teachers.</p>
+        <p class="quote-text">So happy finding eTeacher Group. They are genuinely concerned that you learn what you want to learn.</p>
         <div class="quote-meta">Trustpilot · 5 stars · September 2025</div>
       </div>
       <div class="quote-card reveal" data-tint="2">
@@ -11499,7 +11528,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <p class="quote-text">Our teacher is patient and kind. She does great. Even when I can't attend a session, the recording helps me catch up, and the materials mean I can learn at a time that's convenient.</p>
+        <p class="quote-text">Our teacher is patient and kind. She does great. Even when I can't attend a session, the recording helps me catch up.</p>
         <div class="quote-meta">Trustpilot · 5 stars · May 2025</div>
       </div>
       <div class="quote-card reveal" data-tint="3">
@@ -11511,7 +11540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor" opacity="0.25"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <p class="quote-text">At first I was finding logistics difficult, but I got a phone call from a staff member checking in on me and she opened up a clear path forward. I really appreciate that personal touch, staff who stay with students to keep their learning moving.</p>
+        <p class="quote-text">At first I was finding logistics difficult, but I got a phone call from a staff member checking in on me and she opened up a clear path forward.</p>
         <div class="quote-meta">Trustpilot · 4 stars · June 2025</div>
       </div>
     </div>
