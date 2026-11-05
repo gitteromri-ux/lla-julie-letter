@@ -27,7 +27,8 @@ function details(plan) {
 function parsePixel(rec) {
   try {
     const u = new URL(rec.url); const p = new URLSearchParams(u.search);
-    if (rec.post && /=/.test(rec.post) && !/^\s*[{[]/.test(rec.post)) new URLSearchParams(rec.post).forEach((v, k) => p.set(k, v));
+    if (rec.post && /multipart/.test(rec.ctype || '') ) { const re = /name="([^"]+)"\r?\n\r?\n([^\r\n]*)/g; let mm; while ((mm = re.exec(rec.post))) p.set(mm[1], mm[2]); }
+    else if (rec.post && /=/.test(rec.post) && !/^\s*[{[]/.test(rec.post)) new URLSearchParams(rec.post).forEach((v, k) => p.set(k, v));
     const o = { t: rec.t, phase: rec.phase, path: u.pathname, ev: p.get('ev'), eid: p.get('eid'), id: p.get('id'), fbp: p.get('fbp'), fbc: p.get('fbc'), dl: (p.get('dl') || '').slice(0, 160) };
     const cd = {}; const ud = [];
     p.forEach((v, k) => { if (k.startsWith('cd[')) cd[k.slice(3, -1)] = v.slice(0, 120); if (k.startsWith('ud[')) ud.push(k.slice(3, -1)); });
@@ -36,13 +37,15 @@ function parsePixel(rec) {
 }
 function parseRelay(rec) {
   let j = null; try { j = JSON.parse(rec.body); } catch (e) {}
-  const pick = (o) => o && ({ event_name: o.event_name, event_id: o.event_id, action_source: o.action_source, event_source_url: (o.event_source_url || '').slice(0, 160),
-    value: o.custom_data && o.custom_data.value, currency: o.custom_data && o.custom_data.currency, content_ids: o.custom_data && o.custom_data.content_ids,
-    user_data_keys: o.user_data ? Object.keys(o.user_data) : [], fbc: o.user_data && o.user_data.fbc, fbp: o.user_data && o.user_data.fbp,
+  const cdv = (o, k) => (o[k] !== undefined ? o[k] : (o.custom_data ? o.custom_data[k] : undefined));
+  const pick = (o) => o && ({ event_name: o.event_name, event_id: o.event_id, action_source: o.action_source, url: (o.url || o.event_source_url || '').slice(0, 200),
+    value: cdv(o, 'value'), currency: cdv(o, 'currency'), content_ids: cdv(o, 'content_ids'), order_id: cdv(o, 'order_id'), plan: o.plan,
+    fbc: o.fbc || (o.user_data && o.user_data.fbc), fbp: o.fbp || (o.user_data && o.user_data.fbp), email: o.email ? String(o.email).slice(0, 80) : undefined, phone: o.phone ? String(o.phone).slice(0, 40) : undefined,
+    fn: o.fn, ln: o.ln, st: o.st, country: o.country, external_id: o.external_id ? String(o.external_id).slice(0, 70) : undefined,
     test_event_code: o.test_event_code || (j && j.test_event_code) || null });
   let evs = [];
   if (j && Array.isArray(j.data)) evs = j.data.map(pick); else if (j) evs = [pick(j)];
-  return { t: rec.t, phase: rec.phase, path: rec.path, events: evs, topKeys: j ? Object.keys(j) : null, raw: j ? undefined : (rec.body || '').slice(0, 400) };
+  return { t: rec.t, phase: rec.phase, path: rec.path, events: evs, topKeys: j ? Object.keys(j) : null, body: (rec.body || '').slice(0, 4000) };
 }
 
 async function setup(ctx, sc) {
@@ -58,7 +61,7 @@ async function setup(ctx, sc) {
     sc.hosts[h] = (sc.hosts[h] || 0) + 1;
     try {
       if (/(^|\.)facebook\.com$/.test(h)) {
-        sc.pixelRaw.push({ t, phase, method: m, url: req.url().slice(0, 4000), post: (req.postData() || '').slice(0, 6000) });
+        let pb = ''; try { const bf = req.postDataBuffer(); pb = bf ? bf.toString('utf8') : ''; } catch (e) {} sc.pixelRaw.push({ t, phase, method: m, url: req.url().slice(0, 6000), ctype: req.headers()['content-type'] || '', post: pb.slice(0, 12000) });
         return route.fulfill({ status: 200, contentType: 'image/gif', body: Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64') });
       }
       if (/\.vercel\.app$/.test(h)) {
@@ -75,6 +78,7 @@ async function setup(ctx, sc) {
         else if (/\/api\/checkout\/payments\/crm$/.test(u.pathname)) return route.fulfill({ status: 202, headers: cors, contentType: 'application/json', body: '{"accepted":true}' });
         return route.fulfill({ status: 200, headers: cors, contentType: 'application/json', body: JSON.stringify(resp) });
       }
+      if (sc.blockVideo && /\.(mp4|webm|m3u8)(\?|$)/.test(u.pathname)) { sc.blocked.push({ t, phase, host: h, method: m, path: 'VIDEO ' + u.pathname.slice(-50) }); return route.fulfill({ status: 404, body: '' }); }
       if (h === 'ipapi.co') return route.fulfill({ status: 200, contentType: 'text/plain', headers: { 'access-control-allow-origin': '*' }, body: 'US' });
       if (/google-analytics\.com$|analytics\.google\.com$|doubleclick\.net$|googleadservices\.com$|cloudflareinsights\.com$|clarity\.ms$|ads\.linkedin\.com$|analytics\.tiktok\.com$|hotjar\.(com|io)$/.test(h) ||
           (/(^|\.)google\.(com|co\.\w+)$/.test(h) && /collect|pagead|ccm|conversion|ads/.test(u.pathname))) {
@@ -176,7 +180,7 @@ function summarise(sc) {
   const pairs = []; const rel = []; sc.relay.forEach(r => r.events.forEach(e => e && rel.push(Object.assign({ t: r.t, phase: r.phase }, e))));
   sc.pixel.filter(p => p.ev && (p.path === '/tr/' || p.path === '/tr')).forEach(p => { const twin = rel.find(r => r.event_name === p.ev && r.event_id === p.eid); pairs.push({ phase: p.phase, ev: p.ev, eid: p.eid, browser: true, server: !!twin, value: p.cd.value, serverValue: twin && twin.value }); });
   rel.forEach(r => { if (!sc.pixel.find(p => p.ev === r.event_name && p.eid === r.event_id)) pairs.push({ phase: r.phase, ev: r.event_name, eid: r.event_id, browser: false, server: true, serverValue: r.value }); });
-  sc.eventPairs = pairs; delete sc.pixelRaw; delete sc.relayRaw;
+  sc.eventPairs = pairs; delete sc.relayRaw;
 }
 
 async function liveFiles() {
@@ -201,17 +205,18 @@ async function liveFiles() {
   save();
 }
 
-async function scenarioIphoneFull(wk) {
-  const sc = report.scenarios.iphone = { id: 'A-iphone14-safari', device: 'iPhone 14 (WebKit)' };
-  const ctx = await wk.newContext({ ...devices['iPhone 14'], locale: 'en-US', timezoneId: 'America/New_York' });
-  await setup(ctx, sc); const page = await ctx.newPage(); watch(page, sc);
+async function scenarioIphoneFull(br, key, label, opt) {
+  opt = opt || {};
+  const sc = report.scenarios[key] = { id: label, device: opt.device || 'iPhone 14' };
+  const ctx = await br.newContext({ ...devices['iPhone 14'], locale: 'en-US', timezoneId: 'America/New_York' });
+  sc.blockVideo = !!opt.blockVideo; await setup(ctx, sc); const page = await ctx.newPage(); watch(page, sc);
   sc.phase = 'land'; const t0 = Date.now();
   await page.goto(LAND, { waitUntil: 'load', timeout: 120000 }).catch(e => sc.notes.push('goto ' + e.message.slice(0, 100)));
   sc.loadMs = Date.now() - t0; await sleep(5000);
   sc.cookies = (await ctx.cookies()).filter(c => /_fb|lla/i.test(c.name)).map(c => ({ name: c.name, value: c.value, domain: c.domain, expires: c.expires > 0 ? new Date(c.expires * 1000).toISOString() : 'session', httpOnly: c.httpOnly }));
   sc.landState = await state(page); sc.layout = await layout(page);
   await shot(page, sc, 'land-first-screen');
-  sc.phase = 'scroll'; await scrollShots(page, sc, 40); sc.priceTexts = await priceTexts(page);
+  sc.phase = 'scroll'; if (opt.scroll !== false) await scrollShots(page, sc, 40); sc.priceTexts = await priceTexts(page);
   sc.phase = 'cta-test'; sc.ctaTest = [];
   for (const sel of ['#hero a:has-text("Enroll")', 'header a:has-text("Enroll")', '#mockBar a', '#offer a:has-text("Enroll")', '#enroll-mini a', '#vip a:has-text("Enroll")', '#learn-com a:has-text("Enroll")', '#syllabus a:has-text("Enroll")']) {
     const el = await vis(page, sel); if (!el) { sc.ctaTest.push({ sel, found: false }); continue; }
@@ -266,6 +271,12 @@ async function scenarioIphoneFull(wk) {
   sc.checkoutState = await state(page); sc.checkoutLayout = await layout(page); sc.checkoutPrices = await priceTexts(page);
   sc.checkoutText = await page.evaluate(() => document.body.innerText.replace(/\s+/g, ' ').slice(0, 3000)).catch(() => null);
   sc.payMethods = await page.evaluate(() => ({ awxMount: !!document.getElementById('awx-dropin'), awxIframes: [...document.querySelectorAll('iframe')].map(f => (f.src || '').slice(0, 120)), paypalSdk: !!document.querySelector('script[src*="paypal.com/sdk"]'), paypalSdkSrc: (document.querySelector('script[src*="paypal.com/sdk"]') || {}).src || null, paypalButtons: !!document.querySelector('[id*=paypal i] iframe, .paypal-buttons'), awxSdk: !!window.Airwallex, applePayText: /apple pay/i.test(document.body.innerText), googlePayText: /google pay/i.test(document.body.innerText), applePayEl: !!document.querySelector('apple-pay-button,[class*=apple-pay i],[id*=applepay i]'), googlePayEl: !!document.querySelector('[class*=gpay i],[id*=gpay i],[class*=google-pay i]'), recurringWords: (document.body.innerText.match(/.{0,60}(recurring|subscription|auto-?renew|automatically charge|future payments|save (your )?card).{0,60}/ig) || []).slice(0, 6) })).catch(e => ({ err: e.message }));
+  if (opt.backForward !== false) {
+    sc.phase = 'checkout-reload'; await page.reload({ waitUntil: 'load', timeout: 90000 }).catch(() => {}); await sleep(6000); await shot(page, sc, 'checkout-after-reload');
+    sc.phase = 'back-to-page'; await page.goBack({ waitUntil: 'load', timeout: 90000 }).catch(() => {}); await sleep(5000); sc.afterBack = { url: page.url().slice(0, 200), modal: await modalOpen(page), modalText: (await modalText(page) || '').slice(0, 300) }; await shot(page, sc, 'after-back');
+    const c2 = await vis(page, '#emGo2, #enrollModal button:has-text("Continue")'); sc.afterBack.continueVisible = !!c2;
+    if (c2) { sc.phase = 'second-continue'; await c2.scrollIntoViewIfNeeded().catch(() => {}); await c2.click().catch(() => {}); await page.waitForURL(/checkout/, { timeout: 45000 }).catch(() => {}); await sleep(6000); await shot(page, sc, 'second-checkout'); }
+  }
   sc.phase = 'end'; await sleep(3000); await ctx.close(); summarise(sc); save();
 }
 
@@ -317,9 +328,9 @@ async function scenarioAndroidTimed(cr) {
 }
 
 async function scenarioSmallPhoneCountry(wk) {
-  const sc = report.scenarios.smallphone = { id: 'C-iphoneSE-country', device: 'iPhone SE (WebKit) 375x667' };
+  const sc = report.scenarios.smallphone = { id: 'C-iphoneSE-country', device: 'iPhone SE (WebKit) 375x667, videos blocked' };
   const ctx = await wk.newContext({ ...devices['iPhone SE'], locale: 'en-US', timezoneId: 'America/Los_Angeles' });
-  await setup(ctx, sc); const page = await ctx.newPage(); watch(page, sc);
+  sc.blockVideo = true; await setup(ctx, sc); const page = await ctx.newPage(); watch(page, sc);
   sc.phase = 'land'; await page.goto(LAND.replace('AUDIT1105', 'AUDIT1105C'), { waitUntil: 'load', timeout: 120000 }).catch(() => {}); await sleep(4000);
   await shot(page, sc, 'land'); sc.layout = await layout(page);
   sc.phase = 'enroll-click'; sc.modalOpened = await openModalFromHero(page, sc); await shot(page, sc, 'step1');
@@ -371,8 +382,11 @@ async function scenarioSilenced(cr) {
 (async () => {
   try { await liveFiles(); } catch (e) { report.live.err = e.message; }
   const cr = await chromium.launch(); const wk = process.env.SMOKE ? cr : await webkit.launch();
-  for (const [name, fn, br] of [['iphone', scenarioIphoneFull, wk], ['android', scenarioAndroidTimed, cr], ['smallphone', scenarioSmallPhoneCountry, wk], ['desktop', scenarioDesktop, cr], ['directCheckout', scenarioDirectCheckout, wk], ['silenced', scenarioSilenced, cr]]) {
-    try { await fn(br); } catch (e) { (report.scenarios[name] = report.scenarios[name] || {}).fatal = String(e).slice(0, 400); save(); }
+  const jobs = [['iphoneChrome', b => scenarioIphoneFull(b, 'iphoneChrome', 'A-iphone14-chromeEngine', { device: 'iPhone 14 viewport and UA, Chromium engine, videos on' }), cr],
+    ['iphoneSafari', b => scenarioIphoneFull(b, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked to avoid a WebKit-on-Linux video crash', blockVideo: true, scroll: false }), wk],
+    ['android', scenarioAndroidTimed, cr], ['smallphone', scenarioSmallPhoneCountry, wk], ['desktop', scenarioDesktop, cr], ['directCheckout', scenarioDirectCheckout, wk], ['silenced', scenarioSilenced, cr]];
+  for (const [name, fn, br] of jobs) {
+    try { await fn(br); } catch (e) { const s2 = (report.scenarios[name] = report.scenarios[name] || {}); s2.fatal = String(e).slice(0, 400); try { if (s2.relayRaw) summarise(s2); } catch (_) {} save(); }
   }
   if (wk !== cr) await wk.close(); await cr.close();
   report.finishedAt = new Date().toISOString(); save();
