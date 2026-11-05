@@ -9947,6 +9947,64 @@ html.mf body #julie .jb-wide .jb-wide-body{position:relative!important;inset:aut
 @media (min-width:1025px){html.mf body #teachers .teacher-card-live-bio{display:none!important}html.mf body #teachers .section-subtitle{max-width:760px;margin-left:auto;margin-right:auto}}
 html.mf body #julie .jb-wide video{min-height:0!important;max-height:240px!important}
 @media (max-width:900px){html.mf body #julie .mf-head .section-subtitle{display:none!important}html.mf body #julie .mf-head{margin-bottom:18px!important}}
+/* ===== Round 28 (Omri): larger headlines; Julie fold = the VIP Masterclass, every card visible, each animation's meaning in large type; Lingo = the real Abbott shot with three large lines; instructors one row slider with large faces ===== */
+html.mf body :is(.section-title,.how-v2-title,.about-mainhead,.lead-gen-v2-headline,.bioquiz-title,.final-cta-title){font-size:clamp(40px,4.3vw,62px)!important}
+@media (max-width:900px){html.mf body :is(.section-title,.how-v2-title,.about-mainhead,.lead-gen-v2-headline,.bioquiz-title,.final-cta-title){font-size:40px!important}}
+/* Julie */
+html.mf body #julie .mf-head .section-subtitle{display:block!important;font-size:22px!important;max-width:760px;margin:14px auto 0!important}
+html.mf body #julie .jgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:6px}
+html.mf body #julie .jg{position:relative;display:flex;flex-direction:column;border-radius:24px;overflow:hidden;background:linear-gradient(180deg,#0B1A3C 0%,#060F26 100%);border:1px solid rgba(160,210,255,.32);box-shadow:0 30px 60px -28px rgba(0,20,70,.9),0 0 46px -14px rgba(0,110,255,.6)}
+html.mf body #julie .jg img,html.mf body #julie .jg video{display:block;width:100%;height:240px;object-fit:cover}
+html.mf body #julie .jg-photo img{object-position:50% 30%}
+html.mf body #julie .jg-body{padding:20px 22px 24px}
+html.mf body #julie .jg-body h3{margin:0 0 8px;font:italic 500 30px/1.1 'Playfair Display',Georgia,serif;color:#FFFFFF}
+html.mf body #julie .jg-body b{display:block;margin:0 0 8px;font:italic 500 30px/1.12 'Playfair Display',Georgia,serif;background:linear-gradient(180deg,#E3F2FF 0%,#7CC0FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+html.mf body #julie .jg-body p{margin:0;font:500 19px/1.45 Inter,sans-serif;color:#FFFFFF}
+html.mf body #julie .jg-cta{display:flex;justify-content:center;margin-top:26px}
+@media (max-width:900px){
+  html.mf body #julie .jgrid{grid-template-columns:1fr 1fr;gap:10px}
+  html.mf body #julie .jg-photo{grid-column:1/-1;display:grid;grid-template-columns:42% minmax(0,1fr);align-items:center}
+  html.mf body #julie .jg-photo img{height:100%;min-height:200px}
+  html.mf body #julie .jg-body{padding:14px 14px 16px}
+  html.mf body #julie .jg-photo .jg-body h3{font-size:25px}
+  html.mf body #julie .jg-photo .jg-body p{font-size:18px}
+  html.mf body #julie .jg-vid video{height:110px}
+  html.mf body #julie .jg-vid .jg-body b{font-size:23px}
+  html.mf body #julie .jg-vid .jg-body p{font-size:17px}
+  html.mf body #julie .mf-head .section-subtitle{font-size:20px!important}
+}
+/* Lingo */
+html.mf body #cgm .cgm9{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;max-width:1060px;margin:0 auto}
+html.mf body #cgm .cgm9-shot{margin:0;border-radius:28px;overflow:hidden;background:#FFFFFF;box-shadow:0 0 0 1px rgba(255,255,255,.85),0 46px 90px -34px rgba(0,20,70,.95),0 0 90px -10px rgba(0,110,255,.65)}
+html.mf body #cgm .cgm9-shot img{display:block;width:100%;height:auto}
+html.mf body #cgm .cgm9-list{list-style:none;margin:0;padding:0;counter-reset:c9}
+html.mf body #cgm .cgm9-list li{counter-increment:c9;display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:14px;padding:22px 0;border-bottom:1px solid rgba(160,210,255,.22)}
+html.mf body #cgm .cgm9-list li:last-child{border-bottom:0}
+html.mf body #cgm .cgm9-list li::before{content:counter(c9,decimal-leading-zero);grid-row:1/3;font:italic 400 40px/1 'Playfair Display',Georgia,serif;color:#7CC0FF;text-shadow:0 0 16px rgba(124,192,255,.6)}
+html.mf body #cgm .cgm9-list b{font:600 26px/1.2 Inter,sans-serif;color:#FFFFFF}
+html.mf body #cgm .cgm9-list span{margin-top:6px;font:500 19px/1.4 Inter,sans-serif;color:#CFE8FF}
+@media (max-width:900px){
+  html.mf body #cgm .cgm9{grid-template-columns:minmax(0,1fr);gap:18px}
+  html.mf body #cgm .cgm9-shot{max-width:320px;margin:0 auto;border-radius:22px}
+  html.mf body #cgm .cgm9-list li{grid-template-columns:46px minmax(0,1fr);padding:14px 0}
+  html.mf body #cgm .cgm9-list li::before{font-size:32px}
+  html.mf body #cgm .cgm9-list b{font-size:22px}
+  html.mf body #cgm .cgm9-list span{font-size:18px}
+}
+/* Instructors: one row slider, large faces, room for the text (desktop and phones) */
+html.mf body #teachers .teachers-grid-live{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;scroll-snap-type:x mandatory;gap:18px!important;padding:8px 4px 22px!important;-webkit-overflow-scrolling:touch;grid-template-columns:none!important}
+html.mf body #teachers .teacher-card-live{flex:0 0 300px!important;width:300px!important;min-width:300px!important;max-width:300px!important;display:flex!important;flex-direction:column!important;scroll-snap-align:start;padding:16px 16px 20px!important;transform:none!important;grid-template-columns:none!important}
+html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{width:100%!important;height:300px!important;border-radius:18px!important;overflow:hidden!important;margin:0 0 14px!important;grid-row:auto!important}
+html.mf body #teachers .teacher-card-live-photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% 22%!important}
+html.mf body #teachers .teacher-card-live-body{display:block!important;text-align:left!important}
+html.mf body #teachers .teacher-card-live-name{font-size:24px!important;margin:0 0 4px!important;grid-row:auto!important;grid-column:auto!important}
+html.mf body #teachers .teacher-card-live-role{display:block!important;font-size:17px!important;margin:0 0 10px!important;grid-row:auto!important;grid-column:auto!important}
+html.mf body #teachers .teacher-card-live-bio{display:block!important;font-size:18px!important;line-height:1.45!important;margin:0!important;grid-row:auto!important;grid-column:auto!important}
+@media (min-width:1025px){html.mf body #teachers .teachers-grid-live{justify-content:flex-start}}
+@media (max-width:900px){
+  html.mf body #teachers .teacher-card-live{flex:0 0 80vw!important;width:80vw!important;min-width:80vw!important;max-width:80vw!important}
+  html.mf body #teachers .teacher-card-live-photo,html.mf body #teachers .teacher-card-live-photo--square{height:270px!important}
+}
 
 /* Round 12 (Omri): pricing card in the masterclass card language. White glass card, blue halo, left-aligned, Playfair title and price, label rows instead of check bullets */
 html.mf body section.mfp{position:relative;padding:72px 0 64px;background:radial-gradient(60% 45% at 50% 38%,rgba(0,110,255,.30),transparent 70%),radial-gradient(40% 30% at 85% 90%,rgba(59,167,255,.14),transparent 70%),linear-gradient(180deg,#040B1E 0%,#071433 100%)}
@@ -10833,34 +10891,28 @@ html.mf body .mfp-card .pk-foot{margin:10px 0 10px!important}
 <section class="mf-julie v8-julie v9-julie" id="julie">
   <div class="container">
     <div class="mf-head">
-      <span class="eyebrow">About Julie · VIP Masterclass included</span>
-      <h2 class="section-title">Ten years pass. <em>She ages six.</em></h2>
-      <p class="section-subtitle">A single mom from Phoenix with the second slowest measured pace of aging on Earth. No lab. No millions.</p>
+      <span class="eyebrow">Included with enrollment</span>
+      <h2 class="section-title">Your VIP Masterclass with <em>Julie Gibson Clark.</em></h2>
+      <p class="section-subtitle">Exclusive access to her 90-minute live masterclass, Q&amp;A included. Saturday, November&nbsp;14.</p>
     </div>
-    <div class="jbento">
-      <article class="jb jb-photo tcard t-navy">
+    <div class="jgrid">
+      <article class="jg jg-photo">
         <img src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/julie-face.jpg" alt="Julie Gibson Clark" loading="lazy">
-        <div class="jb-photo-body">
-          <p class="jb-kicker">Founding Faculty &middot; Longevity Life Academy</p>
+        <div class="jg-body">
           <h3>Julie Gibson Clark</h3>
-          <p class="serif-i jb-role">The 2nd slowest-aging human ever measured. She teaches the masterclass live.</p>
-          <div class="jb-chips"><span>56 &middot; Phoenix, AZ</span></div>
+          <p>The 2nd slowest-aging woman on Earth. Founding Faculty at Longevity Life Academy.</p>
         </div>
       </article>
-      <article class="jb jb-vid tcard t-navy">
+      <article class="jg jg-vid">
         <video src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/ANIM_PACE_1080.mp4" poster="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/pace-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="jb-cap"><b>She ages 8 months a year.</b><span>DunedinPACE 0.665, proven by verified epigenetic testing.</span></div>
+        <div class="jg-body"><b>She ages 8 months a year.</b><p>DunedinPACE 0.665, verified by epigenetic testing.</p></div>
       </article>
-      <article class="jb jb-wide tcard t-royal">
+      <article class="jg jg-vid">
         <video src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/PLAY_V6_LLA_RANK.mp4" poster="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/anim/rank-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="jb-wide-body">
-          <b class="jb-big">No. 2 on Earth.</b>
-          <p>Rejuvenation Olympics leaderboard, ahead of Bryan Johnson&rsquo;s $2M-a-year program.</p>
-          <p class="jb-incl">VIP Masterclass access included: 90&nbsp;min, live&nbsp;Q&amp;A, Nov&nbsp;14.</p>
-          <div class="jcta"><a class="mf-jbtn" href="#pricing">Enroll Now</a></div>
-        </div>
+        <div class="jg-body"><b>No. 2 on Earth.</b><p>Rejuvenation Olympics, ahead of Bryan Johnson&rsquo;s $2M-a-year program.</p></div>
       </article>
     </div>
+    <div class="jg-cta"><a class="mf-jbtn" href="#pricing">Enroll Now</a></div>
   </div>
 </section>
 
@@ -10883,49 +10935,13 @@ html.mf body .mfp-card .pk-foot{margin:10px 0 10px!important}
       <span class="eyebrow">Included in Your Course</span>
       <h2 class="section-title">Continuous Glucose Monitoring, <span class="mf-lb">Included in Your Course</span></h2>
     </div>
-    <div class="cgm8-wrap">
-      <div class="cgm8-stagebox" aria-hidden="true">
-      <div class="cgm8-stage">
-        <div class="cgm8-glow"></div>
-        <div class="cgm8-phone">
-          <div class="cgm8-screen">
-            <div class="cgm8-top">
-              <div class="cgm8-status"><span>9:41</span><i></i><em></em></div>
-              <span class="cgm8-info">i</span>
-              <p class="cgm8-label">Your current glucose is:</p>
-              <div class="cgm8-value"><b>110</b><span class="cgm8-arrow">&#8594;</span><small>mg/dL</small></div>
-              <svg class="cgm8-chart" viewBox="0 0 300 130" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="g8line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#BFE2FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
-                  <filter id="g8glow" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-                </defs>
-                <rect x="0" y="46" width="300" height="46" rx="4" fill="rgba(255,255,255,.12)"/>
-                <text x="2" y="24" fill="rgba(255,255,255,.6)" font-size="9" font-family="Inter,sans-serif">180</text>
-                <text x="2" y="58" fill="rgba(255,255,255,.6)" font-size="9" font-family="Inter,sans-serif">140</text>
-                <text x="2" y="104" fill="rgba(255,255,255,.6)" font-size="9" font-family="Inter,sans-serif">70</text>
-                <path class="cgm8-line" pathLength="1" filter="url(#g8glow)" d="M20,88 C30,86 36,60 44,40 C50,26 56,86 66,92 C74,96 78,44 86,22 C92,10 96,36 100,52 C104,64 108,32 114,30 C120,28 124,74 132,84 C140,92 150,80 158,84 C166,88 172,78 180,82 C188,86 194,76 202,80 C210,84 216,74 224,80 C232,86 238,72 246,76 C254,80 262,70 270,72" fill="none" stroke="url(#g8line)" stroke-width="2.6" stroke-linecap="round"/>
-                <circle cx="270" cy="72" r="6" fill="#fff" class="cgm8-dot"/>
-              </svg>
-              <div class="cgm8-times"><span>9am</span><span>12pm</span><span>3pm</span></div>
-              <div class="cgm8-dots"><i class="on"></i><i></i></div>
-            </div>
-            <div class="cgm8-bottom">
-              <div class="cgm8-today"><span>&#8249;</span><b>Today</b><span>&#8250;</span></div>
-              <div class="cgm8-note"><b>Good evening, Taylor</b><span>Try a high-protein, low-sugar salad for dinner.</span></div>
-              <div class="cgm8-nav"><i></i><i></i><i class="plus">+</i><i></i><i></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="cgm8-sensor"><div class="cgm8-ring"></div><div class="cgm8-disc"><div class="cgm8-dome"></div></div></div>
-      </div>
-      <div class="cgm8-callout"><b>Your CGM</b><span>live glucose sensor</span></div>
-      </div>
-      <div class="cgm8-tiles">
-        <div class="cgm8-tile"><b>2 weeks</b><span>of minute-by-minute glucose tracking</span></div>
-        <div class="cgm8-tile"><b>1 biosensor</b><span>Abbott Lingo, shipped to your home</span></div>
-        <div class="cgm8-tile"><b>Coaching</b><span>to build habits and adjust your nutrition</span></div>
-        <div class="cgm8-tile"><b>The Lingo app</b><span>full access, on iOS and Android</span></div>
-      </div>
+    <div class="cgm9">
+      <figure class="cgm9-shot"><img src="https://www.longevitylifeacademy.com/assets/cgm/lingo-1.jpg" alt="The Abbott Lingo app showing a live glucose reading of 110, next to the Lingo biosensor" loading="lazy" width="900" height="900"></figure>
+      <ol class="cgm9-list">
+        <li><b>Minute-by-minute glucose</b><span>tracked for 2 weeks</span></li>
+        <li><b>Lingo coaching</b><span>to build habits and adjust your nutrition</span></li>
+        <li><b>Free, shipped to your home</b><span>full app access on iOS and Android</span></li>
+      </ol>
     </div>
     <p class="cgm8-fine">For students 18+. Not for insulin users. Not for medical diagnosis. One unit per student, shipped to U.S. addresses.</p>
   </div>
