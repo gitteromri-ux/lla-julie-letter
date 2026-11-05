@@ -24,10 +24,11 @@ jobs:
           getent hosts lla-ac-events.vercel.app eteacher-leads-proxy.gitter-omri.workers.dev www.facebook.com || true
       - name: Install Playwright
         working-directory: audit
+        timeout-minutes: 8
         run: |
           npm init -y >/dev/null
           npm i playwright@1.49.1
-          npx playwright install --with-deps chromium webkit
+          npx playwright install --with-deps chromium
       - name: Run audit
         working-directory: audit
         continue-on-error: true

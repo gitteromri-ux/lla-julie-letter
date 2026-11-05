@@ -460,7 +460,7 @@ async function scenarioDotCom(cr, key, ctxOpts, maxScreens) {
 
 (async () => {
   if (!process.env.AUDIT_SET) { try { await liveFiles(); } catch (e) { report.live.err = e.message; } }
-  const cr = await chromium.launch(); const wk = process.env.SMOKE ? cr : await webkit.launch();
+  const cr = await chromium.launch(); const wk = (process.env.SMOKE || process.env.AUDIT_SET === '5') ? cr : await webkit.launch();
   const jobs = [['iphoneChrome', b => scenarioIphoneFull(b, 'iphoneChrome', 'A-iphone14-chromeEngine', { device: 'iPhone 14 viewport and UA, Chromium engine, videos on' }), cr],
     ['iphoneSafari', b => scenarioIphoneFull(b, 'iphoneSafari', 'A2-iphone14-webkit', { device: 'iPhone 14, WebKit (Safari engine), videos blocked to avoid a WebKit-on-Linux video crash', blockVideo: true, scroll: false }), wk],
     ['android', scenarioAndroidTimed, cr], ['smallphone', scenarioSmallPhoneCountry, wk], ['desktop', scenarioDesktop, cr], ['directCheckout', scenarioDirectCheckout, wk], ['silenced', scenarioSilenced, cr]];
