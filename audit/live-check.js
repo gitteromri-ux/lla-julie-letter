@@ -15,9 +15,9 @@ const sha = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16
     if (rep.sameAsBuild) break; await new Promise(z => setTimeout(z, 30000));
   }
   for (let i = 0; i < 20; i++) {
-    const r = await fetch('https://gitteromri-ux.github.io/longevity-website-review-20261105/round39/?v=' + Date.now()); const t = await r.text();
-    rep.board = { status: r.status, isRound39: t.includes('ROUND 39'), tries: i + 1 };
-    if (rep.board.isRound39) break; await new Promise(z => setTimeout(z, 30000));
+    const r = await fetch('https://gitteromri-ux.github.io/longevity-website-review-20261105/round40/?v=' + Date.now()); const t = await r.text();
+    rep.board = { status: r.status, isRound40: t.includes('ROUND 40'), tries: i + 1 };
+    if (rep.board.isRound40) break; await new Promise(z => setTimeout(z, 30000));
   }
   for (const [name, bt, o] of [['iphone', webkit, { ...devices['iPhone 14'] }], ['desktop', chromium, { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 }]]) {
     const b = await bt.launch(); const p = await (await b.newContext(o)).newPage();
