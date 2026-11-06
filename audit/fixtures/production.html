@@ -12140,6 +12140,10 @@ html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-header{text-a
 /* WhatsApp bubble is a 56px circle (round 30s); its "Available on WhatsApp" label spilled 90px off the right edge on desktop */
 html.mf body #et-bumpyard-widget .widget-trigger-btn .label{display:none!important}
 
+/* Round 67 (QA): six pillars titles were clipped by 4px on desktop (2-line clamp with a fixed box). Show the full title. */
+html.mf body:not(#mf-x):not(#mf-t) section.topics .topic-v2-title{-webkit-line-clamp:unset!important;line-clamp:unset!important;overflow:visible!important;max-height:none!important;height:auto!important}
+@media (min-width:901px){html.mf body:not(#mf-x):not(#mf-t) section.topics .topic-v2-title{min-height:62px!important}}
+
 </style>
 <style id="pd-checkout">
 #enrollModal{--blue:#006EFF;--font:'Playfair Display', Georgia, 'Times New Roman', serif;--font-ui:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;--glow-blue:0 18px 44px -14px rgba(0,110,255,.7);--ink:#0B1B33;--ink-2:#29385A;--ink-3:#5B6B8C;--r-lg:30px;--r-md:22px;--r-sm:14px;--shadow-card:0 1px 0 rgba(255,255,255,.7) inset, 0 30px 70px -34px rgba(10,34,64,.4), 0 2px 8px -2px rgba(10,34,64,.08);--silver:#F3F6FB}
@@ -15987,7 +15991,6 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
 
 </script>
 <script src="assets/mf/pd/november-zones.js"></script>
-<script src="assets/mf/pd/blueprint-hotfix-state.js" defer></script>
 <script>
 /* LLA CTA events for www.longevitylifeacademy.com, copied from the pages.dev funnel (Omri, 6 Nov 2026: "all dot dev tracking").
  * What pages.dev sends and the .com did not:

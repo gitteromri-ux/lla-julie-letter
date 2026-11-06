@@ -12100,6 +12100,10 @@ html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-header{text-a
 /* WhatsApp bubble is a 56px circle (round 30s); its "Available on WhatsApp" label spilled 90px off the right edge on desktop */
 html.mf body #et-bumpyard-widget .widget-trigger-btn .label{display:none!important}
 
+/* Round 67 (QA): six pillars titles were clipped by 4px on desktop (2-line clamp with a fixed box). Show the full title. */
+html.mf body:not(#mf-x):not(#mf-t) section.topics .topic-v2-title{-webkit-line-clamp:unset!important;line-clamp:unset!important;overflow:visible!important;max-height:none!important;height:auto!important}
+@media (min-width:901px){html.mf body:not(#mf-x):not(#mf-t) section.topics .topic-v2-title{min-height:62px!important}}
+
 </style>
 </head>
 <body>
