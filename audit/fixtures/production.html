@@ -11457,24 +11457,12 @@ html.mf body #cgm.cgm12 .cgm14-legend span:nth-child(2){display:inline-flex!impo
   html.mf body #cgm.cgm12 .cgm14-tag{left:auto;right:16px;top:-14px}
 }
 html.mf body #cgm.cgm12 .cgm14-tag{left:auto;right:18px}
-
-/* ===== Round 46: Lingo cards, one see-through glass, one white ===== */
-html.mf body #cgm.cgm12 .cgm14-live{background:linear-gradient(155deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.07) 55%,rgba(255,255,255,.04) 100%)!important;-webkit-backdrop-filter:blur(14px) saturate(150%);backdrop-filter:blur(14px) saturate(150%);border:1px solid rgba(255,255,255,.42)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 0 22px rgba(255,255,255,.05),0 30px 50px -26px rgba(0,0,0,.75)!important}
-html.mf body #cgm.cgm12 .cgm14-live .cgm14-k{color:#EAF5FF}
-html.mf body #cgm.cgm12 .cgm14-meal{background:linear-gradient(160deg,#FFFFFF 0%,#F2F7FF 100%)!important;border:1px solid rgba(255,255,255,.95)!important;box-shadow:inset 0 1px 0 #FFFFFF,0 34px 56px -26px rgba(0,0,0,.85),0 0 0 6px rgba(255,255,255,.05)!important}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-k{color:#1E3F70}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-legend{color:#0A1A40}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-legend i.p{background:#E8558E;box-shadow:none}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-legend i.b{background:#3B8AE6;box-shadow:none}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-curves path:nth-of-type(3){stroke:#E8558E!important;filter:none}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-curves path:nth-of-type(4){stroke:#3B8AE6!important;filter:none}
-html.mf body #cgm.cgm12 .cgm14-meal #c14p stop{stop-color:#F06A9B}
-html.mf body #cgm.cgm12 .cgm14-meal #c14b stop{stop-color:#5EA2F0}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-curves line,html.mf body #cgm.cgm12 .cgm14-meal .cgm14-curves g{stroke:rgba(10,26,64,.28)!important}
-html.mf body #cgm.cgm12 .cgm14-meal .cgm14-curves circle{fill:#E8558E}
-html.mf body #cgm.cgm12 .cgm14-tag{color:#FFFFFF;background:linear-gradient(160deg,#F06A9B,#C93E78);border:1px solid rgba(255,255,255,.8);box-shadow:0 12px 22px -12px rgba(0,0,0,.7)}
-html.mf body #cgm.cgm12 .cgm14-live{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:linear-gradient(155deg,rgba(255,255,255,.20) 0%,rgba(255,255,255,.08) 50%,rgba(255,255,255,.05) 100%)!important}
-html.mf body #cgm.cgm12 .cgm14-live :is(p,svg){background:none!important}
+/* Round 47: the real Lingo biosensor next to the phone */
+html.mf body #cgm.cgm12 .cgm14-sensor{position:absolute;left:96px;top:214px;width:86px;height:auto;z-index:2;transform:perspective(700px) rotateX(38deg) rotateZ(-8deg);filter:drop-shadow(0 18px 18px rgba(0,0,0,.6)) drop-shadow(0 0 10px rgba(207,235,255,.25))}
+@media (max-width:900px){html.mf body #cgm.cgm12 .cgm14-sensor{left:58px;top:150px;width:66px}}
+html.mf body #cgm.cgm12 .cgm14-sensor{left:40px;top:252px;width:92px;transform:perspective(700px) rotateX(42deg) rotateZ(-6deg)}
+html.mf body #cgm.cgm12 .cgm14-stage{height:352px}
+@media (max-width:900px){html.mf body #cgm.cgm12 .cgm14-sensor{left:20px;top:184px;width:70px}}
 
 
 </style>
@@ -12158,6 +12146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="cgm12-stage cgm14-stage">
         <img class="cgm14-phone" src="assets/mf/lingo-phone.png" alt="The Abbott Lingo app on a phone" width="462" height="688">
+        <img class="cgm14-sensor" src="assets/mf/lingo-sensor.png" alt="The Abbott Lingo biosensor" width="340" height="332">
         <div class="cgm14-card cgm14-live">
           <p class="cgm14-k">Live&nbsp;glucose</p>
           <p class="cgm14-num">110<span>mg/dL</span></p>
