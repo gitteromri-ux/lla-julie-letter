@@ -12526,6 +12526,16 @@ html.guest-form-focused body#lpRoot #mockBar, html.guest-form-visible body#lpRoo
 /* pages.dev body text inside the popup (its body is 17.5px / 28px; the .com body is 17px) */
 html body#lpRoot #enrollModal{font-size:17.5px;line-height:1.6}
 
+/* Round 67 (Omri, 6 Nov): tuition box in the pricing-card format, VIP on its own line; refund line wraps instead of cutting off. */
+html body#lpRoot #enrollModal .em-band > div{flex:1 1 auto;min-width:0}
+html body#lpRoot #enrollModal .em-band .b-v .lla-tu{display:grid!important;gap:7px;margin-top:4px;font-family:Inter,sans-serif;font-style:normal}
+html body#lpRoot #enrollModal .em-band .b-v .lla-tu-r{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:17px;font-weight:500;line-height:1.35;color:#DCE7F7}
+html body#lpRoot #enrollModal .em-band .b-v .lla-tu-r b{font-size:20px;font-weight:800;color:#fff;white-space:nowrap}
+html body#lpRoot #enrollModal .em-band .b-v .lla-tu-r b small{display:inline!important;font-size:15px!important;font-weight:600;margin:0!important;opacity:.9}
+html body#lpRoot #enrollModal .em-band .b-v .lla-tu-r s{opacity:.55;font-weight:500;font-size:16px;margin-right:8px}
+html body#lpRoot #enrollModal .em-band .b-v .lla-tu-vip{border-top:1px solid rgba(255,255,255,.22);padding-top:8px;margin-top:1px}
+@media (max-width:899px){html body#lpRoot #enrollModal .mock-footer .mock-hint{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;line-height:1.45!important;font-size:15px!important}}
+
 </style>
 <script src="assets/mf/pd/lla-clickid-v20260922.js"></script>
 <script src="assets/mf/pd/lla-relay-receipts.js"></script>
