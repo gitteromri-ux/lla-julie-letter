@@ -2,7 +2,7 @@ name: meta-final-shots
 on:
   push:
     branches: [ccr-fb60a687-apnfd5]
-    paths: ['audit/meta-final.js', 'audit/live-check.js', 'audit/fixtures/**']
+    paths: ['audit/meta-final.js', 'audit/live-check.js', 'audit/qa-full.js', 'audit/fixtures/**']
   workflow_dispatch:
 permissions:
   contents: write
@@ -12,7 +12,7 @@ concurrency:
 jobs:
   shots:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,6 +38,11 @@ jobs:
         continue-on-error: true
         timeout-minutes: 14
         run: node live-check.js
+      - name: Full QA of the deployed preview link (videos, text, every button and link)
+        working-directory: audit
+        continue-on-error: true
+        timeout-minutes: 20
+        run: node qa-full.js
       - name: Commit results
         run: |
           git config user.name "lla-audit-bot"
