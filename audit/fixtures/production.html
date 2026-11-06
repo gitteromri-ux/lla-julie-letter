@@ -12103,6 +12103,21 @@ html.mf body:not(#mf-x):not(#mf-t):not(#mf-j) section#julie .jb4 .jb2-join{posit
   html.mf body:not(#mf-x):not(#mf-t):not(#mf-j) section#julie h2.jb4-title{font-size:20px!important;line-height:1.2!important}
   html.mf body:not(#mf-x):not(#mf-t):not(#mf-j) section#julie h2.jb4-title em{font-size:23px!important;margin-top:3px!important}
 }
+/* ===== Round 65 (Omri: "too much space and no texts"): tight, even spacing in every fold ===== */
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.fold-cta,.curriculum-cta,.instructors-cta,.how-v2-cta,.deepdive-cta){margin-top:20px!important;padding-top:0!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.fold-cta,.curriculum-cta,.instructors-cta,.how-v2-cta,.deepdive-cta,div) > a.section-cta-btn{margin-top:0!important}
+html.mf body:not(#mf-x):not(#mf-t) :is(section.testimonials,section.faq) a.section-cta-btn{margin-top:0!important}
+html.mf body:not(#mf-x):not(#mf-t) :is(section.testimonials,section.faq) a.section-cta-btn:only-child{margin-top:0!important}
+html.mf body:not(#mf-x):not(#mf-t) :is(section.testimonials,section.faq) div:has(> a.section-cta-btn){padding-top:20px!important;margin-top:0!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.topics-header,.how-v2-header,.skills-header,.deepdive-header,.value-header,.faq-header,.testimonials-header,.instructors-header){margin-bottom:24px!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.topic-grid-v2,.testimonials-grid,.skills-grid,.value-track,.how-v2-track,.instructors-track,.teacher-track){padding-bottom:10px!important}
+html.mf body:not(#mf-x):not(#mf-t) #how :is(.how-v2-dots,.how-v2-nav){margin-top:10px!important;margin-bottom:0!important}
+html.mf body:not(#mf-x):not(#mf-t) #how .how-v2-card,html.mf body:not(#mf-x):not(#mf-t) section.value .value-card{min-height:0!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+@media (min-width:901px){
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.topics-header,.how-v2-header,.skills-header,.deepdive-header,.value-header,.faq-header,.testimonials-header,.instructors-header){margin-bottom:40px!important}
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.fold-cta,.curriculum-cta,.instructors-cta,.how-v2-cta,.deepdive-cta){margin-top:32px!important}
+  html.mf body:not(#mf-x):not(#mf-t) :is(section.testimonials,section.faq) div:has(> a.section-cta-btn){padding-top:32px!important}
+}
 
 </style>
 </head>
