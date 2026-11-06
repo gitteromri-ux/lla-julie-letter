@@ -15,9 +15,9 @@ const sha = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16
     if (rep.sameAsBuild) break; await new Promise(z => setTimeout(z, 30000));
   }
   for (let i = 0; i < 20; i++) {
-    const r = await fetch('https://gitteromri-ux.github.io/longevity-website-review-20261105/round38/?v=' + Date.now()); const t = await r.text();
-    rep.board = { status: r.status, isRound38: t.includes('ROUND 38'), tries: i + 1 };
-    if (rep.board.isRound38) break; await new Promise(z => setTimeout(z, 30000));
+    const r = await fetch('https://gitteromri-ux.github.io/longevity-website-review-20261105/round39/?v=' + Date.now()); const t = await r.text();
+    rep.board = { status: r.status, isRound39: t.includes('ROUND 39'), tries: i + 1 };
+    if (rep.board.isRound39) break; await new Promise(z => setTimeout(z, 30000));
   }
   for (const [name, bt, o] of [['iphone', webkit, { ...devices['iPhone 14'] }], ['desktop', chromium, { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 }]]) {
     const b = await bt.launch(); const p = await (await b.newContext(o)).newPage();
@@ -28,7 +28,8 @@ const sha = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16
     rec.logos = await p.evaluate(() => [...document.querySelectorAll('.nav-logo-img, .hero-wordmark-img')].map(i => ({ cls: i.className, src: (i.currentSrc || i.src).split('/').pop(), natural: i.naturalWidth + 'x' + i.naturalHeight, shown: Math.round(i.getBoundingClientRect().width) + 'x' + Math.round(i.getBoundingClientRect().height), dpr: devicePixelRatio, filter: getComputedStyle(i).filter })));
     rec.order = await p.evaluate(() => [...document.querySelectorAll('main > section, body > section, section[id]')].filter(s => !s.parentElement.closest('section')).map(s => s.id || s.className.split(' ')[0]));
     await p.screenshot({ path: `${OUT}/${name}-top.jpg`, type: 'jpeg', quality: 85 });
-    for (const sel of ['#julie', '#pricing', '#cgm']) {
+    rec.logos2 = await p.evaluate(async () => { const e = document.querySelector('.trust-strip-track'); if (!e) return 'missing'; e.scrollIntoView(); await new Promise(r => setTimeout(r, 400)); const a = getComputedStyle(e).transform; await new Promise(r => setTimeout(r, 1500)); const b = getComputedStyle(e).transform; return { anim: getComputedStyle(e).animationName, moving: a !== b, broken: [...e.querySelectorAll('img')].filter(i => i.complete && i.naturalWidth === 0).length }; });
+    for (const sel of ['#julie', '#pricing', '#cgm', '#syllabus', '#how']) {
       const e = await p.$(sel); if (!e) { rec[sel] = 'missing'; continue; }
       await e.scrollIntoViewIfNeeded(); await p.waitForTimeout(1200);
       const bb = await e.boundingBox(); rec[sel] = { screens: +(bb.height / (o.viewport ? o.viewport.height : 844)).toFixed(2) };
