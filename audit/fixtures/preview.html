@@ -11423,6 +11423,24 @@ html.mf body #cgm.cgm12 .cgm14-sensor{position:absolute;left:96px;top:214px;widt
 html.mf body #cgm.cgm12 .cgm14-sensor{left:40px;top:252px;width:92px;transform:perspective(700px) rotateX(42deg) rotateZ(-6deg)}
 html.mf body #cgm.cgm12 .cgm14-stage{height:352px}
 @media (max-width:900px){html.mf body #cgm.cgm12 .cgm14-sensor{left:20px;top:184px;width:70px}}
+/* Round 48: the Lingo sensor drawn in 3D vector, larger, sharp at any size */
+html.mf body #cgm.cgm12 svg.cgm14-sensor{position:absolute;left:8px;top:246px;width:150px;height:auto;z-index:2;transform:none;filter:drop-shadow(0 0 14px rgba(207,235,255,.18));overflow:visible}
+html.mf body #cgm.cgm12 .cgm14-stage{height:370px}
+@media (max-width:900px){html.mf body #cgm.cgm12 svg.cgm14-sensor{left:0;top:176px;width:118px}html.mf body #cgm.cgm12 .cgm14-stage{height:318px!important}}
+
+/* ===== Round 48: syllabus phase cards, one hierarchy in every card ===== */
+html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-header:not(.mf-x){display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:6px!important;text-align:left!important}
+html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-num:not(.mf-x){font:italic 400 34px/1 'Playfair Display',Georgia,serif!important;letter-spacing:0!important;opacity:.9!important}
+html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-name:not(.mf-x){font:500 26px/1.15 'Playfair Display',Georgia,serif!important;font-style:normal!important;letter-spacing:0!important}
+html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-label:not(.mf-x){font:500 17px/1.3 Inter,sans-serif!important;letter-spacing:.01em!important;opacity:1!important}
+@media (max-width:900px){
+  html.mf body section#syllabus .phase-block{padding:16px 16px 16px!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-header:not(.mf-x){height:100%!important;gap:4px!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-num:not(.mf-x){font-size:28px!important;margin-bottom:4px!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-name:not(.mf-x){font-size:21px!important;line-height:1.18!important;white-space:normal!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-label:not(.mf-x){margin-top:auto!important;padding-top:8px!important}
+}
+@media (min-width:901px){html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-name:not(.mf-x){min-height:2.3em!important;display:flex!important;align-items:flex-end!important}}
 
 
 </style>
@@ -11632,8 +11650,7 @@ html.mf body #cgm.cgm12 .cgm14-stage{height:352px}
       <!-- PHASE 1: Foundation -->
       <div class="phase-block reveal is-active" data-phase="1" style="--ph:#006EFF">
         <div class="phase-block-header">
-          <span class="phase-block-label">Phase 1,<br class="mf-mbr"> Sessions 1 to&nbsp;3</span>
-          <span class="phase-block-name">Foundation</span>
+          <span class="phase-block-num">01</span><span class="phase-block-name">Foundation</span><span class="phase-block-label">Sessions 1 to&nbsp;3</span>
         </div>
         <p class="phase-benefit"><span><b>You leave Phase 1&nbsp;with</b> your baseline: a self-assessment of where you stand today and the one signal, blood sugar, that the rest of the course is built&nbsp;on.</span></p>
         <div class="phase-block-sessions">
@@ -11711,8 +11728,7 @@ html.mf body #cgm.cgm12 .cgm14-stage{height:352px}
       <!-- PHASE 2: Data & Discovery -->
       <div class="phase-block reveal" data-phase="2" style="--ph:#0A1E3A">
         <div class="phase-block-header">
-          <span class="phase-block-label">Phase 2,<br class="mf-mbr"> Sessions 4 to&nbsp;7</span>
-          <span class="phase-block-name">Data and&nbsp;Discovery</span>
+          <span class="phase-block-num">02</span><span class="phase-block-name">Data and Discovery</span><span class="phase-block-label">Sessions 4 to&nbsp;7</span>
         </div>
         <p class="phase-benefit"><span><b>You leave Phase 2&nbsp;with</b> two weeks of your own glucose data and the ability to read it, so you know which meals, food orders and timings work for your&nbsp;body.</span></p>
         <div class="phase-block-sessions">
@@ -11813,8 +11829,7 @@ html.mf body #cgm.cgm12 .cgm14-stage{height:352px}
       <!-- PHASE 3: Lifestyle Systems -->
       <div class="phase-block reveal" data-phase="3" style="--ph:#3BA7FF">
         <div class="phase-block-header">
-          <span class="phase-block-label">Phase 3,<br class="mf-mbr"> Sessions 8 to&nbsp;13</span>
-          <span class="phase-block-name">Lifestyle&nbsp;Systems</span>
+          <span class="phase-block-num">03</span><span class="phase-block-name">Lifestyle Systems</span><span class="phase-block-label">Sessions 8 to&nbsp;13</span>
         </div>
         <p class="phase-benefit"><span><b>You leave Phase 3&nbsp;with</b> tested answers on meal timing, movement, sleep and stress, each tried for a week on your own numbers, so you keep only what works for&nbsp;you.</span></p>
         <div class="phase-block-sessions">
@@ -11961,8 +11976,7 @@ html.mf body #cgm.cgm12 .cgm14-stage{height:352px}
       <!-- PHASE 4: Integration & Blueprint -->
       <div class="phase-block reveal" data-phase="4" style="--ph:#1B4FD8">
         <div class="phase-block-header">
-          <span class="phase-block-label">Phase 4,<br class="mf-mbr"> Sessions 14 to&nbsp;18</span>
-          <span class="phase-block-name">Integration and&nbsp;Blueprint</span>
+          <span class="phase-block-num">04</span><span class="phase-block-name">Integration and Blueprint</span><span class="phase-block-label">Sessions 14 to&nbsp;18</span>
         </div>
         <p class="phase-benefit"><span><b>You leave Phase 4&nbsp;with</b> your written Personal Longevity Blueprint, built on your blood work and 18 weeks of your data, plus a 90-day plan to keep it&nbsp;going.</span></p>
         <div class="phase-block-sessions">
@@ -12103,7 +12117,24 @@ html.mf body #cgm.cgm12 .cgm14-stage{height:352px}
       </div>
       <div class="cgm12-stage cgm14-stage">
         <img class="cgm14-phone" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-phone.png" alt="The Abbott Lingo app on a phone" width="462" height="688">
-        <img class="cgm14-sensor" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-sensor.png" alt="The Abbott Lingo biosensor" width="340" height="332">
+        <svg class="cgm14-sensor" viewBox="0 0 220 150" role="img" aria-label="The Abbott Lingo biosensor">
+          <defs>
+            <radialGradient id="snFace" cx="38%" cy="30%" r="80%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F3F6F9"/><stop offset=".85" stop-color="#E2E8EE"/><stop offset="1" stop-color="#CED6DF"/></radialGradient>
+            <linearGradient id="snSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B9C3CE"/><stop offset=".25" stop-color="#E9EEF3"/><stop offset=".55" stop-color="#FFFFFF"/><stop offset=".8" stop-color="#E3E9EF"/><stop offset="1" stop-color="#AEB9C5"/></linearGradient>
+            <radialGradient id="snDome" cx="42%" cy="34%" r="70%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".7" stop-color="#F6F8FB"/><stop offset="1" stop-color="#E6EBF1"/></radialGradient>
+            <radialGradient id="snShadow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000814" stop-opacity=".75"/><stop offset="1" stop-color="#000814" stop-opacity="0"/></radialGradient>
+            <filter id="snBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+            <radialGradient id="snHole" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#8E99A6"/><stop offset=".6" stop-color="#C5CDD6"/><stop offset="1" stop-color="#EEF2F6"/></radialGradient>
+          </defs>
+          <ellipse cx="112" cy="104" rx="98" ry="26" fill="url(#snShadow)"/>
+          <path d="M14 70 A96 52 0 0 0 206 70 L206 84 A96 52 0 0 1 14 84 Z" fill="url(#snSide)"/>
+          <ellipse cx="110" cy="70" rx="96" ry="52" fill="url(#snFace)"/>
+          <ellipse cx="110" cy="70" rx="96" ry="52" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="1"/>
+          <ellipse cx="110" cy="66" rx="74" ry="38" fill="url(#snDome)" stroke="rgba(120,135,150,.18)" stroke-width="1"/>
+          <ellipse cx="86" cy="50" rx="34" ry="12" fill="#FFFFFF" opacity=".75" filter="url(#snBlur)"/>
+          <ellipse cx="110" cy="66" rx="10" ry="5.6" fill="url(#snHole)" stroke="rgba(110,124,140,.35)" stroke-width=".8"/>
+          <ellipse cx="110" cy="66" rx="3.2" ry="1.8" fill="#6F7B88"/>
+        </svg>
         <div class="cgm14-card cgm14-live">
           <p class="cgm14-k">Live&nbsp;glucose</p>
           <p class="cgm14-num">110<span>mg/dL</span></p>
