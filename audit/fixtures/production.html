@@ -12118,6 +12118,25 @@ html.mf body:not(#mf-x):not(#mf-t) #how .how-v2-card,html.mf body:not(#mf-x):not
   html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.fold-cta,.curriculum-cta,.instructors-cta,.how-v2-cta,.deepdive-cta){margin-top:32px!important}
   html.mf body:not(#mf-x):not(#mf-t) :is(section.testimonials,section.faq) div:has(> a.section-cta-btn){padding-top:32px!important}
 }
+/* ===== Round 66 (Omri: "Why this course different: text hierarchy and colour weak, same colour cards as How it works") ===== */
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card{position:relative!important;overflow:hidden!important;padding:26px 22px 22px!important;border-radius:20px!important;justify-content:flex-start!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card::before{content:''!important;position:absolute!important;left:0!important;right:0!important;top:0!important;height:4px!important;background:linear-gradient(90deg,#9FD6FF,#FFFFFF 50%,#9FD6FF)!important;opacity:.95!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card[data-accent="1"]{background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.22),transparent 55%),linear-gradient(160deg,#5A86BE 0%,#2F5487 100%)!important;border:1px solid rgba(214,238,255,.6)!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card[data-accent="2"]{background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.35),transparent 55%),linear-gradient(160deg,#9ED8FF 0%,#58A8E8 100%)!important;border:1px solid #D6EEFF!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card[data-accent="3"]{background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.10),transparent 55%),linear-gradient(160deg,#070C1A 0%,#000207 100%)!important;border:1.5px solid #9AD8FF!important;box-shadow:0 0 30px -4px rgba(154,216,255,.65),0 24px 40px -22px rgba(0,0,0,.9)!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card[data-accent="4"]{background:radial-gradient(120% 90% at 0% 0%,#FFFFFF,transparent 60%),linear-gradient(160deg,#FFFFFF 0%,#E2EFFF 100%)!important;border:1.5px solid #FFFFFF!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card .value-title{font:500 26px/1.18 'Playfair Display',Georgia,serif!important;margin:0 0 12px!important;padding-bottom:12px!important;position:relative!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card .value-title::after{content:''!important;position:absolute!important;left:0!important;bottom:0!important;width:56px!important;height:2px!important;border-radius:2px!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card .value-desc{font:400 18px/1.55 Inter,-apple-system,sans-serif!important;margin:0!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card:is([data-accent="1"],[data-accent="3"]) .value-title{color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card:is([data-accent="1"],[data-accent="3"]) .value-title::after{background:#9FD6FF!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card:is([data-accent="1"],[data-accent="3"]) .value-desc{color:#DCEBFF!important;-webkit-text-fill-color:#DCEBFF!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card:is([data-accent="2"],[data-accent="4"]) .value-title{color:#0A1A40!important;-webkit-text-fill-color:#0A1A40!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card:is([data-accent="2"],[data-accent="4"]) .value-title::after{background:#2A5288!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card:is([data-accent="2"],[data-accent="4"]) .value-desc{color:#1F3560!important;-webkit-text-fill-color:#1F3560!important}
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card[data-accent="4"]::before{background:linear-gradient(90deg,#2A5288,#9FD6FF 50%,#2A5288)!important}
+@media (min-width:901px){ html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card .value-title{font-size:28px!important} html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card{padding:30px 26px 26px!important} }
+html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-header{text-align:center!important;margin-left:auto!important;margin-right:auto!important} html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-header :is(.eyebrow,h2){text-align:center!important;margin-left:auto!important;margin-right:auto!important}
 
 </style>
 </head>
