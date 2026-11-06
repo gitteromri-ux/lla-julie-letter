@@ -14,11 +14,6 @@ const sha = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16
     rep.status = r.status; rep.servedSha = sha(t); rep.sameAsBuild = rep.servedSha === rep.fixtureSha; rep.tries = i + 1;
     if (rep.sameAsBuild) break; await new Promise(z => setTimeout(z, 30000));
   }
-  for (let i = 0; i < 20; i++) {
-    const r = await fetch('https://gitteromri-ux.github.io/longevity-website-review-20261105/round42/?v=' + Date.now()); const t = await r.text();
-    rep.board = { status: r.status, isRound42: t.includes('ROUND 42'), tries: i + 1 };
-    if (rep.board.isRound42) break; await new Promise(z => setTimeout(z, 30000));
-  }
   for (const [name, bt, o] of [['iphone', webkit, { ...devices['iPhone 14'] }], ['desktop', chromium, { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 }]]) {
     const b = await bt.launch(); const p = await (await b.newContext(o)).newPage();
     const rec = { tracking: [] };
@@ -29,6 +24,26 @@ const sha = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16
     rec.order = await p.evaluate(() => [...document.querySelectorAll('main > section, body > section, section[id]')].filter(s => !s.parentElement.closest('section')).map(s => s.id || s.className.split(' ')[0]));
     await p.screenshot({ path: `${OUT}/${name}-top.jpg`, type: 'jpeg', quality: 85 });
     rec.logos2 = await p.evaluate(async () => { const e = document.querySelector('.trust-strip-track'); if (!e) return 'missing'; e.scrollIntoView(); await new Promise(r => setTimeout(r, 400)); const a = getComputedStyle(e).transform; await new Promise(r => setTimeout(r, 1500)); const b = getComputedStyle(e).transform; return { anim: getComputedStyle(e).animationName, moving: a !== b, broken: [...e.querySelectorAll('img')].filter(i => i.complete && i.naturalWidth === 0).length }; });
+    await p.addStyleTag({ content: 'nav, .nav, #llaFloatCta, #et-bumpyard-widget, [class*="whatsapp"]{visibility:hidden!important}' });
+    rec.syllabus = await p.evaluate(async () => {
+      const w = ms => new Promise(r => setTimeout(r, ms));
+      const sec = document.querySelector('#syllabus'); if (!sec) return 'missing'; sec.scrollIntoView(); await w(400);
+      const tabs = [...sec.querySelectorAll('.curriculum-tab')].map(t => t.textContent.replace(/\s+/g, ' ').trim());
+      const res = { tabs, phases: [] };
+      for (const n of [1, 2, 3, 4]) {
+        sec.querySelector(`.curriculum-tab[data-phase-tab="${n}"]`).click(); await w(500);
+        const blk = sec.querySelector('.phase-block.is-active');
+        const it = blk.querySelector('.curriculum-item'); it.querySelector('.curriculum-trigger').click(); await w(600);
+        const body = it.querySelector('.curriculum-body');
+        res.phases.push({ n, active: blk.dataset.phase, sessions: blk.querySelectorAll('.curriculum-item').length, opened: it.classList.contains('active'), bodyPx: Math.round(body.getBoundingClientRect().height), h3px: getComputedStyle(blk.querySelector('h3')).fontSize, flowPx: getComputedStyle(blk.querySelector('.curriculum-flow')).fontSize });
+        it.querySelector('.curriculum-trigger').click(); await w(400);
+      }
+      sec.querySelector('.curriculum-tab[data-phase-tab="3"]').click(); await w(400);
+      sec.querySelector('.phase-block.is-active .curriculum-trigger').click(); await w(600);
+      return res;
+    });
+    { const e = await p.$('#syllabus'); if (e) await e.screenshot({ path: `${OUT}/${name}-syllabus-p3.jpg`, type: 'jpeg', quality: 85 }).catch(() => {}); }
+    await p.evaluate(async () => { const s = document.querySelector('#syllabus'); s.querySelector('.phase-block.is-active .curriculum-trigger').click(); s.querySelector('.curriculum-tab[data-phase-tab="1"]').click(); await new Promise(r => setTimeout(r, 500)); });
     for (const sel of ['#julie', '#pricing', '#cgm', '#syllabus', '#how']) {
       const e = await p.$(sel); if (!e) { rec[sel] = 'missing'; continue; }
       await e.scrollIntoViewIfNeeded(); await p.waitForTimeout(1200);
