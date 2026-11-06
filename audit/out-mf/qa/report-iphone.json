@@ -1,0 +1,907 @@
+{
+ "errors": [],
+ "videos": [
+  {
+   "fold": "hero",
+   "src": "cells-light.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "390x1055",
+   "readyState": 4,
+   "error": 0,
+   "t0": 8.546073511,
+   "paused": false,
+   "t1": 0,
+   "playing": true
+  },
+  {
+   "fold": "hero",
+   "src": "full-film-720p.mp4",
+   "autoplay": true,
+   "controls": true,
+   "shown": "350x219",
+   "readyState": 4,
+   "error": 2,
+   "t0": 0,
+   "paused": false,
+   "t1": 0,
+   "playing": true
+  },
+  {
+   "fold": "topics",
+   "src": "v2-nutrition-greens-v2.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "322x460",
+   "readyState": 4,
+   "error": 0,
+   "t0": 1.414335169,
+   "paused": false,
+   "t1": 2.320612446,
+   "playing": true
+  },
+  {
+   "fold": "topics",
+   "src": "sleep-blog-v2.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "322x460",
+   "readyState": 4,
+   "error": 0,
+   "t0": 3.524513153,
+   "paused": false,
+   "t1": 4.429243831,
+   "playing": true
+  },
+  {
+   "fold": "topics",
+   "src": "exercise-yoga-v2.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "322x460",
+   "readyState": 4,
+   "error": 0,
+   "t0": 3.314824184,
+   "paused": false,
+   "t1": 4.216647554,
+   "playing": true
+  },
+  {
+   "fold": "topics",
+   "src": "supplements-wearables-know-v2.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "322x460",
+   "readyState": 4,
+   "error": 0,
+   "t0": 3.311053019,
+   "paused": false,
+   "t1": 4.212248583,
+   "playing": true
+  },
+  {
+   "fold": "topics",
+   "src": "stress-management-cold-plunge-v2.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "322x460",
+   "readyState": 4,
+   "error": 0,
+   "t0": 3.309093,
+   "paused": false,
+   "t1": 4.210324946,
+   "playing": true
+  },
+  {
+   "fold": "topics",
+   "src": "daily-protocol-v2.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "322x460",
+   "readyState": 4,
+   "error": 0,
+   "t0": 3.307523537,
+   "paused": false,
+   "t1": 4.211042952,
+   "playing": true
+  },
+  {
+   "fold": "skills",
+   "src": "v2-supplements-meds.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "318x180",
+   "readyState": 4,
+   "error": 0,
+   "t0": 1.098099159,
+   "paused": false,
+   "t1": 2.00267267,
+   "playing": true
+  },
+  {
+   "fold": "skills",
+   "src": "v2-mental-bubbles.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "318x180",
+   "readyState": 4,
+   "error": 0,
+   "t0": 1.167096345,
+   "paused": false,
+   "t1": 2.070492752,
+   "playing": true
+  },
+  {
+   "fold": "skills",
+   "src": "skill-skin.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "318x180",
+   "readyState": 4,
+   "error": 0,
+   "t0": 3.247537241,
+   "paused": false,
+   "t1": 4.149260493,
+   "playing": true
+  },
+  {
+   "fold": "apply",
+   "src": "cta-bg.mp4",
+   "autoplay": true,
+   "controls": false,
+   "shown": "390x398",
+   "readyState": 4,
+   "error": 0,
+   "t0": 0.268799112,
+   "paused": false,
+   "t1": 0.268799112,
+   "playing": true
+  }
+ ],
+ "text": {
+  "overflowX": 0,
+  "offScreen": [],
+  "clipped": [],
+  "outsideBox": [],
+  "tiny": []
+ },
+ "controls": [
+  {
+   "fold": "nav",
+   "what": "a.nav-logo",
+   "label": "Longevity Life Academy home",
+   "href": "https://www.longevitylifeacademy.com/",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/ (checked below)"
+  },
+  {
+   "fold": "hero",
+   "what": "a.btn-primary.btn-primary--lg",
+   "label": "Enroll Now",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "jumps to #pricing"
+  },
+  {
+   "fold": "hero",
+   "what": "a.btn-ghost",
+   "label": "See the Curriculum",
+   "href": "#syllabus",
+   "tappable": "ok",
+   "result": "jumps to #syllabus"
+  },
+  {
+   "fold": "hero",
+   "what": "button.film-sound",
+   "label": "Sound on or off",
+   "href": "",
+   "tappable": "ok",
+   "result": "NO RESPONSE"
+  },
+  {
+   "fold": "topics",
+   "what": "a.topic-v2.topic-v2--green",
+   "label": "01 Master Nutrition Transform your kitch",
+   "href": "https://www.longevitylifeacademy.com/topics/nutrition-longevity.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/nutrition-longevity.html (checked below)"
+  },
+  {
+   "fold": "topics",
+   "what": "a.topic-v2.topic-v2--indigo",
+   "label": "02 Master Sleep Science-backed protocols",
+   "href": "https://www.longevitylifeacademy.com/topics/sleep-circadian-health.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/sleep-circadian-health.htm (checked below)"
+  },
+  {
+   "fold": "topics",
+   "what": "a.topic-v2.topic-v2--orange",
+   "label": "03 Master Exercise & Movement Build a re",
+   "href": "https://www.longevitylifeacademy.com/topics/exercise-movement.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/exercise-movement.html (checked below)"
+  },
+  {
+   "fold": "topics",
+   "what": "a.topic-v2.topic-v2--cyan",
+   "label": "04 Master Supplements & Wearables Target",
+   "href": "https://www.longevitylifeacademy.com/topics/supplements-health-tech.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/supplements-health-tech.ht (checked below)"
+  },
+  {
+   "fold": "topics",
+   "what": "a.topic-v2.topic-v2--violet",
+   "label": "05 Master Stress Management Structured b",
+   "href": "https://www.longevitylifeacademy.com/topics/biomarkers-testing.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/biomarkers-testing.html (checked below)"
+  },
+  {
+   "fold": "topics",
+   "what": "a.topic-v2.topic-v2--blue",
+   "label": "06 Master Your Longevity Protocol Generi",
+   "href": "https://www.longevitylifeacademy.com/topics/protocols-habits.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/protocols-habits.html (checked below)"
+  },
+  {
+   "fold": "topics",
+   "what": "a.section-cta-btn",
+   "label": "Enroll Now",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "jumps to #pricing"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-tab.is-active",
+   "label": "01 Foundation Sessions 1 to 3",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-tab",
+   "label": "02 Data & Discovery Sessions 4 to 7",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-tab",
+   "label": "03 Lifestyle Systems Sessions 8 to 13",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-tab",
+   "label": "04 Integration & Blueprint Sessions 14 t",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-trigger",
+   "label": "01 Reframing Aging: From Disease Avoidan",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab.is-on",
+   "label": "Learning Goals",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "50-Minute Flow",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "Between-Session Work",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-trigger",
+   "label": "02 The Longevity Lens & Baseline Self‑As",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab.is-on",
+   "label": "Learning Goals",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "50-Minute Flow",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "Between-Session Work",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-trigger",
+   "label": "03 Metabolic Health: Blood Sugar as Cent",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab.is-on",
+   "label": "Learning Goals",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "50-Minute Flow",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "Between-Session Work",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "julie",
+   "what": "a.mf-jbtn.jb2-join",
+   "label": "Join us",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "jumps to #pricing"
+  },
+  {
+   "fold": "pricing",
+   "what": "a.pk-btn",
+   "label": "Enroll Now→",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "clicked, #pricing ends -217px from the top"
+  },
+  {
+   "fold": "teachers",
+   "what": "a.teacher-card-live.teacher-card-link",
+   "label": "Natalie Blackbourne Longevity Researcher",
+   "href": "https://www.longevitylifeacademy.com/teachers/natalie.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/teachers/natalie.html (checked below)"
+  },
+  {
+   "fold": "teachers",
+   "what": "a.teacher-card-live.teacher-card-link",
+   "label": "Julie Gibson Clark Ranked #2 · Rejuvenat",
+   "href": "https://www.longevitylifeacademy.com/teachers/julie-gibson-clark.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/teachers/julie-gibson-clark.html (checked below)"
+  },
+  {
+   "fold": "teachers",
+   "what": "a.teacher-card-live.teacher-card-link",
+   "label": "Courtney Donofrio Integrative Nutrition ",
+   "href": "https://www.longevitylifeacademy.com/teachers/courtney.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/teachers/courtney.html (checked below)"
+  },
+  {
+   "fold": "teachers",
+   "what": "a.teacher-card-live.teacher-card-link",
+   "label": "Amy Jamieson Senior Lecturer, UC Santa B",
+   "href": "https://www.longevitylifeacademy.com/teachers/amy.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/teachers/amy.html (checked below)"
+  },
+  {
+   "fold": "teachers",
+   "what": "a.teacher-card-live.teacher-card-link",
+   "label": "Jordan Lattimore Behavioral & Education ",
+   "href": "https://www.longevitylifeacademy.com/teachers/jordan.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/teachers/jordan.html (checked below)"
+  },
+  {
+   "fold": "about",
+   "what": "a.about-link-wrap",
+   "label": "Read more about Longevity Life Academy a",
+   "href": "https://www.longevitylifeacademy.com/about.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/about.html (checked below)"
+  },
+  {
+   "fold": "skills",
+   "what": "a.skill-card.reveal",
+   "label": "Supplements and longevity therapies that",
+   "href": "https://www.longevitylifeacademy.com/topics/supplements-health-tech.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/supplements-health-tech.ht (checked below)"
+  },
+  {
+   "fold": "skills",
+   "what": "a.skill-card.reveal",
+   "label": "The longevity toolkit, the habits that m",
+   "href": "https://www.longevitylifeacademy.com/topics/mental-emotional-health.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/mental-emotional-health.ht (checked below)"
+  },
+  {
+   "fold": "skills",
+   "what": "a.skill-card.reveal",
+   "label": "Skin and the visible markers of aging",
+   "href": "https://www.longevitylifeacademy.com/topics/protocols-habits.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/protocols-habits.html (checked below)"
+  },
+  {
+   "fold": "deepdive",
+   "what": "a.hex-detail-link",
+   "label": "Explore topic",
+   "href": "topics/metabolic-health-blood-sugar.html",
+   "tappable": "ok",
+   "result": "link to topics/metabolic-health-blood-sugar.html"
+  },
+  {
+   "fold": "deepdive",
+   "what": "a.section-cta-btn.deepdive-cta-btn",
+   "label": "Enroll Now",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "jumps to #pricing"
+  },
+  {
+   "fold": "value",
+   "what": "button.value-arrow",
+   "label": "Previous",
+   "href": "",
+   "tappable": "ok",
+   "result": "NO RESPONSE"
+  },
+  {
+   "fold": "value",
+   "what": "button.value-arrow",
+   "label": "Next",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "bioquiz",
+   "what": "a.bioquiz-cta",
+   "label": "Take the 2-Minute Quiz",
+   "href": "https://www.longevitylifeacademy.com/biological-age-light.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/biological-age-light.html (checked below)"
+  },
+  {
+   "fold": "lead-gen",
+   "what": "a.lg-buy",
+   "label": "Enroll Online Now→",
+   "href": "#",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "01Who is this course for?",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "02Do I need any medical background?",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "03What happens in a typical session?",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "04Is this medical advice?",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "05What do I get when I complete the cour",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "06How much does it cost?",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "07What technology or equipment do I need",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "faq",
+   "what": "button.faq-q",
+   "label": "08Can I catch up if I miss a session?",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  },
+  {
+   "fold": "apply",
+   "what": "a.btn-primary",
+   "label": "Enroll Now",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "jumps to #pricing"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Skills",
+   "href": "#skills",
+   "tappable": "ok",
+   "result": "jumps to #skills"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Enroll",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "jumps to #pricing"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Nutrition",
+   "href": "https://www.longevitylifeacademy.com/topics/nutrition-longevity.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/nutrition-longevity.html (checked below)"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Sleep",
+   "href": "https://www.longevitylifeacademy.com/topics/sleep-circadian-health.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/sleep-circadian-health.htm (checked below)"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Metabolic",
+   "href": "https://www.longevitylifeacademy.com/topics/metabolic-health-blood-sugar.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/metabolic-health-blood-sug (checked below)"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Protocols",
+   "href": "https://www.longevitylifeacademy.com/topics/protocols-habits.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/topics/protocols-habits.html (checked below)"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Contact",
+   "href": "mailto:advisor@longevitylifeacademy.com",
+   "tappable": "ok",
+   "result": "link to mailto:advisor@longevitylifeacademy.com (checked below)"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Privacy",
+   "href": "https://www.longevitylifeacademy.com/privacy.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/privacy.html (checked below)"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "Terms",
+   "href": "https://www.longevitylifeacademy.com/terms.html",
+   "tappable": "ok",
+   "result": "link to https://www.longevitylifeacademy.com/terms.html (checked below)"
+  },
+  {
+   "fold": "footer",
+   "what": "a",
+   "label": "advisor@longevitylifeacademy.com",
+   "href": "mailto:advisor@longevitylifeacademy.com",
+   "tappable": "ok",
+   "result": "link to mailto:advisor@longevitylifeacademy.com (checked below)"
+  },
+  {
+   "fold": "llaFloatCta",
+   "what": "a.lla-float-cta.is-visible",
+   "label": "November offer, 55% off month one, $79 f",
+   "href": "#pricing",
+   "tappable": "ok",
+   "result": "jumps to #pricing"
+  },
+  {
+   "fold": "et-bumpyard-widget",
+   "what": "a.widget-trigger-btn",
+   "label": "Chat with us on WhatsApp",
+   "href": "https://wa.me/12015023701",
+   "tappable": "ok",
+   "result": "link to https://wa.me/12015023701 (checked below)"
+  },
+  {
+   "fold": "nav",
+   "what": "button.mobile-menu-btn",
+   "label": "Open navigation menu",
+   "href": "",
+   "tappable": "ok",
+   "result": "responds"
+  }
+ ],
+ "skipped": [
+  "nav a. \"About\" (not on screen at this size)",
+  "nav a. \"Curriculum\" (not on screen at this size)",
+  "nav a. \"CGM\" (not on screen at this size)",
+  "nav a. \"Blog\" (not on screen at this size)",
+  "nav a. \"FAQ\" (not on screen at this size)",
+  "nav a. \"Support\" (not on screen at this size)",
+  "nav a.nav-pricing \"Pricing\" (not on screen at this size)",
+  "nav a.nav-cta \"Enroll Now\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"04 Glucose Variability & Metabolic Flexi\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"05 Continuous Glucose Monitor: Seeing th\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"06 Nutrition Framework: Inputs vs Respon\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"07 Plate Architecture: Protein, Fiber, P\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"08 Fasting & Meal Timing for Longevity\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"09 Gut Health & the Gut-Brain-Glucose Ax\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"10 Movement as a Glucose Tool\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"11 Sleep, Circadian Rhythm & Overnight G\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"12 Stress, Emotions & Non-Food Glucose S\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"13 Cardiovascular Longevity: Cardio Fitn\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"14 Blood Testing & Reading Your Numbers\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"15 Supplements, Tests & Health Tech Lite\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"16 Social Health, Purpose & Longevity\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"17 Personal Longevity Blueprint\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "syllabus button.curriculum-trigger \"18 Reflection, Integration & the Next 90\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab.is-on \"Learning Goals\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"50-Minute Flow\" (not on screen at this size)",
+  "syllabus button.mf-sess-tab \"Between-Session Work\" (not on screen at this size)",
+  "how button.how-v2-arrow.how-v2-prev \"Previous\" (not on screen at this size)",
+  "how button.how-v2-arrow.how-v2-next \"Next\" (not on screen at this size)",
+  "deepdive a.deepdive-mobile-card \"Metabolic Health Glucose, lipids, and in\" (not on screen at this size)",
+  "deepdive a.deepdive-mobile-card \"Exercise & Movement Strength, steady car\" (not on screen at this size)",
+  "deepdive a.deepdive-mobile-card \"Sleep & Circadian Sleep architecture, li\" (not on screen at this size)",
+  "deepdive a.deepdive-mobile-card \"Stress & Emotions Chronic stress, cortis\" (not on screen at this size)",
+  "deepdive a.deepdive-mobile-card \"Supplements & Tools Evidence-based compo\" (not on screen at this size)",
+  "deepdive a.deepdive-mobile-card \"Protocols & Habits Daily systems that co\" (not on screen at this size)",
+  "lead-gen \"Submit Application\" (form submit, not pressed)",
+  "lead-gen a.et-bump-btn.bump-whatsapp \"Start Chat on WhatsApp\" (not on screen at this size)",
+  "lead-gen a.form-thankyou-cta \"Back to Home\" (not on screen at this size)",
+  "? button.em-x \"Close\" (not on screen at this size)",
+  "? button.em-go \"Continue\" (not on screen at this size)",
+  "? button.em-apply \"Apply\" (not on screen at this size)"
+ ],
+ "summary": {
+  "controlsTested": 66,
+  "problems": 14,
+  "skipped": 82,
+  "videos": 12,
+  "videosPlaying": 12,
+  "offScreen": 0,
+  "clipped": 0,
+  "outsideBox": 0,
+  "tiny": 0
+ },
+ "problems": [
+  {
+   "fold": "hero",
+   "what": "button.film-sound",
+   "label": "Sound on or off",
+   "href": "",
+   "tappable": "ok",
+   "result": "NO RESPONSE"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-trigger",
+   "label": "01 Reframing Aging: From Disease Avoidan",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab.is-on",
+   "label": "Learning Goals",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "50-Minute Flow",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "Between-Session Work",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-trigger",
+   "label": "02 The Longevity Lens & Baseline Self‑As",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab.is-on",
+   "label": "Learning Goals",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "50-Minute Flow",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "Between-Session Work",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.curriculum-trigger",
+   "label": "03 Metabolic Health: Blood Sugar as Cent",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab.is-on",
+   "label": "Learning Goals",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "50-Minute Flow",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "syllabus",
+   "what": "button.mf-sess-tab",
+   "label": "Between-Session Work",
+   "href": "",
+   "tappable": "covered by nav",
+   "result": "responds"
+  },
+  {
+   "fold": "value",
+   "what": "button.value-arrow",
+   "label": "Previous",
+   "href": "",
+   "tappable": "ok",
+   "result": "NO RESPONSE"
+  }
+ ]
+}
