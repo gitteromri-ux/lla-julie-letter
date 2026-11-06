@@ -11968,6 +11968,60 @@ html.mf body:not(#mf-x) section#pricing .mfp-tiles .mfp-t:nth-child(1){border:1.
 html.mf body:not(#mf-x) section#pricing .mfp-tiles .mfp-t:nth-child(4){background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.14),transparent 55%),linear-gradient(160deg,#070C1A 0%,#000207 100%)!important;border:1.5px solid #9AD8FF!important;box-shadow:0 0 26px -6px rgba(154,216,255,.75),0 16px 30px -16px rgba(10,26,64,.6)!important}
 html.mf body:not(#mf-x) section#pricing .mfp-tiles .mfp-t:nth-child(4) :is(b,span,p,.mfp-th){color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
 
+/* ===== Round 60 (Omri: "Why does every fold have different fonts"): one type system for every fold below the hero =====
+   Section label: Inter 700 18. Section header: Playfair Display 500, 36 phone / 56 desktop, accent in Playfair italic.
+   Card title: Playfair Display 500, 26 / 28. List title: Playfair Display 500, 21 / 22.
+   Subtitle and lead paragraphs: Inter 400, 21 / 22. Card text: Inter 400, 19 / 20. */
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.eyebrow,.bioquiz-eyebrow,.about-powered-label,.lead-gen-v2-eyebrow){font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;font-style:normal!important;font-weight:700!important;font-size:18px!important;line-height:1.3!important;letter-spacing:0!important;text-transform:none!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(h2.section-title,h2.how-v2-title,h2.jb2-title,h2.bioquiz-title,h2.lead-gen-v2-headline,h2.final-cta-title,h1.about-mainhead){font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important;font-style:normal!important;font-size:36px!important;line-height:1.12!important;letter-spacing:0!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(h2.section-title,h2.how-v2-title,h2.jb2-title,h2.bioquiz-title,h2.lead-gen-v2-headline,h2.final-cta-title,h1.about-mainhead) :is(span,em,i){font-size:inherit!important;line-height:inherit!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.topic-v2-title,.how-v2-card-title,.teacher-card-live-name,.hex-detail-title,.skill-title,#included .nov-incl-card h3,.value-title,.jb3-card b,.cgm12-words b){font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important;font-style:normal!important;font-size:26px!important;line-height:1.2!important;letter-spacing:0!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.curriculum-trigger-text h3,.faq-q,.hex-node-label){font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important;font-style:normal!important;font-size:21px!important;line-height:1.3!important;letter-spacing:0!important;text-transform:none!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(#topics .section-subtitle,section.topics .section-subtitle,#syllabus .curriculum-header .section-subtitle,.how-v2-sub,section.deepdive .section-subtitle,section.skills .section-subtitle,#about .about-statement,#about .about-lead,#about .about-powered-desc,.bioquiz-body,.final-cta-sub,.cgm12-words li span){font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;font-weight:400!important;font-style:normal!important;font-size:21px!important;line-height:1.5!important;letter-spacing:0!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.topic-v2-desc,.how-v2-card-desc,.teacher-card-live-bio,.hex-detail-desc,.skill-sub,#included .nov-incl-card p,.value-desc,.faq-a-inner,.jb3-card span,.curriculum-goals li,ol.mf-steps li,p.curriculum-work){font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;font-weight:400!important;font-style:normal!important;font-size:19px!important;line-height:1.5!important;letter-spacing:0!important}
+html.mf body:not(#mf-x):not(#mf-t) #about .hero-powered-stats li > span{font-size:18px!important}
+html.mf body:not(#mf-x):not(#mf-t) #about .hero-powered-stats li strong{font-size:34px!important}
+@media (min-width:901px){
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(h2.section-title,h2.how-v2-title,h2.jb2-title,h2.bioquiz-title,h2.lead-gen-v2-headline,h2.final-cta-title,h1.about-mainhead){font-size:56px!important;line-height:1.08!important}
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.topic-v2-title,.how-v2-card-title,.teacher-card-live-name,.hex-detail-title,.skill-title,#included .nov-incl-card h3,.value-title,.jb3-card b,.cgm12-words b){font-size:28px!important}
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.curriculum-trigger-text h3,.faq-q,.hex-node-label){font-size:22px!important}
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(#topics .section-subtitle,section.topics .section-subtitle,#syllabus .curriculum-header .section-subtitle,.how-v2-sub,section.deepdive .section-subtitle,section.skills .section-subtitle,#about .about-statement,#about .about-lead,.bioquiz-body,.final-cta-sub,.cgm12-words li span){font-size:22px!important}
+  html.mf body:not(#mf-x):not(#mf-t) #about .about-powered-desc{font-size:23px!important}
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.topic-v2-desc,.how-v2-card-desc,.teacher-card-live-bio,.hex-detail-desc,.skill-sub,#included .nov-incl-card p,.value-desc,.faq-a-inner,.jb3-card span,.curriculum-goals li,ol.mf-steps li,p.curriculum-work){font-size:20px!important}
+}
+
+/* ===== Round 60 (Omri: "too long scrolling" in an opened session): three tabs on phones, three columns on desktop ===== */
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tabs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;margin:4px 0 6px!important;border-bottom:1px solid rgba(191,226,255,.28)!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tab{appearance:none!important;background:none!important;border:0!important;border-radius:0!important;margin:0!important;padding:12px 4px 12px!important;cursor:pointer!important;font:700 16px/1.25 Inter,-apple-system,sans-serif!important;color:#9FD6FF!important;-webkit-text-fill-color:#9FD6FF!important;text-align:center!important;box-shadow:none!important;opacity:.8}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tab.is-on{opacity:1;color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important;box-shadow:inset 0 -3px 0 #9FD6FF!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .phase-block:is([data-phase="1"],[data-phase="2"]) .mf-sess-tabs{border-bottom-color:rgba(42,82,136,.25)!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .phase-block:is([data-phase="1"],[data-phase="2"]) .mf-sess-tab{color:#2A5288!important;-webkit-text-fill-color:#2A5288!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .phase-block:is([data-phase="1"],[data-phase="2"]) .mf-sess-tab.is-on{color:#0A1A40!important;-webkit-text-fill-color:#0A1A40!important;box-shadow:inset 0 -3px 0 #2A5288!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panel{display:none!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panel.is-on{display:block!important;padding-top:8px!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panel > .curriculum-section-label{display:none!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panel ol.mf-steps li{padding:7px 0!important}
+@media (min-width:901px){
+  html.mf body:not(#mf-x):not(#mf-t) #syllabus .curriculum-body-inner{margin:0 22px 22px!important;padding:18px 24px 22px!important}
+  html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tabs{display:none!important}
+  html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panels{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,1fr)!important;gap:28px!important}
+  html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panel,html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panel.is-on{display:block!important;padding-top:0!important}
+  html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-panel > .curriculum-section-label{display:block!important;border-top:0!important;padding:0 0 10px!important;font:500 22px/1.25 'Playfair Display',Georgia,serif!important;font-style:normal!important}
+}
+
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(.curriculum-bridge,#teachers .section-subtitle,section.instructors .section-subtitle,.lead-gen-v2-sub){font-family:Inter,-apple-system,sans-serif!important;font-weight:400!important;font-style:normal!important;font-size:21px!important;line-height:1.5!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) .curriculum-bridge{font-size:18px!important}
+html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) .lead-gen-v2-form-title{font-family:'Playfair Display',Georgia,serif!important;font-weight:500!important;font-style:normal!important;font-size:26px!important}
+@media (min-width:901px){
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) :is(#teachers .section-subtitle,section.instructors .section-subtitle,.lead-gen-v2-sub){font-size:22px!important}
+  html.mf body:not(#mf-x):not(#mf-t) section:not(.hero) .lead-gen-v2-form-title{font-size:28px!important}
+}
+
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tabs{grid-template-columns:max-content max-content max-content!important;justify-content:space-between!important;column-gap:10px!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tab{white-space:pre!important;padding:10px 2px 12px!important;font-size:16px!important;line-height:1.25!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus :is(.curriculum-item,.curriculum-body,.curriculum-body-inner,.mf-sess-panels,.mf-sess-panel){min-width:0!important;max-width:100%!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .phase-block-sessions{min-width:0!important}
+
 </style>
 </head>
 <body>
@@ -15075,6 +15129,36 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
 })();
 
 
+
+/* Round 60 (Omri: "too long scrolling" in an opened session on phones): the three parts of a session
+   (Learning Goals, 50-Minute Flow, Between-Session Work) become three tabs on phones and three columns on desktop. */
+(function () {
+  var inners = document.querySelectorAll('#syllabus .curriculum-body-inner');
+  [].forEach.call(inners, function (inner) {
+    var labels = [].filter.call(inner.children, function (c) { return c.classList.contains('curriculum-section-label'); });
+    if (labels.length < 2) return;
+    var tabs = document.createElement('div'); tabs.className = 'mf-sess-tabs'; tabs.setAttribute('role', 'tablist');
+    var wrap = document.createElement('div'); wrap.className = 'mf-sess-panels';
+    labels.forEach(function (lab, i) {
+      var panel = document.createElement('div'); panel.className = 'mf-sess-panel' + (i === 0 ? ' is-on' : '');
+      var n = lab.nextElementSibling; panel.appendChild(lab);
+      while (n && !n.classList.contains('curriculum-section-label')) { var nx = n.nextElementSibling; panel.appendChild(n); n = nx; }
+      wrap.appendChild(panel);
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'mf-sess-tab' + (i === 0 ? ' is-on' : '');
+      b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', i === 0 ? 'true' : 'false'); var tx = lab.textContent.replace(/\u00a0/g, ' ').trim(), sp = tx.lastIndexOf(' '); b.textContent = sp > 0 ? tx.slice(0, sp) + '\n' + tx.slice(sp + 1) : tx;
+      b.addEventListener('click', function (e) {
+        e.stopPropagation();
+        [].forEach.call(tabs.children, function (x, j) { x.classList.toggle('is-on', j === i); x.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
+        [].forEach.call(wrap.children, function (x, j) { x.classList.toggle('is-on', j === i); });
+        var body = inner.closest('.curriculum-body');
+        if (body && body.style.maxHeight && body.style.maxHeight !== '0px') body.style.maxHeight = body.scrollHeight + 'px';
+      });
+      tabs.appendChild(b);
+    });
+    while (inner.firstChild) inner.removeChild(inner.firstChild);
+    inner.appendChild(tabs); inner.appendChild(wrap);
+  });
+})();
 
 </script>
 </body>
