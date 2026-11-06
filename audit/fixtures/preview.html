@@ -11802,12 +11802,99 @@ html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-work{background:
   html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-trigger{padding:12px 14px!important}
 }
 
+/* ===== Round 58 (Omri: "session cards per phase in the same colour as the phase card", "add line separators, not only white text, not run on texts") ===== */
+html.mf body:not(#mf-x) section#syllabus.curriculum .phase-block[data-phase="1"] .curriculum-item{background:linear-gradient(160deg,#4A74AA 0%,#2A4D80 100%)!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .phase-block[data-phase="2"] .curriculum-item{background:linear-gradient(160deg,#2F5389 0%,#1A3563 100%)!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .phase-block[data-phase="3"] .curriculum-item{background:linear-gradient(160deg,#1C3767 0%,#0F2147 100%)!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .phase-block[data-phase="4"] .curriculum-item{background:linear-gradient(160deg,#0F1D3F 0%,#050C20 100%)!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .phase-block .curriculum-num{background:rgba(255,255,255,.14)!important;border:1px solid rgba(234,246,255,.55)!important;color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-body-inner{margin:0 16px 16px!important;padding:6px 22px 20px!important;border-radius:14px!important;background:rgba(3,10,30,.42)!important;border:1px solid rgba(191,226,255,.18)!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-section-label{font:italic 500 21px/1.25 'Playfair Display',Georgia,serif!important;color:#9FD6FF!important;-webkit-text-fill-color:#9FD6FF!important;margin:0!important;padding:16px 0 8px!important;border-top:1px solid rgba(191,226,255,.28)!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-section-label:first-child{border-top:0!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-goals{margin:0 0 6px!important;padding:0!important;list-style:none!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-goals li{position:relative!important;padding:0 0 8px 26px!important;color:#EAF4FF!important;-webkit-text-fill-color:#EAF4FF!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-goals li::before{content:''!important;position:absolute!important;left:2px!important;top:.62em!important;width:12px!important;height:2px!important;border-radius:2px!important;background:#9FD6FF!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum ol.mf-steps{counter-reset:mfstep!important;list-style:none!important;margin:0 0 8px!important;padding:0!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum ol.mf-steps li{counter-increment:mfstep!important;display:grid!important;grid-template-columns:34px minmax(0,1fr)!important;gap:10px!important;align-items:baseline!important;padding:9px 0!important;border-top:1px solid rgba(191,226,255,.16)!important;font:400 19px/1.45 Inter,sans-serif!important;color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum ol.mf-steps li:first-child{border-top:0!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum ol.mf-steps li::before{content:counter(mfstep)!important;font:italic 500 22px/1 'Playfair Display',Georgia,serif!important;color:#9FD6FF!important;-webkit-text-fill-color:#9FD6FF!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-work{margin:2px 0 0!important;padding:14px 16px!important;border-radius:12px!important;border:0!important;border-left:0!important;background:linear-gradient(160deg,#EAF6FF,#C9E5FF)!important;color:#0A1A40!important;-webkit-text-fill-color:#0A1A40!important;font:500 19px/1.45 Inter,sans-serif!important;box-shadow:0 10px 24px -14px rgba(0,0,0,.7)!important}
+@media (min-width:901px){
+  html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-body-inner{margin:0 22px 22px 90px!important}
+}
+@media (max-width:900px){
+  html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-body-inner{margin:0 10px 12px!important;padding:4px 14px 16px!important}
+  html.mf body:not(#mf-x) section#syllabus.curriculum ol.mf-steps li{grid-template-columns:26px minmax(0,1fr)!important;font-size:18px!important}
+  html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-goals li,html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-work{font-size:18px!important}
+}
+
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-body-inner p.curriculum-work{color:#0A1A40!important;-webkit-text-fill-color:#0A1A40!important}
+html.mf body:not(#mf-x) section#syllabus.curriculum .curriculum-body-inner ol.mf-steps li{color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+
 
 /* ===== Round 57 (Omri 6 Nov: "Inconsistent fonts everywhere"): one system. Playfair Display for headers and their italic accent; Inter for every paragraph ===== */
 html.mf body:not(#mf-x) :is(.topic-v2-desc,#included p,.nov-incl-card p,section.value .value-desc,.bioquiz-body,#about .about-statement){font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;font-style:normal!important;letter-spacing:0!important}
 html.mf body:not(#mf-x) #about .about-statement{font-weight:500!important;line-height:1.5!important}
 html.mf body:not(#mf-x) :is(.topic-v2-desc,#included p,.nov-incl-card p,section.value .value-desc){font-weight:400!important;line-height:1.5!important}
 html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!important}
+
+/* ===== Round 58 (Omri: "about us texts", "eTeacher fold"): fewer rows, separator lines, compact stats on phones ===== */
+html.mf body:not(#mf-x) #about .about-statement{position:relative!important;padding-bottom:18px!important;margin-bottom:18px!important}
+html.mf body:not(#mf-x) #about .about-statement::after{content:''!important;position:absolute!important;left:50%!important;bottom:0!important;width:64px!important;height:2px!important;margin-left:-32px!important;border-radius:2px!important;background:linear-gradient(90deg,#9FD6FF,#2A5288)!important}
+html.mf body:not(#mf-x) #about .about-powered-desc{padding-bottom:20px!important;margin-bottom:0!important;border-bottom:1px solid rgba(191,226,255,.22)!important}
+@media (max-width:900px){
+  html.mf body:not(#mf-x) #about .container{padding-left:18px!important;padding-right:18px!important}
+  html.mf body:not(#mf-x) #about .about-statement{font-size:21px!important;line-height:1.45!important;text-align:left!important;text-wrap:pretty!important}
+  html.mf body:not(#mf-x) #about .about-statement::after{left:0!important;margin-left:0!important}
+  html.mf body:not(#mf-x) #about .about-lead{font-size:19px!important;line-height:1.5!important;text-align:left!important;color:#1F3560!important;-webkit-text-fill-color:#1F3560!important}
+  html.mf body:not(#mf-x) #about .about-powered{padding:22px 0 0!important}
+  html.mf body:not(#mf-x) #about .about-powered-desc{font-size:19px!important;line-height:1.5!important;text-align:left!important;padding:0 20px 18px!important;color:#EAF4FF!important;-webkit-text-fill-color:#EAF4FF!important}
+  html.mf body:not(#mf-x) #about .hero-powered-stats li{padding:12px 6px!important;min-height:0!important}
+  html.mf body:not(#mf-x) #about .hero-powered-stats li > span{font-size:16px!important}
+  html.mf body:not(#mf-x) #about .hero-powered-stats li strong{font-size:30px!important;line-height:1.1!important}
+}
+
+/* ===== Round 58 (Omri: "VIP Julie still in black card. It must shine. Strong brand colour or see-through glass 3D") ===== */
+html.mf body:not(#mf-x) #pricing .mfp-t.mfp-tbonus{position:relative!important;overflow:hidden!important;background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.95),rgba(255,255,255,0) 55%),linear-gradient(135deg,rgba(234,246,255,.92) 0%,rgba(191,228,255,.88) 45%,rgba(127,192,240,.9) 100%)!important;border:1.5px solid #FFFFFF!important;box-shadow:inset 0 2px 0 #FFFFFF,inset 0 -14px 28px -14px rgba(42,82,136,.45),0 0 0 2px rgba(127,192,240,.65),0 0 38px -4px rgba(127,192,240,.95),0 20px 36px -16px rgba(10,26,64,.55)!important}
+html.mf body:not(#mf-x) #pricing .mfp-t.mfp-tbonus::after{content:''!important;position:absolute!important;top:-20%!important;bottom:-20%!important;left:-40%!important;width:34%!important;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.75),rgba(255,255,255,0))!important;transform:skewX(-18deg)!important;animation:mfVipSheen 4.6s ease-in-out infinite!important;pointer-events:none!important}
+@keyframes mfVipSheen{0%,55%{left:-40%}100%{left:125%}}
+@media (prefers-reduced-motion:reduce){html.mf body:not(#mf-x) #pricing .mfp-t.mfp-tbonus::after{animation:none!important;display:none!important}}
+html.mf body:not(#mf-x) #pricing .mfp-t.mfp-tbonus :is(.mfp-bhead,.mfp-bhead b,span){color:#0A1A40!important;-webkit-text-fill-color:#0A1A40!important;text-shadow:none!important;position:relative;z-index:1}
+html.mf body:not(#mf-x) #pricing .mfp-t.mfp-tbonus .mfp-bhead em{color:#2A5288!important;-webkit-text-fill-color:#2A5288!important;background:none!important}
+
+/* ===== Round 58 (Omri: "CGM still looks cheap, design it professionally"): upright product stage, straight glass cards, brand blues only, separators ===== */
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm12-words{gap:0!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm12-words li{padding:16px 0!important;border-top:1px solid rgba(191,226,255,.22)!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm12-words li:first-child{border-top:0!important;padding-top:4px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm12-words :is(.w1,.w2,.w3) b{color:#9FD6FF!important;-webkit-text-fill-color:#9FD6FF!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm12-words li span{color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-stage::before{width:560px!important;height:560px!important;top:44%!important;background:radial-gradient(closest-side,rgba(159,214,255,.34),rgba(124,192,255,.10) 58%,transparent 74%)!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-stage::after{bottom:30px!important;width:470px!important;height:74px!important;background:radial-gradient(closest-side,rgba(159,214,255,.20),rgba(0,4,14,.55) 70%,transparent)!important;border:1px solid rgba(159,214,255,.35)!important;box-shadow:0 0 30px -6px rgba(159,214,255,.55)!important;filter:none!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-phone{transform:translateX(-50%)!important;top:0!important;width:300px!important;filter:drop-shadow(0 34px 34px rgba(0,0,0,.6))!important}
+html.mf body:not(#mf-x) #cgm.cgm12 svg.cgm14-sensor{left:calc(50% - 250px)!important;top:400px!important;width:230px!important;transform:none!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-card{transform:none!important;padding:12px 14px 12px!important;border-radius:16px!important;background:linear-gradient(160deg,rgba(28,55,103,.94),rgba(10,22,52,.96))!important;border:1px solid rgba(191,226,255,.45)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 0 22px -6px rgba(159,212,255,.6),0 22px 40px -18px rgba(0,0,0,.9)!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-live{left:calc(50% - 300px)!important;top:70px!important;width:172px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-meal{left:calc(50% + 110px)!important;top:236px!important;width:196px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-k{font:italic 500 18px/1.2 'Playfair Display',Georgia,serif!important;color:#9FD6FF!important;-webkit-text-fill-color:#9FD6FF!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend i.p{background:#FFFFFF!important;box-shadow:0 0 6px #FFFFFF!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend i.b{background:#9FD6FF!important;box-shadow:0 0 6px #9FD6FF!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend span{color:#EAF4FF!important;-webkit-text-fill-color:#EAF4FF!important}
+@media (max-width:900px){
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-stage{height:384px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-stage::before{width:340px!important;height:340px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-stage::after{width:300px!important;height:50px!important;bottom:14px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-phone{width:206px!important;left:50%!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 svg.cgm14-sensor{left:4px!important;top:258px!important;width:160px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-live{left:0!important;top:36px!important;width:140px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-meal{left:auto!important;right:0!important;top:170px!important;width:160px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm12-words li{padding:12px 0!important}
+}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-stage::after{background:radial-gradient(closest-side,rgba(159,214,255,.22),rgba(159,214,255,.06) 70%,transparent)!important;border:1px solid rgba(159,214,255,.3)!important;box-shadow:0 0 26px -8px rgba(159,214,255,.6),inset 0 0 22px -8px rgba(159,214,255,.5)!important;width:400px!important}
+@media (max-width:900px){
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-stage::after{width:270px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-live{top:22px!important;width:128px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-meal{width:150px!important}
+}
 
 </style>
 </head>
@@ -12039,7 +12126,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Articulate a personal reason this course&nbsp;matters</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Welcome and group norms. Mini-lecture on healthspan, Medicine 3.0, and aging trajectories. Guided exercise visualizing your 80-year curve. Breakout on the default last decade. Group synthesis and shared course language. Intent&#8209;setting close with Longevity Lens&nbsp;preview.</p>
+                <ol class="curriculum-flow mf-steps"><li>Welcome and group&nbsp;norms</li><li>Mini-lecture on healthspan, Medicine 3.0, and aging&nbsp;trajectories</li><li>Guided exercise visualizing your 80-year&nbsp;curve</li><li>Breakout on the default last&nbsp;decade</li><li>Group synthesis and shared course&nbsp;language</li><li>Intent&#8209;setting close with Longevity Lens&nbsp;preview</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Three-day lifestyle awareness log, sleep, movement, meals, energy. Descriptive only, no&nbsp;judgment.</p>
               </div>
@@ -12062,7 +12149,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Know three field-ready self-assessments with evidence behind&nbsp;them</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Recap from Session 1. Lens demo across the 4-domain frame. Live baseline assessment (cardio fitness estimate, grip strength as a mortality proxy, sit-to-stand, subjective scale). Pair share on which domain surprised you. Choose one priority&nbsp;domain.</p>
+                <ol class="curriculum-flow mf-steps"><li>Recap from Session&nbsp;1</li><li>Lens demo across the 4-domain&nbsp;frame</li><li>Live baseline assessment (cardio fitness estimate, grip strength as a mortality proxy, sit-to-stand, subjective scale)</li><li>Pair share on which domain surprised&nbsp;you</li><li>Choose one priority&nbsp;domain</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Record three data points, resting HR (7-day average), grip-strength estimate, sit-to-stand&nbsp;count.</p>
               </div>
@@ -12085,7 +12172,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Know why fasting glucose alone misses most of the&nbsp;picture</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Log review. Glucose-as-signal mini-lecture (Snyder, Hall 2018, PREDICT 1). Three-trace case comparison (healthy vs subclinical vs diabetic). Breakout on which markers to trust. Group synthesis reframing blood sugar from villain to&nbsp;information.</p>
+                <ol class="curriculum-flow mf-steps"><li>Log&nbsp;review</li><li>Glucose-as-signal mini-lecture (Snyder, Hall 2018, PREDICT 1)</li><li>Three-trace case comparison (healthy vs subclinical vs diabetic)</li><li>Breakout on which markers to&nbsp;trust</li><li>Group synthesis reframing blood sugar from villain to&nbsp;information</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">One fasted-morning mood and energy log, pre- and post-breakfast, three&nbsp;days.</p>
               </div>
@@ -12118,7 +12205,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Identify what drives spikes and what drives&nbsp;recovery</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Recap of glucose-as-signal. Mechanics of variability (SD, time-in-range, MAGE). Case studies on metabolic flexibility. Breakout to map your suspected drivers. Synthesis previewing the continuous glucose monitor&nbsp;lab.</p>
+                <ol class="curriculum-flow mf-steps"><li>Recap of glucose-as-signal</li><li>Mechanics of variability (SD, time-in-range, MAGE)</li><li>Case studies on metabolic&nbsp;flexibility</li><li>Breakout to map your suspected&nbsp;drivers</li><li>Synthesis previewing the continuous glucose monitor&nbsp;lab</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Predict your top three glucose triggers before the continuous glucose monitor arrives, food, stress, sleep, or&nbsp;movement.</p>
               </div>
@@ -12141,7 +12228,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Understand what continuous glucose monitor data can, and cannot, tell&nbsp;you</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Continuous glucose monitor applied live with the class. App walkthrough and trace anatomy. Review three real participant traces from prior classes. Build your personal protocol for the next 14 days of&nbsp;observation.</p>
+                <ol class="curriculum-flow mf-steps"><li>Continuous glucose monitor applied live with the&nbsp;class</li><li>App walkthrough and trace&nbsp;anatomy</li><li>Review three real participant traces from prior&nbsp;classes</li><li>Build your personal protocol for the next 14 days of&nbsp;observation</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Two weeks of blind observation, wear the continuous glucose monitor, log meals and movement, draw no conclusions&nbsp;yet.</p>
               </div>
@@ -12164,7 +12251,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Identify your three biggest glucose-driving&nbsp;foods</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Continuous glucose monitor data review. Mini-lecture on inputs vs responses. Guided exercise to map your personal response map. Breakout pairs share top triggers and surprises. Synthesis sets up plate&nbsp;architecture.</p>
+                <ol class="curriculum-flow mf-steps"><li>Continuous glucose monitor data&nbsp;review</li><li>Mini-lecture on inputs vs&nbsp;responses</li><li>Guided exercise to map your personal response&nbsp;map</li><li>Breakout pairs share top triggers and&nbsp;surprises</li><li>Synthesis sets up plate&nbsp;architecture</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Build your personal glucose-response map, three foods that spike you, three that don&#x27;t, three to&nbsp;test.</p>
               </div>
@@ -12187,7 +12274,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Recognize ultra-processed food as a glucose&nbsp;multiplier</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Plate architecture mini-lecture (protein floor, fiber lever, processing penalty). Food-order experiment walkthrough (vegetable. Protein. Carb). Live build of three plates from your kitchen. Pair coaching to redesign one weekly meal you&#x27;ve already tested on the continuous glucose&nbsp;monitor.</p>
+                <ol class="curriculum-flow mf-steps"><li>Plate architecture mini-lecture (protein floor, fiber lever, processing penalty)</li><li>Food-order experiment walkthrough (vegetable</li><li>Protein</li><li>Carb)</li><li>Live build of three plates from your&nbsp;kitchen</li><li>Pair coaching to redesign one weekly meal you&#x27;ve already tested on the continuous glucose&nbsp;monitor</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Run the food-order experiment for three days. Same meal, different order. Capture the continuous glucose monitor&nbsp;trace.</p>
               </div>
@@ -12220,7 +12307,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Choose a fasting window that fits your life and your&nbsp;data</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Evidence review, what TRE actually shows in human RCTs, where rodent autophagy data does and doesn&#x27;t translate. Case studies on women, athletes, and disordered-eating histories. Design a 4-week trial window matched to your continuous glucose monitor and sleep&nbsp;data.</p>
+                <ol class="curriculum-flow mf-steps"><li>Evidence review, what TRE actually shows in human RCTs, where rodent autophagy data does and doesn&#x27;t&nbsp;translate</li><li>Case studies on women, athletes, and disordered-eating&nbsp;histories</li><li>Design a 4-week trial window matched to your continuous glucose monitor and sleep&nbsp;data</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Test one meal-timing window for the week. Track continuous glucose monitor, energy, sleep, and&nbsp;adherence.</p>
               </div>
@@ -12243,7 +12330,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Recognize gut-symptom patterns worth&nbsp;investigating</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Mini-lecture on the gut-brain-glucose axis (vagal tone, SCFA, postbiotics). Case studies linking dysbiosis to glucose variability and mood. Self-assessment of fiber diversity (30-plants-per-week). Breakout on what to add before what to&nbsp;remove.</p>
+                <ol class="curriculum-flow mf-steps"><li>Mini-lecture on the gut-brain-glucose axis (vagal tone, SCFA, postbiotics)</li><li>Case studies linking dysbiosis to glucose variability and&nbsp;mood</li><li>Self-assessment of fiber diversity (30-plants-per-week)</li><li>Breakout on what to add before what to&nbsp;remove</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Track plant diversity for one week, target 30 distinct plants. Note any symptom or energy&nbsp;correlations.</p>
               </div>
@@ -12266,7 +12353,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Build a minimum-effective movement plan you&#x27;ll actually&nbsp;keep</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Centenarian decathlon framing. Movement hierarchy (steady cardio base, cardio fitness ceiling, strength pillar). Live demo of post-meal walks and how they affect blood sugar. Design a weekly movement floor. Breakout pairs commit to a 2-week&nbsp;trial.</p>
+                <ol class="curriculum-flow mf-steps"><li>Centenarian decathlon&nbsp;framing</li><li>Movement hierarchy (steady cardio base, cardio fitness ceiling, strength pillar)</li><li>Live demo of post-meal walks and how they affect blood&nbsp;sugar</li><li>Design a weekly movement&nbsp;floor</li><li>Breakout pairs commit to a 2-week&nbsp;trial</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Test a 10-minute post-meal walk after your highest-glucose meal of the day. Capture the continuous glucose monitor&nbsp;delta.</p>
               </div>
@@ -12289,7 +12376,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Identify your two highest-leverage sleep&nbsp;changes</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Sleep architecture and the metabolic cost of one bad night. Overnight glucose signatures (dawn phenomenon vs disrupted sleep vs late eating). Self-assessment across light, temperature, timing, alcohol, caffeine. Commit to a 1-week sleep&nbsp;protocol.</p>
+                <ol class="curriculum-flow mf-steps"><li>Sleep architecture and the metabolic cost of one bad&nbsp;night</li><li>Overnight glucose signatures (dawn phenomenon vs disrupted sleep vs late eating)</li><li>Self-assessment across light, temperature, timing, alcohol,&nbsp;caffeine</li><li>Commit to a 1-week sleep&nbsp;protocol</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Run a one-week sleep protocol, fixed wake time, morning light, last meal three hours before&nbsp;bed.</p>
               </div>
@@ -12312,7 +12399,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Build a regulation toolkit ranked by evidence and&nbsp;convenience</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">The stress-glucose loop and your body's recovery signal. Case review of non-food spikes. Live practice of three regulation tools (slow exhale, box breath, body reset). Map your top two stressors and choose your default&nbsp;tool.</p>
+                <ol class="curriculum-flow mf-steps"><li>The stress-glucose loop and your body's recovery&nbsp;signal</li><li>Case review of non-food&nbsp;spikes</li><li>Live practice of three regulation tools (slow exhale, box breath, body reset)</li><li>Map your top two stressors and choose your default&nbsp;tool</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Catch one non-food spike during the week. Use a regulation tool inside ten minutes and log the continuous glucose monitor&nbsp;response.</p>
               </div>
@@ -12335,7 +12422,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Treat cardio fitness as a longevity predictor, not just a fitness&nbsp;number</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Four Horsemen framing (heart disease, cancer, brain decline, metabolic disease). The cholesterol numbers that actually matter, Lp(a) tested once in your life. Prevention timeline that starts decades before the event. Cardio fitness norms by age and sex. Set a personal cardiovascular&nbsp;target.</p>
+                <ol class="curriculum-flow mf-steps"><li>Four Horsemen framing (heart disease, cancer, brain decline, metabolic disease)</li><li>The cholesterol numbers that actually matter, Lp(a) tested once in your&nbsp;life</li><li>Prevention timeline that starts decades before the&nbsp;event</li><li>Cardio fitness norms by age and&nbsp;sex</li><li>Set a personal cardiovascular&nbsp;target</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Order the right cholesterol panel and Lp(a) on your next blood draw. Estimate your current cardio fitness and write your 12-month&nbsp;target.</p>
               </div>
@@ -12368,7 +12455,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Build a personal panel and cadence you&#x27;ll actually&nbsp;run</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Longevity panel walkthrough (the cholesterol picture, fasting insulin, insulin sensitivity, inflammation, blood sugar, lipid subfractions, hormones, micronutrients). Optimal vs reference ranges. Live read-through of a sample panel. Build your panel and&nbsp;cadence.</p>
+                <ol class="curriculum-flow mf-steps"><li>Longevity panel walkthrough (the cholesterol picture, fasting insulin, insulin sensitivity, inflammation, blood sugar, lipid subfractions, hormones, micronutrients)</li><li>Optimal vs reference&nbsp;ranges</li><li>Live read-through of a sample&nbsp;panel</li><li>Build your panel and&nbsp;cadence</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Build your personal blood panel. Compare against your last labs. Identify three markers you want to&nbsp;move.</p>
               </div>
@@ -12391,7 +12478,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Know when wearable data changes a decision and when it&#x27;s just&nbsp;data</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Evidence hierarchy and the foundation set (vitamin D3, omega-3, magnesium, creatine). Context for longevity therapy candidates. Wearable triage (recovery, sleep, cardio fitness). Audit your own stack and&nbsp;devices.</p>
+                <ol class="curriculum-flow mf-steps"><li>Evidence hierarchy and the foundation set (vitamin D3, omega-3, magnesium, creatine)</li><li>Context for longevity therapy&nbsp;candidates</li><li>Wearable triage (recovery, sleep, cardio fitness)</li><li>Audit your own stack and&nbsp;devices</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Audit your current supplement stack against the evidence hierarchy. Cut what doesn&#x27;t earn its place. Pick one to test for four&nbsp;weeks.</p>
               </div>
@@ -12414,7 +12501,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Identify one relationship and one purpose practice to invest&nbsp;in</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Harvard Study, Blue Zones, and meta-analyses ranking social connection alongside smoking. Self-assessment of your social architecture (close ties, weak ties, community). Breakout on purpose, ikigai, and the second-half-of-life question. Commit to one relationship and one purpose&nbsp;practice.</p>
+                <ol class="curriculum-flow mf-steps"><li>Harvard Study, Blue Zones, and meta-analyses ranking social connection alongside&nbsp;smoking</li><li>Self-assessment of your social architecture (close ties, weak ties, community)</li><li>Breakout on purpose, ikigai, and the second-half-of-life&nbsp;question</li><li>Commit to one relationship and one purpose&nbsp;practice</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Initiate one social ritual, weekly call, monthly dinner, weekly walk. Schedule the next four&nbsp;occurrences.</p>
               </div>
@@ -12437,7 +12524,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Identify the minimum effective dose across nutrition, movement, sleep, stress, and your body's&nbsp;signals</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Workshop session, draft your blueprint live across nutrition, movement, sleep, stress, and your body's signals. Pair review checking for honesty, specificity, and minimum effective dose. Closing peer-coaching round on the one habit you&#x27;ll defend&nbsp;first.</p>
+                <ol class="curriculum-flow mf-steps"><li>Workshop session, draft your blueprint live across nutrition, movement, sleep, stress, and your body's&nbsp;signals</li><li>Pair review checking for honesty, specificity, and minimum effective&nbsp;dose</li><li>Closing peer-coaching round on the one habit you&#x27;ll defend&nbsp;first</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Finalize your written blueprint. Print it. Share it with one person who will hold you to&nbsp;it.</p>
               </div>
@@ -12460,7 +12547,7 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
                   <li>Leave with a peer accountability structure for the year&nbsp;ahead</li>
                 </ul>
                 <div class="curriculum-section-label">50-Minute&nbsp;Flow</div>
-                <p class="curriculum-flow">Reflection on the 18 weeks, what changed, what didn&#x27;t, what surprised you. Identity-based change and environment design. Build the continuation plan (one habit to defend, one experiment, one number to retest). Class closes with peer-accountability&nbsp;commitment.</p>
+                <ol class="curriculum-flow mf-steps"><li>Reflection on the 18 weeks, what changed, what didn&#x27;t, what surprised&nbsp;you</li><li>Identity-based change and environment&nbsp;design</li><li>Build the continuation plan (one habit to defend, one experiment, one number to retest)</li><li>Class closes with peer-accountability&nbsp;commitment</li></ol>
                 <div class="curriculum-section-label">Between-Session&nbsp;Work</div>
                 <p class="curriculum-work">Execute the continuation plan. Schedule the class check-in. Re-run your priority blood marker at day&nbsp;90.</p>
               </div>
@@ -12524,19 +12611,18 @@ html.mf body:not(#mf-x) .bioquiz-body{font-weight:400!important;line-height:1.5!
           <p class="cgm14-k">After a&nbsp;meal</p>
           <svg class="cgm14-curves" viewBox="0 0 280 110" aria-hidden="true">
             <defs>
-              <linearGradient id="c14p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB5" stop-opacity=".30"/><stop offset="1" stop-color="#FF8FB5" stop-opacity="0"/></linearGradient>
+              <linearGradient id="c14p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
               <linearGradient id="c14b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9FD6FF" stop-opacity=".26"/><stop offset="1" stop-color="#9FD6FF" stop-opacity="0"/></linearGradient>
             </defs>
             <path d="M0 92 C 34 88, 52 16, 80 14 C 108 12, 118 80, 150 86 C 184 92, 230 93, 280 93 L280 100 L0 100Z" fill="url(#c14p)"/>
             <path d="M0 95 C 60 93, 100 66, 140 65 C 184 64, 226 84, 280 86 L280 100 L0 100Z" fill="url(#c14b)"/>
-            <path d="M0 92 C 34 88, 52 16, 80 14 C 108 12, 118 80, 150 86 C 184 92, 230 93, 280 93" fill="none" stroke="#FF9CC0" stroke-width="1.6" filter="url(#c14g)"/>
+            <path d="M0 92 C 34 88, 52 16, 80 14 C 108 12, 118 80, 150 86 C 184 92, 230 93, 280 93" fill="none" stroke="#FFFFFF" stroke-width="1.6" filter="url(#c14g)"/>
             <path d="M0 95 C 60 93, 100 66, 140 65 C 184 64, 226 84, 280 86" fill="none" stroke="#AEDCFF" stroke-width="1.6" filter="url(#c14g)"/>
             <line x1="0" y1="100.5" x2="280" y2="100.5" stroke="rgba(207,235,255,.35)" stroke-width=".8"/>
             <g stroke="rgba(207,235,255,.45)" stroke-width=".8"><line x1="1" y1="100" x2="1" y2="104"/><line x1="93" y1="100" x2="93" y2="104"/><line x1="186" y1="100" x2="186" y2="104"/><line x1="279" y1="100" x2="279" y2="104"/></g>
-            <circle cx="80" cy="14" r="3" fill="#FFD6E4"/>
+            <circle cx="80" cy="14" r="3.4" fill="#FFFFFF"/>
           </svg>
           <p class="cgm14-legend"><span><i class="p"></i>Sugary&nbsp;meal</span><span><i class="b"></i>Balanced&nbsp;meal</span></p>
-          <span class="cgm14-tag">Spike</span>
         </div>
       </div>
     </div>
