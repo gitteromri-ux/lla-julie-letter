@@ -1,15 +1,10 @@
 {
  "url": "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/",
- "fixtureSha": "7b784cc05e659e76",
+ "fixtureSha": "3f84e9e723cda841",
  "status": 200,
- "servedSha": "11b09d3670684f1a",
- "sameAsBuild": false,
- "tries": 20,
- "board": {
-  "status": 200,
-  "isRound42": true,
-  "tries": 1
- },
+ "servedSha": "3f84e9e723cda841",
+ "sameAsBuild": true,
+ "tries": 1,
  "iphone": {
   "tracking": [],
   "logos": [
@@ -56,6 +51,52 @@
    "moving": true,
    "broken": 0
   },
+  "syllabus": {
+   "tabs": [
+    "01 Foundation Sessions 1 to 3",
+    "02 Data & Discovery Sessions 4 to 7",
+    "03 Lifestyle Systems Sessions 8 to 13",
+    "04 Integration & Blueprint Sessions 14 to 18"
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "active": "1",
+     "sessions": 3,
+     "opened": true,
+     "bodyPx": 747,
+     "h3px": "20px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 2,
+     "active": "2",
+     "sessions": 4,
+     "opened": true,
+     "bodyPx": 480,
+     "h3px": "20px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 3,
+     "active": "3",
+     "sessions": 6,
+     "opened": true,
+     "bodyPx": 746,
+     "h3px": "20px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 4,
+     "active": "4",
+     "sessions": 5,
+     "opened": true,
+     "bodyPx": 747,
+     "h3px": "20px",
+     "flowPx": "19px"
+    }
+   ]
+  },
   "#julie": {
    "screens": 0.75
   },
@@ -63,10 +104,10 @@
    "screens": 2.18
   },
   "#cgm": {
-   "screens": 1.21
+   "screens": 1.37
   },
   "#syllabus": {
-   "screens": 1.42
+   "screens": 2
   },
   "#how": {
    "screens": 1.46
@@ -118,6 +159,52 @@
    "moving": true,
    "broken": 0
   },
+  "syllabus": {
+   "tabs": [
+    "01 Foundation Sessions 1 to 3",
+    "02 Data & Discovery Sessions 4 to 7",
+    "03 Lifestyle Systems Sessions 8 to 13",
+    "04 Integration & Blueprint Sessions 14 to 18"
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "active": "1",
+     "sessions": 3,
+     "opened": true,
+     "bodyPx": 410,
+     "h3px": "22px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 2,
+     "active": "2",
+     "sessions": 4,
+     "opened": true,
+     "bodyPx": 439,
+     "h3px": "22px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 3,
+     "active": "3",
+     "sessions": 6,
+     "opened": true,
+     "bodyPx": 439,
+     "h3px": "22px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 4,
+     "active": "4",
+     "sessions": 5,
+     "opened": true,
+     "bodyPx": 410,
+     "h3px": "22px",
+     "flowPx": "19px"
+    }
+   ]
+  },
   "#julie": {
    "screens": 0.6
   },
@@ -125,10 +212,10 @@
    "screens": 1.37
   },
   "#cgm": {
-   "screens": 0.59
+   "screens": 0.76
   },
   "#syllabus": {
-   "screens": 1.68
+   "screens": 1.32
   },
   "#how": {
    "screens": 1.1

@@ -4,11 +4,7 @@
       "tracking": [],
       "blockedPosts": [],
       "errors": [],
-      "failed": [
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-screen-glucose.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-screen-graph.jpg",
-        "404 https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-screen-glucose.jpg"
-      ],
+      "failed": [],
       "heroVideo": [
         {
           "src": "cells-light.mp4",
@@ -23,14 +19,11 @@
           "w": 350
         }
       ],
-      "height": 18912,
+      "height": 19459,
       "vh": 664,
-      "screens": 28.5,
+      "screens": 29.3,
       "overflowX": 0,
-      "broken": [
-        "lingo-screen-glucose.jpg",
-        "lingo-screen-graph.jpg"
-      ],
+      "broken": [],
       "videosPlaying": 0,
       "videos": 12,
       "floater": "lla-float-cta is-visible",
@@ -55,9 +48,9 @@
           "w": 372
         }
       ],
-      "height": 18807,
+      "height": 19311,
       "vh": 839,
-      "screens": 22.4,
+      "screens": 23,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 0,
@@ -84,12 +77,12 @@
           "w": 280
         }
       ],
-      "height": 20381,
+      "height": 20963,
       "vh": 568,
-      "screens": 35.9,
+      "screens": 36.9,
       "overflowX": 0,
       "broken": [],
-      "videosPlaying": 1,
+      "videosPlaying": 5,
       "videos": 12,
       "floater": "lla-float-cta is-visible",
       "whatsapp": true
@@ -113,9 +106,9 @@
           "w": 560
         }
       ],
-      "height": 20905,
+      "height": 20722,
       "vh": 900,
-      "screens": 23.2,
+      "screens": 23,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 0,
