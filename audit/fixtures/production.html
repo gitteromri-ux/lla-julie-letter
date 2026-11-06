@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="mf">
+<html lang="en" class="js mf">
 <head>
 <!-- Meta identity bootstrap.
      The Pixel on this site is loaded by GTM, which initialises it with no user
@@ -12137,10 +12137,396 @@ html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card:is([data
 html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card[data-accent="4"]::before{background:linear-gradient(90deg,#2A5288,#9FD6FF 50%,#2A5288)!important}
 @media (min-width:901px){ html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card .value-title{font-size:28px!important} html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-card{padding:30px 26px 26px!important} }
 html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-header{text-align:center!important;margin-left:auto!important;margin-right:auto!important} html.mf body:not(#mf-x):not(#mf-t):not(#mf-v) section.value .value-header :is(.eyebrow,h2){text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+/* WhatsApp bubble is a 56px circle (round 30s); its "Available on WhatsApp" label spilled 90px off the right edge on desktop */
+html.mf body #et-bumpyard-widget .widget-trigger-btn .label{display:none!important}
 
 </style>
+<style id="pd-checkout">
+#enrollModal{--blue:#006EFF;--font:'Playfair Display', Georgia, 'Times New Roman', serif;--font-ui:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;--glow-blue:0 18px 44px -14px rgba(0,110,255,.7);--ink:#0B1B33;--ink-2:#29385A;--ink-3:#5B6B8C;--r-lg:30px;--r-md:22px;--r-sm:14px;--shadow-card:0 1px 0 rgba(255,255,255,.7) inset, 0 30px 70px -34px rgba(10,34,64,.4), 0 2px 8px -2px rgba(10,34,64,.08);--silver:#F3F6FB}
+#enrollModal .em-backdrop { background: rgba(3, 11, 30, 0.64); backdrop-filter: blur(10px); }
+#enrollModal .em-dialog { border-radius: var(--r-lg); padding: 34px 32px 30px; box-shadow: rgba(0, 0, 0, 0.6) 0px 60px 120px -40px, rgba(10, 34, 64, 0.06) 0px 0px 0px 1px, rgba(0, 110, 255, 0.5) 0px 0px 80px -20px; font-family: var(--font); font-style: italic; }
+#enrollModal .em-x { top: 16px; right: 18px; width: 36px; height: 36px; border-radius: 50%; background: var(--silver); color: var(--ink); font-size: 22px; display: flex; align-items: center; justify-content: center; }
+#enrollModal h2 { font-family: var(--font); font-style: italic; font-weight: 400; font-size: 34px; letter-spacing: -0.012em; color: var(--ink); margin-bottom: 24px; }
+#enrollModal h2 em { color: var(--blue); font-style: italic; font-weight: 400; }
+#enrollModal .em-lbl, #enrollModal .em-lb, #enrollModal .em-refund, #enrollModal .em-consent label, #enrollModal .em-cl, #enrollModal .em-cname, #enrollModal .em-band .b-l { font-family: var(--font); font-style: italic; font-weight: 400; }
+#enrollModal .em-lb { font-size: 15.5px; color: var(--ink); font-weight: 400; }
+#enrollModal .em-in { font-family: var(--font); font-style: italic; font-size: 17px; border-radius: var(--r-sm); border: 1px solid rgba(10, 34, 64, 0.16); padding: 15px 16px; box-shadow: rgba(10, 34, 64, 0.04) 0px 1px 2px inset; }
+#enrollModal .em-in:focus, #enrollModal select.em-in:focus { border-color: var(--blue); box-shadow: rgba(0, 110, 255, 0.14) 0px 0px 0px 4px; }
+#enrollModal .em-cc { border-radius: var(--r-sm); border: 1px solid rgba(10, 34, 64, 0.16); font-family: var(--font); font-style: italic; font-weight: 400; color: var(--ink); }
+#enrollModal .em-go { border-radius: 999px; padding: 18px; font-family: var(--font-ui); font-style: normal; font-weight: 700; font-size: 17px; background: linear-gradient(135deg, rgb(0, 110, 255), rgb(51, 139, 255)); box-shadow: inset 0 1px 0 rgba(255,255,255,.28), var(--glow-blue); }
+#enrollModal .em-go:hover { background: linear-gradient(135deg, rgb(0, 89, 214), rgb(46, 136, 255)); }
+#enrollModal .em-dot { font-family: var(--font-ui); font-style: normal; }
+#enrollModal .em-lbl { font-size: 14px; }
+#enrollModal .em-refund { font-size: 14.5px; color: var(--ink-3); }
+#enrollModal .em-consent label { font-size: 13px; color: var(--ink-3); }
+#enrollModal .em-card { border-radius: var(--r-md); border: 1px solid rgba(10, 34, 64, 0.1); box-shadow: var(--shadow-card); }
+#enrollModal .em-cname { color: var(--blue); font-size: 19px; font-weight: 400; }
+#enrollModal .em-cl { font-size: 15.5px; color: var(--ink-2); }
+#enrollModal .em-cl b { font-weight: 400; color: var(--ink); }
+#enrollModal .em-band { background: linear-gradient(170deg, rgb(11, 42, 91), rgb(6, 22, 51)); }
+#enrollModal .em-band .b-v { font-family: var(--font); font-style: italic; font-weight: 400; font-size: 19px; }
+#enrollModal .em-apply { border-radius: 999px; font-family: var(--font-ui); font-style: normal; font-weight: 700; font-size: 14.5px; border: 1.5px solid var(--blue); }
+#enrollModal .em-err { font-family: var(--font); font-style: italic; font-weight: 400; }
+@media (max-width: 520px){#enrollModal .em-dialog { border-radius: 22px; padding: 26px 20px 24px; }}
+#enrollModal .em-context { font: 500 13px / 1.5 Inter, sans-serif; color: rgb(90, 100, 114); margin: -6px 0px 14px; }
+#enrollModal .em-context i { display: inline-block; width: 1px; height: 10px; background: rgb(201, 210, 223); margin: 0px 7px; vertical-align: middle; }
+#enrollModal .em-context b { color: rgb(11, 27, 51); }
+#enrollModal .em-promo-msg { display: none; font-family: Inter, sans-serif; font-style: normal; font-size: 13.5px; font-weight: 600; line-height: 1.35; margin: -10px 0px 16px; }
+#enrollModal .em-promo-msg.err { display: block; color: rgb(200, 16, 46); }
+#enrollModal .em-promo-msg.ok { display: block; color: rgb(11, 122, 59); }
+#enrollModal .em-in.em-in-err { box-shadow: rgba(200, 16, 46, 0.12) 0px 0px 0px 2px; border-color: rgb(200, 16, 46) !important; }
+@media (max-width: 900px){body.lla-em-open #et-bumpyard-widget { padding: 0px 12px 10px !important; bottom: 0px !important; }}
+@media (max-width: 900px){body.lla-em-open #et-bumpyard-widget .widget-trigger-btn { padding: 10px !important; margin: 0px !important; }}
+@media (max-width: 900px){body.lla-em-open #et-bumpyard-widget .widget-trigger-btn img { height: 26px !important; width: 26px !important; }}
+@media (max-width: 900px){body.lla-em-open #enrollModal .em-dialog { margin: 12px 12px 0px !important; max-height: calc(100dvh - 90px) !important; }}
+body.lla-em-open #et-bumpyard-widget { display: none !important; }
+#enrollModal .em-dialog { background: linear-gradient(rgb(243, 247, 255) 0px, rgb(255, 255, 255) 150px) !important; }
+#enrollModal #emStep1 .em-refund, #enrollModal #emStep2 .em-secure, #enrollModal #emStep2 .em-refund { display: none !important; }
+#enrollModal .em-go { letter-spacing: 0.01em; background: linear-gradient(135deg, rgb(10, 108, 255) 0%, rgb(0, 71, 194) 100%) !important; box-shadow: rgba(0, 94, 255, 0.55) 0px 12px 30px -8px !important; }
+#enrollModal .em-go:hover { filter: brightness(1.06); }
+#enrollModal .pp-card.on { border-color: rgb(10, 46, 107) !important; background: linear-gradient(rgb(245, 249, 255), rgb(234, 242, 255)) !important; box-shadow: rgba(10, 46, 107, 0.12) 0px 0px 0px 3px !important; }
+#enrollModal .pp-card.on .pp-check { border-color: rgb(10, 46, 107) !important; background: rgb(10, 46, 107) !important; }
+#enrollModal .em-card { overflow: hidden; border-radius: 14px !important; }
+#enrollModal .pp-price small { display: block; font-weight: 600; opacity: 0.75; margin-top: 2px; font-size: 12.5px !important; }
+@media (min-width: 900px){#enrollModal .em-dialog { max-width: 840px !important; padding: 34px 40px 30px !important; }}
+@media (min-width: 900px){#enrollModal .em-steps { max-width: 520px; margin-left: auto !important; margin-right: auto !important; }}
+@media (min-width: 900px){#enrollModal #emStep1.on { grid-template-columns: 1fr 1fr; column-gap: 22px; align-items: start; display: grid !important; }}
+@media (min-width: 900px){#enrollModal #emStep1 > label[for="emName"] { grid-area: 1 / 1; }}
+@media (min-width: 900px){#enrollModal #emStep1 > #emName { grid-area: 2 / 1; }}
+@media (min-width: 900px){#enrollModal #emStep1 > label[for="emEmail"] { grid-area: 1 / 2; }}
+@media (min-width: 900px){#enrollModal #emStep1 > #emEmail { grid-area: 2 / 2; }}
+@media (min-width: 900px){#enrollModal #emStep1 > label[for="emPhone"] { grid-area: 3 / 1 / auto / -1; }}
+@media (min-width: 900px){#enrollModal #emStep1 > .em-phone { grid-area: 4 / 1; margin: 0px !important; }}
+@media (min-width: 900px){#enrollModal #emStep1 > .em-row { grid-area: 4 / 2; margin: 0px !important; }}
+@media (min-width: 900px){#enrollModal #emStep1 > #emErr, #enrollModal #emStep1 > .em-consent, #enrollModal #emStep1 > #emGo1 { grid-column: 1 / -1; }}
+@media (min-width: 900px){#enrollModal #emStep2.on { grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr); column-gap: 32px; align-items: start; display: grid !important; }}
+@media (min-width: 900px){#enrollModal #emStep2 > label[for="emDate"] { grid-area: 1 / 1; position: relative; z-index: 1; align-self: start; }}
+@media (min-width: 900px){#enrollModal #emStep2 > .dp { grid-area: 1 / 1 / span 30; padding-top: 40px; }}
+@media (min-width: 900px){#enrollModal #emStep2 > :not(label[for="emDate"]):not(.dp) { grid-column: 2; }}
+@media (min-width: 900px){#enrollModal #emStep2 > label.em-lb:not([for="emDate"]) { margin-top: 0px !important; }}
+@media (min-width: 900px){#enrollModal .mock-footer { display: flex; flex-direction: column; align-items: flex-end; }}
+@media (min-width: 900px){#enrollModal .mock-footer .em-go { max-width: 400px !important; }}
+@media (min-width: 900px){#enrollModal .mock-footer .mock-hint { min-width: 400px; max-width: 100%; width: auto !important; white-space: nowrap !important; overflow: visible !important; text-overflow: clip !important; font-size: 14.5px !important; }}
+@media (min-width: 900px){#enrollModal.lla-fixfoot .mock-footer { width: min(840px, 100% - 24px) !important; padding-left: 40px !important; padding-right: 40px !important; }}
+#enrollModal { position: fixed; inset: 0px; z-index: 9999; display: none; }
+#enrollModal.open { display: block; }
+#enrollModal .em-backdrop { position: absolute; inset: 0px; background: rgba(10, 18, 30, 0.45); }
+#enrollModal .em-dialog { position: relative; max-width: 430px; margin: 56px auto; background: rgb(255, 255, 255); border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.28) 0px 24px 70px; max-height: calc(-92px + 100vh); overflow-y: auto; padding: 26px 30px 30px; }
+#enrollModal .em-x { position: absolute; top: 14px; right: 16px; width: 28px; height: 28px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; background: none; cursor: pointer; font-size: 24px; line-height: 1; color: rgb(27, 42, 61); }
+#enrollModal .em-steps { display: flex; align-items: flex-start; justify-content: center; margin: 6px 0px 22px; }
+#enrollModal .em-st { display: flex; flex-direction: column; align-items: center; gap: 7px; width: 96px; }
+#enrollModal .em-dot { width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: rgb(255, 255, 255); border: 1.5px solid rgb(201, 210, 222); color: rgb(152, 163, 179); }
+#enrollModal .em-lbl { font-size: 13.5px; color: rgb(152, 163, 179); font-weight: 500; white-space: nowrap; }
+#enrollModal .em-st.active .em-dot, #enrollModal .em-st.done .em-dot { background: rgb(0, 110, 255); border-color: rgb(0, 110, 255); color: rgb(255, 255, 255); }
+#enrollModal .em-st.active .em-lbl, #enrollModal .em-st.done .em-lbl { color: rgb(17, 17, 17); font-weight: 600; }
+#enrollModal .em-bar { height: 1.5px; background: rgb(215, 222, 232); flex: 1 1 0%; margin-top: 13px; max-width: 56px; }
+#enrollModal .em-bar.done { background: rgb(0, 110, 255); }
+#enrollModal h2 { font-family: "Codec Pro", Inter, sans-serif; font-size: 24px; line-height: 1.22; font-weight: 800; letter-spacing: -0.5px; text-align: center; color: rgb(11, 27, 51); margin: 0px 0px 22px; }
+#enrollModal h2 em { font-style: normal; color: inherit; }
+#enrollModal .em-lb { display: block; font-size: 13.5px; font-weight: 700; color: rgb(11, 27, 51); margin-bottom: 7px; }
+#enrollModal .em-in { width: 100%; border: 1px solid rgb(213, 220, 230); border-radius: 6px; padding: 13px 14px; font-size: 14.5px; font-family: Inter, sans-serif; outline: none; margin-bottom: 17px; color: rgb(17, 17, 17); background: rgb(255, 255, 255); }
+#enrollModal .em-in::placeholder { color: rgb(169, 179, 193); }
+#enrollModal .em-in:focus, #enrollModal select.em-in:focus { border-color: rgb(0, 110, 255); }
+#enrollModal select.em-in { appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235A6472' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>"); background-repeat: no-repeat; background-position: right 13px center; padding-right: 38px; }
+#enrollModal .em-phone { display: flex; gap: 9px; margin-bottom: 17px; }
+#enrollModal .em-cc { display: flex; align-items: center; gap: 5px; border: 1px solid rgb(213, 220, 230); border-radius: 6px; padding: 0px 12px; font-size: 14.5px; font-weight: 600; color: rgb(0, 110, 255); background: rgb(255, 255, 255); flex: 0 0 auto; }
+#enrollModal .em-cc span { font-size: 15px; }
+#enrollModal .em-phone .em-in { margin-bottom: 0px; }
+#enrollModal .em-go { width: 100%; background: rgb(0, 110, 255); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; padding: 14px; font-family: Inter, sans-serif; font-weight: 700; font-size: 15.5px; cursor: pointer; transition: 0.15s; }
+#enrollModal .em-go:hover { background: rgb(0, 89, 214); }
+#enrollModal .em-refund { text-align: center; font-size: 12.5px; color: rgb(90, 100, 114); margin-top: 12px; }
+#enrollModal .em-consent { display: flex; gap: 9px; align-items: flex-start; margin-top: 16px; }
+#enrollModal .em-consent input { width: 16px; height: 16px; accent-color: rgb(0, 110, 255); margin-top: 2px; flex: 0 0 auto; }
+#enrollModal .em-consent label { font-size: 12px; color: rgb(90, 100, 114); line-height: 1.5; }
+#enrollModal .em-card { border: 1px solid rgb(227, 231, 238); border-radius: 7px; overflow: hidden; margin-bottom: 20px; }
+#enrollModal .em-card-b { padding: 15px 17px; }
+#enrollModal .em-cname { color: rgb(226, 87, 30); font-weight: 700; font-size: 14.5px; margin-bottom: 9px; }
+#enrollModal .em-cl { font-size: 13.5px; color: rgb(42, 47, 54); margin-bottom: 5px; }
+#enrollModal .em-cl b { color: rgb(17, 17, 17); font-weight: 700; }
+#enrollModal .em-cl.gap { margin-top: 12px; margin-bottom: 0px; }
+#enrollModal .em-band { background: rgb(18, 53, 91); color: rgb(255, 255, 255); padding: 14px 17px; display: flex; align-items: center; gap: 11px; }
+#enrollModal .em-band .b-l { font-size: 13px; font-weight: 600; opacity: 0.92; margin-bottom: 2px; }
+#enrollModal .em-band .b-v { font-family: "Codec Pro", Inter, sans-serif; font-weight: 800; font-size: 16.5px; }
+#enrollModal .em-promo { display: flex; gap: 10px; margin-bottom: 20px; }
+#enrollModal .em-promo .em-in { margin-bottom: 0px; }
+#enrollModal .em-apply { padding: 0px 22px; border: 1.5px solid rgb(0, 110, 255); background: rgb(255, 255, 255); color: rgb(0, 110, 255); border-radius: 6px; font-weight: 700; font-size: 14.5px; cursor: pointer; font-family: Inter, sans-serif; flex: 0 0 auto; }
+#enrollModal .em-apply:hover { background: rgb(232, 241, 255); }
+#enrollModal .em-screen { display: none; }
+#enrollModal .em-screen.on { display: block; }
+#enrollModal .em-err { display: none; color: rgb(217, 48, 37); font-size: 13px; font-weight: 600; margin: -9px 0px 13px; }
+#enrollModal .em-err.on { display: block; }
+#enrollModal .em-go[disabled] { opacity: 0.6; cursor: default; }
+@media (max-width: 520px){#enrollModal .em-dialog { margin: 16px 12px; padding: 24px 20px 26px; max-height: calc(-32px + 100vh); }}
+@media (max-width: 520px){#enrollModal .em-st { width: 82px; }}
+@media (max-width: 520px){#enrollModal .em-lbl { font-size: 12px; }}
+#enrollModal .em-backdrop { background: rgba(3, 11, 30, 0.64); backdrop-filter: blur(10px); }
+#enrollModal .em-dialog { border-radius: var(--r-lg); padding: 34px 32px 30px; box-shadow: rgba(0, 0, 0, 0.6) 0px 60px 120px -40px, rgba(10, 34, 64, 0.06) 0px 0px 0px 1px, rgba(0, 110, 255, 0.5) 0px 0px 80px -20px; font-family: var(--font); font-style: italic; }
+#enrollModal .em-x { top: 16px; right: 18px; width: 36px; height: 36px; border-radius: 50%; background: var(--silver); color: var(--ink); font-size: 22px; display: flex; align-items: center; justify-content: center; }
+#enrollModal h2 { font-family: var(--font); font-style: italic; font-weight: 400; font-size: 34px; letter-spacing: -0.012em; color: var(--ink); margin-bottom: 24px; }
+#enrollModal h2 em { color: var(--blue); font-style: italic; font-weight: 400; }
+#enrollModal .em-lbl, #enrollModal .em-lb, #enrollModal .em-refund, #enrollModal .em-consent label, #enrollModal .em-cl, #enrollModal .em-cname, #enrollModal .em-band .b-l { font-family: var(--font); font-style: italic; font-weight: 400; }
+#enrollModal .em-lb { font-size: 15.5px; color: var(--ink); font-weight: 400; }
+#enrollModal .em-in { font-family: var(--font); font-style: italic; font-size: 17px; border-radius: var(--r-sm); border: 1px solid rgba(10, 34, 64, 0.16); padding: 15px 16px; box-shadow: rgba(10, 34, 64, 0.04) 0px 1px 2px inset; }
+#enrollModal .em-in:focus, #enrollModal select.em-in:focus { border-color: var(--blue); box-shadow: rgba(0, 110, 255, 0.14) 0px 0px 0px 4px; }
+#enrollModal .em-cc { border-radius: var(--r-sm); border: 1px solid rgba(10, 34, 64, 0.16); font-family: var(--font); font-style: italic; font-weight: 400; color: var(--ink); }
+#enrollModal .em-go { border-radius: 999px; padding: 18px; font-family: var(--font-ui); font-style: normal; font-weight: 700; font-size: 17px; background: linear-gradient(135deg, rgb(0, 110, 255), rgb(51, 139, 255)); box-shadow: inset 0 1px 0 rgba(255,255,255,.28), var(--glow-blue); }
+#enrollModal .em-go:hover { background: linear-gradient(135deg, rgb(0, 89, 214), rgb(46, 136, 255)); }
+#enrollModal .em-dot { font-family: var(--font-ui); font-style: normal; }
+#enrollModal .em-lbl { font-size: 14px; }
+#enrollModal .em-refund { font-size: 14.5px; color: var(--ink-3); }
+#enrollModal label[for="emDate"], #enrollModal .em-tz, #enrollModal .dp { font-family: Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-style: normal; }
+#enrollModal .em-tz { font-size: 13px; color: rgb(90, 100, 114); margin: -4px 0px 12px; line-height: 1.45; }
+#enrollModal .dp-native { left: 0px; top: 0px; width: 1px; height: 1px; opacity: 0; pointer-events: none; margin: 0px; padding: 0px; border: 0px; overflow: hidden; position: absolute !important; }
+#enrollModal .dp { margin-bottom: 18px; position: relative; overflow: hidden; max-width: 100%; }
+#enrollModal .dp-tabs { display: flex; gap: 6px; background: rgb(238, 242, 247); border-radius: 10px; padding: 4px; margin-bottom: 10px; }
+#enrollModal .dp-tab { flex: 1 1 0%; border: 0px; background: transparent; border-radius: 8px; padding: 9px 0px; font: 600 13.5px / 1 Inter, sans-serif; color: rgb(90, 100, 114); cursor: pointer; letter-spacing: 0.01em; transition: 0.15s; }
+#enrollModal .dp-tab.on { background: rgb(255, 255, 255); color: rgb(11, 27, 51); box-shadow: rgba(10, 34, 64, 0.12) 0px 1px 3px; }
+#enrollModal .dp-list { display: grid; gap: 8px; }
+#enrollModal .dp-card { position: relative; display: grid; grid-template-columns: 70px 1fr 22px; grid-auto-flow: dense; align-items: center; gap: 12px; width: 100%; min-width: 0px; box-sizing: border-box; text-align: left; background: rgb(255, 255, 255); border: 1.5px solid rgb(221, 227, 236); border-radius: 12px; padding: 11px 14px; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; font-family: Inter, sans-serif; }
+#enrollModal .dp-card:hover { border-color: rgb(157, 187, 255); background: rgb(247, 250, 255); }
+#enrollModal .dp-card.on { border-color: rgb(30, 107, 255); background: rgb(242, 247, 255); box-shadow: rgba(30, 107, 255, 0.14) 0px 0px 0px 3px; }
+#enrollModal .dp-date { display: flex; flex-direction: column; line-height: 1.1; }
+#enrollModal .dp-wd { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(90, 100, 114); }
+#enrollModal .dp-day { font-size: 15.5px; font-weight: 700; color: rgb(11, 27, 51); margin-top: 3px; white-space: nowrap; }
+#enrollModal .dp-times { display: flex; flex-direction: column; min-width: 0px; line-height: 1.2; border-left: 1px solid rgb(227, 232, 240); padding-left: 12px; }
+#enrollModal .dp-et { font-size: 15px; font-weight: 600; color: rgb(11, 27, 51); white-space: nowrap; }
+#enrollModal .dp-et small { font-size: 12.5px; font-weight: 600; color: rgb(30, 107, 255); letter-spacing: 0px; margin-left: 3px; }
+#enrollModal .dp-alt { font-size: 12px; color: rgb(107, 118, 132); margin-top: 3px; white-space: nowrap; overflow: visible; }
+#enrollModal .dp-tag { display: none; font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(90, 100, 114); background: rgb(240, 243, 248); border-radius: 6px; padding: 4px 7px; white-space: nowrap; }
+#enrollModal .dp-card.on .dp-tag { color: rgb(30, 107, 255); background: rgb(227, 237, 255); }
+#enrollModal .dp-check { width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid rgb(201, 210, 223); background: rgb(255, 255, 255); position: relative; }
+#enrollModal .dp-card.on .dp-check { border-color: rgb(30, 107, 255); background: rgb(30, 107, 255); }
+#enrollModal .dp-late { grid-column: 1 / span 2; font-size: 11px; font-weight: 600; color: rgb(138, 90, 0); background: rgb(255, 244, 219); border-radius: 6px; padding: 3px 8px; justify-self: start; margin-top: -2px; }
+#enrollModal .dp-seats { grid-column: 1 / span 2; font-size: 11px; font-weight: 700; color: rgb(179, 38, 30); background: rgb(253, 232, 230); border-radius: 6px; padding: 3px 8px; justify-self: start; margin-top: -2px; letter-spacing: 0.01em; }
+#enrollModal .pp { display: grid; gap: 8px; margin-bottom: 18px; font-family: Inter, sans-serif; }
+#enrollModal .pp-card { position: relative; display: block; width: 100%; text-align: left; background: rgb(255, 255, 255); border: 1.5px solid rgb(221, 227, 236); border-radius: 12px; padding: 12px 44px 12px 14px; cursor: pointer; font-family: Inter, sans-serif; font-style: normal; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; }
+#enrollModal .pp-card:hover { border-color: rgb(157, 187, 255); background: rgb(247, 250, 255); }
+#enrollModal .pp-card.on { border-color: rgb(30, 107, 255); background: rgb(242, 247, 255); box-shadow: rgba(30, 107, 255, 0.14) 0px 0px 0px 3px; }
+#enrollModal .pp-name { display: flex; align-items: center; gap: 8px; font-size: 14.5px; font-weight: 700; color: rgb(11, 27, 51); }
+#enrollModal .pp-tag { font-style: normal; font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(11, 107, 58); background: rgb(221, 247, 232); border-radius: 6px; padding: 3px 7px; }
+#enrollModal .pp-price { display: block; font-size: 22px; font-weight: 800; color: rgb(11, 27, 51); margin: 4px 0px 2px; letter-spacing: -0.01em; }
+#enrollModal .pp-price small { font-size: 12.5px; font-weight: 600; color: rgb(90, 100, 114); }
+#enrollModal .pp-sub { display: block; font-size: 12.5px; color: rgb(90, 100, 114); line-height: 1.4; }
+#enrollModal .pp-check { position: absolute; top: 50%; right: 14px; transform: translateY(-50%); width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid rgb(201, 210, 223); background: rgb(255, 255, 255); }
+#enrollModal .pp-card.on .pp-check { border-color: rgb(30, 107, 255); background: rgb(30, 107, 255); }
+#enrollModal .pp-card.on .pp-check::after { content: ""; position: absolute; left: 6px; top: 2.5px; width: 5px; height: 10px; border-style: solid; border-color: rgb(255, 255, 255); border-image: none; border-width: 0px 2px 2px 0px; transform: rotate(45deg); }
+#enrollModal .dp-card.on .dp-check::after { content: ""; position: absolute; left: 6px; top: 2.5px; width: 5px; height: 10px; border-style: solid; border-color: rgb(255, 255, 255); border-image: none; border-width: 0px 2px 2px 0px; transform: rotate(45deg); }
+#enrollModal #emTimeVal { color: rgb(122, 132, 148); }
+#enrollModal #emTimeVal.on { color: rgb(11, 27, 51); }
+@media (max-width: 420px){#enrollModal .dp-card { grid-template-columns: 64px 1fr 22px; gap: 10px; padding: 10px 12px; }}
+@media (max-width: 420px){#enrollModal .dp-tag { display: none; }}
+@media (max-width: 420px){#enrollModal .dp-day { font-size: 14.5px; }}
+@media (max-width: 420px){#enrollModal .dp-et { font-size: 14.5px; }}
+#enrollModal .em-consent label { font-size: 13px; color: var(--ink-3); }
+#enrollModal .em-card { border-radius: var(--r-md); border: 1px solid rgba(10, 34, 64, 0.1); box-shadow: var(--shadow-card); }
+#enrollModal .em-cname { color: var(--blue); font-size: 19px; font-weight: 400; }
+#enrollModal .em-cl { font-size: 15.5px; color: var(--ink-2); }
+#enrollModal .em-cl b { font-weight: 400; color: var(--ink); }
+#enrollModal .em-band { background: linear-gradient(170deg, rgb(11, 42, 91), rgb(6, 22, 51)); }
+#enrollModal .em-band .b-v { font-family: var(--font); font-style: italic; font-weight: 400; font-size: 19px; }
+#enrollModal .em-apply { border-radius: 999px; font-family: var(--font-ui); font-style: normal; font-weight: 700; font-size: 14.5px; border: 1.5px solid var(--blue); }
+#enrollModal .em-err { font-family: var(--font); font-style: italic; font-weight: 400; }
+@media (max-width: 520px){#enrollModal .em-dialog { border-radius: 22px; padding: 26px 20px 24px; }}
+#enrollModal .em-h2-sober { font-family: "Playfair Display", Georgia, serif; font-style: normal; font-weight: 500; font-size: 26px; line-height: 1.25; letter-spacing: -0.01em; color: rgb(11, 27, 51); text-align: center; margin: 4px 0px 22px; }
+#enrollModal .em-select { appearance: menulist; height: 52px; font-size: 16px; font-weight: 500; color: rgb(11, 27, 51); background: rgb(255, 255, 255); border: 1px solid rgb(201, 211, 224); border-radius: 8px; padding: 0px 14px; width: 100%; }
+#enrollModal .em-card { border: 1px solid rgb(223, 230, 239); border-radius: 10px; overflow: hidden; margin-top: 18px; background: rgb(255, 255, 255); }
+#enrollModal .em-card-b { padding: 18px 20px; }
+#enrollModal .em-cname { font-size: 18px; font-weight: 700; color: rgb(11, 27, 51); margin-bottom: 10px; }
+#enrollModal .em-cl { font-size: 15px; line-height: 1.55; color: rgb(43, 54, 72); }
+#enrollModal .em-cl b { color: rgb(11, 27, 51); font-weight: 600; }
+#enrollModal .em-band { background: rgb(15, 42, 85); color: rgb(255, 255, 255); padding: 16px 20px; display: flex; gap: 14px; align-items: center; }
+#enrollModal .em-band .b-l { font-size: 13px; opacity: 0.85; margin-bottom: 2px; }
+#enrollModal .em-band .b-v { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+#enrollModal .em-band .b-v small { font-size: 14px; font-weight: 500; opacity: 0.9; margin-left: 4px; }
+#enrollModal .pp { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+#enrollModal .pp-card { border: 1px solid rgb(201, 211, 224); border-radius: 8px; padding: 12px 14px; background: rgb(255, 255, 255); text-align: left; display: grid; gap: 2px; position: relative; }
+#enrollModal .pp-card.on { border-color: rgb(11, 94, 215); box-shadow: rgba(11, 94, 215, 0.15) 0px 0px 0px 2px; }
+#enrollModal .pp-name { font-size: 14px; font-weight: 600; color: rgb(11, 27, 51); }
+#enrollModal .pp-price { font-size: 20px; font-weight: 700; color: rgb(11, 27, 51); }
+#enrollModal .pp-price small { font-size: 13px; font-weight: 500; color: rgb(90, 100, 114); }
+#enrollModal .pp-sub { font-size: 13px; color: rgb(90, 100, 114); }
+#enrollModal .pp-tag { display: none; }
+#enrollModal .em-secure { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 13px; font-weight: 600; color: rgb(43, 54, 72); margin: 12px 0px 4px; }
+#enrollModal .em-refund { font-size: 13px; color: rgb(90, 100, 114); text-align: center; line-height: 1.5; }
+#enrollModal .em-refund a { color: rgb(11, 94, 215); text-decoration: underline; }
+#enrollModal .em-lb { font-size: 14px; font-weight: 600; color: rgb(11, 27, 51); margin: 16px 0px 6px; display: block; }
+#enrollModal .em-tz { display: none; }
+#enrollModal .em-card, #enrollModal .em-card *, #enrollModal .pp, #enrollModal .pp *, #enrollModal .em-lb, #enrollModal .em-promo, #enrollModal .em-promo *, #enrollModal .em-promo-msg, #enrollModal .em-secure, #enrollModal .em-refund, #enrollModal .dp, #enrollModal .dp *, #enrollModal .em-err, #enrollModal .em-go, #enrollModal .em-in, #enrollModal .em-consent, #enrollModal .em-consent * { font-family: Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important; font-style: normal !important; letter-spacing: 0px !important; }
+#enrollModal .em-in { font-size: 16px; font-weight: 500; color: rgb(11, 27, 51); }
+#enrollModal .em-go { font-size: 16px; font-weight: 700; border-radius: 8px; }
+#enrollModal .em-h2-sober { font-family: "Playfair Display", Georgia, serif !important; }
+#enrollModal .dp-tab { font-size: 14px; font-weight: 600; }
+#enrollModal .dp-card { border: 1px solid rgb(201, 211, 224); border-radius: 8px; background: rgb(255, 255, 255); }
+#enrollModal .dp-card.on { border-color: rgb(11, 94, 215); box-shadow: rgba(11, 94, 215, 0.15) 0px 0px 0px 2px; }
+#enrollModal .dp-card:disabled { cursor: default; background: rgb(245, 246, 248); border-color: rgb(221, 227, 236); color: rgb(82, 96, 117); }
+#enrollModal .dp-card:disabled .dp-check { visibility: hidden; }
+#enrollModal .dp-wd, #enrollModal .dp-day { font-weight: 700; color: rgb(11, 27, 51); }
+#enrollModal .dp-et { font-weight: 600; color: rgb(11, 27, 51); }
+#enrollModal .dp-et small { font-weight: 500; color: rgb(90, 100, 114); }
+#enrollModal .dp-alt { color: rgb(90, 100, 114); font-size: 12.5px; }
+#enrollModal .dp-late { background: rgb(255, 244, 214); color: rgb(122, 82, 0); font-weight: 600; border-radius: 4px; padding: 2px 8px; font-size: 12px; }
+#enrollModal .dp-seats { background: rgb(255, 233, 233); color: rgb(161, 27, 27); font-weight: 700; border-radius: 4px; padding: 2px 8px; font-size: 12px; }
+@media (max-width: 600px){#enrollModal .pp { grid-template-columns: 1fr; }}
+@media (max-width: 600px){#enrollModal .em-h2-sober { font-size: 22px; }}
+#enrollModal .em-dialog { display: flex; flex-direction: column; padding-bottom: 0px !important; }
+#enrollModal .em-h2-sober { font-size: 30px !important; line-height: 1.12 !important; }
+#enrollModal .em-lb { font-family: var(--font-ui,Inter,sans-serif); font-size: 17px !important; font-weight: 700 !important; margin-bottom: 9px !important; }
+#enrollModal .em-in { font-size: 18px !important; padding: 16px !important; }
+#enrollModal .dp-card { padding: 14px !important; }
+#enrollModal .dp-card .dp-wd { font-size: 14px !important; }
+#enrollModal .dp-card .dp-day { font-size: 22px !important; }
+#enrollModal .dp-card .dp-time, #enrollModal .dp-card .dp-main { font-size: 18px !important; font-weight: 700 !important; }
+#enrollModal .dp-card .dp-alt { font-size: 15px !important; }
+#enrollModal .dp-card .dp-seats, #enrollModal .dp-card .dp-late { font-size: 14px !important; padding: 4px 10px !important; }
+#enrollModal .dp-tab { font-size: 17px !important; padding: 12px 14px !important; }
+#enrollModal .pp-name { font-size: 18px !important; }
+#enrollModal .pp-price { font-size: 22px !important; }
+#enrollModal .pp-total { font-size: 16px !important; }
+#enrollModal .em-go { font-size: 19px !important; padding: 19px !important; }
+#enrollModal .mock-footer { position: sticky; bottom: 0px; margin: auto -32px 0px; padding: 12px 18px calc(12px + env(safe-area-inset-bottom)); background: rgb(255, 255, 255); border-top: 1px solid rgb(227, 232, 240); z-index: 20; border-radius: 0px 0px 22px 22px; }
+@media (max-width: 520px){#enrollModal .mock-footer { margin-left: -20px; margin-right: -20px; }}
+#enrollModal .mock-footer .em-go { margin: 0px; width: 100%; }
+#enrollModal .mock-footer .mock-hint { margin: 10px 0px 0px; display: flex; align-items: center; justify-content: center; gap: 8px; font-family: Inter, sans-serif; font-style: normal; font-size: 15px; color: rgb(59, 74, 99); }
+#enrollModal .mock-footer .mock-hint b { color: rgb(11, 27, 51); font-weight: 800; }
+#enrollModal:has(#emStep2.on) #emGo1 { display: none; }
+#enrollModal:has(#emStep1.on) #emGo2 { display: none; }
+#enrollModal .dp-card:has(.dp-late) { display: none; }
+#enrollModal .em-screen { padding-bottom: 18px; }
+#enrollModal .em-promo-msg { display: none !important; }
+#enrollModal .mock-promo-lb { display: block; padding: 14px 16px; border-radius: 12px; background: rgb(242, 247, 255); border: 1px solid rgb(207, 224, 255); font-family: Inter, sans-serif; font-style: normal; margin: 22px 0px 10px !important; }
+#enrollModal .mock-promo-lb .t { display: block; font-size: 17px; font-weight: 800; color: rgb(11, 27, 51); letter-spacing: -0.01em; margin-bottom: 4px; }
+#enrollModal .mock-promo-lb .d { display: block; font-size: 15px; font-weight: 500; line-height: 1.45; color: rgb(59, 74, 99); }
+#enrollModal .mock-promo-lb .d b { color: rgb(11, 27, 51); font-weight: 700; }
+#enrollModal .mock-promo-lb .cd { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 12px; font-size: 15px; color: rgb(11, 27, 51); }
+#enrollModal .mock-promo-lb .cd b { font-family: Inter, sans-serif; font-weight: 800; letter-spacing: 0.04em; background: rgb(255, 255, 255); border: 1px dashed rgb(10, 108, 255); border-radius: 8px; padding: 6px 10px; color: rgb(10, 108, 255); }
+#enrollModal .mock-promo-lb .cd-apply { appearance: none; border: 0px; border-radius: 999px; background: rgb(10, 108, 255); color: rgb(255, 255, 255); font: 700 14.5px Inter, sans-serif; padding: 9px 16px; cursor: pointer; }
+#enrollModal .mock-promo-lb .cd-apply:hover { background: rgb(0, 71, 194); }
+#enrollModal .mock-promo-lb .cd-until { font-size: 14px; color: rgb(59, 74, 99); font-weight: 500; }
+#enrollModal .mock-promo-lb.applied .cd { display: none; }
+#enrollModal .em-promo .em-in { margin-bottom: 0px !important; }
+#enrollModal .em-apply { font-size: 16px !important; font-weight: 800 !important; padding: 0px 18px !important; }
+#enrollModal .em-sum { display: none; margin: 16px 0px 0px; padding: 16px 18px 14px; border: 1px solid rgb(221, 227, 236); border-radius: 12px; background: rgb(255, 255, 255); font-family: Inter, sans-serif; font-style: normal; color: rgb(11, 27, 51); }
+#enrollModal .em-sum .h { font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(11, 27, 51); margin: 0px 0px 10px; text-transform: uppercase; }
+#enrollModal .em-sum .row { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; font-size: 16px; line-height: 1.35; padding: 6px 0px; }
+#enrollModal .em-sum .row span { flex: 1 1 auto; }
+#enrollModal .em-sum .row b, #enrollModal .em-sum .row s { flex: 0 0 auto; }
+#enrollModal .em-sum .row span { color: rgb(59, 74, 99); }
+#enrollModal .em-sum .row b { font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+#enrollModal .em-sum .row s { color: rgb(122, 134, 153); white-space: nowrap; }
+#enrollModal .em-sum .row.promo span, #enrollModal .em-sum .row.promo b { color: rgb(6, 118, 71); font-weight: 600; }
+#enrollModal .em-sum hr { border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(227, 232, 240) currentcolor currentcolor; border-image: none; margin: 8px 0px; }
+#enrollModal .em-sum .row.total { font-size: 18px; padding-top: 8px; }
+#enrollModal .em-sum .row.total span { color: rgb(11, 27, 51); font-weight: 700; }
+#enrollModal .em-sum .row.total b { font-weight: 800; font-size: 20px; }
+#enrollModal .em-sum .note { margin: 10px 0px 0px; font-size: 14.5px; line-height: 1.5; color: rgb(59, 74, 99); }
+#enrollModal .em-sum .note b { color: rgb(11, 27, 51); font-weight: 600; }
+#enrollModal .em-sum { padding: 18px 18px 12px; border-color: rgb(213, 222, 236); box-shadow: rgba(10, 20, 40, 0.35) 0px 8px 24px -18px; }
+#enrollModal .em-sum .h { font-size: 13px; color: rgb(0, 110, 255); margin-bottom: 8px; }
+#enrollModal .em-sum .row { padding: 10px 0px; border-bottom: 1px solid rgb(238, 242, 247); align-items: flex-start; }
+#enrollModal .em-sum .row span { font-size: 16px; font-weight: 600; color: rgb(11, 27, 51); }
+#enrollModal .em-sum .row span small { display: block; font-size: 13.5px; font-weight: 500; color: rgb(91, 107, 132); margin-top: 2px; }
+#enrollModal .em-sum .row b { font-size: 17px; font-weight: 700; color: rgb(11, 27, 51); }
+#enrollModal .em-sum hr { display: none; }
+#enrollModal .em-sum .row.total { border-bottom: 0px; padding-top: 12px; }
+#enrollModal .em-sum .row.total span { font-size: 17px; font-weight: 800; }
+#enrollModal .em-sum .row.total b { font-size: 24px; font-weight: 800; color: rgb(0, 110, 255); }
+#enrollModal .em-sum .row.pay { border-bottom: 0px; padding-top: 0px; }
+#enrollModal .em-sum .row.pay span { font-weight: 600; color: rgb(59, 74, 99); }
+#enrollModal .em-sum .row.pay b { font-size: 16px; font-weight: 700; }
+#enrollModal .em-sum .promo-rows { display: none; }
+#enrollModal .em-sum.applied .promo-rows { display: block; }
+#enrollModal .em-sum.applied { display: block; }
+#enrollModal.lla-pl-upfront #emSum.applied, #enrollModal.lla-pl-upfront label[for="emPromo"].mock-promo-lb { display: none !important; }
+#enrollModal:not(.lla-pl-upfront) #emSumUp, #enrollModal:not(.lla-pl-upfront) #mockPromoLbUp { display: none !important; }
+#enrollModal .em-sum.applied .pre { display: none; }
+#enrollModal .em-sum .hero { display: flex; align-items: baseline; gap: 10px; padding: 4px 0px 12px; border-bottom: 1px solid rgb(238, 242, 247); margin-bottom: 2px; }
+#enrollModal .em-sum .hero .big { font-family: Inter, sans-serif; font-weight: 800; font-size: 44px; line-height: 1; color: rgb(0, 110, 255); letter-spacing: -0.03em; }
+#enrollModal .em-sum .hero .per { font-size: 17px; font-weight: 700; color: rgb(11, 27, 51); }
+#enrollModal .em-sum .hero s { font-size: 18px; color: rgb(122, 134, 153); font-weight: 500; margin-left: auto; }
+#enrollModal .em-sum .row.total b { color: rgb(6, 118, 71); }
+#enrollModal .lla-jp-line { display: none !important; }
+html body .pdp-cine-cta, html body .section-cta-btn, html body .fn-plan-cta, html body #enrollModal .em-go, html body #mockBar a, html body .lla-vip .lla-vip-cta, html body .lla-vip a.lla-vip-cta, html body #cohortBar a { background: none rgb(0, 110, 255) !important; color: rgb(255, 255, 255) !important; border-radius: 14px !important; font-family: Inter, sans-serif !important; font-weight: 700 !important; letter-spacing: -0.01em !important; box-shadow: rgba(0, 110, 255, 0.8) 0px 12px 28px -14px !important; text-transform: none !important; border: 0px !important; }
+html body .pdp-cine-cta:hover, html body .section-cta-btn:hover, html body .fn-plan-cta:hover, html body #enrollModal .em-go:hover, html body #mockBar a:hover { background: rgb(10, 95, 217) !important; }
+#enrollModal .mock-footer .mock-hint { overflow: hidden; text-overflow: ellipsis; text-align: center; display: block !important; white-space: nowrap !important; font-size: clamp(12.5px, 3.6vw, 15px) !important; margin-top: 9px !important; }
+#enrollModal .mock-footer .mock-hint svg { vertical-align: -3px; margin-right: 4px; }
+#enrollModal .em-go.lla-hide { display: none !important; }
+#enrollModal .dp-card.lla-hide { display: none !important; }
+@supports (-webkit-touch-callout:none){#enrollModal .em-dialog { }}
+#enrollModal .em-dialog { display: block !important; min-height: 0px !important; }
+#enrollModal.lla-fixfoot .em-dialog { padding-bottom: 132px !important; }
+#enrollModal.lla-fixfoot .mock-footer { box-shadow: rgba(0, 0, 0, 0.18) 0px -8px 30px; position: fixed !important; left: 12px !important; right: 12px !important; bottom: 0px !important; margin: 0px !important; border-radius: 16px 16px 0px 0px !important; }
+@media (min-width: 521px){#enrollModal.lla-fixfoot .mock-footer { width: 430px; transform: translateX(-50%); left: 50% !important; right: auto !important; }}
+#enrollModal:has(#emStep2.on) .mock-footer, #enrollModal.lla-s2 .mock-footer { position: static !important; left: auto !important; right: auto !important; bottom: auto !important; width: auto !important; transform: none !important; margin: 14px 0px 0px !important; padding: 0px !important; border-top: 0px !important; box-shadow: none !important; border-radius: 0px !important; }
+#enrollModal:has(#emStep2.on) .em-dialog, #enrollModal.lla-s2 .em-dialog { padding-bottom: 24px !important; }
+#enrollModal.lla-kb-open .em-steps, #enrollModal.lla-kb-open #emTitle, #enrollModal.lla-kb-open .mock-footer .em-refund, #enrollModal.lla-kb-open .mock-footer p, #enrollModal.lla-kb-open .mock-footer small { display: none !important; }
+#enrollModal.lla-kb-open .mock-footer { padding: 10px 12px !important; }
+#enrollModal.lla-kb-open .mock-footer .em-go { min-height: 46px !important; height: 46px !important; padding: 0px 14px !important; font-size: 17px !important; }
+html body#lpRoot #enrollModal #pp, html body#lpRoot #enrollModal .pp-card[data-pl="upfront"], html body#lpRoot #enrollModal .r15-pp-lb { display: none !important; }
+html body#lpRoot #enrollModal .em-dialog .mock-footer, html body#lpRoot.lla-em-open #enrollModal .em-dialog .mock-footer { position: static !important; inset: auto !important; transform: none !important; margin: 14px 0px 0px !important; padding: 0px !important; border: 0px !important; box-shadow: none !important; background: transparent !important; width: auto !important; max-width: none !important; transition: none !important; animation: auto ease 0s 1 normal none running none !important; }
+html body#lpRoot #enrollModal .mock-footer #emGo1, html body#lpRoot #enrollModal .mock-footer #emGo2 { display: block !important; width: 100% !important; min-height: 56px !important; height: 56px !important; box-sizing: border-box !important; margin: 0px !important; }
+html body#lpRoot #enrollModal .mock-footer .mock-hint { margin: 10px 0px 0px !important; }
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-dialog, html body#lpRoot.lla-em-open #enrollModal .em-dialog { position: fixed !important; inset: 0px !important; width: 100% !important; max-width: none !important; height: 100% !important; max-height: none !important; min-height: 0px !important; margin: 0px !important; border-radius: 0px !important; border: 0px !important; padding: 0 20px calc(28px + env(safe-area-inset-bottom)) !important; overflow: hidden auto !important; transition: none !important; animation: auto ease 0s 1 normal none running none !important; transform: none !important; box-shadow: none !important; box-sizing: border-box !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-dialog .em-x, html body#lpRoot.lla-em-open #enrollModal .em-dialog .em-x { position: fixed !important; top: 12px !important; right: 12px !important; left: auto !important; z-index: 6 !important; width: 40px !important; height: 40px !important; border-radius: 50% !important; background: rgb(255, 255, 255) !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px !important; display: flex !important; align-items: center !important; justify-content: center !important; margin: 0px !important; padding: 0px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-dialog .em-steps, html body#lpRoot.lla-em-open #enrollModal .em-dialog .em-steps { position: sticky !important; top: 0px !important; background: rgb(255, 255, 255) !important; z-index: 5 !important; padding: 14px 0px 10px !important; margin: 0px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal #emTitle { font-size: 22px !important; line-height: 1.2 !important; margin: 6px 0px 12px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal #dpList { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-card { display: flex !important; flex-direction: column !important; align-items: flex-start !important; gap: 2px !important; padding: 10px 8px !important; min-height: 0px !important; height: auto !important; position: relative !important; width: auto !important; text-align: left !important; min-width: 0px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-date { display: flex !important; flex-direction: row !important; align-items: baseline !important; gap: 6px !important; margin: 0px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-wd { font-size: 12px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-day { font-size: 18px !important; line-height: 1.1 !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-times { border: 0px !important; padding: 0px !important; margin: 0px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-et { font-size: 13.5px !important; white-space: nowrap !important; letter-spacing: -0.2px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-et small { font-size: 13.5px !important; margin-left: 2px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal #dpTabs { margin-bottom: 8px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-tab { padding: 8px 10px !important; font-size: 15px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-steps { padding-right: 52px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-alt { display: block !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-check { position: absolute !important; top: 10px !important; right: 10px !important; width: 18px !important; height: 18px !important; margin: 0px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-seats, html body#lpRoot #enrollModal .dp-late { font-size: 11.5px !important; padding: 2px 7px !important; margin-top: 4px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-card { margin-top: 12px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-card-b { padding: 12px 14px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-cname { font-size: 16px !important; margin-bottom: 6px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-cl { font-size: 14px !important; line-height: 1.4 !important; margin-bottom: 3px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-band { padding: 12px 14px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-band .b-v { font-size: 20px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .mock-promo-lb { margin: 12px 0px 8px !important; padding: 10px 12px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .mock-promo-lb .t { font-size: 15px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .mock-promo-lb .d { font-size: 13.5px !important; line-height: 1.35 !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-promo .em-in { padding: 12px 14px !important; font-size: 16px !important; margin-bottom: 0px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-lb { margin: 12px 0px 6px !important; font-size: 15px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal #emStep1 .em-in { padding: 14px 16px !important; margin-bottom: 12px !important; font-size: 16px !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .em-consent { font-size: 13.5px !important; line-height: 1.4 !important; }}
+@media (max-width: 640px){html body#lpRoot.lla-em-open #enrollModal .em-dialog .em-steps, html body#lpRoot #enrollModal .em-dialog .em-steps { padding: 14px 52px 10px 0px !important; width: auto !important; box-sizing: border-box !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal .dp-seats, html body#lpRoot #enrollModal .dp-late { white-space: nowrap !important; max-width: 100% !important; overflow: hidden !important; text-overflow: ellipsis !important; }}
+@media (max-width: 640px){html body#lpRoot #enrollModal #emTitle { margin: 4px 0px 8px !important; font-size: 21px !important; }}
+html body#lpRoot #enrollModal #emStep1.on ~ .mock-footer #emGo2, html body#lpRoot #enrollModal #emStep2.on ~ .mock-footer #emGo1 { display: none !important; }
+@media (max-width: 900px){html body#lpRoot #enrollModal .dp-card { min-height: 104px !important; height: auto !important; }}
+@media (max-width: 900px){html body#lpRoot #enrollModal .dp-alt { display: block !important; line-height: 1.35 !important; margin-top: 4px !important; }}
+#enrollModal { z-index: 2147480000 !important; }
+html.guest-form-visible #et-bumpyard-widget, html.guest-form-focused #et-bumpyard-widget, body:has(#enrollModal.open) #et-bumpyard-widget, body:has(.co-head) #et-bumpyard-widget { display: none !important; }
+html.guest-coupon-applied #enrollModal .lla-jp-line, html.guest-coupon-applied #enrollModal .mock-promo-lb { display: none !important; }
+@media (max-width: 760px){html body#lpRoot #enrollModal .em-dialog .em-x { width: 44px !important; height: 44px !important; }}
+@media (max-width: 760px){html body#lpRoot #enrollModal .em-dialog { scroll-padding-top: 92px; scroll-padding-bottom: 100px; height: var(--guest-viewport-height, 100dvh) !important; bottom: auto !important; padding-bottom: calc(32px + env(safe-area-inset-bottom)) !important; }}
+@media (max-width: 760px){html body#lpRoot #enrollModal .em-dialog .mock-footer { padding-bottom: env(safe-area-inset-bottom) !important; }}
+@media (max-width: 760px){html body#lpRoot #enrollModal #emStep1 .em-in { margin-bottom: 6px !important; }}
+@media (max-width: 760px){html body#lpRoot #enrollModal .em-lb { margin-top: 8px !important; }}
+@media (max-width: 760px){html body#lpRoot #enrollModal .dp-card { min-height: 88px !important; }}
+@media (max-width: 760px){html body#lpRoot #enrollModal .dp-et { white-space: normal !important; }}
+@media (max-width: 360px){html body#lpRoot #enrollModal .em-steps .em-lbl { font-size: 14px !important; white-space: nowrap !important; }}
+@media (max-width: 360px){html body#lpRoot #enrollModal .em-steps { column-gap: 5px !important; }}
+html body#lpRoot #enrollModal .em-sum.credit-summary { padding: 20px !important; border-radius: 14px !important; }
+html body#lpRoot #enrollModal .em-band .b-v { font-family: Inter, sans-serif !important; font-size: 20px !important; line-height: 1.4 !important; }
+html body#lpRoot #enrollModal .em-band .b-v small { margin-top: 5px; display: block !important; font-size: 16px !important; line-height: 1.5 !important; }
+#enrollModal .mock-promo-lb, #enrollModal #mockPromoLbUp, #enrollModal .lla-jp-line { display: none !important; }
+html.guest-form-focused body#lpRoot #mockBar, html.guest-form-visible body#lpRoot #mockBar, html.guest-menu-open body#lpRoot #mockBar, body:has(#enrollModal.open) #mockBar { display: none !important; }
+/* pages.dev body text inside the popup (its body is 17.5px / 28px; the .com body is 17px) */
+html body#lpRoot #enrollModal{font-size:17.5px;line-height:1.6}
+
+</style>
+<script src="assets/mf/pd/lla-clickid-v20260922.js"></script>
+<script src="assets/mf/pd/lla-relay-receipts.js"></script>
 </head>
-<body>
+<body id="lpRoot">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMRKXXJV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -14900,58 +15286,6 @@ window.LLA_GOOGLE_CAMPAIGN_IDS = window.LLA_GOOGLE_CAMPAIGN_IDS || {
 }
 </style>
 <style id="ecom-modal-css">
-#enrollModal{position:fixed;inset:0;z-index:9999;display:none}
-#enrollModal.open{display:block}
-#enrollModal .em-backdrop{position:absolute;inset:0;background:rgba(10,18,30,.45)}
-#enrollModal .em-dialog{position:relative;max-width:430px;margin:56px auto;background:#fff;border-radius:8px;box-shadow:0 24px 70px rgba(0,0,0,.28);max-height:calc(100vh - 92px);overflow-y:auto;padding:26px 30px 30px}
-#enrollModal .em-x{position:absolute;top:14px;right:16px;width:28px;height:28px;border:none;background:none;cursor:pointer;font-size:24px;line-height:1;color:#1b2a3d}
-#enrollModal .em-steps{display:flex;align-items:flex-start;justify-content:center;margin:6px 0 22px}
-#enrollModal .em-st{display:flex;flex-direction:column;align-items:center;gap:7px;width:96px}
-#enrollModal .em-dot{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:#fff;border:1.5px solid #C9D2DE;color:#98A3B3}
-#enrollModal .em-lbl{font-size:13.5px;color:#98A3B3;font-weight:500;white-space:nowrap}
-#enrollModal .em-st.active .em-dot,#enrollModal .em-st.done .em-dot{background:#3D6394;border-color:#3D6394;color:#fff}
-#enrollModal .em-st.active .em-lbl,#enrollModal .em-st.done .em-lbl{color:#111;font-weight:600}
-#enrollModal .em-bar{height:1.5px;background:#D7DEE8;flex:1;margin-top:13px;max-width:56px}
-#enrollModal .em-bar.done{background:#3D6394}
-#enrollModal h2{font-family:'Codec Pro','Inter',sans-serif;font-size:24px;line-height:1.22;font-weight:800;letter-spacing:-.5px;text-align:center;color:#0B1B33;margin:0 0 22px}
-#enrollModal h2 em{font-style:normal;color:inherit}
-#enrollModal .em-lb{display:block;font-size:13.5px;font-weight:700;color:#0B1B33;margin-bottom:7px}
-#enrollModal .em-in{width:100%;border:1px solid #D5DCE6;border-radius:6px;padding:13px 14px;font-size:14.5px;font-family:'Inter',sans-serif;outline:none;margin-bottom:17px;color:#111;background:#fff}
-#enrollModal .em-in::placeholder{color:#A9B3C1}
-#enrollModal .em-in:focus,#enrollModal select.em-in:focus{border-color:#3D6394}
-#enrollModal select.em-in{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235A6472' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 13px center;padding-right:38px}
-#enrollModal .em-phone{display:flex;gap:9px;margin-bottom:9px}
-#enrollModal .em-phone .em-in{margin-bottom:0}
-#enrollModal .em-row{margin-bottom:17px}
-#enrollModal .em-row .em-in{margin-bottom:0}
-#enrollModal .em-cc{display:flex;align-items:center;gap:5px;border:1px solid #D5DCE6;border-radius:6px;padding:0 12px;font-size:14.5px;font-weight:600;color:#3D6394;background:#fff;flex:none}
-#enrollModal .em-cc span{font-size:15px}
-#enrollModal .em-phone .em-in{margin-bottom:0}
-#enrollModal .em-go{width:100%;background:#3D6394;color:#fff;border:none;border-radius:6px;padding:14px;font-family:'Inter',sans-serif;font-weight:700;font-size:15.5px;cursor:pointer;transition:.15s}
-#enrollModal .em-go:hover{background:#33527D}
-#enrollModal .em-refund{text-align:center;font-size:12.5px;color:#5A6472;margin-top:12px}
-#enrollModal .em-consent{display:flex;gap:9px;align-items:flex-start;margin-top:16px}
-#enrollModal .em-consent input{width:16px;height:16px;accent-color:#3D6394;margin-top:2px;flex:none}
-#enrollModal .em-consent label{font-size:12px;color:#5A6472;line-height:1.5}
-#enrollModal .em-card{border:1px solid #E3E7EE;border-radius:7px;overflow:hidden;margin-bottom:20px}
-#enrollModal .em-card-b{padding:15px 17px}
-#enrollModal .em-cname{color:#E2571E;font-weight:700;font-size:14.5px;margin-bottom:9px}
-#enrollModal .em-cl{font-size:13.5px;color:#2A2F36;margin-bottom:5px}
-#enrollModal .em-cl b{color:#111;font-weight:700}
-#enrollModal .em-cl.gap{margin-top:12px;margin-bottom:0}
-#enrollModal .em-band{background:#12355B;color:#fff;padding:14px 17px;display:flex;align-items:center;gap:11px}
-#enrollModal .em-band .b-l{font-size:13px;font-weight:600;opacity:.92;margin-bottom:2px}
-#enrollModal .em-band .b-v{font-family:'Codec Pro','Inter',sans-serif;font-weight:800;font-size:16.5px}
-#enrollModal .em-promo{display:flex;gap:10px;margin-bottom:20px}
-#enrollModal .em-promo .em-in{margin-bottom:0}
-#enrollModal .em-apply{padding:0 22px;border:1.5px solid #3D6394;background:#fff;color:#3D6394;border-radius:6px;font-weight:700;font-size:14.5px;cursor:pointer;font-family:'Inter',sans-serif;flex:none}
-#enrollModal .em-apply:hover{background:#E8F1FF}
-#enrollModal .em-screen{display:none}
-#enrollModal .em-screen.on{display:block}
-#enrollModal .em-err{display:none;color:#D93025;font-size:13px;font-weight:600;margin:-9px 0 13px}
-#enrollModal .em-err.on{display:block}
-#enrollModal .em-go[disabled]{opacity:.6;cursor:default}
-@media(max-width:520px){#enrollModal .em-dialog{margin:16px 12px;padding:24px 20px 26px;max-height:calc(100vh - 32px)}#enrollModal .em-st{width:82px}#enrollModal .em-lbl{font-size:12px}}
 
 /* v2 prominent ecommerce button */
 .lg-or{display:flex;align-items:center;gap:14px;margin:2px 0 4px}
@@ -14974,16 +15308,16 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
     <button class="em-x" type="button" data-em-close aria-label="Close">&times;</button>
 
     <div class="em-steps">
-      <div class="em-st active" id="emS1"><span class="em-dot">1</span><span class="em-lbl">Register</span></div>
+      <div class="em-st active" id="emS1"><span class="em-dot">1</span><span class="em-lbl">Your details</span></div>
       <span class="em-bar" id="emB1"></span>
-      <div class="em-st" id="emS2"><span class="em-dot">2</span><span class="em-lbl">Select&nbsp;course</span></div>
+      <div class="em-st" id="emS2"><span class="em-dot">2</span><span class="em-lbl">Plan &amp; date</span></div>
       <span class="em-bar" id="emB2"></span>
-      <div class="em-st" id="emS3"><span class="em-dot">3</span><span class="em-lbl">Place&nbsp;order</span></div>
+      <div class="em-st" id="emS3"><span class="em-dot">3</span><span class="em-lbl">Pay</span></div>
     </div>
 
-    <h2>Your protocol <em>starts&nbsp;here.</em></h2>
+    <h2 class="em-h2-sober" id="emTitle">Reserve your seat. Two minutes.</h2>
 
-    <!-- STEP 1 -->
+    <!-- DETAILS SCREEN (shown second since 2026-09-19; DOM id kept so nothing downstream changes) -->
     <div class="em-screen on" id="emStep1">
       <label class="em-lb" for="emName">Full Name*</label>
       <input class="em-in" id="emName" type="text" placeholder="Full Name" autocomplete="name" />
@@ -14996,26 +15330,15 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
         <div class="em-cc" id="emCc"><span id="emCcIso">US</span><span id="emCcDial">+1</span></div>
         <select class="em-in" id="emCountry" data-lla-country="1" aria-label="Country"></select>
       </div>
+      
       <div class="em-row">
         <input class="em-in" id="emPhone" type="tel" placeholder="Mobile" autocomplete="tel" />
       </div>
-      <script>
-      (function(){
-        function sync(){
-          var sel=document.getElementById('emCountry'),iso=document.getElementById('emCcIso'),dial=document.getElementById('emCcDial');
-          if(!sel||!iso||!dial) return;
-          var v=(sel.value||'US').toUpperCase(),opt=sel.options[sel.selectedIndex],d=opt&&opt.getAttribute('data-dial');
-          if(!d&&window.LLA_COUNTRY&&window.LLA_COUNTRY.list){try{var L=typeof LLA_COUNTRY.list==='function'?LLA_COUNTRY.list():LLA_COUNTRY.list;L.forEach(function(c){if(c.iso===v)d=c.dial;});}catch(e){}}
-          iso.textContent=v;dial.textContent='+'+(d||'1');
-        }
-        document.addEventListener('change',function(e){if(e.target&&e.target.id==='emCountry')sync();});
-        window.addEventListener('load',function(){setTimeout(sync,0);setTimeout(sync,500);});
-      })();
-      </script>
 
       <div class="em-err" id="emErr" role="alert"></div>
       <button class="em-go" type="button" id="emGo1">Continue</button>
-      <p class="em-refund">Fully refundable within 14 days from&nbsp;registration.</p>
+      <p class="em-refund">Fully refundable within 14 days from registration.</p>
+
 
       <div class="em-consent">
         <input type="checkbox" id="emSms" checked />
@@ -15023,27 +15346,101 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
       </div>
     </div>
 
-    <!-- STEP 2 -->
+    <!-- PLAN & DATE SCREEN (shown first since 2026-09-19; DOM id kept so nothing downstream changes) -->
     <div class="em-screen" id="emStep2">
-      <label class="em-lb" for="emDate">Preferred class time</label>
-      <select class="em-in" id="emDate">
-        <option value="Mon Nov 23, 2026 · 8:00 PM EST · 5:00 PM PST · weekly (2026-11-23)">Mon Nov 23 · 8:00 PM ET (5:00 PM PT)</option>
-        <option value="Wed Nov 25, 2026 · 12:00 PM EST · 9:00 AM PST · weekly (2026-11-25)">Wed Nov 25 · 12:00 PM ET (9:00 AM PT)</option>
+      <label class="em-lb" for="emDate">Starting Date*</label>
+      <div class="dp" id="dp">
+        <div class="dp-tabs" role="tablist" id="dpTabs"></div>
+        <div class="dp-list" id="dpList" role="radiogroup" aria-label="Start date"></div>
+      </div>
+      <select class="em-in dp-native" id="emDate" required tabindex="-1" aria-hidden="true">
+        <option value="" disabled selected>Select a starting date</option>
+          <option value="Mon Nov 23, 2026 · 8:00 PM EST · 5:00 PM PST · weekly (2026-11-23)" data-start="2026-11-23" data-course-id="170275" data-semester-id="2395" data-month="November" data-wd="Mon" data-day="23" data-mon="Nov" data-et="8:00 PM" data-ct="7:00 PM" data-pt="5:00 PM">Mon Nov 23 · 8:00 PM ET</option>
+<option value="Wed Nov 25, 2026 · 12:00 PM EST · 9:00 AM PST · weekly (2026-11-25)" data-start="2026-11-25" data-course-id="170277" data-semester-id="2395" data-month="November" data-wd="Wed" data-day="25" data-mon="Nov" data-et="12:00 PM" data-ct="11:00 AM" data-pt="9:00 AM">Wed Nov 25 · 12:00 PM ET</option>
       </select>
+      <script>
+      (function(){try{
+        var sel=document.getElementById('emDate'),tabs=document.getElementById('dpTabs'),list=document.getElementById('dpList'),tv=document.getElementById('emTimeVal');
+        var t=new Date(),today=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
+        /* Late join allowed: a start date stays open until 7 days after the first lesson (start + 6 days inclusive). */
+        var MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+        Array.prototype.slice.call(sel.querySelectorAll('option[data-start]')).forEach(function(o){if(o.hasAttribute('data-soldout'))return;var p=o.getAttribute('data-start').split('-');var last=new Date(+p[0],+p[1]-1,+p[2]+6);o.setAttribute('data-lastlabel',MN[last.getMonth()]+' '+last.getDate());if(today>iso(last))o.remove();});
+        var opts=Array.prototype.slice.call(sel.querySelectorAll('option[data-start]'));
+        var months=[];opts.forEach(function(o){var m=o.getAttribute('data-month');if(months.indexOf(m)<0)months.push(m);});
+        var cur=months.indexOf('October')>=0?'October':months[0];
+        var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'],DAYS={Sun:'Sunday',Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
+        function endTime(et){var m=/(\d+):(\d+)\s*(AM|PM)/i.exec(et||'');if(!m)return '';var h=+m[1]%12+(m[3].toUpperCase()==='PM'?12:0),mi=+m[2]+50;h+=Math.floor(mi/60);mi%=60;var ap=h>=12?'pm':'am';var hh=h%12||12;return hh+':'+String(mi).padStart(2,'0')+ap;}
+        function fmt(d){return MONTHS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();}
+        function syncCard(){var o=sel.options[sel.selectedIndex];tv=tv||document.getElementById('emTimeVal');var sv=document.getElementById('emSchedVal');if(!tv)return;
+          if(o&&o.value&&!o.disabled){var q=o.getAttribute('data-start').split('-');var st=new Date(+q[0],+q[1]-1,+q[2]);var en=new Date(+q[0],+q[1]-1,+q[2]+7*17);var et=o.getAttribute('data-et');
+            if(sv) sv.textContent=fmt(st)+' - '+fmt(en)+'; every '+DAYS[o.getAttribute('data-wd')];
+            tv.textContent=et.replace(/\s*(AM|PM)/i,function(_,x){return x.toLowerCase();})+' - '+endTime(et)+' ET';tv.className='on';}
+          else{if(sv) sv.textContent='Select a starting date';tv.textContent='Select a starting date';tv.className='';}}
+        /* Dropdown option labels retain the existing time-range format. */
+        Array.prototype.slice.call(sel.querySelectorAll('option[data-start]')).forEach(function(o){var et=o.getAttribute('data-et');o.textContent=o.getAttribute('data-mon')+' '+o.getAttribute('data-day')+', '+et.replace(/\s*(AM|PM)/i,function(_,x){return x.toLowerCase();})+' - '+endTime(et)+' | ET'+(o.hasAttribute('data-soldout')?' · SOLD OUT':'');});
+        sel.addEventListener('change',syncCard);
+        function render(){
+          tabs.innerHTML='';months.forEach(function(m){var b=document.createElement('button');b.type='button';b.className='dp-tab'+(m===cur?' on':'');b.setAttribute('role','tab');b.textContent=m;b.addEventListener('click',function(){cur=m;render();});tabs.appendChild(b);});
+          list.innerHTML='';
+          opts.filter(function(o){return o.getAttribute('data-month')===cur;}).forEach(function(o){
+            var soldout=o.hasAttribute('data-soldout'),on=!o.disabled&&sel.value===o.value;var c=document.createElement('button');c.type='button';c.className='dp-card'+(on?' on':'');c.disabled=o.disabled;c.setAttribute('role','radio');c.setAttribute('aria-checked',on?'true':'false');if(o.disabled)c.setAttribute('aria-disabled','true');
+            var _h=parseInt(o.getAttribute('data-et'),10),evening=/PM/.test(o.getAttribute('data-et'))&&_h!==12&&_h>=5;
+            c.innerHTML='<span class="dp-date"><span class="dp-wd">'+o.getAttribute('data-wd')+'</span><span class="dp-day">'+o.getAttribute('data-mon')+' '+o.getAttribute('data-day')+'</span></span>'
+              +'<span class="dp-times"><span class="dp-et">'+o.getAttribute('data-et').replace(/\s*(AM|PM)/i,function(_,x){return x.toLowerCase();})+' - '+endTime(o.getAttribute('data-et'))+' <small>EST</small></span><span class="dp-alt">'+o.getAttribute('data-pt')+' PST</span></span>'
+              +(soldout?'<span class="dp-seats">SOLD OUT</span>':(o.getAttribute('data-start')<today?'<span class="dp-late">Started · join by '+o.getAttribute('data-lastlabel')+'</span>':''))+'<span class="dp-check" aria-hidden="true"></span>';
+            if(!o.disabled)c.addEventListener('click',function(){sel.value=o.value;sel.dispatchEvent(new Event('change',{bubbles:true}));render();});
+            list.appendChild(c);
+          });
+          syncCard();
+        }
+        render();
+        if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',syncCard);}else{syncCard();}
+      }catch(e){}})();
+      </script>
 
+      <label class="em-lb">Payment plan</label>
+      <div class="pp" id="pp" role="radiogroup" aria-label="Payment plan">
+        <button type="button" class="pp-card" data-pl="monthly" role="radio" aria-checked="true">
+          <span class="pp-name">Monthly</span>
+          <span class="pp-price">$179 <small>USD x 5 months</small></span>
+          <span class="pp-sub">Total $895 USD</span>
+          <span class="pp-check" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="pp-card" data-pl="upfront" role="radio" aria-checked="false">
+          <span class="pp-name">One payment</span>
+          <span class="pp-price">$799 <small>USD</small></span>
+          <span class="pp-sub">Total $799 USD, save $96</span>
+          <span class="pp-check" aria-hidden="true"></span>
+        </button>
+      </div>
+      <script>
+      /* Plan is chosen here, BEFORE the CRM order is created on the payment screen, so FirstPayment/NumberOfPayments are right the first time. Writes lla_plan exactly as the offer buttons do; emGo2 already appends ?plan= from it. */
+      (function(){try{
+        var wrap=document.getElementById('pp'); if(!wrap) return;
+        function cur(){var p='';try{p=sessionStorage.getItem('lla_plan')||localStorage.getItem('lla_plan')||''}catch(e){} return (p==='upfront')?'upfront':'monthly';}
+        function paint(){var p=cur();wrap.querySelectorAll('.pp-card').forEach(function(c){var on=c.getAttribute('data-pl')===p;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false');});
+          var bv=document.querySelector('#emStep2 .em-band .b-v'); if(bv){var promoOn=false;try{promoOn=!!(window.LLA_PROMO&&window.LLA_PROMO.active);}catch(e){} /* 2026-09-24 audit: the band must match the applied promo ($149 x 5, $745), not always the list price. */ bv.innerHTML=(p==='upfront')?'<s style="opacity:.5;font-weight:500;margin-right:6px">$1,395.00</s>$799.00 <small>USD one payment</small>':(promoOn?'<s data-no-promo style="opacity:.5;font-weight:500;margin-right:6px">$179.00</s>$149.00 <small>USD a month, 5 payments, $745 total</small>':'<s style="opacity:.5;font-weight:500;margin-right:6px">$279.00</s>$179.00 <small>USD a month, 5 payments, $895 total</small>');}}
+        wrap.querySelectorAll('.pp-card').forEach(function(c){c.addEventListener('click',function(){var p=c.getAttribute('data-pl');try{sessionStorage.setItem('lla_plan',p);localStorage.setItem('lla_plan',p)}catch(e){}paint();});});
+        /* 2026-09-21 audit fix #1/#2: expose the painter so the popup opener can sync the card with the CTA's plan, and tell the promo script which plan is on. */
+        var _paint0=paint; paint=function(){ _paint0(); var p=cur(); try{ var mm=document.getElementById('enrollModal'); if(mm) mm.classList.toggle('lla-pl-upfront',p==='upfront'); }catch(e){} try{ document.dispatchEvent(new CustomEvent('lla:plan',{detail:{plan:p}})); }catch(e){} };
+        window.__llaPaintPlan=paint;
+        paint(); document.addEventListener('DOMContentLoaded',paint);
+      }catch(e){}})();
+      </script>
       <div class="em-card">
         <div class="em-card-b">
-          <div class="em-cname">The Longevity&nbsp;Blueprint</div>
-          <div class="em-cl"><b>Schedule:</b> 18 live sessions across 18 weeks, one session every&nbsp;week</div>
-          <div class="em-cl"><b>Time:</b> Monday 8:00 PM ET or Wednesday 12:00 PM&nbsp;ET</div>
-          <div class="em-cl"><b>Lesson duration:</b> 50&nbsp;min</div>
-          <div class="em-cl gap"><b>Period:</b> 18&nbsp;weeks</div>
+          <div class="em-cname">The Longevity Blueprint</div>
+          <div class="em-cl"><b>Schedule:</b> <span id="emSchedVal">Select a starting date</span></div>
+          <div class="em-cl"><b>Time:</b> <span id="emTimeVal">Select a starting date</span></div>
+          <div class="em-cl"><b>Lesson duration:</b> 50 min</div>
+          <div class="em-cl gap"><b>Period:</b> 18 weeks</div>
         </div>
         <div class="em-band">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DDC97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FC1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           <div>
-            <div class="b-l">Course&nbsp;tuition</div>
-            <div class="b-v" id="novTuition">$79 for month 1, then $169 a month for 4 months. $755&nbsp;total.</div>
+            <div class="b-l">Course tuition</div>
+            <div class="b-v"><s style="opacity:.5;font-weight:500;margin-right:6px">$279.00</s>$179.00 <small>USD monthly for 5 months</small></div>
           </div>
         </div>
       </div>
@@ -15053,8 +15450,12 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
         <input class="em-in" id="emPromo" type="text" placeholder="Enter promo code" />
         <button class="em-apply" type="button" id="emApply">Apply</button>
       </div>
+      <div class="em-promo-msg" id="emPromoMsg" role="status" aria-live="polite"></div>
 
+      <div class="em-err" id="emErr2" role="alert"></div>
       <button class="em-go" type="button" id="emGo2">Continue</button>
+      <p class="em-secure"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Secure Checkout</p>
+      <p class="em-refund">Fully refundable within 14 days from registration. To see our full cancellation policy <a href="cancellation.html" target="_blank" rel="noopener">click here</a>.</p>
     </div>
   </div>
 </div>
@@ -15071,101 +15472,423 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
 <script src="/nov/lla-promo.js?v=credit79-1"></script>
 <script src="/nov/eteacher-ecomm.js?v=credit79-2" defer></script>
 <script>
+
+      /* Dial-code badge follows the selected country (was hardcoded "US +1"). */
+      (function(){
+        var DIAL = {};
+        function build(){
+          try{
+            var src = (window.LLA_COUNTRY && window.LLA_COUNTRY.list) ? (typeof window.LLA_COUNTRY.list === 'function' ? window.LLA_COUNTRY.list() : window.LLA_COUNTRY.list) : null;
+            if (src && src.length) { src.forEach(function(c){ DIAL[c.iso] = c.dial; }); return true; }
+          }catch(e){}
+          return false;
+        }
+        function sync(){
+          var sel = document.getElementById('emCountry'), iso = document.getElementById('emCcIso'), dial = document.getElementById('emCcDial');
+          if (!sel || !iso || !dial) return;
+          var v = (sel.value || 'US').toUpperCase();
+          if (!Object.keys(DIAL).length) build();
+          var d = DIAL[v];
+          if (!d) {
+            var opt = sel.options[sel.selectedIndex];
+            d = opt && opt.getAttribute('data-dial');
+          }
+          iso.textContent = v;
+          dial.textContent = '+' + (d || '1');
+        }
+        document.addEventListener('change', function(e){ if (e.target && e.target.id === 'emCountry') sync(); });
+        document.addEventListener('DOMContentLoaded', function(){ setTimeout(sync, 0); setTimeout(sync, 400); });
+        window.addEventListener('load', sync);
+        window.LLA_SYNC_DIAL = sync;
+      })();
+      
+</script>
+<script>
+
+      (function(){try{
+        var sel=document.getElementById('emDate'),tabs=document.getElementById('dpTabs'),list=document.getElementById('dpList'),tv=document.getElementById('emTimeVal');
+        var t=new Date(),today=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
+        /* Late join allowed: a start date stays open until 7 days after the first lesson (start + 6 days inclusive). */
+        var MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+        Array.prototype.slice.call(sel.querySelectorAll('option[data-start]')).forEach(function(o){if(o.hasAttribute('data-soldout'))return;var p=o.getAttribute('data-start').split('-');var last=new Date(+p[0],+p[1]-1,+p[2]+6);o.setAttribute('data-lastlabel',MN[last.getMonth()]+' '+last.getDate());if(today>iso(last))o.remove();});
+        var opts=Array.prototype.slice.call(sel.querySelectorAll('option[data-start]'));
+        var months=[];opts.forEach(function(o){var m=o.getAttribute('data-month');if(months.indexOf(m)<0)months.push(m);});
+        var cur=months.indexOf('October')>=0?'October':months[0];
+        var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'],DAYS={Sun:'Sunday',Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
+        function endTime(et){var m=/(\d+):(\d+)\s*(AM|PM)/i.exec(et||'');if(!m)return '';var h=+m[1]%12+(m[3].toUpperCase()==='PM'?12:0),mi=+m[2]+50;h+=Math.floor(mi/60);mi%=60;var ap=h>=12?'pm':'am';var hh=h%12||12;return hh+':'+String(mi).padStart(2,'0')+ap;}
+        function fmt(d){return MONTHS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();}
+        function syncCard(){var o=sel.options[sel.selectedIndex];tv=tv||document.getElementById('emTimeVal');var sv=document.getElementById('emSchedVal');if(!tv)return;
+          if(o&&o.value&&!o.disabled){var q=o.getAttribute('data-start').split('-');var st=new Date(+q[0],+q[1]-1,+q[2]);var en=new Date(+q[0],+q[1]-1,+q[2]+7*17);var et=o.getAttribute('data-et');
+            if(sv) sv.textContent=fmt(st)+' - '+fmt(en)+'; every '+DAYS[o.getAttribute('data-wd')];
+            tv.textContent=et.replace(/\s*(AM|PM)/i,function(_,x){return x.toLowerCase();})+' - '+endTime(et)+' ET';tv.className='on';}
+          else{if(sv) sv.textContent='Select a starting date';tv.textContent='Select a starting date';tv.className='';}}
+        /* Dropdown option labels retain the existing time-range format. */
+        Array.prototype.slice.call(sel.querySelectorAll('option[data-start]')).forEach(function(o){var et=o.getAttribute('data-et');o.textContent=o.getAttribute('data-mon')+' '+o.getAttribute('data-day')+', '+et.replace(/\s*(AM|PM)/i,function(_,x){return x.toLowerCase();})+' - '+endTime(et)+' | ET'+(o.hasAttribute('data-soldout')?' · SOLD OUT':'');});
+        sel.addEventListener('change',syncCard);
+        function render(){
+          tabs.innerHTML='';months.forEach(function(m){var b=document.createElement('button');b.type='button';b.className='dp-tab'+(m===cur?' on':'');b.setAttribute('role','tab');b.textContent=m;b.addEventListener('click',function(){cur=m;render();});tabs.appendChild(b);});
+          list.innerHTML='';
+          opts.filter(function(o){return o.getAttribute('data-month')===cur;}).forEach(function(o){
+            var soldout=o.hasAttribute('data-soldout'),on=!o.disabled&&sel.value===o.value;var c=document.createElement('button');c.type='button';c.className='dp-card'+(on?' on':'');c.disabled=o.disabled;c.setAttribute('role','radio');c.setAttribute('aria-checked',on?'true':'false');if(o.disabled)c.setAttribute('aria-disabled','true');
+            var _h=parseInt(o.getAttribute('data-et'),10),evening=/PM/.test(o.getAttribute('data-et'))&&_h!==12&&_h>=5;
+            c.innerHTML='<span class="dp-date"><span class="dp-wd">'+o.getAttribute('data-wd')+'</span><span class="dp-day">'+o.getAttribute('data-mon')+' '+o.getAttribute('data-day')+'</span></span>'
+              +'<span class="dp-times"><span class="dp-et">'+o.getAttribute('data-et').replace(/\s*(AM|PM)/i,function(_,x){return x.toLowerCase();})+' - '+endTime(o.getAttribute('data-et'))+' <small>EST</small></span><span class="dp-alt">'+o.getAttribute('data-pt')+' PST</span></span>'
+              +(soldout?'<span class="dp-seats">SOLD OUT</span>':(o.getAttribute('data-start')<today?'<span class="dp-late">Started · join by '+o.getAttribute('data-lastlabel')+'</span>':''))+'<span class="dp-check" aria-hidden="true"></span>';
+            if(!o.disabled)c.addEventListener('click',function(){sel.value=o.value;sel.dispatchEvent(new Event('change',{bubbles:true}));render();});
+            list.appendChild(c);
+          });
+          syncCard();
+        }
+        render();
+        if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',syncCard);}else{syncCard();}
+      }catch(e){}})();
+      
+</script>
+<script>
+
+      /* Plan is chosen here, BEFORE the CRM order is created on the payment screen, so FirstPayment/NumberOfPayments are right the first time. Writes lla_plan exactly as the offer buttons do; emGo2 already appends ?plan= from it. */
+      (function(){try{
+        var wrap=document.getElementById('pp'); if(!wrap) return;
+        function cur(){var p='';try{p=sessionStorage.getItem('lla_plan')||localStorage.getItem('lla_plan')||''}catch(e){} return (p==='upfront')?'upfront':'monthly';}
+        function paint(){var p=cur();wrap.querySelectorAll('.pp-card').forEach(function(c){var on=c.getAttribute('data-pl')===p;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false');});
+          var bv=document.querySelector('#emStep2 .em-band .b-v'); if(bv){var promoOn=false;try{promoOn=!!(window.LLA_PROMO&&window.LLA_PROMO.active);}catch(e){} /* 2026-09-24 audit: the band must match the applied promo ($149 x 5, $745), not always the list price. */ bv.innerHTML=(p==='upfront')?'<s style="opacity:.5;font-weight:500;margin-right:6px">$1,395.00</s>$799.00 <small>USD one payment</small>':(promoOn?'<s data-no-promo style="opacity:.5;font-weight:500;margin-right:6px">$179.00</s>$149.00 <small>USD a month, 5 payments, $745 total</small>':'<s style="opacity:.5;font-weight:500;margin-right:6px">$279.00</s>$179.00 <small>USD a month, 5 payments, $895 total</small>');}}
+        wrap.querySelectorAll('.pp-card').forEach(function(c){c.addEventListener('click',function(){var p=c.getAttribute('data-pl');try{sessionStorage.setItem('lla_plan',p);localStorage.setItem('lla_plan',p)}catch(e){}paint();});});
+        /* 2026-09-21 audit fix #1/#2: expose the painter so the popup opener can sync the card with the CTA's plan, and tell the promo script which plan is on. */
+        var _paint0=paint; paint=function(){ _paint0(); var p=cur(); try{ var mm=document.getElementById('enrollModal'); if(mm) mm.classList.toggle('lla-pl-upfront',p==='upfront'); }catch(e){} try{ document.dispatchEvent(new CustomEvent('lla:plan',{detail:{plan:p}})); }catch(e){} };
+        window.__llaPaintPlan=paint;
+        paint(); document.addEventListener('DOMContentLoaded',paint);
+      }catch(e){}})();
+      
+</script>
+<script>
+
 (function(){
   var m=document.getElementById('enrollModal');
-  if(!m) return;
-  function open(){m.classList.add('open');document.body.style.overflow='hidden';}
-  function close(){m.classList.remove('open');document.body.style.overflow='';}
+  function open(){m.classList.add('open');document.body.style.overflow='hidden';document.body.classList.add('lla-em-open');}
+  function close(){m.classList.remove('open');document.body.style.overflow='';document.body.classList.remove('lla-em-open');}
+  /* Screen order (2026-09-19): step 1 = plan & date (#emStep2), step 2 = your
+     details (#emStep1). Element ids are unchanged on purpose: the plan painter,
+     the date picker, stageLead() and createStagedOrder() all read the same ids. */
+  /* 2026-09-21 12:50 (authorized by Omri 20 Sep): order restored to details first.
+     step 1 = your details (#emStep1) -> Continue fires AddToCart;
+     step 2 = plan & date (#emStep2) -> Continue creates the CRM order, fires
+     InitiateCheckout, opens payment. Element ids unchanged. */
   function step(n){
     document.getElementById('emStep1').classList.toggle('on',n===1);
     document.getElementById('emStep2').classList.toggle('on',n===2);
+    if(n===2){ try{ if(window.__llaPaintPlan) window.__llaPaintPlan(); }catch(x){} }
+    var _t=document.getElementById('emTitle'); if(_t) _t.textContent=(n===1)?'Reserve your seat. Two minutes.':'Almost there. Choose your start date.';
     document.getElementById('emS1').className='em-st '+(n>1?'done':'active');
     document.getElementById('emS2').className='em-st '+(n>=2?'active':'');
     document.getElementById('emB1').className='em-bar'+(n>=2?' done':'');
     m.querySelector('.em-dialog').scrollTop=0;
   }
+  function openFromCta(a){
+      /* Remember which CTA opened the popup; every funnel event (AddToCart,
+         InitiateCheckout, Purchase) carries it as cta_location. */
+      var _loc=a.getAttribute('data-fn-cta')||'unknown', _pl='';
+      try{ sessionStorage.setItem('lla_cta_location',_loc); }catch(x){}
+      try{ _pl=a.getAttribute('data-plan')||sessionStorage.getItem('lla_plan')||localStorage.getItem('lla_plan')||''; }catch(x){}
+      try{ if(window.LLA_FUNNEL) window.LLA_FUNNEL.ctaClick(_loc,a.textContent,_pl); }catch(x){}
+      syncPlanFromCta(a); emErrClear(); step(1); open();
+  }
+  /* 2026-09-21 audit fix #1: a CTA with data-plan (or checkout.html?plan=) decides the plan card shown in the popup, so the popup and the order created on Continue agree. Links without a plan keep the remembered one. */
+  function syncPlanFromCta(a){
+    var p=''; try{ p=a.getAttribute('data-plan')||''; if(!p){ var mm=/[?&]plan=(monthly|upfront)/.exec(a.getAttribute('href')||''); if(mm) p=mm[1]; } }catch(x){}
+    if(p==='monthly'||p==='upfront'){ try{sessionStorage.setItem('lla_plan',p)}catch(x){} try{localStorage.setItem('lla_plan',p)}catch(x){} }
+    try{ if(window.__llaPaintPlan) window.__llaPaintPlan(); }catch(x){}
+  }
+  window.__llaOpenEnroll=openFromCta; window.__llaPopupReady=true;
+  /* Tap that arrived before this script attached (held by the head catcher), or
+     a visitor sent back from the payment page with no order (?enroll=1). */
+  try{ if(window.__llaPendingEnroll){ var _pa=window.__llaPendingEnroll; window.__llaPendingEnroll=null; openFromCta(_pa); }
+       else if(/[?&]enroll=1/.test(location.search)){ var _fa=document.querySelector('a[href^="checkout.html"][data-fn-cta]')||document.querySelector('a[href^="checkout.html"]'); if(_fa) openFromCta(_fa); } }catch(x){}
   document.addEventListener('click',function(e){
-    var a=e.target.closest('[data-checkout-open]');
-    if(a){e.preventDefault();step(1);open();return;}
+    /* Match every checkout link, including checkout.html?plan=... (plan cards and
+       links rewritten by the plan-memory script). The exact match used before let
+       those clicks skip the popup and land on the payment page with no order. */
+    var a=e.target.closest('a[href^="checkout.html"]');
+    if(a){
+      e.preventDefault();
+      /* Remember which CTA opened the popup; every funnel event (AddToCart,
+         InitiateCheckout, Purchase) carries it as cta_location. */
+      var _loc=a.getAttribute('data-fn-cta')||'unknown', _pl='';
+      try{ sessionStorage.setItem('lla_cta_location',_loc); }catch(x){}
+      try{ _pl=a.getAttribute('data-plan')||sessionStorage.getItem('lla_plan')||localStorage.getItem('lla_plan')||''; }catch(x){}
+      try{ if(window.LLA_FUNNEL) window.LLA_FUNNEL.ctaClick(_loc,a.textContent,_pl); }catch(x){}
+      syncPlanFromCta(a); emErrClear(); step(1); open(); return;
+    }
     if(e.target.closest('[data-em-close]')){close();}
   });
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
-  var errBox=document.getElementById('emErr');
-  function emErr(msg){errBox.textContent=msg;errBox.classList.add('on');}
-  function emErrClear(){errBox.textContent='';errBox.classList.remove('on');}
+  // Step 1 -> eTeacher CRM lead (same API rules as longevitylifeacademy.com website integration)
+  var errBox=document.getElementById('emErr'), errBox2=document.getElementById('emErr2');
+  function curErr(){ return document.getElementById('emStep2').classList.contains('on') ? errBox2 : errBox; }
+  function emErr(msg){var b=curErr();b.textContent=msg;b.classList.add('on');}
+  function emErrClear(){[errBox,errBox2].forEach(function(b){if(b){b.textContent='';b.classList.remove('on');}});}
   var ERR_MSG={
     need_full_name:'Please enter your full name (first and last).',
     invalid_email:'Please enter a valid email address.',
     non_us_phone:'Please enter a valid US mobile number, or pick your country from the list.',
-    invalid_phone:'Please enter a valid mobile number for the selected country.',
     invalid_state:'Please enter a valid US mobile number.',
+    missing_buyer_state:'Please select your U.S. state.',
+    invalid_phone:'Please enter a valid mobile number for the selected country.',
     'Missing or invalid fields':'Please fill in all fields.'
   };
-  document.getElementById('emGo1').addEventListener('click',function(){
-    var btn=this;
-    emErrClear();
-    var fields={
+  function collectFields(){
+    return {
       fullName:document.getElementById('emName').value,
       email:document.getElementById('emEmail').value,
       phone:document.getElementById('emPhone').value,
       smsConsent:document.getElementById('emSms').checked,
       startDate:(document.getElementById('emDate')||{}).value||'',
-      countryIso:String((document.getElementById('emCountry')||{}).value||'US').toUpperCase(),
-      promoCode:''
+      promoCode:(window.LLA_PROMO&&window.LLA_PROMO.active)?window.LLA_PROMO.code:''
     };
-    if(!fields.fullName.trim()||!fields.email.trim()||!fields.phone.trim()){emErr('Please fill in all fields.');return;}
-    if(fields.fullName.trim().split(/\s+/).length<2){emErr(ERR_MSG.need_full_name);return;}
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(fields.email.trim())){emErr(ERR_MSG.invalid_email);return;}
-    var _cc=String((document.getElementById('emCountry')||{}).value||'US').toUpperCase();
-    fields.countryIso=_cc;
-    var _vp=(_cc==='US')
-      ?((window.LLA_US&&window.LLA_US.validatePhone)?window.LLA_US.validatePhone(fields.phone):{ok:true})
-      :((window.LLA_COUNTRY&&window.LLA_COUNTRY.toE164)?window.LLA_COUNTRY.toE164(fields.phone,_cc):{ok:true});
-    if(!_vp.ok){emErr(_cc==='US'?ERR_MSG.non_us_phone:ERR_MSG.invalid_phone);return;}
-    if(!window.LLA_ECOMM){
-      var b1=this,t0=Date.now();b1.disabled=true;b1.textContent='One moment\u2026';
-      (function w(){if(window.LLA_ECOMM){b1.disabled=false;b1.textContent='Continue';b1.click();return;}
-        if(Date.now()-t0>15000){b1.disabled=false;b1.textContent='Continue';emErr('Slow connection. Please tap Continue again.');return;}setTimeout(w,200);})();
-      return;}
-        /* E-COMMERCE 3-SCREEN CHECKOUT ONLY. No CRM lead is created on this screen.
-     * The details are held in the page and the lead + order are created on the
-     * click that leads to the payment screen. Do not re-add a lead call or any
-     * marketing event here. The separate lead-generation form is unaffected. */
-    window.LLA_ECOMM_PENDING = fields;
-    try{ if(window.sessionStorage) sessionStorage.setItem('lla_pending_enroll',JSON.stringify(fields)); }catch(e){}
-    try{ if(window.LLA_FUNNEL) window.LLA_FUNNEL.addToCart(fields); }catch(e){} /* 2026-11-04: Meta AddToCart (browser+server, one event_id); measurement only */
+  }
+  /* Screen 1 (details): validate exactly as before, fire AddToCart, go to plan & date. */
+  document.getElementById('emGo1').addEventListener('click',function(){
+    emErrClear();
+    var f=collectFields();
+    if(!f.fullName.trim()||!f.email.trim()||!f.phone.trim()){emErr('Please fill in all fields.');return;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.trim())){emErr('Please enter a valid email address, like name@example.com.');return;}
+    if(!window.LLA_ECOMM){ /* 2026-09-21: scripts still downloading on a slow line -> wait and auto-retry instead of a dead-end error */
+      var b1=document.getElementById('emGo1'), t0=Date.now(); b1.disabled=true; b1.textContent='One moment\u2026';
+      (function w(){ if(window.LLA_ECOMM){ b1.disabled=false; b1.textContent='Continue'; b1.click(); return; }
+        if(Date.now()-t0>15000){ b1.disabled=false; b1.textContent='Continue'; emErr('Slow connection. Please tap Continue again.'); return; } setTimeout(w,200); })();
+      return; }
+    var r=window.LLA_ECOMM.stageLead(f);
+    if(!r.ok){ emErr(ERR_MSG[r.error]||'Something went wrong , please try again in a moment.'); return; }
+    try{ if(window.LLA_FUNNEL) window.LLA_FUNNEL.addToCart(); }catch(e){}
     step(2);
   });
+  /* Screen 2 (plan & date): require a class time, re-stage the lead with the date,
+     create the CRM order, fire InitiateCheckout, open payment. Same r8 flow as before. */
   document.getElementById('emGo2').addEventListener('click',function(){
     var btn=this;
-    function go(ids){
-      try{ if(window.LLA_FUNNEL) window.LLA_FUNNEL.initiateCheckout(window.LLA_ECOMM_PENDING||null); }catch(e){} /* 2026-11-04: Meta InitiateCheckout before the payment page opens */
-      window.location.href='/checkout.html'+(ids&&ids.stid?('?stid='+encodeURIComponent(ids.stid)+'&orderid='+encodeURIComponent(ids.orderid)):'');
+    emErrClear();
+    var _dateSelect=document.getElementById('emDate'),_dateOption=_dateSelect&&_dateSelect.options[_dateSelect.selectedIndex];
+    var _sd=(_dateSelect||{}).value||'';
+    if(!_sd||!_dateOption||_dateOption.disabled||!window.LLA_ECOMM.classForStart(_dateOption.getAttribute('data-start'))){ emErr('Please choose an available class time.'); return; }
+    try{ sessionStorage.setItem('lla_start_date', _sd); }catch(e){}
+    var fields=collectFields();
+    var _unused={
+      fullName:document.getElementById('emName').value,
+      email:document.getElementById('emEmail').value,
+      phone:document.getElementById('emPhone').value,
+      smsConsent:document.getElementById('emSms').checked,
+      startDate:(document.getElementById('emDate')||{}).value||'',
+      promoCode:(window.LLA_PROMO&&window.LLA_PROMO.active)?window.LLA_PROMO.code:''
+    };
+    if(!fields.fullName.trim()||!fields.email.trim()||!fields.phone.trim()){emErr('Please fill in all fields.');return;}
+    if(!window.LLA_ECOMM){ var t0=Date.now(); btn.disabled=true; btn.textContent='One moment\u2026';
+      (function w(){ if(window.LLA_ECOMM){ btn.disabled=false; btn.textContent='Continue'; btn.click(); return; }
+        if(Date.now()-t0>15000){ btn.disabled=false; btn.textContent='Continue'; emErr('Slow connection. Please tap Continue again.'); return; } setTimeout(w,200); })();
+      return; }
+    btn.disabled=true;btn.textContent='Please wait\u2026';
+    /* SOLUTION A , no CRM record on the details screen.
+     * Screen 1 validates exactly as before (full name, valid email, US mobile
+     * gate, state from area code) but writes NOTHING to the CRM. The finished
+     * payload is snapshotted here , so LandingPage, QueryString, ReferringSite
+     * and the 30-day click-ID attribution are the store page's, not the
+     * checkout page's , and the lead + order are created once on the payment
+     * screen, immediately before the Airwallex intent.
+     * Meta funnel events fire for measurement only and write nothing to the
+     * CRM: AddToCart on the plan & date screen, InitiateCheckout here on the
+     * details screen, Purchase on the payment screen. */
+    var r = window.LLA_ECOMM.stageLead(fields);
+    btn.disabled=false;btn.textContent='Continue';
+    if(r.ok){
+      /* r8 (2026-09-20, approved by Omri): the CRM student + order are created HERE,
+         the moment details are accepted, through the same /api/lead/ecomm call the
+         payment page used. Every details submission is therefore an abandoned-cart
+         lead in the sales queue even if the buyer never reaches payment. The ids are
+         stored in sessionStorage, so the payment page reuses the same order (no duplicate).
+         Meta events unchanged. */
+      if(window.__llaLeadNow!==2){
+        window.__llaLeadNow=1; btn.disabled=true; btn.textContent='Please wait\u2026';
+        var _done=false;
+        window.LLA_ECOMM.createStagedOrder().then(function(ids){
+          if(!ids||!ids.stid||!ids.orderid)throw new Error('ORDER_NOT_CONFIRMED');
+          if(_done)return;_done=true;window.__llaLeadNow=2;proceed();
+        }).catch(function(){window.__llaLeadNow=0;btn.disabled=false;btn.textContent='Continue';emErr('We could not confirm your enrollment request. Please contact our team before retrying.');});
+        return;
+      }
+      proceed();
+      return;
+      /* 2026-09-21 16:55: proceed() runs the instant the CRM order returns (was: re-click the button, 300 ms timer). Measured 5.4-10.6 s click-to-payment on a clean line; target < 4 s. */
+      function proceed(){
+      /* Details screen complete (screen 2 since 2026-09-19): name, email and
+         phone accepted, start date and plan were chosen on screen 1.
+         InitiateCheckout is the event Meta's funnel uses for this stage.
+         Measurement only; the CRM is still untouched until the payment screen.
+         The navigation is deferred by a moment so the Pixel request is not
+         cancelled by the page unload. */
+      try{ if(window.LLA_FUNNEL) window.LLA_FUNNEL.initiateCheckout(); }catch(e){}
+      var ids=(window.LLA_ECOMM&&window.LLA_ECOMM.getCheckoutIds())||null;
+      var _pln=''; try{_pln=sessionStorage.getItem('lla_plan')||localStorage.getItem('lla_plan')||''}catch(e){}if(_pln!=='monthly'&&_pln!=='upfront')_pln='monthly';var _q=(ids&&ids.stid)?('?stid='+encodeURIComponent(ids.stid)+'&orderid='+encodeURIComponent(ids.orderid)+'&plan='+_pln):('?plan='+_pln);var _pa=false;try{_pa=!!(window.LLA_PROMO&&window.LLA_PROMO.active&&sessionStorage.getItem('lla_promo_code'))}catch(e){}var href='checkout.html'+_q+(_pa?'&promo=on':'&promo=off'); /* 2026-09-21: payment page shows the promo only when it was applied in THIS flow (order priced with it) */
+      if(window.LLA_ECOMM_CONFIG.env==='staging') href+='&env=staging';
+      btn.disabled=true;btn.textContent='Opening secure payment\u2026';
+      /* 2026-09-21 15:50: the redirect sat behind in-flight video/image downloads (measured 34 s on a saturated line, 13 s on Omri's desktop).
+         Free every connection first, then navigate. Pixel/relay events were already sent (keepalive). */
+      try{ document.querySelectorAll('video').forEach(function(v){ try{ v.pause(); }catch(e){} }); }catch(e){}
+      var destination=window.__llaDecorateCheckout?window.__llaDecorateCheckout(href):href;
+      if(window.__llaNavigateTracked)window.__llaNavigateTracked(destination);else setTimeout(function(){window.location.href=destination;},250);
+      }
+      return;
     }
-    var ids=(window.LLA_ECOMM&&window.LLA_ECOMM.getCheckoutIds())||null;
-    if(ids&&ids.stid){go(ids);return;}
-    var f=window.LLA_ECOMM_PENDING;
-    if(!f){ try{ f=JSON.parse(sessionStorage.getItem('lla_pending_enroll')||'null'); }catch(e){ f=null; } }
-    if(!f||!window.LLA_ECOMM){go(null);return;}
-    if(btn.getAttribute('data-busy')==='1'){return;}
-    btn.setAttribute('data-busy','1');
-    var label=btn.textContent;btn.textContent='Please wait\u2026';
-    window.LLA_ECOMM.submitLead(f).then(function(r){
-      btn.setAttribute('data-busy','0');btn.textContent=label;
-      if(r&&r.ok){ try{ sessionStorage.removeItem('lla_pending_enroll'); }catch(e){} go((window.LLA_ECOMM.getCheckoutIds())||null);return;}
-      step(1);
-      emErr(ERR_MSG[(r&&r.error)]||'Something went wrong, please try again in a moment.');
-    });
+    emErr(ERR_MSG[r.error]||'Something went wrong , please try again in a moment.');
   });
   document.getElementById('emApply').addEventListener('click',function(){
-    var v=document.getElementById('emPromo').value.trim().toUpperCase();
-    var ok=!!(window.LLA_PROMO&&window.LLA_PROMO.isValid(v));
-    if(window.LLA_PROMO){ if(ok) window.LLA_PROMO.activate(v); else window.LLA_PROMO.deactivate(); }
+    var inp=document.getElementById('emPromo'),v=inp.value.trim().toUpperCase(),msg=document.getElementById('emPromoMsg');
+    var promoOk=false; try{ promoOk=!!(window.LLA_PROMO&&typeof window.LLA_PROMO.isValid==='function'&&window.LLA_PROMO.isValid(v)); }catch(e){}
+    var ok=(v==='FOUNDER35')||promoOk;
+    if(promoOk){ try{ window.LLA_PROMO.activate(v); }catch(e){} }
     this.textContent = ok ? 'Applied' : 'Apply';
+    if(msg){
+      if(!v){msg.textContent='Enter a promo code first.';msg.className='em-promo-msg err';}
+      else if(promoOk){var _up=false;try{var _c=document.querySelector('#pp .pp-card.on');_up=!!(_c&&_c.dataset.pl==='upfront')||((sessionStorage.getItem('lla_plan')||'')==='upfront'&&!_c);}catch(e){}msg.textContent=_up?'Promo code applied: Julie\u2019s VIP Masterclass ($99 value) included with your $799 one payment.':'Promo code applied: $149 a month (5 payments, $745 total) and Julie\u2019s VIP Masterclass included.';msg.className='em-promo-msg ok';}
+      else if(ok){msg.textContent='Promo code applied.';msg.className='em-promo-msg ok';}
+      else {var _act=false,_ac='';try{_act=!!(window.LLA_PROMO&&window.LLA_PROMO.active);_ac=window.LLA_PROMO&&window.LLA_PROMO.code||'';}catch(e){}msg.textContent='\u201c'+v+'\u201d is not a valid promo code. Check the spelling and try again.'+(_act&&_ac?' Your code '+_ac+' is still applied.':'');msg.className='em-promo-msg err';}
+    }
+    inp.classList.toggle('em-in-err', !!v && !ok);
   });
+  document.getElementById('emPromo').addEventListener('input',function(){var msg=document.getElementById('emPromoMsg');if(msg){msg.className='em-promo-msg';msg.textContent='';}this.classList.remove('em-in-err');});
   var q=new URLSearchParams(location.search);
   if(q.get('enroll')){step(q.get('enroll')==='2'?2:1);open();}
 })();
+
+</script>
+<script>
+
+(function(){
+  var m=document.getElementById('enrollModal'); if(!m) return;
+  /* 2026-09-21 r15: phones use the full-screen sheet (lla-r15-sheet); no JS sizing, no footer pinning. */
+  try{ if(window.matchMedia('(max-width:640px)').matches) return; }catch(e){}
+  function vh(){ try{ if(window.visualViewport&&visualViewport.height) return visualViewport.height; }catch(e){} return window.innerHeight||document.documentElement.clientHeight; }
+  function size(){
+    var d=m.querySelector('.em-dialog'); if(!d) return;
+    var h=Math.max(320, Math.floor(vh())-24);
+    d.style.setProperty('max-height', h+'px', 'important');
+    d.style.setProperty('margin', '12px 12px 0', 'important');
+  }
+  function activeGo(){
+    var s1=document.getElementById('emStep1'), g1=document.getElementById('emGo1'), g2=document.getElementById('emGo2');
+    return (s1&&s1.classList.contains('on'))?g1:g2;
+  }
+  var told=false;
+  function guard(){
+    if(!m.classList.contains('open')) return;
+    size();
+    var g=activeGo(); if(!g) return;
+    /* make sure exactly the active Continue is visible even if :has() misbehaved */
+    var g1=document.getElementById('emGo1'), g2=document.getElementById('emGo2');
+    if(g1) g1.classList.toggle('lla-hide', g!==g1); if(g2) g2.classList.toggle('lla-hide', g!==g2);
+    var s2=document.getElementById('emStep2'), onS2=!!(s2&&s2.classList.contains('on')); m.classList.toggle('lla-s2',onS2);
+    var r=g.getBoundingClientRect(), H=vh();
+    var visible = r.height>0 && r.top>=0 && r.bottom<=H+1 && getComputedStyle(g).display!=='none';
+    if(onS2){ m.classList.remove('lla-fixfoot'); } /* plan & date screen: Continue stays in the flow, never pinned */
+    else if(!visible){ m.classList.add('lla-fixfoot'); r=g.getBoundingClientRect(); visible = r.height>0 && r.top>=0 && r.bottom<=H+1; }
+    if(!told){ told=true; try{ if(window.fbq) fbq('trackCustom', visible?'LLA_Popup_ContinueVisible':'LLA_Popup_ContinueHidden', {vh:Math.round(H), inner:window.innerHeight, dialog_h:Math.round((m.querySelector('.em-dialog')||g).getBoundingClientRect().height), ua:navigator.userAgent.slice(0,80)}); }catch(e){} }
+  }
+  try{ new MutationObserver(function(){ setTimeout(guard,50); setTimeout(guard,400); }).observe(m,{attributes:true,attributeFilter:['class'],subtree:true}); }catch(e){}
+  window.addEventListener('resize', function(){ setTimeout(guard,50); }, {passive:true});
+  try{ if(window.visualViewport) visualViewport.addEventListener('resize', function(){ setTimeout(guard,50); }); }catch(e){}
+  window.addEventListener('orientationchange', function(){ setTimeout(guard,300); });
+  document.addEventListener('click', function(){ setTimeout(guard,60); }, true);
+})();
+
+</script>
+<script>
+
+/* 2026-09-21 10:10 keyboard fix: on iOS the footer must be anchored to the VISUAL viewport (fixed elements sit behind the keyboard). */
+(function(){
+  var m=document.getElementById('enrollModal'); if(!m) return;
+  /* 2026-09-21 r15: phones use the full-screen sheet; the Continue button sits in the form flow, nothing is repositioned with the keyboard. */
+  try{ if(window.matchMedia('(max-width:640px)').matches) return; }catch(e){}
+  var vv=window.visualViewport;
+  var ids=['emName','emEmail','emPhone'];
+  function foot(){ return m.querySelector('.mock-footer'); }
+  function kbOpen(){ return !!(vv && (window.innerHeight - vv.height) > 120); }
+  function place(){
+    var f=foot(); if(!f) return;
+    if(!m.classList.contains('open')){ m.classList.remove('lla-kb-open'); f.style.removeProperty('top'); f.style.removeProperty('bottom'); f.style.removeProperty('position'); f.classList.remove('lla-kb'); return; }
+    if(kbOpen()){
+      m.classList.add('lla-kb-open');
+      var fh=f.getBoundingClientRect().height||96;
+      var top=Math.max(0, vv.offsetTop + vv.height - fh);
+      f.classList.add('lla-kb');
+      f.style.setProperty('position','fixed','important');
+      f.style.setProperty('left','12px','important'); f.style.setProperty('right','12px','important');
+      f.style.setProperty('top', top+'px','important');
+      f.style.setProperty('bottom','auto','important');
+      f.style.setProperty('margin','0','important');
+      f.style.setProperty('z-index','2147483000','important');
+      var d=m.querySelector('.em-dialog'); if(d){ d.style.setProperty('padding-bottom', Math.round(fh+24)+'px','important'); d.style.setProperty('max-height', Math.max(200, Math.floor(vv.height)-12)+'px','important'); }
+      try{ var a=document.activeElement; if(a&&ids.indexOf(a.id)>-1){ setTimeout(function(){ try{ a.scrollIntoView({block:'center'}); }catch(e){} },30); } }catch(e){}
+    } else if(f.classList.contains('lla-kb')){
+      m.classList.remove('lla-kb-open');
+      f.classList.remove('lla-kb'); f.style.removeProperty('top'); f.style.removeProperty('bottom'); f.style.removeProperty('position'); f.style.removeProperty('margin'); f.style.removeProperty('left'); f.style.removeProperty('right');
+    }
+  }
+  if(vv){ vv.addEventListener('resize', function(){ place(); setTimeout(place,250); }); vv.addEventListener('scroll', place); }
+  window.addEventListener('resize', function(){ setTimeout(place,100); }, {passive:true});
+  ids.forEach(function(id){
+    var el=document.getElementById(id); if(!el) return;
+    try{ el.setAttribute('enterkeyhint', id==='emPhone'?'go':'next'); }catch(e){}
+    el.addEventListener('focus', function(){ setTimeout(function(){ try{ el.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){} place(); }, 350); }, true);
+    el.addEventListener('keydown', function(e){
+      if(e.key!=='Enter') return;
+      e.preventDefault();
+      var i=ids.indexOf(id);
+      if(i<ids.length-1){ var n=document.getElementById(ids[i+1]); if(n){ n.focus(); return; } }
+      var g=document.getElementById('emGo1'); if(g){ el.blur(); setTimeout(function(){ g.click(); }, 60); }
+    });
+  });
+  try{ new MutationObserver(function(){ setTimeout(place,80); }).observe(m,{attributes:true,attributeFilter:['class'],subtree:true}); }catch(e){}
+})();
+
+</script>
+<script src="assets/mf/pd/r15-sheet.js"></script>
+<script src="assets/mf/pd/guest-mobile.js"></script>
+<script src="assets/mf/pd/attendee-pricing.js"></script>
+<script>
+/* .com Enroll buttons ([data-checkout-open], set by nov-offer.js) open the pages.dev popup through its own opener,
+   with the fold as cta_location, the way pages.dev's data-fn-cta links do. */
+(function(){
+  var F={hero:'hero',syllabus:'learn',julie:'vip',pricing:'offer-monthly',teachers:'teachers',how:'section',skills:'section',faq:'section',apply:'section','lead-gen':'section'};
+  document.addEventListener('click',function(ev){
+    var a=ev.target&&ev.target.closest?ev.target.closest('[data-checkout-open]'):null;
+    if(!a||!window.__llaOpenEnroll) return;
+    ev.preventDefault();
+    if(!a.getAttribute('data-fn-cta')){ var s=a.closest('section'); a.setAttribute('data-fn-cta', a.closest('#llaFloatCta')?'floater':(a.closest('nav,.nav,.mobile-nav')?'nav':(s&&F[s.id])||'section')); }
+    window.__llaOpenEnroll(a);
+  },true);
+})();
+</script>
+<script>
+/* From pages.dev blueprint/index.html, function popup(): the popup footer (Continue + 14-day refund note) and the
+   first start-date pre-selection, copied verbatim. Left out on purpose: the September promo labels and summary in the
+   same function ($149 / $179 / save $249), which would show old prices next to the November offer. */
+(function(){
+  function popup(){
+    try{ if(!document.getElementById('llaCoPrefetch')){ var pf=document.createElement('link'); pf.id='llaCoPrefetch'; pf.rel='prefetch'; pf.href='checkout.html'; pf.as='document'; document.head.appendChild(pf); } }catch(e){}
+    var dlg=document.querySelector('#enrollModal .em-dialog'); if(!dlg||dlg.querySelector('.mock-footer')) return;
+    var f=document.createElement('div'); f.className='mock-footer';
+    var g2=document.getElementById('emGo2'), g1=document.getElementById('emGo1');
+    if(g2) f.appendChild(g2); if(g1) f.appendChild(g1);
+    var h=document.createElement('p'); h.className='mock-hint'; h.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#006EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg> <b>14-day full refund.</b> Not for you? Email us, every cent back.'; f.appendChild(h);
+    dlg.appendChild(f);
+    var tries=0; (function pick(){ var cards=[].slice.call(document.querySelectorAll('#dpList .dp-card')).filter(function(c){return !c.querySelector('.dp-late')});
+      var c=cards.find(function(c){return /Sep\s*22/.test(c.textContent)})||cards[0];
+      if(c){ if(c.getAttribute('aria-checked')!=='true') c.click(); } else if(tries++<20) setTimeout(pick,150); })();
+  }
+  function run(){ try{popup();}catch(e){} }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run); else run();
+  window.addEventListener('load',function(){ setTimeout(run,300); setTimeout(run,1500); });
+  document.addEventListener('click',function(e){ if(e.target.closest('a[href^="checkout.html"],[data-checkout-open]')) setTimeout(run,50); },true);
+})();
+
 </script>
   <script src="assets/lla-country.js" defer></script>
 
@@ -15263,6 +15986,8 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
 })();
 
 </script>
+<script src="assets/mf/pd/november-zones.js"></script>
+<script src="assets/mf/pd/blueprint-hotfix-state.js" defer></script>
 <script>
 /* LLA CTA events for www.longevitylifeacademy.com, copied from the pages.dev funnel (Omri, 6 Nov 2026: "all dot dev tracking").
  * What pages.dev sends and the .com did not:
