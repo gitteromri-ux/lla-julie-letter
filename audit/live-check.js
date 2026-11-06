@@ -14,12 +14,13 @@ const sha = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16
     rep.status = r.status; rep.servedSha = sha(t); rep.sameAsBuild = rep.servedSha === rep.fixtureSha; rep.tries = i + 1;
     if (rep.sameAsBuild) break; await new Promise(z => setTimeout(z, 30000));
   }
-  for (const [name, bt, o] of [['iphone', webkit, { ...devices['iPhone 14'] }], ['desktop', chromium, { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 }]]) {
+  for (const [name, bt, o] of [['iphone', webkit, { ...devices['iPhone 14'] }], ['desktop', chromium, { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 }], ['android320', chromium, { viewport: { width: 320, height: 693 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true }]]) {
     const b = await bt.launch(); const p = await (await b.newContext(o)).newPage();
     const rec = { tracking: [] };
     p.on('request', q => { if (/facebook|google-analytics|googletagmanager|doubleclick|workers\.dev|vercel\.app/.test(q.url())) rec.tracking.push(q.url().slice(0, 80)); });
     await p.goto(URL0 + '?v=' + Date.now(), { waitUntil: 'load', timeout: 90000 }).catch(e => rec.err = String(e).slice(0, 200));
     await p.waitForTimeout(4000);
+    rec.fit = await p.evaluate(() => ({ screen: screen.width, innerWidth: innerWidth, scrollWidth: document.documentElement.scrollWidth, viewport: (document.querySelector('meta[name="viewport"]') || {}).content }));
     rec.logos = await p.evaluate(() => [...document.querySelectorAll('.nav-logo-img, .hero-wordmark-img')].map(i => ({ cls: i.className, src: (i.currentSrc || i.src).split('/').pop(), natural: i.naturalWidth + 'x' + i.naturalHeight, shown: Math.round(i.getBoundingClientRect().width) + 'x' + Math.round(i.getBoundingClientRect().height), dpr: devicePixelRatio, filter: getComputedStyle(i).filter })));
     rec.order = await p.evaluate(() => [...document.querySelectorAll('main > section, body > section, section[id]')].filter(s => !s.parentElement.closest('section')).map(s => s.id || s.className.split(' ')[0]));
     await p.screenshot({ path: `${OUT}/${name}-top.jpg`, type: 'jpeg', quality: 85 });
