@@ -11527,6 +11527,54 @@ html.mf body section#syllabus .mf-phase-panel .mf-pp-label{color:#1E3F70!importa
 html.mf body section#syllabus .mf-phase-panel .mf-pp-list li{border-top-color:rgba(10,26,64,.14)!important}
 html.mf body section#syllabus .mf-phase-panel :is(.mf-pp-name,.mf-pp-ben,.mf-pp-list li span){color:#0A1A40!important}
 
+/* ===== Round 52: CGM, larger and coloured text (not white only) ===== */
+html.mf body #cgm.cgm12 .cgm14-live{width:270px!important}
+html.mf body #cgm.cgm12 .cgm14-meal{width:340px!important}
+html.mf body #cgm.cgm12 .cgm14-k{font-size:22px!important;color:#9FD6FF!important}
+html.mf body #cgm.cgm12 .cgm14-meal .cgm14-k{color:#FFB3CC!important}
+html.mf body #cgm.cgm12 .cgm14-num{font-size:50px!important;font-weight:300!important}
+html.mf body #cgm.cgm12 .cgm14-num span{font-size:21px!important;color:#9FD6FF!important}
+html.mf body #cgm.cgm12 .cgm14-legend{font-size:20px!important;gap:8px!important}
+html.mf body #cgm.cgm12 .cgm14-legend span:nth-child(1){color:#FFB3CC!important}
+html.mf body #cgm.cgm12 .cgm14-legend span:nth-child(2){color:#AEDCFF!important}
+html.mf body #cgm.cgm12 .cgm14-legend i{width:18px!important;height:3px!important}
+html.mf body #cgm.cgm12 .cgm14-tag{font-size:20px!important;padding:6px 13px!important}
+html.mf body #cgm.cgm12 .cgm12-words span{color:#BFE2FF!important}
+html.mf body #cgm.cgm12 .cgm8-fine{font-size:19px!important;color:#9FC3E6!important}
+@media (min-width:901px){html.mf body #cgm.cgm12 .cgm14-meal{left:34%!important;top:168px!important}html.mf body #cgm.cgm12 .cgm14-stage{height:400px!important}html.mf body #cgm.cgm12 svg.cgm14-sensor{top:262px!important}}
+@media (max-width:900px){
+  html.mf body #cgm.cgm12 .cgm14-live{width:222px!important;right:0!important}
+  html.mf body #cgm.cgm12 .cgm14-meal{width:262px!important;top:162px!important}
+  html.mf body #cgm.cgm12 .cgm14-k{font-size:20px!important}
+  html.mf body #cgm.cgm12 .cgm14-num{font-size:42px!important}
+  html.mf body #cgm.cgm12 .cgm14-num span{font-size:19px!important}
+  html.mf body #cgm.cgm12 .cgm14-legend{font-size:19px!important}
+  html.mf body #cgm.cgm12 .cgm14-legend span:nth-child(2){display:inline-flex!important}
+  html.mf body #cgm.cgm12 .cgm14-tag{font-size:19px!important}
+  html.mf body #cgm.cgm12 .cgm14-stage{height:372px!important}
+  html.mf body #cgm.cgm12 svg.cgm14-sensor{top:196px!important;width:112px!important}
+  html.mf body #cgm.cgm12 .cgm8-fine{font-size:18px!important}
+}
+@media (max-width:900px){html.mf body #cgm.cgm12 .cgm14-meal{width:256px!important;right:0!important}}
+
+/* ===== Round 52: each session in the phase panel opens to show what happens in it ===== */
+html.mf body section#syllabus .mf-pp-list li.mf-pp-item{display:block!important;padding:0!important}
+html.mf body section#syllabus .mf-pp-row{display:flex;align-items:baseline;gap:12px;width:100%;padding:12px 0;margin:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer;font:inherit}
+html.mf body section#syllabus .mf-pp-row i{font:italic 400 22px/1 'Playfair Display',Georgia,serif;min-width:30px;color:#2A5288}
+html.mf body section#syllabus .mf-pp-row span{flex:1;font:500 20px/1.35 'Playfair Display',Georgia,serif;color:#0A1A40}
+html.mf body section#syllabus .mf-pp-plus{font:300 26px/1 Inter,sans-serif;color:#2A5288;margin-left:8px}
+html.mf body section#syllabus li.is-open .mf-pp-plus{transform:rotate(45deg)}
+html.mf body section#syllabus .mf-pp-detail{padding:2px 0 16px 42px;color:#0A1A40}
+html.mf body section#syllabus .mf-pp-detail .curriculum-section-label{margin:10px 0 4px;font:600 17px/1.3 Inter,sans-serif!important;color:#2A5288!important;text-transform:none!important;letter-spacing:0!important}
+html.mf body section#syllabus .mf-pp-detail ul{margin:0;padding:0 0 0 18px}
+html.mf body section#syllabus .mf-pp-detail li{display:list-item!important;border:0!important;padding:3px 0!important;font:400 18px/1.45 Inter,sans-serif;color:#0A1A40;list-style:disc}
+html.mf body section#syllabus .mf-pp-detail p{margin:0;font:400 18px/1.5 Inter,sans-serif;color:#0A1A40}
+@media (max-width:900px){html.mf body section#syllabus .mf-pp-row span{font-size:19px}html.mf body section#syllabus .mf-pp-detail{padding-left:0}}
+html.mf body section#syllabus .mf-pp-detail ul{padding-left:0!important;list-style:none!important}
+html.mf body section#syllabus .mf-pp-detail li{list-style:none!important;position:relative!important;padding-left:18px!important}
+html.mf body section#syllabus .mf-pp-detail li::before{content:''!important;position:absolute!important;left:2px!important;top:.72em!important;width:6px!important;height:6px!important;border-radius:50%!important;background:#2A5288!important}
+html.mf body section#syllabus .mf-pp-detail .curriculum-work{border-left:3px solid #2A5288!important;background:rgba(255,255,255,.55)!important;border-radius:10px!important;padding:12px 14px!important;margin-top:4px!important}
+
 
 </style>
 </head>
@@ -14179,11 +14227,18 @@ a.lg-buy:hover{transform:translateY(-2px);box-shadow:0 18px 46px rgba(16,185,129
     blocks.forEach(function(x){ x.classList.remove('mf-open'); x.setAttribute('aria-expanded','false'); });
     if(!b){ panel.hidden=true; panel.innerHTML=''; return; }
     b.classList.add('mf-open'); b.setAttribute('aria-expanded','true');
-    var items=[].slice.call(b.querySelectorAll('.curriculum-item')).map(function(it){ return '<li><i>'+txt(it,'.curriculum-num')+'</i><span>'+txt(it,'h3')+'</span></li>'; }).join('');
+    var items=[].slice.call(b.querySelectorAll('.curriculum-item')).map(function(it){ return '<li class="mf-pp-item"><button type="button" class="mf-pp-row" aria-expanded="false"><i>'+txt(it,'.curriculum-num')+'</i><span>'+txt(it,'h3')+'</span><b class="mf-pp-plus" aria-hidden="true">+</b></button><div class="mf-pp-detail" hidden>'+txt(it,'.curriculum-body-inner')+'</div></li>'; }).join('');
     var ben=b.querySelector('.phase-benefit');
     panel.setAttribute('data-phase', b.getAttribute('data-phase'));
     panel.innerHTML='<div class="mf-pp-head"><span class="mf-pp-num">'+txt(b,'.phase-block-num')+'</span><span class="mf-pp-name">'+txt(b,'.phase-block-name')+'</span><span class="mf-pp-label">'+txt(b,'.phase-block-label')+'</span></div>'+(ben?'<p class="mf-pp-ben">'+ben.innerHTML+'</p>':'')+'<ol class="mf-pp-list">'+items+'</ol>';
     panel.hidden=false;
+    [].slice.call(panel.querySelectorAll('.mf-pp-row')).forEach(function(r){
+      r.addEventListener('click',function(){
+        var li=r.parentNode, d=li.querySelector('.mf-pp-detail'), open=r.getAttribute('aria-expanded')==='true';
+        [].slice.call(panel.querySelectorAll('.mf-pp-row')).forEach(function(x){ x.setAttribute('aria-expanded','false'); x.parentNode.classList.remove('is-open'); x.parentNode.querySelector('.mf-pp-detail').hidden=true; });
+        if(!open){ r.setAttribute('aria-expanded','true'); li.classList.add('is-open'); d.hidden=false; }
+      });
+    });
     if(window.innerWidth<901){ setTimeout(function(){ panel.scrollIntoView({behavior:'smooth',block:'nearest'}); },60); }
   }
   blocks.forEach(function(b){
