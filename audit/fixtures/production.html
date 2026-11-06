@@ -11968,6 +11968,43 @@ html.mf body:not(#mf-x) section#pricing .mfp-tiles .mfp-t:nth-child(1){border:1.
 html.mf body:not(#mf-x) section#pricing .mfp-tiles .mfp-t:nth-child(4){background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.14),transparent 55%),linear-gradient(160deg,#070C1A 0%,#000207 100%)!important;border:1.5px solid #9AD8FF!important;box-shadow:0 0 26px -6px rgba(154,216,255,.75),0 16px 30px -16px rgba(10,26,64,.6)!important}
 html.mf body:not(#mf-x) section#pricing .mfp-tiles .mfp-t:nth-child(4) :is(b,span,p,.mfp-th){color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
 
+/* ===== Round 62 (Omri: "Add more lighting to Lingo cards 3d and smaller fonts and graphic. Must be more premium") ===== */
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-card{position:absolute!important;overflow:hidden!important;padding:10px 12px 10px!important;border-radius:14px!important;
+  background:radial-gradient(140% 90% at 0% 0%,rgba(255,255,255,.30),rgba(255,255,255,0) 46%),radial-gradient(90% 70% at 100% 100%,rgba(159,214,255,.22),transparent 60%),linear-gradient(160deg,rgba(39,60,95,.92) 0%,rgba(12,26,60,.96) 62%,rgba(6,14,36,.98) 100%)!important;
+  border:1px solid rgba(214,238,255,.7)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(159,214,255,.35),inset 0 0 22px rgba(159,214,255,.16),0 0 0 1px rgba(159,214,255,.18),0 0 34px -2px rgba(124,192,255,.7),0 30px 44px -18px rgba(0,0,0,.95)!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-card::before{content:''!important;position:absolute!important;inset:0!important;border-radius:inherit!important;background:linear-gradient(115deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.06) 28%,rgba(255,255,255,0) 42%)!important;pointer-events:none!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-card > *{position:relative!important;z-index:1!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-live{transform:perspective(700px) rotateY(16deg) rotateX(5deg)!important;transform-origin:100% 50%!important;width:150px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-meal{transform:perspective(700px) rotateY(-16deg) rotateX(5deg)!important;transform-origin:0% 50%!important;width:164px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-k{font:italic 500 14px/1.2 'Playfair Display',Georgia,serif!important;color:#BFE4FF!important;-webkit-text-fill-color:#BFE4FF!important;margin:0 0 2px!important;letter-spacing:.01em!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-num{font:300 24px/1.05 Inter,sans-serif!important;color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important;margin:0 0 3px!important;text-shadow:0 0 14px rgba(159,214,255,.6)!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-num span{font:500 12px/1 Inter,sans-serif!important;margin-left:4px!important;color:#CFE6FF!important;-webkit-text-fill-color:#CFE6FF!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-trace{height:20px!important;width:100%!important;display:block!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-curves{height:34px!important;width:100%!important;display:block!important;margin-top:2px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend{font:500 12px/1.35 Inter,sans-serif!important;gap:1px!important;margin-top:4px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend span{font-size:12px!important}
+html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend i{width:10px!important;height:2px!important;margin-right:5px!important}
+@media (max-width:900px){
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-live{width:116px!important;top:30px!important;left:4px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-meal{width:128px!important;top:170px!important;right:4px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-card{padding:8px 10px!important;border-radius:12px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-k{font-size:13px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-num{font-size:21px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-trace{height:17px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-curves{height:28px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend,html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-legend span{font-size:11px!important}
+}
+@media (prefers-reduced-motion:no-preference){
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-card{animation:mfLingoGlow 5.5s ease-in-out infinite}
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm14-meal{animation-delay:-2.7s}
+}
+@keyframes mfLingoGlow{0%,100%{filter:drop-shadow(0 0 0 rgba(159,214,255,0))}50%{filter:drop-shadow(0 0 10px rgba(159,214,255,.45))}}
+@media (min-width:901px){
+  html.mf body:not(#mf-x) #cgm.cgm12 .cgm12-grid{grid-template-columns:minmax(0,620px) minmax(0,1fr)!important;max-width:1260px!important;gap:28px!important}
+  html.mf body:not(#mf-x) #cgm.cgm12 h2.section-title{text-wrap:balance!important;max-width:620px!important}
+}
+
 /* ===== Round 60 (Omri: "Why does every fold have different fonts"): one type system for every fold below the hero =====
    Section label: Inter 700 18. Section header: Playfair Display 500, 36 phone / 56 desktop, accent in Playfair italic.
    Card title: Playfair Display 500, 26 / 28. List title: Playfair Display 500, 21 / 22.
