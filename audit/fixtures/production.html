@@ -12021,6 +12021,15 @@ html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tabs{grid-template-columns
 html.mf body:not(#mf-x):not(#mf-t) #syllabus .mf-sess-tab{white-space:pre!important;padding:10px 2px 12px!important;font-size:16px!important;line-height:1.25!important}
 html.mf body:not(#mf-x):not(#mf-t) #syllabus :is(.curriculum-item,.curriculum-body,.curriculum-body-inner,.mf-sess-panels,.mf-sess-panel){min-width:0!important;max-width:100%!important}
 html.mf body:not(#mf-x):not(#mf-t) #syllabus .phase-block-sessions{min-width:0!important}
+/* Omri: "Why is Foundation duplicate headline card": the open tab already names the phase, so the phase header box goes */
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .phase-block .phase-block-header{display:none!important}
+html.mf body:not(#mf-x):not(#mf-t) #syllabus .phase-block{padding-top:0!important}
+/* FAQ questions in Playfair: more room on phones so they read in one or two lines */
+@media (max-width:900px){
+  html.mf body:not(#mf-x):not(#mf-t) #faq .faq-q{padding:14px 12px 14px 14px!important;column-gap:10px!important;font-size:20px!important;line-height:1.28!important}
+  html.mf body:not(#mf-x):not(#mf-t) #faq .faq-q .faq-num{margin-right:10px!important;flex:0 0 auto!important}
+  html.mf body:not(#mf-x):not(#mf-t) #faq .faq-q .faq-icon{width:30px!important;height:30px!important;min-width:30px!important;margin-left:8px!important;flex:0 0 30px!important}
+}
 
 </style>
 </head>
