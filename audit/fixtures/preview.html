@@ -11441,6 +11441,15 @@ html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.m
   html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-label:not(.mf-x){margin-top:auto!important;padding-top:8px!important}
 }
 @media (min-width:901px){html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-name:not(.mf-x){min-height:2.3em!important;display:flex!important;align-items:flex-end!important}}
+/* Round 49: desktop syllabus matches the phone, four compact phase cards in one row */
+@media (min-width:901px){
+  html.mf body section#syllabus .curriculum-phases{grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-rows:1fr!important;align-items:stretch!important;max-width:1180px!important;margin:0 auto!important;gap:18px!important}
+  html.mf body section#syllabus .phase-block-sessions,html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-benefit:not(.mf-x){display:none!important}
+  html.mf body section#syllabus .phase-block{padding:24px 24px 22px!important;min-height:200px!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-header:not(.mf-x){height:100%!important;gap:6px!important;margin:0!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-name:not(.mf-x){min-height:0!important;display:block!important;font-size:26px!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-label:not(.mf-x){margin-top:auto!important;padding-top:10px!important;font-size:18px!important}
+}
 
 
 </style>
