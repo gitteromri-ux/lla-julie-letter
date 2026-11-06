@@ -1,12 +1,18 @@
 {
  "url": "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/",
- "fixtureSha": "3f84e9e723cda841",
+ "fixtureSha": "602a651050a1c819",
  "status": 200,
- "servedSha": "3f84e9e723cda841",
+ "servedSha": "602a651050a1c819",
  "sameAsBuild": true,
  "tries": 1,
  "iphone": {
   "tracking": [],
+  "fit": {
+   "screen": 390,
+   "innerWidth": 390,
+   "scrollWidth": 390,
+   "viewport": "width=device-width, initial-scale=1.0"
+  },
   "logos": [
    {
     "cls": "nav-logo-img",
@@ -73,7 +79,7 @@
      "active": "2",
      "sessions": 4,
      "opened": true,
-     "bodyPx": 480,
+     "bodyPx": 747,
      "h3px": "20px",
      "flowPx": "19px"
     },
@@ -82,7 +88,7 @@
      "active": "3",
      "sessions": 6,
      "opened": true,
-     "bodyPx": 746,
+     "bodyPx": 405,
      "h3px": "20px",
      "flowPx": "19px"
     },
@@ -107,7 +113,7 @@
    "screens": 1.37
   },
   "#syllabus": {
-   "screens": 2
+   "screens": 1.88
   },
   "#how": {
    "screens": 1.46
@@ -115,6 +121,12 @@
  },
  "desktop": {
   "tracking": [],
+  "fit": {
+   "screen": 1440,
+   "innerWidth": 1440,
+   "scrollWidth": 1440,
+   "viewport": "width=device-width, initial-scale=1.0"
+  },
   "logos": [
    {
     "cls": "nav-logo-img",
@@ -219,6 +231,120 @@
   },
   "#how": {
    "screens": 1.1
+  }
+ },
+ "android320": {
+  "tracking": [],
+  "fit": {
+   "screen": 320,
+   "innerWidth": 390,
+   "scrollWidth": 390,
+   "viewport": "width=390"
+  },
+  "logos": [
+   {
+    "cls": "nav-logo-img",
+    "src": "lla-logo-no-tagline@2x.png",
+    "natural": "1268x397",
+    "shown": "109x34",
+    "dpr": 3,
+    "filter": "drop-shadow(rgba(0, 0, 0, 0.45) 0px 2px 8px)"
+   },
+   {
+    "cls": "hero-wordmark-img",
+    "src": "lla-wordmark-only-transparent@2x.png?v=10",
+    "natural": "397x253",
+    "shown": "64x41",
+    "dpr": 3,
+    "filter": "none"
+   }
+  ],
+  "order": [
+   "hero",
+   "topics",
+   "syllabus",
+   "cgm",
+   "julie",
+   "pricing",
+   "how",
+   "about",
+   "trust-strip",
+   "teachers",
+   "deepdive",
+   "skills",
+   "testimonials",
+   "included",
+   "value",
+   "bioquiz",
+   "faq",
+   "lead-gen",
+   "apply"
+  ],
+  "logos2": {
+   "anim": "mfmarquee",
+   "moving": true,
+   "broken": 0
+  },
+  "syllabus": {
+   "tabs": [
+    "01 Foundation Sessions 1 to 3",
+    "02 Data & Discovery Sessions 4 to 7",
+    "03 Lifestyle Systems Sessions 8 to 13",
+    "04 Integration & Blueprint Sessions 14 to 18"
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "active": "1",
+     "sessions": 3,
+     "opened": true,
+     "bodyPx": 757,
+     "h3px": "20px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 2,
+     "active": "2",
+     "sessions": 4,
+     "opened": true,
+     "bodyPx": 757,
+     "h3px": "20px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 3,
+     "active": "3",
+     "sessions": 6,
+     "opened": true,
+     "bodyPx": 757,
+     "h3px": "20px",
+     "flowPx": "19px"
+    },
+    {
+     "n": 4,
+     "active": "4",
+     "sessions": 5,
+     "opened": true,
+     "bodyPx": 757,
+     "h3px": "20px",
+     "flowPx": "19px"
+    }
+   ]
+  },
+  "#julie": {
+   "screens": 0.72
+  },
+  "#pricing": {
+   "screens": 2.1
+  },
+  "#cgm": {
+   "screens": 1.32
+  },
+  "#syllabus": {
+   "screens": 1.81
+  },
+  "#how": {
+   "screens": 1.4
   }
  }
 }
