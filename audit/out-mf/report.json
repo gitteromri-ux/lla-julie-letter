@@ -19,9 +19,9 @@
           "w": 350
         }
       ],
-      "height": 20462,
+      "height": 19747,
       "vh": 664,
-      "screens": 30.8,
+      "screens": 29.7,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 0,
@@ -48,9 +48,9 @@
           "w": 372
         }
       ],
-      "height": 20181,
+      "height": 19597,
       "vh": 839,
-      "screens": 24.1,
+      "screens": 23.4,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 0,
@@ -72,14 +72,14 @@
         },
         {
           "src": "full-film-720p.mp4",
-          "paused": true,
-          "readyState": 0,
+          "paused": false,
+          "readyState": 4,
           "w": 280
         }
       ],
-      "height": 22504,
+      "height": 21291,
       "vh": 568,
-      "screens": 39.6,
+      "screens": 37.5,
       "overflowX": 0,
       "broken": [],
       "videosPlaying": 5,
@@ -106,7 +106,7 @@
           "w": 560
         }
       ],
-      "height": 21108,
+      "height": 21121,
       "vh": 900,
       "screens": 23.5,
       "overflowX": 0,
