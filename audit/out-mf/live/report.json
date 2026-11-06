@@ -1,13 +1,13 @@
 {
  "url": "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/",
- "fixtureSha": "e33ee0f0f47c2deb",
+ "fixtureSha": "e731668e33c5a69b",
  "status": 200,
- "servedSha": "e33ee0f0f47c2deb",
+ "servedSha": "e731668e33c5a69b",
  "sameAsBuild": true,
  "tries": 1,
  "board": {
   "status": 200,
-  "isRound39": true,
+  "isRound40": true,
   "tries": 1
  },
  "iphone": {
@@ -57,19 +57,19 @@
    "broken": 0
   },
   "#julie": {
-   "screens": 0.75
+   "screens": 0.77
   },
   "#pricing": {
-   "screens": 1.88
+   "screens": 2.24
   },
   "#cgm": {
-   "screens": 1.75
+   "screens": 1.74
   },
   "#syllabus": {
-   "screens": 2.03
+   "screens": 2.02
   },
   "#how": {
-   "screens": 1.37
+   "screens": 1.43
   }
  },
  "desktop": {
@@ -128,10 +128,10 @@
    "screens": 1.02
   },
   "#syllabus": {
-   "screens": 1.65
+   "screens": 1.68
   },
   "#how": {
-   "screens": 1.08
+   "screens": 1.12
   }
  }
 }
