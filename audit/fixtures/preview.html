@@ -11512,6 +11512,21 @@ html.mf body section#syllabus .mf-pp-list li span{font:500 20px/1.35 'Playfair D
   html.mf body section#syllabus .mf-pp-list li span{font-size:19px}
 }
 
+/* ===== Round 51: CGM restored (Lingo version) with larger point text; syllabus panels brighter, a different colour per phase ===== */
+html.mf body #cgm.cgm12 .cgm12-words{gap:16px}
+html.mf body #cgm.cgm12 .cgm12-words b{font-size:31px!important;line-height:1.12!important}
+html.mf body #cgm.cgm12 .cgm12-words span{font-size:21px!important;line-height:1.42!important;color:#FFFFFF!important}
+@media (max-width:900px){html.mf body #cgm.cgm12 .cgm12-words b{font-size:27px!important}html.mf body #cgm.cgm12 .cgm12-words span{font-size:20px!important}}
+html.mf body section#syllabus .mf-phase-panel{color:#0A1A40!important;border:1px solid rgba(255,255,255,.95)!important;box-shadow:inset 0 1px 0 #FFFFFF,0 0 26px -6px rgba(159,212,255,.75),0 30px 60px -30px rgba(0,0,0,.85)!important}
+html.mf body section#syllabus .mf-phase-panel[data-phase="1"]{background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.9),transparent 60%),linear-gradient(160deg,#FFFFFF,#EAF5FF)!important}
+html.mf body section#syllabus .mf-phase-panel[data-phase="2"]{background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.7),transparent 60%),linear-gradient(160deg,#EAF6FF,#CBE7FF)!important}
+html.mf body section#syllabus .mf-phase-panel[data-phase="3"]{background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.6),transparent 60%),linear-gradient(160deg,#D6EDFF,#ABD6FF)!important}
+html.mf body section#syllabus .mf-phase-panel[data-phase="4"]{background:radial-gradient(120% 90% at 0% 0%,rgba(255,255,255,.55),transparent 60%),linear-gradient(160deg,#C9E6FF,#93C9F8)!important}
+html.mf body section#syllabus .mf-phase-panel :is(.mf-pp-num,.mf-pp-list li i){color:#2A5288!important}
+html.mf body section#syllabus .mf-phase-panel .mf-pp-label{color:#1E3F70!important;opacity:1!important}
+html.mf body section#syllabus .mf-phase-panel .mf-pp-list li{border-top-color:rgba(10,26,64,.14)!important}
+html.mf body section#syllabus .mf-phase-panel :is(.mf-pp-name,.mf-pp-ben,.mf-pp-list li span){color:#0A1A40!important}
+
 
 </style>
 </head>
@@ -12173,27 +12188,70 @@ html.mf body section#syllabus .mf-pp-list li span{font:500 20px/1.35 'Playfair D
       <a href="#pricing" class="section-cta-btn" data-fn-cta="section">Enroll Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
     </div>
   </section>
-<section class="cgm-fold cgm-com" id="cgm">
+<section class="cgm8 cgm12" id="cgm">
   <div class="container">
-    <div class="cgm-fold-header reveal">
-      <span class="cgm-fold-eyebrow">Included in Your&nbsp;Course</span>
-      <h2 class="cgm-fold-title">Continuous Glucose Monitoring, <span class="mf-lb">Included in Your&nbsp;Course</span></h2>
-      <p class="cgm-fold-sub">Every student receives an Abbott Lingo continuous glucose monitor plus full Lingo app access, included with the course. Track your body's real-time response to food, sleep, and&nbsp;movement.</p>
-    </div>
-    <div class="cgm-fold-images reveal">
-      <div class="cgm-fold-img"><img src="https://www.longevitylifeacademy.com/assets/cgm/lingo-1.jpg" alt="Abbott Lingo biosensor and app" loading="lazy"></div>
-      <div class="cgm-fold-img"><img src="https://www.longevitylifeacademy.com/assets/cgm/lingo-2.jpg" alt="Lingo packaging" loading="lazy"></div>
-      <div class="cgm-fold-img"><img src="https://www.longevitylifeacademy.com/assets/cgm/lingo-6.jpg" alt="Lingo CGM lifestyle" loading="lazy"></div>
-    </div>
-    <div class="cgm-fold-bullets reveal">
-      <div class="cgm-fold-bullet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>14-day Abbott Lingo biosensor, water-resistant, painless&nbsp;application</span></div>
-      <div class="cgm-fold-bullet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>Full Lingo app access included, iOS and Android, Apple Health and Health&nbsp;Connect</span></div>
-      <div class="cgm-fold-bullet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>FSA/HSA Prescription: Not&nbsp;needed</span></div>
-      <div class="cgm-fold-bullet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>For students 18+. Not for insulin users. Not for medical&nbsp;diagnosis.</span></div>
-      <div class="cgm-fold-bullet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>One unit per student, shipped to U.S.&nbsp;addresses</span></div>
-    </div>
-    <div class="cgm-fold-cta-wrap reveal">
-      <a href="https://www.longevitylifeacademy.com/cgm.html" class="cgm-fold-cta">Learn more about the device <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="cgm12-grid">
+      <div class="cgm12-copy">
+        <h2 class="section-title">Continuous Glucose Monitoring, <span class="mf-lb">Included in Your&nbsp;Course</span></h2>
+        <ul class="cgm12-words">
+          <li class="w1"><b>Minute-by-minute&nbsp;glucose</b><span>tracked for 2&nbsp;weeks</span></li>
+          <li class="w2"><b>Lingo&nbsp;coaching</b><span>to build habits and adjust your&nbsp;nutrition</span></li>
+          <li class="w3"><b>Free, shipped to your&nbsp;home</b><span>full app access on iOS and&nbsp;Android</span></li>
+        </ul>
+        <p class="cgm8-fine">For students 18+. Not for insulin users. Not for medical diagnosis. One unit per student, shipped to U.S.&nbsp;addresses.</p>
+      </div>
+      <div class="cgm12-stage cgm14-stage">
+        <img class="cgm14-phone" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-phone.png" alt="The Abbott Lingo app on a phone" width="462" height="688">
+        <svg class="cgm14-sensor" viewBox="0 0 220 150" role="img" aria-label="The Abbott Lingo biosensor">
+          <defs>
+            <radialGradient id="snFace" cx="38%" cy="30%" r="80%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F3F6F9"/><stop offset=".85" stop-color="#E2E8EE"/><stop offset="1" stop-color="#CED6DF"/></radialGradient>
+            <linearGradient id="snSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B9C3CE"/><stop offset=".25" stop-color="#E9EEF3"/><stop offset=".55" stop-color="#FFFFFF"/><stop offset=".8" stop-color="#E3E9EF"/><stop offset="1" stop-color="#AEB9C5"/></linearGradient>
+            <radialGradient id="snDome" cx="42%" cy="34%" r="70%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".7" stop-color="#F6F8FB"/><stop offset="1" stop-color="#E6EBF1"/></radialGradient>
+            <radialGradient id="snShadow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000814" stop-opacity=".75"/><stop offset="1" stop-color="#000814" stop-opacity="0"/></radialGradient>
+            <filter id="snBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+            <radialGradient id="snHole" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#8E99A6"/><stop offset=".6" stop-color="#C5CDD6"/><stop offset="1" stop-color="#EEF2F6"/></radialGradient>
+          </defs>
+          <ellipse cx="112" cy="104" rx="98" ry="26" fill="url(#snShadow)"/>
+          <path d="M14 70 A96 52 0 0 0 206 70 L206 84 A96 52 0 0 1 14 84 Z" fill="url(#snSide)"/>
+          <ellipse cx="110" cy="70" rx="96" ry="52" fill="url(#snFace)"/>
+          <ellipse cx="110" cy="70" rx="96" ry="52" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="1"/>
+          <ellipse cx="110" cy="66" rx="74" ry="38" fill="url(#snDome)" stroke="rgba(120,135,150,.18)" stroke-width="1"/>
+          <ellipse cx="86" cy="50" rx="34" ry="12" fill="#FFFFFF" opacity=".75" filter="url(#snBlur)"/>
+          <ellipse cx="110" cy="66" rx="10" ry="5.6" fill="url(#snHole)" stroke="rgba(110,124,140,.35)" stroke-width=".8"/>
+          <ellipse cx="110" cy="66" rx="3.2" ry="1.8" fill="#6F7B88"/>
+        </svg>
+        <div class="cgm14-card cgm14-live">
+          <p class="cgm14-k">Live&nbsp;glucose</p>
+          <p class="cgm14-num">110<span>mg/dL</span></p>
+          <svg class="cgm14-trace" viewBox="0 0 220 64" aria-hidden="true">
+            <defs><filter id="c14g" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <linearGradient id="c14band" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#AEDCFF" stop-opacity=".16"/><stop offset="1" stop-color="#AEDCFF" stop-opacity=".04"/></linearGradient></defs>
+            <rect x="0" y="18" width="220" height="26" fill="url(#c14band)"/>
+            <line x1="0" y1="18" x2="220" y2="18" stroke="rgba(207,235,255,.55)" stroke-width=".8" stroke-dasharray="2 3"/>
+            <line x1="0" y1="44" x2="220" y2="44" stroke="rgba(207,235,255,.55)" stroke-width=".8" stroke-dasharray="2 3"/>
+            <path d="M2 36 C 8 34, 12 26, 18 25 C 24 24, 27 27, 31 33 C 35 39, 38 42, 42 30 C 45 20, 47 10, 51 11 C 55 12, 56 19, 59 17 C 62 15, 64 20, 67 28 C 70 36, 73 38, 78 35 C 84 32, 88 34, 94 32 C 100 30, 104 34, 110 31 C 116 28, 121 32, 127 29 C 133 26, 138 30, 144 28 C 151 26, 157 29, 164 27 C 172 25, 178 28, 186 25 C 194 23, 199 25, 206 22" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" filter="url(#c14g)"/>
+            <circle cx="206" cy="22" r="4" fill="#FFFFFF"/><circle cx="206" cy="22" r="9" fill="none" stroke="rgba(255,255,255,.45)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="cgm14-card cgm14-meal">
+          <p class="cgm14-k">After a&nbsp;meal</p>
+          <svg class="cgm14-curves" viewBox="0 0 280 110" aria-hidden="true">
+            <defs>
+              <linearGradient id="c14p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB5" stop-opacity=".30"/><stop offset="1" stop-color="#FF8FB5" stop-opacity="0"/></linearGradient>
+              <linearGradient id="c14b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9FD6FF" stop-opacity=".26"/><stop offset="1" stop-color="#9FD6FF" stop-opacity="0"/></linearGradient>
+            </defs>
+            <path d="M0 92 C 34 88, 52 16, 80 14 C 108 12, 118 80, 150 86 C 184 92, 230 93, 280 93 L280 100 L0 100Z" fill="url(#c14p)"/>
+            <path d="M0 95 C 60 93, 100 66, 140 65 C 184 64, 226 84, 280 86 L280 100 L0 100Z" fill="url(#c14b)"/>
+            <path d="M0 92 C 34 88, 52 16, 80 14 C 108 12, 118 80, 150 86 C 184 92, 230 93, 280 93" fill="none" stroke="#FF9CC0" stroke-width="1.6" filter="url(#c14g)"/>
+            <path d="M0 95 C 60 93, 100 66, 140 65 C 184 64, 226 84, 280 86" fill="none" stroke="#AEDCFF" stroke-width="1.6" filter="url(#c14g)"/>
+            <line x1="0" y1="100.5" x2="280" y2="100.5" stroke="rgba(207,235,255,.35)" stroke-width=".8"/>
+            <g stroke="rgba(207,235,255,.45)" stroke-width=".8"><line x1="1" y1="100" x2="1" y2="104"/><line x1="93" y1="100" x2="93" y2="104"/><line x1="186" y1="100" x2="186" y2="104"/><line x1="279" y1="100" x2="279" y2="104"/></g>
+            <circle cx="80" cy="14" r="3" fill="#FFD6E4"/>
+          </svg>
+          <p class="cgm14-legend"><span><i class="p"></i>sugar, simple&nbsp;carbs</span><span><i class="b"></i>a balanced&nbsp;plate</span></p>
+          <span class="cgm14-tag">Spike</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
