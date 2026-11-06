@@ -11337,6 +11337,36 @@ html.mf body #cgm.cgm12 .cgm12-chart .l-blue{top:116px}
   html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-name:not(.mf-x){font-size:23px!important}
 }
 
+/* ===== Round 44: Lingo with real app screens only (cut from Abbott's own photo), popping out of the phone ===== */
+html.mf body #cgm.cgm12 .cgm13-stage{position:relative;height:420px;perspective:1300px}
+html.mf body #cgm.cgm12 .cgm13-stage .cgm12-phone{left:4%;top:0;width:250px;transform:perspective(1100px) rotateY(12deg);z-index:1}
+html.mf body #cgm.cgm12 .cgm13-pop{position:absolute;display:block;height:auto;border-radius:18px;border:1px solid rgba(255,255,255,.55);box-shadow:0 0 0 6px rgba(255,255,255,.06),0 34px 60px -24px rgba(0,0,0,.9),0 0 26px -6px rgba(159,212,255,.55);z-index:3}
+html.mf body #cgm.cgm12 .cgm13-pop-a{left:43%;top:38px;width:250px;transform:perspective(900px) rotateY(-14deg) rotateX(3deg)}
+html.mf body #cgm.cgm12 .cgm13-pop-b{left:34%;top:196px;width:370px;transform:perspective(900px) rotateY(-12deg) rotateX(3deg)}
+@media (max-width:900px){
+  html.mf body #cgm.cgm12 .cgm13-stage{height:296px!important;margin-bottom:22px!important}
+  html.mf body #cgm.cgm12 .cgm13-stage .cgm12-phone{left:0;width:150px}
+  html.mf body #cgm.cgm12 .cgm13-pop{border-radius:14px}
+  html.mf body #cgm.cgm12 .cgm13-pop-a{left:auto;right:0;top:20px;width:196px}
+  html.mf body #cgm.cgm12 .cgm13-pop-b{left:auto;right:0;top:142px;width:250px}
+}
+
+/* ===== Round 44: syllabus phase cards all the same size on phones ===== */
+@media (max-width:900px){
+  html.mf body section#syllabus .curriculum-phases{grid-auto-rows:1fr!important;align-items:stretch!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]{height:100%!important;justify-content:flex-start!important}
+}
+@media (max-width:900px){html.mf body section#syllabus .curriculum-phases{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]{min-width:0!important;width:auto!important}}
+html.mf body #cgm.cgm12 .cgm13-pop-a{left:46%;top:56px;width:220px}
+html.mf body #cgm.cgm12 .cgm13-pop-b{left:40%;top:206px;width:300px}
+html.mf body #cgm.cgm12 .cgm13-stage{height:400px}
+@media (max-width:900px){
+  html.mf body #cgm.cgm12 .cgm13-pop-a{left:auto;right:6px;top:22px;width:176px}
+  html.mf body #cgm.cgm12 .cgm13-pop-b{left:auto;right:0;top:140px;width:226px}
+  html.mf body #cgm.cgm12 .cgm13-stage{height:282px!important}
+  html.mf body section#syllabus .curriculum-phases .phase-block[data-phase]:not(.mf-x):not(.mf-y) .phase-block-name:not(.mf-x){font-size:22px!important}
+}
+
 
 </style>
 </head>
@@ -12014,28 +12044,10 @@ html.mf body #cgm.cgm12 .cgm12-chart .l-blue{top:116px}
         </ul>
         <p class="cgm8-fine">For students 18+. Not for insulin users. Not for medical diagnosis. One unit per student, shipped to U.S.&nbsp;addresses.</p>
       </div>
-      <div class="cgm12-stage">
-        <img class="cgm12-phone" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-phone.png" alt="The Abbott Lingo app showing a live glucose reading of 110 mg/dL" width="462" height="688">
-        <div class="cgm12-live"><i>Live glucose</i><b>110</b><small>mg/dL</small></div>
-        <figure class="cgm12-chart" aria-label="Sample day: a glucose spike after sugar and simple carbs compared with a balanced plate">
-          <svg viewBox="0 0 400 210" preserveAspectRatio="none" aria-hidden="true">
-            <defs>
-              <linearGradient id="c12p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7FA8" stop-opacity=".45"/><stop offset="1" stop-color="#FF7FA8" stop-opacity=".02"/></linearGradient>
-              <linearGradient id="c12b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8CCBFF" stop-opacity=".40"/><stop offset="1" stop-color="#8CCBFF" stop-opacity=".02"/></linearGradient>
-              <filter id="c12g" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-            </defs>
-            <path d="M0 150 C 50 140, 70 30, 112 26 C 152 22, 168 128, 214 140 C 262 150, 330 152, 400 152 L400 185 L0 185Z" fill="url(#c12p)"/>
-            <path d="M0 160 C 90 156, 140 112, 200 110 C 262 108, 320 138, 400 142 L400 185 L0 185Z" fill="url(#c12b)"/>
-            <path d="M0 150 C 50 140, 70 30, 112 26 C 152 22, 168 128, 214 140 C 262 150, 330 152, 400 152" fill="none" stroke="#FF8FB5" stroke-width="3.4" filter="url(#c12g)"/>
-            <path d="M0 160 C 90 156, 140 112, 200 110 C 262 108, 320 138, 400 142" fill="none" stroke="#9FD6FF" stroke-width="3.4" filter="url(#c12g)"/>
-            <line x1="0" y1="186" x2="400" y2="186" stroke="rgba(207,235,255,.35)" stroke-width="1.2"/>
-          </svg>
-          <span class="l-pink">sugar, simple&nbsp;carbs</span>
-          <span class="l-blue">a balanced&nbsp;plate</span>
-          <span class="axis"><em>meal</em><em>1&nbsp;h</em><em>2&nbsp;h</em><em>3&nbsp;h</em></span>
-          <span class="cgm12-count"><i>Lingo Count</i><b>14</b></span>
-        </figure>
-        <p class="cgm12-sample">Sample day in the Abbott Lingo&nbsp;app</p>
+      <div class="cgm12-stage cgm13-stage">
+        <img class="cgm12-phone" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-phone.png" alt="The Abbott Lingo app on a phone" width="462" height="688">
+        <img class="cgm13-pop cgm13-pop-a" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-screen-glucose.jpg" alt="Abbott Lingo app: your current glucose is 110 mg/dL" width="560" height="340">
+        <img class="cgm13-pop cgm13-pop-b" src="https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/assets/lingo-screen-graph.jpg" alt="Abbott Lingo app: the day's glucose curve inside the target range" width="780" height="446">
       </div>
     </div>
   </div>
