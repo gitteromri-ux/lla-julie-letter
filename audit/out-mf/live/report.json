@@ -1,8 +1,8 @@
 {
  "url": "https://gitteromri-ux.github.io/lla-blueprint-vip-preview/meta-final/",
- "fixtureSha": "602a651050a1c819",
+ "fixtureSha": "6b82519bffeee1f7",
  "status": 200,
- "servedSha": "602a651050a1c819",
+ "servedSha": "6b82519bffeee1f7",
  "sameAsBuild": true,
  "tries": 1,
  "iphone": {
@@ -70,8 +70,8 @@
      "active": "1",
      "sessions": 3,
      "opened": true,
-     "bodyPx": 747,
-     "h3px": "20px",
+     "bodyPx": 377,
+     "h3px": "21px",
      "flowPx": "19px"
     },
     {
@@ -79,8 +79,8 @@
      "active": "2",
      "sessions": 4,
      "opened": true,
-     "bodyPx": 747,
-     "h3px": "20px",
+     "bodyPx": 405,
+     "h3px": "21px",
      "flowPx": "19px"
     },
     {
@@ -88,8 +88,8 @@
      "active": "3",
      "sessions": 6,
      "opened": true,
-     "bodyPx": 405,
-     "h3px": "20px",
+     "bodyPx": 349,
+     "h3px": "21px",
      "flowPx": "19px"
     },
     {
@@ -97,26 +97,26 @@
      "active": "4",
      "sessions": 5,
      "opened": true,
-     "bodyPx": 747,
-     "h3px": "20px",
+     "bodyPx": 377,
+     "h3px": "21px",
      "flowPx": "19px"
     }
    ]
   },
   "#julie": {
-   "screens": 0.75
+   "screens": 0.91
   },
   "#pricing": {
-   "screens": 2.18
+   "screens": 2.23
   },
   "#cgm": {
-   "screens": 1.37
+   "screens": 1.49
   },
   "#syllabus": {
-   "screens": 1.88
+   "screens": 1.71
   },
   "#how": {
-   "screens": 1.46
+   "screens": 1.43
   }
  },
  "desktop": {
@@ -184,7 +184,7 @@
      "active": "1",
      "sessions": 3,
      "opened": true,
-     "bodyPx": 410,
+     "bodyPx": 559,
      "h3px": "22px",
      "flowPx": "19px"
     },
@@ -193,7 +193,7 @@
      "active": "2",
      "sessions": 4,
      "opened": true,
-     "bodyPx": 439,
+     "bodyPx": 500,
      "h3px": "22px",
      "flowPx": "19px"
     },
@@ -202,7 +202,7 @@
      "active": "3",
      "sessions": 6,
      "opened": true,
-     "bodyPx": 439,
+     "bodyPx": 514,
      "h3px": "22px",
      "flowPx": "19px"
     },
@@ -211,26 +211,26 @@
      "active": "4",
      "sessions": 5,
      "opened": true,
-     "bodyPx": 410,
+     "bodyPx": 529,
      "h3px": "22px",
      "flowPx": "19px"
     }
    ]
   },
   "#julie": {
-   "screens": 0.6
+   "screens": 0.69
   },
   "#pricing": {
-   "screens": 1.37
+   "screens": 1.4
   },
   "#cgm": {
    "screens": 0.76
   },
   "#syllabus": {
-   "screens": 1.32
+   "screens": 1.17
   },
   "#how": {
-   "screens": 1.1
+   "screens": 1.08
   }
  },
  "android320": {
@@ -298,8 +298,8 @@
      "active": "1",
      "sessions": 3,
      "opened": true,
-     "bodyPx": 757,
-     "h3px": "20px",
+     "bodyPx": 381,
+     "h3px": "21px",
      "flowPx": "19px"
     },
     {
@@ -307,8 +307,8 @@
      "active": "2",
      "sessions": 4,
      "opened": true,
-     "bodyPx": 757,
-     "h3px": "20px",
+     "bodyPx": 410,
+     "h3px": "21px",
      "flowPx": "19px"
     },
     {
@@ -316,8 +316,8 @@
      "active": "3",
      "sessions": 6,
      "opened": true,
-     "bodyPx": 757,
-     "h3px": "20px",
+     "bodyPx": 353,
+     "h3px": "21px",
      "flowPx": "19px"
     },
     {
@@ -325,26 +325,26 @@
      "active": "4",
      "sessions": 5,
      "opened": true,
-     "bodyPx": 757,
-     "h3px": "20px",
+     "bodyPx": 381,
+     "h3px": "21px",
      "flowPx": "19px"
     }
    ]
   },
   "#julie": {
-   "screens": 0.72
+   "screens": 0.88
   },
   "#pricing": {
-   "screens": 2.1
+   "screens": 2.15
   },
   "#cgm": {
-   "screens": 1.32
+   "screens": 1.44
   },
   "#syllabus": {
-   "screens": 1.81
+   "screens": 1.64
   },
   "#how": {
-   "screens": 1.4
+   "screens": 1.38
   }
  }
 }
